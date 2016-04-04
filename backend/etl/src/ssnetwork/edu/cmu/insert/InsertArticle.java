@@ -20,9 +20,6 @@ import ssnetwork.edu.cmu.mysqlStatement.MySQLStatement;
  * */
 public class InsertArticle {
 	
-	private static final String USER = DBConfig.USER;
-	private static final String PASS = DBConfig.PASS;
-	
 	private static Connection conn = null;
 	private static PreparedStatement statement = null;
 	
@@ -32,7 +29,7 @@ public class InsertArticle {
 	public InsertArticle() {
 		try {
 			Class.forName(DBConfig.JDBC_DRIVER);
-			conn = DriverManager.getConnection(DBConfig.DB_URL, USER, PASS);
+			conn = DriverManager.getConnection(DBConfig.DB_URL, DBConfig.USER, DBConfig.PASS);
 			statement = conn.prepareStatement(MySQLStatement.insertArticle);
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -99,7 +96,7 @@ public class InsertArticle {
 	}
 	
 	/* this is for testing InsertArticle */
-	/*public static void main(String[] args) {
+	public static void main(String[] args) {
 		InsertArticle insertArticle = new InsertArticle();
 		Article article = new Article();
 		article.setTitle("title");
@@ -126,5 +123,5 @@ public class InsertArticle {
 		article.setEe("ee");
 		System.out.println(insertArticle.insertArticle(article));
 		insertArticle.closeResources();
-	}*/
+	}
 }

@@ -25,4 +25,7 @@ public class MySQLStatement {
 	public static String insertArticleAuthor = "insert into article_author_table "
 			+ "(article_id, author_id)"
 			+ " values (?, ?)";
+	
+	/* select author from author_table with given author name */
+	public static String selectAuthor = "select id from author_table where author = ?";
 }
