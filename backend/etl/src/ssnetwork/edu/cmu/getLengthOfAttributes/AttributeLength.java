@@ -1,4 +1,4 @@
-import java.util.List;
+package ssnetwork.edu.cmu.getLengthOfAttributes;
 
 /**
  * Author: Lunwen He

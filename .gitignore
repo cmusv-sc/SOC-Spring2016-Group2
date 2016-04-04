@@ -1,1 +1,9 @@
+#ignore generated class files
 *.class
+
+#ignore vim undo and swap files
+*.un~
+*.swp
+
+#ignore all bin directories
+bin/

@@ -1,3 +1,5 @@
+package ssnetwork.edu.cmu.getLengthOfAttributes;
+
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
@@ -5,10 +7,10 @@ import org.xml.sax.helpers.DefaultHandler;
 /**
  * The Handler for SAX Events.
  */
-public class SAXHandlerForParsing extends DefaultHandler {
+public class SAXHandlerForGettingAttributesLength extends DefaultHandler {
   
-  private Article article = null;
   private String content = null;
+  private AttributeLength attributeLength = new AttributeLength();
   
   @Override
   /* Triggered when the start tag <article> is found. */
@@ -21,9 +23,8 @@ public class SAXHandlerForParsing extends DefaultHandler {
 
       //Create a new Article object when the start tag of <article> is found
 	  if(qName.equals("article")) {
-	        article = new Article();
-	        article.setMdate(attributes.getValue("mdate"));
-	        article.setKey(attributes.getValue("key"));		  
+	        attributeLength.setMdateLength(attributes.getValue("mdate").length());
+	        attributeLength.setKeyLength(attributes.getValue("key").length());
 	  }
   }
 
@@ -37,34 +38,33 @@ public class SAXHandlerForParsing extends DefaultHandler {
 	  
    switch(qName){
      case "article":
-       System.out.println(article.toString());       
-       break;
+    	 break;
      case "title":
-       article.setTitle(content);
-       break;
+    	 attributeLength.setTitleLength(content.length());
+    	 break;
      case "author":
-       article.addAuthors(content);    
-       break;
+    	 attributeLength.setauthorLength(content.length());
+    	 break;
      case "pages":
-       article.setPages(content);
-       break;
+    	 attributeLength.setPagesLength(content.length());
+    	 break;
      case "year":
-    	 article.setYear(content);
+    	 attributeLength.setYearLength(content.length());
     	 break;
      case "volume":
-    	 article.setVolume(content);
+    	 attributeLength.setVolumeLength(content.length());
     	 break;
      case "journal":
-    	 article.setJournal(content);
+    	 attributeLength.setJournalLength(content.length());
     	 break;
      case "number":
-    	 article.setNumber(content);
+    	 attributeLength.setNumberLength(content.length());
     	 break;
      case "url":
-    	 article.setUrl(content);
+    	 attributeLength.setUrlLength(content.length());
     	 break;
      case "ee":
-    	 article.setEe(content);
+    	 attributeLength.setEeLength(content.length());
     	 break;
      default:
     	 break;
@@ -75,5 +75,9 @@ public class SAXHandlerForParsing extends DefaultHandler {
   public void characters(char[] ch, int start, int length) 
           throws SAXException {
     content = String.copyValueOf(ch, start, length).trim();
+  }
+  
+  public String getAttributeLength() {
+	  return this.attributeLength.toString();
   }
 }

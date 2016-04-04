@@ -1,3 +1,5 @@
+package ssnetwork.edu.cmu.article;
+
 import java.util.ArrayList;
 import java.util.List;
 
