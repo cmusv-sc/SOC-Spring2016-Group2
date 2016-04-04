@@ -11,6 +11,9 @@ package ssnetwork.edu.cmu.dbConfig;
  * loading data into MySQL
  * */
 public class DBConfig {
+	public static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
+	public static final String DB_URL = "jdbc:mysql://localhost/article";
+	
 	public static String USER = "root";
 	public static String PASS = "helunwen";
 }

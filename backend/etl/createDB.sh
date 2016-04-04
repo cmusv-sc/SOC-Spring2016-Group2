@@ -18,10 +18,10 @@ echo "create database successfully"
 createArticle_table="use article;create table if not exists article_table (
     id int not null auto_increment,
     title varchar(650),
-    mdate date,
+    mdate char(16),
     keyword char(96),
     pages char(32),
-    year int,
+    year char(8),
     volume char(32),
     journal char(128),
     number char(32),

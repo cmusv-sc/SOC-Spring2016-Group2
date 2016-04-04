@@ -6,7 +6,7 @@ package ssnetwork.edu.cmu.insert;
  * */
 
 /**
- * This class insert one <article.id, author.id> into article_author_table
+ * This class insert one <article_id, author_id> into article_author_table
  * */
 public class InsertArticleAuthor {
 
