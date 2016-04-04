@@ -5,6 +5,11 @@ import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
 /**
+ * Author: Lunwen He
+ * Date: 04/04/2016
+ * */
+
+/**
  * The Handler for SAX Events.
  */
 public class SAXHandlerForGettingAttributesLength extends DefaultHandler {

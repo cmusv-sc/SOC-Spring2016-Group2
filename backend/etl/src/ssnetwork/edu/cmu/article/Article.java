@@ -1,5 +1,12 @@
 package ssnetwork.edu.cmu.article;
+/**
+ * Author: Lunwen He
+ * Date: 04/04/2016
+ * */
 
+/**
+ * this class defines a class contains all attributes in xml file
+ * */
 import java.util.ArrayList;
 import java.util.List;
 

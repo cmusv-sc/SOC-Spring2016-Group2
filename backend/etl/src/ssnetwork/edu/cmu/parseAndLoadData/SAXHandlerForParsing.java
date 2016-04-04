@@ -7,6 +7,11 @@ import org.xml.sax.helpers.DefaultHandler;
 import ssnetwork.edu.cmu.article.Article;
 
 /**
+ * Author: Lunwen He
+ * Date: 04/04/2016
+ * */
+
+/**
  * The Handler for SAX Events.
  */
 public class SAXHandlerForParsing extends DefaultHandler {

@@ -10,6 +10,8 @@ import javax.xml.parsers.SAXParser;
 
 import org.xml.sax.SAXException;
 
+import ssnetwork.edu.cmu.filepath.FilePath;
+
 /**
  * Author: Lunwen He
  * Date: 04/02/2016
@@ -28,16 +30,12 @@ import org.xml.sax.SAXException;
 public class SAXETL {
 	
 	public static void main(String[] args) {
-		if(args.length == 0) {
-			System.out.println("Please provide the file path for xml file");
-			return;
-		}
 	    SAXParserFactory parserFactor = SAXParserFactory.newInstance();
 	    SAXParser parser;
 		try {
 			parser = parserFactor.newSAXParser();
 			SAXHandlerForParsing handler = new SAXHandlerForParsing();
-		    parser.parse(new FileInputStream(new File(args[0])), handler);
+		    parser.parse(new FileInputStream(new File(FilePath.DATAFILEPATH)), handler);
 		} catch (ParserConfigurationException | SAXException | IOException e) {
 			e.printStackTrace();
 		}

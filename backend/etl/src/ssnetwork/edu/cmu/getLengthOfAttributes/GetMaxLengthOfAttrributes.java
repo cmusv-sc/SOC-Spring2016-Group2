@@ -10,6 +10,8 @@ import javax.xml.parsers.SAXParser;
 
 import org.xml.sax.SAXException;
 
+import ssnetwork.edu.cmu.filepath.FilePath;
+
 
 
 /**
@@ -29,10 +31,6 @@ import org.xml.sax.SAXException;
 
 public class GetMaxLengthOfAttrributes {
 	public static void main(String[] args) {
-		if(args.length == 0) {
-			System.out.println("Please provide the file path for xml file");
-			return;
-		}
 	    SAXParserFactory parserFactor = SAXParserFactory.newInstance();
 	    SAXParser parser;
 		try {
@@ -42,7 +40,7 @@ public class GetMaxLengthOfAttrributes {
             manager.setEntityExpansionLimit(5000000);
             parser.setProperty("http://apache.org/xml/properties/security-manager", manager);
 			SAXHandlerForGettingAttributesLength handler = new SAXHandlerForGettingAttributesLength();
-		    parser.parse(new FileInputStream(new File(args[0])), handler);
+		    parser.parse(new FileInputStream(new File(FilePath.DATAFILEPATH)), handler);
 		    System.out.println(handler.getAttributeLength());
 		} catch (ParserConfigurationException | SAXException | IOException e) {
 			e.printStackTrace();
