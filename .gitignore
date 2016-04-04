@@ -2,6 +2,7 @@
 *.class
 
 #ignore vim undo and swap files
+*.*~
 *.un~
 *.swp
 

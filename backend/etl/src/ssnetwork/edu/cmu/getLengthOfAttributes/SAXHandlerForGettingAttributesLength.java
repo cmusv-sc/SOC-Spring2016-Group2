@@ -15,7 +15,10 @@ import org.xml.sax.helpers.DefaultHandler;
 public class SAXHandlerForGettingAttributesLength extends DefaultHandler {
   
   private String content = null;
+  /* the object for get attributes length */
   private AttributeLength attributeLength = new AttributeLength();
+  /* counting the number of items in data set */
+  private int countItems = 0;
   
   @Override
   /* Triggered when the start tag <article> is found. */
@@ -43,6 +46,7 @@ public class SAXHandlerForGettingAttributesLength extends DefaultHandler {
 	  
    switch(qName){
      case "article":
+    	 countItems++;
     	 break;
      case "title":
     	 attributeLength.setTitleLength(content.length());
@@ -83,6 +87,7 @@ public class SAXHandlerForGettingAttributesLength extends DefaultHandler {
   }
   
   public String getAttributeLength() {
-	  return this.attributeLength.toString();
+	  return this.attributeLength.toString() + "\n" +
+			  "Total number of articles: " + countItems;
   }
 }

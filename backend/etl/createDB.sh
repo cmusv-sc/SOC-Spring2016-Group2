@@ -15,16 +15,16 @@ echo "create database successfully"
 #create article_table
 createArticle_table="use article;create table if not exists article_table (
     id int not null auto_increment,
-    title varchar(512) not null,
+    title varchar(650),
     mdate date,
-    keywords char(128),
-    pages char(16),
-    year char(16),
-    volume char(16),
+    keyword char(96),
+    pages char(32),
+    year int,
+    volume char(32),
     journal char(128),
-    number char(16),
-    ee char(128),
-    url char(128),
+    number char(32),
+    url varchar(256),
+    ee varchar(256),
     primary key(id)
     );"
 mysql -u $username -p$password -e "$createArticle_table"
@@ -43,7 +43,7 @@ echo "create article_author_table successfully"
 #create author_table
 createAuthor_table="use article;create table if not exists author_table (
     id int not null auto_increment,
-    author char(255),
+    author char(64),
     primary key(id)
     );"
 mysql -u $username -p$password -e "$createAuthor_table"
