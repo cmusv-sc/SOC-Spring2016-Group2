@@ -3,5 +3,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/home/lunwenh/workspace/SSNetwork/backend/etl/lib/xerces-2.7.1.jar"/>
+	<classpathentry kind="lib" path="/home/lunwenh/workspace/SSNetwork/backend/etl/lib/mysql-connector-java-5.0.8-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

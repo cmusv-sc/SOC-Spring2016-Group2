@@ -1,4 +1,4 @@
-package ssnetwork.edu.cmu.parseAndLoadData;
+package ssnetwork.edu.cmu.dbConfig;
 
 /**
  * Author: Lunwen He
@@ -10,7 +10,7 @@ package ssnetwork.edu.cmu.parseAndLoadData;
  * please change to your database user name and password before
  * loading data into MySQL
  * */
-public class Config {
+public class DBConfig {
 	public static String USER = "root";
 	public static String PASS = "helunwen";
 }

@@ -13,6 +13,8 @@ mysql -u $username -p$password -e "$createDB"
 echo "create database successfully"
 
 #create article_table
+#key is a reserved keyword in mysql, please do not change keyword to key
+#otherwise, there would be syntax error in this create statement
 createArticle_table="use article;create table if not exists article_table (
     id int not null auto_increment,
     title varchar(650),
