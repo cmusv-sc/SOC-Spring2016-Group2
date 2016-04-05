@@ -6,7 +6,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import ssnetwork.edu.cmu.article.Article;
 import ssnetwork.edu.cmu.dbConfig.DBConfig;
 import ssnetwork.edu.cmu.mysqlStatement.MySQLStatement;
 

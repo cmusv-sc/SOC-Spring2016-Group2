@@ -17,3 +17,6 @@ Max ee length:	245
 Total number of articles: 1401830
 
 These numbers will be used to design database schema
+
+dblp reference: http://dblp.uni-trier.de/faq/What+do+I+find+in+dblp+xml
+
