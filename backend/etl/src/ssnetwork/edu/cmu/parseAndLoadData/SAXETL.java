@@ -36,6 +36,7 @@ public class SAXETL {
 			parser = parserFactor.newSAXParser();
 			SAXHandlerForParsing handler = new SAXHandlerForParsing();
 		    parser.parse(new FileInputStream(new File(FilePath.DATAFILEPATH)), handler);
+		    handler.closeResources();
 		} catch (ParserConfigurationException | SAXException | IOException e) {
 			e.printStackTrace();
 		}
