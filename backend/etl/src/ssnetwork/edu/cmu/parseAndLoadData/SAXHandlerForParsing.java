@@ -7,6 +7,7 @@ import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
 import ssnetwork.edu.cmu.article.Article;
+import ssnetwork.edu.cmu.conferenceKey.ConferenceKey;
 import ssnetwork.edu.cmu.insert.InsertArticle;
 import ssnetwork.edu.cmu.insert.InsertArticleAuthor;
 import ssnetwork.edu.cmu.insert.InsertAuthor;
@@ -61,23 +62,25 @@ public class SAXHandlerForParsing extends DefaultHandler {
     * insert into database
     * */
    	   case "article":
-   		   int article_id = insertArticle.insertArticle(article);
-   		   if(article_id < 0) {
-   			   System.out.println("insert article failed");
-   			   System.out.println(article.toString());
-   		   } else {
-   			   List<String> authors = article.getAuthors();
-   			   for(String author : authors) {
-   				   int author_id = insertAuthor.insertAuthor(author);
-   				   if(author_id < 0) {
-   					   System.out.println("insert " + author + " failed");
-   					   continue;
-   				   }
-   				   int articleAuthor_id = insertArticleAuthor.insertArticle(article_id, author_id);
-   				   if(articleAuthor_id < 0) {
-   					   System.out.println("insert <" + article_id + ", " + author_id + "> failed");
-   				   }
-   			   }
+   		   if(ConferenceKey.isWanted(article.getKey())){
+   	   		   int article_id = insertArticle.insertArticle(article);
+   	   		   if(article_id < 0) {
+   	   			   System.out.println("insert article failed");
+   	   			   System.out.println(article.toString());
+   	   		   } else {
+   	   			   List<String> authors = article.getAuthors();
+   	   			   for(String author : authors) {
+   	   				   int author_id = insertAuthor.insertAuthor(author);
+   	   				   if(author_id < 0) {
+   	   					   System.out.println("insert " + author + " failed");
+   	   					   continue;
+   	   				   }
+   	   				   int articleAuthor_id = insertArticleAuthor.insertArticle(article_id, author_id);
+   	   				   if(articleAuthor_id < 0) {
+   	   					   System.out.println("insert <" + article_id + ", " + author_id + "> failed");
+   	   				   }
+   	   			   }
+   	   		   }
    		   }
    		   break;
        case "title":

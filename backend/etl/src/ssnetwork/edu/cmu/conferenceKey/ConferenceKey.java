@@ -129,7 +129,7 @@ public class ConferenceKey {
 	 * @return if the article comes from one of the six given conferences,
 	 * 		   return true; otherwise, return false
 	 * */
-	public boolean isWanted(String key) {
+	public static boolean isWanted(String key) {
 		if(	key.startsWith(ConferenceKey.ICWSKEYPREFIX) ||
 			key.startsWith(ConferenceKey.SCCKEYPREFIX) ||
 			key.startsWith(ConferenceKey.CLOUDKEYPREFIX) ||
