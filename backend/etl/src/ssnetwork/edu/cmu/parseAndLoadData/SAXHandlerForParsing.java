@@ -24,6 +24,8 @@ public class SAXHandlerForParsing extends DefaultHandler {
   
   private Article article = null;
   private String content = null;
+  /* count the number of wanted article */
+  private int count = 0;
   
   /* insert article */
   private InsertArticle insertArticle = new InsertArticle();
@@ -63,21 +65,22 @@ public class SAXHandlerForParsing extends DefaultHandler {
     * */
    	   case "article":
    		   if(ConferenceKey.isWanted(article.getKey())){
+   			   count++;
    	   		   int article_id = insertArticle.insertArticle(article);
    	   		   if(article_id < 0) {
-   	   			   System.out.println("insert article failed");
+   	   			   System.out.println("Insert article failed");
    	   			   System.out.println(article.toString());
    	   		   } else {
    	   			   List<String> authors = article.getAuthors();
    	   			   for(String author : authors) {
    	   				   int author_id = insertAuthor.insertAuthor(author);
    	   				   if(author_id < 0) {
-   	   					   System.out.println("insert " + author + " failed");
+   	   					   System.out.println("Insert " + author + " failed");
    	   					   continue;
    	   				   }
    	   				   int articleAuthor_id = insertArticleAuthor.insertArticle(article_id, author_id);
    	   				   if(articleAuthor_id < 0) {
-   	   					   System.out.println("insert <" + article_id + ", " + author_id + "> failed");
+   	   					   System.out.println("Insert <" + article_id + ", " + author_id + "> failed");
    	   				   }
    	   			   }
    	   		   }
@@ -123,6 +126,7 @@ public class SAXHandlerForParsing extends DefaultHandler {
   
   /* close database related resources */
   public void closeResources() {
+	  System.out.println("Inserted articles: " + count);
 	  this.insertArticle.closeResources();
 	  this.insertArticleAuthor.closeResources();
 	  this.insertAuthor.closeResources();

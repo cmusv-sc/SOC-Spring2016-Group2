@@ -13,4 +13,5 @@ package ssnetwork.edu.cmu.filepath;
 
 public class FilePath {
 	public static String DATAFILEPATH = "./data/article.xml";
+	//public static String DATAFILEPATH = "/home/lunwenh/eclipse_workspace/dblp.xml";
 }

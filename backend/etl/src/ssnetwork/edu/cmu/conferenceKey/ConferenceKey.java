@@ -34,7 +34,7 @@ public class ConferenceKey {
 	/* since all keys has same prefixes, we use key prefix to 
 	 * filter all articles starting with this key prefix
 	 * */
-	private static String ICWSKEYPREFIX = "conf/icws";
+	private static String ICWSKEYPREFIX = "conf/icws/";
 	
 	/* IEEE International Conference on Services Computing (SCC, started from 2004) */
 	/* private static String[] SCC = {
@@ -56,7 +56,7 @@ public class ConferenceKey {
 	/* since all keys has same prefixes, we use key prefix to 
 	 * filter all articles starting with this key prefix
 	 * */	
-	private static String SCCKEYPREFIX = "conf/IEEEscc";
+	private static String SCCKEYPREFIX = "conf/IEEEscc/";
 	
 	/* IEEE International Conference on Cloud Computing (CLOUD, started from 2008) */
 	/* private static String[] CLOUND = {
@@ -73,7 +73,7 @@ public class ConferenceKey {
 	/* since all keys has same prefixes, we use key prefix to 
 	 * filter all articles starting with this key prefix
 	 * */
-	private static String CLOUDKEYPREFIX = "conf/IEEEcloud";
+	private static String CLOUDKEYPREFIX = "conf/IEEEcloud/";
 	
 	/* IEEE International Conference on Mobile Services (MS, started from 2012) */
 	/* private static String[] MS = {
@@ -85,7 +85,7 @@ public class ConferenceKey {
 	/* since all keys has same prefixes, we use key prefix to 
 	 * filter all articles starting with this key prefix
 	 * */
-	private static String MSKEYPREFIX = "conf/mobserv";
+	private static String MSKEYPREFIX = "conf/mobserv/";
 	
 	/* IEEE International Congress on Big Data (BigData Congress, started from 2012) */
 	/* private static String[] BIGDATA = {
@@ -98,7 +98,7 @@ public class ConferenceKey {
 	/* since all keys has same prefixes, we use key prefix to 
 	 * filter all articles starting with this key prefix
 	 * */
-	private static String BIGDATAKEYPREFIX = "conf/bigdata";
+	private static String BIGDATAKEYPREFIX = "conf/bigdata/";
 	
 	/* IEEE World Congress on Services (SERVICES, started from 2005) */
 	/* private static String[] SERVICES = {
@@ -117,7 +117,7 @@ public class ConferenceKey {
 	/* since all keys has same prefixes, we use key prefix to 
 	 * filter all articles sta5rting with this key prefix
 	 * */
-	private static String SERVICESKEYPREFIX = "conf/services";
+	private static String SERVICESKEYPREFIX = "conf/services/";
 	
 	
 	/**
