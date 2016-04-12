@@ -9,8 +9,6 @@ Professor Jia Zhang and the teaching staff of 18-655,
 Service Oriented Computing, at Carnegie Mellon University, Spring 2016.
 
 
-# TuoristGuide
-
 ## How to run the application?
 
 To run and test it locally, run following command after you clone the repo:
@@ -26,13 +24,10 @@ To run and test it locally, run following command after you clone the repo:
 * Play 
 
 ```
-  
 [https://github.com/playframework/play.git](play-1.3 download)
-
 ```
 * Eclipse
 
 ```
 [https://www.playframework.com/documentation/1.3.x/guide1](eclipse import)
-
 ```
