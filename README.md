@@ -16,6 +16,7 @@ To run and test it locally, run following command after you clone the repo:
 ```bash
 # install dependencies
 # start play
+play run
 ```
 
 
