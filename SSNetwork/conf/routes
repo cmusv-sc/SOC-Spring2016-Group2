@@ -13,3 +13,6 @@ GET     /public/                                staticDir:public
 
 # Catch all
 *       /{controller}/{action}                  {controller}.{action}
+
+GET     /title/{title}                           Application.selectByTitle
+GET     /year/{year}                             Application.selectByYear

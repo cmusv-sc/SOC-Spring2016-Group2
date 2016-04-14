@@ -2,9 +2,11 @@ package controllers;
 
 import play.*;
 import play.mvc.*;
+import play.mvc.results.Result;
 
 import java.util.*;
-
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.junit.Test;
 
 import models.*;
@@ -14,16 +16,21 @@ public class Application extends Controller {
 	/* here we provide some simple methods
 	 * to show how to use database model
 	 * */
-	private static void selectByYear() {
-		List<Publication> publications = Publication.find("byYear", "2011").fetch();
+	
+	private static Result selectByYear(String year) {
+		
+		List<Publication> publications = Publication.find("byYear",year).fetch();
 		System.out.println("There are " + publications.size() + " publication in 2011");
 		for(Publication publication : publications) {
+			
 			System.out.println(publication.toString());
+			// ObjectNode result = Json.newObject();
 		}
+		return null;
 	}
 	
-	private static void selectByTitle() {
-		Publication publication = Publication.find("byTitle", "SaaS Architecture and Pricing Models.").first();
+	private static void selectByTitle(String title) {
+		Publication publication = Publication.find("byTitle", title).first();
 		System.out.println(publication.toString());	
 	}
 	
@@ -36,8 +43,6 @@ public class Application extends Controller {
     	 * */
     	SAXETL.loadData();
     	System.out.println("Data load successfully!");
-    	selectByYear();
-    	selectByTitle();
         render();
     }
 }

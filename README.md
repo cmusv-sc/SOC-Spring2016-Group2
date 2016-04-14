@@ -16,9 +16,10 @@ To run and test it locally, run following command after you clone the repo:
 ```bash
 # install dependencies
 # start play
+# SSNetwork is a Eclipse-version 
+# SSNetwork-version2 is a Intellj Version
+
 ```
-
-
 ## Package dependencies
 
 * Play 
