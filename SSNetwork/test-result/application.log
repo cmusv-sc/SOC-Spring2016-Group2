@@ -1,4 +1,0 @@
-12 Apr 2016 00:20:39,843 INFO  ~ Starting /home/lunwenh/workspace/SSNetwork/SSNetwork/.
-12 Apr 2016 00:20:42,010 WARN  ~ You're running Play! in DEV mode
-12 Apr 2016 00:20:46,466 INFO  ~ Connected to jdbc:mysql://localhost/ssnetwork?useUnicode=yes&connectionCollation=utf8_general_ci&characterEncoding=UTF-8
-12 Apr 2016 00:20:49,378 INFO  ~ Application 'SSNetwork' is now started !
