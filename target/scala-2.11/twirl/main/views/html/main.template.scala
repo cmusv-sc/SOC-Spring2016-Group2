@@ -65,7 +65,7 @@ Seq[Any](format.raw/*1.45*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Fri Apr 15 14:08:43 PDT 2016
+                  DATE: Fri Apr 15 16:18:09 PDT 2016
                   SOURCE: /home/lunwenh/workspace/SSNetwork/app/views/main.scala.html
                   HASH: 5f0d9955812aaa4ef10287ddeb70185dbc7823b5
                   MATRIX: 753->1|891->44|918->45|994->95|1019->100|1112->167|1126->173|1178->205|1260->261|1274->267|1330->303|1381->328|1395->334|1460->379|1586->478|1614->485|1651->495|1678->501|1714->510

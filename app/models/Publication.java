@@ -12,6 +12,8 @@ import java.util.List;
  * */
 @Entity(name="publications")
 public class Publication extends Model {
+	@Id
+	public Long id;
 	public String pubkey;
 	public String title;
 	public String editor;
@@ -226,9 +228,6 @@ public class Publication extends Model {
 	public void setEe(String ee) {
 		this.ee = ee;
 	}
-	@Id
-	public Long id;
-
 
 	public Long getId() {
 		return id;

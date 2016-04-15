@@ -1,20 +1,22 @@
 package models;
 
 import com.avaje.ebean.Model;
-import controllers.Application;
-import play.api.db.DB;
 import play.data.format.Formats;
-import play.data.validation.Constraints;
-import play.data.validation.ValidationError;
-
 import javax.persistence.*;
-import java.sql.Connection;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
-@Entity
+@Entity(name="person")
 public class Person extends Model {
+	
+    @Id
+	public Long id;
+
+    public String name;
+
+    @Formats.DateTime(pattern="dd/MM/yyyy")
+    public Date dueDate = new Date();
+
+    
     /***
      *  you are responsible for calling their close() method somewhere in your code
      *  so that they can be immediately returned to the pool.
@@ -26,20 +28,12 @@ public class Person extends Model {
         this.name=name;
     }
 
-
-    @Id
-	public Long id;
-
-    public String name;
-
-    @Formats.DateTime(pattern="dd/MM/yyyy")
-    public Date dueDate = new Date();
-
-    public static Finder<Long, Person> find = new Finder<Long,Person>(Person.class);
-
     public Person() {
+    	this.dueDate = new Date("01/01/2011");
+    	this.name = "";
     }
 
+    public static Finder<Long, Person> find = new Finder<Long,Person>(Person.class);
 
     public void setId(Long id){
         this.id=id;
@@ -56,9 +50,11 @@ public class Person extends Model {
     public Long getId(){
         return id;
     }
+    
     public Date getDueDate(){
         return dueDate;
     }
+    
     public String getName(){
         return  name;
     }
@@ -82,10 +78,5 @@ public class Person extends Model {
         }
         return errors.isEmpty() ? null : errors;
     }*/
-
-
-
-
-
 
 }
