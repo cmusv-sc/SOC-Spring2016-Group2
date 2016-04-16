@@ -8,3 +8,9 @@
 
 #ignore all bin directories
 bin/
+
+#ignore target directory
+target/
+
+#ignore logs directory 
+logs/
