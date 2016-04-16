@@ -48,7 +48,7 @@ public class Author extends Model {
 		this.id = id;
 	}
 	
-	public static Model.Finder<Long,Author>  find = new Model.Finder(Long.class, Author.class);
+	public static Finder<Long, Author>  find = new Finder<Long, Author>(Long.class, Author.class);
 	
     public static List<Author> find(List<PublicationAuthor> ids){
 		List<Author> authors=new ArrayList<Author>();
