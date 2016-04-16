@@ -1,5 +1,5 @@
 language: scala
-w	
+
 scala:
     - 2.11.0
 
