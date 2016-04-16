@@ -7,7 +7,7 @@ jdk:
     - oraclejdk8
 
 before_script:
-    mysql -e "
+    - mysql -e "
 	drop database if exists ssnetwork;
 
 	create database ssnetwork;
