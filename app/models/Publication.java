@@ -236,7 +236,8 @@ public class Publication extends Model {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public static Model.Finder<Long,Publication> find = new Model.Finder(Long.class, Publication.class);
+	public static Finder<Long,Publication> find = new Finder<Long,Publication>(Long.class, Publication.class);
+	
 	public static List<Publication>  find(String str, Integer year, String title) {
 		if(str.equals("byYear")){
 			return find.where()

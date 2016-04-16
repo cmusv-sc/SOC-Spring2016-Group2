@@ -7,5 +7,4 @@ jdk:
     - oraclejdk8
 
 script:
-    - sudo chmod +x ./run.sh
-    - ./run.sh
+    mysql < ./app/models/createTable.sql
