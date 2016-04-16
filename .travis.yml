@@ -8,3 +8,4 @@ jdk:
 
 before_script:
     - "mysql < ./app/models/createTable.sql"
+    - "msyql -e 'use ssnetwork; show tables;'"
