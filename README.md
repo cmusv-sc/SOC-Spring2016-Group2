@@ -1,6 +1,7 @@
 # SSNetwork
 
-Scientific Social Network[![Build Status](https://travis-ci.org/helunwencser/SSNetwork.svg?branch=master)](https://travis-ci.org/helunwencser/SSNetwork)
+Scientific Social Network [![Build Status](https://travis-ci.org/helunwencser/SSNetwork.svg?branch=master)](https://travis-ci.org/helunwencser/SSNetwork)
+
 18-655, Spring 2016, Carnegie Mellon University  
 
 Acknowledgements:
