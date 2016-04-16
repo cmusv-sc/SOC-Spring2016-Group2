@@ -10,12 +10,12 @@ import java.util.List;
 
 @Entity(name="author")
 public class Author extends Model {
-	
-	public String name;
 
 	@Id
 	public  Long  id;
 	
+	public String name;
+
 	public Author(String name) {
 		this.name = name;
 	}
@@ -49,6 +49,7 @@ public class Author extends Model {
 	}
 	
 	public static Model.Finder<Long,Author>  find = new Model.Finder(Long.class, Author.class);
+	
     public static List<Author> find(List<PublicationAuthor> ids){
 		List<Author> authors=new ArrayList<Author>();
 		for(PublicationAuthor id: ids){
@@ -59,6 +60,7 @@ public class Author extends Model {
 		}
 		return authors;
 	}
+    
 	public static List<Author> findAll(){
 		return find.all();
 	}

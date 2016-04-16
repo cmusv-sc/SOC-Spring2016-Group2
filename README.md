@@ -20,6 +20,7 @@ cd SSNetwork
 mysql -u username -ppassword < ./app/models/createTable.sql
 activator run
 ```
+
 Or
 '''bash
 git clone htts://github.com/helunwencser/SSNetwork.git

@@ -4,7 +4,7 @@
 		module="ssnetwork-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20160416133816"
+		publication="20160416141922"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>
@@ -36,7 +36,7 @@
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.10.6" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.10.6" conf="scala-tool->default,optional(default);provided->default(compile)"/>
 		<dependency org="org.scala-sbt" name="sbt" rev="0.13.11" conf="provided->default(compile)"/>
-		<dependency org="com.typesafe.play" name="sbt-plugin" rev="2.5.1" conf="compile->default(compile)" e:sbtVersion="0.13" e:scalaVersion="2.10"/>
+		<dependency org="com.typesafe.play" name="sbt-plugin" rev="2.5.0" conf="compile->default(compile)" e:sbtVersion="0.13" e:scalaVersion="2.10"/>
 		<dependency org="com.typesafe.sbt" name="sbt-coffeescript" rev="1.0.0" conf="compile->default(compile)" e:sbtVersion="0.13" e:scalaVersion="2.10"/>
 		<dependency org="com.typesafe.sbt" name="sbt-less" rev="1.1.0" conf="compile->default(compile)" e:sbtVersion="0.13" e:scalaVersion="2.10"/>
 		<dependency org="com.typesafe.sbt" name="sbt-jshint" rev="1.0.3" conf="compile->default(compile)" e:sbtVersion="0.13" e:scalaVersion="2.10"/>

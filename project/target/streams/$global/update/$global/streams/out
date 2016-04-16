@@ -5,34 +5,69 @@
 [0m[[0mdebug[0m] [0m	refresh = false[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ssnetwork-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-plugin;2.5.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-plugin;2.5.1 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#sbt-plugin;2.5.1[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe.play#sbt-plugin;2.5.1 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#sbt-routes-compiler_2.10;2.5.1[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.0 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-plugin;2.5.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-plugin;2.5.0 {compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-plugin;2.5.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#sbt-plugin;2.5.0 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.5.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.5.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for com.typesafe.play#sbt-plugin;2.5.0[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.5.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: found md file for com.typesafe.play#sbt-plugin;2.5.0[0m
+[0m[[0mdebug[0m] [0m		=> https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.5.0/ivys/ivy.xml (2.5.0)[0m
+[0m[[0mdebug[0m] [0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.5.0/ivys/ivy.xml ...[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.5.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.5.0/ivys/ivy.xml.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.5.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#sbt-plugin;2.5.0!ivy.xml(ivy.original) (1966ms)[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#sbt-plugin;2.5.0 in sbt-plugin-releases[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 {compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-routes-compiler_2.10/2.5.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-routes-compiler_2.10/2.5.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for com.typesafe.play#sbt-routes-compiler_2.10;2.5.0[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-routes-compiler_2.10/2.5.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-routes-compiler_2.10/2.5.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: no ivy file found for com.typesafe.play#sbt-routes-compiler_2.10;2.5.0[0m
+[0m[[0mdebug[0m] [0m		tried /home/lunwenh/.ivy2/local/com.typesafe.play/sbt-routes-compiler_2.10/2.5.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.play#sbt-routes-compiler_2.10;2.5.0[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.5.0/sbt-routes-compiler_2.10-2.5.0.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for com.typesafe.play#sbt-routes-compiler_2.10;2.5.0[0m
+[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.5.0/sbt-routes-compiler_2.10-2.5.0.pom (2.5.0)[0m
+[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.5.0/sbt-routes-compiler_2.10-2.5.0.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.5.0/sbt-routes-compiler_2.10-2.5.0.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.5.0/sbt-routes-compiler_2.10-2.5.0.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.5.0/sbt-routes-compiler_2.10-2.5.0.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#sbt-routes-compiler_2.10;2.5.0!sbt-routes-compiler_2.10.pom(pom.original) (131ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-routes-compiler_2.10/2.5.0/jars/sbt-routes-compiler_2.10.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-routes-compiler_2.10/2.5.0/jars/sbt-routes-compiler_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-routes-compiler_2.10/2.5.0/jars/sbt-routes-compiler_2.10.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-routes-compiler_2.10/2.5.0/jars/sbt-routes-compiler_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/lunwenh/.ivy2/local/com.typesafe.play/sbt-routes-compiler_2.10/2.5.0/jars/sbt-routes-compiler_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.5.0/sbt-routes-compiler_2.10-2.5.0.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.6[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.6 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.10.6] org.scala-lang#scala-library;2.10.6[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#twirl-api_2.10;1.1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#twirl-api_2.10;1.1.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#twirl-api_2.10;1.1.1[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#twirl-api_2.10;1.1.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -52,72 +87,95 @@
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.commons#commons-lang3;3.4[0m
 [0m[[0mdebug[0m] [0m	found org.apache.commons#commons-lang3;3.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving commons-io#commons-io;2.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-io#commons-io;2.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-io#commons-io;2.4[0m
 [0m[[0mdebug[0m] [0m	found commons-io#commons-io;2.4 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-run-support_2.10;2.5.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-run-support_2.10;2.5.1 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#sbt-run-support_2.10;2.5.1[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe.play#sbt-run-support_2.10;2.5.1 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [compile->master(compile)][0m
-[0m[[0minfo[0m] [0mResolving com.typesafe.play#build-link;2.5.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#build-link;2.5.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#build-link;2.5.1[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe.play#build-link;2.5.1 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [compile->master(compile)][0m
-[0m[[0minfo[0m] [0mResolving com.typesafe.play#play-exceptions;2.5.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-exceptions;2.5.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-exceptions;2.5.1[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe.play#play-exceptions;2.5.1 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-run-support_2.10;2.5.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-run-support_2.10;2.5.0 {compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#sbt-run-support_2.10;2.5.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.typesafe.play#sbt-run-support_2.10;2.5.0 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-run-support_2.10/2.5.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-run-support_2.10/2.5.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for com.typesafe.play#sbt-run-support_2.10;2.5.0[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-run-support_2.10/2.5.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-run-support_2.10/2.5.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: no ivy file found for com.typesafe.play#sbt-run-support_2.10;2.5.0[0m
+[0m[[0mdebug[0m] [0m		tried /home/lunwenh/.ivy2/local/com.typesafe.play/sbt-run-support_2.10/2.5.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.play#sbt-run-support_2.10;2.5.0[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.5.0/sbt-run-support_2.10-2.5.0.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for com.typesafe.play#sbt-run-support_2.10;2.5.0[0m
+[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.5.0/sbt-run-support_2.10-2.5.0.pom (2.5.0)[0m
+[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.5.0/sbt-run-support_2.10-2.5.0.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.5.0/sbt-run-support_2.10-2.5.0.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.5.0/sbt-run-support_2.10-2.5.0.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.5.0/sbt-run-support_2.10-2.5.0.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#sbt-run-support_2.10;2.5.0!sbt-run-support_2.10.pom(pom.original) (127ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-run-support_2.10/2.5.0/jars/sbt-run-support_2.10.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/sbt-run-support_2.10/2.5.0/jars/sbt-run-support_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-run-support_2.10/2.5.0/jars/sbt-run-support_2.10.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-run-support_2.10/2.5.0/jars/sbt-run-support_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/lunwenh/.ivy2/local/com.typesafe.play/sbt-run-support_2.10/2.5.0/jars/sbt-run-support_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.5.0/sbt-run-support_2.10-2.5.0.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#sbt-run-support_2.10;2.5.0 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#build-link;2.5.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#build-link;2.5.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#build-link;2.5.0[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#build-link;2.5.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.play#play-exceptions;2.5.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-exceptions;2.5.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-exceptions;2.5.0[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.play#play-exceptions;2.5.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe#config;1.3.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe#config;1.3.0 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe#config;1.3.0[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe#config;1.3.0 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->net.contentobjects.jnotify#jnotify;0.94-play-1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->net.contentobjects.jnotify#jnotify;0.94-play-1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving net.contentobjects.jnotify#jnotify;0.94-play-1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.contentobjects.jnotify#jnotify;0.94-play-1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.contentobjects.jnotify#jnotify;0.94-play-1[0m
 [0m[[0mdebug[0m] [0m	found net.contentobjects.jnotify#jnotify;0.94-play-1 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-twirl;1.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-twirl;1.1.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-twirl;1.1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-twirl;1.1.1 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-twirl;1.1.1[0m
@@ -258,7 +316,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-native-packager;1.0.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-native-packager;1.0.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-native-packager;1.0.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-native-packager;1.0.3 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-native-packager;1.0.3[0m
@@ -813,7 +871,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.bouncycastle#bcpg-jdk15on;1.51 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.bouncycastle#bcpg-jdk15on;1.51 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.0.3->org.vafer#jdeb;1.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-web;1.3.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-web;1.3.0 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-web;1.3.0[0m
@@ -930,7 +988,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.26->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.26->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.3.0->org.webjars#webjars-locator;0.26 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-js-engine;1.1.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-js-engine;1.1.3 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-js-engine;1.1.3[0m
@@ -2417,54 +2475,16 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;1.0.0 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-play-ebean;1.0.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-play-ebean;1.0.0 {compile=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-play-ebean;1.0.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.typesafe.sbt#sbt-play-ebean;1.0.0 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/1.0.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/1.0.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for com.typesafe.sbt#sbt-play-ebean;1.0.0[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/1.0.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: found md file for com.typesafe.sbt#sbt-play-ebean;1.0.0[0m
-[0m[[0mdebug[0m] [0m		=> https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/1.0.0/ivys/ivy.xml (1.0.0)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/1.0.0/ivys/ivy.xml ...[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/1.0.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/1.0.0/ivys/ivy.xml.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/1.0.0/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.sbt#sbt-play-ebean;1.0.0!ivy.xml(ivy.original) (2068ms)[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe.sbt#sbt-play-ebean;1.0.0 in sbt-plugin-releases[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-play-ebean;1.0.0[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.sbt#sbt-play-ebean;1.0.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 {compile=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.5.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.5.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.5.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.5.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: no ivy file found for org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3[0m
-[0m[[0mdebug[0m] [0m		tried /home/lunwenh/.ivy2/local/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.5.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.5.3/avaje-ebeanorm-agent-4.5.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.5.3/avaje-ebeanorm-agent-4.5.3.pom (4.5.3)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.5.3/avaje-ebeanorm-agent-4.5.3.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.5.3/avaje-ebeanorm-agent-4.5.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.5.3/avaje-ebeanorm-agent-4.5.3.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.5.3/avaje-ebeanorm-agent-4.5.3.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3!avaje-ebeanorm-agent.pom(pom.original) (67ms)[0m
-[0m[[0minfo[0m] [0mResolving org.avaje#avaje-javaparent;2.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.avaje#avaje-javaparent;2.1 {}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.avaje#avaje-javaparent;2.1[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.5.3/jars/avaje-ebeanorm-agent.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.5.3/jars/avaje-ebeanorm-agent.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.5.3/jars/avaje-ebeanorm-agent.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.5.3/jars/avaje-ebeanorm-agent.jar[0m
-[0m[[0mdebug[0m] [0m		tried /home/lunwenh/.ivy2/local/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.5.3/jars/avaje-ebeanorm-agent.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.5.3/avaje-ebeanorm-agent-4.5.3.jar[0m
-[0m[[0mdebug[0m] [0m	found org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3[0m
+[0m[[0mdebug[0m] [0m	found org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [compile->master(compile)][0m
@@ -2523,7 +2543,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.4.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.5.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 {compile=[default(compile)]}[0m
@@ -2593,15 +2613,15 @@
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ssnetwork-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ssnetwork-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -2617,42 +2637,42 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->net.contentobjects.jnotify#jnotify;0.94-play-1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-twirl;1.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->net.contentobjects.jnotify#jnotify;0.94-play-1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-twirl;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-twirl;1.1.1->com.typesafe.play#twirl-compiler_2.10;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -2768,7 +2788,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-native-packager;1.0.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-native-packager;1.0.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.0.3->org.apache.commons#commons-compress;1.4.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -3153,7 +3173,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.bouncycastle#bcpg-jdk15on;1.51->org.bouncycastle#bcprov-jdk15on;1.51 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.bouncycastle#bcpg-jdk15on;1.51->org.bouncycastle#bcprov-jdk15on;1.51 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.0.3->org.vafer#jdeb;1.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.3.0->com.typesafe.akka#akka-actor_2.10;2.3.9 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.3.0->com.typesafe.akka#akka-actor_2.10;2.3.9 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.3.0->com.typesafe.akka#akka-actor_2.10;2.3.9 [compile->compile][0m
@@ -3222,7 +3242,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.26->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.26->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.3.0->org.webjars#webjars-locator;0.26 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.1.3->com.typesafe#jse_2.10;1.1.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -4420,7 +4440,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.4.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.5.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->default(compile)][0m
@@ -4477,15 +4497,15 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ssnetwork-build;0.1-SNAPSHOT [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ssnetwork-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ssnetwork-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -4501,42 +4521,42 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->net.contentobjects.jnotify#jnotify;0.94-play-1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-twirl;1.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->net.contentobjects.jnotify#jnotify;0.94-play-1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-twirl;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-twirl;1.1.1->com.typesafe.play#twirl-compiler_2.10;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -4652,7 +4672,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-native-packager;1.0.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-native-packager;1.0.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.0.3->org.apache.commons#commons-compress;1.4.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -5037,7 +5057,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.bouncycastle#bcpg-jdk15on;1.51->org.bouncycastle#bcprov-jdk15on;1.51 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.bouncycastle#bcpg-jdk15on;1.51->org.bouncycastle#bcprov-jdk15on;1.51 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.0.3->org.vafer#jdeb;1.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.3.0->com.typesafe.akka#akka-actor_2.10;2.3.9 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.3.0->com.typesafe.akka#akka-actor_2.10;2.3.9 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.3.0->com.typesafe.akka#akka-actor_2.10;2.3.9 [compile->compile][0m
@@ -5106,7 +5126,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.26->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.26->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.3.0->org.webjars#webjars-locator;0.26 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.1.3->com.typesafe#jse_2.10;1.1.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -6304,7 +6324,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.4.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.5.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->default(compile)][0m
@@ -7190,15 +7210,15 @@
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ssnetwork-build;0.1-SNAPSHOT [compile-internal][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ssnetwork-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -7214,42 +7234,42 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->net.contentobjects.jnotify#jnotify;0.94-play-1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-twirl;1.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->net.contentobjects.jnotify#jnotify;0.94-play-1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-twirl;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-twirl;1.1.1->com.typesafe.play#twirl-compiler_2.10;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -7365,7 +7385,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-native-packager;1.0.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-native-packager;1.0.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.0.3->org.apache.commons#commons-compress;1.4.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -7750,7 +7770,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.bouncycastle#bcpg-jdk15on;1.51->org.bouncycastle#bcprov-jdk15on;1.51 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.bouncycastle#bcpg-jdk15on;1.51->org.bouncycastle#bcprov-jdk15on;1.51 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.0.3->org.vafer#jdeb;1.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.3.0->com.typesafe.akka#akka-actor_2.10;2.3.9 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.3.0->com.typesafe.akka#akka-actor_2.10;2.3.9 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.3.0->com.typesafe.akka#akka-actor_2.10;2.3.9 [compile->compile][0m
@@ -7819,7 +7839,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.26->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.26->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.3.0->org.webjars#webjars-locator;0.26 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.1.3->com.typesafe#jse_2.10;1.1.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -9017,7 +9037,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.4.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.5.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->default(compile)][0m
@@ -9684,15 +9704,15 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ssnetwork-build;0.1-SNAPSHOT [runtime-internal][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ssnetwork-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ssnetwork-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -9708,42 +9728,42 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->net.contentobjects.jnotify#jnotify;0.94-play-1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-twirl;1.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->net.contentobjects.jnotify#jnotify;0.94-play-1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-twirl;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-twirl;1.1.1->com.typesafe.play#twirl-compiler_2.10;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -9859,7 +9879,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-native-packager;1.0.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-native-packager;1.0.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.0.3->org.apache.commons#commons-compress;1.4.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -10244,7 +10264,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.bouncycastle#bcpg-jdk15on;1.51->org.bouncycastle#bcprov-jdk15on;1.51 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.bouncycastle#bcpg-jdk15on;1.51->org.bouncycastle#bcprov-jdk15on;1.51 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.0.3->org.vafer#jdeb;1.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.3.0->com.typesafe.akka#akka-actor_2.10;2.3.9 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.3.0->com.typesafe.akka#akka-actor_2.10;2.3.9 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.3.0->com.typesafe.akka#akka-actor_2.10;2.3.9 [compile->compile][0m
@@ -10313,7 +10333,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.26->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.26->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.3.0->org.webjars#webjars-locator;0.26 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.1.3->com.typesafe#jse_2.10;1.1.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -11511,7 +11531,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.4.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.5.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->default(compile)][0m
@@ -11570,15 +11590,15 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ssnetwork-build;0.1-SNAPSHOT [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ssnetwork-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#ssnetwork-build;0.1-SNAPSHOT [compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -11594,42 +11614,42 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.apache.commons#commons-lang3;3.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->com.typesafe.play#twirl-api_2.10;1.1.1 [runtime->compile][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#twirl-api_2.10;1.1.1->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.1->commons-io#commons-io;2.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-routes-compiler_2.10;2.5.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.1->com.typesafe.play#build-link;2.5.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.1->com.typesafe.play#play-exceptions;2.5.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.play#sbt-run-support_2.10;2.5.1 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe#config;1.3.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->net.contentobjects.jnotify#jnotify;0.94-play-1 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-twirl;1.1.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-routes-compiler_2.10;2.5.0->commons-io#commons-io;2.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-routes-compiler_2.10;2.5.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->org.scala-lang#scala-library;2.10.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-run-support_2.10;2.5.0->com.typesafe.play#build-link;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.5.0->com.typesafe.play#play-exceptions;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.play#sbt-run-support_2.10;2.5.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe#config;1.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->net.contentobjects.jnotify#jnotify;0.94-play-1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-twirl;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-twirl;1.1.1->com.typesafe.play#twirl-compiler_2.10;1.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -11745,7 +11765,7 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-compiler;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-native-packager;1.0.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-native-packager;1.0.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.0.3->org.apache.commons#commons-compress;1.4.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -12130,7 +12150,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.bouncycastle#bcpg-jdk15on;1.51->org.bouncycastle#bcprov-jdk15on;1.51 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.bouncycastle#bcpg-jdk15on;1.51->org.bouncycastle#bcprov-jdk15on;1.51 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.0.3->org.vafer#jdeb;1.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-web;1.3.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.3.0->com.typesafe.akka#akka-actor_2.10;2.3.9 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.3.0->com.typesafe.akka#akka-actor_2.10;2.3.9 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.3.0->com.typesafe.akka#akka-actor_2.10;2.3.9 [compile->compile][0m
@@ -12199,7 +12219,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.26->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.webjars#webjars-locator;0.26->org.apache.commons#commons-lang3;3.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-web;1.3.0->org.webjars#webjars-locator;0.26 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.1->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.5.0->com.typesafe.sbt#sbt-js-engine;1.1.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-js-engine;1.1.3->com.typesafe#jse_2.10;1.1.2 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
@@ -13397,7 +13417,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.4.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.5.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->default(compile)][0m
@@ -14117,7 +14137,12 @@
 [0m[[0mdebug[0m] [0mall callers are evicted for org.tukaani#xz;1.4: evicting too[0m
 [0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#sbt-plugin;2.5.1!sbt-plugin.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.5.0/jars/sbt-plugin.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.5.0/jars/sbt-plugin.jar ...[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.5.0/jars/sbt-plugin.jar[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.5.0/jars/sbt-plugin.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.5.0/jars/sbt-plugin.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#sbt-plugin;2.5.0!sbt-plugin.jar (4302ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-coffeescript;1.0.0!sbt-coffeescript.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-less;1.1.0!sbt-less.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-jshint;1.0.3!sbt-jshint.jar[0m
@@ -14125,16 +14150,21 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-digest;1.1.0!sbt-digest.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-mocha;1.1.0!sbt-mocha.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.irundaia.sbt#sbt-sassify;1.4.2!sbt-sassify.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/1.0.0/jars/sbt-play-ebean.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/1.0.0/jars/sbt-play-ebean.jar ...[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/1.0.0/jars/sbt-play-ebean.jar[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/1.0.0/jars/sbt-play-ebean.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/1.0.0/jars/sbt-play-ebean.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.sbt#sbt-play-ebean;1.0.0!sbt-play-ebean.jar (2584ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-play-ebean;1.0.0!sbt-play-ebean.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0!sbteclipse-plugin.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-play-enhancer;1.1.0!sbt-play-enhancer.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#sbt-routes-compiler_2.10;2.5.1!sbt-routes-compiler_2.10.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#sbt-run-support_2.10;2.5.1!sbt-run-support_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.5.0/sbt-routes-compiler_2.10-2.5.0.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.5.0/sbt-routes-compiler_2.10-2.5.0.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.5.0/sbt-routes-compiler_2.10-2.5.0.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.5.0/sbt-routes-compiler_2.10-2.5.0.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/sbt-routes-compiler_2.10/2.5.0/sbt-routes-compiler_2.10-2.5.0.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#sbt-routes-compiler_2.10;2.5.0!sbt-routes-compiler_2.10.jar (1896ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.5.0/sbt-run-support_2.10-2.5.0.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.5.0/sbt-run-support_2.10-2.5.0.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.5.0/sbt-run-support_2.10-2.5.0.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.5.0/sbt-run-support_2.10-2.5.0.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/sbt-run-support_2.10/2.5.0/sbt-run-support_2.10-2.5.0.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#sbt-run-support_2.10;2.5.0!sbt-run-support_2.10.jar (479ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe#config;1.3.0!config.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.contentobjects.jnotify#jnotify;0.94-play-1!jnotify.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-twirl;1.1.1!sbt-twirl.jar[0m
@@ -14145,8 +14175,28 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#twirl-api_2.10;1.1.1!twirl-api_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-io#commons-io;2.4!commons-io.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-lang3;3.4!commons-lang3.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#build-link;2.5.1!build-link.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-exceptions;2.5.1!play-exceptions.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/build-link/2.5.0/jars/build-link.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/build-link/2.5.0/jars/build-link.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/build-link/2.5.0/jars/build-link.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/build-link/2.5.0/jars/build-link.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/lunwenh/.ivy2/local/com.typesafe.play/build-link/2.5.0/jars/build-link.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.5.0/build-link-2.5.0.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.5.0/build-link-2.5.0.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.5.0/build-link-2.5.0.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.5.0/build-link-2.5.0.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.5.0/build-link-2.5.0.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#build-link;2.5.0!build-link.jar (120ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/play-exceptions/2.5.0/jars/play-exceptions.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.play/play-exceptions/2.5.0/jars/play-exceptions.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/play-exceptions/2.5.0/jars/play-exceptions.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/play-exceptions/2.5.0/jars/play-exceptions.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/lunwenh/.ivy2/local/com.typesafe.play/play-exceptions/2.5.0/jars/play-exceptions.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.5.0/play-exceptions-2.5.0.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.5.0/play-exceptions-2.5.0.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.5.0/play-exceptions-2.5.0.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.5.0/play-exceptions-2.5.0.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.5.0/play-exceptions-2.5.0.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#play-exceptions;2.5.0!play-exceptions.jar (139ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#twirl-compiler_2.10;1.1.1!twirl-compiler_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.6!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#twirl-parser_2.10;1.1.1!twirl-parser_2.10.jar[0m
@@ -14244,12 +14294,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-stm#scala-stm_2.10;0.7!scala-stm_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.nativelibs4java#ochafik-util;0.12!ochafik-util.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.java.dev.jna#jna;4.1.0!jna.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.5.3/avaje-ebeanorm-agent-4.5.3.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.5.3/avaje-ebeanorm-agent-4.5.3.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.5.3/avaje-ebeanorm-agent-4.5.3.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.5.3/avaje-ebeanorm-agent-4.5.3.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.5.3/avaje-ebeanorm-agent-4.5.3.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3!avaje-ebeanorm-agent.jar (883ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3!avaje-ebeanorm-agent.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] javax.persistence#persistence-api;1.0!persistence-api.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-enhancer;1.1.0!play-enhancer.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.javassist#javassist;3.18.2-GA!javassist.jar(bundle)[0m
@@ -14305,7 +14350,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.11!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.6!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 23245ms :: artifacts dl 3798ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 28804ms :: artifacts dl 9345ms[0m
 [0m[[0mdebug[0m] [0m	report for default#ssnetwork-build;0.1-SNAPSHOT compile produced in /home/lunwenh/workspace/SSNetwork/project/target/resolution-cache/reports/default-ssnetwork-build-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#ssnetwork-build;0.1-SNAPSHOT runtime produced in /home/lunwenh/workspace/SSNetwork/project/target/resolution-cache/reports/default-ssnetwork-build-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#ssnetwork-build;0.1-SNAPSHOT test produced in /home/lunwenh/workspace/SSNetwork/project/target/resolution-cache/reports/default-ssnetwork-build-test.xml[0m
@@ -14319,5 +14364,5 @@
 [0m[[0mdebug[0m] [0m	report for default#ssnetwork-build;0.1-SNAPSHOT docs produced in /home/lunwenh/workspace/SSNetwork/project/target/resolution-cache/reports/default-ssnetwork-build-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#ssnetwork-build;0.1-SNAPSHOT pom produced in /home/lunwenh/workspace/SSNetwork/project/target/resolution-cache/reports/default-ssnetwork-build-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#ssnetwork-build;0.1-SNAPSHOT scala-tool produced in /home/lunwenh/workspace/SSNetwork/project/target/resolution-cache/reports/default-ssnetwork-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (23245ms resolve - 3798ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (28804ms resolve - 9345ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
