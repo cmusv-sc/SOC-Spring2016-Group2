@@ -9,7 +9,7 @@
 		extra-sbtVersion="0.13"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160415142803"/>
+		date="20160416090720"/>
 	<dependencies>
 		<module organisation="com.typesafe.sbteclipse" name="sbteclipse-plugin">
 			<revision name="4.0.0" status="release" pubdate="20150622145920" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="125">
@@ -49,13 +49,13 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.sbt" name="sbt-play-ebean">
-			<revision name="1.0.0" status="release" pubdate="20150526223843" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-ebean" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="119">
+			<revision name="3.0.0" status="release" pubdate="20160303110513" resolver="sbt-plugin-releases" artresolver="sbt-plugin-releases" homepage="https://github.com/playframework/play-ebean" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="true" searched="true" default="false" conf="compile, default(compile)" position="119">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="no" details="" size="2355" time="0" location="/home/lunwenh/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-play-ebean/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/1.0.0/ivys/ivy.xml"/>
-				<caller organisation="default" name="ssnetwork-build" conf="compile" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<metadata-artifact status="successful" details="" size="2356" time="2245" location="/home/lunwenh/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-play-ebean/ivy-3.0.0.xml" searched="true" original-local-location="/home/lunwenh/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-play-ebean/ivy-3.0.0.xml.original" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/3.0.0/ivys/ivy.xml"/>
+				<caller organisation="default" name="ssnetwork-build" conf="compile" rev="3.0.0" rev-constraint-default="3.0.0" rev-constraint-dynamic="3.0.0" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
 				<artifacts>
-					<artifact name="sbt-play-ebean" type="jar" ext="jar" status="no" details="" size="25260" time="0" location="/home/lunwenh/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-play-ebean/jars/sbt-play-ebean-1.0.0.jar">
-						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/1.0.0/jars/sbt-play-ebean.jar"/>
+					<artifact name="sbt-play-ebean" type="jar" ext="jar" status="successful" details="" size="25254" time="2887" location="/home/lunwenh/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-play-ebean/jars/sbt-play-ebean-3.0.0.jar">
+						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/3.0.0/jars/sbt-play-ebean.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -64,7 +64,7 @@
 			<revision name="1.1.0" status="release" pubdate="20150527125634" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-enhancer" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="122">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="1975" time="0" location="/home/lunwenh/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-play-enhancer/ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-enhancer/scala_2.10/sbt_0.13/1.1.0/ivys/ivy.xml"/>
-				<caller organisation="com.typesafe.sbt" name="sbt-play-ebean" conf="compile" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.0.0" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<caller organisation="com.typesafe.sbt" name="sbt-play-ebean" conf="compile" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="3.0.0" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
 				<caller organisation="default" name="ssnetwork-build" conf="compile" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
 				<artifacts>
 					<artifact name="sbt-play-enhancer" type="jar" ext="jar" status="no" details="" size="25408" time="0" location="/home/lunwenh/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-play-enhancer/jars/sbt-play-enhancer-1.1.0.jar">
@@ -100,13 +100,13 @@
 			</revision>
 		</module>
 		<module organisation="org.avaje.ebeanorm" name="avaje-ebeanorm-agent">
-			<revision name="4.5.3" status="release" pubdate="20150420015655" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.avaje.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="120">
+			<revision name="4.9.1" status="release" pubdate="20160119174219" resolver="public" artresolver="public" homepage="http://ebean-orm.github.io/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="120">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="5303" time="0" location="/home/lunwenh/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/ivy-4.5.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.5.3/avaje-ebeanorm-agent-4.5.3.pom"/>
-				<caller organisation="com.typesafe.sbt" name="sbt-play-ebean" conf="compile" rev="4.5.3" rev-constraint-default="4.5.3" rev-constraint-dynamic="4.5.3" callerrev="1.0.0"/>
+				<metadata-artifact status="successful" details="" size="3590" time="119" location="/home/lunwenh/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/ivy-4.9.1.xml" searched="true" original-local-location="/home/lunwenh/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/ivy-4.9.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.9.1/avaje-ebeanorm-agent-4.9.1.pom"/>
+				<caller organisation="com.typesafe.sbt" name="sbt-play-ebean" conf="compile" rev="4.9.1" rev-constraint-default="4.9.1" rev-constraint-dynamic="4.9.1" callerrev="3.0.0"/>
 				<artifacts>
-					<artifact name="avaje-ebeanorm-agent" type="jar" ext="jar" status="no" details="" size="218641" time="0" location="/home/lunwenh/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.5.3.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.5.3/avaje-ebeanorm-agent-4.5.3.jar"/>
+					<artifact name="avaje-ebeanorm-agent" type="jar" ext="jar" status="successful" details="" size="212851" time="465" location="/home/lunwenh/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-4.9.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.9.1/avaje-ebeanorm-agent-4.9.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -115,7 +115,7 @@
 			<revision name="1.0" status="release" pubdate="20060822124912" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jcp.org/en/jsr/detail?id=220" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="121">
 				<license name="Common Development and Distribution License (CDDL) v1.0" url="http://www.sun.com/cddl/cddl.html"/>
 				<metadata-artifact status="no" details="" size="2872" time="0" location="/home/lunwenh/.ivy2/cache/javax.persistence/persistence-api/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/persistence/persistence-api/1.0/persistence-api-1.0.pom"/>
-				<caller organisation="org.avaje.ebeanorm" name="avaje-ebeanorm-agent" conf="default, compile, runtime, master" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="4.5.3"/>
+				<caller organisation="org.avaje.ebeanorm" name="avaje-ebeanorm-agent" conf="default, compile, runtime, master" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="4.9.1"/>
 				<artifacts>
 					<artifact name="persistence-api" type="jar" ext="jar" status="no" details="" size="52150" time="0" location="/home/lunwenh/.ivy2/cache/javax.persistence/persistence-api/jars/persistence-api-1.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/persistence/persistence-api/1.0/persistence-api-1.0.jar"/>
@@ -630,7 +630,7 @@
 			<revision name="2.5.1" status="release" pubdate="20160329134812" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="3442" time="0" location="/home/lunwenh/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.play/sbt-plugin/ivy-2.5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.play/sbt-plugin/scala_2.10/sbt_0.13/2.5.1/ivys/ivy.xml"/>
-				<caller organisation="com.typesafe.sbt" name="sbt-play-ebean" conf="compile" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="1.0.0" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<caller organisation="com.typesafe.sbt" name="sbt-play-ebean" conf="compile" rev="2.5.0" rev-constraint-default="2.5.0" rev-constraint-dynamic="2.5.0" callerrev="3.0.0" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
 				<caller organisation="default" name="ssnetwork-build" conf="compile" rev="2.5.1" rev-constraint-default="2.5.1" rev-constraint-dynamic="2.5.1" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
 				<artifacts>
 					<artifact name="sbt-plugin" type="jar" ext="jar" status="no" details="" size="379074" time="0" location="/home/lunwenh/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.play/sbt-plugin/jars/sbt-plugin-2.5.1.jar">
@@ -638,9 +638,9 @@
 					</artifact>
 				</artifacts>
 			</revision>
-			<revision name="2.4.0" evicted="latest-revision" evicted-reason="" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" conf="compile, default(compile)" position="-1">
+			<revision name="2.5.0" evicted="latest-revision" evicted-reason="" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" conf="compile, default(compile)" position="-1">
 				<evicted-by rev="2.5.1"/>
-				<caller organisation="com.typesafe.sbt" name="sbt-play-ebean" conf="compile" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="1.0.0" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<caller organisation="com.typesafe.sbt" name="sbt-play-ebean" conf="compile" rev="2.5.0" rev-constraint-default="2.5.0" rev-constraint-dynamic="2.5.0" callerrev="3.0.0" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
 				<artifacts>
 				</artifacts>
 			</revision>
@@ -1697,10 +1697,10 @@
 			<revision name="1.3.0" status="release" pubdate="20150508084611" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="9">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="2875" time="0" location="/home/lunwenh/.ivy2/cache/com.typesafe/config/ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/config/1.3.0/config-1.3.0.pom"/>
+				<caller organisation="com.typesafe.sbt" name="sbt-play-ebean" conf="compile" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="3.0.0"/>
 				<caller organisation="com.typesafe.akka" name="akka-actor_2.10" conf="default, compile, runtime, master" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="2.3.9"/>
 				<caller organisation="com.typesafe.akka" name="akka-actor_2.10" conf="compile, runtime" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="2.3.11"/>
 				<caller organisation="com.typesafe.play" name="play-iteratees_2.10" conf="compile, runtime" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="2.4.4"/>
-				<caller organisation="com.typesafe.sbt" name="sbt-play-ebean" conf="compile" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="1.0.0"/>
 				<caller organisation="com.typesafe.play" name="sbt-plugin" conf="compile" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="2.5.1"/>
 				<artifacts>
 					<artifact name="config" type="bundle" ext="jar" status="no" details="" size="277782" time="0" location="/home/lunwenh/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar">

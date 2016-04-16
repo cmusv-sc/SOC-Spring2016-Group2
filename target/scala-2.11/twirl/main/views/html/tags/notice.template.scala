@@ -62,7 +62,7 @@ Seq[Any](format.raw/*1.51*/("""
 object notice extends notice_Scope0.notice
               /*
                   -- GENERATED --
-                  DATE: Fri Apr 15 16:18:09 PDT 2016
+                  DATE: Sat Apr 16 09:09:40 PDT 2016
                   SOURCE: /home/lunwenh/workspace/SSNetwork/app/views/tags/notice.scala.html
                   HASH: f4aecf48feb51005fa66dd652baa090208cc7b2e
                   MATRIX: 789->1|933->50|960->52|972->57|986->63|995->69|1020->86|1059->88|1090->93|1140->118|1173->131|1204->136|1230->148|1256->165|1296->167|1328->172|1379->197|1414->211|1446->216|1472->228|1496->243|1536->245|1568->250|1617->273|1649->284|1681->289

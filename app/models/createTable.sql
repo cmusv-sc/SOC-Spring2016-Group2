@@ -1,52 +1,53 @@
-/**
- *This file defines the schema of database tables,
- *How to run: mysql -u username -ppassword < createTable.sql
- **/
+drop database if exists ssnetwork;
 
-DROP DATABASE IF EXISTS ssnetwork;
-
-CREATE DATABASE ssnetwork;
+create database ssnetwork;
 
 use ssnetwork;
 
-CREATE TABLE IF NOT EXISTS publication (
-    id INTEGER PRIMARY KEY AUTO_INCREMENT, 
-    pubkey VARCHAR(50),
-    title VARCHAR(250), 
-    editor VARCHAR(100), 
-    year VARCHAR(50), 
-    isbn VARCHAR(50), 
-    url TEXT, 
-    volume VARCHAR(50), 
-    pages VARCHAR(50), 
-    mdate VARCHAR(50), 
-    series VARCHAR(50), 
-    publisher VARCHAR(50), 
-    booktitle VARCHAR(50), 
-    crossref VARCHAR(50), 
-    ee TEXT
-);
-
-CREATE TABLE IF NOT EXISTS author (
-    id INTEGER PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(50)
-);
-
-CREATE TABLE IF NOT EXISTS publication_author (
-    publicationID INTEGER,
-    authorID INTEGER
+create table author (
+  id                            bigint auto_increment not null,
+  name                          varchar(255),
+  constraint pk_author primary key (id)
 );
 
 create table person (
-  id INTEGER PRIMARY KEY AUTO_INCREMENT,
-  name VARCHAR(64),
-  dueDate DATETIME(6)
+  id                            bigint auto_increment not null,
+  name                          varchar(255),
+  due_date                      datetime,
+  constraint pk_person primary key (id)
+);
+
+create table publication (
+  id                            bigint auto_increment not null,
+  pubkey                        varchar(255),
+  title                         varchar(255),
+  editor                        varchar(255),
+  year                          varchar(255),
+  isbn                          varchar(255),
+  url                           varchar(255),
+  volume                        varchar(255),
+  pages                         varchar(255),
+  mdate                         varchar(255),
+  series                        varchar(255),
+  publisher                     varchar(255),
+  booktitle                     varchar(255),
+  crossref                      varchar(255),
+  ee                            varchar(255),
+  constraint pk_publication primary key (id)
+);
+
+create table publication_author (
+  id                            bigint auto_increment not null,
+  publication_id                bigint,
+  author_id                     bigint,
+  constraint pk_publication_author primary key (id)
 );
 
 create table search (
-  id INTEGER PRIMARY KEY AUTO_INCREMENT,
-  keywords  VARCHAR(64),
-  searchType VARCHAR(255)
+  id                            bigint auto_increment not null,
+  keywords                      varchar(255),
+  search_type                   varchar(255),
+  constraint pk_search primary key (id)
 );
 
 commit;

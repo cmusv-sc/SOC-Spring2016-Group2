@@ -9,8 +9,12 @@ import java.util.List;
 
 @Entity(name="publication_author")
 public class PublicationAuthor extends Model {
+
 	public long publicationID;
 	public long authorID;
+
+	@Id
+	public Long id;
 	
 	public PublicationAuthor(long publicationID, long authorID) {
 		this.publicationID = publicationID;
@@ -43,8 +47,7 @@ public class PublicationAuthor extends Model {
 	public void setauthorID(long authorID) {
 		this.authorID = authorID;
 	}
-	@Id
-	public Long id;
+	
 	public Long getId() {
 		return id;
 	}
@@ -52,6 +55,7 @@ public class PublicationAuthor extends Model {
 	public void setId(Long id) {
 		this.id = id;
 	}
+
 	public static Model.Finder<Long,PublicationAuthor> find = new Model.Finder(Long.class, PublicationAuthor.class);
 
 	public static List<PublicationAuthor> find(Long publicationID, Long authorID){

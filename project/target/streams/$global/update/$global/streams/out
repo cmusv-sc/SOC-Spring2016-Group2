@@ -2414,51 +2414,78 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.2->com.nativelibs4java#jnaerator-runtime;0.12 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;1.0.0 [compile->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-play-ebean;1.0.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-play-ebean;1.0.0 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-play-ebean;1.0.0[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe.sbt#sbt-play-ebean;1.0.0 in sbt-chain[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3[0m
-[0m[[0mdebug[0m] [0m	found org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;3.0.0 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-play-ebean;3.0.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-play-ebean;3.0.0 {compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-play-ebean;3.0.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.typesafe.sbt#sbt-play-ebean;3.0.0 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/3.0.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/3.0.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for com.typesafe.sbt#sbt-play-ebean;3.0.0[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/3.0.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: found md file for com.typesafe.sbt#sbt-play-ebean;3.0.0[0m
+[0m[[0mdebug[0m] [0m		=> https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/3.0.0/ivys/ivy.xml (3.0.0)[0m
+[0m[[0mdebug[0m] [0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/3.0.0/ivys/ivy.xml ...[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/3.0.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/3.0.0/ivys/ivy.xml.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/3.0.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.sbt#sbt-play-ebean;3.0.0!ivy.xml(ivy.original) (2245ms)[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.sbt#sbt-play-ebean;3.0.0 in sbt-plugin-releases[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 {compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.9.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.9.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.9.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.9.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: no ivy file found for org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1[0m
+[0m[[0mdebug[0m] [0m		tried /home/lunwenh/.ivy2/local/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.9.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.9.1/avaje-ebeanorm-agent-4.9.1.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1[0m
+[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.9.1/avaje-ebeanorm-agent-4.9.1.pom (4.9.1)[0m
+[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.9.1/avaje-ebeanorm-agent-4.9.1.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.9.1/avaje-ebeanorm-agent-4.9.1.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.9.1/avaje-ebeanorm-agent-4.9.1.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.9.1/avaje-ebeanorm-agent-4.9.1.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1!avaje-ebeanorm-agent.pom(pom.original) (119ms)[0m
+[0m[[0minfo[0m] [0mResolving org.avaje#avaje-javaparent;2.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.avaje#avaje-javaparent;2.1 {}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.avaje#avaje-javaparent;2.1[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.9.1/jars/avaje-ebeanorm-agent.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.9.1/jars/avaje-ebeanorm-agent.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.9.1/jars/avaje-ebeanorm-agent.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.9.1/jars/avaje-ebeanorm-agent.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/lunwenh/.ivy2/local/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.9.1/jars/avaje-ebeanorm-agent.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.9.1/avaje-ebeanorm-agent-4.9.1.jar[0m
+[0m[[0mdebug[0m] [0m	found org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving javax.persistence#persistence-api;1.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: javax.persistence#persistence-api;1.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: javax.persistence#persistence-api;1.0[0m
 [0m[[0mdebug[0m] [0m	found javax.persistence#persistence-api;1.0 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-play-enhancer;1.1.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-play-enhancer;1.1.0 {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.sbt#sbt-play-enhancer;1.1.0[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.sbt#sbt-play-enhancer;1.1.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-enhancer;1.1.0 ...[0m
@@ -2468,8 +2495,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.javassist#javassist;3.18.2-GA ...[0m
@@ -2482,10 +2507,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.4.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe.play#sbt-plugin;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 {compile=[default(compile)]}[0m
@@ -4339,33 +4362,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.2->com.nativelibs4java#jnaerator-runtime;0.12 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;1.0.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;3.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->runtime][0m
@@ -4373,16 +4385,12 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.4.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe.play#sbt-plugin;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->default(compile)][0m
@@ -6223,33 +6231,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.2->com.nativelibs4java#jnaerator-runtime;0.12 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;1.0.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;3.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->runtime][0m
@@ -6257,16 +6254,12 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.4.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe.play#sbt-plugin;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->default(compile)][0m
@@ -8936,33 +8929,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.2->com.nativelibs4java#jnaerator-runtime;0.12 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;1.0.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;3.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->runtime][0m
@@ -8970,16 +8952,12 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.4.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe.play#sbt-plugin;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->default(compile)][0m
@@ -11430,33 +11408,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.2->com.nativelibs4java#jnaerator-runtime;0.12 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;1.0.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;3.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->runtime][0m
@@ -11464,16 +11431,12 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.4.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe.play#sbt-plugin;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->default(compile)][0m
@@ -13316,33 +13279,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.nativelibs4java#jnaerator-runtime;0.12->net.java.dev.jna#jna;4.1.0 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.irundaia.sbt#sbt-sassify;1.4.2->com.nativelibs4java#jnaerator-runtime;0.12 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;1.0.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3->javax.persistence#persistence-api;1.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe#config;1.3.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-play-ebean;3.0.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1->javax.persistence#persistence-api;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe#config;1.3.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe.sbt#sbt-play-enhancer;1.1.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->runtime][0m
@@ -13350,16 +13302,12 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-enhancer;1.1.0->org.javassist#javassist;3.18.2-GA [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-enhancer;1.1.0->com.typesafe.play#play-enhancer;1.1.0 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.4.0 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.4 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;1.0.0->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe.play#sbt-plugin;2.5.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-play-ebean;3.0.0->com.typesafe.play#sbt-plugin;2.5.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#ssnetwork-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0->org.scalaz#scalaz-core_2.10;7.1.0 [compile->default(compile)][0m
@@ -14087,7 +14035,12 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-digest;1.1.0!sbt-digest.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-mocha;1.1.0!sbt-mocha.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.irundaia.sbt#sbt-sassify;1.4.2!sbt-sassify.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-play-ebean;1.0.0!sbt-play-ebean.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/3.0.0/jars/sbt-play-ebean.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/3.0.0/jars/sbt-play-ebean.jar ...[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/3.0.0/jars/sbt-play-ebean.jar[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/3.0.0/jars/sbt-play-ebean.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/3.0.0/jars/sbt-play-ebean.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.sbt#sbt-play-ebean;3.0.0!sbt-play-ebean.jar (2887ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbteclipse#sbteclipse-plugin;4.0.0!sbteclipse-plugin.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-play-enhancer;1.1.0!sbt-play-enhancer.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#sbt-routes-compiler_2.10;2.5.1!sbt-routes-compiler_2.10.jar[0m
@@ -14201,7 +14154,12 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-stm#scala-stm_2.10;0.7!scala-stm_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.nativelibs4java#ochafik-util;0.12!ochafik-util.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.java.dev.jna#jna;4.1.0!jna.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3!avaje-ebeanorm-agent.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.9.1/avaje-ebeanorm-agent-4.9.1.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.9.1/avaje-ebeanorm-agent-4.9.1.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.9.1/avaje-ebeanorm-agent-4.9.1.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.9.1/avaje-ebeanorm-agent-4.9.1.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.9.1/avaje-ebeanorm-agent-4.9.1.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.avaje.ebeanorm#avaje-ebeanorm-agent;4.9.1!avaje-ebeanorm-agent.jar (465ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] javax.persistence#persistence-api;1.0!persistence-api.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-enhancer;1.1.0!play-enhancer.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.javassist#javassist;3.18.2-GA!javassist.jar(bundle)[0m
@@ -14257,7 +14215,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.11!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.6!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 13653ms :: artifacts dl 205ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 28859ms :: artifacts dl 4392ms[0m
 [0m[[0mdebug[0m] [0m	report for default#ssnetwork-build;0.1-SNAPSHOT compile produced in /home/lunwenh/workspace/SSNetwork/project/target/resolution-cache/reports/default-ssnetwork-build-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#ssnetwork-build;0.1-SNAPSHOT runtime produced in /home/lunwenh/workspace/SSNetwork/project/target/resolution-cache/reports/default-ssnetwork-build-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#ssnetwork-build;0.1-SNAPSHOT test produced in /home/lunwenh/workspace/SSNetwork/project/target/resolution-cache/reports/default-ssnetwork-build-test.xml[0m
@@ -14271,5 +14229,5 @@
 [0m[[0mdebug[0m] [0m	report for default#ssnetwork-build;0.1-SNAPSHOT docs produced in /home/lunwenh/workspace/SSNetwork/project/target/resolution-cache/reports/default-ssnetwork-build-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#ssnetwork-build;0.1-SNAPSHOT pom produced in /home/lunwenh/workspace/SSNetwork/project/target/resolution-cache/reports/default-ssnetwork-build-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#ssnetwork-build;0.1-SNAPSHOT scala-tool produced in /home/lunwenh/workspace/SSNetwork/project/target/resolution-cache/reports/default-ssnetwork-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (13653ms resolve - 205ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (28859ms resolve - 4392ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

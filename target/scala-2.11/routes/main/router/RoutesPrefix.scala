@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/lunwenh/workspace/SSNetwork/conf/routes
-// @DATE:Fri Apr 15 16:18:10 PDT 2016
+// @DATE:Sat Apr 16 09:09:41 PDT 2016
 
 
 package router {
