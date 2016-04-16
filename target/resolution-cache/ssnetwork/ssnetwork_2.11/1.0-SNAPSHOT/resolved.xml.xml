@@ -4,7 +4,7 @@
 		module="ssnetwork_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20160416103052"
+		publication="20160416133914"
 	>
 		<description>
 		SSNetwork
@@ -36,7 +36,7 @@
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.7" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-enhancer" rev="1.1.0" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="twirl-api_2.11" rev="1.1.1" conf="compile->default(compile)"/>
-		<dependency org="com.typesafe.play" name="play-ebean_2.11" rev="3.0.0" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-ebean_2.11" rev="1.0.0" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-server_2.11" rev="2.5.1" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-test_2.11" rev="2.5.1" conf="test->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-omnidoc_2.11" rev="2.5.1" conf="docs->default(compile)"/>

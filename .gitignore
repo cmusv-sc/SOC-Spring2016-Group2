@@ -10,7 +10,7 @@
 bin/
 
 #ignore target directory
-target/
+target
 
 #ignore logs directory 
-logs/
+logs
