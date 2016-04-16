@@ -8,3 +8,6 @@ jdk:
 
 before_script:
     mysql -u root < ./app/models/createTable.sql
+
+script:
+    activator run
