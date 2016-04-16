@@ -3,11 +3,13 @@
  *How to run: mysql -u username -ppassword < createTable.sql
  **/
 
-CREATE DATABASE IF NOT EXISTS ssnetwork;
+DROP DATABASE IF EXISTS ssnetwork;
+
+CREATE DATABASE ssnetwork;
 
 use ssnetwork;
 
-CREATE TABLE IF NOT EXISTS publications (
+CREATE TABLE IF NOT EXISTS publication (
     id INTEGER PRIMARY KEY AUTO_INCREMENT, 
     pubkey VARCHAR(50),
     title VARCHAR(250), 
@@ -25,7 +27,7 @@ CREATE TABLE IF NOT EXISTS publications (
     ee TEXT
 );
 
-CREATE TABLE IF NOT EXISTS authors (
+CREATE TABLE IF NOT EXISTS author (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50)
 );
@@ -35,11 +37,10 @@ CREATE TABLE IF NOT EXISTS publication_author (
     authorID INTEGER
 );
 
-
 create table person (
   id INTEGER PRIMARY KEY AUTO_INCREMENT,
   name VARCHAR(64),
-  dueDate DATE
+  dueDate DATETIME(6)
 );
 
 create table search (
@@ -47,6 +48,5 @@ create table search (
   keywords  VARCHAR(64),
   searchType VARCHAR(255)
 );
-
 
 commit;

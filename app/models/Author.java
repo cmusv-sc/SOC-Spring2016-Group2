@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-@Entity(name="authors")
+@Entity(name="author")
 public class Author extends Model {
 	
 	public String name;
@@ -21,6 +21,7 @@ public class Author extends Model {
 	}
 
 	public Author() {
+		this.name = "";
 	}
 
 	public String getName() {

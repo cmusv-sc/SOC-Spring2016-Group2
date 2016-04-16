@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * This class defines one record in publications table
  * */
-@Entity(name="publications")
+@Entity(name="publication")
 public class Publication extends Model {
 	@Id
 	public Long id;
