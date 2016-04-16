@@ -22,12 +22,12 @@ activator run
 ```
 
 Or
-'''bash
+```bash
 git clone htts://github.com/helunwencser/SSNetwork.git
 cd SSNetwork
 sudo chmod +x ./run.sh
 ./run.sh
-'''
+```
 
 ## Convert the project into eclipse project
 
