@@ -6,5 +6,6 @@ scala:
 jdk:
     - oraclejdk8
 
-before_install:
-    - mysql < ./app/models/createTable.sql
+script:
+    - sudo chmod +x ./run.sh
+    - ./run.sh
