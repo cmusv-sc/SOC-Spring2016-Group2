@@ -6,6 +6,5 @@ scala:
 jdk:
     - oraclejdk8
 
-before_script:
-    - "mysql < ./app/models/createTableTravis.sql"
-    - "mysql -e 'use ssnetwork; show tables;'"
+script:
+    - sbt test
