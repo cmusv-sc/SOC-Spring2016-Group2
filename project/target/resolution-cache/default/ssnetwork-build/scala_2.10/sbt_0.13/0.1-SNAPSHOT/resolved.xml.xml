@@ -4,7 +4,7 @@
 		module="ssnetwork-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20160416141922"
+		publication="20160417084518"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>
