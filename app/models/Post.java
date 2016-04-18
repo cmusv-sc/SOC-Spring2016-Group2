@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
@@ -39,7 +40,7 @@ public class Post extends Model {
     @Formats.DateTime(pattern="dd/MM/yyyy")
     public Date postAt = new Date();
     
-    @OneToMany(fetch = FetchType.EAGER)
+    @OneToMany(fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
     @JoinColumn(name = "commentId", referencedColumnName = "id")
     public List<Comment> comments;
 

@@ -145,5 +145,7 @@
 	<classpathentry kind="lib" path="/home/lunwenh/.ivy2/cache/org.seleniumhq.selenium/selenium-leg-rc/jars/selenium-leg-rc-2.48.2.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/home/lunwenh/workspace/SSNetwork/lib/common-util.jar"/>
+	<classpathentry kind="lib" path="/home/lunwenh/workspace/SSNetwork/lib/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="/home/lunwenh/workspace/SSNetwork/lib/gson-2.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
