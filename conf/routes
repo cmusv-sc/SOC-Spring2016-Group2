@@ -28,4 +28,8 @@ GET    /paper/:year                  controllers.Application.getPaperByYear(year
 GET    /paper/:title                controllers.Application.getPaperByTitle(title:String)
 
 
+#Post Related REST API
+POST	/post						controllers.PostController.addPost()
+GET		/posts/:id					controllers.PostController.getPostById(id : Long)
+GET		/posts						controllers.PostController.getPosts()
 
