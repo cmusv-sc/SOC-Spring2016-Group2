@@ -3,7 +3,9 @@ package models;
 import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 import com.avaje.ebean.Model;
@@ -22,14 +24,12 @@ public class Comment extends Model {
     public Date commentAt;
     
     /* who created this comment */
-    public String commentBy;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "authorId", referencedColumnName = "id")
+    public User author;
     
     /* the content of this comment */
     public String content;
-    
-    /* the post this comment belongs to */
-    @ManyToOne
-    public Post post;
     
     /* when the post is a question,
      * if this comment is selected as answer
@@ -39,24 +39,17 @@ public class Comment extends Model {
     public static Finder<Long, Comment> find = new Finder<Long, Comment>(Comment.class);
     
     public Comment() {
-    	this.commentAt = new Date();
-    	this.commentBy = "";
-    	this.post = null;
-    	this.content = "";
-    	this.isAnswer = false;
     }
     
     public Comment(
     		Date commentAt,
-    		String commentBy,
+    		User author,
     		String content,
-    		Post post,
     		boolean isAnswer
     		) {
     	this.commentAt = commentAt;
-    	this.commentBy = commentBy;
+    	this.author = author;
     	this.content = content;
-    	this.post = post;
     	this.isAnswer = isAnswer;
     }
 
@@ -76,28 +69,12 @@ public class Comment extends Model {
 		this.commentAt = commentAt;
 	}
 
-	public String getCommentBy() {
-		return commentBy;
-	}
-
-	public void setCommentBy(String commentBy) {
-		this.commentBy = commentBy;
-	}
-
 	public String getContent() {
 		return content;
 	}
 
 	public void setContent(String content) {
 		this.content = content;
-	}
-
-	public Post getPost() {
-		return post;
-	}
-
-	public void setPost(Post post) {
-		this.post = post;
 	}
 
 	public boolean isAnswer() {
@@ -116,9 +93,17 @@ public class Comment extends Model {
 		Comment.find = find;
 	}
 
+	public User getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(User author) {
+		this.author = author;
+	}
+
 	@Override
 	public String toString() {
-		return "Comment [id=" + id + ", commentAt=" + commentAt + ", commentBy=" + commentBy + ", content=" + content
-				+ ", post=" + post + ", isAnswer=" + isAnswer + "]";
+		return "Comment [id=" + id + ", commentAt=" + commentAt + ", author=" + author + ", content=" + content
+				+ ", isAnswer=" + isAnswer + "]";
 	}
 }

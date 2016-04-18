@@ -30,6 +30,7 @@ GET    /paper/:title                controllers.Application.getPaperByTitle(titl
 
 #Post Related REST API
 POST	/post						controllers.PostController.addPost()
-GET		/posts/:id					controllers.PostController.getPostById(id : Long)
+GET		/posts/getPosts/:postId		controllers.PostController.getPostById(postId : Long)
 GET		/posts						controllers.PostController.getPosts()
-
+POST	/post/addComment			controllers.PostController.addComment()
+GET		/post/getComments/:postId	controllers.PostController.getComments(postId : Long)

@@ -8,7 +8,9 @@ import java.util.*;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.google.gson.Gson;
 
+import models.Comment;
 import models.Post;
+import models.User;
 import play.mvc.Controller;
 import play.mvc.Result;
 
@@ -24,7 +26,11 @@ public class PostController extends Controller {
 		}
 		String title = jsonNode.path("title").asText();
 		String content = jsonNode.path("content").asText();
-		String author = jsonNode.path("author").asText();
+		long authorId = jsonNode.path("authorId").asLong();
+		User author = User.find.byId(authorId);
+		if(author == null) {
+			return Common.badRequestWrapper("Cannot find author");
+		}
 		boolean isQuestion = jsonNode.path("isQuestion").asBoolean();
 		DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
 		Date postAt = new Date();
@@ -34,14 +40,13 @@ public class PostController extends Controller {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 		new Post(title, content, author, isQuestion, postAt).save();
-		return created(new Gson().toJson("success"));
+		return ok(new Gson().toJson("success"));
 	}
 	
 	/* find post by id */
-	public Result getPostById(Long id) {
-		Post post = Post.find.byId(id);
+	public Result getPostById(Long postId) {
+		Post post = Post.find.byId(postId);
 		if(post == null) {
 			return Common.badRequestWrapper("no record found");
 		}
@@ -56,4 +61,57 @@ public class PostController extends Controller {
 		}
 		return created(new Gson().toJson(posts));
 	}
+	
+	public Result addComment() {
+		JsonNode jsonNode = request().body().asJson();
+		if(jsonNode == null) {
+			return Common.badRequestWrapper("Comment is empty");
+		}
+		long postId = jsonNode.path("postId").asLong();
+		Post post = Post.find.byId(postId);
+		if(post == null) {
+			return Common.badRequestWrapper("Cannot find post");
+		}
+		DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+		Date commentAt = new Date();
+		try {
+			commentAt = dateFormat.parse(jsonNode.path("commentAt").asText());
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return Common.badRequestWrapper("Invalid date format, please sure the format is 'dd-MM-yyyy'");
+		}
+		long authorId = jsonNode.path("authorId").asLong();
+		User author = User.find.byId(authorId);
+		if(author == null) {
+			return Common.badRequestWrapper("Cannot find author");
+		}
+		String content = jsonNode.path("content").asText();
+		boolean isAnswer = jsonNode.path("isAnswer").asBoolean();
+		Comment comment = new Comment(
+				commentAt,
+				author,
+				content,
+				isAnswer
+				);
+		comment.save();
+		post.getComments().add(comment);
+		post.save();
+		
+		return ok(new Gson().toJson("success"));
+	}
+	
+	public Result getComments(Long postId) {
+		Post post = Post.find.byId(postId);
+		if(post == null) {
+			return Common.badRequestWrapper("Cannot find post");
+		}
+		List<Comment> comments = post.getComments();
+		return created(new Gson().toJson(comments));
+	}
 }
+
+
+
+
+

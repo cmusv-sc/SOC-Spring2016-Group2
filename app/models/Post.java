@@ -1,9 +1,15 @@
 package models;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 import com.avaje.ebean.Model;
 import play.data.format.Formats;
@@ -22,7 +28,9 @@ public class Post extends Model {
     public String content;
     
     /* the author of post */
-    public String author;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "authorId", referencedColumnName = "id")
+    public User author;
     
     /* if the post is a question */
     public boolean isQueustion;
@@ -30,21 +38,20 @@ public class Post extends Model {
     /* post created at */
     @Formats.DateTime(pattern="dd/MM/yyyy")
     public Date postAt = new Date();
+    
+    @OneToMany(fetch = FetchType.EAGER)
+    @JoinColumn(name = "commentId", referencedColumnName = "id")
+    public List<Comment> comments;
 
     public static Finder<Long, Post> find = new Finder<Long, Post>(Post.class);
     
     public Post() {
-    	this.title = "";
-    	this.content = "";
-    	this.author = "";
-    	this.isQueustion = false;
-    	this.postAt = new Date();
     }
     
     public Post(
     		String title, 
     		String content, 
-    		String author, 
+    		User author, 
     		boolean isQuestion, 
     		Date postAt
     		) {
@@ -53,6 +60,7 @@ public class Post extends Model {
     	this.author = author;
     	this.isQueustion = isQuestion;
     	this.postAt = postAt;
+    	this.comments = new ArrayList<Comment>();
     }
     
 	public Long getId() {
@@ -71,7 +79,7 @@ public class Post extends Model {
 		this.content = content;
 	}
 
-	public String getAuthor() {
+	public User getAuthor() {
 		return author;
 	}
 
@@ -81,7 +89,7 @@ public class Post extends Model {
 				+ isQueustion + ", postAt=" + postAt + "]";
 	}
 
-	public void setAuthor(String author) {
+	public void setAuthor(User author) {
 		this.author = author;
 	}
 
@@ -100,4 +108,30 @@ public class Post extends Model {
 	public void setQueustion(boolean isQueustion) {
 		this.isQueustion = isQueustion;
 	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public List<Comment> getComments() {
+		return comments;
+	}
+
+	public void setComments(List<Comment> comments) {
+		this.comments = comments;
+	}
+
+	public static Finder<Long, Post> getFind() {
+		return find;
+	}
+
+	public static void setFind(Finder<Long, Post> find) {
+		Post.find = find;
+	}
+	
+	
 }
