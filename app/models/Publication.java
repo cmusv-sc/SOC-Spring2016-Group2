@@ -251,4 +251,11 @@ public class Publication extends Model {
 			return null;
 		}
 	}
+
+
+	public static List<Publication>  findPublicationById(Long publicationId) {
+
+    			return find.where().eq("id",publicationId).findList();
+
+    }
 }

@@ -25,7 +25,6 @@ POST    /person/uploadPic           controllers.Application.upload()
 
 ###Sprint1
 GET    /paper/:year                  controllers.Application.getPaperByYear(year:Integer)
-GET    /paper/:title                controllers.Application.getPaperByTitle(title:String)
-
-
+GET    /paper/:title                 controllers.Application.getPaperByTitle(title:String)
+GET    /userprofile/:userName		 controllers.Application.getUserProfile(userName:String)
 

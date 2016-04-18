@@ -49,7 +49,7 @@ public class Author extends Model {
 	}
 	
 	public static Finder<Long, Author>  find = new Finder<Long, Author>(Long.class, Author.class);
-	
+
     public static List<Author> find(List<PublicationAuthor> ids){
 		List<Author> authors=new ArrayList<Author>();
 		for(PublicationAuthor id: ids){
@@ -60,8 +60,20 @@ public class Author extends Model {
 		}
 		return authors;
 	}
-    
+
 	public static List<Author> findAll(){
 		return find.all();
+	}
+
+	public static Long getAuthorIdByAuthorName(String AuthorName){
+		List<Author> authors = find.all();
+
+		for(Author author : authors){
+			if(author.getName().equals(AuthorName)){
+            	return author.getId();
+            }
+		}
+
+		return (long) -1;
 	}
 }

@@ -220,4 +220,36 @@ public class Application extends Controller {
 //    }
 
 
+      public Result getUserProfile(String userName){
+         List<ObjectNode> results = new ArrayList<ObjectNode>();
+         Long authorId = Author.getAuthorIdByAuthorName(userName);
+
+
+         List<PublicationAuthor> publicationAuthors = PublicationAuthor.find(null,authorId);
+
+         for(PublicationAuthor publicationAuthor : publicationAuthors){
+               List<PublicationAuthor> publicationAuthorsOthers
+                                      =  PublicationAuthor.find(publicationAuthor.getPublicationID(),null);
+               List<Author> collaborators = Author.find(publicationAuthorsOthers);
+               ObjectNode result = Json.newObject();
+               for(Author author : collaborators) {
+                     result.put("collaborator",author.getName());
+               }
+               results.add(result);
+         }
+
+         for(PublicationAuthor publicationAuthor : publicationAuthors){
+                List<Publication> publications =
+                                    Publication.findPublicationById(publicationAuthor.getPublicationID());
+                for(Publication publication : publications) {
+                     ObjectNode result=Json.newObject();
+                             result.put("publication",publication.toString());
+                             results.add(result);
+                }
+
+         }
+        return ok(Json.toJson(results));
+
+      }
+
 }
