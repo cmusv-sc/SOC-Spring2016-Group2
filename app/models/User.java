@@ -4,7 +4,6 @@ import javax.persistence.Entity;
 import javax.persistence.*;
 
 import com.avaje.ebean.Model;
-import com.avaje.ebean.Model.Finder;
 
 @Entity(name="user")
 public class User extends Model{

@@ -109,6 +109,23 @@ public class PostController extends Controller {
 		List<Comment> comments = post.getComments();
 		return created(new Gson().toJson(comments));
 	}
+	
+	public Result setAnswer(Long postId, Long commentId) {
+		Post post = Post.find.byId(postId);
+		if(post == null) {
+			return Common.badRequestWrapper("Cannot find post");
+		}
+		List<Comment> comments = post.getComments();
+		for(Comment comment : comments) {
+			if(comment.getId() == commentId) {
+				comment.setAnswer(true);
+				comment.save();
+				post.save();
+				return created(new Gson().toJson("success"));
+			}
+		}
+		return Common.badRequestWrapper("Cannot find comment");
+	}
 }
 
 
