@@ -5,7 +5,7 @@
               <header>
 
               <h1>Add Friends</h1>
-              <button class="button" onclick="window.location.href='/friendlisthome'">Back
+              <button class="btn btn-primary btn-xs button" onclick="window.location.href='/friendlisthome'">Back
               </button>
 
               </header>
@@ -19,8 +19,8 @@
 </template>
 
 <template name="searchFriend">
-        <input type='text' class='search_box' style="font-size:16pt; height:50px; width:300px;">
-        <button id='search_botton' style="font-size:12pt; height:30px; width: 80px;"> Search
+        <input type='text' class='search_box'>
+        <button id='search_botton' class='btn-primary btn-xs'> Search
         </button>
 </template>
 
@@ -38,7 +38,7 @@
 
         <ul>
               {{> person context}}
-        </ul>
+        </ul> 
         <button class="button2">Send Request</button>
       </div>
     </div>

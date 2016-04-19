@@ -48,17 +48,14 @@ Router.route('/friendlisthome', function () {
 
 Router.route('/addFriend', function () {
     this.render('addFriend');
-    this.layout('layout2');
 });
 
 Router.route('/addFriendInfo', function () {
     this.render('addFriendInfo');
-    this.layout('layout2');
 });
 
 Router.route('/viewFriendInfo', function () {
     this.render('viewFriendInfo');
-    this.layout('layout2');
 });
 
 // Suggestion
