@@ -1,0 +1,4992 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<!DOCTYPE dblp SYSTEM "dblp.dtd">
+<dblp>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LaatikainenO14</key>
+	<author>Gabriella Laatikainen</author>
+	<author>Arto Ojala</author>
+	<title>SaaS Architecture and Pricing Models.</title>
+	<pages>597-604</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.84</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.84</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#LaatikainenO14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SongMCDL09</key>
+	<author>Wei Song</author>
+	<author>Xiaoxing Ma</author>
+	<author>S. C. Cheung</author>
+	<author>Wanchun Dou</author>
+	<author>Jian Lu</author>
+	<title>A Public-View Approach to Timed Properties Verification for B2B Web Service Compositions.</title>
+	<pages>427-434</pages>
+	<year>2009</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2009.18</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2009.18</ee>
+	<crossref>conf/IEEEscc/2009</crossref>
+	<url>db/conf/IEEEscc/scc2009.html#SongMCDL09</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/HeJBSCN04</key>
+	<author>Ligang He</author>
+	<author>Stephen A. Jarvis</author>
+	<author>David A. Bacigalupo</author>
+	<author>Daniel P. Spooner</author>
+	<author>Xinuo Chen</author>
+	<author>Graham R. Nudd</author>
+	<title>Queueing Network-based Optimisation Techniques for Workload Allocation in Clusters of Computers.</title>
+	<pages>207-216</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358008</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358008</ee>
+	<url>db/conf/IEEEscc/scc2004.html#HeJBSCN04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/Hoesch-KloheGL10</key>
+	<author>Konstantin Hoesch-Klohe</author>
+	<author>Aditya Ghose</author>
+	<author>Lam-Son Lê</author>
+	<title>Towards Green Business Process Management.</title>
+	<pages>386-393</pages>
+	<year>2010</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2010.21</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2010.21</ee>
+	<crossref>conf/IEEEscc/2010</crossref>
+	<url>db/conf/IEEEscc/scc2010.html#Hoesch-KloheGL10</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/MohanEL15</key>
+	<author>Aravind Mohan</author>
+	<author>Mahdi Ebrahimi</author>
+	<author>Shiyong Lu</author>
+	<title>A Folksonomy-Based Social Recommendation System for Scientific Workflow Reuse.</title>
+	<pages>704-711</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.100</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#MohanEL15</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2012-10-08</mdate>
+	<key>conf/IEEEscc/WangZW12</key>
+	<author>Yan Wang</author>
+	<author>Liang-Jie Zhang</author>
+	<author>Wei Wang</author>
+	<title>A Human-Asset-Compromised Allocation Model of Multiple Emergency Projects in Service-Focused Enterprises.</title>
+	<pages>360-367</pages>
+	<year>2012</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2012.89</ee>
+	<crossref>conf/IEEEscc/2012</crossref>
+	<url>db/conf/IEEEscc/scc2012.html#WangZW12</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2012-10-08</mdate>
+	<key>conf/IEEEscc/DimaghaniGGLSSZ12</key>
+	<author>Raheleh Dimaghani</author>
+	<author>Sahin Cem Geyik</author>
+	<author>Keith Grueneberg</author>
+	<author>Jorge Lobo</author>
+	<author>S. Yousaf Shah</author>
+	<author>Boleslaw K. Szymanski</author>
+	<author>Petros Zerfos</author>
+	<title>Policy-Aware Service Composition in Sensor Networks.</title>
+	<pages>186-193</pages>
+	<year>2012</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2012.90</ee>
+	<crossref>conf/IEEEscc/2012</crossref>
+	<url>db/conf/IEEEscc/scc2012.html#DimaghaniGGLSSZ12</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LuoSX04</key>
+	<author>Jianli Luo</author>
+	<author>Jie Shen</author>
+	<author>Cui-hua Xie</author>
+	<title>Segmenting the Web Document with Document Object Model.</title>
+	<pages>449-452</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358040</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358040</ee>
+	<url>db/conf/IEEEscc/scc2004.html#LuoSX04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/Mbiydzenyuy14</key>
+	<author>Gideon Mbiydzenyuy</author>
+	<title>Strategic Service Selection Problem for Transport Telematic Services - An Optimization Approach.</title>
+	<pages>520-527</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.75</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.75</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#Mbiydzenyuy14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/UttamchandaniVRYSY07</key>
+	<author>Sandeep Uttamchandani</author>
+	<author>Kaladhar Voruganti</author>
+	<author>Ramani Routray</author>
+	<author>Li Yin</author>
+	<author>Aameek Singh</author>
+	<author>Benji Yolken</author>
+	<title>BRAHMA: Planning Tool for Providing Storage Management as a Service.</title>
+	<pages>1-10</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.31</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.31</ee>
+	<url>db/conf/IEEEscc/scc2007.html#UttamchandaniVRYSY07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/Schmid04</key>
+	<author>Hans Albrecht Schmid</author>
+	<title>Performance Problems of Large Operational Systems Based on Web Services and a Solution.</title>
+	<pages>73-81</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1357992</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1357992</ee>
+	<url>db/conf/IEEEscc/scc2004.html#Schmid04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/GerthLKE10</key>
+	<author>Christian Gerth</author>
+	<author>Markus Luckey</author>
+	<author>Jochen Malte Küster</author>
+	<author>Gregor Engels</author>
+	<title>Detection of Semantically Equivalent Fragments for Business Process Model Change Management.</title>
+	<pages>57-64</pages>
+	<year>2010</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2010.38</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2010.38</ee>
+	<crossref>conf/IEEEscc/2010</crossref>
+	<url>db/conf/IEEEscc/scc2010.html#GerthLKE10</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/RazinkovMAF09</key>
+	<author>Natalia Razinkov</author>
+	<author>Nir Mashkif</author>
+	<author>David Amid</author>
+	<author>Amit Fisher</author>
+	<title>A Holistic View of Industry Standards Across SOA Solution Stack.</title>
+	<pages>144-151</pages>
+	<year>2009</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2009.42</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2009.42</ee>
+	<crossref>conf/IEEEscc/2009</crossref>
+	<url>db/conf/IEEEscc/scc2009.html#RazinkovMAF09</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ZhangIHGXKPARGRCR13</key>
+	<author>Jia Zhang</author>
+	<author>Bob Iannucci</author>
+	<author>Mark Hennessy</author>
+	<author>Kaushik Gopal</author>
+	<author>Sean Xiao</author>
+	<author>Sumeet Kumar</author>
+	<author>David Pfeffer</author>
+	<author>Basmah Aljedia</author>
+	<author>Yuan Ren</author>
+	<author>Martin L. Griss</author>
+	<author>Steven Rosenberg</author>
+	<author>Jordan Cao</author>
+	<author>Anthony Rowe</author>
+	<title>Sensor Data as a Service - A Federated Platform for Mobile Data-centric Service Development and Sharing.</title>
+	<pages>446-453</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.34</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.34</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#ZhangIHGXKPARGRCR13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/GuoGMCK05</key>
+	<author>Haifeng Guo</author>
+	<author>Peter T. Galligan</author>
+	<author>Jim Mooney</author>
+	<author>Adrian Coronado</author>
+	<author>Dennis F. Kehoe</author>
+	<title>The Application of Utility Computing and Web-Services to Inventory Optimisation.</title>
+	<pages>185-191</pages>
+	<year>2005</year>
+	<crossref>conf/IEEEscc/2005</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2005.96</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2005.96</ee>
+	<url>db/conf/IEEEscc/scc2005.html#GuoGMCK05</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/WahibMMA08</key>
+	<author>Mohamed Wahib</author>
+	<author>Asim Munawar</author>
+	<author>Masaharu Munetomo</author>
+	<author>Kiyoshi Akama</author>
+	<title>A General Service-Oriented Grid Computing Framework for Global Optimization Problem Solving.</title>
+	<pages>563-566</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.86</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.86</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#WahibMMA08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/MilosevicOS06</key>
+	<author>Zoran Milosevic</author>
+	<author>Maria E. Orlowska</author>
+	<author>Shazia Wasim Sadiq</author>
+	<title>Linking contracts, processes and services: an event-driven approach.</title>
+	<pages>390-397</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.64</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.64</ee>
+	<url>db/conf/IEEEscc/scc2006.html#MilosevicOS06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/NgokoCG14</key>
+	<author>Yanik Ngoko</author>
+	<author>Christophe Cérin</author>
+	<author>Alfredo Goldman</author>
+	<title>A Multithreaded Resolution of the Service Selection Problem Based on Domain Decomposition and Work Stealing.</title>
+	<pages>424-431</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.63</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.63</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#NgokoCG14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/AlnemrBM09</key>
+	<author>Rehab Alnemr</author>
+	<author>Justus Bross</author>
+	<author>Christoph Meinel</author>
+	<title>Constructing a Context-Aware Service-Oriented Reputation Model Using Attention Allocation Points.</title>
+	<pages>451-457</pages>
+	<year>2009</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2009.55</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2009.55</ee>
+	<crossref>conf/IEEEscc/2009</crossref>
+	<url>db/conf/IEEEscc/scc2009.html#AlnemrBM09</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ZhangCPSTT09</key>
+	<author>Chun Zhang</author>
+	<author>Rong N. Chang</author>
+	<author>Chang-Shing Perng</author>
+	<author>Edward So</author>
+	<author>Chunqiang Tang</author>
+	<author>Tao Tao</author>
+	<title>An Optimal Capacity Planning Algorithm for Provisioning Cluster-Based Failure-Resilient Composite Services.</title>
+	<pages>112-119</pages>
+	<year>2009</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2009.81</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2009.81</ee>
+	<crossref>conf/IEEEscc/2009</crossref>
+	<url>db/conf/IEEEscc/scc2009.html#ZhangCPSTT09</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/HuFHC15</key>
+	<author>Xiaocao Hu</author>
+	<author>Zhiyong Feng</author>
+	<author>Keman Huang</author>
+	<author>Shizhan Chen</author>
+	<title>Classification Based Parameter Association for Non-redundant Annotation.</title>
+	<pages>688-695</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.98</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#HuFHC15</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/BhamidipatyLB07</key>
+	<author>Anuradha Bhamidipaty</author>
+	<author>Rohit Lotlikar</author>
+	<author>Guruduth Banavar</author>
+	<title>RMI: A Framework for Modeling and Evaluating the Resiliency Maturity of IT Service Organizations.</title>
+	<pages>300-307</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.94</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.94</ee>
+	<url>db/conf/IEEEscc/scc2007.html#BhamidipatyLB07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ZhangTAFM11</key>
+	<author>Jia Zhang</author>
+	<author>Wei Tan</author>
+	<author>John Alexander</author>
+	<author>Ian T. Foster</author>
+	<author>Ravi K. Madduri</author>
+	<title>Recommend-As-You-Go: A Novel Approach Supporting Services-Oriented Scientific Workflow Reuse.</title>
+	<pages>48-55</pages>
+	<year>2011</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2011.120</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2011.120</ee>
+	<crossref>conf/IEEEscc/2011</crossref>
+	<url>db/conf/IEEEscc/scc2011.html#ZhangTAFM11</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ZhengYZ10</key>
+	<author>Huiyuan Zheng</author>
+	<author>Jian Yang</author>
+	<author>Weiliang Zhao</author>
+	<title>QoS Analysis and Service Selection for Composite Services.</title>
+	<pages>122-129</pages>
+	<year>2010</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2010.16</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2010.16</ee>
+	<crossref>conf/IEEEscc/2010</crossref>
+	<url>db/conf/IEEEscc/scc2010.html#ZhengYZ10</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/Kapoor05</key>
+	<author>Vishal Kapoor</author>
+	<title>Services and Autonomic Computing: A Practical Approach for Designing Manageability.</title>
+	<pages>41-48</pages>
+	<year>2005</year>
+	<crossref>conf/IEEEscc/2005</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2005.88</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2005.88</ee>
+	<url>db/conf/IEEEscc/scc2005.html#Kapoor05</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LiHSDG08</key>
+	<author>Yang Li</author>
+	<author>Jinpeng Huai</author>
+	<author>Hailong Sun</author>
+	<author>Ting Deng</author>
+	<author>Huipeng Guo</author>
+	<title>PASS: An Approach to Personalized Automated Service Composition.</title>
+	<pages>283-290</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (1)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.24</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.24</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#LiHSDG08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/RussellDD05</key>
+	<author>Duncan Russell</author>
+	<author>Peter M. Dew</author>
+	<author>Karim Djemame</author>
+	<title>Service-based Collaborative Workflow for DAME.</title>
+	<pages>139-146</pages>
+	<year>2005</year>
+	<crossref>conf/IEEEscc/2005</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2005.84</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2005.84</ee>
+	<url>db/conf/IEEEscc/scc2005.html#RussellDD05</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/NowlanB07</key>
+	<author>Michael F. Nowlan</author>
+	<author>M. Brian Blake</author>
+	<title>Agent-Mediated Knowledge Sharing for Services Management.</title>
+	<pages>324-331</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.23</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.23</ee>
+	<url>db/conf/IEEEscc/scc2007.html#NowlanB07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/El-HassanyKGS13</key>
+	<author>Ahmed El-Hassany</author>
+	<author>Ezra Kissel</author>
+	<author>Dan Gunter</author>
+	<author>D. Martin Swany</author>
+	<title>Design and Implementation of a Unified Network Information Service.</title>
+	<pages>224-231</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.81</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.81</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#El-HassanyKGS13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/GargKVP08</key>
+	<author>Dinesh Garg</author>
+	<author>Nanda Kambhatla</author>
+	<author>Maja Vukovic</author>
+	<author>Gopal Pingali</author>
+	<title>Mining Top Issues from Contact Center Logs for Self Help Portals.</title>
+	<pages>171-178</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.80</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.80</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#GargKVP08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/HuangLW13</key>
+	<author>Jiwei Huang</author>
+	<author>Chuang Lin</author>
+	<author>Jianxiong Wan</author>
+	<title>Modeling, Analysis and Optimization of Dependability-Aware Energy Efficiency in Services Computing Systems.</title>
+	<pages>683-690</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.63</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.63</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#HuangLW13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2012-10-08</mdate>
+	<key>conf/IEEEscc/JutlaVD12</key>
+	<author>Dawn N. Jutla</author>
+	<author>D. Veerasekaran</author>
+	<author>R. Ding</author>
+	<title>Trade-Offs in a Google Distance and a WordNet Hybrid for QoS-Enabled Web Services Composition.</title>
+	<pages>312-319</pages>
+	<year>2012</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2012.77</ee>
+	<crossref>conf/IEEEscc/2012</crossref>
+	<url>db/conf/IEEEscc/scc2012.html#JutlaVD12</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/AntunesV11</key>
+	<author>Nuno Antunes</author>
+	<author>Marco Vieira</author>
+	<title>Enhancing Penetration Testing with Attack Signatures and Interface Monitoring for the Detection of Injection Vulnerabilities in Web Services.</title>
+	<pages>104-111</pages>
+	<year>2011</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2011.67</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2011.67</ee>
+	<crossref>conf/IEEEscc/2011</crossref>
+	<url>db/conf/IEEEscc/scc2011.html#AntunesV11</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/CaiZ06</key>
+	<author>Hong Cai</author>
+	<author>Jia Zhang</author>
+	<title>SOA Services and Solutions.</title>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.96</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.96</ee>
+	<url>db/conf/IEEEscc/scc2006.html#CaiZ06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/GoshaTG08</key>
+	<author>Kinnis Gosha</author>
+	<author>Jakita O. Thomas</author>
+	<author>Juan E. Gilbert</author>
+	<title>Exploring the Impact of Queue Management on Quality of Service for SMBs.</title>
+	<pages>551-554</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.139</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.139</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#GoshaTG08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/AnJG06</key>
+	<author>Lianjun An</author>
+	<author>Jun-Jang Jeng</author>
+	<author>Cagdas E. Gerede</author>
+	<title>On Exploiting System Dynamics Modeling to Identify Service Requirements.</title>
+	<pages>277-280</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.76</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.76</ee>
+	<url>db/conf/IEEEscc/scc2006.html#AnJG06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/MenzelM09</key>
+	<author>Michael Menzel</author>
+	<author>Christoph Meinel</author>
+	<title>A Security Meta-model for Service-Oriented Architectures.</title>
+	<pages>251-259</pages>
+	<year>2009</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2009.57</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2009.57</ee>
+	<crossref>conf/IEEEscc/2009</crossref>
+	<url>db/conf/IEEEscc/scc2009.html#MenzelM09</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/DingWH10</key>
+	<author>Weilong Ding</author>
+	<author>Jing Wang 0002</author>
+	<author>Yanbo Han</author>
+	<title>ViPen: A Model Supporting Knowledge Provenance for Exploratory Service Composition.</title>
+	<pages>265-272</pages>
+	<year>2010</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2010.44</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2010.44</ee>
+	<crossref>conf/IEEEscc/2010</crossref>
+	<url>db/conf/IEEEscc/scc2010.html#DingWH10</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2012-10-08</mdate>
+	<key>conf/IEEEscc/MurakamiTLI12</key>
+	<author>Yohei Murakami</author>
+	<author>Masahiro Tanaka</author>
+	<author>Donghui Lin</author>
+	<author>Toru Ishida</author>
+	<title>Service Grid Federation Architecture for Heterogeneous Domains.</title>
+	<pages>539-546</pages>
+	<year>2012</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2012.101</ee>
+	<crossref>conf/IEEEscc/2012</crossref>
+	<url>db/conf/IEEEscc/scc2012.html#MurakamiTLI12</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/CholletLE15</key>
+	<author>Stéphanie Chollet</author>
+	<author>Philippe Lalanda</author>
+	<author>Clément Escoffier</author>
+	<title>Extension of Service-Oriented Component Models for Dynamic Environment.</title>
+	<pages>648-655</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.93</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#CholletLE15</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2012-10-08</mdate>
+	<key>conf/IEEEscc/MizouniSBA12</key>
+	<author>Rabeb Mizouni</author>
+	<author>Mohamed Adel Serhani</author>
+	<author>Abdelghani Benharref</author>
+	<author>Oubai Al-Abassi</author>
+	<title>Towards Battery-Aware Self-Adaptive Mobile Applications.</title>
+	<pages>439-445</pages>
+	<year>2012</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2012.87</ee>
+	<crossref>conf/IEEEscc/2012</crossref>
+	<url>db/conf/IEEEscc/scc2012.html#MizouniSBA12</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/IvanovicCH11</key>
+	<author>Dragan Ivanovic</author>
+	<author>Manuel Carro</author>
+	<author>Manuel V. Hermenegildo</author>
+	<title>Automated Attribute Inference in Complex Service Workflows Based on Sharing Analysis.</title>
+	<pages>120-127</pages>
+	<year>2011</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2011.85</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2011.85</ee>
+	<crossref>conf/IEEEscc/2011</crossref>
+	<url>db/conf/IEEEscc/scc2011.html#IvanovicCH11</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/RamaswamyB08</key>
+	<author>Lakshmish Ramaswamy</author>
+	<author>Guruduth Banavar</author>
+	<title>A Formal Model of Service Delivery.</title>
+	<pages>517-520</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.150</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.150</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#RamaswamyB08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SilvaBG13</key>
+	<author>Ernando Silva</author>
+	<author>Karin Becker</author>
+	<author>Renata Galante</author>
+	<title>Supporting Strategic Decision Making on Service Evolution Context Using Business Intelligence.</title>
+	<pages>240-247</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.25</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.25</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#SilvaBG13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/ChenMHZ15</key>
+	<author>Mingming Chen</author>
+	<author>Yutao Ma</author>
+	<author>Bo Hu</author>
+	<author>Liang-Jie Zhang</author>
+	<title>A Ranking-Oriented Hybrid Approach to QoS-Aware Web Service Recommendation.</title>
+	<pages>578-585</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.84</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#ChenMHZ15</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/KungasD09</key>
+	<author>Peep Küngas</author>
+	<author>Marlon Dumas</author>
+	<title>Cost-Effective Semantic Annotation of XML Schemas and Web Service Interfaces.</title>
+	<pages>372-379</pages>
+	<year>2009</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2009.17</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2009.17</ee>
+	<crossref>conf/IEEEscc/2009</crossref>
+	<url>db/conf/IEEEscc/scc2009.html#KungasD09</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/KoppKL08</key>
+	<author>Oliver Kopp</author>
+	<author>Rania Khalaf</author>
+	<author>Frank Leymann</author>
+	<title>Deriving Explicit Data Links in WS-BPEL Processes.</title>
+	<pages>367-376</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.122</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.122</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#KoppKL08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/ChenZHLL15</key>
+	<author>Huan Chen</author>
+	<author>Liang-Jie Zhang</author>
+	<author>Bo Hu</author>
+	<author>Si-Zhe Long</author>
+	<author>Li-hui Luo</author>
+	<title>On Developing and Deploying Large-File Upload Services of Personal Cloud Storage.</title>
+	<pages>371-378</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.58</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#ChenZHLL15</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/KatsarosKG11</key>
+	<author>Gregory Katsaros</author>
+	<author>Roland Kübert</author>
+	<author>Georgina Gallizo</author>
+	<title>Building a Service-Oriented Monitoring Framework with REST and Nagios.</title>
+	<pages>426-431</pages>
+	<year>2011</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2011.53</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2011.53</ee>
+	<crossref>conf/IEEEscc/2011</crossref>
+	<url>db/conf/IEEEscc/scc2011.html#KatsarosKG11</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/HoffmannSKW07</key>
+	<author>Jörg Hoffmann 0001</author>
+	<author>James Scicluna 0001</author>
+	<author>Tomasz Kaczmarek</author>
+	<author>Ingo Weber</author>
+	<title>Polynomial-Time Reasoning for Semantic Web Service Composition.</title>
+	<pages>229-236</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007w</crossref>
+	<booktitle>IEEE SCW</booktitle>
+	<ee>http://dx.doi.org/10.1109/SERVICES.2007.51</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SERVICES.2007.51</ee>
+	<url>db/conf/IEEEscc/scw2007.html#HoffmannSKW07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SunZLZ13</key>
+	<author>Jie Sun</author>
+	<author>Liping Zhao</author>
+	<author>Pericles Loucopoulos</author>
+	<author>Bo Zhou</author>
+	<title>QRA: A Quality Requirements Analysis Approach for Service Systems.</title>
+	<pages>25-32</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.48</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.48</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#SunZLZ13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/RamachandranBCKS06</key>
+	<author>Deepak Ramachandran</author>
+	<author>Neil Boyette</author>
+	<author>Isaac Cheng</author>
+	<author>Vikas Krishna</author>
+	<author>Savitha Srinivasan</author>
+	<title>Towards Scaleable and Adaptive Document Routing Services.</title>
+	<pages>311-314</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.108</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.108</ee>
+	<url>db/conf/IEEEscc/scc2006.html#RamachandranBCKS06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SeshadriLCCGM07</key>
+	<author>Sangeetha Seshadri</author>
+	<author>Ling Liu</author>
+	<author>Brian F. Cooper</author>
+	<author>Lawrence Chiu</author>
+	<author>Karan Gupta</author>
+	<author>Paul Muench</author>
+	<title>A Fault-Tolerant Middleware Architecture for High-Availability Storage Services.</title>
+	<pages>286-293</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.4</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.4</ee>
+	<url>db/conf/IEEEscc/scc2007.html#SeshadriLCCGM07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/LiZL15</key>
+	<author>Juan Li</author>
+	<author>Nazia Zaman</author>
+	<author>Honghui Li</author>
+	<title>A Decentralized Locality-Preserving Context-Aware Service Discovery Framework for Internet of Things.</title>
+	<pages>317-323</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.51</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#LiZL15</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/BenazzouzSC09</key>
+	<author>Yazid Benazzouz</author>
+	<author>Nicolas Sabouret</author>
+	<author>Belkacem Chikhaoui</author>
+	<title>Dynamic Service Composition in Ambient Intelligence Environment.</title>
+	<pages>411-418</pages>
+	<year>2009</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2009.16</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2009.16</ee>
+	<crossref>conf/IEEEscc/2009</crossref>
+	<url>db/conf/IEEEscc/scc2009.html#BenazzouzSC09</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/FerranteBEMSSW06</key>
+	<author>Frank E. Ferrante</author>
+	<author>Arnold W. Bragg</author>
+	<author>Karen Evans</author>
+	<author>Gil Miller</author>
+	<author>Henry Schaffer</author>
+	<author>George Strawn</author>
+	<author>Linda Wilbanks</author>
+	<title>Web Services - A View from the Top.</title>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.115</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.115</ee>
+	<url>db/conf/IEEEscc/scc2006.html#FerranteBEMSSW06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/UdupiS07</key>
+	<author>Yathiraj B. Udupi</author>
+	<author>Munindar P. Singh</author>
+	<title>Governance of Cross-Organizational Service Agreements: A Policy-Based Approach.</title>
+	<pages>36-43</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.63</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.63</ee>
+	<url>db/conf/IEEEscc/scc2007.html#UdupiS07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ZhangC10</key>
+	<author>Yang Zhang</author>
+	<author>Junliang Chen</author>
+	<title>Universal Identity Management Model Based on Anonymous Credentials.</title>
+	<pages>305-312</pages>
+	<year>2010</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2010.46</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2010.46</ee>
+	<crossref>conf/IEEEscc/2010</crossref>
+	<url>db/conf/IEEEscc/scc2010.html#ZhangC10</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/YuanHHLZ09</key>
+	<author>Min Yuan</author>
+	<author>Zhiqiu Huang</author>
+	<author>Jun Hu</author>
+	<author>Xiang Li</author>
+	<author>Yi Zhu</author>
+	<title>Ensuring Coordination of Multi-business Interactions.</title>
+	<pages>356-363</pages>
+	<year>2009</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2009.82</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2009.82</ee>
+	<crossref>conf/IEEEscc/2009</crossref>
+	<url>db/conf/IEEEscc/scc2009.html#YuanHHLZ09</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LeeL05</key>
+	<author>Chiung-Hon Leon Lee</author>
+	<author>Alan Liu</author>
+	<title>Toward Intention Aware Semantic Web Service Systems.</title>
+	<pages>69-76</pages>
+	<year>2005</year>
+	<crossref>conf/IEEEscc/2005</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2005.99</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2005.99</ee>
+	<url>db/conf/IEEEscc/scc2005.html#LeeL05</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LiTX14</key>
+	<author>Zhongmou Li</author>
+	<author>Shu Tao</author>
+	<author>Hui Xiong</author>
+	<title>Déjà Vu: Assessing Similarity between Service Contracts for Risk Prediction.</title>
+	<pages>147-154</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.28</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.28</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#LiTX14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/WangZLH14</key>
+	<author>Guiling Wang</author>
+	<author>Sai Zhang</author>
+	<author>Chen Liu</author>
+	<author>Yanbo Han</author>
+	<title>A Dataflow-Pattern-Based Recommendation Approach for Data Service Mashups.</title>
+	<pages>163-170</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.30</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.30</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#WangZLH14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/EscoffierHL07</key>
+	<author>Clément Escoffier</author>
+	<author>Richard S. Hall</author>
+	<author>Philippe Lalanda</author>
+	<title>iPOJO: an Extensible Service-Oriented Component Framework.</title>
+	<pages>474-481</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.74</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.74</ee>
+	<url>db/conf/IEEEscc/scc2007.html#EscoffierHL07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/GuCL15</key>
+	<author>Qi Gu</author>
+	<author>Jian Cao</author>
+	<author>Yuanjie Li</author>
+	<title>Mining Service Social Relations Based on Service Network Modeling and Analyzing.</title>
+	<pages>363-370</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.57</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#GuCL15</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LiuYZLH04</key>
+	<author>Fang Liu</author>
+	<author>Li Yao</author>
+	<author>Wei Ming Zhang</author>
+	<author>Hua Liu</author>
+	<author>Zhang Hua</author>
+	<title>A Conceptual Model of Agent Mediated Web Service.</title>
+	<pages>638-642</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358081</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358081</ee>
+	<url>db/conf/IEEEscc/scc2004.html#LiuYZLH04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/GlasnerS07</key>
+	<author>Dana Glasner</author>
+	<author>Vugranam C. Sreedhar</author>
+	<title>Configuration Reasoning and Ontology ForWeb.</title>
+	<pages>387-394</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.44</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.44</ee>
+	<url>db/conf/IEEEscc/scc2007.html#GlasnerS07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/BirjeMP06</key>
+	<author>M. N. Birje</author>
+	<author>Sunilkumar S. Manvi</author>
+	<author>Bhanu Prasad</author>
+	<title>Agent based Resource Brokering and Allocation in Wireless Grids.</title>
+	<pages>331-334</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.17</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.17</ee>
+	<url>db/conf/IEEEscc/scc2006.html#BirjeMP06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/KounevBHR10</key>
+	<author>Samuel Kounev</author>
+	<author>Fabian Brosig</author>
+	<author>Nikolaus Huber</author>
+	<author>Ralf H. Reussner</author>
+	<title>Towards Self-Aware Performance and Resource Management in Modern Service-Oriented Systems.</title>
+	<pages>621-624</pages>
+	<year>2010</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2010.94</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2010.94</ee>
+	<crossref>conf/IEEEscc/2010</crossref>
+	<url>db/conf/IEEEscc/scc2010.html#KounevBHR10</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/WangWCW05</key>
+	<author>Changzhou Wang</author>
+	<author>Guijun Wang</author>
+	<author>Alice Chen</author>
+	<author>Haiqin Wang</author>
+	<title>A Policy-Based Approach for QoS Specification and Enforcement in Distributed Service-Oriented Architecture.</title>
+	<pages>307-310</pages>
+	<year>2005</year>
+	<crossref>conf/IEEEscc/2005</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2005.15</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2005.15</ee>
+	<url>db/conf/IEEEscc/scc2005.html#WangWCW05</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2012-10-08</mdate>
+	<key>conf/IEEEscc/LaK12</key>
+	<author>Hyun Jung La</author>
+	<author>Soo Dong Kim</author>
+	<title>Dynamic Architecture for Autonomously Managing Service-Based Applications.</title>
+	<pages>515-522</pages>
+	<year>2012</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2012.78</ee>
+	<crossref>conf/IEEEscc/2012</crossref>
+	<url>db/conf/IEEEscc/scc2012.html#LaK12</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ImKK13</key>
+	<author>Janggwan Im</author>
+	<author>Seong Hoon Kim</author>
+	<author>Daeyoung Kim 0001</author>
+	<title>IoT Mashup as a Service: Cloud-Based Mashup Service for the Internet of Things.</title>
+	<pages>462-469</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.68</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.68</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#ImKK13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/HuHCC14</key>
+	<author>Jianpeng Hu</author>
+	<author>Linpeng Huang</author>
+	<author>Bei Cao</author>
+	<author>Xuling Chang</author>
+	<title>Executable Modeling Approach to Service Oriented Architecture Using SoaML in Conjunction with Extended DEVSML.</title>
+	<pages>243-250</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.40</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.40</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#HuHCC14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/RamanathanAA07</key>
+	<author>Sri Ramanathan</author>
+	<author>Ali Arsanjani</author>
+	<author>Abdul Allam</author>
+	<title>Leveraging Context Aware Services to Transform Evolving Telecom Industry Business Model.</title>
+	<pages>668-669</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.76</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.76</ee>
+	<url>db/conf/IEEEscc/scc2007.html#RamanathanAA07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/KuppurajuRBAM07</key>
+	<author>Sujatha Kuppuraju</author>
+	<author>Kanchana Rao</author>
+	<author>Hitesh A. Bosamiya</author>
+	<author>Raghu Anantharangachar</author>
+	<author>Subhojit Mallik</author>
+	<title>Supporting Heterogeneous Applications with Service Oriented Architecture.</title>
+	<pages>680-681</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.115</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.115</ee>
+	<url>db/conf/IEEEscc/scc2007.html#KuppurajuRBAM07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/WangSY13</key>
+	<author>Hongbing Wang</author>
+	<author>Haixia Sun</author>
+	<author>Qi Yu</author>
+	<title>Reliable Service Composition via Automatic QoS Prediction.</title>
+	<pages>200-207</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.45</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.45</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#WangSY13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/HoranontPPWS14</key>
+	<author>Teerayut Horanont</author>
+	<author>Jiranuwat Prapakornpilai</author>
+	<author>Santi Phithakkitnukoon</author>
+	<author>Apichon Witayangkurn</author>
+	<author>Ryosuke Shibasaki</author>
+	<title>Space Profile-Based Reverse Geocoding Service Using Cloud Platform.</title>
+	<pages>842-843</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.116</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.116</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#HoranontPPWS14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/KandukuriVR09</key>
+	<author>Balachandra Reddy Kandukuri</author>
+	<author>Ramakrishna Paturi V.</author>
+	<author>Atanu Rakshit</author>
+	<title>Cloud Security Issues.</title>
+	<pages>517-520</pages>
+	<year>2009</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2009.84</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2009.84</ee>
+	<crossref>conf/IEEEscc/2009</crossref>
+	<url>db/conf/IEEEscc/scc2009.html#KandukuriVR09</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/ZhouM15a</key>
+	<author>Nianjun Zhou</author>
+	<author>Ajay Mohindra</author>
+	<title>Causality-Driven Performance Monitoring and Scaling Automation for Managed Solutions.</title>
+	<pages>467-474</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.70</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#ZhouM15a</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LagerstromO07</key>
+	<author>Robert Lagerström</author>
+	<author>Jonas Ohrstrom</author>
+	<title>A Framework for Assessing Business Value of Service Oriented Architectures.</title>
+	<pages>670-671</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.7</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.7</ee>
+	<url>db/conf/IEEEscc/scc2007.html#LagerstromO07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/BenharrefSBB11</key>
+	<author>Abdelghani Benharref</author>
+	<author>Mohamed Adel Serhani</author>
+	<author>Salah Bouktif</author>
+	<author>Jamal Bentahar</author>
+	<title>A New Approach for Quality Enforcement in Communities of Web Services.</title>
+	<pages>472-479</pages>
+	<year>2011</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2011.44</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2011.44</ee>
+	<crossref>conf/IEEEscc/2011</crossref>
+	<url>db/conf/IEEEscc/scc2011.html#BenharrefSBB11</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SallesFAN13</key>
+	<author>Guilherme M. B. Salles</author>
+	<author>Marcelo Fantinato</author>
+	<author>João Porto de Albuquerque</author>
+	<author>Marislei Nishijima</author>
+	<title>A Contribution to Organizational and Operational Strategic Alignment: Incorporating Business Level Agreements into Business Process Modeling.</title>
+	<pages>17-24</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.111</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.111</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#SallesFAN13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/FrankLFFV07</key>
+	<author>David Frank</author>
+	<author>Linh Lam</author>
+	<author>Liana Fong</author>
+	<author>Ru Fang</author>
+	<author>Christopher Vignola</author>
+	<title>An Approach to Hosting Versioned Web Services.</title>
+	<pages>76-82</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.24</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.24</ee>
+	<url>db/conf/IEEEscc/scc2007.html#FrankLFFV07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/HallerOK06</key>
+	<author>Armin Haller</author>
+	<author>Eyal Oren</author>
+	<author>Paavo Kotinurmi</author>
+	<title>m3po: An Ontology to Relate Choreographies to Workflow Models.</title>
+	<pages>19-27</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.65</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.65</ee>
+	<url>db/conf/IEEEscc/scc2006.html#HallerOK06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SimonR06</key>
+	<author>Arnaud Simon</author>
+	<author>Thomas Rischbeck</author>
+	<title>Service Contract Template.</title>
+	<pages>511</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.89</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.89</ee>
+	<url>db/conf/IEEEscc/scc2006.html#SimonR06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SarkarDT08</key>
+	<author>Ronnie Sarkar</author>
+	<author>Murthy V. Devarakonda</author>
+	<author>Axel Tanner</author>
+	<title>Policy-Based Automation to Improve Solution Engineering in IT Services.</title>
+	<pages>52-59</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.161</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.161</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#SarkarDT08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/QuWO13</key>
+	<author>Lie Qu</author>
+	<author>Yan Wang 0002</author>
+	<author>Mehmet A. Orgun</author>
+	<title>Cloud Service Selection Based on the Aggregation of User Feedback and Quantitative Performance Assessment.</title>
+	<pages>152-159</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.92</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.92</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#QuWO13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/AyachitulaBDMPSW07</key>
+	<author>Naga Ayachitula</author>
+	<author>Melissa J. Buco</author>
+	<author>Yixin Diao</author>
+	<author>Maheswaran Surendra</author>
+	<author>Raju Pavuluri</author>
+	<author>Larisa Shwartz</author>
+	<author>Christopher Ward</author>
+	<title>IT service management automation - A hybrid methodology to integrate and orchestrate collaborative human centric and automation centric workflows.</title>
+	<pages>574-581</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.75</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.75</ee>
+	<url>db/conf/IEEEscc/scc2007.html#AyachitulaBDMPSW07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/WuLL04</key>
+	<author>Qiang Wu</author>
+	<author>Zongtian Liu</author>
+	<author>Yun Li</author>
+	<title>Rough Formal Concepts and Their Accuracies.</title>
+	<pages>445-448</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358039</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358039</ee>
+	<url>db/conf/IEEEscc/scc2004.html#WuLL04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SordeASKS07</key>
+	<author>Sumit W. Sorde</author>
+	<author>Sanjeev K. Aggarwal</author>
+	<author>Jie Song</author>
+	<author>Melvin Koh</author>
+	<author>Simon See</author>
+	<title>Modeling and Verifying Non-DAG Workflows for Computational Grids.</title>
+	<pages>237-243</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007w</crossref>
+	<booktitle>IEEE SCW</booktitle>
+	<ee>http://dx.doi.org/10.1109/SERVICES.2007.50</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SERVICES.2007.50</ee>
+	<url>db/conf/IEEEscc/scw2007.html#SordeASKS07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/GaizauskasDDGR04</key>
+	<author>Robert J. Gaizauskas</author>
+	<author>Neil Davis</author>
+	<author>George Demetriou</author>
+	<author>Yikun Guo</author>
+	<author>Ian Roberts</author>
+	<title>Text Mining into Distributed Bioinformatics Workflows: A Web Services Implementation.</title>
+	<pages>145-152</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358001</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358001</ee>
+	<url>db/conf/IEEEscc/scc2004.html#GaizauskasDDGR04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ChitucTA07</key>
+	<author>Claudia-Melania Chituc</author>
+	<author>Cesar Toscano</author>
+	<author>Américo Lopes Azevedo</author>
+	<title>Collaborative Business Processes Integration and Management - Lessons learned from industry.</title>
+	<pages>451-457</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.41</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.41</ee>
+	<url>db/conf/IEEEscc/scc2007.html#ChitucTA07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ChenCDW13</key>
+	<author>Shuo Chen</author>
+	<author>Chi-Hung Chi</author>
+	<author>Chen (Cherie) Ding</author>
+	<author>Raymond K. Wong</author>
+	<title>Data Decomposition Based Partial Replication Model for Software Services.</title>
+	<pages>256-263</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.83</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.83</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#ChenCDW13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/Jensen08</key>
+	<author>Meiko Jensen</author>
+	<title>A Fault Propagation Approach for Highly Distributed Service Compositions.</title>
+	<pages>507-510</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.38</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.38</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#Jensen08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/GasikantiTT07</key>
+	<author>Anuradha Gasikanti</author>
+	<author>Johnson P. Thomas</author>
+	<author>Mathews Thomas</author>
+	<title>Information Discovery across Organizational Boundaries through Local Caching.</title>
+	<pages>522-529</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.70</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.70</ee>
+	<url>db/conf/IEEEscc/scc2007.html#GasikantiTT07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/AlrebeishB13</key>
+	<author>Faisal Alrebeish</author>
+	<author>Rami Bahsoon</author>
+	<title>Risk-Aware Web Service Allocation in the Cloud Using Portfolio Theory.</title>
+	<pages>675-682</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.40</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.40</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#AlrebeishB13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/NezhadGNA14</key>
+	<author>Hamid R. Motahari Nezhad</author>
+	<author>Daniel B. Greenia</author>
+	<author>Taiga Nakamura</author>
+	<author>Rama Akkiraju</author>
+	<title>Health Identification and Outcome Prediction for Outsourcing Services Based on Textual Comments.</title>
+	<pages>155-162</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.29</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.29</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#NezhadGNA14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/HuangHCZZ15</key>
+	<author>Guangyan Huang</author>
+	<author>Jing He</author>
+	<author>Chi-Hung Chi</author>
+	<author>Wanlei Zhou</author>
+	<author>Yanchun Zhang</author>
+	<title>A Data as a Product Model for Future Consumption of Big Stream Data in Clouds.</title>
+	<pages>256-263</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.43</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#HuangHCZZ15</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/GhazizadehOZE15</key>
+	<author>Puya Ghazizadeh</author>
+	<author>Stephan Olariu</author>
+	<author>Aida Ghazi Zadeh</author>
+	<author>Samy El-Tawab</author>
+	<title>Towards Fault-Tolerant Job Assignment in Vehicular Cloud.</title>
+	<pages>17-24</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.13</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#GhazizadehOZE15</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/HeraultTL07</key>
+	<author>Colombe Herault</author>
+	<author>Gaël Thomas 0001</author>
+	<author>Philippe Lalanda</author>
+	<title>A distributed service-oriented mediation tool.</title>
+	<pages>403-409</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.3</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.3</ee>
+	<url>db/conf/IEEEscc/scc2007.html#HeraultTL07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/YuCW13</key>
+	<author>Zhiwei Yu</author>
+	<author>Victor W. Chu</author>
+	<author>Raymond K. Wong</author>
+	<title>Context-Aware Service Recommendation on High Performance Cluster.</title>
+	<pages>144-151</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.87</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.87</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#YuCW13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/YuR09</key>
+	<author>HongQing Yu</author>
+	<author>Stephan Reiff-Marganiec</author>
+	<title>A Backwards Composition Context Based Service Selection Approach for Service Composition.</title>
+	<pages>419-426</pages>
+	<year>2009</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2009.25</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2009.25</ee>
+	<crossref>conf/IEEEscc/2009</crossref>
+	<url>db/conf/IEEEscc/scc2009.html#YuR09</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/LongoZB15</key>
+	<author>Antonella Longo</author>
+	<author>Marco Zappatore</author>
+	<author>Mario Alessandro Bochicchio</author>
+	<title>Service Level Aware - Contract Management.</title>
+	<pages>499-506</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.74</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#LongoZB15</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/KhattakPLSLL11</key>
+	<author>Asad Masood Khattak</author>
+	<author>Zeeshan Pervez</author>
+	<author>Khalid Latif</author>
+	<author>A. M. Jehad Sarkar</author>
+	<author>Sungyoung Lee</author>
+	<author>Young-Koo Lee</author>
+	<title>Reconciliation of Ontology Mappings to Support Robust Service Interoperability.</title>
+	<pages>298-305</pages>
+	<year>2011</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2011.83</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2011.83</ee>
+	<crossref>conf/IEEEscc/2011</crossref>
+	<url>db/conf/IEEEscc/scc2011.html#KhattakPLSLL11</url>
+</inproceedings>
+<proceedings>
+	<mdate>2007-07-10</mdate>
+	<key>conf/IEEEscc/2007w</key>
+	<title>2007 IEEE International Conference on Services Computing - Workshops (SCW 2007), 9-13 July 2007, Salt Lake City, Utah, USA</title>
+	<booktitle>IEEE SCW</booktitle>
+	<publisher>IEEE Computer Society</publisher>
+	<year>2007</year>
+	<url>db/conf/IEEEscc/scw2007.html</url>
+</proceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/MiWYZSY10</key>
+	<author>Haibo Mi</author>
+	<author>Huaimin Wang</author>
+	<author>Gang Yin</author>
+	<author>Yangfan Zhou</author>
+	<author>Dian-xi Shi</author>
+	<author>Lin Yuan</author>
+	<title>Online Self-Reconfiguration with Performance Guarantee for Energy-Efficient Large-Scale Cloud Computing Data Centers.</title>
+	<pages>514-521</pages>
+	<year>2010</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2010.69</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2010.69</ee>
+	<crossref>conf/IEEEscc/2010</crossref>
+	<url>db/conf/IEEEscc/scc2010.html#MiWYZSY10</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/WuDL04</key>
+	<author>Zhaohui Wu</author>
+	<author>ShuiGuang Deng</author>
+	<author>Ying Li</author>
+	<title>Introducing EAI and Service Components into Process Management.</title>
+	<pages>271-276</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358015</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358015</ee>
+	<url>db/conf/IEEEscc/scc2004.html#WuDL04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/NaikGM06</key>
+	<author>Vijay K. Naik</author>
+	<author>Pawel Garbacki</author>
+	<author>Ajay Mohindra</author>
+	<title>Architecture for Service Request Driven Solution Delivery Using Grid Systems.</title>
+	<pages>414-422</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.23</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.23</ee>
+	<url>db/conf/IEEEscc/scc2006.html#NaikGM06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LegnerV07</key>
+	<author>Christine Legner</author>
+	<author>Tobias Vogel 0001</author>
+	<title>Design Principles for B2B Services - An Evaluation of Two Alternative Service Designs.</title>
+	<pages>372-379</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.50</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.50</ee>
+	<url>db/conf/IEEEscc/scc2007.html#LegnerV07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/WangXL08</key>
+	<author>Hongbing Wang</author>
+	<author>Junjie Xu</author>
+	<author>Peicheng Li</author>
+	<title>Incomplete Preference-driven Web Service Selection.</title>
+	<pages>75-82</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (1)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.49</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.49</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#WangXL08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ChiLC06</key>
+	<author>Chi-Hung Chi</author>
+	<author>Lin Liu 0001</author>
+	<author>Choon-Keng Chua</author>
+	<title>Web Content Consistency Through Explicit Ownership Definition.</title>
+	<pages>531-532</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.114</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.114</ee>
+	<url>db/conf/IEEEscc/scc2006.html#ChiLC06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/AhmedTS14</key>
+	<author>Tanveer Ahmed</author>
+	<author>Abhinav Tripathi</author>
+	<author>Abhishek Srivastava</author>
+	<title>Rain4Service: An Approach towards Decentralized Web Service Composition.</title>
+	<pages>267-274</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.43</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.43</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#AhmedTS14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SahaSS09</key>
+	<author>Dhrubajyoti Saha</author>
+	<author>Abhishek Samanta</author>
+	<author>Smruti R. Sarangi</author>
+	<title>Theoretical Framework for Eliminating Redundancy in Workflows.</title>
+	<pages>41-48</pages>
+	<year>2009</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2009.19</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2009.19</ee>
+	<crossref>conf/IEEEscc/2009</crossref>
+	<url>db/conf/IEEEscc/scc2009.html#SahaSS09</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/YangWWH04</key>
+	<author>Guangwen Yang</author>
+	<author>Qing Wang</author>
+	<author>Yongwei Wu</author>
+	<author>Dazheng Huang</author>
+	<title>A Fine-grained Parallel Programming Model for Grid Computing.</title>
+	<pages>613-616</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358076</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358076</ee>
+	<url>db/conf/IEEEscc/scc2004.html#YangWWH04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/PohlsenW08</key>
+	<author>Stephan Pöhlsen</author>
+	<author>Christian Werner</author>
+	<title>Robust Web Service Discovery in Large Networks.</title>
+	<pages>521-524</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.36</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.36</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#PohlsenW08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ShanH07</key>
+	<author>Tony Chao Shan</author>
+	<author>Winnie W. Hua</author>
+	<title>Service Spectrum for Service Engineering.</title>
+	<pages>686-687</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.100</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.100</ee>
+	<url>db/conf/IEEEscc/scc2007.html#ShanH07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/MouCZ04</key>
+	<author>Yujie Mou</author>
+	<author>Jian Cao</author>
+	<author>Shen-sheng Zhang</author>
+	<title>A Process Component Model for Enterprise Business Knowledge Reuse.</title>
+	<pages>409-412</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358031</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358031</ee>
+	<url>db/conf/IEEEscc/scc2004.html#MouCZ04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/HibnerZ07</key>
+	<author>Artur Hibner</author>
+	<author>Krzysztof Zielinski</author>
+	<title>Semantic-based Dynamic Service Composition and Adaptation.</title>
+	<pages>213-220</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007w</crossref>
+	<booktitle>IEEE SCW</booktitle>
+	<ee>http://dx.doi.org/10.1109/SERVICES.2007.55</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SERVICES.2007.55</ee>
+	<url>db/conf/IEEEscc/scw2007.html#HibnerZ07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2013-08-06</mdate>
+	<key>conf/IEEEscc/WangZLZY12</key>
+	<author>Shangguang Wang</author>
+	<author>Zibin Zheng</author>
+	<author>Guoqiang Li 0006</author>
+	<author>Hua Zou</author>
+	<author>Fangchun Yang</author>
+	<title>Context-Aware Service Adaptation via Learning Classifier System with Co-evolutionary Mechanism.</title>
+	<pages>679-680</pages>
+	<year>2012</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2012.9</ee>
+	<crossref>conf/IEEEscc/2012</crossref>
+	<url>db/conf/IEEEscc/scc2012.html#WangZLZY12</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SharifiMMMD14</key>
+	<author>Mahdi Sharifi</author>
+	<author>Azizah Abdul Manaf</author>
+	<author>Ali Memariani</author>
+	<author>Homa Movahednejad</author>
+	<author>Amir Vahid Dastjerdi</author>
+	<title>Consensus-Based Service Selection Using Crowdsourcing Under Fuzzy Preferences of Users.</title>
+	<pages>17-26</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.12</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.12</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#SharifiMMMD14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ChazaletL07</key>
+	<author>Antonin Chazalet</author>
+	<author>Philippe Lalanda</author>
+	<title>A Meta-Model Approach for the Deployment of Services-oriented Applications.</title>
+	<pages>348-355</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.11</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.11</ee>
+	<url>db/conf/IEEEscc/scc2007.html#ChazaletL07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/FerranteBCCLWZ05</key>
+	<author>Frank E. Ferrante</author>
+	<author>Arnold W. Bragg</author>
+	<author>Ken Christensen</author>
+	<author>Wayne Clark</author>
+	<author>Simon Liu</author>
+	<author>Joseph Williams</author>
+	<author>Liang-Jie Zhang</author>
+	<title>Service-Based Computing Strategy &amp;amp; Planning.</title>
+	<year>2005</year>
+	<crossref>conf/IEEEscc/2005</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2005.85</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2005.85</ee>
+	<url>db/conf/IEEEscc/scc2005.html#FerranteBCCLWZ05</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ChebotkoLFLLHF07</key>
+	<author>Artem Chebotko</author>
+	<author>Cui Lin</author>
+	<author>Xubo Fei</author>
+	<author>Zhaoqiang Lai</author>
+	<author>Shiyong Lu</author>
+	<author>Jing Hua</author>
+	<author>Farshad Fotouhi</author>
+	<title>VIEW: a Visual Scientific Workflow Management System.</title>
+	<pages>207-208</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007w</crossref>
+	<booktitle>IEEE SCW</booktitle>
+	<ee>http://dx.doi.org/10.1109/SERVICES.2007.69</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SERVICES.2007.69</ee>
+	<url>db/conf/IEEEscc/scw2007.html#ChebotkoLFLLHF07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/YuZZWW15</key>
+	<author>Lei Yu</author>
+	<author>Jiantao Zhou</author>
+	<author>Junxing Zhang</author>
+	<author>Fengqi Wei</author>
+	<author>Juan Wang</author>
+	<title>Time-Aware Semantic Web Service Recommendation.</title>
+	<pages>664-671</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.95</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#YuZZWW15</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LeiCCDHLNP04</key>
+	<author>Hui Lei</author>
+	<author>Dipanjan Chakraborty 0001</author>
+	<author>Henry Chang</author>
+	<author>Michael J. Dikun</author>
+	<author>Terry Heath</author>
+	<author>Jenny S. Li</author>
+	<author>Nitin Nayak</author>
+	<author>Yasodhar Patnaik</author>
+	<title>Contextual Collaboration: Platform and Applications.</title>
+	<pages>197-206</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358007</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358007</ee>
+	<url>db/conf/IEEEscc/scc2004.html#LeiCCDHLNP04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/JinDWS11</key>
+	<author>Hai Jin</author>
+	<author>Li Deng</author>
+	<author>Song Wu</author>
+	<author>Xuanhua Shi</author>
+	<title>Dynamic Processor Resource Configuration in Virtualized Environments.</title>
+	<pages>32-39</pages>
+	<year>2011</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2011.37</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2011.37</ee>
+	<crossref>conf/IEEEscc/2011</crossref>
+	<url>db/conf/IEEEscc/scc2011.html#JinDWS11</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/WeiYDMHD06</key>
+	<author>Yaxing Wei</author>
+	<author>Peng Yue</author>
+	<author>Upendra Dadi</author>
+	<author>Min Min</author>
+	<author>Chengfang Hu</author>
+	<author>Liping Di</author>
+	<title>Effective Acquisition of Geospatial Data Products in a Collaborative Grid Environment.</title>
+	<pages>455-462</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.46</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.46</ee>
+	<url>db/conf/IEEEscc/scc2006.html#WeiYDMHD06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ChengCZ07</key>
+	<author>Shuxing Cheng</author>
+	<author>Carl K. Chang</author>
+	<author>Liang-Jie Zhang</author>
+	<title>Modeling and Analysis of Performance Oriented and Revenue Based Admission Control Framework for Service Providers.</title>
+	<pages>9-16</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007w</crossref>
+	<booktitle>IEEE SCW</booktitle>
+	<ee>http://dx.doi.org/10.1109/SERVICES.2007.49</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SERVICES.2007.49</ee>
+	<url>db/conf/IEEEscc/scw2007.html#ChengCZ07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/RuanL10</key>
+	<author>Dong Ruan</author>
+	<author>Shiyong Lu</author>
+	<title>Task Exception Handling in the VIEW Scientific Workflow System.</title>
+	<pages>637-638</pages>
+	<year>2010</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2010.77</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2010.77</ee>
+	<crossref>conf/IEEEscc/2010</crossref>
+	<url>db/conf/IEEEscc/scc2010.html#RuanL10</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/HabichRLAGMP07</key>
+	<author>Dirk Habich</author>
+	<author>Sebastian Richly</author>
+	<author>Wolfgang Lehner</author>
+	<author>Uwe Aßmann</author>
+	<author>Mike Grasselt</author>
+	<author>Albert Maier</author>
+	<author>Christian Pilarsky</author>
+	<title>Data-aware SOA for Gene Expression Analysis Processes.</title>
+	<pages>138-145</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007w</crossref>
+	<booktitle>IEEE SCW</booktitle>
+	<ee>http://dx.doi.org/10.1109/SERVICES.2007.28</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SERVICES.2007.28</ee>
+	<url>db/conf/IEEEscc/scw2007.html#HabichRLAGMP07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/HuFF10</key>
+	<author>Ji Hu</author>
+	<author>Xiaoyi Fan</author>
+	<author>Robin Fischer</author>
+	<title>Business-Driven Trust Federation Management for Service Marketplaces.</title>
+	<pages>594-601</pages>
+	<year>2010</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2010.100</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2010.100</ee>
+	<crossref>conf/IEEEscc/2010</crossref>
+	<url>db/conf/IEEEscc/scc2010.html#HuFF10</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/XuRJY04</key>
+	<author>Xian Xu 0001</author>
+	<author>Ruonan Rao</author>
+	<author>Zhaoqing Jia</author>
+	<author>Jinyuan You</author>
+	<title>Grid Service and JCA: An Effective Integration Strategy.</title>
+	<pages>571-574</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358066</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358066</ee>
+	<url>db/conf/IEEEscc/scc2004.html#XuRJY04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/GromoffKSK14</key>
+	<author>Alexander Gromoff</author>
+	<author>Nikolay Kazantsev</author>
+	<author>Leonid Shumsky</author>
+	<author>Nikita Konovalov</author>
+	<title>Business Transformation Based on Cloud Services.</title>
+	<pages>844-845</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.117</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.117</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#GromoffKSK14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/QuSJ08</key>
+	<author>Huiming Qu</author>
+	<author>Jimeng Sun</author>
+	<author>Hani Jamjoom</author>
+	<title>SCOOP: Automated Social Recommendation in Enterprise Process Management.</title>
+	<pages>101-108</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (1)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.153</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.153</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#QuSJ08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/XuEBC04</key>
+	<author>Fenglian Xu</author>
+	<author>M. Hakki Eres</author>
+	<author>David J. Baker</author>
+	<author>Simon J. Cox</author>
+	<title>Tools and Support for Deploying Applications on the Grid.</title>
+	<pages>281-287</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358016</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358016</ee>
+	<url>db/conf/IEEEscc/scc2004.html#XuEBC04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/YampolskiyHMH10</key>
+	<author>Mark Yampolskiy</author>
+	<author>Wolfgang Hommel</author>
+	<author>Patricia Marcu</author>
+	<author>Matthias K. Hamm</author>
+	<title>An Information Model for the Provisioning of Network Connections Enabling Customer-Specific End-to-End QoS Guarantees.</title>
+	<pages>138-145</pages>
+	<year>2010</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2010.10</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2010.10</ee>
+	<crossref>conf/IEEEscc/2010</crossref>
+	<url>db/conf/IEEEscc/scc2010.html#YampolskiyHMH10</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/KhanJ08</key>
+	<author>Asheq Khan</author>
+	<author>Hani Jamjoom</author>
+	<title>SOAR: SOcially Aware Routing for Request Matching in Enterprise Environments.</title>
+	<pages>637-638</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.115</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.115</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#KhanJ08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/HeYYKJ08</key>
+	<author>Qiang He</author>
+	<author>Jun Yan</author>
+	<author>Yun Yang</author>
+	<author>Ryszard Kowalczyk</author>
+	<author>Hai Jin</author>
+	<title>Chord4S: A P2P-based Decentralised Service Discovery Approach.</title>
+	<pages>221-228</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (1)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.74</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.74</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#HeYYKJ08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/AnisettiABDFGS14</key>
+	<author>Marco Anisetti</author>
+	<author>Claudio Agostino Ardagna</author>
+	<author>Piero A. Bonatti</author>
+	<author>Ernesto Damiani</author>
+	<author>Marco Faella</author>
+	<author>Clemente Galdi</author>
+	<author>Luigi Sauro</author>
+	<title>E-Auctions for Multi-Cloud Service Provisioning.</title>
+	<pages>35-42</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.14</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.14</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#AnisettiABDFGS14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/KhalfallahFBSG13</key>
+	<author>Malik Khalfallah</author>
+	<author>Nicolas Figay</author>
+	<author>Mahmoud Barhamgi</author>
+	<author>Catarina Ferreira Da Silva</author>
+	<author>Parisa Ghodous</author>
+	<title>Towards Combining Declarative Specification with On-the-Fly Mediation.</title>
+	<pages>691-698</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.18</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.18</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#KhalfallahFBSG13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/CavalcantiBR06</key>
+	<author>Nicomedes L. Cavalcanti</author>
+	<author>Roberto Souto Maior de Barros</author>
+	<author>Mlexener Bezerra Romeiro</author>
+	<title>A model for extending legacy applications by implementing new requirements as components.</title>
+	<pages>143-150</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.10</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.10</ee>
+	<url>db/conf/IEEEscc/scc2006.html#CavalcantiBR06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/DeckerW08</key>
+	<author>Gero Decker</author>
+	<author>Mathias Weske</author>
+	<title>Instance Isolation Analysis for Service-Oriented Architectures.</title>
+	<pages>249-256</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (1)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.44</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.44</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#DeckerW08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LacroixL07</key>
+	<author>Zoé Lacroix</author>
+	<author>Christophe Legendre</author>
+	<title>Analysis of a Scientific Protocol: Selecting Suitable Resources.</title>
+	<pages>130-137</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007w</crossref>
+	<booktitle>IEEE SCW</booktitle>
+	<ee>http://dx.doi.org/10.1109/SERVICES.2007.17</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SERVICES.2007.17</ee>
+	<url>db/conf/IEEEscc/scw2007.html#LacroixL07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ShaoZZXM08</key>
+	<author>Lingshuang Shao</author>
+	<author>Lu Zhang 0023</author>
+	<author>Junfeng Zhao</author>
+	<author>Bing Xie</author>
+	<author>Hong Mei</author>
+	<title>Towards a User-perceived Service Availability Metric.</title>
+	<pages>549-550</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.101</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.101</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#ShaoZZXM08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/FangZSFMLF08</key>
+	<author>Ru Fang</author>
+	<author>Zhile Zou</author>
+	<author>Corina Stratan</author>
+	<author>Liana Fong</author>
+	<author>David Marston</author>
+	<author>Linh Lam</author>
+	<author>David Frank</author>
+	<title>Dynamic Support for BPEL Process Instance Adaptation.</title>
+	<pages>327-334</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (1)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.31</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.31</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#FangZSFMLF08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/X05</key>
+	<title>Title Page.</title>
+	<year>2005</year>
+	<crossref>conf/IEEEscc/2005</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2005.8</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2005.8</ee>
+	<url>db/conf/IEEEscc/scc2005.html#X05</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/ElshaterMH15</key>
+	<author>Yehia Elshater</author>
+	<author>Patrick Martin</author>
+	<author>Ehab Hassanein</author>
+	<title>Using Design Patterns to Improve Web Service Performance.</title>
+	<pages>746-749</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.106</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#ElshaterMH15</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/GarciaHO05</key>
+	<author>Alberto E. Garcia</author>
+	<author>Klaus D. Hackbarth</author>
+	<author>Roberto Ortiz</author>
+	<title>WeBaSeRex: Next Generation Internet Network Design using Web based Remote Execution environments.</title>
+	<pages>200-210</pages>
+	<year>2005</year>
+	<crossref>conf/IEEEscc/2005</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2005.110</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2005.110</ee>
+	<url>db/conf/IEEEscc/scc2005.html#GarciaHO05</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LiL04</key>
+	<author>Yuhua Li</author>
+	<author>Zhengding Lu</author>
+	<title>Ontology-Based Universal Knowledge Grid: Enabling Knowledge Discovery and Integration on the Grid.</title>
+	<pages>557-560</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358063</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358063</ee>
+	<url>db/conf/IEEEscc/scc2004.html#LiL04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/WuCC07</key>
+	<author>Bangyu Wu</author>
+	<author>Chi-Hung Chi</author>
+	<author>Zhe Chen</author>
+	<title>Resource Allocation Based On Workflow For Enhancing the Performance of Composite Service.</title>
+	<pages>552-559</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.93</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.93</ee>
+	<url>db/conf/IEEEscc/scc2007.html#WuCC07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/YinLDKW07</key>
+	<author>Yuyu Yin</author>
+	<author>Ying Li</author>
+	<author>ShuiGuang Deng</author>
+	<author>Li Kuang</author>
+	<author>Jian Wu</author>
+	<title>Automating Service Matchmaking using Type Theory.</title>
+	<pages>723-724</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.29</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.29</ee>
+	<url>db/conf/IEEEscc/scc2007.html#YinLDKW07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/RajamaniDDZP07</key>
+	<author>Nithya Rajamani</author>
+	<author>Murthy V. Devarakonda</author>
+	<author>Yu Deng</author>
+	<author>Wlodek Zadrozny</author>
+	<author>Jyotishman Pathak</author>
+	<title>Business-Activity Driven Search: Addressing the Information Needs of Services Professionals.</title>
+	<pages>644-651</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.37</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.37</ee>
+	<url>db/conf/IEEEscc/scc2007.html#RajamaniDDZP07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LaliwalaJC06</key>
+	<author>Zakir Laliwala</author>
+	<author>Prateek Jain 0001</author>
+	<author>Sanjay Chaudhary</author>
+	<title>Semantic based Service-Oriented Grid Architecture for Business Processes.</title>
+	<pages>423-430</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.86</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.86</ee>
+	<url>db/conf/IEEEscc/scc2006.html#LaliwalaJC06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/DengLFW13</key>
+	<author>Da Deng 0002</author>
+	<author>ZhiHui Lu</author>
+	<author>Wei Fang</author>
+	<author>Jie Wu 0003</author>
+	<title>CloudStreamMedia: A Cloud Assistant Global Video on Demand Leasing Scheme.</title>
+	<pages>486-493</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.91</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.91</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#DengLFW13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/BodendorfL08</key>
+	<author>Freimut Bodendorf</author>
+	<author>Florian Lang</author>
+	<title>A Negotiation Service for Trading Intangible Goods on Real-time Markets.</title>
+	<pages>567-568</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.159</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.159</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#BodendorfL08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/GeyikSZV10</key>
+	<author>Sahin Cem Geyik</author>
+	<author>Boleslaw K. Szymanski</author>
+	<author>Petros Zerfos</author>
+	<author>Dinesh C. Verma</author>
+	<title>Dynamic Composition of Services in Sensor Networks.</title>
+	<pages>242-249</pages>
+	<year>2010</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2010.26</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2010.26</ee>
+	<crossref>conf/IEEEscc/2010</crossref>
+	<url>db/conf/IEEEscc/scc2010.html#GeyikSZV10</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/BodenstaffWRJ09</key>
+	<author>Lianne Bodenstaff</author>
+	<author>Andreas Wombacher</author>
+	<author>Manfred Reichert</author>
+	<author>Michael C. Jaeger</author>
+	<title>Analyzing Impact Factors on Composite Services.</title>
+	<pages>218-226</pages>
+	<year>2009</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2009.20</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2009.20</ee>
+	<crossref>conf/IEEEscc/2009</crossref>
+	<url>db/conf/IEEEscc/scc2009.html#BodenstaffWRJ09</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/KeGL04</key>
+	<author>Li Ke</author>
+	<author>Minyi Guo</author>
+	<author>Li Li 0012</author>
+	<title>Switching Cost, Market Effects and the Pricing Model of e-Commerce.</title>
+	<pages>403-408</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358030</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358030</ee>
+	<url>db/conf/IEEEscc/scc2004.html#KeGL04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SulongAKG13</key>
+	<author>Muhammad Suhaizan Sulong</author>
+	<author>Azlianor Abdul-Aziz</author>
+	<author>Andy Koronios</author>
+	<author>Jing Gao</author>
+	<title>The Importance of Considering Information Quality in the Implementation of Service-Oriented Architecture Initiatives.</title>
+	<pages>583-586</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.22</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.22</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#SulongAKG13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LuZXXL14</key>
+	<author>JiaWei Lu</author>
+	<author>Yuanming Zhang</author>
+	<author>Jun Xu</author>
+	<author>Gang Xiao</author>
+	<author>Qianhui Althea Liang</author>
+	<title>Data Visualization of Web Service with Parallel Coordinates and NodeTrix.</title>
+	<pages>766-773</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.104</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.104</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#LuZXXL14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2012-10-08</mdate>
+	<key>conf/IEEEscc/YaoBLS12</key>
+	<author>Wen Yao</author>
+	<author>Sujoy Basu</author>
+	<author>Jun Li</author>
+	<author>Bryan Stephenson</author>
+	<title>Modeling and Configuration of Process Variants for On-Boarding Customers to IT Outsourcing.</title>
+	<pages>415-422</pages>
+	<year>2012</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2012.32</ee>
+	<crossref>conf/IEEEscc/2012</crossref>
+	<url>db/conf/IEEEscc/scc2012.html#YaoBLS12</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LiuLXMT05</key>
+	<author>Lan Liu</author>
+	<author>Zhitang Li</author>
+	<author>Yong Xu</author>
+	<author>Chenggang Mei</author>
+	<author>Xiaoling Tan</author>
+	<title>A wavelet based distributed ID model.</title>
+	<pages>261-263</pages>
+	<year>2005</year>
+	<crossref>conf/IEEEscc/2005</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2005.19</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2005.19</ee>
+	<url>db/conf/IEEEscc/scc2005.html#LiuLXMT05</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2012-10-08</mdate>
+	<key>conf/IEEEscc/GuptaGNM12</key>
+	<author>Rajeev Gupta</author>
+	<author>Himanshu Gupta</author>
+	<author>Ullas Nambiar</author>
+	<author>Mukesh K. Mohania</author>
+	<title>Enabling Active Data Archival over Cloud.</title>
+	<pages>98-105</pages>
+	<year>2012</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2012.20</ee>
+	<crossref>conf/IEEEscc/2012</crossref>
+	<url>db/conf/IEEEscc/scc2012.html#GuptaGNM12</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SurAR07</key>
+	<author>Abhijit Sur</author>
+	<author>Ali Arsanjani</author>
+	<author>Sri Ramanathan</author>
+	<title>SOA based Context Aware Services Infrastructure.</title>
+	<pages>688-689</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.110</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.110</ee>
+	<url>db/conf/IEEEscc/scc2007.html#SurAR07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LinLLCFHF08</key>
+	<author>Cui Lin</author>
+	<author>Shiyong Lu</author>
+	<author>Zhaoqiang Lai</author>
+	<author>Artem Chebotko</author>
+	<author>Xubo Fei</author>
+	<author>Jing Hua</author>
+	<author>Farshad Fotouhi</author>
+	<title>Service-Oriented Architecture for VIEW: A Visual Scientific Workflow Management System.</title>
+	<pages>335-342</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (1)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.118</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.118</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#LinLLCFHF08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SchonbergerBFGHKSW09</key>
+	<author>Andreas Schönberger</author>
+	<author>Thomas Benker</author>
+	<author>Stefan Fritzemeier</author>
+	<author>Matthias Geiger</author>
+	<author>Simon Harrer</author>
+	<author>Tristan Kessner</author>
+	<author>Johannes Schwalb</author>
+	<author>Guido Wirtz</author>
+	<title>QoS-Enabled Business-to-Business Integration Using ebBP to WS-BPEL Translations.</title>
+	<pages>17-24</pages>
+	<year>2009</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2009.56</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2009.56</ee>
+	<crossref>conf/IEEEscc/2009</crossref>
+	<url>db/conf/IEEEscc/scc2009.html#SchonbergerBFGHKSW09</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ZhangLZYZ13</key>
+	<author>Hongxia Zhang</author>
+	<author>Rongheng Lin</author>
+	<author>Hua Zou</author>
+	<author>Fangchun Yang</author>
+	<author>Yao Zhao</author>
+	<title>The Collaborative Configuration of Service-Oriented Product Lines Based on Evolutionary Approach.</title>
+	<pages>751-752</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.23</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.23</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#ZhangLZYZ13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/BabinAP15</key>
+	<author>Guillaume Babin</author>
+	<author>Yamine Aït Ameur</author>
+	<author>Marc Pantel</author>
+	<title>Formal Verification of Runtime Compensation of Web Service Compositions: A Refinement and Proof Based Proposal with Event-B.</title>
+	<pages>98-105</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.23</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#BabinAP15</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/ZhangP15</key>
+	<author>Yuqun Zhang</author>
+	<author>Dewayne E. Perry</author>
+	<title>Generating Symbolic Business Processes in Support of Evaluating Process Optimization.</title>
+	<pages>754-758</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.108</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#ZhangP15</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/McCarthyH014</key>
+	<author>Matthew A. McCarthy</author>
+	<author>Lorraine M. Herger</author>
+	<author>Shakil M. Khan 0002</author>
+	<title>A Compliance Aware Software Defined Infrastructure.</title>
+	<pages>560-567</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.79</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.79</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#McCarthyH014</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/Caituiro-MongeR05</key>
+	<author>Hillary Caituiro-Monge</author>
+	<author>Manuel Rodriguez-Martinez</author>
+	<title>AWS-Net Traveler: Autonomic Web Services Framework for Autonomic Business Processes.</title>
+	<pages>270-272</pages>
+	<year>2005</year>
+	<crossref>conf/IEEEscc/2005</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2005.34</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2005.34</ee>
+	<url>db/conf/IEEEscc/scc2005.html#Caituiro-MongeR05</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/FeiLZ11</key>
+	<author>Xubo Fei</author>
+	<author>Shiyong Lu</author>
+	<author>Jia Zhang</author>
+	<title>A Granular Concurrency Control for Collaborative Scientific Workflow Composition.</title>
+	<pages>410-417</pages>
+	<year>2011</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2011.121</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2011.121</ee>
+	<crossref>conf/IEEEscc/2011</crossref>
+	<url>db/conf/IEEEscc/scc2011.html#FeiLZ11</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ZarembaVBH11</key>
+	<author>Maciej Zaremba</author>
+	<author>Tomas Vitvar</author>
+	<author>Sami Bhiri</author>
+	<author>Manfred Hauswirth</author>
+	<title>Preference-Based Discovery of Dynamically Generated Service Offers.</title>
+	<pages>338-345</pages>
+	<year>2011</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2011.12</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2011.12</ee>
+	<crossref>conf/IEEEscc/2011</crossref>
+	<url>db/conf/IEEEscc/scc2011.html#ZarembaVBH11</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/XueSKC04</key>
+	<author>Gang Xue</author>
+	<author>Wenbin Song</author>
+	<author>Andy J. Keane</author>
+	<author>Simon J. Cox</author>
+	<title>Developing Services for Design Optimisation on the Grid.</title>
+	<pages>391-398</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358029</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358029</ee>
+	<url>db/conf/IEEEscc/scc2004.html#XueSKC04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ChangK07</key>
+	<author>Soo Ho Chang</author>
+	<author>Soo Dong Kim</author>
+	<title>A Service-Oriented Analysis and Design Approach to Developing Adaptable Services.</title>
+	<pages>204-211</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.16</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.16</ee>
+	<url>db/conf/IEEEscc/scc2007.html#ChangK07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SkoutasSS07</key>
+	<author>Dimitrios Skoutas</author>
+	<author>Alkis Simitsis</author>
+	<author>Timos K. Sellis</author>
+	<title>A Ranking Mechanism for SemanticWeb Service Discovery.</title>
+	<pages>41-48</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007w</crossref>
+	<booktitle>IEEE SCW</booktitle>
+	<ee>http://dx.doi.org/10.1109/SERVICES.2007.8</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SERVICES.2007.8</ee>
+	<url>db/conf/IEEEscc/scw2007.html#SkoutasSS07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2011-10-26</mdate>
+	<key>conf/IEEEscc/XuS04</key>
+	<author>Yu-Jie Xu</author>
+	<author>Min-Hua Shi</author>
+	<title>SQL Markup Language for Enterprise Integration.</title>
+	<pages>413-416</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358032</ee>
+	<url>db/conf/IEEEscc/scc2004.html#XuS04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ZhuLZ07</key>
+	<author>Yi-qun Zhu</author>
+	<author>Jianhua Li</author>
+	<author>Quan-hai Zhang</author>
+	<title>A General Attribute based RBAC Model for Web Service.</title>
+	<pages>236-239</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.8</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.8</ee>
+	<url>db/conf/IEEEscc/scc2007.html#ZhuLZ07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/KulkarniKP05</key>
+	<author>Naveen N. Kulkarni</author>
+	<author>K. M. Senthil Kumar</author>
+	<author>Srinivas Padmanabhuni</author>
+	<title>Reckoning Legislative Compliances with Service Oriented Architecture A Proposed Approach.</title>
+	<pages>16-23</pages>
+	<year>2005</year>
+	<crossref>conf/IEEEscc/2005</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2005.77</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2005.77</ee>
+	<url>db/conf/IEEEscc/scc2005.html#KulkarniKP05</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/QiHLL04</key>
+	<author>Yang Qi</author>
+	<author>Letian Hu</author>
+	<author>Xinhua Lin</author>
+	<author>Hong Liu</author>
+	<title>Domain Decomposition for Applications Based on CFD-Grid .</title>
+	<pages>592-595</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358071</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358071</ee>
+	<url>db/conf/IEEEscc/scc2004.html#QiHLL04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ZhengMPB10</key>
+	<author>Xianrong Zheng</author>
+	<author>Patrick Martin</author>
+	<author>Wendy Powley</author>
+	<author>Kathryn Brohman</author>
+	<title>Applying Bargaining Game Theory to Web Services Negotiation.</title>
+	<pages>218-225</pages>
+	<year>2010</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2010.54</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2010.54</ee>
+	<crossref>conf/IEEEscc/2010</crossref>
+	<url>db/conf/IEEEscc/scc2010.html#ZhengMPB10</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/MaySF11</key>
+	<author>Norman May</author>
+	<author>Ulrich Scholten</author>
+	<author>Robin Fischer</author>
+	<title>Towards an Automated Gap Analysis for E-Service Portfolios.</title>
+	<pages>274-281</pages>
+	<year>2011</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2011.93</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2011.93</ee>
+	<crossref>conf/IEEEscc/2011</crossref>
+	<url>db/conf/IEEEscc/scc2011.html#MaySF11</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ChenFWZ11</key>
+	<author>Liang Chen</author>
+	<author>Yipeng Feng</author>
+	<author>Jian Wu</author>
+	<author>Zibin Zheng</author>
+	<title>An Enhanced QoS Prediction Approach for Service Selection.</title>
+	<pages>727-728</pages>
+	<year>2011</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2011.46</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2011.46</ee>
+	<crossref>conf/IEEEscc/2011</crossref>
+	<url>db/conf/IEEEscc/scc2011.html#ChenFWZ11</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/GongXLZ10</key>
+	<author>Shuai Gong</author>
+	<author>Jinhua Xiong</author>
+	<author>Zhiyong Liu</author>
+	<author>Cheng Zhang</author>
+	<title>Correcting Interaction Mismatches for Business Processes.</title>
+	<pages>457-465</pages>
+	<year>2010</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2010.53</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2010.53</ee>
+	<crossref>conf/IEEEscc/2010</crossref>
+	<url>db/conf/IEEEscc/scc2010.html#GongXLZ10</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/VidyalakshmiWC15</key>
+	<author>B. S. Vidyalakshmi</author>
+	<author>Raymond K. Wong</author>
+	<author>Chi-Hung Chi</author>
+	<title>Privacy Scoring of Social Network Users as a Service.</title>
+	<pages>218-225</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.38</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#VidyalakshmiWC15</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/BattreHKKV08</key>
+	<author>Dominic Battré</author>
+	<author>Matthias Hovestadt</author>
+	<author>Odej Kao</author>
+	<author>Axel Keller</author>
+	<author>Kerstin Voß</author>
+	<title>Virtual Execution Environments for ensuring SLA-compliant Job Migration in Grids.</title>
+	<pages>571-572</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.106</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.106</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#BattreHKKV08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/YuD14</key>
+	<author>Jianjun Yu</author>
+	<author>Kejun Dong</author>
+	<title>VLAB-C: A Cloud Service Platform for Collaborative Virtual Laboratory.</title>
+	<pages>829-835</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.112</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.112</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#YuD14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SurSC06</key>
+	<author>Abhijit Sur</author>
+	<author>Dean Skidmore</author>
+	<author>Shoma Chakravarty</author>
+	<title>Web Services based SOA for Next Generation Telecom Networks.</title>
+	<pages>520</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.117</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.117</ee>
+	<url>db/conf/IEEEscc/scc2006.html#SurSC06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ZhangZ09</key>
+	<author>Liang-Jie Zhang</author>
+	<author>Jia Zhang</author>
+	<title>Componentization of Business Process Layer in the SOA Reference Architecture.</title>
+	<pages>316-323</pages>
+	<year>2009</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2009.85</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2009.85</ee>
+	<crossref>conf/IEEEscc/2009</crossref>
+	<url>db/conf/IEEEscc/scc2009.html#ZhangZ09</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/WickramageW05</key>
+	<author>Narada Wickramage</author>
+	<author>Sanjiva Weerawarana</author>
+	<title>A Benchmark for Web Service Frameworks.</title>
+	<pages>233-242</pages>
+	<year>2005</year>
+	<crossref>conf/IEEEscc/2005</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2005.9</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2005.9</ee>
+	<url>db/conf/IEEEscc/scc2005.html#WickramageW05</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/OzawaKAZ07</key>
+	<author>Yosuke Ozawa</author>
+	<author>Teruo Koyanagi</author>
+	<author>Mari Abe</author>
+	<author>Liangzhao Zeng</author>
+	<title>A Hybrid Event-Processing Architecture based on the Model-driven Approach for High Performance Monitoring.</title>
+	<pages>324-331</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007w</crossref>
+	<booktitle>IEEE SCW</booktitle>
+	<ee>http://dx.doi.org/10.1109/SERVICES.2007.6</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SERVICES.2007.6</ee>
+	<url>db/conf/IEEEscc/scw2007.html#OzawaKAZ07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/XuHW07</key>
+	<author>Xiaohui Xu</author>
+	<author>Linpeng Huang</author>
+	<author>Dejun Wang</author>
+	<title>Supporting Dynamic Updates of Componentized Service.</title>
+	<pages>699-700</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.113</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.113</ee>
+	<url>db/conf/IEEEscc/scc2007.html#XuHW07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SharmaA14</key>
+	<author>Vibhu Saujanya Sharma</author>
+	<author>Samit Anwer</author>
+	<title>Performance Antipatterns: Detection and Evaluation of Their Effects in the Cloud.</title>
+	<pages>758-765</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.103</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.103</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#SharmaA14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/TongS08</key>
+	<author>Hengjian Tong</author>
+	<author>Zhenfeng Shao</author>
+	<title>National Population Information System Based on Web Services.</title>
+	<pages>301-306</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.22</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.22</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#TongS08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ShanH06a</key>
+	<author>Tony Chao Shan</author>
+	<author>Winnie W. Hua</author>
+	<title>Contextual Spectrums in Technology and Information Platform.</title>
+	<pages>508</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.37</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.37</ee>
+	<url>db/conf/IEEEscc/scc2006.html#ShanH06a</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/TimmG08</key>
+	<author>John T. E. Timm</author>
+	<author>Gerald C. Gannod</author>
+	<title>Grounding and Execution of OWL-S Based Semantic Web Services.</title>
+	<pages>588-592</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.143</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.143</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#TimmG08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/BhushanSMR06</key>
+	<author>Bharat Bhushan</author>
+	<author>Stephan Steglich</author>
+	<author>Bernd Mrohs</author>
+	<author>Christian Räck</author>
+	<title>Life Cycle Management of Personalized and Context-aware Mobile Services - Goals, Requirements and Interfaces.</title>
+	<pages>319-322</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.63</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.63</ee>
+	<url>db/conf/IEEEscc/scc2006.html#BhushanSMR06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/WangCZNZ14</key>
+	<author>Xiaolei Wang</author>
+	<author>Zehui Cheng</author>
+	<author>ZhangBing Zhou</author>
+	<author>Ke Ning</author>
+	<author>Liang-Jie Zhang</author>
+	<title>Geospatial Web Service Sub-chain Ranking and Recommendation.</title>
+	<pages>91-98</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.21</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.21</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#WangCZNZ14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ShiQFY04</key>
+	<author>Dongyu Shi</author>
+	<author>Zhengwei Qi</author>
+	<author>Cheng Fu</author>
+	<author>Jinyuan You</author>
+	<title>An Information Retrieval Model based on Probabilistic network.</title>
+	<pages>423-426</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358034</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358034</ee>
+	<url>db/conf/IEEEscc/scc2004.html#ShiQFY04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/GodboleR08</key>
+	<author>Shantanu Godbole</author>
+	<author>Shourya Roy</author>
+	<title>Text to Intelligence: Building and Deploying a Text Mining Solution in the Services Industry for Customer Satisfaction Analysis.</title>
+	<pages>441-448</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.99</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.99</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#GodboleR08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/GongX09</key>
+	<author>Shuai Gong</author>
+	<author>Jinhua Xiong</author>
+	<title>Interaction Mismatch Discovery Based Transformation from BPMN to BPEL.</title>
+	<pages>292-299</pages>
+	<year>2009</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2009.29</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2009.29</ee>
+	<crossref>conf/IEEEscc/2009</crossref>
+	<url>db/conf/IEEEscc/scc2009.html#GongX09</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SrivastavaS10</key>
+	<author>Abhishek Srivastava</author>
+	<author>Paul G. Sorenson</author>
+	<title>Utilizing the Waiting-Time Criterion for Selecting Services in a Composition Scenario.</title>
+	<pages>258-264</pages>
+	<year>2010</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2010.29</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2010.29</ee>
+	<crossref>conf/IEEEscc/2010</crossref>
+	<url>db/conf/IEEEscc/scc2010.html#SrivastavaS10</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ChenLCW05</key>
+	<author>Lin Chen</author>
+	<author>Minglu Li</author>
+	<author>Jian Cao</author>
+	<author>Yi Wang 0001</author>
+	<title>An ECA Rule-based Workflow Design Tool for Shanghai Grid.</title>
+	<pages>325-328</pages>
+	<year>2005</year>
+	<crossref>conf/IEEEscc/2005</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2005.26</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2005.26</ee>
+	<url>db/conf/IEEEscc/scc2005.html#ChenLCW05</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SeinturierMFDSS09</key>
+	<author>Lionel Seinturier</author>
+	<author>Philippe Merle</author>
+	<author>Damien Fournier</author>
+	<author>Nicolas Dolet</author>
+	<author>Valerio Schiavoni</author>
+	<author>Jean-Bernard Stefani</author>
+	<title>Reconfigurable SCA Applications with the FraSCAti Platform.</title>
+	<pages>268-275</pages>
+	<year>2009</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2009.27</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2009.27</ee>
+	<crossref>conf/IEEEscc/2009</crossref>
+	<url>db/conf/IEEEscc/scc2009.html#SeinturierMFDSS09</url>
+</inproceedings>
+<proceedings>
+	<mdate>2015-12-01</mdate>
+	<key>conf/IEEEscc/2009</key>
+	<title>2009 IEEE International Conference on Services Computing (SCC 2009), 21-25 September 2009, Bangalore, India</title>
+	<booktitle>IEEE SCC</booktitle>
+	<publisher>IEEE Computer Society</publisher>
+	<year>2009</year>
+	<isbn>978-0-7695-3811-2</isbn>
+	<ee>http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=5283889</ee>
+	<ee>http://www.computer.org/csdl/proceedings/scc/2009/5183/00/index.html</ee>
+	<url>db/conf/IEEEscc/scc2009.html</url>
+</proceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SuLLFZ13</key>
+	<author>Zhiyuan Su</author>
+	<author>Ling Liu</author>
+	<author>Mingchu Li</author>
+	<author>Xinxin Fan</author>
+	<author>Yang Zhou</author>
+	<title>ServiceTrust: Trust Management in Service Provision Networks.</title>
+	<pages>272-279</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.31</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.31</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#SuLLFZ13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2011-10-26</mdate>
+	<key>conf/IEEEscc/HuangB04</key>
+	<author>Yangcheng Huang</author>
+	<author>Saleem N. Bhatti</author>
+	<title>Decentralized Resilient Grid Resource Management Overlay Networks.</title>
+	<pages>372-379</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358027</ee>
+	<url>db/conf/IEEEscc/scc2004.html#HuangB04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2012-11-21</mdate>
+	<key>conf/IEEEscc/WangLCZFZ12</key>
+	<author>Chao Wang</author>
+	<author>Xi Li</author>
+	<author>Peng Chen 0004</author>
+	<author>Junneng Zhang</author>
+	<author>Xiaojing Feng</author>
+	<author>Xuehai Zhou</author>
+	<title>Regarding Processors and Reconfigurable IP Cores as Services.</title>
+	<pages>668-669</pages>
+	<year>2012</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2012.72</ee>
+	<crossref>conf/IEEEscc/2012</crossref>
+	<url>db/conf/IEEEscc/scc2012.html#WangLCZFZ12</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/NarendraBTM09</key>
+	<author>Nanjangud C. Narendra</author>
+	<author>Youakim Badr</author>
+	<author>Philippe Thiran</author>
+	<author>Zakaria Maamar</author>
+	<title>Towards a Unified Approach for Business Process Modeling Using Context-Based Artifacts and Web Services.</title>
+	<pages>332-339</pages>
+	<year>2009</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2009.14</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2009.14</ee>
+	<crossref>conf/IEEEscc/2009</crossref>
+	<url>db/conf/IEEEscc/scc2009.html#NarendraBTM09</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/Krishnan06</key>
+	<author>K. Ananth Krishnan</author>
+	<title>Business Drivers for Services Computing.</title>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.29</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.29</ee>
+	<url>db/conf/IEEEscc/scc2006.html#Krishnan06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LiQSC06</key>
+	<author>Ying Li</author>
+	<author>Jie Qiu</author>
+	<author>Kewei Sun</author>
+	<author>Ying Chen</author>
+	<title>Modeling and Verifying Configuration in Service Deployment.</title>
+	<pages>238-248</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.73</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.73</ee>
+	<url>db/conf/IEEEscc/scc2006.html#LiQSC06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/WonohoesodoT04</key>
+	<author>Roosdiana Wonohoesodo</author>
+	<author>Zahir Tari</author>
+	<title>A Role based Access Control for Web Services.</title>
+	<pages>49-56</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1357989</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1357989</ee>
+	<url>db/conf/IEEEscc/scc2004.html#WonohoesodoT04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/WangHH05</key>
+	<author>Yong Wang</author>
+	<author>Chunming Hu</author>
+	<author>Jinpeng Huai</author>
+	<title>A New Grid Workflow Description Language.</title>
+	<pages>257-260</pages>
+	<year>2005</year>
+	<crossref>conf/IEEEscc/2005</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2005.14</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2005.14</ee>
+	<url>db/conf/IEEEscc/scc2005.html#WangHH05</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ZouWL10</key>
+	<author>Joe Zou</author>
+	<author>Yan Wang 0002</author>
+	<author>Kwei-Jay Lin</author>
+	<title>A Formal Service Contract Model for Accountable SaaS and Cloud Services.</title>
+	<pages>73-80</pages>
+	<year>2010</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2010.85</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2010.85</ee>
+	<crossref>conf/IEEEscc/2010</crossref>
+	<url>db/conf/IEEEscc/scc2010.html#ZouWL10</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/YinNMN15</key>
+	<author>Peifeng Yin</author>
+	<author>Hamid R. Motahari Nezhad</author>
+	<author>Aly Megahed</author>
+	<author>Taiga Nakamura</author>
+	<title>A Progress Advisor for IT Service Engagements.</title>
+	<pages>592-599</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.86</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#YinNMN15</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/HanemannSS05</key>
+	<author>Andreas Hanemann</author>
+	<author>David Schmitz</author>
+	<author>Martin Sailer</author>
+	<title>A Framework for Failure Impact Analysis and Recovery with Respect to Service Level Agreements.</title>
+	<pages>49-58</pages>
+	<year>2005</year>
+	<crossref>conf/IEEEscc/2005</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2005.10</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2005.10</ee>
+	<url>db/conf/IEEEscc/scc2005.html#HanemannSS05</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SailerWM08</key>
+	<author>Anca Sailer</author>
+	<author>Xing Wei</author>
+	<author>Ruchi Mahindru</author>
+	<title>Enhanced Maintenance Services with Automatic Structuring of IT Problem Ticket Data.</title>
+	<pages>621-624</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.70</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.70</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#SailerWM08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/NewhouseP04</key>
+	<author>Travis Newhouse</author>
+	<author>Joseph Pasquale</author>
+	<title>A User-Level Framework for Scheduling within Service Execution Environments.</title>
+	<pages>311-318</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358020</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358020</ee>
+	<url>db/conf/IEEEscc/scc2004.html#NewhouseP04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/HovestadtKV06</key>
+	<author>Matthias Hovestadt</author>
+	<author>Odej Kao</author>
+	<author>Kerstin Voß</author>
+	<title>The First Step of Introducing Risk Management for Prepossessing SLAs.</title>
+	<pages>36-43</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.102</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.102</ee>
+	<url>db/conf/IEEEscc/scc2006.html#HovestadtKV06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ChenHMZ14</key>
+	<author>Jingliang Chen</author>
+	<author>Keqing He</author>
+	<author>Yutao Ma</author>
+	<author>Neng Zhang</author>
+	<title>An Approach for Value as a Service Discovery on Scientific Papers Big Data.</title>
+	<pages>480-487</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.70</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.70</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#ChenHMZ14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/BaiL08</key>
+	<author>Li Bai</author>
+	<author>Min Liu</author>
+	<title>A Fuzzy-set based Semantic Similarity Matching Algorithm for Web Service.</title>
+	<pages>529-532</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.147</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.147</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#BaiL08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/TaylorR15</key>
+	<author>Bradley D. Taylor</author>
+	<author>Shmuel Rotenstriech</author>
+	<title>Towards Automating Inter-organizational Workflow Semantic Resolution.</title>
+	<pages>777-781</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.113</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#TaylorR15</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/TangS04</key>
+	<author>Peiyi Tang</author>
+	<author>James Sinnamon</author>
+	<title>Interaction and Coordination for Distributed Grid Computing.</title>
+	<pages>383-390</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358028</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358028</ee>
+	<url>db/conf/IEEEscc/scc2004.html#TangS04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/JiLL04</key>
+	<author>Chengqin Ji</author>
+	<author>Minglu Li</author>
+	<author>Luqun Li</author>
+	<title>Freight Transportation System Based on Web Service.</title>
+	<pages>567-570</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358065</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358065</ee>
+	<url>db/conf/IEEEscc/scc2004.html#JiLL04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/BarroeroMD11</key>
+	<author>Thiago Barroero</author>
+	<author>Gianmario Motta</author>
+	<author>Marco Durante</author>
+	<title>Sustainable Service Level Agreements.</title>
+	<pages>679-684</pages>
+	<year>2011</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2011.117</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2011.117</ee>
+	<crossref>conf/IEEEscc/2011</crossref>
+	<url>db/conf/IEEEscc/scc2011.html#BarroeroMD11</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/GrigoriB05</key>
+	<author>Daniela Grigori</author>
+	<author>Mokrane Bouzeghoub</author>
+	<title>Service retrieval based on behavioral speci.cation.</title>
+	<pages>333-336</pages>
+	<year>2005</year>
+	<crossref>conf/IEEEscc/2005</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2005.82</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2005.82</ee>
+	<url>db/conf/IEEEscc/scc2005.html#GrigoriB05</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LeeATJDSNMSD08</key>
+	<author>Juhnyoung Lee</author>
+	<author>Rama Akkiraju</author>
+	<author>Chunhua Tian</author>
+	<author>Shun Jiang</author>
+	<author>Sivaprashanth Danturthy</author>
+	<author>Ponn Sundhararajan</author>
+	<author>Carl Nordman</author>
+	<author>Rakesh Mohan</author>
+	<author>Hitansh Singala</author>
+	<author>Wei Ding 0002</author>
+	<title>Business Transformation Workbench: A Practitioner's Tool for Business Transformation.</title>
+	<pages>81-88</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.145</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.145</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#LeeATJDSNMSD08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/DengWLW06</key>
+	<author>ShuiGuang Deng</author>
+	<author>Jian Wu</author>
+	<author>Ying Li</author>
+	<author>Zhaohui Wu</author>
+	<title>Consideration of Operation Composition in Semantic Service Matchmaking.</title>
+	<pages>249-252</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.35</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.35</ee>
+	<url>db/conf/IEEEscc/scc2006.html#DengWLW06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/AggarwalVMM04</key>
+	<author>Rohit Aggarwal</author>
+	<author>Kunal Verma</author>
+	<author>John A. Miller</author>
+	<author>William Milnor</author>
+	<title>Constraint Driven Web Service Composition in METEOR-S.</title>
+	<pages>23-30</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1357986</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1357986</ee>
+	<url>db/conf/IEEEscc/scc2004.html#AggarwalVMM04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2012-10-08</mdate>
+	<key>conf/IEEEscc/OwrakNM12</key>
+	<author>Ali Owrak</author>
+	<author>Abdallah Namoun</author>
+	<author>Nikolay Mehandjiev</author>
+	<title>Quality Evaluation within Service-Oriented Software: A Multi-perspective Approach.</title>
+	<pages>594-601</pages>
+	<year>2012</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2012.86</ee>
+	<crossref>conf/IEEEscc/2012</crossref>
+	<url>db/conf/IEEEscc/scc2012.html#OwrakNM12</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SimoniYC10</key>
+	<author>Noëmie Simoni</author>
+	<author>Chunyang Yin</author>
+	<author>Philippe Coude</author>
+	<title>Converged Service Delivery: Modeling and Engineering.</title>
+	<pages>645-648</pages>
+	<year>2010</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2010.61</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2010.61</ee>
+	<crossref>conf/IEEEscc/2010</crossref>
+	<url>db/conf/IEEEscc/scc2010.html#SimoniYC10</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LiZHGS13</key>
+	<author>Chune Li</author>
+	<author>Richong Zhang</author>
+	<author>Jinpeng Huai</author>
+	<author>Xiaohui Guo</author>
+	<author>Hailong Sun</author>
+	<title>A Probabilistic Approach for Web Service Discovery.</title>
+	<pages>49-56</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.107</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.107</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#LiZHGS13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/KaterosKTV08</key>
+	<author>Dimitrios A. Kateros</author>
+	<author>Georgia M. Kapitsaki</author>
+	<author>Nikolaos D. Tselikas</author>
+	<author>Iakovos S. Venieris</author>
+	<title>A Methodology for Model-Driven Web Application Composition.</title>
+	<pages>489-492</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.58</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.58</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#KaterosKTV08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LiuSBJPSSH06</key>
+	<author>Sandy Liu</author>
+	<author>Bruce Spencer</author>
+	<author>Martin Brooks</author>
+	<author>Michael Jemtrud</author>
+	<author>Konstantin Privalov</author>
+	<author>John Spence</author>
+	<author>Michel Savoie</author>
+	<author>Bobby Ho</author>
+	<title>Towards a Service-oriented Participatory Design Studio Supported by UCLP.</title>
+	<pages>525-526</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.107</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.107</ee>
+	<url>db/conf/IEEEscc/scc2006.html#LiuSBJPSSH06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/BalasooriyaPN08</key>
+	<author>Janaka Balasooriya</author>
+	<author>Sushil K. Prasad</author>
+	<author>Shamkant B. Navathe</author>
+	<title>A Middleware Architecture for Enhancing Web Services Infrastructure for Distributed Coordination of Workflows.</title>
+	<pages>370-377</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (1)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.127</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.127</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#BalasooriyaPN08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/CaoZLW04</key>
+	<author>Jian Cao</author>
+	<author>Shen-sheng Zhang</author>
+	<author>Minglu Li</author>
+	<author>Jie Wang</author>
+	<title>Verification of Dynamic Process Model Change to Support the Adaptive Workflow.</title>
+	<pages>255-261</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358013</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358013</ee>
+	<url>db/conf/IEEEscc/scc2004.html#CaoZLW04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SkinnerCHJW05</key>
+	<author>Glenn Skinner</author>
+	<author>Grzegorz Czajkowski</author>
+	<author>David Hearnden</author>
+	<author>Mick J. Jordan</author>
+	<author>Michal Wegiel</author>
+	<title>A Service Management Facility for Java Platform.</title>
+	<pages>198-207</pages>
+	<year>2005</year>
+	<crossref>conf/IEEEscc/2005</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2005.18</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2005.18</ee>
+	<url>db/conf/IEEEscc/scc2005.html#SkinnerCHJW05</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ChhabraKOD06</key>
+	<author>Pawan Chhabra</author>
+	<author>Sandeep Karamongikar</author>
+	<author>Gilbert Owusu</author>
+	<author>Shyam Doddavula</author>
+	<title>Building SOA based Solution for a Workforce M.</title>
+	<pages>513</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.27</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.27</ee>
+	<url>db/conf/IEEEscc/scc2006.html#ChhabraKOD06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/TharayilKK07</key>
+	<author>Sobha Mathew Tharayil</author>
+	<author>Ted Kalbfleisch</author>
+	<author>Anup Kumar</author>
+	<title>Service-Oriented Laboratory Information Management System for Life Sciences Research.</title>
+	<pages>621-627</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.103</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.103</ee>
+	<url>db/conf/IEEEscc/scc2007.html#TharayilKK07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/RodriguesFP13</key>
+	<author>Mauricio Chui Rodrigues</author>
+	<author>João Eduardo Ferreira</author>
+	<author>Calton Pu</author>
+	<title>Web Services Composition through Data Events Approach.</title>
+	<pages>320-327</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.11</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.11</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#RodriguesFP13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/Zhang07</key>
+	<author>Liang-Jie Zhang</author>
+	<title>SOA Solution Reference Architecture.</title>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.111</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.111</ee>
+	<url>db/conf/IEEEscc/scc2007.html#Zhang07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/GrechanikC07</key>
+	<author>Mark Grechanik</author>
+	<author>Kevin M. Conroy</author>
+	<title>Composing Integrated Systems Using GUI-Based Applications And Web Services.</title>
+	<pages>68-75</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.43</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.43</ee>
+	<url>db/conf/IEEEscc/scc2007.html#GrechanikC07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/KarimDC11</key>
+	<author>Raed Karim</author>
+	<author>Chen (Cherie) Ding</author>
+	<author>Chi-Hung Chi</author>
+	<title>An Enhanced PROMETHEE Model for QoS-Based Web Service Selection.</title>
+	<pages>536-543</pages>
+	<year>2011</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2011.81</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2011.81</ee>
+	<crossref>conf/IEEEscc/2011</crossref>
+	<url>db/conf/IEEEscc/scc2011.html#KarimDC11</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LinYYZZ04</key>
+	<author>Chenxi Lin</author>
+	<author>Yong Yu</author>
+	<author>Yin Yang</author>
+	<author>Lei Zhang 0007</author>
+	<author>Jian Zhou</author>
+	<title>Towards Composing Information Providing Services.</title>
+	<pages>117-122</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1357997</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1357997</ee>
+	<url>db/conf/IEEEscc/scc2004.html#LinYYZZ04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SohGATTBS07</key>
+	<author>Jung Soh</author>
+	<author>Paul M. K. Gordon</author>
+	<author>Andrew C. Ah-Seng</author>
+	<author>Andrei L. Turinsky</author>
+	<author>Morgan L. Taschuk</author>
+	<author>Krzysztof Borowski</author>
+	<author>Christoph W. Sensen</author>
+	<title>Bluejay: A Highly Scalable and Integrative Visual Environment for Genome Exploration.</title>
+	<pages>92-98</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007w</crossref>
+	<booktitle>IEEE SCW</booktitle>
+	<ee>http://dx.doi.org/10.1109/SERVICES.2007.21</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SERVICES.2007.21</ee>
+	<url>db/conf/IEEEscc/scw2007.html#SohGATTBS07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/Maximilien06</key>
+	<author>E. Michael Maximilien</author>
+	<title>Web Services on Rails: Using Ruby and Rails for Web Services Development and Mashups.</title>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.118</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.118</ee>
+	<url>db/conf/IEEEscc/scc2006.html#Maximilien06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/X05f</key>
+	<title>Copyright.</title>
+	<year>2005</year>
+	<crossref>conf/IEEEscc/2005</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2005.1</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2005.1</ee>
+	<url>db/conf/IEEEscc/scc2005.html#X05f</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ShenS05</key>
+	<author>Zhongnan Shen</author>
+	<author>Jianwen Su</author>
+	<title>Web Service Discovery Based on Behavior Signatures.</title>
+	<pages>279-286</pages>
+	<year>2005</year>
+	<crossref>conf/IEEEscc/2005</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2005.107</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2005.107</ee>
+	<url>db/conf/IEEEscc/scc2005.html#ShenS05</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/BiornstadPA06</key>
+	<author>Biörn Biörnstad</author>
+	<author>Cesare Pautasso</author>
+	<author>Gustavo Alonso</author>
+	<title>Control the Flow: How to Safely Compose Streaming Services into Business Processes.</title>
+	<pages>206-213</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.38</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.38</ee>
+	<url>db/conf/IEEEscc/scc2006.html#BiornstadPA06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/HabibM09</key>
+	<author>Sami J. Habib</author>
+	<author>Paulvanna Nayaki Marimuthu</author>
+	<title>Service Innovation in Value-Network through Clusters Consolidation.</title>
+	<pages>505-508</pages>
+	<year>2009</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2009.46</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2009.46</ee>
+	<crossref>conf/IEEEscc/2009</crossref>
+	<url>db/conf/IEEEscc/scc2009.html#HabibM09</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/WangWX11</key>
+	<author>Xianzhi Wang</author>
+	<author>Zhongjie Wang</author>
+	<author>Xiaofei Xu</author>
+	<title>Price Heuristics for Highly Efficient Profit Optimization of Service Composition.</title>
+	<pages>378-385</pages>
+	<year>2011</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2011.11</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2011.11</ee>
+	<crossref>conf/IEEEscc/2011</crossref>
+	<url>db/conf/IEEEscc/scc2011.html#WangWX11</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/YangSLC04</key>
+	<author>Stephen J. H. Yang</author>
+	<author>Norman W. Y. Shao</author>
+	<author>Chi-Wei Lan</author>
+	<author>Irene Y. L. Chen</author>
+	<title>An Ontology Based Content Model for Web Services Description.</title>
+	<pages>245-252</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358012</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358012</ee>
+	<url>db/conf/IEEEscc/scc2004.html#YangSLC04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ByunK014</key>
+	<author>Jaewook Byun</author>
+	<author>Seong Hoon Kim</author>
+	<author>Daeyoung Kim 0001</author>
+	<title>Lilliput: Ontology-Based Platform for IoT Social Networks.</title>
+	<pages>139-146</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.27</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.27</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#ByunK014</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LimLCF11</key>
+	<author>Chunhyeok Lim</author>
+	<author>Shiyong Lu</author>
+	<author>Artem Chebotko</author>
+	<author>Farshad Fotouhi</author>
+	<title>OPQL: A First OPM-Level Query Language for Scientific Workflow Provenance.</title>
+	<pages>136-143</pages>
+	<year>2011</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2011.60</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2011.60</ee>
+	<crossref>conf/IEEEscc/2011</crossref>
+	<url>db/conf/IEEEscc/scc2011.html#LimLCF11</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/BourcierCDEM06</key>
+	<author>Johann Bourcier</author>
+	<author>Antonin Chazalet</author>
+	<author>Mikael Desertot</author>
+	<author>Clément Escoffier</author>
+	<author>Cristina Marin</author>
+	<title>A Dynamic-SOA Home Control Gateway.</title>
+	<pages>463-470</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.5</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.5</ee>
+	<url>db/conf/IEEEscc/scc2006.html#BourcierCDEM06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/TaoY06</key>
+	<author>Aries Tao Tao</author>
+	<author>Jian Yang</author>
+	<title>Develop Service Oriented Finance Business Processes: A Case Study in Capital Market.</title>
+	<pages>341-348</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.43</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.43</ee>
+	<url>db/conf/IEEEscc/scc2006.html#TaoY06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/BynaSN06</key>
+	<author>Surendra Byna</author>
+	<author>Xian-He Sun</author>
+	<author>Ryan Nakhoul</author>
+	<title>Memory Servers: A Scope of SOA for High-End Computing.</title>
+	<pages>265-268</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.67</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.67</ee>
+	<url>db/conf/IEEEscc/scc2006.html#BynaSN06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LongzhengYZ04</key>
+	<author>Cai Longzheng</author>
+	<author>Shengsheng Yu</author>
+	<author>Jingli Zhou</author>
+	<title>Research and Implementation of Remote Desktop Protocol Service Over SSL VPN.</title>
+	<pages>502-505</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358052</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358052</ee>
+	<url>db/conf/IEEEscc/scc2004.html#LongzhengYZ04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LiK13</key>
+	<author>Ying Li</author>
+	<author>Kaan Katircioglu</author>
+	<title>Measuring and Applying Service Request Effort Data in Application Management Services.</title>
+	<pages>352-359</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.64</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.64</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#LiK13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LinWZZ14</key>
+	<author>Rongheng Lin</author>
+	<author>Budan Wu</author>
+	<author>Yao Zhao</author>
+	<author>Hua Zou</author>
+	<title>EKMPC: Enhanced KMP Allocation for Virtual Network Service Provision in Cloud.</title>
+	<pages>836-837</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.113</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.113</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#LinWZZ14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2012-10-08</mdate>
+	<key>conf/IEEEscc/SyuMKF12</key>
+	<author>Yang Syu</author>
+	<author>Shang-Pin Ma</author>
+	<author>Jong-Yih Kuo</author>
+	<author>Yong-Yi Fanjiang</author>
+	<title>A Survey on Automated Service Composition Methods and Related Techniques.</title>
+	<pages>290-297</pages>
+	<year>2012</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2012.91</ee>
+	<crossref>conf/IEEEscc/2012</crossref>
+	<url>db/conf/IEEEscc/scc2012.html#SyuMKF12</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2012-10-08</mdate>
+	<key>conf/IEEEscc/JiangPLC12</key>
+	<author>Yexi Jiang</author>
+	<author>Chang-Shing Perng</author>
+	<author>Tao Li</author>
+	<author>Rong N. Chang</author>
+	<title>Self-Adaptive Cloud Capacity Planning.</title>
+	<pages>73-80</pages>
+	<year>2012</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2012.8</ee>
+	<crossref>conf/IEEEscc/2012</crossref>
+	<url>db/conf/IEEEscc/scc2012.html#JiangPLC12</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ChenZW11</key>
+	<author>Yaojun Chen</author>
+	<author>Liang-Jie Zhang</author>
+	<author>Qian Wang</author>
+	<title>Intelligent Scheduling Algorithm and Application in Modernizing Manufacturing Services.</title>
+	<pages>568-575</pages>
+	<year>2011</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2011.123</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2011.123</ee>
+	<crossref>conf/IEEEscc/2011</crossref>
+	<url>db/conf/IEEEscc/scc2011.html#ChenZW11</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2012-10-08</mdate>
+	<key>conf/IEEEscc/OgnjanovicMGBB12</key>
+	<author>Ivana Ognjanovic</author>
+	<author>Bardia Mohabbati</author>
+	<author>Dragan Gasevic</author>
+	<author>Ebrahim Bagheri</author>
+	<author>Marko Boskovic</author>
+	<title>A Metaheuristic Approach for the Configuration of Business Process Families.</title>
+	<pages>25-32</pages>
+	<year>2012</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2012.6</ee>
+	<crossref>conf/IEEEscc/2012</crossref>
+	<url>db/conf/IEEEscc/scc2012.html#OgnjanovicMGBB12</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/Laliwala06</key>
+	<author>Zakir Laliwala</author>
+	<title>Event-driven Dynamic Web Services Composition and Automation of Business Processes.</title>
+	<pages>527-528</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.50</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.50</ee>
+	<url>db/conf/IEEEscc/scc2006.html#Laliwala06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SherchanNHB10</key>
+	<author>Wanita Sherchan</author>
+	<author>Surya Nepal</author>
+	<author>Jonathon Hunklinger</author>
+	<author>Athman Bouguettaya</author>
+	<title>A Trust Ontology for Semantic Services.</title>
+	<pages>313-320</pages>
+	<year>2010</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2010.42</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2010.42</ee>
+	<crossref>conf/IEEEscc/2010</crossref>
+	<url>db/conf/IEEEscc/scc2010.html#SherchanNHB10</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/KumaraPOCK14</key>
+	<author>Banage T. G. S. Kumara</author>
+	<author>Incheon Paik</author>
+	<author>Hiroki Ohashi</author>
+	<author>Wuhui Chen</author>
+	<author>Koswatte R. C. Koswatte</author>
+	<title>Context Aware Post-filtering for Web Service Clustering.</title>
+	<pages>440-447</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.65</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.65</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#KumaraPOCK14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/BessaiYOGN13</key>
+	<author>Kahina Bessai</author>
+	<author>Samir Youcef</author>
+	<author>Ammar Oulamara</author>
+	<author>Claude Godart</author>
+	<author>Selmin Nurcan</author>
+	<title>Business Process Scheduling Strategies in Cloud Environments with Fairness Metrics.</title>
+	<pages>519-526</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.94</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.94</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#BessaiYOGN13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LiuWOL10</key>
+	<author>Guanfeng Liu</author>
+	<author>Yan Wang 0002</author>
+	<author>Mehmet A. Orgun</author>
+	<author>Ee-Peng Lim</author>
+	<title>A Heuristic Algorithm for Trust-Oriented Service Provider Selection in Complex Social Networks.</title>
+	<pages>130-137</pages>
+	<year>2010</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2010.47</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2010.47</ee>
+	<crossref>conf/IEEEscc/2010</crossref>
+	<url>db/conf/IEEEscc/scc2010.html#LiuWOL10</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/CamposRP14</key>
+	<author>Glaucia Melissa Medeiros Campos</author>
+	<author>Nelson Souto Rosa</author>
+	<author>Luís Ferreira Pires</author>
+	<title>A Survey of Formalization Approaches to Service Composition.</title>
+	<pages>179-186</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.32</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.32</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#CamposRP14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/YanGM15</key>
+	<author>Jun Yan</author>
+	<author>Hao Gao</author>
+	<author>Yi Mu</author>
+	<title>Business Rule Driven Composite Service Optimisation and Selection.</title>
+	<pages>49-56</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.17</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#YanGM15</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ErradiAK06a</key>
+	<author>Abdelkarim Erradi</author>
+	<author>Sriram Anand</author>
+	<author>Naveen N. Kulkarni</author>
+	<title>Evaluation of Strategies for Integrating Legacy Applications as Services in a Service Oriented Architecture.</title>
+	<pages>257-260</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.48</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.48</ee>
+	<url>db/conf/IEEEscc/scc2006.html#ErradiAK06a</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2011-10-26</mdate>
+	<key>conf/IEEEscc/GarciaHL04</key>
+	<author>Éric Garcia</author>
+	<author>Julien Henriet</author>
+	<author>Jean-Christophe Lapayre</author>
+	<title>Comparison of Continuous Flow Transmission Strategies over a Distributed Platform Based on Soap.</title>
+	<pages>664-669</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.10000</ee>
+	<url>db/conf/IEEEscc/scc2004.html#GarciaHL04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/CheikhrouhouKGJ14</key>
+	<author>Saoussen Cheikhrouhou</author>
+	<author>Slim Kallel</author>
+	<author>Nawal Guermouche</author>
+	<author>Mohamed Jmaiel</author>
+	<title>Enhancing Formal Specification and Verification of Temporal Constraints in Business Processes.</title>
+	<pages>701-708</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.97</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.97</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#CheikhrouhouKGJ14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/BossiBT14</key>
+	<author>Lorenzo Bossi</author>
+	<author>Stefano Braghin</author>
+	<author>Alberto Trombetta</author>
+	<title>Multidimensional Reputation Network for Service Composition in the Internet of Things.</title>
+	<pages>685-692</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.95</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.95</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#BossiBT14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/TahaE11</key>
+	<author>Kamal Taha</author>
+	<author>Ramez Elmasri</author>
+	<title>IRTG: A Grid Middleware for Bioinformatics.</title>
+	<pages>440-447</pages>
+	<year>2011</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2011.52</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2011.52</ee>
+	<crossref>conf/IEEEscc/2011</crossref>
+	<url>db/conf/IEEEscc/scc2011.html#TahaE11</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/AbbassiGGH14</key>
+	<author>Imed Abbassi</author>
+	<author>Mohamed Graiet</author>
+	<author>Walid Gaaloul</author>
+	<author>Nejib Ben Hadj-Alouane</author>
+	<title>A Formal Approach for Enforcing Transactional Requirements in Web Service Compositions.</title>
+	<pages>637-644</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.89</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.89</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#AbbassiGGH14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/Carey05</key>
+	<author>Michael J. Carey</author>
+	<title>XML Data Services.</title>
+	<year>2005</year>
+	<crossref>conf/IEEEscc/2005</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2005.112</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2005.112</ee>
+	<url>db/conf/IEEEscc/scc2005.html#Carey05</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/HuangHCL04</key>
+	<author>Xiaoqin Huang</author>
+	<author>Linpeng Huang</author>
+	<author>Lin Chen</author>
+	<author>Minglu Li</author>
+	<title>Design and Implementation of an Agent-Based Web Services Platform for Electronic Commerce.</title>
+	<pages>643-646</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358082</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358082</ee>
+	<url>db/conf/IEEEscc/scc2004.html#HuangHCL04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ZhouZ08</key>
+	<author>Nianjun Zhou</author>
+	<author>Liang-Jie Zhang</author>
+	<title>A Graph Theory Based Impact and Completion Analysis Framework and Applications for Modeling SOA Solution Components.</title>
+	<pages>145-154</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (1)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.137</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.137</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#ZhouZ08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/HeDCZHFJ11</key>
+	<author>Ligang He</author>
+	<author>Kewei Duan</author>
+	<author>Xueguang Chen</author>
+	<author>Deqing Zou</author>
+	<author>Zongfen Han</author>
+	<author>Ali Fadavinia</author>
+	<author>Stephen A. Jarvis</author>
+	<title>Modelling Workflow Executions under Role-Based Authorisation Control.</title>
+	<pages>200-208</pages>
+	<year>2011</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2011.56</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2011.56</ee>
+	<crossref>conf/IEEEscc/2011</crossref>
+	<url>db/conf/IEEEscc/scc2011.html#HeDCZHFJ11</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LiuWLX13</key>
+	<author>SiFan Liu</author>
+	<author>Jie Wu 0001</author>
+	<author>ZhiHui Lu</author>
+	<author>Hui Xiong</author>
+	<title>VMRaS: A Novel Virtual Machine Risk Assessment Scheme in the Cloud Environment.</title>
+	<pages>384-391</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.12</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.12</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#LiuWLX13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/KumaraHCK15</key>
+	<author>Indika Kumara</author>
+	<author>Jun Han</author>
+	<author>Alan Colman</author>
+	<author>Malinda Kapuruge</author>
+	<title>Software-Defined Service Networking: Runtime Sharing with Performance Differentiation in Multi-tenant SaaS Applications.</title>
+	<pages>210-217</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.37</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#KumaraHCK15</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/YaoSZFLQEW15</key>
+	<author>Jinhui Yao</author>
+	<author>Michael Shepherd</author>
+	<author>Jing Zhou</author>
+	<author>Lina Fu</author>
+	<author>Faming Li</author>
+	<author>Dennis Quebe</author>
+	<author>Justin A. Echols</author>
+	<author>Xuejin Wen</author>
+	<title>Guided Analytic Workflows through Service Composition for Population Health Studies.</title>
+	<pages>696-703</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.99</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#YaoSZFLQEW15</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/HeXCWVYJ15</key>
+	<author>Qiang He</author>
+	<author>Xiaoyuan Xie</author>
+	<author>Feifei Chen</author>
+	<author>Yanchun Wang</author>
+	<author>Rajesh Vasa</author>
+	<author>Yun Yang</author>
+	<author>Hai Jin</author>
+	<title>Spectrum-Based Runtime Anomaly Localisation in Service-Based Systems.</title>
+	<pages>90-97</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.22</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#HeXCWVYJ15</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/GuptaBSCC08</key>
+	<author>Rohit Gupta</author>
+	<author>Sumit Kumar Bose</author>
+	<author>Srikanth Sundarrajan</author>
+	<author>Manogna Chebiyam</author>
+	<author>Anirban Chakrabarti</author>
+	<title>A Two Stage Heuristic Algorithm for Solving the Server Consolidation Problem with Item-Item and Bin-Item Incompatibility Constraints.</title>
+	<pages>39-46</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.39</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.39</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#GuptaBSCC08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2012-10-08</mdate>
+	<key>conf/IEEEscc/MacbethW12</key>
+	<author>Matthew Macbeth</author>
+	<author>Raymond K. Wong</author>
+	<title>A Middleware Service for Image Adjustment and Filtering for Small Screens.</title>
+	<pages>423-430</pages>
+	<year>2012</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2012.96</ee>
+	<crossref>conf/IEEEscc/2012</crossref>
+	<url>db/conf/IEEEscc/scc2012.html#MacbethW12</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/BrazierCGKP10</key>
+	<author>Pearl Brazier</author>
+	<author>Artem Chebotko</author>
+	<author>Eric Gonzalez</author>
+	<author>Andrey Kashlev</author>
+	<author>Anthony Piazza</author>
+	<title>Supporting Geosciences Web Services Metadata Management and Discovery.</title>
+	<pages>625-626</pages>
+	<year>2010</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2010.27</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2010.27</ee>
+	<crossref>conf/IEEEscc/2010</crossref>
+	<url>db/conf/IEEEscc/scc2010.html#BrazierCGKP10</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/HuWCC14</key>
+	<author>Guangchang Hu</author>
+	<author>Budan Wu</author>
+	<author>Bo Cheng</author>
+	<author>Junliang Chen</author>
+	<title>A Service Migration Mechanism for Web Service Discovery.</title>
+	<pages>859-860</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.124</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.124</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#HuWCC14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/MahbubS11</key>
+	<author>Khaled Mahbub</author>
+	<author>George Spanoudakis</author>
+	<title>Proactive SLA Negotiation for Service Based Systems: Initial Implementation and Evaluation Experience.</title>
+	<pages>16-23</pages>
+	<year>2011</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2011.34</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2011.34</ee>
+	<crossref>conf/IEEEscc/2011</crossref>
+	<url>db/conf/IEEEscc/scc2011.html#MahbubS11</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/Pinhanez07a</key>
+	<author>Claudio S. Pinhanez</author>
+	<title>A Services Theory Approach to Online Service Applications.</title>
+	<pages>395-402</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.19</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.19</ee>
+	<url>db/conf/IEEEscc/scc2007.html#Pinhanez07a</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/KarunamurthyKG06</key>
+	<author>Rajesh Karunamurthy</author>
+	<author>Ferhat Khendek</author>
+	<author>Roch H. Glitho</author>
+	<title>A Novel Business Model for Web Service Composition.</title>
+	<pages>431-437</pages>
+	<year>2006</year>
+	<crossref>conf/IEEEscc/2006</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2006.12</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2006.12</ee>
+	<url>db/conf/IEEEscc/scc2006.html#KarunamurthyKG06</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2012-10-08</mdate>
+	<key>conf/IEEEscc/TanakaMZ12</key>
+	<author>Masahiro Tanaka</author>
+	<author>Yohei Murakami</author>
+	<author>Koji Zettsu</author>
+	<title>Data-Intensive Services for Large-Scale Archive Access.</title>
+	<pages>617-624</pages>
+	<year>2012</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2012.75</ee>
+	<crossref>conf/IEEEscc/2012</crossref>
+	<url>db/conf/IEEEscc/scc2012.html#TanakaMZ12</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/RosenbergMLMBD10</key>
+	<author>Florian Rosenberg</author>
+	<author>Max Benjamin Müller</author>
+	<author>Philipp Leitner</author>
+	<author>Anton Michlmayr</author>
+	<author>Athman Bouguettaya</author>
+	<author>Schahram Dustdar</author>
+	<title>Metaheuristic Optimization of Large-Scale QoS-aware Service Compositions.</title>
+	<pages>97-104</pages>
+	<year>2010</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2010.58</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2010.58</ee>
+	<crossref>conf/IEEEscc/2010</crossref>
+	<url>db/conf/IEEEscc/scc2010.html#RosenbergMLMBD10</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/EnglmeierK09</key>
+	<author>Kurt Englmeier</author>
+	<author>Ricki Koinig</author>
+	<title>Domain-Specific Deployment and Configuration Language for Composition and Adaptation of Coarse-Grained Services.</title>
+	<pages>490-493</pages>
+	<year>2009</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2009.74</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2009.74</ee>
+	<crossref>conf/IEEEscc/2009</crossref>
+	<url>db/conf/IEEEscc/scc2009.html#EnglmeierK09</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2012-10-08</mdate>
+	<key>conf/IEEEscc/YeG12</key>
+	<author>Xinfeng Ye</author>
+	<author>Mingyu Gao</author>
+	<title>Access Control with Hidden Policies and Credentials for Service Computing.</title>
+	<pages>242-249</pages>
+	<year>2012</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2012.13</ee>
+	<crossref>conf/IEEEscc/2012</crossref>
+	<url>db/conf/IEEEscc/scc2012.html#YeG12</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/HermosilloSD10</key>
+	<author>Gabriel Hermosillo</author>
+	<author>Lionel Seinturier</author>
+	<author>Laurence Duchien</author>
+	<title>Using Complex Event Processing for Dynamic Business Process Adaptation.</title>
+	<pages>466-473</pages>
+	<year>2010</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2010.48</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2010.48</ee>
+	<crossref>conf/IEEEscc/2010</crossref>
+	<url>db/conf/IEEEscc/scc2010.html#HermosilloSD10</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/KungasM07</key>
+	<author>Peep Küngas</author>
+	<author>Mihhail Matskin</author>
+	<title>Interaction and Potential Synergy between Commercial and Governmental Web Services - a Case Study.</title>
+	<pages>1-8</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007w</crossref>
+	<booktitle>IEEE SCW</booktitle>
+	<ee>http://dx.doi.org/10.1109/SERVICES.2007.36</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SERVICES.2007.36</ee>
+	<url>db/conf/IEEEscc/scw2007.html#KungasM07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/UmapathyP07</key>
+	<author>Karthikeyan Umapathy</author>
+	<author>Sandeep Purao</author>
+	<title>Towards A Theoretical Foundation for Web Services - The Language-Action Perspective (LAP) Approach.</title>
+	<pages>252-255</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.119</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.119</ee>
+	<url>db/conf/IEEEscc/scc2007.html#UmapathyP07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/WangLL13</key>
+	<author>Haiyan Wang</author>
+	<author>Wei Li 0017</author>
+	<author>Junzhou Luo</author>
+	<title>Prediction of Service Reliability Based on Grouping.</title>
+	<pages>559-566</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.54</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.54</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#WangLL13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ReissK05</key>
+	<author>Frederick Reiss</author>
+	<author>Tapas Kanungo</author>
+	<title>Satisfying Database Service Level Agreements while Minimizing Cost through Storage QoS.</title>
+	<pages>13-21</pages>
+	<year>2005</year>
+	<crossref>conf/IEEEscc/2005</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2005.79</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2005.79</ee>
+	<url>db/conf/IEEEscc/scc2005.html#ReissK05</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/WilcoxC08</key>
+	<author>Dwight R. Wilcox</author>
+	<author>Marion G. Ceruti</author>
+	<title>A Structured Service-Centric Approach for the Integration of Command and Control Components.</title>
+	<pages>5-12</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.158</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.158</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#WilcoxC08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/RachamaduguA08</key>
+	<author>Vijaykumar Rachamadugu</author>
+	<author>John A. Anderson</author>
+	<title>Managing Security and Privacy Integration across Enterprise Business Process and Infrastructure.</title>
+	<pages>351-358</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.46</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.46</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#RachamaduguA08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SrinivasmurthyMGSRDSP09</key>
+	<author>Venugopal Srinivasmurthy</author>
+	<author>Sanjeeva Manvi</author>
+	<author>Ravi Gullapalli</author>
+	<author>Dattathreya Sathyamurthy</author>
+	<author>Nandan Reddy</author>
+	<author>Hemanth Dattatreya</author>
+	<author>Sharad Singhal</author>
+	<author>Jim Pruyne</author>
+	<title>Web2Exchange: A Model-Based Service Transformation and Integration Environment.</title>
+	<pages>324-331</pages>
+	<year>2009</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2009.76</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2009.76</ee>
+	<crossref>conf/IEEEscc/2009</crossref>
+	<url>db/conf/IEEEscc/scc2009.html#SrinivasmurthyMGSRDSP09</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2012-10-08</mdate>
+	<key>conf/IEEEscc/XuLTCL12</key>
+	<author>Yu Xu</author>
+	<author>Jianxun Liu</author>
+	<author>Mingdong Tang</author>
+	<author>Buqing Cao</author>
+	<author>Xiaoqing (Frank) Liu</author>
+	<title>An Efficient Search Strategy for Service Provider Selection in Complex Social Networks.</title>
+	<pages>130-137</pages>
+	<year>2012</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2012.31</ee>
+	<crossref>conf/IEEEscc/2012</crossref>
+	<url>db/conf/IEEEscc/scc2012.html#XuLTCL12</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/NingZZLZ13</key>
+	<author>Ke Ning</author>
+	<author>ZhangBing Zhou</author>
+	<author>Jianhua Zheng</author>
+	<author>Dong Liu</author>
+	<author>Liang-Jie Zhang</author>
+	<title>Services for Context Aware Knowledge Enhancement and Its Application in the Chinese Enterprise Management Tank (CEMT).</title>
+	<pages>643-650</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.32</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.32</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#NingZZLZ13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/KakarontzasG15</key>
+	<author>George Kakarontzas</author>
+	<author>Vassilis C. Gerogiannis</author>
+	<title>An Intuitionistic Fuzzy Approach for Ranking Web Services under Evaluation Uncertainty.</title>
+	<pages>742-745</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.105</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#KakarontzasG15</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/KazemiARHJS11</key>
+	<author>Ali Kazemi</author>
+	<author>Ali Nasirzadeh Azizkandi</author>
+	<author>Ali Rostampour</author>
+	<author>Hassan Haghighi</author>
+	<author>Pooyan Jamshidi</author>
+	<author>Fereidoon Shams</author>
+	<title>Measuring the Conceptual Coupling of Services Using Latent Semantic Indexing.</title>
+	<pages>504-511</pages>
+	<year>2011</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2011.23</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2011.23</ee>
+	<crossref>conf/IEEEscc/2011</crossref>
+	<url>db/conf/IEEEscc/scc2011.html#KazemiARHJS11</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/Al-MasriM09</key>
+	<author>Eyhab Al-Masri</author>
+	<author>Qusay H. Mahmoud</author>
+	<title>Identifying Client Goals for Web Service Discovery.</title>
+	<pages>202-209</pages>
+	<year>2009</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2009.60</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2009.60</ee>
+	<crossref>conf/IEEEscc/2009</crossref>
+	<url>db/conf/IEEEscc/scc2009.html#Al-MasriM09</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/WombacherL10</key>
+	<author>Andreas Wombacher</author>
+	<author>Chen Li 0012</author>
+	<title>Alternative Approaches for Workflow Similarity.</title>
+	<pages>337-345</pages>
+	<year>2010</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2010.95</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2010.95</ee>
+	<crossref>conf/IEEEscc/2010</crossref>
+	<url>db/conf/IEEEscc/scc2010.html#WombacherL10</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/NakamuraFIM08</key>
+	<author>Masahide Nakamura</author>
+	<author>Yusuke Fukuoka</author>
+	<author>Hiroshi Igaki</author>
+	<author>Ken-ichi Matsumoto</author>
+	<title>Implementing Multi-Vendor Home Network System with Vendor-Neutral Services and Dynamic Service Binding.</title>
+	<pages>275-282</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.148</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.148</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#NakamuraFIM08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/YangZT08</key>
+	<author>Stephen J. H. Yang</author>
+	<author>Jia Zhang</author>
+	<author>Stella T. C. Tsai</author>
+	<title>An Automatic Semantic Segment Detection Service for HTML Documents.</title>
+	<pages>210-217</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (1)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.155</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.155</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#YangZT08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ZhangZA08</key>
+	<author>Liang-Jie Zhang</author>
+	<author>Jia Zhang</author>
+	<author>Abdul Allam</author>
+	<title>A Method and Case Study of Designing Presentation Module in an SOA-based Solution Using Configurable Architectural Building Blocks (ABBs).</title>
+	<pages>459-467</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.156</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.156</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#ZhangZA08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/SchaferBTR14</key>
+	<author>David Richard Schäfer</author>
+	<author>Thomas Bach</author>
+	<author>Muhammad Adnan Tariq</author>
+	<author>Kurt Rothermel</author>
+	<title>Increasing Availability of Workflows Executing in a Pervasive Environment.</title>
+	<pages>717-724</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.98</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.98</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#SchaferBTR14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/HeY07a</key>
+	<author>Daisy Daiqin He</author>
+	<author>Jian Yang</author>
+	<title>A Policy Driven Authorization Control Framework for Business Collaboration.</title>
+	<pages>17-24</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007w</crossref>
+	<booktitle>IEEE SCW</booktitle>
+	<ee>http://dx.doi.org/10.1109/SERVICES.2007.7</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SERVICES.2007.7</ee>
+	<url>db/conf/IEEEscc/scw2007.html#HeY07a</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/LvWF10</key>
+	<author>ZhiHui Lv</author>
+	<author>Jie Wu 0003</author>
+	<author>Weiming Fu</author>
+	<title>Towards a Novel Web Services Standard-Supported CDN-P2P Loosely-Coupled Hybrid and Management Model.</title>
+	<pages>297-304</pages>
+	<year>2010</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2010.80</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2010.80</ee>
+	<crossref>conf/IEEEscc/2010</crossref>
+	<url>db/conf/IEEEscc/scc2010.html#LvWF10</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/KashlevC11</key>
+	<author>Andrey Kashlev</author>
+	<author>Artem Chebotko</author>
+	<title>SPARQL-to-SQL Query Translation: Bottom-Up or Top-Down?</title>
+	<pages>757-758</pages>
+	<year>2011</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2011.79</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2011.79</ee>
+	<crossref>conf/IEEEscc/2011</crossref>
+	<url>db/conf/IEEEscc/scc2011.html#KashlevC11</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/MaWSZY13</key>
+	<author>You Ma</author>
+	<author>Shangguang Wang</author>
+	<author>Qibo Sun</author>
+	<author>Hua Zou</author>
+	<author>Fangchun Yang</author>
+	<title>Web Services QoS Measure Based on Subjective and Objective Weight.</title>
+	<pages>543-550</pages>
+	<year>2013</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2013.10</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2013.10</ee>
+	<crossref>conf/IEEEscc/2013</crossref>
+	<url>db/conf/IEEEscc/scc2013.html#MaWSZY13</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/PurushothamaP09</key>
+	<author>B. R. Purushothama</author>
+	<author>Alwyn R. Pais</author>
+	<title>Design and Implementation of Secure Internet Based Voting System with User Anonymity Using Identity Based Encryption System.</title>
+	<pages>474-481</pages>
+	<year>2009</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2009.30</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2009.30</ee>
+	<crossref>conf/IEEEscc/2009</crossref>
+	<url>db/conf/IEEEscc/scc2009.html#PurushothamaP09</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/KonaBBG08</key>
+	<author>Srividya Kona</author>
+	<author>Ajay Bansal</author>
+	<author>M. Brian Blake</author>
+	<author>Gopal Gupta</author>
+	<title>Towards a General Framework for Web Service Composition.</title>
+	<pages>497-498</pages>
+	<year>2008</year>
+	<booktitle>IEEE SCC (2)</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2008.134</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2008.134</ee>
+	<crossref>conf/IEEEscc/2008</crossref>
+	<url>db/conf/IEEEscc/scc2008.html#KonaBBG08</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ShercliffSSGF05</key>
+	<author>Gareth Shercliff</author>
+	<author>Patrick J. Stockreisser</author>
+	<author>Jianhua Shao</author>
+	<author>W. A. Gray</author>
+	<author>N. J. Fiddian</author>
+	<title>Supporting QoS Assessment and Monitoring in Virtual Organisations.</title>
+	<pages>249-250</pages>
+	<year>2005</year>
+	<crossref>conf/IEEEscc/2005</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2005.95</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2005.95</ee>
+	<url>db/conf/IEEEscc/scc2005.html#ShercliffSSGF05</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/TungY07</key>
+	<author>Wei-Feng Tung</author>
+	<author>Soe-Tsyr Yuan</author>
+	<title>Optimization of Collaborative Service Systems Using Experience Evaluation Model.</title>
+	<pages>244-247</pages>
+	<year>2007</year>
+	<crossref>conf/IEEEscc/2007</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2007.85</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2007.85</ee>
+	<url>db/conf/IEEEscc/scc2007.html#TungY07</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/ChenT04</key>
+	<author>Chen Chen</author>
+	<author>Weiqin Tong</author>
+	<title>The Application of the BSP Model on DataGrid.</title>
+	<pages>471-474</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358045</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358045</ee>
+	<url>db/conf/IEEEscc/scc2004.html#ChenT04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/WuMC04</key>
+	<author>Zhaohui Wu</author>
+	<author>Yuxin Mao</author>
+	<author>Huajun Chen</author>
+	<title>Semantic View for Grid Services.</title>
+	<pages>329-335</pages>
+	<year>2004</year>
+	<crossref>conf/IEEEscc/2004</crossref>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2004.1358022</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2004.1358022</ee>
+	<url>db/conf/IEEEscc/scc2004.html#WuMC04</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-12-02</mdate>
+	<key>conf/IEEEscc/GuvenSIPMV14</key>
+	<author>Sinem Guven</author>
+	<author>Mathias Steiner</author>
+	<author>Tsuyoshi Idé</author>
+	<author>Amit M. Paradkar</author>
+	<author>Sergey Makogon</author>
+	<author>Alejandro Venegas</author>
+	<title>Mining for Gold: How to Predict Service Contract Performance with Optimal Accuracy Based on Ordinal Risk Assessment Data.</title>
+	<pages>315-322</pages>
+	<year>2014</year>
+	<booktitle>IEEE SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2014.49</ee>
+	<ee>http://doi.ieeecomputersociety.org/10.1109/SCC.2014.49</ee>
+	<crossref>conf/IEEEscc/2014</crossref>
+	<url>db/conf/IEEEscc/scc2014.html#GuvenSIPMV14</url>
+</inproceedings>
+<inproceedings>
+	<mdate>2015-08-26</mdate>
+	<key>conf/IEEEscc/ZhangWY15</key>
+	<author>Haibin Zhang</author>
+	<author>Yan Wang</author>
+	<author>Jian Yang</author>
+	<title>Space Reduction for Contextual Transaction Trust Computation in E-Commerce and E-Service Environments.</title>
+	<pages>680-687</pages>
+	<year>2015</year>
+	<booktitle>SCC</booktitle>
+	<ee>http://dx.doi.org/10.1109/SCC.2015.97</ee>
+	<crossref>conf/IEEEscc/2015</crossref>
+	<url>db/conf/IEEEscc/scc2015.html#ZhangWY15</url>
+</inproceedings>
+</dblp>
