@@ -18,7 +18,7 @@ public class User extends Model{
 	public String email;
 	
 	public User() {
-		
+	
 	}
 	
 	public String getUsername() {

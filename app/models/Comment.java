@@ -36,6 +36,11 @@ public class Comment extends Model {
      **/
     public boolean isAnswer;
     
+    /* the post it belongs to */
+    @ManyToOne
+    @JoinColumn(name = "post_id", referencedColumnName = "id")
+    public Post owner;
+    
     public static Finder<Long, Comment> find = new Finder<Long, Comment>(Comment.class);
     
     public Comment() {
@@ -45,13 +50,23 @@ public class Comment extends Model {
     		Date commentAt,
     		User author,
     		String content,
-    		boolean isAnswer
+    		boolean isAnswer,
+    		Post owner
     		) {
     	this.commentAt = commentAt;
     	this.author = author;
     	this.content = content;
     	this.isAnswer = isAnswer;
+    	this.owner = owner;
     }
+
+	public Post getOwner() {
+		return owner;
+	}
+
+	public void setOwner(Post owner) {
+		this.owner = owner;
+	}
 
 	public Long getId() {
 		return id;

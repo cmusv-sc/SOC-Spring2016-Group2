@@ -40,8 +40,7 @@ public class Post extends Model {
     @Formats.DateTime(pattern="dd/MM/yyyy")
     public Date postAt = new Date();
     
-    @OneToMany(fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
-    @JoinColumn(name = "commentId", referencedColumnName = "id")
+    @OneToMany(fetch = FetchType.EAGER, cascade = {CascadeType.ALL}, mappedBy="owner")
     public List<Comment> comments;
 
     public static Finder<Long, Post> find = new Finder<Long, Post>(Post.class);

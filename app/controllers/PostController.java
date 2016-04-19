@@ -92,9 +92,11 @@ public class PostController extends Controller {
 				commentAt,
 				author,
 				content,
-				isAnswer
+				isAnswer,
+				post
 				);
-		comment.save();
+		/* the save of post will cascade to comment */
+		//comment.save();
 		post.getComments().add(comment);
 		post.save();
 		

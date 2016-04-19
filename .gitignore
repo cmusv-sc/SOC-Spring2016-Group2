@@ -15,5 +15,3 @@ target/
 #ignore logs directory 
 logs/
 
-#ignore project directory
-project/

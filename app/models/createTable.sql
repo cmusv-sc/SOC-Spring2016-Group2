@@ -50,4 +50,32 @@ create table search (
   constraint pk_search primary key (id)
 );
 
+create table comment (
+  id                        bigint auto_increment not null,
+  commentId                 bigint not null,
+  comment_at                datetime,
+  authorId                  bigint,
+  content                   varchar(255),
+  is_answer                 tinyint(1) default 0,
+  constraint pk_comment primary key (id)
+);
+
+create table post (
+  id                        bigint auto_increment not null,
+  title                     varchar(255),
+  content                   varchar(255),
+  authorId                  bigint,
+  is_queustion              tinyint(1) default 0,
+  post_at                   datetime,
+  constraint pk_post primary key (id)
+);
+
+create table user (
+  id                        bigint auto_increment not null,
+  username                  varchar(255),
+  password                  varchar(255),
+  email                     varchar(255),
+  constraint pk_user primary key (id)
+);
+
 commit;
