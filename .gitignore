@@ -15,7 +15,7 @@ target/
 #ignore logs directory 
 logs/
 
-
+./public/upload/*
 .DS_Store
 bin/
 /db
