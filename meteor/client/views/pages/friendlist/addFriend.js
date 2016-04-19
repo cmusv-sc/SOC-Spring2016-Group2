@@ -1,4 +1,3 @@
-Users2  = new Mongo.Collection('usersdatabase');
 
 Template.addFriend.helpers({
     settings: function () {
@@ -17,11 +16,12 @@ Template.addFriend.helpers({
 });
 
 var searchName;
+var weatherDep = new Tracker.Dependency;
 
 Template.addFriend.helpers({
     myCollection: function () {
         weatherDep.depend()
-        return Users2.find({name : {$regex : ".*" + searchName + ".*"}}).fetch();
+        return User2.find({name : {$regex : ".*" + searchName + ".*"}}).fetch();
     }
 });
 
@@ -33,7 +33,7 @@ Template.addFriend.events({
     if (event.target.className == "name") {
         Session.setPersistent("namesession", this.name);
         Session.setPersistent("summarysession", this.summary);
-        window.location.href='/addinfo'
+        window.location.href='/addFriendInfo'
     }
   }
 });
@@ -56,23 +56,9 @@ Template.addFriendInfo.events({
     var summary = Session.get("summarysession")
     Friends.insert({name: person, createdAt: new Date(),
                     summary: summary});
-    window.location.href='/add'
+    window.location.href='/addFriend'
   }
 });
-
-
-
-Template.FriendInfoLayout.events({
-  'click .button2': function (event) {
-    event.preventDefault();
-    var id = Session.get("idsession")
-    Friends.remove(id);
-    window.location.href='/'
-  }
-});
-
-
-var weatherDep = new Tracker.Dependency;
 
 
 Template.registerHelper('formatDate', function(date) {

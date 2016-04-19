@@ -1,6 +1,8 @@
+
 Template.friendlisthome.helpers({
 
     settings: function () {
+
         return {
             collection: Friends,
             rowsPerPage: 10,
@@ -32,13 +34,13 @@ Template.friendlisthome.events({
         Session.setPersistent("idsession", this._id);
         Session.setPersistent("namesession", this.name);
         Session.setPersistent("summarysession", this.summary);
-        window.location.href='/friendinfo'
+        window.location.href='/viewFriendInfo'
 
     }
   }
 });
 
-Template.FriendInfoLayout.helpers({
+Template.viewFriendInfo.helpers({
   context: function() {
     var result = _.clone(this);
     var person = Session.get("namesession")
@@ -49,6 +51,13 @@ Template.FriendInfoLayout.helpers({
   }
 });
 
-
+Template.viewFriendInfo.events({
+  'click .button2': function (event) {
+    event.preventDefault();
+    var id = Session.get("idsession")
+    Friends.remove(id);
+    window.location.href='/friendlisthome'
+  }
+});
 
 
