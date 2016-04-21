@@ -1,7 +1,7 @@
 package models;
 
-import java.util.Date;
-
+import java.sql.Timestamp;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
@@ -21,7 +21,10 @@ public class Comment extends Model {
 	public Long id;
     
     /* when does the comment created */
-    public Date commentAt;
+    //@Formats.DateTime(pattern="dd/MM/yyyy")
+    //public Date commentAt;
+    @Column(columnDefinition = "datetime")
+    public Timestamp commentAt;
     
     /* who created this comment */
     @ManyToOne(fetch = FetchType.EAGER)
@@ -47,7 +50,7 @@ public class Comment extends Model {
     }
     
     public Comment(
-    		Date commentAt,
+    		Timestamp commentAt,
     		User author,
     		String content,
     		boolean isAnswer,
@@ -76,11 +79,11 @@ public class Comment extends Model {
 		this.id = id;
 	}
 
-	public Date getCommentAt() {
+	public Timestamp getCommentAt() {
 		return commentAt;
 	}
 
-	public void setCommentAt(Date commentAt) {
+	public void setCommentAt(Timestamp commentAt) {
 		this.commentAt = commentAt;
 	}
 

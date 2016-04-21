@@ -17,8 +17,9 @@ import play.mvc.*;
 import views.html.*;
 
 import java.io.File;
-import java.util.ArrayList;
+import java.sql.Timestamp;
 import java.util.Date;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -51,7 +52,7 @@ public class Application extends Controller {
         Http.RequestBody requestBody=request().body();
         System.out.println(requestBody.asText());
         List<Person> persons = new Model.Finder(String.class, Person.class).all();
-        persons.add(0,new Person((long)1,new Date(), "zhangs"));
+        persons.add(0,new Person((long)1, new Timestamp(0), "zhangs"));
         return ok(toJson(persons));
     }
 

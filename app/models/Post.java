@@ -1,10 +1,12 @@
 package models;
 
-import java.util.ArrayList;
 import java.util.Date;
+import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
@@ -37,8 +39,8 @@ public class Post extends Model {
     public boolean isQueustion;
     
     /* post created at */
-    @Formats.DateTime(pattern="dd/MM/yyyy")
-    public Date postAt = new Date();
+    @Column(columnDefinition = "datetime")
+    public Timestamp postAt;
     
     @OneToMany(fetch = FetchType.EAGER, cascade = {CascadeType.ALL}, mappedBy="owner")
     public List<Comment> comments;
@@ -53,7 +55,7 @@ public class Post extends Model {
     		String content, 
     		User author, 
     		boolean isQuestion, 
-    		Date postAt
+    		Timestamp postAt
     		) {
     	this.title = title;
     	this.content = content;
@@ -93,11 +95,11 @@ public class Post extends Model {
 		this.author = author;
 	}
 
-	public Date getPostAt() {
+	public Timestamp getPostAt() {
 		return postAt;
 	}
 
-	public void setPostAt(Date postAt) {
+	public void setPostAt(Timestamp postAt) {
 		this.postAt = postAt;
 	}
 

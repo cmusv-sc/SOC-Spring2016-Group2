@@ -19,7 +19,7 @@ import util.Common;
 public class PostController extends Controller {
 	
 	/* add a new post to database */
-	public Result addPost() {
+	/*public Result addPost() {
 		JsonNode jsonNode = request().body().asJson();
 		if(jsonNode == null) {
 			return Common.badRequestWrapper("Post is empty");
@@ -42,7 +42,7 @@ public class PostController extends Controller {
 		}
 		new Post(title, content, author, isQuestion, postAt).save();
 		return ok(new Gson().toJson("success"));
-	}
+	}*/
 	
 	/* find post by id */
 	public Result getPostById(Long postId) {
@@ -62,7 +62,7 @@ public class PostController extends Controller {
 		return created(new Gson().toJson(posts));
 	}
 	
-	public Result addComment() {
+	/*public Result addComment() {
 		JsonNode jsonNode = request().body().asJson();
 		if(jsonNode == null) {
 			return Common.badRequestWrapper("Comment is empty");
@@ -95,7 +95,7 @@ public class PostController extends Controller {
 				isAnswer,
 				post
 				);
-		/* the save of post will cascade to comment */
+		// the save of post will cascade to comment 
 		//comment.save();
 		post.getComments().add(comment);
 		post.save();
@@ -127,7 +127,7 @@ public class PostController extends Controller {
 			}
 		}
 		return Common.badRequestWrapper("Cannot find comment");
-	}
+	}*/
 }
 
 

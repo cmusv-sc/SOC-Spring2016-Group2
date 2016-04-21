@@ -18,9 +18,9 @@ POST    /sayHello2                  controllers.Application.sayHello2()
 
 POST    /person/uploadPic           controllers.Application.upload()
 
-#GET     /year/:year                 controllers.Application.getPaperByYear(year:Integer)
-#
-#GET     /title/:title               controllers.Application.getPaperByTitle(title: String)
+GET     /year/:year                 controllers.Application.getPaperByYear(year:Integer)
+
+GET     /title/:title               controllers.Application.getPaperByTitle(title: String)
 
 
 ###Sprint1
@@ -29,9 +29,9 @@ GET    /paper/:title                controllers.Application.getPaperByTitle(titl
 
 
 #Post Related REST API
-POST	/post/addPost				controllers.PostController.addPost()
-GET		/post/getPostsById/:postId	controllers.PostController.getPostById(postId: Long)
-GET		/post/getPosts				controllers.PostController.getPosts()
-POST	/post/addComment			controllers.PostController.addComment()
-GET		/post/getComments/:postId	controllers.PostController.getComments(postId: Long)
-POST	/post/setAnswer/postId/:postId/commentId/:commentId	controllers.PostController.setAnswer(postId: Long, commentId: Long)
+#POST	/post/addPost				controllers.PostController.addPost()
+#GET		/post/getPostsById/:postId	controllers.PostController.getPostById(postId: Long)
+#GET		/post/getPosts				controllers.PostController.getPosts()
+#POST	/post/addComment			controllers.PostController.addComment()
+#GET		/post/getComments/:postId	controllers.PostController.getComments(postId: Long)
+#POST	/post/setAnswer/postId/:postId/commentId/:commentId	controllers.PostController.setAnswer(postId: Long, commentId: Long)

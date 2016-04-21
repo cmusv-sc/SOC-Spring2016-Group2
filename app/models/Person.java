@@ -3,6 +3,8 @@ package models;
 import com.avaje.ebean.Model;
 import play.data.format.Formats;
 import javax.persistence.*;
+
+import java.sql.Timestamp;
 import java.util.Date;
 
 @Entity(name="person")
@@ -13,8 +15,10 @@ public class Person extends Model {
 
     public String name;
 
-    @Formats.DateTime(pattern="dd/MM/yyyy")
-    public Date dueDate = new Date();
+    //@Formats.DateTime(pattern="dd/MM/yyyy")
+    //public Date dueDate = new Date(0, 0, 0);
+    @Column(columnDefinition = "datetime")
+    public Timestamp dueDate;
 
     
     /***
@@ -22,14 +26,13 @@ public class Person extends Model {
      *  so that they can be immediately returned to the pool.
      */
 
-    public Person(Long id, Date date, String name){
+    public Person(Long id, Timestamp date, String name){
         this.id=id;
         this.dueDate=date;
         this.name=name;
     }
 
     public Person() {
-    	this.dueDate = new Date("01/01/2011");
     	this.name = "";
     }
 
@@ -39,8 +42,8 @@ public class Person extends Model {
         this.id=id;
     }
 
-    public void setDueDate(Date newdate){
-        this.dueDate=newdate;
+    public void setDueDate(Timestamp newdate){
+        this.dueDate = newdate;
     }
 
     public void setName(String name){
@@ -51,7 +54,7 @@ public class Person extends Model {
         return id;
     }
     
-    public Date getDueDate(){
+    public Timestamp getDueDate(){
         return dueDate;
     }
     
