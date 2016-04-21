@@ -4,55 +4,6 @@
             <div class="col-lg-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <h5>Paper Portal</h5>
-
-                        <div class="pull-right">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-xs btn-white active">Title</button>
-                                <button type="button" class="btn btn-xs btn-white">Author</button>
-                                <button type="button" class="btn btn-xs btn-white">Year</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ibox-content">
-                        {{>iboxTools}}
-                        <div class="row">
-                            <div class="col-lg-9">
-                                <div class="flot-chart">
-                                    <div class="flot-chart-content" id="flot-dashboard-chart"></div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <ul class="stat-list">
-                                    <li>
-                                        <h2 class="no-margins">Jia Zhang</h2>
-                                        <small>Confucius: A Tool Supporting Collaborative Scientific Workflow Composition </small>
-                                        <div class="stat-percent">3 <i class="fa fa-level-up text-navy"></i></div>
-                                        <div class="progress progress-mini">
-                                            <div style="width: 48%;" class="progress-bar"></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <h2 class="no-margins ">Marcin Jarzab</h2>
-                                        <small>An Analysis of Methods for Sharing an Electronic ... Cloud Computing and Service Oriented Architecture.</small>
-                                        <div class="stat-percent">9 <i class="fa fa-bolt text-navy"></i></div>
-                                        <div class="progress progress-mini">
-                                            <div style="width: 22%;" class="progress-bar"></div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="ibox float-e-margins">
-                    <div class="ibox-title">
                         <h5>Paper table </h5>
                         {{>iboxTools}}
                     </div>
@@ -90,19 +41,19 @@
                                 <tbody>
                                 <tr>
                                     <td><input type="checkbox"  checked class="i-checks" name="input[]"></td>
-                                    <td>Jia Zhang</td>
+                                    <td>Jia Zhang {{AuthorTop1}} </td>
                                     <td><span class="pie">Supporting CSCW and CSCL with Intelligent Social Grouping Services.</span></td>
                                     <td>2012</td>
                                 </tr>
                                 <tr>
                                     <td><input type="checkbox" class="i-checks" name="input[]"></td>
-                                    <td>Jinhui Yao</td>
+                                    <td>Jinhui Yao {{AuthorTop2}}</td>
                                     <td>ReputationNet: Reputation-Based Service Recommendation for e-Science</td>
                                     <td>2015</td>
                                 </tr>
                                 <tr>
                                     <td><input type="checkbox" class="i-checks" name="input[]"></td>
-                                    <td>Stephen J. H. Yang</td>
+                                    <td>Stephen J. H. Yang {{AuthorTop3}}</td>
                                     <td>Using Description Logics for the Provision of Context-Driven Content Adaptation Services.</td>
                                     <td>2011</td>
                                 </tr>
