@@ -2,36 +2,12 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-# Home page
-GET     /                           controllers.Application.index()
-POST    /person                     controllers.Application.addPerson()
-
-GET     /persons                    controllers.Application.getPersons()
-GET     /persons/:id                controllers.Application.getPersonById(id : Long)
-# Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
-
-POST    /sayHello                   controllers.Application.sayHello()
-
-
-POST    /sayHello2                  controllers.Application.sayHello2()
-
-POST    /person/uploadPic           controllers.Application.upload()
-
-GET     /year/:year                 controllers.Application.getPaperByYear(year:Integer)
-
-GET     /title/:title               controllers.Application.getPaperByTitle(title: String)
-
-
-###Sprint1
-GET    /paper/:year                  controllers.Application.getPaperByYear(year:Integer)
-GET    /paper/:title                controllers.Application.getPaperByTitle(title:String)
-
+GET		/										controllers.Application.index()
 
 #Post Related REST API
-#POST	/post/addPost				controllers.PostController.addPost()
-#GET		/post/getPostsById/:postId	controllers.PostController.getPostById(postId: Long)
-#GET		/post/getPosts				controllers.PostController.getPosts()
-#POST	/post/addComment			controllers.PostController.addComment()
-#GET		/post/getComments/:postId	controllers.PostController.getComments(postId: Long)
-#POST	/post/setAnswer/postId/:postId/commentId/:commentId	controllers.PostController.setAnswer(postId: Long, commentId: Long)
+POST	/post/addPost							controllers.PostController.addPost()
+GET		/post/getPostById/:postId				controllers.PostController.getPostById(postId: Long)
+GET		/post/getAllPosts						controllers.PostController.getAllPosts()
+POST	/post/addComment/:postId/:commentId		controllers.PostController.addComment(postId : Long, commentId : Long)
+POST	/post/setAsQuestion/:postId				controllers.PostController.setAsQuestion(postId : Long)
+POST	/post/setAnswer/:postId/:commentId		controllers.PostController.setAnswer(postId : Long, commentId : Long)

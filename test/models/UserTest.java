@@ -7,7 +7,9 @@ import java.util.List;
 
 import org.junit.Test;
 
-public class UserTest extends ModelTest {
+import basicTest.BasicTest;
+
+public class UserTest extends BasicTest{
 
 	@Test
 	public void userTest() {

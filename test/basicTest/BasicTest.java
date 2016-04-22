@@ -1,4 +1,4 @@
-package models;
+package basicTest;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -6,7 +6,8 @@ import org.junit.BeforeClass;
 import play.test.FakeApplication;
 import play.test.Helpers;
 
-public class ModelTest {
+@SuppressWarnings("deprecation")
+public class BasicTest {
 	  public static FakeApplication app;
 
 	  @BeforeClass

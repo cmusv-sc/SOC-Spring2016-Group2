@@ -1,21 +1,10 @@
 package models;
 
-import java.util.Date;
 import java.sql.Timestamp;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-
 import com.avaje.ebean.Model;
-import play.data.format.Formats;
 /**
  * This class defines one post
  * */
@@ -31,19 +20,19 @@ public class Post extends Model {
     public String content;
     
     /* the author of post */
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "authorId", referencedColumnName = "id")
-    public User author;
+    public long authorId;
     
     /* if the post is a question */
     public boolean isQueustion;
     
+    /* if the post is a question, answerId 
+     * is the id of comment which is set as answer
+     * */
+    public long answerId;
+    
     /* post created at */
     @Column(columnDefinition = "datetime")
     public Timestamp postAt;
-    
-    @OneToMany(fetch = FetchType.EAGER, cascade = {CascadeType.ALL}, mappedBy="owner")
-    public List<Comment> comments;
 
     public static Finder<Long, Post> find = new Finder<Long, Post>(Post.class);
     
@@ -53,16 +42,13 @@ public class Post extends Model {
     public Post(
     		String title, 
     		String content, 
-    		User author, 
-    		boolean isQuestion, 
+    		long authorId,  
     		Timestamp postAt
     		) {
     	this.title = title;
     	this.content = content;
-    	this.author = author;
-    	this.isQueustion = isQuestion;
+    	this.authorId = authorId;
     	this.postAt = postAt;
-    	this.comments = new ArrayList<Comment>();
     }
     
 	public Long getId() {
@@ -79,20 +65,6 @@ public class Post extends Model {
 
 	public void setContent(String content) {
 		this.content = content;
-	}
-
-	public User getAuthor() {
-		return author;
-	}
-
-	@Override
-	public String toString() {
-		return "Post [id=" + id + ", title=" + title + ", content=" + content + ", author=" + author + ", isQueustion="
-				+ isQueustion + ", postAt=" + postAt + "]";
-	}
-
-	public void setAuthor(User author) {
-		this.author = author;
 	}
 
 	public Timestamp getPostAt() {
@@ -119,21 +91,19 @@ public class Post extends Model {
 		this.title = title;
 	}
 
-	public List<Comment> getComments() {
-		return comments;
+	public long getAuthorId() {
+		return authorId;
 	}
 
-	public void setComments(List<Comment> comments) {
-		this.comments = comments;
+	public void setAuthorId(long authorId) {
+		this.authorId = authorId;
 	}
 
-	public static Finder<Long, Post> getFind() {
-		return find;
+	public long getAnswerId() {
+		return answerId;
 	}
 
-	public static void setFind(Finder<Long, Post> find) {
-		Post.find = find;
+	public void setAnswerId(long answerId) {
+		this.answerId = answerId;
 	}
-	
-	
 }
