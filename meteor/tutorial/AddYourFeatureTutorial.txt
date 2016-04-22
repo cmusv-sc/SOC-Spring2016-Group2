@@ -1,0 +1,6 @@
+How to add a new feature: step-by-step tutorial
+1) Open the client/views/common/navigation.html, add your own <li/>
+2) Open the client/config/router.js, add your own route
+3) Open the client/views/pages/[your directory], add your own html and js
+4) Build the meteor with "meteor"
+5) Open the local host: http://127.0.0.1:3000, verify if your feature has been added
