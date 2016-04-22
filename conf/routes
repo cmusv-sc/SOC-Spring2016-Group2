@@ -28,5 +28,9 @@ GET    /year/:year                  controllers.Application.getPaperByYear(year:
 GET    /title/:title                controllers.Application.getPaperByTitle(title:String)
 
 
-
+### Forum
+POST   /comment                     controllers.ForumController.addComment()
+GET    /comment                     controllers.ForumController.getComments(rootid: Integer, categoryid: Integer)
+POST   /updateComment               controllers.ForumController.updateComment()
+POST   /upload                      controllers.ForumController.uploadFile()
 
