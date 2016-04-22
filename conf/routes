@@ -2,12 +2,12 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-GET		/										controllers.Application.index()
+GET		/								controllers.Application.index()
 
 #Post Related REST API
-POST	/post/addPost							controllers.PostController.addPost()
-GET		/post/getPostById/:postId				controllers.PostController.getPostById(postId: Long)
-GET		/post/getAllPosts						controllers.PostController.getAllPosts()
-POST	/post/addComment/:postId/:commentId		controllers.PostController.addComment(postId : Long, commentId : Long)
-POST	/post/setAsQuestion/:postId				controllers.PostController.setAsQuestion(postId : Long)
-POST	/post/setAnswer/:postId/:commentId		controllers.PostController.setAnswer(postId : Long, commentId : Long)
+POST	/post/addPost					controllers.PostController.addPost()
+GET		/post/getPostById/:postId		controllers.PostController.getPostById(postId: Long)
+GET		/post/getAllPosts				controllers.PostController.getAllPosts()
+POST	/post/addComment				controllers.PostController.addComment()
+POST	/post/setAsQuestion				controllers.PostController.setAsQuestion()
+POST	/post/setAnswer					controllers.PostController.setAnswer()

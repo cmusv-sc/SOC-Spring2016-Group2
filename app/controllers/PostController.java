@@ -13,6 +13,9 @@ import play.mvc.Result;
 
 import util.Common;
 
+import static play.libs.Json.toJson;
+import play.libs.Json;
+
 public class PostController extends Controller {
 	
 	/* add a new post to database */
@@ -26,7 +29,7 @@ public class PostController extends Controller {
 		long authorId = jsonNode.path("authorId").asLong();
 		Timestamp postAt = Timestamp.valueOf(jsonNode.path("postAt").asText());
 		new Post(title, content, authorId, postAt).save();
-		return ok(new Gson().toJson("success"));
+		return ok(toJson("success"));
 	}
 	
 	/* find post by id */
@@ -35,7 +38,7 @@ public class PostController extends Controller {
 		if(post == null) {
 			return Common.badRequestWrapper("no record found");
 		}
-		return created(new Gson().toJson(post));
+		return created(Json.toJson(post));
 	}
 	
 	/* get all post */
@@ -44,35 +47,43 @@ public class PostController extends Controller {
 		if(posts == null || posts.size() == 0) {
 			return Common.badRequestWrapper("no record found");
 		}
-		return created(new Gson().toJson(posts));
+		return created(Json.toJson(posts));
 	}
 	
-	public Result addComment(Long postId, Long commentId) {
+	public Result addComment() {
+		JsonNode jsonNode = request().body().asJson();
+		long postId = jsonNode.path("postId").asLong();
+		long commentId = jsonNode.path("commentId").asLong();
 		Post post = Post.find.byId(postId);
 		if(post == null) {
 			return Common.badRequestWrapper("post not found");
 		}
 		new PostComment(postId, commentId).save();
-		return ok(new Gson().toJson("success"));
+		return ok(Json.toJson("success"));
 	}
 	
-	public Result setAsQuestion(Long postId) {
+	public Result setAsQuestion() {
+		JsonNode jsonNode = request().body().asJson();
+		long postId = jsonNode.path("postId").asLong();
 		Post post = Post.find.byId(postId);
 		if(post == null) {
 			return Common.badRequestWrapper("Cannot find post");
 		}
 		post.setQueustion(true);
 		post.save();
-		return ok(new Gson().toJson("success"));
+		return ok(Json.toJson("success"));
 	}
 	
-	public Result setAnswer(Long postId, Long commentId) {
+	public Result setAnswer() {
+		JsonNode jsonNode = request().body().asJson();
+		long postId = jsonNode.path("postId").asLong();
+		long commentId = jsonNode.path("commentId").asLong();
 		Post post = Post.find.byId(postId);
 		if(post == null) {
 			return Common.badRequestWrapper("Cannot find post");
 		}
 		post.setAnswerId(commentId);
 		post.save();
-		return ok(new Gson().toJson("success"));
+		return ok(Json.toJson("success"));
 	}
 }
