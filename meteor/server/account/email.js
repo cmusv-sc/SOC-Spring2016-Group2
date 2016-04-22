@@ -1,8 +1,8 @@
 Meteor.startup(function () {
 
 	smtp = {
-	    username: 'dolphindoremi',   // eg: server@gentlenode.com
-	    password: '**********',   // eg: 3eeP1gtizk5eziohfervU
+	    username: 'serviceorientedcomputinggroup2',   // eg: server@gentlenode.com
+	    password: 'servicepassword',   // eg: 3eeP1gtizk5eziohfervU
 	    server:   'smtp.gmail.com',  // eg: mail.gandi.net
 	    port: 25,
   	}
