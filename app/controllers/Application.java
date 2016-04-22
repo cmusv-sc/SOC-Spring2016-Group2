@@ -1,125 +1,25 @@
 package controllers;
 
-
-import com.avaje.ebean.Model;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.node.ObjectNode;
-
-import com.google.common.collect.ImmutableMap;
-import models.*;
-import org.w3c.dom.Document;
-import play.data.Form;
-import play.db.Database;
-import play.db.Databases;
-import play.libs.Json;
-import play.libs.XPath;
-import play.mvc.*;
-import views.html.*;
-
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
 
-import static play.data.Form.form;
-import static play.libs.Json.toJson;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.google.gson.Gson;
+
+import models.Author;
+import models.Publication;
+import models.PublicationAuthor;
+import play.libs.Json;
+import play.mvc.Controller;
+import play.mvc.Result;
+
+import java.util.*;
 
 public class Application extends Controller {
-  // final static Form<Search> search_form=form(Search.class);
 
     public Result index() {
-       // Form<Search> filledform=search_form.bindFromRequest();
-       // filledform.fill(new Search());
-        return ok(index.render());
+
+        return ok(new Gson().toJson("welcome"));
     }
-
-    public  Result addPerson() {
-        Person person = form(Person.class).bindFromRequest().get();
-        System.out.println("hhhhh"+person.name);
-       // person.setName("zhangjia");
-        Form personForm= form(Person.class);
-        //set existing value into the form
-       // personForm=personForm.fill(new Person(Long.valueOf(100),new Date(), "yile"));
-        person.save();
-        return redirect(routes.Application.index());
-    }
-
-    public  Result getPersons() {
-        Person person = form(Person.class).bindFromRequest().get();
-         System.out.println("person"+person);
-        Http.RequestBody requestBody=request().body();
-        System.out.println(requestBody.asText());
-        List<Person> persons = new Model.Finder(String.class, Person.class).all();
-        persons.add(0,new Person((long)1,new Date(), "zhangs"));
-        return ok(toJson(persons));
-    }
-
-    /***
-     * You can use a DynamicForm if you need to retrieve data
-     * from an html form that is not related to a Model:
-     * @return
-     */
-//    public  Result hello() {
-//        DynamicForm requestData = FormFactory.form().bindFromRequest();
-//        String firstname = requestData.get("firstname");
-//        String lastname = requestData.get("lastname");
-//        return ok("Hello " + firstname + " " + lastname);
-//    }
-
-    public Result getPersonById(Long id){
-        JsonNode json = request().body().asJson();
-        System.out.println(request().body().asText());
-        Person person=Person.find.byId(id);
-        System.out.println(person.name);
-        return ok(toJson(person));
-
-    }
-
-    /****
-     *
-     * 主要的方法
-     * @return
-     */
-    @BodyParser.Of(BodyParser.Json.class)
-    public Result sayHello() {
-        JsonNode json = request().body().asJson();
-        String name = json.findPath("name").textValue();
-        if(name == null) {
-            return badRequest("Missing parameter [name]");
-        } else {
-             //send json data
-            ObjectNode result = Json.newObject();
-            result.put("exampleField1", "foobar");
-            result.put("exampleField2", "Hello world!");
-            return ok(result);
-            //set new json data to
-            //return ok("Hello " + name);
-        }
-    }
-
-    /***
-     *
-     * This method is used to access xml file
-     * @return
-     */
-    @BodyParser.Of(BodyParser.Xml.class)
-    public Result sayHello2() {
-        Document dom = request().body().asXml();
-        if (dom == null) {
-            return badRequest("Expecting Xml data");
-        } else {
-            String name = XPath.selectText("//name", dom);
-
-                if (name == null) {
-                    return badRequest("<message \"status\"=\"KO\">Missing parameter [name]</message>").as("application/xml");
-                } else {
-                    return ok("<message \"status\"=\"OK\">Hello " + name + "</message>").as("application/xml");
-                }
-
-        }
-    }
-
 
     /***
      * This method is used to upload a file
@@ -209,15 +109,4 @@ public class Application extends Controller {
         }
         return ok(Json.toJson(results));
     }
-//
-//    public Result submit(){
-//    // Form<Search> filledform=search_form.bindFromRequest();
-//        Search search=filledform.get();
-//        ObjectNode result=Json.newObject();
-//        result.put("keyword",search.getKeywords());
-//        result.put("searchtype",search.getSearchType());
-//        return ok(Json.toJson(result));
-//    }
-
-
 }

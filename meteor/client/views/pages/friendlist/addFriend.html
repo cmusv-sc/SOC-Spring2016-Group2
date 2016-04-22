@@ -1,0 +1,52 @@
+<template name="addFriend">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="container">
+              <header>
+
+              <h1>Add Friends</h1>
+              <button class="btn btn-primary btn-xs button" onclick="window.location.href='/friendlisthome'">Back
+              </button>
+
+              </header>
+                  {{> searchFriend}}
+              <ul>
+                {{> reactiveTable collection=myCollection settings=settings}}
+              </ul>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="searchFriend">
+        <input type='text' class='search_box'>
+        <button id='search_botton' class='btn-primary btn-xs'> Search
+        </button>
+</template>
+
+<template name="addFriendInfo">
+  <div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+      <div class="container">
+        <header>
+
+          <h1>User Info</h1>
+        <button class="button" onclick="window.location.href='/addFriend'">Back
+        </button>
+
+        </header>
+
+        <ul>
+              {{> person context}}
+        </ul> 
+        <button class="button2">Send Request</button>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="person">
+  <h2>Name: {{name}}</h2>
+  <h2>Summary:</h2>
+  <textarea class="textarea">{{summary}}</textarea>
+</template>

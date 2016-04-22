@@ -1,0 +1,39 @@
+<template name="friendlisthome">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="container">
+              <header>
+                <h1>Friend List</h1>
+                <button class="btn btn-primary button" onclick="window.location.href='/addFriend'">Find More Friends
+                </button> 
+              </header>
+              <ul>
+              {{> reactiveTable settings=settings}}
+              </ul>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="viewFriendInfo">
+  <body>
+    <div class="container">
+
+      <header>
+
+        <h1>Friend Info</h1>
+      <button class="btn-xs btn-xs button" onclick="window.location.href='/friendlisthome'">Back
+      </button>
+
+      </header>
+
+      <ul>
+            {{> person context}}
+
+      </ul>
+      <button class="button2">Unfriend</button>
+
+    </div>
+
+  </body>
+</template>
