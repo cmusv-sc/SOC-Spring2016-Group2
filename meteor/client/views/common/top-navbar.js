@@ -40,8 +40,6 @@ Template.topNavbar.events({
 
     // Toggle right sidebar
     'click .right-sidebar-toggle': function(){
-        AccountsTemplates.logout();
-        Meteor.logout();
-        Router.go('/sign-in');
+        $('#right-sidebar').toggleClass('sidebar-open');
     }
 });
