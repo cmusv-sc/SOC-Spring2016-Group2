@@ -9,15 +9,8 @@
 #ignore all bin directories
 bin/
 
-#ignore target directory
-target/
-
-#ignore logs directory 
-logs/
-
 /public/upload/*
 .DS_Store
-bin/
 /db
 .eclipse
 /lib/
@@ -32,4 +25,3 @@ server.pid
 /dist/
 .cache
 .idea
-

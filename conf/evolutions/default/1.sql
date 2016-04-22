@@ -20,11 +20,22 @@ create table comment (
   constraint pk_comment primary key (id))
 ;
 
-create table person (
+create table post (
   id                        bigint auto_increment not null,
-  name                      varchar(255),
-  due_date                  datetime(6),
-  constraint pk_person primary key (id))
+  title                     varchar(255),
+  content                   varchar(255),
+  author_id                 bigint,
+  is_queustion              tinyint(1) default 0,
+  answer_id                 bigint,
+  post_at                   datetime,
+  constraint pk_post primary key (id))
+;
+
+create table post_comment (
+  id                        bigint auto_increment not null,
+  publication_id            bigint,
+  author_id                 bigint,
+  constraint pk_post_comment primary key (id))
 ;
 
 create table publication (
@@ -53,13 +64,6 @@ create table publication_author (
   constraint pk_publication_author primary key (id))
 ;
 
-create table search (
-  id                        bigint auto_increment not null,
-  keywords                  varchar(255),
-  search_type               varchar(255),
-  constraint pk_search primary key (id))
-;
-
 
 
 
@@ -71,13 +75,13 @@ drop table author;
 
 drop table comment;
 
-drop table person;
+drop table post;
+
+drop table post_comment;
 
 drop table publication;
 
 drop table publication_author;
-
-drop table search;
 
 SET FOREIGN_KEY_CHECKS=1;
 
