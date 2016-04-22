@@ -17,7 +17,6 @@ To run and test it locally, run following command after you clone the repo:
 ```bash
 git clone https://github.com/helunwencser/SSNetwork.git
 cd SSNetwork
-mysql -u username -ppassword < ./app/models/createTable.sql
 activator run
 ```
 
