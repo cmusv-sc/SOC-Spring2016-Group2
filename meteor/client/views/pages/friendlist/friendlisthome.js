@@ -24,6 +24,37 @@ Template.friendlisthome.helpers({
     }
 });
 
+Template.registerHelper('allrequests', function() {
+    return Requests.findOne();
+});
+
+Template.request.helpers({
+
+    settings: function () {
+
+        return {
+            collection: Requests,
+            rowsPerPage: 1,
+            showFilter: false,
+            showNavigation: "never",
+            showNavigationRowsPerPage: false,
+            fields: [
+                {
+                    fieldId: 'name',
+                    key: 'name',
+                    label: 'Friend Request',
+                },
+                {
+                    fieldId: 'createdAt',
+                    key: 'createdAt',
+                    label: 'Request Time',
+                    sortOrder: 0,
+                    fn: function (value) { return moment(value).format('MM-DD-YYYY'); }
+                }
+            ]
+        };
+    }
+});
 
 Template.friendlisthome.events({
   'click .reactive-table tbody tr': function (event) {
@@ -60,4 +91,30 @@ Template.viewFriendInfo.events({
   }
 });
 
+Template.registerHelper('formatDate', function(date) {
+  return moment(date).format('MM-DD-YYYY');
+});
 
+Template.request.events({
+  'click #decline'(event, template) {
+    event.preventDefault();
+    // increment the counter when button is clicked
+    var id = Requests.findOne()._id;
+    Requests.remove(id);
+    //window.location.href='/add'
+  },
+});
+
+Template.request.events({
+  'click #accept'(event, template) {
+    event.preventDefault();
+    // increment the counter when button is clicked
+    var id = Requests.findOne()._id;
+    var name = Requests.findOne().name;
+    var summary = Requests.findOne().summary;
+    Friends.insert({name: name, createdAt: new Date(),
+                    summary: summary});
+    Requests.remove(id);
+    //window.location.href='/add'
+  },
+});

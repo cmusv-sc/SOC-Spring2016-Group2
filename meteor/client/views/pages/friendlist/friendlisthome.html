@@ -6,6 +6,7 @@
                 <h1>Friend List</h1>
                 <button class="btn btn-primary button" onclick="window.location.href='/addFriend'">Find More Friends
                 </button> 
+                {{> request}} 
               </header>
               <ul>
               {{> reactiveTable settings=settings}}
@@ -36,4 +37,10 @@
     </div>
 
   </body>
+</template>
+
+<template name="request">
+        {{> reactiveTable settings=settings}}
+        <button id="accept" class="button3">Accept</button>
+        <button id="decline" class="button3">Decline</button>
 </template>
