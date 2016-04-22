@@ -51,9 +51,12 @@ public class SAXHandlerForParsing extends DefaultHandler {
 		  String qName
 		  ) throws SAXException {
    switch(qName) {
+
    /* find an end tag of article
     * insert into database
     * */
+
+
    case "proceedings":
    case "inproceedings":
 	   publication.save();
