@@ -6,7 +6,6 @@ Meteor.startup(function () {
 	    server:   'smtp.gmail.com',  // eg: mail.gandi.net
 	    port: 25,
   	}
-
 	process.env.MAIL_URL = 'smtp://' + encodeURIComponent(smtp.username) + ':' + encodeURIComponent(smtp.password) + '@' + encodeURIComponent(smtp.server) + ':' + smtp.port;
   
 	Accounts.emailTemplates.from = 'Email Support <support@bookMyTravel.com>';
