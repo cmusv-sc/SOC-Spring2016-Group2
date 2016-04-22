@@ -1,0 +1,48 @@
+<template name="login">
+    <div class="wrapper wrapper-content text-center loginscreen animated fadeInDown">
+        <div>
+            <h1 class="logo-name">IN+</h1>
+        </div>
+        <h3>Register to Publication Group Management System</h3>
+
+        <p>Create account to see it in action.</p>
+        <div class="row" > 
+            <div class="col-lg-3" align="center">
+            </div>
+            <div class="col-lg-6" align="center">
+                <div class="tabs-container" >
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#tab-1"> Sign In with Social Account </a></li>
+                        <li class=""><a data-toggle="tab" href="#tab-2">Sign In with Face Recongition</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane active">
+                            <div class="panel-body">
+                                <div class="m-t" role="form">
+                                    {{> atForm state="signIn"}}
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane">
+                            <div class="panel-body">
+                                <div class="m-t" role="form">
+                                    {{>photo}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="m-t">
+            <small>Service Oriented Computing &copy; 2016</small>
+        </p>
+    </div>
+</template>
+
+<template name="photo">
+    <a href="#" class="takePhoto">take photo</a>
+
+    <img class="photo">
+</template>

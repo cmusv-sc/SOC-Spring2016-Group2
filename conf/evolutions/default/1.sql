@@ -9,6 +9,17 @@ create table author (
   constraint pk_author primary key (id))
 ;
 
+create table comment (
+  id                        integer auto_increment not null,
+  parentid                  integer,
+  authorid                  integer,
+  content                   varchar(255),
+  time                      bigint,
+  rootid                    integer,
+  categoryid                integer,
+  constraint pk_comment primary key (id))
+;
+
 create table post (
   id                        bigint auto_increment not null,
   title                     varchar(255),
@@ -61,6 +72,8 @@ create table publication_author (
 SET FOREIGN_KEY_CHECKS=0;
 
 drop table author;
+
+drop table comment;
 
 drop table post;
 

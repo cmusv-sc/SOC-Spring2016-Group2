@@ -9,9 +9,19 @@
 #ignore all bin directories
 bin/
 
-#ignore target directory
-target/
-
-#ignore logs directory 
-logs/
-
+/public/upload/*
+.DS_Store
+/db
+.eclipse
+/lib/
+/logs/
+/modules
+/project/target
+/target
+tmp/
+test-result
+server.pid
+*.eml
+/dist/
+.cache
+.idea
