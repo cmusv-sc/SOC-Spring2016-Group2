@@ -209,15 +209,8 @@ public class Application extends Controller {
         }
         return ok(Json.toJson(results));
     }
-//
-//    public Result submit(){
-//    // Form<Search> filledform=search_form.bindFromRequest();
-//        Search search=filledform.get();
-//        ObjectNode result=Json.newObject();
-//        result.put("keyword",search.getKeywords());
-//        result.put("searchtype",search.getSearchType());
-//        return ok(Json.toJson(result));
-//    }
+
+
 
 
 }

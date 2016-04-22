@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:1.0.0.Final:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.jboss.spec.javax.transaction/jboss-transaction-api_1.2_spec/jars/jboss-transaction-api_1.2_spec-1.0.0.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.jboss.spec.javax.transaction/jboss-transaction-api_1.2_spec/srcs/jboss-transaction-api_1.2_spec-1.0.0.Final-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

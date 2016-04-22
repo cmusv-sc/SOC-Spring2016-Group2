@@ -1,0 +1,63 @@
+@main("Home")(search){
+   @*<script type='text/javascript' src='@routes.Assets.at("javascripts/index.js")'></script>*@
+    @*<h1>Home page</h1>*@
+    <ul id="persons"></ul>
+
+
+    @*<form method="POST" action="@routes.Application.addPerson()">*@
+        @*<input type="text" name="name"/>*@
+        @*<button>Add Person</button>*@
+    @*</form>*@
+
+    @*<dl class="error" id="email_field">*@
+        @*<dt><label for="email">Email:</label></dt>*@
+        @*<dd><input type="text" name="email" id="email" value=""></dd>*@
+        @*<dd class="error">This field is required!</dd>*@
+        @*<dd class="error">Another error</dd>*@
+        @*<dd class="info">Required</dd>*@
+        @*<dd class="info">Another constraint</dd>*@
+    @*</dl>*@
+
+
+    @*<form action = "@routes.Application.upload()", method="post" , enctype="multipart/form-data" >*@
+
+        @*<input type="file" name="picture">*@
+
+        @*<p>*@
+            @*<input type="submit">*@
+        @*</p>*@
+
+
+}
+@search= {
+
+
+        <div class="container">
+            <h1>SOC_NETWORK</h1>
+
+            <form id="searchForm" , action = "@routes.Application.getPersons()", method="GET">
+                <fieldset>
+                    <input id="s" type="text" />
+                     <input type="submit" value="Submit" id="submitButton" />
+
+                    <div id="searchInContainer">
+                        <input type="radio" name="check" value="site" id="searchSite" checked />
+                          <label for="searchSite" id="siteNameLabel">Search</label>
+
+                          <input type="radio" name="check" value="web" id="searchWeb" />
+                          <label for="searchWeb">Search Google</label>
+                     </div>
+                    <ul class="icons">
+                        <li class="web" title="Web Search" data-searchType="web">Web</li>
+                          <li class="images" title="Image Search" data-searchType="images">Images</li>
+                          <li class="news" title="News Search" data-searchType="news">News</li>
+                          <li class="videos" title="Video Search" data-searchType="video">Videos</li>
+                    </ul>
+                </fieldset>
+            </form>
+
+            <div id="resultsDiv"></div>
+
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+}
