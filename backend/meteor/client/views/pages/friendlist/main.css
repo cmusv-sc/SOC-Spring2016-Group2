@@ -1,0 +1,21 @@
+
+.button2 {
+    position:absolute;
+    left:25%;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 18px;
+    background-color: orange; 
+    color: black; 
+    border: 2px solid orange;
+}
+
+.button2:hover {
+    background-color: red;
+    border: 2px solid red;
+    color: white;
+}
+
+}
+
+

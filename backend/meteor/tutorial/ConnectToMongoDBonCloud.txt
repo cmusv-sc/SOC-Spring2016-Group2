@@ -1,0 +1,17 @@
+Current public DNS: ec2-54-200-79-239.us-west-2.compute.amazonaws.com 
+Ask Dennis for the ssh key
+
+1. Username: root, password: root
+To create new user if necessary, you can refer to this link: https://docs.mongodb.org/manual/reference/method/db.createUser/
+2. Dbname: test
+3. Mongodb configuration file: /etc/mongod.conf
+Default port: 27017 (EC2 security group must allow this)
+bindIp needs to be commented (already done)
+Once the conf file gets modified,  use sudo service mongod restart to restart mongodb
+Test your mongodb connection with PUBLIC-DNS:27017
+
+Meteor connects to MongoDB:
+run the following command before you start meteor:
+export MONGO_URL="mongodb://root:root@ec2-54-200-79-239.us-west-2.compute.amazonaws.com:27017/test"
+
+Define your remote database in server package. To use the collection object on client side, you need to grant R/W permission on the server side. Some examples are given in the existed code.

@@ -1,0 +1,26 @@
+ /*
+    function paper(title, author, year) {
+        
+        Session.set("identificationPhoto", data);
+
+        var formData = new FormData();
+        var request = request.getSync("https://209.129.244.192");
+
+        var options = {
+            url: 'https://209.129.244.192/',
+            method: 'GET',
+            body: formData,
+            headers: headers
+        };
+
+        function callback(error, response, body) {
+            if (!error && response.statusCode == 200) {
+                console.log(body);
+            }
+        }
+
+        request(options, callback);
+        console.log("[INFO] HTTP Request Sent");
+
+        event.preventDefault();
+    }*/

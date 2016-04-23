@@ -33,8 +33,8 @@ create table post (
 
 create table post_comment (
   id                        bigint auto_increment not null,
-  publication_id            bigint,
-  author_id                 bigint,
+  post_id                   bigint,
+  comment_id                bigint,
   constraint pk_post_comment primary key (id))
 ;
 

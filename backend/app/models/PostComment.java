@@ -11,17 +11,17 @@ public class PostComment extends Model {
 	@Id
 	public Long id;
 	
-	public long publicationId;
+	public long postId;
 	
-	public long authorId;
+	public long commentId;
 	
 	public PostComment() {
 		
 	}
 	
-	public PostComment(long publicationId, long authorId) {
-		this.publicationId = publicationId;
-		this.authorId = authorId;
+	public PostComment(long postId, long commentId) {
+		this.postId = postId;
+		this.commentId = commentId;
 	}
 	
 	public static Finder<Long,PostComment> find = new Finder(Long.class, PostComment.class);
@@ -34,19 +34,19 @@ public class PostComment extends Model {
 		this.id = id;
 	}
 
-	public long getPublicationId() {
-		return publicationId;
+	public long getpostId() {
+		return postId;
 	}
 
-	public void setPublicationId(long publicationId) {
-		this.publicationId = publicationId;
+	public void setPostId(long postId) {
+		this.postId = postId;
 	}
 
-	public long getAuthorId() {
-		return authorId;
+	public long getCommentId() {
+		return commentId;
 	}
 
-	public void setAuthorId(long authorId) {
-		this.authorId = authorId;
+	public void setCommentId(long commentId) {
+		this.commentId = commentId;
 	}
 }

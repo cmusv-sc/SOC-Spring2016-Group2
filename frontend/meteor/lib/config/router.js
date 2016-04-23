@@ -77,6 +77,11 @@ Router.route('/suggestion', function () {
     this.render('suggestion');
 });
 
+// Post
+Router.route('/post', function() {
+	this.render('post')
+});
+
 //
 // Dashboards routes
 //
