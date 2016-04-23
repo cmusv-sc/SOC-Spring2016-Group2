@@ -4,17 +4,9 @@
 
 # Home page
 GET     /                           controllers.Application.index()
-POST    /person                     controllers.Application.addPerson()
 
-GET     /persons                    controllers.Application.getPersons()
-GET     /persons/:id                controllers.Application.getPersonById(id : Long)
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
-
-POST    /sayHello                   controllers.Application.sayHello()
-
-
-POST    /sayHello2                  controllers.Application.sayHello2()
 
 POST    /person/uploadPic           controllers.Application.upload()
 
@@ -28,5 +20,16 @@ GET    /year/:year                  controllers.Application.getPaperByYear(year:
 GET    /title/:title                controllers.Application.getPaperByTitle(title:String)
 
 
+### Forum
+POST   /comment                     controllers.ForumController.addComment()
+GET    /comment                     controllers.ForumController.getComments(rootid: Integer, categoryid: Integer)
+POST   /updateComment               controllers.ForumController.updateComment()
+POST   /upload                      controllers.ForumController.uploadFile()
 
-
+#Post Related REST API
+POST	/post/addPost					controllers.PostController.addPost()
+GET		/post/getPostById/:postId		controllers.PostController.getPostById(postId: Long)
+GET		/post/getAllPosts				controllers.PostController.getAllPosts()
+POST	/post/addComment				controllers.PostController.addComment()
+POST	/post/setAsQuestion				controllers.PostController.setAsQuestion()
+POST	/post/setAnswer					controllers.PostController.setAnswer()

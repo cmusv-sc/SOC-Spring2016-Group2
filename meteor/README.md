@@ -10,11 +10,11 @@ Service Oriented Computing, at Carnegie Mellon University, Spring 2016.
 
 To run and test it locally, run following command after you clone the repo:
 
-```
 ## Mac or Linux bash
 ```
 $git clone https://github.com/helunwencser/SSNetwork.git
 $cd SSNetwork/meteor/
+$export MONGO_URL="mongodb://root:root@ec2-54-200-79-239.us-west-2.compute.amazonaws.com:27017/test"
 $meteor
 
 ```

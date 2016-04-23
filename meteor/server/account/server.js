@@ -1,10 +1,40 @@
-//      var unirest = Meteor.npmRequire('unirest');
+Meteor.startup(function () {
 
- // 		unirest.post("https://lambda-face-recognition.p.mashape.com/recognize")
- // 			.header("X-Mashape-Key", "K9cjqFoiMvmshaynIi8ohEKnbCgcp1H0dpTjsnZFoWTu6X2JvV")
- // 			.field("album", "Stuart")
- // 			.field("albumkey", "e0fae4596dcd26cab7f43424fd21732440c3a8fec421e52fa27676008f74799d")
- // 			.attach("files", fs.createReadStream("evans.jpg"))
- // 			.end(function (response) {
- // 		  		console.log(response.status, response.headers, response.body);
- // 			});
+	smtp = {
+	    username: 'serviceorientedcomputinggroup2',   // eg: server@gentlenode.com
+	    password: 'servicepassword',   // eg: 3eeP1gtizk5eziohfervU
+	    server:   'smtp.gmail.com',  // eg: mail.gandi.net
+	    port: 25,
+  	}
+	process.env.MAIL_URL = 'smtp://' + encodeURIComponent(smtp.username) + ':' + encodeURIComponent(smtp.password) + '@' + encodeURIComponent(smtp.server) + ':' + smtp.port;
+  
+	Accounts.emailTemplates.from = 'Email Support <support@bookMyTravel.com>';
+	Accounts.emailTemplates.siteName = 'Book My Travel';
+
+	Accounts.emailTemplates.verifyEmail.subject = function(user) {
+		return 'Confirm Your Email Address';
+	};
+	/** Note: if you need to return HTML instead, use .html instead of .text **/
+	Accounts.emailTemplates.verifyEmail.text = function(user, url) {
+		return 'click on the following link to verify your email address: ' + url;
+	};
+
+	Accounts.emailTemplates.resetPassword.subject = function (user) {
+		return "Message for " + user.profile.displayName;
+	};
+
+	Accounts.emailTemplates.resetPassword.text = function (user, url) {
+	    var signature = "MySite Bot";
+	    //var president = President.findOne();
+	    //if (president)
+	    //    president = Meteor.users.findOne(president.presidentId);
+	    //    signature = president.profile.displayName + ", the MySite President.";
+
+	    return "Dear " + user.profile.displayName + ",\n\n" +
+	        "Click the following link to set your new password:\n" +
+	        url + "\n\n" +
+	        "Please never forget it again!!!\n\n\n" +
+	        "Cheers,\n" +
+	        signature;
+	};
+});

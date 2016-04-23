@@ -1,0 +1,4 @@
+[error] /Users/caoyi/Tutorial/app/views/index.scala.html:52: Invalid '@' symbol
+[error]                         <li class="web" title="Web Search" data-searchType="web">Web</li>*@
+[error]                                                                                           ^
+[error] (root/compile:twirlCompileTemplates) Twirl compilation failed
