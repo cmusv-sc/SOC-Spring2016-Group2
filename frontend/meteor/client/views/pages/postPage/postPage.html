@@ -8,15 +8,19 @@
     		{{> buttonTemplate}}
     	</div>
     	
+    	<div>
+    		{{> addPostTemplate}}
+    	</div>
+    	
     	<div id = "resultsDiv">
     	</div>
     </div> 
 </template>
 
 <templage name = "searchTemplate">
-   <form>
-      <input type = "text" name = "searchContent">
-      <input type = "submit" value = "Find Post">
+   <form method="post">
+      <input type = "text" name = "searchContent"/>
+      <input type = "submit" value = "Find Post"/>
    </form>
 </templage>
 
@@ -24,3 +28,12 @@
         <button class = "button3" name = "findMyPosts">Find My Posts</button>
         <button class = "button3" name = "addNewPost">Add New Post</button>
 </templage>
+
+
+<template name = "addPostTemplate">
+	<form method="post">
+		<input type = "text" name = "title"/>
+		<input type = "text" name = "content"/>
+		<input type = "submit" value="Post"/>
+	</form>
+</template>
