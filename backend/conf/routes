@@ -33,3 +33,10 @@ GET		/post/getAllPosts				controllers.PostController.getAllPosts()
 POST	/post/addComment				controllers.PostController.addComment()
 POST	/post/setAsQuestion				controllers.PostController.setAsQuestion()
 POST	/post/setAnswer					controllers.PostController.setAnswer()
+
+
+#Tagging for publication
+GET    /addtagpub/:pubid/:tagpub    controllers.TagController.addTagpub(pubid:Long,tagpub:String)
+GET    /deletetagpub/:pubid/:tagpub controllers.TagController.deleteTagpub(pubid:Long,tagpub:String)
+GET    /gettagpubs/:title           controllers.TagController.getTagpubs(title:String)
+GET    /getpublications/:tagpub     controllers.TagController.getPublications(tagpub:String)
