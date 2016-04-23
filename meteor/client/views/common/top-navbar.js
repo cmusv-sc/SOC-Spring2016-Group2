@@ -39,9 +39,9 @@ Template.topNavbar.events({
     },
 
     // Toggle right sidebar
-    'click .right-sidebar-toggle': function(){
+    'click #logout': function(){
         AccountsTemplates.logout();
-        Meteor.logout();
+        //Meteor.logout();
         Router.go('/sign-in');
     }
 });

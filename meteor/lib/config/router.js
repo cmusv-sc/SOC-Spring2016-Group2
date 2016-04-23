@@ -1,17 +1,15 @@
-/*
-Router.configure({
-    layoutTemplate: 'mainLayout',
-    notFoundTemplate: 'notFound'
-
-});
-*/
-
 Router.configure({
     layoutTemplate: 'mainLayout',
 });
 
 AccountsTemplates.configure({
     defaultLayout: 'blankLayout',
+});
+
+Router.plugin('ensureSignedIn', {
+  except: ['/', 'login', 'register', 'signIn',
+            'signUp', 'changePwd', 'enrollAccount',
+            'forgotPwd', 'resetPwd', 'verifyEmail']
 });
 
 AccountsTemplates.configureRoute('signIn');
@@ -33,7 +31,7 @@ Router.route('/nav', function () {
 
 // Default route
 Router.route('/', function () {
-    this.render('login');
+    this.render('sign-in');
     this.layout('blankLayout')
 });
 

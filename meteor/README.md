@@ -10,7 +10,6 @@ Service Oriented Computing, at Carnegie Mellon University, Spring 2016.
 
 To run and test it locally, run following command after you clone the repo:
 
-```
 ## Mac or Linux bash
 ```
 $git clone https://github.com/helunwencser/SSNetwork.git
