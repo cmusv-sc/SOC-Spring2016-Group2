@@ -26,6 +26,12 @@ GET    /comment                     controllers.ForumController.getComments(root
 POST   /updateComment               controllers.ForumController.updateComment()
 POST   /upload                      controllers.ForumController.uploadFile()
 
+### Thumb
+POST    /addThumb                      controllers.ThumbController.addThumb()
+DELETE  /deleteThumb/:id               controllers.ThumbController.deleteThumb(id:Long)
+GET     /getThumbSum/:user/:type       controllers.ThumbController.getThumbSum(user:String,type:String)
+
+
 #Post Related REST API
 POST	/post/addPost					controllers.PostController.addPost()
 GET		/post/getPostById/:postId		controllers.PostController.getPostById(postId: Long)

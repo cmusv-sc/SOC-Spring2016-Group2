@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/lunwenh/workspace/SSNetwork/backend/conf/routes
-// @DATE:Fri Apr 22 23:21:48 PDT 2016
+// @SOURCE:/Users/ThomasHsu/Desktop/SSNetwork/backend/conf/routes
+// @DATE:Sat Apr 23 13:33:00 PDT 2016
 
 package router
 
@@ -17,33 +17,41 @@ import _root_.play.libs.F
 class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
-  Application_2: controllers.Application,
+  Application_5: controllers.Application,
   // @LINE:9
-  Assets_1: controllers.Assets,
+  Assets_4: controllers.Assets,
   // @LINE:24
   ForumController_0: controllers.ForumController,
   // @LINE:30
-  PostController_3: controllers.PostController,
+  ThumbController_3: controllers.ThumbController,
+  // @LINE:36
+  PostController_2: controllers.PostController,
+  // @LINE:45
+  TagController_1: controllers.TagController,
   val prefix: String
 ) extends GeneratedRouter {
 
    @javax.inject.Inject()
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
-    Application_2: controllers.Application,
+    Application_5: controllers.Application,
     // @LINE:9
-    Assets_1: controllers.Assets,
+    Assets_4: controllers.Assets,
     // @LINE:24
     ForumController_0: controllers.ForumController,
     // @LINE:30
-    PostController_3: controllers.PostController
-  ) = this(errorHandler, Application_2, Assets_1, ForumController_0, PostController_3, "/")
+    ThumbController_3: controllers.ThumbController,
+    // @LINE:36
+    PostController_2: controllers.PostController,
+    // @LINE:45
+    TagController_1: controllers.TagController
+  ) = this(errorHandler, Application_5, Assets_4, ForumController_0, ThumbController_3, PostController_2, TagController_1, "/")
 
   import ReverseRouteContext.empty
 
   def withPrefix(prefix: String): Routes = {
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, Application_2, Assets_1, ForumController_0, PostController_3, prefix)
+    new Routes(errorHandler, Application_5, Assets_4, ForumController_0, ThumbController_3, PostController_2, TagController_1, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -60,12 +68,19 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """comment""", """controllers.ForumController.getComments(rootid:Integer, categoryid:Integer)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """updateComment""", """controllers.ForumController.updateComment()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """upload""", """controllers.ForumController.uploadFile()"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """addThumb""", """controllers.ThumbController.addThumb()"""),
+    ("""DELETE""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """deleteThumb/""" + "$" + """id<[^/]+>""", """controllers.ThumbController.deleteThumb(id:Long)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """getThumbSum/""" + "$" + """user<[^/]+>/""" + "$" + """type<[^/]+>""", """controllers.ThumbController.getThumbSum(user:String, type:String)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """post/addPost""", """controllers.PostController.addPost()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """post/getPostById/""" + "$" + """postId<[^/]+>""", """controllers.PostController.getPostById(postId:Long)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """post/getAllPosts""", """controllers.PostController.getAllPosts()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """post/addComment""", """controllers.PostController.addComment()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """post/setAsQuestion""", """controllers.PostController.setAsQuestion()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """post/setAnswer""", """controllers.PostController.setAnswer()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """addtagpub/""" + "$" + """pubid<[^/]+>/""" + "$" + """tagpub<[^/]+>""", """controllers.TagController.addTagpub(pubid:Long, tagpub:String)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """deletetagpub/""" + "$" + """pubid<[^/]+>/""" + "$" + """tagpub<[^/]+>""", """controllers.TagController.deleteTagpub(pubid:Long, tagpub:String)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """gettagpubs/""" + "$" + """title<[^/]+>""", """controllers.TagController.getTagpubs(title:String)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """getpublications/""" + "$" + """tagpub<[^/]+>""", """controllers.TagController.getPublications(tagpub:String)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -78,7 +93,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix)))
   )
   private[this] lazy val controllers_Application_index0_invoker = createInvoker(
-    Application_2.index(),
+    Application_5.index(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
@@ -95,7 +110,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
   private[this] lazy val controllers_Assets_at1_invoker = createInvoker(
-    Assets_1.at(fakeValue[String], fakeValue[String]),
+    Assets_4.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Assets",
@@ -112,7 +127,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("person/uploadPic")))
   )
   private[this] lazy val controllers_Application_upload2_invoker = createInvoker(
-    Application_2.upload(),
+    Application_5.upload(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
@@ -129,7 +144,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("year/"), DynamicPart("year", """[^/]+""",true)))
   )
   private[this] lazy val controllers_Application_getPaperByYear3_invoker = createInvoker(
-    Application_2.getPaperByYear(fakeValue[Integer]),
+    Application_5.getPaperByYear(fakeValue[Integer]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
@@ -146,7 +161,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("title/"), DynamicPart("title", """[^/]+""",true)))
   )
   private[this] lazy val controllers_Application_getPaperByTitle4_invoker = createInvoker(
-    Application_2.getPaperByTitle(fakeValue[String]),
+    Application_5.getPaperByTitle(fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
@@ -227,11 +242,62 @@ class Routes(
   )
 
   // @LINE:30
-  private[this] lazy val controllers_PostController_addPost9_route = Route("POST",
+  private[this] lazy val controllers_ThumbController_addThumb9_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("addThumb")))
+  )
+  private[this] lazy val controllers_ThumbController_addThumb9_invoker = createInvoker(
+    ThumbController_3.addThumb(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.ThumbController",
+      "addThumb",
+      Nil,
+      "POST",
+      """## Thumb""",
+      this.prefix + """addThumb"""
+    )
+  )
+
+  // @LINE:31
+  private[this] lazy val controllers_ThumbController_deleteThumb10_route = Route("DELETE",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("deleteThumb/"), DynamicPart("id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_ThumbController_deleteThumb10_invoker = createInvoker(
+    ThumbController_3.deleteThumb(fakeValue[Long]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.ThumbController",
+      "deleteThumb",
+      Seq(classOf[Long]),
+      "DELETE",
+      """""",
+      this.prefix + """deleteThumb/""" + "$" + """id<[^/]+>"""
+    )
+  )
+
+  // @LINE:32
+  private[this] lazy val controllers_ThumbController_getThumbSum11_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("getThumbSum/"), DynamicPart("user", """[^/]+""",true), StaticPart("/"), DynamicPart("type", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_ThumbController_getThumbSum11_invoker = createInvoker(
+    ThumbController_3.getThumbSum(fakeValue[String], fakeValue[String]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.ThumbController",
+      "getThumbSum",
+      Seq(classOf[String], classOf[String]),
+      "GET",
+      """""",
+      this.prefix + """getThumbSum/""" + "$" + """user<[^/]+>/""" + "$" + """type<[^/]+>"""
+    )
+  )
+
+  // @LINE:36
+  private[this] lazy val controllers_PostController_addPost12_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("post/addPost")))
   )
-  private[this] lazy val controllers_PostController_addPost9_invoker = createInvoker(
-    PostController_3.addPost(),
+  private[this] lazy val controllers_PostController_addPost12_invoker = createInvoker(
+    PostController_2.addPost(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PostController",
@@ -243,12 +309,12 @@ class Routes(
     )
   )
 
-  // @LINE:31
-  private[this] lazy val controllers_PostController_getPostById10_route = Route("GET",
+  // @LINE:37
+  private[this] lazy val controllers_PostController_getPostById13_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("post/getPostById/"), DynamicPart("postId", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_PostController_getPostById10_invoker = createInvoker(
-    PostController_3.getPostById(fakeValue[Long]),
+  private[this] lazy val controllers_PostController_getPostById13_invoker = createInvoker(
+    PostController_2.getPostById(fakeValue[Long]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PostController",
@@ -260,12 +326,12 @@ class Routes(
     )
   )
 
-  // @LINE:32
-  private[this] lazy val controllers_PostController_getAllPosts11_route = Route("GET",
+  // @LINE:38
+  private[this] lazy val controllers_PostController_getAllPosts14_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("post/getAllPosts")))
   )
-  private[this] lazy val controllers_PostController_getAllPosts11_invoker = createInvoker(
-    PostController_3.getAllPosts(),
+  private[this] lazy val controllers_PostController_getAllPosts14_invoker = createInvoker(
+    PostController_2.getAllPosts(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PostController",
@@ -277,12 +343,12 @@ class Routes(
     )
   )
 
-  // @LINE:33
-  private[this] lazy val controllers_PostController_addComment12_route = Route("POST",
+  // @LINE:39
+  private[this] lazy val controllers_PostController_addComment15_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("post/addComment")))
   )
-  private[this] lazy val controllers_PostController_addComment12_invoker = createInvoker(
-    PostController_3.addComment(),
+  private[this] lazy val controllers_PostController_addComment15_invoker = createInvoker(
+    PostController_2.addComment(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PostController",
@@ -294,12 +360,12 @@ class Routes(
     )
   )
 
-  // @LINE:34
-  private[this] lazy val controllers_PostController_setAsQuestion13_route = Route("POST",
+  // @LINE:40
+  private[this] lazy val controllers_PostController_setAsQuestion16_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("post/setAsQuestion")))
   )
-  private[this] lazy val controllers_PostController_setAsQuestion13_invoker = createInvoker(
-    PostController_3.setAsQuestion(),
+  private[this] lazy val controllers_PostController_setAsQuestion16_invoker = createInvoker(
+    PostController_2.setAsQuestion(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PostController",
@@ -311,12 +377,12 @@ class Routes(
     )
   )
 
-  // @LINE:35
-  private[this] lazy val controllers_PostController_setAnswer14_route = Route("POST",
+  // @LINE:41
+  private[this] lazy val controllers_PostController_setAnswer17_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("post/setAnswer")))
   )
-  private[this] lazy val controllers_PostController_setAnswer14_invoker = createInvoker(
-    PostController_3.setAnswer(),
+  private[this] lazy val controllers_PostController_setAnswer17_invoker = createInvoker(
+    PostController_2.setAnswer(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PostController",
@@ -328,37 +394,105 @@ class Routes(
     )
   )
 
+  // @LINE:45
+  private[this] lazy val controllers_TagController_addTagpub18_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("addtagpub/"), DynamicPart("pubid", """[^/]+""",true), StaticPart("/"), DynamicPart("tagpub", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_TagController_addTagpub18_invoker = createInvoker(
+    TagController_1.addTagpub(fakeValue[Long], fakeValue[String]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.TagController",
+      "addTagpub",
+      Seq(classOf[Long], classOf[String]),
+      "GET",
+      """Tagging for publication""",
+      this.prefix + """addtagpub/""" + "$" + """pubid<[^/]+>/""" + "$" + """tagpub<[^/]+>"""
+    )
+  )
+
+  // @LINE:46
+  private[this] lazy val controllers_TagController_deleteTagpub19_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("deletetagpub/"), DynamicPart("pubid", """[^/]+""",true), StaticPart("/"), DynamicPart("tagpub", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_TagController_deleteTagpub19_invoker = createInvoker(
+    TagController_1.deleteTagpub(fakeValue[Long], fakeValue[String]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.TagController",
+      "deleteTagpub",
+      Seq(classOf[Long], classOf[String]),
+      "GET",
+      """""",
+      this.prefix + """deletetagpub/""" + "$" + """pubid<[^/]+>/""" + "$" + """tagpub<[^/]+>"""
+    )
+  )
+
+  // @LINE:47
+  private[this] lazy val controllers_TagController_getTagpubs20_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("gettagpubs/"), DynamicPart("title", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_TagController_getTagpubs20_invoker = createInvoker(
+    TagController_1.getTagpubs(fakeValue[String]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.TagController",
+      "getTagpubs",
+      Seq(classOf[String]),
+      "GET",
+      """""",
+      this.prefix + """gettagpubs/""" + "$" + """title<[^/]+>"""
+    )
+  )
+
+  // @LINE:48
+  private[this] lazy val controllers_TagController_getPublications21_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("getpublications/"), DynamicPart("tagpub", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_TagController_getPublications21_invoker = createInvoker(
+    TagController_1.getPublications(fakeValue[String]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.TagController",
+      "getPublications",
+      Seq(classOf[String]),
+      "GET",
+      """""",
+      this.prefix + """getpublications/""" + "$" + """tagpub<[^/]+>"""
+    )
+  )
+
 
   def routes: PartialFunction[RequestHeader, Handler] = {
   
     // @LINE:6
     case controllers_Application_index0_route(params) =>
       call { 
-        controllers_Application_index0_invoker.call(Application_2.index())
+        controllers_Application_index0_invoker.call(Application_5.index())
       }
   
     // @LINE:9
     case controllers_Assets_at1_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_at1_invoker.call(Assets_1.at(path, file))
+        controllers_Assets_at1_invoker.call(Assets_4.at(path, file))
       }
   
     // @LINE:11
     case controllers_Application_upload2_route(params) =>
       call { 
-        controllers_Application_upload2_invoker.call(Application_2.upload())
+        controllers_Application_upload2_invoker.call(Application_5.upload())
       }
   
     // @LINE:19
     case controllers_Application_getPaperByYear3_route(params) =>
       call(params.fromPath[Integer]("year", None)) { (year) =>
-        controllers_Application_getPaperByYear3_invoker.call(Application_2.getPaperByYear(year))
+        controllers_Application_getPaperByYear3_invoker.call(Application_5.getPaperByYear(year))
       }
   
     // @LINE:20
     case controllers_Application_getPaperByTitle4_route(params) =>
       call(params.fromPath[String]("title", None)) { (title) =>
-        controllers_Application_getPaperByTitle4_invoker.call(Application_2.getPaperByTitle(title))
+        controllers_Application_getPaperByTitle4_invoker.call(Application_5.getPaperByTitle(title))
       }
   
     // @LINE:24
@@ -386,39 +520,81 @@ class Routes(
       }
   
     // @LINE:30
-    case controllers_PostController_addPost9_route(params) =>
+    case controllers_ThumbController_addThumb9_route(params) =>
       call { 
-        controllers_PostController_addPost9_invoker.call(PostController_3.addPost())
+        controllers_ThumbController_addThumb9_invoker.call(ThumbController_3.addThumb())
       }
   
     // @LINE:31
-    case controllers_PostController_getPostById10_route(params) =>
-      call(params.fromPath[Long]("postId", None)) { (postId) =>
-        controllers_PostController_getPostById10_invoker.call(PostController_3.getPostById(postId))
+    case controllers_ThumbController_deleteThumb10_route(params) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_ThumbController_deleteThumb10_invoker.call(ThumbController_3.deleteThumb(id))
       }
   
     // @LINE:32
-    case controllers_PostController_getAllPosts11_route(params) =>
-      call { 
-        controllers_PostController_getAllPosts11_invoker.call(PostController_3.getAllPosts())
+    case controllers_ThumbController_getThumbSum11_route(params) =>
+      call(params.fromPath[String]("user", None), params.fromPath[String]("type", None)) { (user, _pf_escape_type) =>
+        controllers_ThumbController_getThumbSum11_invoker.call(ThumbController_3.getThumbSum(user, _pf_escape_type))
       }
   
-    // @LINE:33
-    case controllers_PostController_addComment12_route(params) =>
+    // @LINE:36
+    case controllers_PostController_addPost12_route(params) =>
       call { 
-        controllers_PostController_addComment12_invoker.call(PostController_3.addComment())
+        controllers_PostController_addPost12_invoker.call(PostController_2.addPost())
       }
   
-    // @LINE:34
-    case controllers_PostController_setAsQuestion13_route(params) =>
-      call { 
-        controllers_PostController_setAsQuestion13_invoker.call(PostController_3.setAsQuestion())
+    // @LINE:37
+    case controllers_PostController_getPostById13_route(params) =>
+      call(params.fromPath[Long]("postId", None)) { (postId) =>
+        controllers_PostController_getPostById13_invoker.call(PostController_2.getPostById(postId))
       }
   
-    // @LINE:35
-    case controllers_PostController_setAnswer14_route(params) =>
+    // @LINE:38
+    case controllers_PostController_getAllPosts14_route(params) =>
       call { 
-        controllers_PostController_setAnswer14_invoker.call(PostController_3.setAnswer())
+        controllers_PostController_getAllPosts14_invoker.call(PostController_2.getAllPosts())
+      }
+  
+    // @LINE:39
+    case controllers_PostController_addComment15_route(params) =>
+      call { 
+        controllers_PostController_addComment15_invoker.call(PostController_2.addComment())
+      }
+  
+    // @LINE:40
+    case controllers_PostController_setAsQuestion16_route(params) =>
+      call { 
+        controllers_PostController_setAsQuestion16_invoker.call(PostController_2.setAsQuestion())
+      }
+  
+    // @LINE:41
+    case controllers_PostController_setAnswer17_route(params) =>
+      call { 
+        controllers_PostController_setAnswer17_invoker.call(PostController_2.setAnswer())
+      }
+  
+    // @LINE:45
+    case controllers_TagController_addTagpub18_route(params) =>
+      call(params.fromPath[Long]("pubid", None), params.fromPath[String]("tagpub", None)) { (pubid, tagpub) =>
+        controllers_TagController_addTagpub18_invoker.call(TagController_1.addTagpub(pubid, tagpub))
+      }
+  
+    // @LINE:46
+    case controllers_TagController_deleteTagpub19_route(params) =>
+      call(params.fromPath[Long]("pubid", None), params.fromPath[String]("tagpub", None)) { (pubid, tagpub) =>
+        controllers_TagController_deleteTagpub19_invoker.call(TagController_1.deleteTagpub(pubid, tagpub))
+      }
+  
+    // @LINE:47
+    case controllers_TagController_getTagpubs20_route(params) =>
+      call(params.fromPath[String]("title", None)) { (title) =>
+        controllers_TagController_getTagpubs20_invoker.call(TagController_1.getTagpubs(title))
+      }
+  
+    // @LINE:48
+    case controllers_TagController_getPublications21_route(params) =>
+      call(params.fromPath[String]("tagpub", None)) { (tagpub) =>
+        controllers_TagController_getPublications21_invoker.call(TagController_1.getPublications(tagpub))
       }
   }
 }

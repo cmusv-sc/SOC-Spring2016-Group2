@@ -1,11 +1,11 @@
-2016-04-22 23:20:27,353 [INFO] from play.core.server.NettyServer in pool-4-thread-5 - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
-2016-04-22 23:22:58,162 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
-2016-04-22 23:23:00,784 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:mysql://localhost:3306/ssnetwork
-2016-04-22 23:23:05,954 [WARN] from application in ForkJoinPool-1-worker-1 - application.conf @ file:/home/lunwenh/workspace/SSNetwork/backend/target/scala-2.11/classes/application.conf: 353: parsers.text.maxLength is deprecated, use play.http.parser.maxMemoryBuffer instead
-2016-04-22 23:23:07,721 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
-2016-04-22 23:23:13,238 [INFO] from application in application-akka.actor.default-dispatcher-5 - Application shutdown...!!!
-2016-04-22 23:23:13,597 [INFO] from application in application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
-2016-04-22 23:23:14,069 [INFO] from application in application-akka.actor.default-dispatcher-5 - Creating Pool for datasource 'default'
-2016-04-22 23:23:14,131 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-5 - Database [default] connected at jdbc:mysql://localhost:3306/ssnetwork
-2016-04-22 23:23:14,416 [WARN] from application in application-akka.actor.default-dispatcher-5 - application.conf @ file:/home/lunwenh/workspace/SSNetwork/backend/target/scala-2.11/classes/application.conf: 353: parsers.text.maxLength is deprecated, use play.http.parser.maxMemoryBuffer instead
-2016-04-22 23:23:14,759 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
+2016-04-23 13:32:57,454 [INFO] from play.core.server.NettyServer in pool-4-thread-1 - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2016-04-23 13:33:17,708 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
+2016-04-23 13:33:32,999 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:mysql://localhost:3306/ssnetwork
+2016-04-23 13:33:34,091 [WARN] from application in ForkJoinPool-1-worker-1 - application.conf @ file:/Users/ThomasHsu/Desktop/SSNetwork/backend/target/scala-2.11/classes/application.conf: 353: parsers.text.maxLength is deprecated, use play.http.parser.maxMemoryBuffer instead
+2016-04-23 13:33:34,362 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
+2016-04-23 13:35:04,785 [INFO] from application in application-akka.actor.default-dispatcher-3 - Application shutdown...!!!
+2016-04-23 13:35:04,844 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
+2016-04-23 13:35:04,986 [INFO] from application in application-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
+2016-04-23 13:35:04,998 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-3 - Database [default] connected at jdbc:mysql://localhost:3306/ssnetwork
+2016-04-23 13:35:05,067 [WARN] from application in application-akka.actor.default-dispatcher-3 - application.conf @ file:/Users/ThomasHsu/Desktop/SSNetwork/backend/target/scala-2.11/classes/application.conf: 353: parsers.text.maxLength is deprecated, use play.http.parser.maxMemoryBuffer instead
+2016-04-23 13:35:05,152 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-3 - Application started (Dev)
