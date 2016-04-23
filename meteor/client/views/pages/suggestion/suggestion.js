@@ -1,7 +1,6 @@
+// var suggestCallBack; 
+// var suggestions = [];	
 Template.suggestion.onRendered(function() {
-
-	$(document).ready(function() {
-
 		var config = {
 			siteURL: 'byKeyWord', // Change this to your site
 			searchSite: true,
@@ -10,6 +9,7 @@ Template.suggestion.onRendered(function() {
 			perPage: 8, // A maximum of 8 is allowed by Google
 			page: 0 // The start page
 		}
+		
 		var arrow = $('<span>', {
 			className: 'arrow'
 		}).appendTo('ul.icons');
@@ -50,19 +50,29 @@ Template.suggestion.onRendered(function() {
 
 
 		$('#searchForm').submit(function() {
-			var input = $("#s").val();
-			var radio = $("input[name=check]:checked").val();
-			console.log(input);
-			console.log(radio);
-			if(radio==='keyWord'){
-				getPaperByKeyWord(input);
-			}
-			if(radio==='web'){
-				googleSearch();
-			}
-			
-			return false;
-		});
+		var input = $("#s").val();
+		var radio = $("input[name=check]:checked").val();
+		console.log(input);
+        if(input!=null){
+           // getSuggestions(input);
+        }
+		console.log(radio);
+		if(radio==='keyWord'){
+			getPaperByKeyWord(input);
+		}
+		if(radio==='byYear'){
+			getPaperByYear(input);
+		}
+		if(radio==='byTitle'){
+			getPaperByTitle(input);
+		}
+		if(radio==='web'){
+			googleSearch();
+		}
+
+		
+		return false;
+	});
 
 		$('#searchSite,#searchWeb').change(function() {
 			// Listening for a click on one of the radio buttons.
@@ -70,6 +80,139 @@ Template.suggestion.onRendered(function() {
 
 			config.searchSite = this.id == 'searchSite';
 		});
+		function getSuggestions(input){
+          suggestions.splice(0,suggestions.length)
+          $.getJSON("http://suggestqueries.google.com/complete/search?callback=?",
+                {
+                  "hl":"en", // Language
+                  "jsonp":"suggestCallBack", // jsonp callback function name
+                  "q":input, // query term
+                   "client":"chrome" // force youtube style response, i.e. jsonp
+                }
+            );
+             
+            suggestCallBack = function (data) {
+                
+                $.each(data[1], function(key, val) {
+                    suggestions.push({"value":val});
+                });
+                
+                suggestions.length = 5; // prune suggestions list to only 5 items
+                for(var i=1;i<6;i++){
+                  console.log(suggestions[i-1].value);
+              
+              }
+          }; 
+
+
+           $( "#s" ).autocomplete({
+           source: suggestions
+          });
+    }
+        //function search
+    function getPaperByYear(input){
+    	var stringUrl = "http://localhost:9000/year/"+input; 
+			var resultsDiv = $('#resultsDiv');
+            $.ajax({
+                type : "GET",
+                contentType : "application/x-www-form-urlencoded; charset=utf-8",
+                url : stringUrl,
+                //User-Agent: 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.1b3pre) Gecko/20081130 Minefield/3.1b3pre'
+                dataType: 'json',
+                cache : false,
+                success : function(response) {
+                console.log("dddd");
+               // console.log("Data Loaded: " + JSON.stringify(response));
+                $('#more').remove();  
+                var results=response;
+                console.log(results);
+                if (results.length) {
+
+				// If results were returned, add them to a pageContainer div,
+				// after which append them to the #resultsDiv:
+
+				var pageContainer = $('<div>', {
+					className: 'pageContainer'
+				});
+				for (var i = 0; i < results.length; i++) {
+					// Creating a new result object and firing its toString method:
+					console.log(results[i]);
+					pageContainer.append(new result(results[i]) + '');
+				}
+                resultsDiv.empty();
+				pageContainer.append('<div class="clear"></div>')
+					.hide().appendTo(resultsDiv)
+					.fadeIn('slow');
+
+			    } else{
+
+				resultsDiv.empty();
+				$('<p>', {
+					className: 'notFound',
+					html: 'No Results Were Found!'
+				}).hide().appendTo(resultsDiv).fadeIn();
+
+			    }
+               },
+                error : function(xhr, textStatus, errorThrown) {
+                	console.log("sdssdsd");
+                    console.log("error : " + textStatus);
+                }
+            });
+
+    }   
+        //function search
+    function getPaperByTitle(input){
+    	var stringUrl = "http://localhost:9000/title/"+input; 
+			var resultsDiv = $('#resultsDiv');
+            $.ajax({
+                type : "GET",
+                contentType : "application/x-www-form-urlencoded; charset=utf-8",
+                url : stringUrl,
+                //User-Agent: 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.1b3pre) Gecko/20081130 Minefield/3.1b3pre'
+                dataType: 'json',
+                cache : false,
+                success : function(response) {
+                console.log("dddd");
+               // console.log("Data Loaded: " + JSON.stringify(response));
+                $('#more').remove();  
+                var results=response;
+                console.log(results);
+                if (results.length) {
+
+				// If results were returned, add them to a pageContainer div,
+				// after which append them to the #resultsDiv:
+
+				var pageContainer = $('<div>', {
+					className: 'pageContainer'
+				});
+				for (var i = 0; i < results.length; i++) {
+					// Creating a new result object and firing its toString method:
+					console.log(results[i]);
+					pageContainer.append(new result(results[i]) + '');
+				}
+                resultsDiv.empty();
+				pageContainer.append('<div class="clear"></div>')
+					.hide().appendTo(resultsDiv)
+					.fadeIn('slow');
+
+			    } else{
+
+				resultsDiv.empty();
+				$('<p>', {
+					className: 'notFound',
+					html: 'No Results Were Found!'
+				}).hide().appendTo(resultsDiv).fadeIn();
+
+			    }
+               },
+                error : function(xhr, textStatus, errorThrown) {
+                	console.log("sdssdsd");
+                    console.log("error : " + textStatus);
+                }
+            });
+
+    }
 	    //function search
 		function googleSearch(settings) {
 
@@ -253,11 +396,32 @@ Template.suggestion.onRendered(function() {
 					];
 					break;
 				case 'getPaperByKeyWord':
+			    arr = [
+					'<div class="webResult">',
+					'<h2><a href="', r.ee, '" target="_blank">', r.title, '</a></h2>',
+					'<p>', r.authors, '</p>',
+					'<a href="', r.url, '" target="_blank">', r.year, '</a>',
+                    '<a href="', r.url, '" target="_blank">', 9.2, '</a>',
+					'</div>'
+				];
+				break;
+				case 'getPaperByYear':
 				    arr = [
 						'<div class="webResult">',
 						'<h2><a href="', r.ee, '" target="_blank">', r.title, '</a></h2>',
 						'<p>', r.authors, '</p>',
 						'<a href="', r.url, '" target="_blank">', r.year, '</a>',
+	                    '<a href="', r.url, '" target="_blank">', 9.2, '</a>',
+						'</div>'
+					];
+					break;
+				case 'getPaperByTitle':
+				    arr = [
+						'<div class="webResult">',
+						'<h2><a href="', r.ee, '" target="_blank">', r.title, '</a></h2>',
+						'<p>', r.authors, '</p>',
+						'<a href="', r.url, '" target="_blank">', r.year, '</a>',
+	                    '<a href="', r.url, '" target="_blank">', 9.2, '</a>',
 						'</div>'
 					];
 					break;
@@ -268,4 +432,3 @@ Template.suggestion.onRendered(function() {
 			}
 		}
 	});
-}
