@@ -57,30 +57,30 @@ public class ThumbController extends Controller {
         result.put("disLike", dislikeSum);
         return ok(Json.toJson(result));
     }
-    /*---Start: Useless part ---*/
-    public Result addLike(){
-        Thumb thumb = form(Thumb.class).bindFromRequest().get();
-        System.out.println("addLike is " + thumb);
-        Form thumbForm= form(Thumb.class);
-        //set existing value into the form
-        thumb.save();
-        return ok();
-    }
-    public Result deleteLike(Long id){
-        Thumb.find.byId(id).delete();
-        return ok();
-    }
-    public Result addDislike(){
-        Thumb thumb = form(Thumb.class).bindFromRequest().get();
-        System.out.println("disLike is " + thumb);
-        Form thumbForm= form(Thumb.class);
-        //set existing value into the form
-        thumb.save();
-        return ok();
-    }
-    public Result deleteDislike(Long id){
-        Thumb.find.byId(id).delete();
-        return ok();
-    }
-    /*---End: Useless part ---*/
+    // /*---Start: Useless part ---*/
+    // public Result addLike(){
+    //     Thumb thumb = form(Thumb.class).bindFromRequest().get();
+    //     System.out.println("addLike is " + thumb);
+    //     Form thumbForm= form(Thumb.class);
+    //     //set existing value into the form
+    //     thumb.save();
+    //     return ok();
+    // }
+    // public Result deleteLike(Long id){
+    //     Thumb.find.byId(id).delete();
+    //     return ok();
+    // }
+    // public Result addDislike(){
+    //     Thumb thumb = form(Thumb.class).bindFromRequest().get();
+    //     System.out.println("disLike is " + thumb);
+    //     Form thumbForm= form(Thumb.class);
+    //     //set existing value into the form
+    //     thumb.save();
+    //     return ok();
+    // }
+    // public Result deleteDislike(Long id){
+    //     Thumb.find.byId(id).delete();
+    //     return ok();
+    // }
+    // /*---End: Useless part ---*/
 }

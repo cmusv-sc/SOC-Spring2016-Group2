@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/ThomasHsu/Desktop/SSNetwork/backend/conf/routes
-// @DATE:Sat Apr 23 13:33:00 PDT 2016
+// @DATE:Sat Apr 23 14:56:47 PDT 2016
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }

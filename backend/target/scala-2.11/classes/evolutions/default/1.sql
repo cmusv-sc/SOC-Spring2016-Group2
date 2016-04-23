@@ -74,8 +74,8 @@ create table publication_author (
 create table thumb (
   id                        bigint auto_increment not null,
   thumb_type                tinyint(1) default 0,
-  sender                    varchar(255),
-  receiver                  varchar(255),
+  sender                    integer,
+  receiver                  integer,
   constraint pk_thumb primary key (id))
 ;
 
