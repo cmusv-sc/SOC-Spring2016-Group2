@@ -78,8 +78,8 @@ Router.route('/suggestion', function () {
 });
 
 // Post
-Router.route('/post', function() {
-	this.render('post')
+Router.route('/postPage', function() {
+	this.render('postPage')
 });
 
 //

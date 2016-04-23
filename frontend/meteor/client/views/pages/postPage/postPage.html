@@ -1,0 +1,26 @@
+<template name = "post">
+    <div class = "wrapper wrapper-content animated fadeInRight">
+    	<div>
+    		{{> searchTemplate}}
+    	</div>
+    	
+    	<div>
+    		{{> buttonTemplate}}
+    	</div>
+    	
+    	<div id = "resultsDiv">
+    	</div>
+    </div> 
+</template>
+
+<templage name = "searchTemplate">
+   <form>
+      <input type = "text" name = "searchContent">
+      <input type = "submit" value = "Find Post">
+   </form>
+</templage>
+
+<templage name = "buttonTemplate">
+        <button class = "button3" name = "findMyPosts">Find My Posts</button>
+        <button class = "button3" name = "addNewPost">Add New Post</button>
+</templage>
