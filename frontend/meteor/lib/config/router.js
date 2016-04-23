@@ -68,6 +68,10 @@ Router.route('/viewFriendInfo', function () {
     this.render('viewFriendInfo');
 });
 
+Router.route('/viewRequestInfo', function () {
+    this.render('viewRequestInfo');
+});
+
 // Suggestion
 Router.route('/suggestion', function () {
     this.render('suggestion');

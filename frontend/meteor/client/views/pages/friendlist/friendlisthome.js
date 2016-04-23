@@ -7,6 +7,7 @@ Template.friendlisthome.helpers({
             collection: Friends,
             rowsPerPage: 10,
             showFilter: true,
+            id: "allfriends",
             fields: [
                 {
                     fieldId: 'name',
@@ -24,9 +25,6 @@ Template.friendlisthome.helpers({
     }
 });
 
-Template.registerHelper('allrequests', function() {
-    return Requests.findOne();
-});
 
 Template.request.helpers({
 
@@ -38,6 +36,7 @@ Template.request.helpers({
             showFilter: false,
             showNavigation: "never",
             showNavigationRowsPerPage: false,
+            id: "allrequests",
             fields: [
                 {
                     fieldId: 'name',
@@ -57,7 +56,7 @@ Template.request.helpers({
 });
 
 Template.friendlisthome.events({
-  'click .reactive-table tbody tr': function (event) {
+  'click #allfriends tbody tr': function (event) {
     event.preventDefault();
     var post = this;
     // checks if the actual clicked element has the class `delete`
@@ -71,7 +70,33 @@ Template.friendlisthome.events({
   }
 });
 
+Template.request.events({
+  'click #allrequests tbody tr': function (event) {
+    event.preventDefault();
+    var post = this;
+    // checks if the actual clicked element has the class `delete`
+    if (event.target.className == "name") {
+        Session.setPersistent("idsession", this._id);
+        Session.setPersistent("namesession", this.name);
+        Session.setPersistent("summarysession", this.summary);
+        window.location.href='/viewRequestInfo'
+
+    }
+  }
+});
+
 Template.viewFriendInfo.helpers({
+  context: function() {
+    var result = _.clone(this);
+    var person = Session.get("namesession")
+    var summary = Session.get("summarysession")
+    result.name = person;
+    result.summary = summary;
+    return result;
+  }
+});
+
+Template.viewRequestInfo.helpers({
   context: function() {
     var result = _.clone(this);
     var person = Session.get("namesession")
@@ -113,6 +138,20 @@ Template.request.events({
     var name = Requests.findOne().name;
     var summary = Requests.findOne().summary;
     Friends.insert({name: name, createdAt: new Date(),
+                    summary: summary});
+    Requests.remove(id);
+    //window.location.href='/add'
+  },
+});
+
+Template.request.events({
+  'click #ignore'(event, template) {
+    event.preventDefault();
+    // increment the counter when button is clicked
+    var id = Requests.findOne()._id;
+    var name = Requests.findOne().name;
+    var summary = Requests.findOne().summary;
+    Requests.insert({name: name, createdAt: new Date(),
                     summary: summary});
     Requests.remove(id);
     //window.location.href='/add'
