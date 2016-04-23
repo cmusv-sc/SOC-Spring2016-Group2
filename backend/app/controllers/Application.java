@@ -1,20 +1,25 @@
 package controllers;
 
 import java.io.File;
-
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.google.gson.Gson;
-
-import models.Author;
-import models.Publication;
-import models.PublicationAuthor;
+import models.*;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
-
 import java.util.*;
 
 public class Application extends Controller {
+    static{
+        // TEST
+        // (Long id, Long followerId, Long followeeId, String category, Date timestamp)
+        Subscription subscription=new Subscription(null,new Long(1),new Long(11),"user",new Date());
+        subscription.save();
+        subscription=new Subscription(null,new Long(1),new Long(12),"paper",new Date());
+        subscription.save();
+        subscription=new Subscription(null,new Long(1),new Long(13),"group",new Date());
+        subscription.save();
+    }
 
     public Result index() {
 

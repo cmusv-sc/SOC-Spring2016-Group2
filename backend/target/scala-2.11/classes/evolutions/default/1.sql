@@ -3,6 +3,15 @@
 
 # --- !Ups
 
+create table subscription (
+  id                        bigint auto_increment not null,
+  follower_id               bigint,
+  followee_id               bigint,
+  category                  varchar(255),
+  timestamp                 datetime(6),
+  constraint pk_subscription primary key (id))
+;
+
 create table author (
   id                        bigint auto_increment not null,
   name                      varchar(255),
@@ -70,6 +79,8 @@ create table publication_author (
 # --- !Downs
 
 SET FOREIGN_KEY_CHECKS=0;
+
+drop table subscription;
 
 drop table author;
 

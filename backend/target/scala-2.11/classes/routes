@@ -33,3 +33,7 @@ GET		/post/getAllPosts				controllers.PostController.getAllPosts()
 POST	/post/addComment				controllers.PostController.addComment()
 POST	/post/setAsQuestion				controllers.PostController.setAsQuestion()
 POST	/post/setAnswer					controllers.PostController.setAnswer()
+
+
+#Subscribe
+GET 	/subscribe/list/:category		controllers.SubscriptionController.loadSubscriptionList(category: String)

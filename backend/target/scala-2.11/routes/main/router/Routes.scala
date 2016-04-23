@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/lunwenh/workspace/SSNetwork/conf/routes
-// @DATE:Fri Apr 22 18:15:59 PDT 2016
+// @SOURCE:/Users/Anna/Documents/graduate2/soc/SSNetwork/backend/conf/routes
+// @DATE:Sat Apr 23 05:12:09 PDT 2016
 
 package router
 
@@ -17,33 +17,37 @@ import _root_.play.libs.F
 class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
-  Application_2: controllers.Application,
+  Application_4: controllers.Application,
   // @LINE:9
-  Assets_1: controllers.Assets,
+  Assets_3: controllers.Assets,
   // @LINE:24
-  ForumController_0: controllers.ForumController,
+  ForumController_1: controllers.ForumController,
   // @LINE:30
-  PostController_3: controllers.PostController,
+  PostController_2: controllers.PostController,
+  // @LINE:39
+  SubscriptionController_0: controllers.SubscriptionController,
   val prefix: String
 ) extends GeneratedRouter {
 
    @javax.inject.Inject()
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
-    Application_2: controllers.Application,
+    Application_4: controllers.Application,
     // @LINE:9
-    Assets_1: controllers.Assets,
+    Assets_3: controllers.Assets,
     // @LINE:24
-    ForumController_0: controllers.ForumController,
+    ForumController_1: controllers.ForumController,
     // @LINE:30
-    PostController_3: controllers.PostController
-  ) = this(errorHandler, Application_2, Assets_1, ForumController_0, PostController_3, "/")
+    PostController_2: controllers.PostController,
+    // @LINE:39
+    SubscriptionController_0: controllers.SubscriptionController
+  ) = this(errorHandler, Application_4, Assets_3, ForumController_1, PostController_2, SubscriptionController_0, "/")
 
   import ReverseRouteContext.empty
 
   def withPrefix(prefix: String): Routes = {
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, Application_2, Assets_1, ForumController_0, PostController_3, prefix)
+    new Routes(errorHandler, Application_4, Assets_3, ForumController_1, PostController_2, SubscriptionController_0, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -66,6 +70,7 @@ class Routes(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """post/addComment""", """controllers.PostController.addComment()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """post/setAsQuestion""", """controllers.PostController.setAsQuestion()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """post/setAnswer""", """controllers.PostController.setAnswer()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """subscribe/list/""" + "$" + """category<[^/]+>""", """controllers.SubscriptionController.loadSubscriptionList(category:String)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -78,7 +83,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix)))
   )
   private[this] lazy val controllers_Application_index0_invoker = createInvoker(
-    Application_2.index(),
+    Application_4.index(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
@@ -95,7 +100,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
   private[this] lazy val controllers_Assets_at1_invoker = createInvoker(
-    Assets_1.at(fakeValue[String], fakeValue[String]),
+    Assets_3.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Assets",
@@ -112,7 +117,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("person/uploadPic")))
   )
   private[this] lazy val controllers_Application_upload2_invoker = createInvoker(
-    Application_2.upload(),
+    Application_4.upload(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
@@ -129,7 +134,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("year/"), DynamicPart("year", """[^/]+""",true)))
   )
   private[this] lazy val controllers_Application_getPaperByYear3_invoker = createInvoker(
-    Application_2.getPaperByYear(fakeValue[Integer]),
+    Application_4.getPaperByYear(fakeValue[Integer]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
@@ -146,7 +151,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("title/"), DynamicPart("title", """[^/]+""",true)))
   )
   private[this] lazy val controllers_Application_getPaperByTitle4_invoker = createInvoker(
-    Application_2.getPaperByTitle(fakeValue[String]),
+    Application_4.getPaperByTitle(fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Application",
@@ -163,7 +168,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("comment")))
   )
   private[this] lazy val controllers_ForumController_addComment5_invoker = createInvoker(
-    ForumController_0.addComment(),
+    ForumController_1.addComment(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.ForumController",
@@ -180,7 +185,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("comment")))
   )
   private[this] lazy val controllers_ForumController_getComments6_invoker = createInvoker(
-    ForumController_0.getComments(fakeValue[Integer], fakeValue[Integer]),
+    ForumController_1.getComments(fakeValue[Integer], fakeValue[Integer]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.ForumController",
@@ -197,7 +202,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("updateComment")))
   )
   private[this] lazy val controllers_ForumController_updateComment7_invoker = createInvoker(
-    ForumController_0.updateComment(),
+    ForumController_1.updateComment(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.ForumController",
@@ -214,7 +219,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("upload")))
   )
   private[this] lazy val controllers_ForumController_uploadFile8_invoker = createInvoker(
-    ForumController_0.uploadFile(),
+    ForumController_1.uploadFile(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.ForumController",
@@ -231,7 +236,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("post/addPost")))
   )
   private[this] lazy val controllers_PostController_addPost9_invoker = createInvoker(
-    PostController_3.addPost(),
+    PostController_2.addPost(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PostController",
@@ -248,7 +253,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("post/getPostById/"), DynamicPart("postId", """[^/]+""",true)))
   )
   private[this] lazy val controllers_PostController_getPostById10_invoker = createInvoker(
-    PostController_3.getPostById(fakeValue[Long]),
+    PostController_2.getPostById(fakeValue[Long]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PostController",
@@ -265,7 +270,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("post/getAllPosts")))
   )
   private[this] lazy val controllers_PostController_getAllPosts11_invoker = createInvoker(
-    PostController_3.getAllPosts(),
+    PostController_2.getAllPosts(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PostController",
@@ -282,7 +287,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("post/addComment")))
   )
   private[this] lazy val controllers_PostController_addComment12_invoker = createInvoker(
-    PostController_3.addComment(),
+    PostController_2.addComment(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PostController",
@@ -299,7 +304,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("post/setAsQuestion")))
   )
   private[this] lazy val controllers_PostController_setAsQuestion13_invoker = createInvoker(
-    PostController_3.setAsQuestion(),
+    PostController_2.setAsQuestion(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PostController",
@@ -316,7 +321,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("post/setAnswer")))
   )
   private[this] lazy val controllers_PostController_setAnswer14_invoker = createInvoker(
-    PostController_3.setAnswer(),
+    PostController_2.setAnswer(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PostController",
@@ -328,97 +333,120 @@ class Routes(
     )
   )
 
+  // @LINE:39
+  private[this] lazy val controllers_SubscriptionController_loadSubscriptionList15_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("subscribe/list/"), DynamicPart("category", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_SubscriptionController_loadSubscriptionList15_invoker = createInvoker(
+    SubscriptionController_0.loadSubscriptionList(fakeValue[String]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.SubscriptionController",
+      "loadSubscriptionList",
+      Seq(classOf[String]),
+      "GET",
+      """Subscribe""",
+      this.prefix + """subscribe/list/""" + "$" + """category<[^/]+>"""
+    )
+  )
+
 
   def routes: PartialFunction[RequestHeader, Handler] = {
   
     // @LINE:6
     case controllers_Application_index0_route(params) =>
       call { 
-        controllers_Application_index0_invoker.call(Application_2.index())
+        controllers_Application_index0_invoker.call(Application_4.index())
       }
   
     // @LINE:9
     case controllers_Assets_at1_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_at1_invoker.call(Assets_1.at(path, file))
+        controllers_Assets_at1_invoker.call(Assets_3.at(path, file))
       }
   
     // @LINE:11
     case controllers_Application_upload2_route(params) =>
       call { 
-        controllers_Application_upload2_invoker.call(Application_2.upload())
+        controllers_Application_upload2_invoker.call(Application_4.upload())
       }
   
     // @LINE:19
     case controllers_Application_getPaperByYear3_route(params) =>
       call(params.fromPath[Integer]("year", None)) { (year) =>
-        controllers_Application_getPaperByYear3_invoker.call(Application_2.getPaperByYear(year))
+        controllers_Application_getPaperByYear3_invoker.call(Application_4.getPaperByYear(year))
       }
   
     // @LINE:20
     case controllers_Application_getPaperByTitle4_route(params) =>
       call(params.fromPath[String]("title", None)) { (title) =>
-        controllers_Application_getPaperByTitle4_invoker.call(Application_2.getPaperByTitle(title))
+        controllers_Application_getPaperByTitle4_invoker.call(Application_4.getPaperByTitle(title))
       }
   
     // @LINE:24
     case controllers_ForumController_addComment5_route(params) =>
       call { 
-        controllers_ForumController_addComment5_invoker.call(ForumController_0.addComment())
+        controllers_ForumController_addComment5_invoker.call(ForumController_1.addComment())
       }
   
     // @LINE:25
     case controllers_ForumController_getComments6_route(params) =>
       call(params.fromQuery[Integer]("rootid", None), params.fromQuery[Integer]("categoryid", None)) { (rootid, categoryid) =>
-        controllers_ForumController_getComments6_invoker.call(ForumController_0.getComments(rootid, categoryid))
+        controllers_ForumController_getComments6_invoker.call(ForumController_1.getComments(rootid, categoryid))
       }
   
     // @LINE:26
     case controllers_ForumController_updateComment7_route(params) =>
       call { 
-        controllers_ForumController_updateComment7_invoker.call(ForumController_0.updateComment())
+        controllers_ForumController_updateComment7_invoker.call(ForumController_1.updateComment())
       }
   
     // @LINE:27
     case controllers_ForumController_uploadFile8_route(params) =>
       call { 
-        controllers_ForumController_uploadFile8_invoker.call(ForumController_0.uploadFile())
+        controllers_ForumController_uploadFile8_invoker.call(ForumController_1.uploadFile())
       }
   
     // @LINE:30
     case controllers_PostController_addPost9_route(params) =>
       call { 
-        controllers_PostController_addPost9_invoker.call(PostController_3.addPost())
+        controllers_PostController_addPost9_invoker.call(PostController_2.addPost())
       }
   
     // @LINE:31
     case controllers_PostController_getPostById10_route(params) =>
       call(params.fromPath[Long]("postId", None)) { (postId) =>
-        controllers_PostController_getPostById10_invoker.call(PostController_3.getPostById(postId))
+        controllers_PostController_getPostById10_invoker.call(PostController_2.getPostById(postId))
       }
   
     // @LINE:32
     case controllers_PostController_getAllPosts11_route(params) =>
       call { 
-        controllers_PostController_getAllPosts11_invoker.call(PostController_3.getAllPosts())
+        controllers_PostController_getAllPosts11_invoker.call(PostController_2.getAllPosts())
       }
   
     // @LINE:33
     case controllers_PostController_addComment12_route(params) =>
       call { 
-        controllers_PostController_addComment12_invoker.call(PostController_3.addComment())
+        controllers_PostController_addComment12_invoker.call(PostController_2.addComment())
       }
   
     // @LINE:34
     case controllers_PostController_setAsQuestion13_route(params) =>
       call { 
-        controllers_PostController_setAsQuestion13_invoker.call(PostController_3.setAsQuestion())
+        controllers_PostController_setAsQuestion13_invoker.call(PostController_2.setAsQuestion())
       }
   
     // @LINE:35
     case controllers_PostController_setAnswer14_route(params) =>
       call { 
-        controllers_PostController_setAnswer14_invoker.call(PostController_3.setAnswer())
+        controllers_PostController_setAnswer14_invoker.call(PostController_2.setAnswer())
+      }
+  
+    // @LINE:39
+    case controllers_SubscriptionController_loadSubscriptionList15_route(params) =>
+      call(params.fromPath[String]("category", None)) { (category) =>
+        controllers_SubscriptionController_loadSubscriptionList15_invoker.call(SubscriptionController_0.loadSubscriptionList(category))
       }
   }
 }

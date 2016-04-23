@@ -1,9 +1,9 @@
 [0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/home/lunwenh/workspace/SSNetwork/conf/META-INF,/home/lunwenh/workspace/SSNetwork/target/scala-2.11/classes/META-INF)[0m
-[0m[[0mdebug[0m] [0m	(/home/lunwenh/workspace/SSNetwork/conf/logback.xml,/home/lunwenh/workspace/SSNetwork/target/scala-2.11/classes/logback.xml)[0m
-[0m[[0mdebug[0m] [0m	(/home/lunwenh/workspace/SSNetwork/conf/application.conf,/home/lunwenh/workspace/SSNetwork/target/scala-2.11/classes/application.conf)[0m
-[0m[[0mdebug[0m] [0m	(/home/lunwenh/workspace/SSNetwork/conf/routes,/home/lunwenh/workspace/SSNetwork/target/scala-2.11/classes/routes)[0m
-[0m[[0mdebug[0m] [0m	(/home/lunwenh/workspace/SSNetwork/conf/evolutions,/home/lunwenh/workspace/SSNetwork/target/scala-2.11/classes/evolutions)[0m
-[0m[[0mdebug[0m] [0m	(/home/lunwenh/workspace/SSNetwork/conf/META-INF/persistence.xml,/home/lunwenh/workspace/SSNetwork/target/scala-2.11/classes/META-INF/persistence.xml)[0m
-[0m[[0mdebug[0m] [0m	(/home/lunwenh/workspace/SSNetwork/conf/evolutions/default,/home/lunwenh/workspace/SSNetwork/target/scala-2.11/classes/evolutions/default)[0m
-[0m[[0mdebug[0m] [0m	(/home/lunwenh/workspace/SSNetwork/conf/evolutions/default/1.sql,/home/lunwenh/workspace/SSNetwork/target/scala-2.11/classes/evolutions/default/1.sql)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Anna/Documents/graduate2/soc/SSNetwork/backend/conf/application.conf,/Users/Anna/Documents/graduate2/soc/SSNetwork/backend/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Anna/Documents/graduate2/soc/SSNetwork/backend/conf/evolutions,/Users/Anna/Documents/graduate2/soc/SSNetwork/backend/target/scala-2.11/classes/evolutions)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Anna/Documents/graduate2/soc/SSNetwork/backend/conf/logback.xml,/Users/Anna/Documents/graduate2/soc/SSNetwork/backend/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Anna/Documents/graduate2/soc/SSNetwork/backend/conf/META-INF,/Users/Anna/Documents/graduate2/soc/SSNetwork/backend/target/scala-2.11/classes/META-INF)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Anna/Documents/graduate2/soc/SSNetwork/backend/conf/routes,/Users/Anna/Documents/graduate2/soc/SSNetwork/backend/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Anna/Documents/graduate2/soc/SSNetwork/backend/conf/evolutions/default,/Users/Anna/Documents/graduate2/soc/SSNetwork/backend/target/scala-2.11/classes/evolutions/default)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Anna/Documents/graduate2/soc/SSNetwork/backend/conf/evolutions/default/1.sql,/Users/Anna/Documents/graduate2/soc/SSNetwork/backend/target/scala-2.11/classes/evolutions/default/1.sql)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Anna/Documents/graduate2/soc/SSNetwork/backend/conf/META-INF/persistence.xml,/Users/Anna/Documents/graduate2/soc/SSNetwork/backend/target/scala-2.11/classes/META-INF/persistence.xml)[0m
