@@ -16,20 +16,8 @@ To run and test it locally, run following command after you clone the repo:
 
 ```bash
 git clone https://github.com/helunwencser/SSNetwork.git
-cd SSNetwork
+cd SSNetwork/backend
 activator run
-```
-
-Or
-```bash
-git clone htts://github.com/helunwencser/SSNetwork.git
-cd SSNetwork
-sudo chmod +x ./run.sh
-./run.sh
-```
-
-## Convert the project into eclipse project
-
-```bash
-activator eclipse
+cd ../frontend/meteor
+meteor
 ```
