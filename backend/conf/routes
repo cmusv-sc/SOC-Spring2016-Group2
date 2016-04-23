@@ -16,8 +16,8 @@ POST    /person/uploadPic           controllers.Application.upload()
 
 
 ###Sprint1
-GET    /year/:year                  controllers.Application.getPaperByYear(year:Integer)
-GET    /title/:title                controllers.Application.getPaperByTitle(title:String)
+#GET    /year/:year                  controllers.Application.getPaperByYear(year:Integer)
+#GET    /title/:title                controllers.Application.getPaperByTitle(title:String)
 
 
 ### Forum
@@ -46,3 +46,8 @@ GET    /addtagpub/:pubid/:tagpub    controllers.TagController.addTagpub(pubid:Lo
 GET    /deletetagpub/:pubid/:tagpub controllers.TagController.deleteTagpub(pubid:Long,tagpub:String)
 GET    /gettagpubs/:title           controllers.TagController.getTagpubs(title:String)
 GET    /getpublications/:tagpub     controllers.TagController.getPublications(tagpub:String)
+
+### Testing New Features
+GET    /year/:year                  controllers.Application.getPublicationWithAuthorsByYear(year: Integer)
+GET    /id/:id                  controllers.Application.getPublicationWithAuthorsById(id: Integer)
+GET    /title/:title                controllers.Application.getPublicationWithAuthorsByTitle(title: String)

@@ -40,3 +40,13 @@ Requests = new Mongo.Collection('requests');
       return true; 
     }
   });
+  
+  Meteor.methods({
+    fetchFromService: function(url) {
+
+      var convertAsyncToSync  = Meteor.wrapAsync( HTTP.get );
+      var resultOfAsyncToSync = convertAsyncToSync(url, {} );
+
+      return resultOfAsyncToSync;
+    }
+  });

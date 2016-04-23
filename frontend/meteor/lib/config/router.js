@@ -82,6 +82,19 @@ Router.route('/postPage', function() {
 	this.render('postPage')
 });
 
+//Forum
+Router.route('/forumlist', function () {
+    this.render('forumlist');
+});
+
+Router.route('/findpaper', function () {
+    this.render('findpaper');
+});
+
+Router.route('/paperdetail', function () {
+    this.render('paperdetail');
+});
+
 //
 // Dashboards routes
 //

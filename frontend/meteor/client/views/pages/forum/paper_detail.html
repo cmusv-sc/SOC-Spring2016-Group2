@@ -1,0 +1,212 @@
+<template name="paperdetail">
+  <div class="wrapper wrapper-content container">
+        <div class="row">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <a href="/findpaper" class="btn btn-primary btn-outline"><i class="fa fa-chevron-left"></i> Back</a>
+                    <div class="text-center">
+                        <h1 id="title"></h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p></p>
+                        </div>
+                        <div class="col-sm-6">
+                            <h2>Details</h2>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <td><span class="label label-info">ID</span></td>
+                                            <td class="id"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Pubkey</span></td>
+                                            <td class="pubkey"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Title</span></td>
+                                            <td class="title"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Author</span></td>
+                                            <td class="author"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Editor</span></td>
+                                            <td class="editor"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Year</span></td>
+                                            <td class="year"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">ISBN</span></td>
+                                            <td class="isbn"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">URL</span></td>
+                                            <td class="url"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Volume</span></td>
+                                            <td class="volume"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Pages</span></td>
+                                            <td class="pages"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Mdate</span></td>
+                                            <td class="mdate"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Series</span></td>
+                                            <td class="series"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Publisher</span></td>
+                                            <td class="publisher"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Booktitle</span></td>
+                                            <td class="booktitle"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Crossref</span></td>
+                                            <td class="crossref"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">EE</span></td>
+                                            <td><a href="" class="ee"></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <hr>
+                            <h2>Comments</h2>
+                            <div class="input-group">
+                                <input type="text" class="form-control input-sm" id="inputvalue">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-sm btn-success">Comment</button>
+                                </div>
+                            </div>
+                            <br>
+                            <div>
+                                <div class="dd" id="nestable">
+                                    <ol class="dd-list">
+                                        <li class="dd-item">
+                                            <div class="social-feed-box">
+                                                
+                                                <div class="social-avatar">
+                                                    <div class="media-body">
+                                                        <span class="text-success">Firstname Lastname</span>
+                                                        
+                                                        <small class="pull-right"> 2016-4-23</small>
+                                                    </div>
+                                                </div>
+                                                <div class="social-body">
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                                    <a href="#" class="small" style="color: #676a6c;"><i class="fa fa-thumbs-up"></i></a> 37 
+                                                    <a href="#" class="small" style="color: #676a6c;"><i class="fa fa-thumbs-down"></i></a> 9 
+                                                    <p></p>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control input-sm" id="inputvalue">
+                                                        <div class="input-group-btn">
+                                                            <button class="btn btn-sm btn-success">Reply</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="dd-item">
+                                            <div class="social-feed-box">
+                                                
+                                                <div class="social-avatar">
+                                                    <div class="media-body">
+                                                        <span class="text-success">Firstname Lastname</span>
+                                                        
+                                                        <small class="pull-right"> 2016-4-23</small>
+                                                    </div>
+                                                </div>
+                                                <div class="social-body">
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                                    <a href="#" class="small"><i class="fa fa-thumbs-up"></i></a> 23 
+                                                    <a href="#" class="small"><i class="fa fa-thumbs-down"></i></a> 10 
+                                                    <p></p>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control input-sm" id="inputvalue">
+                                                        <div class="input-group-btn">
+                                                            <button class="btn btn-sm btn-success">Reply</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ol class="dd-list">
+                                                <li class="dd-item">
+                                                    <div class="social-feed-box">
+                                                        
+                                                        <div class="social-avatar">
+                                                            <div class="media-body">
+                                                                <span class="text-success">Firstname Lastname</span>
+                                                                
+                                                                <small class="pull-right"> 2016-4-23</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="social-body">
+                                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                                            <a href="#" class="small"><i class="fa fa-thumbs-up"></i></a> 23 
+                                                            <a href="#" class="small"><i class="fa fa-thumbs-down"></i></a> 10 
+                                                            <p></p>
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control input-sm" id="inputvalue">
+                                                                <div class="input-group-btn">
+                                                                    <button class="btn btn-sm btn-success">Reply</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <ol class="dd-list">
+                                                        <li class="dd-item">
+                                                            <div class="social-feed-box">
+                                                                
+                                                                <div class="social-avatar">
+                                                                    <div class="media-body">
+                                                                        <span class="text-success">Firstname Lastname</span>
+                                                                        
+                                                                        <small class="pull-right"> 2016-4-23</small>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="social-body">
+                                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                                                    <a href="#" class="small"><i class="fa fa-thumbs-up"></i></a> 23 
+                                                                    <a href="#" class="small"><i class="fa fa-thumbs-down"></i></a> 10 
+                                                                    <p></p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-sm" id="inputvalue">
+                                                                        <div class="input-group-btn">
+                                                                            <button class="btn btn-sm btn-success">Reply</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <p></p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        {{getData}}
+    </div>
+</template>
