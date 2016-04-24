@@ -86,4 +86,9 @@ public class PostController extends Controller {
 		post.save();
 		return ok(Json.toJson("success"));
 	}
+
+    public Result search() {
+        JsonNode jsonNode = request().body().asJson();
+        String keyword = jsonNode.path("keyword").asText();
+    }
 }
