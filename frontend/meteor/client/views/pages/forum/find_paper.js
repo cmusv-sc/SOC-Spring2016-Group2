@@ -11,7 +11,7 @@ var fetchData = function(url){
 	$(".loading").append($("<div class='sk-spinner sk-spinner-cube-grid'><div class='sk-cube'></div><div class='sk-cube'></div><div class='sk-cube'></div><div class='sk-cube'></div><div class='sk-cube'></div><div class='sk-cube'></div><div class='sk-cube'></div><div class='sk-cube'></div><div class='sk-cube'></div></div>"));
 	Meteor.call('fetchFromService', url, function (err, res){
 		var obj = JSON.stringify(res.data);
-		console.log("Result: " + res.data.length);
+		//console.log("Result: " + res.data.length);
 		$(".loading").empty();
 		$(".table").append("<tbody id='content'></tbody>");
 		$("#resultcount").text("Found " + res.data.length + " results.");
