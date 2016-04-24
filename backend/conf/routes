@@ -24,7 +24,6 @@ POST    /person/uploadPic           controllers.Application.upload()
 POST   /comment                     controllers.ForumController.addComment()
 GET    /comment                     controllers.ForumController.getComments(rootid: Integer, categoryid: Integer)
 POST   /updateComment               controllers.ForumController.updateComment()
-POST  /deleteComment               controllers.ForumController.deleteComment()
 POST   /upload                      controllers.ForumController.uploadFile()
 
 ### Thumb
@@ -48,7 +47,6 @@ GET    /deletetagpub/:pubid/:tagpub controllers.TagController.deleteTagpub(pubid
 GET    /gettagpubs/:title           controllers.TagController.getTagpubs(title:String)
 GET    /getpublications/:tagpub     controllers.TagController.getPublications(tagpub:String)
 GET    /getTag/:pub_id              controllers.TagController.getTagByPub_id(pub_id:Long)
-POST   /updatepub                   controllers.PublicationController.updatePublication()
 
 ### Testing New Features
 GET    /year/:year                  controllers.Application.getPublicationWithAuthorsByYear(year: Integer)
