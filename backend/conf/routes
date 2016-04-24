@@ -39,6 +39,7 @@ GET		/post/getAllPosts				controllers.PostController.getAllPosts()
 POST	/post/addComment				controllers.PostController.addComment()
 POST	/post/setAsQuestion				controllers.PostController.setAsQuestion()
 POST	/post/setAnswer					controllers.PostController.setAnswer()
+GET     /post/search                    controllers.PostController.search()
 
 
 #Tagging for publication

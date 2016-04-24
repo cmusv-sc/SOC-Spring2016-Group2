@@ -3,9 +3,8 @@ package controllers;
 import java.sql.Timestamp;
 import java.util.*;
 
+import com.avaje.ebean.Expr;
 import com.fasterxml.jackson.databind.JsonNode;
-import com.google.gson.Gson;
-
 import models.Post;
 import models.PostComment;
 import play.mvc.Controller;
@@ -86,4 +85,14 @@ public class PostController extends Controller {
 		post.save();
 		return ok(Json.toJson("success"));
 	}
+
+    public Result search() {
+        JsonNode jsonNode = request().body().asJson();
+        String keyword = jsonNode.path("keyword").asText();
+        List<Post> posts = Post.find.where()
+        		.or(Expr.like("title", keyword + "%"), Expr.like("content", keyword + "%"))
+        		.orderBy("postAt")
+        		.findList();
+        return created(Json.toJson(posts));
+    }
 }
