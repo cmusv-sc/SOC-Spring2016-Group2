@@ -1,0 +1,47 @@
+/* Imports for global scope */
+
+Router = Package['iron:router'].Router;
+RouteController = Package['iron:router'].RouteController;
+$ = Package.jquery.$;
+jQuery = Package.jquery.jQuery;
+RouterAutoscroll = Package['okgrow:router-autoscroll'].RouterAutoscroll;
+Mongo = Package.mongo.Mongo;
+Session = Package.session.Session;
+Tracker = Package.tracker.Tracker;
+Deps = Package.tracker.Deps;
+Log = Package.logging.Log;
+Reload = Package.reload.Reload;
+Random = Package.random.Random;
+EJSON = Package.ejson.EJSON;
+Spacebars = Package.spacebars.Spacebars;
+check = Package.check.check;
+Match = Package.check.Match;
+ServiceConfiguration = Package['service-configuration'].ServiceConfiguration;
+Roles = Package['alanning:roles'].Roles;
+Accounts = Package['accounts-base'].Accounts;
+TAPi18next = Package['tap:i18n'].TAPi18next;
+TAPi18n = Package['tap:i18n'].TAPi18n;
+MeteorCamera = Package['mdg:camera'].MeteorCamera;
+ReactiveTable = Package['aslagle:reactive-table'].ReactiveTable;
+PersistentSession = Package['u2622:persistent-session'].PersistentSession;
+Iron = Package['iron:core'].Iron;
+Meteor = Package.meteor.Meteor;
+global = Package.meteor.global;
+meteorEnv = Package.meteor.meteorEnv;
+WebApp = Package.webapp.WebApp;
+_ = Package.underscore._;
+DDP = Package['ddp-client'].DDP;
+LaunchScreen = Package['launch-screen'].LaunchScreen;
+Blaze = Package.ui.Blaze;
+UI = Package.ui.UI;
+Handlebars = Package.ui.Handlebars;
+Template = Package.templating.Template;
+AccountsTemplates = Package['useraccounts:core'].AccountsTemplates;
+Collection2 = Package['aldeed:collection2-core'].Collection2;
+Async = Package['meteorhacks:async'].Async;
+Autoupdate = Package.autoupdate.Autoupdate;
+HTML = Package.htmljs.HTML;
+T9n = Package['softwarerero:accounts-t9n'].T9n;
+SimpleSchema = Package['aldeed:simple-schema'].SimpleSchema;
+MongoObject = Package['aldeed:simple-schema'].MongoObject;
+

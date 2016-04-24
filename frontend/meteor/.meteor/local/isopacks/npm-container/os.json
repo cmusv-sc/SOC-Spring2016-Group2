@@ -1,0 +1,31 @@
+{
+  "format": "isopack-2-unibuild",
+  "declaredExports": [],
+  "uses": [
+    {
+      "package": "meteor"
+    }
+  ],
+  "resources": [
+    {
+      "type": "asset",
+      "file": "os/packages.json",
+      "length": 4,
+      "offset": 0,
+      "servePath": "/packages.json",
+      "path": "../../packages.json",
+      "hash": "1bd8ce28f3075c8699068a4628ebd664915b4a1a"
+    },
+    {
+      "type": "source",
+      "extension": "js",
+      "file": "os/index.js",
+      "length": 273,
+      "offset": 0,
+      "usesDefaultSourceProcessor": true,
+      "path": "index.js",
+      "hash": "f8380eac8c7264a90832d7a7d590ace6076d8f08",
+      "fileOptions": {}
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "builtBy": "meteor/20",
+  "unibuildDependencies": {
+    "os.json": {
+      "files": {
+        "/Users/caoyi/SSNetwork/frontend/meteor/packages/npm-container/package.js": "c3e8cd3a62b69505df8ff57b09717e4ef755de55",
+        "/Users/caoyi/SSNetwork/frontend/meteor/packages.json": "1bd8ce28f3075c8699068a4628ebd664915b4a1a",
+        "/Users/caoyi/SSNetwork/frontend/meteor/packages/npm-container/index.js": "f8380eac8c7264a90832d7a7d590ace6076d8f08"
+      },
+      "directories": [
+        {
+          "absPath": "/Users/caoyi/SSNetwork/frontend/meteor/packages/npm-container",
+          "include": [
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\.",
+            "\\.app-tests?.",
+            "\\.app-specs?.",
+            "\\.tests?.",
+            "\\.specs?."
+          ],
+          "names": [],
+          "contents": [
+            "index.js",
+            "package.js"
+          ]
+        },
+        {
+          "absPath": "/Users/caoyi/SSNetwork/frontend/meteor/packages/npm-container",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^tests\\/$",
+            "^client\\/$",
+            "^\\.",
+            "\\.app-tests?.",
+            "\\.app-specs?.",
+            "\\.tests?.",
+            "\\.specs?."
+          ],
+          "contents": []
+        }
+      ]
+    },
+    "web.browser.json": {
+      "files": {
+        "/Users/caoyi/SSNetwork/frontend/meteor/packages/npm-container/package.js": "c3e8cd3a62b69505df8ff57b09717e4ef755de55",
+        "/Users/caoyi/SSNetwork/frontend/meteor/packages/npm-container/index.js": "f8380eac8c7264a90832d7a7d590ace6076d8f08"
+      },
+      "directories": [
+        {
+          "absPath": "/Users/caoyi/SSNetwork/frontend/meteor/packages/npm-container",
+          "include": [
+            "\\.css$",
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\.",
+            "\\.app-tests?.",
+            "\\.app-specs?.",
+            "\\.tests?.",
+            "\\.specs?."
+          ],
+          "names": [],
+          "contents": [
+            "index.js",
+            "package.js"
+          ]
+        },
+        {
+          "absPath": "/Users/caoyi/SSNetwork/frontend/meteor/packages/npm-container",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^tests\\/$",
+            "^server\\/$",
+            "^\\.",
+            "\\.app-tests?.",
+            "\\.app-specs?.",
+            "\\.tests?.",
+            "\\.specs?."
+          ],
+          "contents": []
+        }
+      ]
+    },
+    "web.cordova.json": {
+      "files": {
+        "/Users/caoyi/SSNetwork/frontend/meteor/packages/npm-container/package.js": "c3e8cd3a62b69505df8ff57b09717e4ef755de55",
+        "/Users/caoyi/SSNetwork/frontend/meteor/packages/npm-container/index.js": "f8380eac8c7264a90832d7a7d590ace6076d8f08"
+      },
+      "directories": [
+        {
+          "absPath": "/Users/caoyi/SSNetwork/frontend/meteor/packages/npm-container",
+          "include": [
+            "\\.css$",
+            "\\.js$"
+          ],
+          "exclude": [
+            "^\\.",
+            "\\.app-tests?.",
+            "\\.app-specs?.",
+            "\\.tests?.",
+            "\\.specs?."
+          ],
+          "names": [],
+          "contents": [
+            "index.js",
+            "package.js"
+          ]
+        },
+        {
+          "absPath": "/Users/caoyi/SSNetwork/frontend/meteor/packages/npm-container",
+          "include": [
+            "\\/$"
+          ],
+          "exclude": [
+            "^tests\\/$",
+            "^server\\/$",
+            "^\\.",
+            "\\.app-tests?.",
+            "\\.app-specs?.",
+            "\\.tests?.",
+            "\\.specs?."
+          ],
+          "contents": []
+        }
+      ]
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/Users/caoyi/SSNetwork/frontend/meteor/packages/npm-container/package.js": "c3e8cd3a62b69505df8ff57b09717e4ef755de55"
+    },
+    "directories": []
+  },
+  "pluginProviderPackageMap": {
+    "npm-container": {
+      "kind": "local",
+      "sourceRoot": "/Users/caoyi/SSNetwork/frontend/meteor/packages/npm-container"
+    },
+    "meteor": {
+      "kind": "versioned",
+      "version": "1.1.13"
+    }
+  },
+  "includeCordovaUnibuild": true
+}

@@ -1,0 +1,1 @@
+{"head":"","body":"","js":"\nTemplate.__checkName(\"blankLayout\");\nTemplate[\"blankLayout\"] = new Template(\"Template.blankLayout\", (function() {\n  var view = this;\n  return HTML.DIV({\n    id: \"content\"\n  }, \"\\n    \", Spacebars.include(view.lookupTemplate(\"yield\")), \"\\n  \");\n}));\n","bodyAttrs":{}}

@@ -1,0 +1,5 @@
+(function(){Friends = new Mongo.Collection('friends');
+User2 = new Mongo.Collection('usersdatabase');
+Requests = new Mongo.Collection('requests');
+
+}).call(this);

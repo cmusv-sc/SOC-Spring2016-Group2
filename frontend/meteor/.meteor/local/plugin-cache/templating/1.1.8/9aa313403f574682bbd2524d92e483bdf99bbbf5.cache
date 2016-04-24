@@ -1,0 +1,1 @@
+{"head":"","body":"","js":"\nTemplate.__checkName(\"footer\");\nTemplate[\"footer\"] = new Template(\"Template.footer\", (function() {\n  var view = this;\n  return HTML.Raw('<div class=\"footer\">\\n        <div>\\n            <strong>Copyright</strong> Service Oriented Computing &copy; 2016\\n        </div>\\n    </div>');\n}));\n","bodyAttrs":{}}
