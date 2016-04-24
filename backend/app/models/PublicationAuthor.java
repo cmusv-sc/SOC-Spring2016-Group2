@@ -4,6 +4,7 @@ import com.avaje.ebean.Model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -70,6 +71,17 @@ public class PublicationAuthor extends Model {
 		}
 
 	}
+	public static List<PublicationAuthor> findAll(){
+		return find.all();
+	}
+	public static List<Long> find_pub_id(List<Long> authorids){
+		List<Long> pubids=new ArrayList<Long>();
+		for(Long id: authorids){
+			pubids.add(PublicationAuthor.find.where().eq("authorID",id).findUnique().getPublicationID());
+		}
+		return pubids;
+	}
+
 
 
 }

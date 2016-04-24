@@ -241,19 +241,60 @@ public class Publication extends Model {
 		this.id = id;
 	}
 	public static Finder<Long,Publication> find = new Finder<Long,Publication>(Long.class, Publication.class);
-	
-	public static List<Publication>  find(String str, Integer year, String title) {
-		if(str.equals("byYear")){
-			return find.where()
+
+	public static List<Publication>  find(String str, Integer year, String title, List<Long> pubids) {
+		List<Publication> publications=new ArrayList<Publication>();
+		if(str==null){
+			List<Publication> publications1=find.where().eq("title",title).findList();
+			publications.addAll(publications1);
+			return  publications;
+		} else  if(str.equals("byYear")){
+			publications=find.where()
 					.eq("year",year)
 					.findList();
+			return publications;
 
-		}
-		if(str.equals("byTitle")){
-			return find.where().eq("title",title).findList();
+		}else if(str.equals("byTitle")){
+			publications=find.where().eq("title",title).findList();
+			return publications;
+		}else  if(str.equals("byId")){
+			for(long id: pubids){
+				publications.add(find.where().eq("id",id).findUnique());
+			}
+			return  publications;
 		}else{
 			return null;
 		}
+	}
+	public static List<Publication> findAll(){
+		return find.all();
+	}
+
+	public static List<ObjectNode> findPubDetails(List<Publication> publications, List<ObjectNode> results, String str){
+		for(Publication publication : publications) {
+			// System.out.println(publication.toString());
+			ObjectNode result = Json.newObject();
+			List<PublicationAuthor> authorids=PublicationAuthor.find(publication.getId(),null);
+			List<Author> authors=Author.find(authorids);
+			StringBuilder sb=new StringBuilder();
+			for(Author author: authors){
+				sb.append(author+";");
+			}
+			result.put("GsearchResultClass",str);
+			result.put("authors",sb.toString());
+			result.put("title", publication.getTitle());
+			result.put("editor", publication.getEditor());
+			result.put("booktitle",publication.getBooktitle());
+			result.put("isbn", publication.getIsbn());
+			result.put("year",publication.getYear());
+			result.put("crossref",publication.getCrossref());
+			result.put("ee",publication.getEe());
+			result.put("url",publication.getUrl());
+			result.put("series",publication.getSeries());
+			result.put("volume",publication.getVolume());
+			results.add(result);
+		}
+		return  results;
 	}
 	
 	//============tagging===================
