@@ -64,6 +64,17 @@ public class TagController extends Controller {
         }
         return ok(sb.toString());
     }
+    
+    public Result getTagByPub_id(Long pub_id)
+    {
+        List<Tagpub> tagpubs = Tagpub.findwithpublication.where().eq("pub_id", pub_id).findList();
+        StringBuilder sb = new StringBuilder();
+        for(Tagpub tagpub: tagpubs){
+            sb.append(tagpub.getTag()+",");
+        }
+        sb.deleteCharAt(sb.length()-1);
+        return ok(sb.toString());
+    }
 
 }
 

@@ -3,6 +3,8 @@ Template.paperdetail.helpers({
   	console.log("ID: " + Router.current().params.query.id);
   	var url = "http://localhost:9000/id/" + Router.current().params.query.id;
   	fetchData(url);
+	url = "http://localhost:9000/getTag/6";
+	fetchTag(url);
   },
 });
 
@@ -36,5 +38,17 @@ var fetchData = function(url){
 			author += ", " + authors[i].name;
 		};
 		$(".author").text(author);
+	});
+}
+
+
+var fetchTag = function(url){
+	console.log("in fetchTag " + url);
+	Meteor.call('fetchFromService', url, function(err, res){
+		// console.log("res is " + JSON.stringify(res));
+		var tags = res.content.split(",");
+		console.log("tags is " + tags);
+		for (i=0; i<tags.length; i++)
+			$(".tags").append("<button class=\"btn btn-white btn-xs\" type=\"button\">"+tags[i]+"</button>");
 	});
 }
