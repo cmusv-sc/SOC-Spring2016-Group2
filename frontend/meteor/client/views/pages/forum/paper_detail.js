@@ -1,6 +1,6 @@
 Template.paperdetail.helpers({
   getData: function() {
-  	console.log("ID: " + Router.current().params.query.id);
+  	//console.log("ID: " + Router.current().params.query.id);
   	var url = "http://localhost:9000/id/" + Router.current().params.query.id;
   	fetchData(url);
   	url = "http://localhost:9000/comment?rootid=" + Router.current().params.query.id + "&categoryid=1";
@@ -72,3 +72,25 @@ var fetchData = function(url){
 		$(".author").text(author);
 	});
 }
+
+Template.paperdetail.events({
+	'click #postcomment': function (event) {
+		var input = $("#inputcomment").val();
+		if (input == "") { console.log("No input"); return;};
+		console.log("Comment: " + input);
+		var url = "http://localhost:9000/comment";
+		var args = {};
+		args["parentid"] = 0;
+		args["authorid"] = 1;
+		args["content"] = input;
+		args["rootid"] = Router.current().params.query.id;
+		args["categoryid"] = 1;
+		console.log(args);
+		Meteor.call('postToBackend', url, args, function (err, res){
+			console.log(JSON.stringify(res));
+			location.reload();
+			// var redirect = "/paperdetail?id=" + Router.current().params.query.id;
+			// Router.go(redirect);
+		});
+	}
+});
