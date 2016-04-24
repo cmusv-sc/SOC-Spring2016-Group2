@@ -5,7 +5,7 @@ Template.paperdetail.helpers({
   	fetchData(url);
 	url = "http://localhost:9000/getTag/" + Router.current().params.query.id;
 	fetchTag(url);
-  	url = "http://localhost:9000/comment?rootid=" + Router.current().params.query.id + "&categoryid=1";
+  	url = "http://localhost:9000/comment?rootid=" + Router.current().params.query.id + "&categoryid=1&userid=1";
   	fetchComment(url);
   },
 });
@@ -31,7 +31,15 @@ var renderComments = function(obj){
 		var d = new Date(c.comment.time*1000);
 		item += "<div class='social-avatar'><div class='media-body'><span class='text-success'>User: " + c.comment.authorid + "</span><small class='pull-right'> " + d.toLocaleString() + "</small></div></div>";
 		item += "<div class='social-body'><p>" + c.comment.content + "</p>";
-		item += "<a href='# class='small' style='color: #676a6c;'><i class='fa fa-thumbs-up'></i></a> " + c.thumbup + " <a href='#'' class='small' style='color: #676a6c;''><i class='fa fa-thumbs-down'></i></a> " + c.thumbdown + "<p></p>";
+		item += "<a class='small thumbup'";
+		item += "style='color: #676a6c;' id='thumbupa-" + c.comment.id + "'";
+		item += "><i class='fa fa-thumbs-up ";
+		if (c.thumbuped == true) { item += "ed"; };
+		item += "' id='thumbup-" + c.comment.id + "'></i> <span>" + c.thumbup + " </span></a> <a class='small thumbdown'";
+		item += " style='color: #676a6c;' id='thumbdowna-" + c.comment.id + "'";
+		item += "><i class='fa fa-thumbs-down ";
+		if (c.thumbdowned == true) { item += "ed"; };
+		item += "' id='thumbdown-" + c.comment.id + "'></i> <span>" + c.thumbdown + "</span></a><p></p>";
 		item += "<div class='input-group'><input type='text' class='form-control input-sm' id='input-" + c.comment.id + "'><div class='input-group-btn'><button class='btn btn-sm btn-success btn-reply' id='reply-" + c.comment.id + "'>Reply</button></div></div></div></div>";
 		item += renderComments(c.children);
 		item += "</li>";
@@ -149,5 +157,53 @@ Template.paperdetail.events({
 			// var redirect = "/paperdetail?id=" + Router.current().params.query.id;
 			// Router.go(redirect);
 		});
+	},
+	'click .thumbup': function(event){
+		var btnid = event.target.id;
+		var id = btnid.split("-")[1];
+		console.log("THUMBUP: " + id + " " + event.target.getAttribute('class'));
+		var aid = "#thumbupa-" + id;
+		var count = parseInt($(aid).children("span").text());
+		if ($(event.target).hasClass('ed')) {
+			$(event.target).removeClass('ed');
+			count --;
+		}else{
+			$(event.target).addClass('ed');
+			count ++;
+			var url = "http://localhost:9000/addThumb";
+			var args = {};
+			args["sender"] = 1;
+			args["receiver"] = id;
+			args["thumb_type"] = 1;
+			Meteor.call('postToBackend', url, args, function (err, res){
+				console.log("Up Done");
+
+			});
+		}
+		$(aid).children("span").text(count);
+	},
+	'click .thumbdown': function(event){
+		var btnid = event.target.id;
+		var id = btnid.split("-")[1];
+		var aid = "#thumbdowna-" + id;
+		console.log("THUMBDOWN: " + id);
+		var count = parseInt($(aid).children("span").text());
+		//console.log(count);
+		if ($(event.target).hasClass('ed')) {
+			$(event.target).removeClass('ed');
+			count --;
+		}else{
+			$(event.target).addClass('ed');
+			count ++;
+			var url = "http://localhost:9000/addThumb";
+			var args = {};
+			args["sender"] = 1;
+			args["receiver"] = id;
+			args["thumb_type"] = 0;
+			Meteor.call('postToBackend', url, args, function (err, res){
+				console.log("Down Done");
+			});
+		}
+		$(aid).children("span").text(count);
 	}
 });

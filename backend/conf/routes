@@ -22,7 +22,7 @@ POST    /person/uploadPic           controllers.Application.upload()
 
 ### Forum
 POST   /comment                     controllers.ForumController.addComment()
-GET    /comment                     controllers.ForumController.getComments(rootid: Integer, categoryid: Integer)
+GET    /comment                     controllers.ForumController.getComments(rootid: Integer, categoryid: Integer, userid: Integer)
 POST   /updateComment               controllers.ForumController.updateComment()
 POST   /upload                      controllers.ForumController.uploadFile()
 
