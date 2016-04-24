@@ -23,18 +23,55 @@ import com.avaje.ebean.SqlRow;
  */
 public class ForumController extends Controller{
     public Result addComment() {
-        Comment comment = form(Comment.class).bindFromRequest().get();
-        Long time = System.currentTimeMillis()/1000;
-        comment.setTime(time);
-        comment.save();
-        HashMap<String, String> msg = new HashMap<String, String>();
-        msg.put("message", "Insert succeeded!");
-        return ok(toJson(comment));
+        Map<String ,String[]> params = request().body().asFormUrlEncoded();
+        Long publicationID = Long.parseLong(params.get("pub_id")[0]);
+        // Check whether the publication can be commented or not.
+        AccessComment accesscomment = AccessComment.find.byId(publicationID);
+
+        if (accesscomment.status) {
+          Comment comment = form(Comment.class).bindFromRequest().get();
+          int parent_id = comment.getParentid();
+          // Check whether the parent can be commented.
+        AccessComStatus accesscomment1 = AccessComStatus.find.byId(parent_id);
+
+          if (AccessComStatus.status) {
+            Long time = System.currentTimeMillis()/1000;
+            comment.setTime(time);
+            comment.save();
+            HashMap<String, String> msg = new HashMap<String, String>();
+            msg.put("message", "Insert succeeded!");
+            return ok(toJson(comment));
+          } else {
+            HashMap<String, String> msg = new HashMap<String, String>();
+            msg.put("message", "You can not comment on this comment");
+            return ok(toJson(msg));
+          }
+        } else {
+          HashMap<String, String> msg = new HashMap<String, String>();
+          msg.put("message", "You can not comment on this publication");
+          return ok(toJson(msg));
+        }
     }
 
     public Result getComments(int rootid, int categoryid) {
         return ok(toJson(getCommentsWithThumbs(rootid, categoryid, 0)));
     }
+
+     public Result updateCommentStatus(){
+
+       Map<String ,String[]> params = request().body().asFormUrlEncoded();
+       Long publicationID = Long.parseLong(params.get("pub_id")[0]);
+       Boolean status = Boolean.valueOf(params.get("statsus")[0]);
+
+       AccessComment accesscomment = AccessComment.find.byId(publicationID);
+       accesscomment.setStatus(status);
+       accesscomment.save();
+
+       HashMap<String, String> msg = new HashMap<String, String>();
+       msg.put("message", "Update succeeded!");
+
+       return ok(toJson(msg));
+     }
 
     public Result updateComment() {
         Map<String, String[]> params = request().body().asFormUrlEncoded();
@@ -53,6 +90,18 @@ public class ForumController extends Controller{
         return ok(toJson(msg));
     }
 
+    public Result deleteComment() {
+      Map<String, String[]> params = request().body().asFormUrlEncoded();
+      int id = Integer.parseInt(params.get("id")[0]);
+      Comment comment = Comment.find.byId(id);
+      comment.delete();
+      HashMap<String, String> msg = new HashMap<String, String>();
+      msg.put("message", "Delete succeeded!");
+
+      return ok(toJson(msg));
+
+    }
+
     public class NestedComment{
         public Comment comment;
         public ArrayList<NestedComment> children;
@@ -69,7 +118,7 @@ public class ForumController extends Controller{
             this.thumbup = thumbup;
         }
     }
-    
+
     public ArrayList<NestedComment> getCommentsRecursively(int rootid, int categoryid, int parentid){
         ArrayList<NestedComment> list = new ArrayList<NestedComment>();
         List<Comment> comments = Comment.find.where().eq("parentid", parentid).eq("rootid", rootid).eq("categoryid", categoryid).findList();

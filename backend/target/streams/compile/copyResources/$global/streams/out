@@ -1,0 +1,9 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/Users/yuanyuan/Documents/SSNetwork/backend/conf/application.conf,/Users/yuanyuan/Documents/SSNetwork/backend/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/yuanyuan/Documents/SSNetwork/backend/conf/evolutions,/Users/yuanyuan/Documents/SSNetwork/backend/target/scala-2.11/classes/evolutions)[0m
+[0m[[0mdebug[0m] [0m	(/Users/yuanyuan/Documents/SSNetwork/backend/conf/logback.xml,/Users/yuanyuan/Documents/SSNetwork/backend/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/Users/yuanyuan/Documents/SSNetwork/backend/conf/META-INF,/Users/yuanyuan/Documents/SSNetwork/backend/target/scala-2.11/classes/META-INF)[0m
+[0m[[0mdebug[0m] [0m	(/Users/yuanyuan/Documents/SSNetwork/backend/conf/routes,/Users/yuanyuan/Documents/SSNetwork/backend/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/Users/yuanyuan/Documents/SSNetwork/backend/conf/evolutions/default,/Users/yuanyuan/Documents/SSNetwork/backend/target/scala-2.11/classes/evolutions/default)[0m
+[0m[[0mdebug[0m] [0m	(/Users/yuanyuan/Documents/SSNetwork/backend/conf/evolutions/default/1.sql,/Users/yuanyuan/Documents/SSNetwork/backend/target/scala-2.11/classes/evolutions/default/1.sql)[0m
+[0m[[0mdebug[0m] [0m	(/Users/yuanyuan/Documents/SSNetwork/backend/conf/META-INF/persistence.xml,/Users/yuanyuan/Documents/SSNetwork/backend/target/scala-2.11/classes/META-INF/persistence.xml)[0m
