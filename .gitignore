@@ -9,6 +9,8 @@
 #ignore all bin directories
 bin/
 
+target/
+
 backend/public/upload/*
 .DS_Store
 backend/db

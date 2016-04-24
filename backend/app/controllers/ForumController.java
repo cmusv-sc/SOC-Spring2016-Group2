@@ -15,6 +15,9 @@ import java.util.Map;
 import java.util.HashMap;
 import java.io.File;
 
+import com.avaje.ebean.Ebean;
+import com.avaje.ebean.SqlRow;
+
 /**
  * Created by Cloud on 4/18/16.
  */
@@ -30,7 +33,7 @@ public class ForumController extends Controller{
     }
 
     public Result getComments(int rootid, int categoryid) {
-        return ok(toJson(getCommentsRecursively(rootid, categoryid, 0)));
+        return ok(toJson(getCommentsWithThumbs(rootid, categoryid, 0)));
     }
 
     public Result updateComment() {
@@ -53,9 +56,17 @@ public class ForumController extends Controller{
     public class NestedComment{
         public Comment comment;
         public ArrayList<NestedComment> children;
+        public int thumbup = 0;
+        public int thumbdown = 0;
         public NestedComment(Comment comment, ArrayList<NestedComment> children){
             this.comment = comment;
             this.children = children;
+        }
+        public NestedComment(Comment comment, ArrayList<NestedComment> children, int thumbdown, int thumbup){
+            this.comment = comment;
+            this.children = children;
+            this.thumbdown = thumbdown;
+            this.thumbup = thumbup;
         }
     }
     
@@ -64,6 +75,31 @@ public class ForumController extends Controller{
         List<Comment> comments = Comment.find.where().eq("parentid", parentid).eq("rootid", rootid).eq("categoryid", categoryid).findList();
         for (int i = 0; i < comments.size(); i++){
             list.add(new NestedComment(comments.get(i), getCommentsRecursively(rootid, categoryid, comments.get(i).getId())));
+        }
+        return list;
+    }
+
+    public ArrayList<NestedComment> getCommentsWithThumbs(int rootid, int categoryid, int parentid){
+        ArrayList<NestedComment> list = new ArrayList<NestedComment>();
+        String sql = "select c.id, c.parentid, c.content, c.authorid, c.time, sum(t.thumb_type) as likes, count(t.id) as total " +
+                "from comment as c left join thumb as t on (c.id=t.receiver)" +
+                " where c.rootid=" + rootid + " and c.categoryid=" + categoryid + " and c.parentid=" + parentid + " group by c.id";
+        //System.out.println(sql);
+        List<SqlRow> sqlRows = Ebean.createSqlQuery(sql).findList();
+        for (int i = 0; i < sqlRows.size(); i++){
+            SqlRow sqlRow = sqlRows.get(i);
+            Comment comment = new Comment(sqlRow.getInteger("id"), parentid, sqlRow.getInteger("authorid"), sqlRow.getString("content") , sqlRow.getLong("time"), rootid, categoryid);
+            comment.setId(sqlRow.getInteger("id"));
+            int thumbup = 0;
+            int thumbdown = 0;
+            int total = sqlRow.getInteger("total");
+            //System.out.println(sqlRow.getInteger("id") + ": " + comment.getId());
+            if (total != 0){
+                thumbup = sqlRow.getInteger("likes");
+                thumbdown = total - thumbup;
+            }
+            NestedComment nestedComment = new NestedComment(comment, getCommentsWithThumbs(rootid, categoryid, comment.getId()), thumbdown, thumbup);
+            list.add(nestedComment);
         }
         return list;
     }
