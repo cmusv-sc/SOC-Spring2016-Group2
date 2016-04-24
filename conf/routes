@@ -1,30 +1,33 @@
 # Routes
-# This file defines all application routes (Higher priority routes first)
-# ~~~~
+    # This file defines all application routes (Higher priority routes first)
+    # ~~~~
 
-# Home page
-GET     /                           controllers.Application.index()
-POST    /person                     controllers.Application.addPerson()
+    # Home page
+    GET     /                           controllers.Application.index()
+    POST    /person                     controllers.Application.addPerson()
 
-GET     /persons                    controllers.Application.getPersons()
-GET     /persons/:id                controllers.Application.getPersonById(id : Long)
-# Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
+    GET     /persons                    controllers.Application.getPersons()
+    GET     /persons/:id                controllers.Application.getPersonById(id : Long)
+    # Map static resources from the /public folder to the /assets URL path
+    GET     /assets/*file               controllers.Assets.at(path="/public", file)
 
-POST    /sayHello                   controllers.Application.sayHello()
-
-
-POST    /sayHello2                  controllers.Application.sayHello2()
-
-POST    /person/uploadPic           controllers.Application.upload()
-
-#GET     /year/:year                 controllers.Application.getPaperByYear(year:Integer)
-#
-#GET     /title/:title               controllers.Application.getPaperByTitle(title: String)
+    POST    /sayHello                   controllers.Application.sayHello()
 
 
-###Sprint1
-GET    /paper/:year                  controllers.Application.getPaperByYear(year:Integer)
-GET    /paper/:title                 controllers.Application.getPaperByTitle(title:String)
-GET    /userprofile/:userName		 controllers.Application.getUserProfile(userName:String)
+    POST    /sayHello2                  controllers.Application.sayHello2()
 
+    POST    /person/uploadPic           controllers.Application.upload()
+
+    #GET     /year/:year                 controllers.Application.getPaperByYear(year:Integer)
+    #
+    #GET     /title/:title               controllers.Application.getPaperByTitle(title: String)
+
+
+    ###Sprint1
+    GET    /paper/:year                  controllers.Application.getPaperByYear(year:Integer)
+    GET    /paper/:title                 controllers.Application.getPaperByTitle(title:String)
+
+
+	POST   /userprofileCreation/		 controllers.Application.createUserprofile()
+    GET    /userprofile/:userName		 controllers.Application.getUserProfile(userName:String)
+    GET    /userprofileRefresh/:userName controllers.Application.refreshUserprofile(userName:String)
