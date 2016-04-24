@@ -44,3 +44,4 @@ Template.findpaper.events({
 		fetchData(url);
 	}
 });
+

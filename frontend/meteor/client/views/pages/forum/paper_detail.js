@@ -3,7 +3,7 @@ Template.paperdetail.helpers({
   	console.log("ID: " + Router.current().params.query.id);
   	var url = "http://localhost:9000/id/" + Router.current().params.query.id;
   	fetchData(url);
-	url = "http://localhost:9000/getTag/6";
+	url = "http://localhost:9000/getTag/" + Router.current().params.query.id;
 	fetchTag(url);
   	url = "http://localhost:9000/comment?rootid=" + Router.current().params.query.id + "&categoryid=1";
   	fetchComment(url);
@@ -75,6 +75,18 @@ var fetchData = function(url){
 	});
 }
 
+Template.paperdetail.rendered = function(){
+	$("#addTag").keyup(function(e){
+		if (e.keyCode==13)
+		{
+			console.log("Press Enter");
+			$(".tags").append("<button class=\"btn btn-white btn-xs\" type=\"button\">"+$("#addTag").val()+"</button>&nbsp");
+			var url = "http://localhost:9000/addtagpub/" + Router.current().params.query.id + "/" + $("#addTag").val(); 
+			fetchTagAdded(url);
+			$("#addTag").val("");
+		}
+	});
+};
 
 var fetchTag = function(url){
 	console.log("in fetchTag " + url);
@@ -83,6 +95,15 @@ var fetchTag = function(url){
 		var tags = res.content.split(",");
 		console.log("tags is " + tags);
 		for (i=0; i<tags.length; i++)
-			$(".tags").append("<button class=\"btn btn-white btn-xs\" type=\"button\">"+tags[i]+"</button>");
+			$(".tags").append("<button class=\"btn btn-white btn-xs\" type=\"button\">"+tags[i]+"</button>&nbsp");
 	});
 }
+
+var fetchTagAdded = function(url){
+	console.log("add tag into db table with url " + url);
+	Meteor.call('fetchFromService', url, function(err, res){
+		// YoLo
+	});
+}
+
+
