@@ -119,7 +119,11 @@ var fetchTagAdded = function(url){
 Template.paperdetail.events({
 	'click #postcomment': function (event) {
 		var input = $("#inputcomment").val();
-		if (input == "") { console.log("No input"); return;};
+		if (input == "") { 
+			$("#inputcomment").parent(".input-group").addClass("has-error");
+			console.log("No input"); 
+			return;
+		};
 		//console.log("Comment: " + input);
 		var url = "http://localhost:9000/comment";
 		var args = {};
@@ -142,7 +146,11 @@ Template.paperdetail.events({
 		var inputid = "#input-" + id;
 		var content = $(inputid).val();
 		//console.log(content);
-		if (console == "") {console.log("No input"); return;};
+		if (content == "") {
+			$(inputid).parent(".input-group").addClass("has-error");
+			console.log("No input"); 
+			return;
+		};
 		var args = {};
 		args["parentid"] = id;
 		args["authorid"] = 1;
@@ -205,5 +213,9 @@ Template.paperdetail.events({
 			});
 		}
 		$(aid).children("span").text(count);
+	},
+	'click .input-sm': function(event){
+		console.log("FOCUS");
+		$(event.target).parent(".input-group").removeClass("has-error");
 	}
 });
