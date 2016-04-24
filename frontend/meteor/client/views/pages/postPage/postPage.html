@@ -1,18 +1,18 @@
-<template name = "post">
+<template name = "postPage">
     <div class = "wrapper wrapper-content animated fadeInRight">
-    	<div>
+    	<div align = "center">
     		{{> searchTemplate}}
     	</div>
     	
-    	<div>
+    	<div align = "center">
     		{{> buttonTemplate}}
     	</div>
     	
-    	<div>
+    	<div align = "center">
     		{{> addPostTemplate}}
     	</div>
     	
-    	<div id = "resultsDiv">
+    	<div align = "center" id = "resultsDiv">
     	</div>
     </div> 
 </template>
@@ -31,8 +31,16 @@
 
 <template name = "addPostTemplate">
 	<form method="post">
-		<input type = "text" name = "title"/>
-		<input type = "text" name = "content"/>
-		<input type = "submit" value="Post"/>
+		<ul>
+			<label for = "postTitle">Post Title</label>
+			<input id = "postTitle" type = "text" name = "title"/>
+		</ul>
+		<ul>
+			<textarea name = "content" placeholder = "post content">
+			</textarea>
+		</ul>
+		<ul>
+			<input type = "submit" value="Post"/>
+		</ul>
 	</form>
 </template>

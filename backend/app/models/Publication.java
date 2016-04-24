@@ -1,7 +1,6 @@
 package models;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 import com.avaje.ebean.Model;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -15,6 +14,10 @@ import java.util.List;
  * */
 @Entity(name="publications")
 public class Publication extends Model {
+	@Id
+	@Column(name="pub_id")
+	public Long id;
+	
 	public String pubkey;
 	public String title;
 	public String editor;
@@ -272,6 +275,27 @@ public class Publication extends Model {
 	public static List<ObjectNode> findPubDetails(List<Publication> publications, List<ObjectNode> results, String str){
 		for(Publication publication : publications) {
 			// System.out.println(publication.toString());
+
+	
+	//============tagging===================
+	//I also modified the column name of id as "pub_id".
+	//Please contact me if there is any conflicts that I may have caused.
+	@OneToMany(mappedBy = "publication", cascade = CascadeType.ALL)
+	public List<Tagpub> tagpubs;
+
+	public List<Tagpub> getTagpubs() {
+		return tagpubs;
+	}
+
+	public void setTagpubs(List<Tagpub> tagpubs) {
+		this.tagpubs = tagpubs;
+	}
+
+	public static Finder<Long, Publication> findwithtagpub = new Finder<Long,Publication>(Publication.class);
+
+	public static List<ObjectNode> findPubDetails(List<Publication> publications){
+		List<ObjectNode> results = new ArrayList<ObjectNode>();
+		for(Publication publication : publications) {
 			ObjectNode result = Json.newObject();
 			List<PublicationAuthor> authorids=PublicationAuthor.find(publication.getId(),null);
 			List<Author> authors=Author.find(authorids);
@@ -280,6 +304,7 @@ public class Publication extends Model {
 				sb.append(author+";");
 			}
 			result.put("GsearchResultClass",str);
+
 			result.put("authors",sb.toString());
 			result.put("title", publication.getTitle());
 			result.put("editor", publication.getEditor());
@@ -295,6 +320,5 @@ public class Publication extends Model {
 		}
 		return  results;
 	}
-
 
 }

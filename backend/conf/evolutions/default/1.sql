@@ -3,6 +3,13 @@
 
 # --- !Ups
 
+create table tagpub (
+  tagpub_id                 bigint auto_increment not null,
+  tag                       varchar(255),
+  pub_id                    bigint,
+  constraint pk_tagpub primary key (tagpub_id))
+;
+
 create table author (
   id                        bigint auto_increment not null,
   name                      varchar(255),
@@ -46,7 +53,7 @@ create table publication_author (
 ;
 
 create table publication (
-  id                        bigint auto_increment not null,
+  pub_id                    bigint auto_increment not null,
   pubkey                    varchar(255),
   title                     varchar(255),
   editor                    varchar(255),
@@ -61,8 +68,27 @@ create table publication (
   booktitle                 varchar(255),
   crossref                  varchar(255),
   ee                        varchar(255),
-  constraint pk_publication primary key (id))
+  constraint pk_publication primary key (pub_id))
 ;
+
+
+create table publication_author (
+  id                        bigint auto_increment not null,
+  publication_id            bigint,
+  author_id                 bigint,
+  constraint pk_publication_author primary key (id))
+;
+
+create table thumb (
+  id                        bigint auto_increment not null,
+  thumb_type                tinyint(1) default 0,
+  sender                    integer,
+  receiver                  integer,
+  constraint pk_thumb primary key (id))
+;
+
+alter table tagpub add constraint fk_tagpub_publication_1 foreign key (pub_id) references publication (pub_id) on delete restrict on update restrict;
+create index ix_tagpub_publication_1 on tagpub (pub_id);
 
 
 
@@ -70,6 +96,8 @@ create table publication (
 # --- !Downs
 
 SET FOREIGN_KEY_CHECKS=0;
+
+drop table tagpub;
 
 drop table author;
 
@@ -81,7 +109,10 @@ drop table post_comment;
 
 drop table publication_author;
 
+
 drop table publication;
+
+drop table thumb;
 
 SET FOREIGN_KEY_CHECKS=1;
 

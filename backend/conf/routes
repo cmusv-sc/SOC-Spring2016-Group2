@@ -21,12 +21,22 @@ GET    /title/:title                controllers.Application.getPaperByTitle(titl
 GET    /all                          controllers.Application.getAllPublications()
 GET    /keyword/:keyWord            controllers.Application.getPaperBykeyWord(keyWord:String)
 GET    /author/:author              controllers.Application.getCoAuthors(author:String)
+###Sprint1
+#GET    /year/:year                  controllers.Application.getPaperByYear(year:Integer)
+#GET    /title/:title                controllers.Application.getPaperByTitle(title:String)
+
 
 ### Forum
 POST   /comment                     controllers.ForumController.addComment()
 GET    /comment                     controllers.ForumController.getComments(rootid: Integer, categoryid: Integer)
 POST   /updateComment               controllers.ForumController.updateComment()
 POST   /upload                      controllers.ForumController.uploadFile()
+
+### Thumb
+POST    /addThumb                      controllers.ThumbController.addThumb()
+DELETE  /deleteThumb/:id               controllers.ThumbController.deleteThumb(id:Long)
+GET     /getThumbSum/:user/:type       controllers.ThumbController.getThumbSum(user:String,type:String)
+
 
 #Post Related REST API
 POST	/post/addPost					controllers.PostController.addPost()
@@ -35,3 +45,16 @@ GET		/post/getAllPosts				controllers.PostController.getAllPosts()
 POST	/post/addComment				controllers.PostController.addComment()
 POST	/post/setAsQuestion				controllers.PostController.setAsQuestion()
 POST	/post/setAnswer					controllers.PostController.setAnswer()
+
+
+#Tagging for publication
+GET    /addtagpub/:pubid/:tagpub    controllers.TagController.addTagpub(pubid:Long,tagpub:String)
+GET    /deletetagpub/:pubid/:tagpub controllers.TagController.deleteTagpub(pubid:Long,tagpub:String)
+GET    /gettagpubs/:title           controllers.TagController.getTagpubs(title:String)
+GET    /getpublications/:tagpub     controllers.TagController.getPublications(tagpub:String)
+GET    /getTag/:pub_id              controllers.TagController.getTagByPub_id(pub_id:Long)
+
+### Testing New Features
+GET    /year/:year                  controllers.Application.getPublicationWithAuthorsByYear(year: Integer)
+GET    /id/:id                  controllers.Application.getPublicationWithAuthorsById(id: Integer)
+GET    /title/:title                controllers.Application.getPublicationWithAuthorsByTitle(title: String)
