@@ -1,6 +1,7 @@
 <template name="paperdetail">
   <div class="wrapper wrapper-content container">
         <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
             <div class="ibox">
                 <div class="ibox-content">
                     <a href="/findpaper" class="btn btn-primary btn-outline"><i class="fa fa-chevron-left"></i> Back</a>
@@ -89,9 +90,9 @@
                             <hr>
                             <h2>Comments</h2>
                             <div class="input-group">
-                                <input type="text" class="form-control input-sm" id="inputvalue">
+                                <input type="text" class="form-control input-sm" id="inputcomment">
                                 <div class="input-group-btn">
-                                    <button class="btn btn-sm btn-success">Comment</button>
+                                    <button class="btn btn-sm btn-success" id="postcomment">Comment</button>
                                 </div>
                             </div>
                             <br>
@@ -107,6 +108,7 @@
                     </div>
                     
                 </div>
+            </div>
             </div>
         </div>
         {{getData}}

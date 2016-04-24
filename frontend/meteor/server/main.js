@@ -48,5 +48,11 @@ Requests = new Mongo.Collection('requests');
       var resultOfAsyncToSync = convertAsyncToSync(url, {} );
 
       return resultOfAsyncToSync;
+    },
+    postToBackend: function(url, args){
+      var convertAsyncToSync  = Meteor.wrapAsync( HTTP.post );
+      var resultOfAsyncToSync = convertAsyncToSync(url, {data: args} );
+
+      return resultOfAsyncToSync;
     }
   });

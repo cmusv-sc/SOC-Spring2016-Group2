@@ -1,6 +1,6 @@
 Template.paperdetail.helpers({
   getData: function() {
-  	console.log("ID: " + Router.current().params.query.id);
+  	//console.log("ID: " + Router.current().params.query.id);
   	var url = "http://localhost:9000/id/" + Router.current().params.query.id;
   	fetchData(url);
 	url = "http://localhost:9000/getTag/" + Router.current().params.query.id;
@@ -32,7 +32,7 @@ var renderComments = function(obj){
 		item += "<div class='social-avatar'><div class='media-body'><span class='text-success'>User: " + c.comment.authorid + "</span><small class='pull-right'> " + d.toLocaleString() + "</small></div></div>";
 		item += "<div class='social-body'><p>" + c.comment.content + "</p>";
 		item += "<a href='# class='small' style='color: #676a6c;'><i class='fa fa-thumbs-up'></i></a> " + c.thumbup + " <a href='#'' class='small' style='color: #676a6c;''><i class='fa fa-thumbs-down'></i></a> " + c.thumbdown + "<p></p>";
-		item += "<div class='input-group'><input type='text' class='form-control input-sm' id='inputvalue'><div class='input-group-btn'><button class='btn btn-sm btn-success'>Reply</button></div></div></div></div>";
+		item += "<div class='input-group'><input type='text' class='form-control input-sm' id='input-" + c.comment.id + "'><div class='input-group-btn'><button class='btn btn-sm btn-success btn-reply' id='reply-" + c.comment.id + "'>Reply</button></div></div></div></div>";
 		item += renderComments(c.children);
 		item += "</li>";
 		s += item;
@@ -106,4 +106,46 @@ var fetchTagAdded = function(url){
 	});
 }
 
-
+Template.paperdetail.events({
+	'click #postcomment': function (event) {
+		var input = $("#inputcomment").val();
+		if (input == "") { console.log("No input"); return;};
+		//console.log("Comment: " + input);
+		var url = "http://localhost:9000/comment";
+		var args = {};
+		args["parentid"] = 0;
+		args["authorid"] = 1;
+		args["content"] = input;
+		args["rootid"] = Router.current().params.query.id;
+		args["categoryid"] = 1;
+		//console.log(args);
+		Meteor.call('postToBackend', url, args, function (err, res){
+			//console.log(JSON.stringify(res));
+			location.reload();
+			// var redirect = "/paperdetail?id=" + Router.current().params.query.id;
+			// Router.go(redirect);
+		});
+	},
+	'click .btn-reply': function(event){
+		var btnid = event.target.id;
+		var id = btnid.split("-")[1];
+		var inputid = "#input-" + id;
+		var content = $(inputid).val();
+		//console.log(content);
+		if (console == "") {console.log("No input"); return;};
+		var args = {};
+		args["parentid"] = id;
+		args["authorid"] = 1;
+		args["content"] = content;
+		args["rootid"] = Router.current().params.query.id;
+		args["categoryid"] = 1;
+		//console.log(args);
+		var url = "http://localhost:9000/comment";
+		Meteor.call('postToBackend', url, args, function (err, res){
+			//console.log(JSON.stringify(res));
+			location.reload();
+			// var redirect = "/paperdetail?id=" + Router.current().params.query.id;
+			// Router.go(redirect);
+		});
+	}
+});
