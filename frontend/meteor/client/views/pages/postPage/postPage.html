@@ -20,7 +20,7 @@
 <template name = "searchTemplate">
    <form method="post">
       <input type = "text" name = "searchContent"/>
-      <input type = "submit" value = "Find Post"/>
+      <input type = "submit" value = "Find Post" id = "searchPost"/>
    </form>
 </template>
 
@@ -32,12 +32,12 @@
 <template name = "addPostTemplate">
 	<form method="post">
 		<ul>
-			<label for = "postTitle">Post Title</label>
-			<input id = "postTitle" type = "text" name = "title"/>
+			<input id = "postTitle" type = "text" name = "title" placeholder = "post title"/>
 		</ul>
 		<ul>
-			<textarea name = "content" placeholder = "post content">
-			</textarea>
+			<textarea id = "postContent" rows = "4" cols = "50">
+                put your post content here
+            </textarea>
 		</ul>
 		<ul>
 			<input type = "submit" value="Post"/>
