@@ -4,7 +4,7 @@
 		module="ssnetwork_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20160422232005"
+		publication="20160423100628"
 	>
 		<description>
 		SSNetwork
@@ -47,5 +47,8 @@
 		<dependency org="org.hibernate" name="hibernate-entitymanager" rev="4.3.7.Final" conf="compile->default(compile)"/>
 		<dependency org="mysql" name="mysql-connector-java" rev="5.1.21" conf="compile->default(compile)"/>
 		<dependency org="org.postgresql" name="postgresql" rev="9.4-1206-jdbc42" conf="compile->default(compile)"/>
+		<dependency org="org.apache.lucene" name="lucene-core" rev="5.3.1" conf="compile->default(compile)"/>
+		<dependency org="org.apache.lucene" name="lucene-analyzers-common" rev="5.3.1" conf="compile->default(compile)"/>
+		<dependency org="org.apache.lucene" name="lucene-queryparser" rev="5.3.1" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

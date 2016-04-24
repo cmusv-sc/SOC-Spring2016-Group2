@@ -15,10 +15,12 @@ POST    /person/uploadPic           controllers.Application.upload()
 #GET     /title/:title               controllers.Application.getPaperByTitle(title: String)
 
 
-###Sprint1
+###Paper Suggestion
 GET    /year/:year                  controllers.Application.getPaperByYear(year:Integer)
 GET    /title/:title                controllers.Application.getPaperByTitle(title:String)
-
+GET    /all                          controllers.Application.getAllPublications()
+GET    /keyword/:keyWord            controllers.Application.getPaperBykeyWord(keyWord:String)
+GET    /author/:author              controllers.Application.getCoAuthors(author:String)
 
 ### Forum
 POST   /comment                     controllers.ForumController.addComment()

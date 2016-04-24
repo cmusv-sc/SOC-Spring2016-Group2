@@ -1,5 +1,5 @@
-// var suggestCallBack; 
-// var suggestions = [];	
+ var suggestCallBack; 
+ var suggestions = [];	
 Template.suggestion.onRendered(function() {
 		var config = {
 			siteURL: 'byKeyWord', // Change this to your site
@@ -54,7 +54,7 @@ Template.suggestion.onRendered(function() {
 		var radio = $("input[name=check]:checked").val();
 		console.log(input);
         if(input!=null){
-           // getSuggestions(input);
+           //getSuggestions(input);
         }
 		console.log(radio);
 		if(radio==='keyWord'){
@@ -80,8 +80,10 @@ Template.suggestion.onRendered(function() {
 
 			config.searchSite = this.id == 'searchSite';
 		});
+
 		function getSuggestions(input){
-          suggestions.splice(0,suggestions.length)
+        alert("Hello! I am an alert box!!"+input);          
+        //suggestions.splice(0,suggestions.length)
           $.getJSON("http://suggestqueries.google.com/complete/search?callback=?",
                 {
                   "hl":"en", // Language
@@ -117,6 +119,8 @@ Template.suggestion.onRendered(function() {
                 type : "GET",
                 contentType : "application/x-www-form-urlencoded; charset=utf-8",
                 url : stringUrl,
+               // headers: {"Access-Control-Allow-Origin": "*"},
+            
                 //User-Agent: 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.1b3pre) Gecko/20081130 Minefield/3.1b3pre'
                 dataType: 'json',
                 cache : false,
@@ -169,6 +173,7 @@ Template.suggestion.onRendered(function() {
                 type : "GET",
                 contentType : "application/x-www-form-urlencoded; charset=utf-8",
                 url : stringUrl,
+               // headers: {"Access-Control-Allow-Origin": "*"},
                 //User-Agent: 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.1b3pre) Gecko/20081130 Minefield/3.1b3pre'
                 dataType: 'json',
                 cache : false,
@@ -301,8 +306,9 @@ Template.suggestion.onRendered(function() {
 				var resultsDiv = $('#resultsDiv');
 	            $.ajax({
 	                type : "GET",
-	                contentType : "application/x-www-form-urlencoded; charset=utf-8",
+	                contentType : "application/x-www-form-urlencoded; charset=utf-8; Access-Control-Allow-Origin:*;",
 	                url : stringUrl,
+                    //headers: {"Access-Control-Allow-Origin":"*"},
 	                //User-Agent: 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.1b3pre) Gecko/20081130 Minefield/3.1b3pre'
 	                dataType: 'json',
 	                cache : false,

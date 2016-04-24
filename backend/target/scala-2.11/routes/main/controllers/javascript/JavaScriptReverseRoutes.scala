@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/lunwenh/workspace/SSNetwork/backend/conf/routes
-// @DATE:Fri Apr 22 23:21:48 PDT 2016
+// @SOURCE:/Users/caoyi/SSNetwork/backend/conf/routes
+// @DATE:Sat Apr 23 10:04:47 PDT 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -15,7 +15,7 @@ import _root_.play.libs.F
 package controllers.javascript {
   import ReverseRouteContext.empty
 
-  // @LINE:30
+  // @LINE:32
   class ReversePostController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -23,7 +23,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:31
+    // @LINE:33
     def getPostById: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PostController.getPostById",
       """
@@ -33,7 +33,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:35
+    // @LINE:37
     def setAnswer: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PostController.setAnswer",
       """
@@ -43,7 +43,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:30
+    // @LINE:32
     def addPost: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PostController.addPost",
       """
@@ -53,7 +53,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:32
+    // @LINE:34
     def getAllPosts: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PostController.getAllPosts",
       """
@@ -63,7 +63,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:33
+    // @LINE:35
     def addComment: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PostController.addComment",
       """
@@ -73,7 +73,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:34
+    // @LINE:36
     def setAsQuestion: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PostController.setAsQuestion",
       """
@@ -85,7 +85,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:24
+  // @LINE:26
   class ReverseForumController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -93,7 +93,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:24
+    // @LINE:26
     def addComment: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ForumController.addComment",
       """
@@ -103,7 +103,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:26
+    // @LINE:28
     def updateComment: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ForumController.updateComment",
       """
@@ -113,7 +113,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:25
+    // @LINE:27
     def getComments: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ForumController.getComments",
       """
@@ -123,7 +123,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:27
+    // @LINE:29
     def uploadFile: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ForumController.uploadFile",
       """
@@ -163,26 +163,6 @@ package controllers.javascript {
     }
 
   
-    // @LINE:20
-    def getPaperByTitle: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.getPaperByTitle",
-      """
-        function(title0) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "title/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("title", encodeURIComponent(title0))})
-        }
-      """
-    )
-  
-    // @LINE:19
-    def getPaperByYear: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.getPaperByYear",
-      """
-        function(year0) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "year/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("year", year0)})
-        }
-      """
-    )
-  
     // @LINE:11
     def upload: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.upload",
@@ -193,12 +173,62 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:21
+    def getAllPublications: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getAllPublications",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "all"})
+        }
+      """
+    )
+  
+    // @LINE:23
+    def getCoAuthors: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getCoAuthors",
+      """
+        function(author0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "author/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("author", encodeURIComponent(author0))})
+        }
+      """
+    )
+  
+    // @LINE:22
+    def getPaperBykeyWord: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getPaperBykeyWord",
+      """
+        function(keyWord0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "keyword/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("keyWord", encodeURIComponent(keyWord0))})
+        }
+      """
+    )
+  
+    // @LINE:20
+    def getPaperByTitle: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getPaperByTitle",
+      """
+        function(title0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "title/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("title", encodeURIComponent(title0))})
+        }
+      """
+    )
+  
     // @LINE:6
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.index",
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + """"})
+        }
+      """
+    )
+  
+    // @LINE:19
+    def getPaperByYear: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getPaperByYear",
+      """
+        function(year0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "year/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("year", year0)})
         }
       """
     )
