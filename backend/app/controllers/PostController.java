@@ -105,4 +105,15 @@ public class PostController extends Controller {
         }
         return created(Json.toJson(posts));
     }
+
+    public Result getPostByUserId(Long userId) {
+        List<Post> posts = Post.find
+            .where()
+            .eq("authorId", userId)
+            .findList();
+        if(posts == null || posts.size() == 0) {
+            return Common.badRequestWrapper("No record found");
+        }
+        return created(Json.toJson(posts));
+    }
 }

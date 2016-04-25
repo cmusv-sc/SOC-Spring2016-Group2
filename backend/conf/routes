@@ -40,6 +40,7 @@ POST	/post/addComment				controllers.PostController.addComment()
 POST	/post/setAsQuestion				controllers.PostController.setAsQuestion()
 POST	/post/setAnswer					controllers.PostController.setAnswer()
 GET     /post/search/:keyword           controllers.PostController.search(keyword : String)
+GET     /post/getPostByUserId/:userId   controllers.PostController.getPostByUserId(userId: Long)
 
 
 #Tagging for publication
