@@ -52,9 +52,7 @@ GET    /gettagpubs/:title           controllers.TagController.getTagpubs(title:S
 GET    /getpublications/:tagpub     controllers.TagController.getPublications(tagpub:String)
 GET    /getTag/:pub_id              controllers.TagController.getTagByPub_id(pub_id:Long)
 
-### Testing New Features
-GET    /year/:year                  controllers.Application.getPublicationWithAuthorsByYear(year: Integer)
-GET    /id/:id                  controllers.Application.getPublicationWithAuthorsById(id: Integer)
-GET    /title/:title                controllers.Application.getPublicationWithAuthorsByTitle(title: String)
+### Popularity
+#GET    /popularity/:root_id          controllers.PopularityController.getPop(root_id:String)
 
 

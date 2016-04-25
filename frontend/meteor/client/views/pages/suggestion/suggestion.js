@@ -1,7 +1,6 @@
-// var suggestCallBack; 
-// var suggestions = [];	
+var suggestions = [];  
 Template.suggestion.onRendered(function() {
-		var config = {
+	var config = {
 			siteURL: 'byKeyWord', // Change this to your site
 			searchSite: true,
 			type: 'web',
@@ -54,7 +53,7 @@ Template.suggestion.onRendered(function() {
 		var radio = $("input[name=check]:checked").val();
 		console.log(input);
         if(input!=null){
-           // getSuggestions(input);
+           getSuggestions(input);
         }
 		console.log(radio);
 		if(radio==='keyWord'){
@@ -80,19 +79,19 @@ Template.suggestion.onRendered(function() {
 
 			config.searchSite = this.id == 'searchSite';
 		});
+
+
 		function getSuggestions(input){
-          suggestions.splice(0,suggestions.length)
+        
+           // alert("hi"+input);
+          // suggestions.splice(0,suggestions.length)
           $.getJSON("http://suggestqueries.google.com/complete/search?callback=?",
                 {
                   "hl":"en", // Language
-                  "jsonp":"suggestCallBack", // jsonp callback function name
                   "q":input, // query term
                    "client":"chrome" // force youtube style response, i.e. jsonp
-                }
-            );
-             
-            suggestCallBack = function (data) {
-                
+                },function (data) {
+                suggestions.splice(0,suggestions.length)
                 $.each(data[1], function(key, val) {
                     suggestions.push({"value":val});
                 });
@@ -102,12 +101,15 @@ Template.suggestion.onRendered(function() {
                   console.log(suggestions[i-1].value);
               
               }
-          }; 
-
-
-           $( "#s" ).autocomplete({
-           source: suggestions
+               
+        
           });
+          $( "#s" ).autocomplete({
+
+                     source: suggestions
+                 });
+             
+          
     }
         //function search
     function getPaperByYear(input){

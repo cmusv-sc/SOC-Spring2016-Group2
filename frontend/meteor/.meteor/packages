@@ -54,3 +54,8 @@ aslagle:reactive-table
 u2622:persistent-session
 useraccounts:iron-routing
 http
+gadicohen:cross-domain-login
+mizzao:timesync
+webapp
+mizzao:autocomplete
+sebdah:autocompletion
