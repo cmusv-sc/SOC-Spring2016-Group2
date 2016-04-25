@@ -174,6 +174,11 @@ Template.paperdetail.events({
 		var count = parseInt($(aid).children("span").text());
 		if ($(event.target).hasClass('ed')) {
 			$(event.target).removeClass('ed');
+			var user = 1;
+			var url = "http://localhost:9000/deleteThumb/1/" + user + "/" + id;
+			Meteor.call('deleteInBackend', url, function (err, res){
+				console.log("Deleted");
+			});
 			count --;
 		}else{
 			$(event.target).addClass('ed');
@@ -199,6 +204,11 @@ Template.paperdetail.events({
 		//console.log(count);
 		if ($(event.target).hasClass('ed')) {
 			$(event.target).removeClass('ed');
+			var user = 1;
+			var url = "http://localhost:9000/deleteThumb/0/" + user + "/" + id;
+			Meteor.call('deleteInBackend', url, function (err, res){
+				console.log("Deleted");
+			});
 			count --;
 		}else{
 			$(event.target).addClass('ed');
