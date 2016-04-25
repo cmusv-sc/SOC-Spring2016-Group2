@@ -37,13 +37,15 @@ public class ForumController extends Controller{
     }
 
     public Result updateComment() {
-        Map<String, String[]> params = request().body().asFormUrlEncoded();
+//        Map<String, String[]> params = request().body().asFormUrlEncoded();
+//
+//        int id = Integer.parseInt(params.get("id")[0]);
+//        String content = params.get("content")[0];
 
-        int id = Integer.parseInt(params.get("id")[0]);
-        String content = params.get("content")[0];
+        Comment oldcomment = form(Comment.class).bindFromRequest().get();
 
-        Comment comment = Comment.find.byId(id);
-        comment.setContent(content);
+        Comment comment = Comment.find.byId(oldcomment.getId());
+        comment.setContent(oldcomment.getContent());
 
         comment.save();
 

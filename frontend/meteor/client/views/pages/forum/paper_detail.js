@@ -30,16 +30,18 @@ var renderComments = function(obj){
 		var item = "<li class='dd-item'><div class='social-feed-box'>";
 		var d = new Date(c.comment.time*1000);
 		item += "<div class='social-avatar'><div class='media-body'><span class='text-success'>User: " + c.comment.authorid + "</span><small class='pull-right'> " + d.toLocaleString() + "</small></div></div>";
-		item += "<div class='social-body'><p>" + c.comment.content + "</p>";
-		item += "<a class='small thumbup'";
-		item += "style='color: #676a6c;' id='thumbupa-" + c.comment.id + "'";
-		item += "><i class='fa fa-thumbs-up ";
+		item += "<div class='social-body'><div class='input-group'><input type='text' class='form-control input-sm input-edit hide' value='" + c.comment.content + "' id='edit-" + c.comment.id + "'><span id='commentcontent-" + c.comment.id + "'>" + c.comment.content + "</span><p></p></div>";
+		item += "<div><a class='small thumbup'" + "style='color: #676a6c;' id='thumbupa-" + c.comment.id + "'" + "><i class='fa fa-thumbs-up ";
 		if (c.thumbuped == true) { item += "ed"; };
 		item += "' id='thumbup-" + c.comment.id + "'></i> <span>" + c.thumbup + " </span></a> <a class='small thumbdown'";
-		item += " style='color: #676a6c;' id='thumbdowna-" + c.comment.id + "'";
-		item += "><i class='fa fa-thumbs-down ";
+		item += " style='color: #676a6c;' id='thumbdowna-" + c.comment.id + "'" + "><i class='fa fa-thumbs-down ";
 		if (c.thumbdowned == true) { item += "ed"; };
-		item += "' id='thumbdown-" + c.comment.id + "'></i> <span>" + c.thumbdown + "</span></a><p></p>";
+		item += "' id='thumbdown-" + c.comment.id + "'></i> <span>" + c.thumbdown + "</span></a><span class='pull-right'>";
+		if (c.comment.authorid == 1) {
+			//User
+			item += "<a class='small edit'><i class='fa fa-paste' id='edita-" + c.comment.id + "'></i></a>";
+		}
+		item += "</span></div><p></p>";
 		item += "<div class='input-group'><input type='text' class='form-control input-sm' id='input-" + c.comment.id + "'><div class='input-group-btn'><button class='btn btn-sm btn-success btn-reply' id='reply-" + c.comment.id + "'>Reply</button></div></div></div></div>";
 		item += renderComments(c.children);
 		item += "</li>";
@@ -227,5 +229,40 @@ Template.paperdetail.events({
 	'click .input-sm': function(event){
 		console.log("FOCUS");
 		$(event.target).parent(".input-group").removeClass("has-error");
+	},
+	'click .edit': function(event){
+		//console.log("Edit: " + event.target.id);
+		var id = event.target.id.split("-")[1];
+		var inputid = "#edit-" + id;
+		var commentcontentid = "#commentcontent-" + id;
+		if ($(inputid).hasClass('hide')) {
+			$(inputid).removeClass('hide');
+			$(commentcontentid).addClass('hide');
+		}else{
+			$(inputid).addClass('hide');
+			$(commentcontentid).removeClass('hide');
+		}
+	},
+	'keyup .input-edit': function(event){
+		if (event.keyCode == 13){
+			var input_val = $(event.target).val();
+			console.log(event.target.id);
+			var id = event.target.id.split("-")[1];
+			if (input_val == "") {
+				$(event.target).parents(".input-group").addClass("has-error");
+				return;
+			}
+			$(event.target).addClass('hide');
+			var sib = $(event.target).siblings('span');
+			$(sib).removeClass('hide');
+			$(sib).text(input_val);
+			var url = "http://localhost:9000/updateComment";
+			var args = {};
+			args["id"] = id;
+			args["content"] = input_val;
+			Meteor.call('postToBackend', url, args, function (err, res){
+				console.log("Updated!");
+			});
+		}
 	}
 });
