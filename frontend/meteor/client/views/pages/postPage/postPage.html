@@ -5,15 +5,9 @@
         	    <button id="findPost">Find Post</button>
         		<button id="addPost">New Post</button>
         	</div>
-        	{{#if ifShowFindPost}}
-	            <div>
-	                <form method="post" id="searchPostForm">
-	                    <input type="text" id="keyword"/>
-	                    <input type="submit" value="Find Post"/>
-	                </form>
-	            </div>        	
-        	{{else}}
-	            <div id="addNewPostContainer">
+        	<br>
+        	{{#if ifShowAddNewPost}}
+        		<div id="addNewPostContainer">
 	                <form method="post" id="addPostForm">
 	                    <ul>
 	                        <input id="postTitle" type="text" placeholder="post title"/>
@@ -24,6 +18,13 @@
 	                    <ul>
 	                        <input type="submit" value="Post"/>
 	                    </ul>
+	                </form>
+	            </div> 
+        	{{else}}
+	            <div>
+	                <form method="post" id="searchPostForm">
+	                    <input type="text" id="keyword"/>
+	                    <input type="submit" value="Search"/>
 	                </form>
 	            </div>        	
         	{{/if}}

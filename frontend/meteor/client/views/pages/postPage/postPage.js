@@ -1,15 +1,16 @@
 const Posts = new Mongo.Collection('posts');
 
 Template.postPage.events({
-	'click #findPost': function() {
-		  Session.set('showFindPost', true);
+	'click #findPost': function(event) {
+		event.preventDefault();
+		Session.set('showAddNewPost', false);
 	},
-	'click #addPost': function() {
-		Session.set('showFindPost', false);
+	'click #addPost': function(event) {
+		Session.set('showAddNewPost', true);
 	},
 	'submit #searchPostForm': function(event) {
 		event.preventDefault();
-		var keyword = event.keyword.text.value;
+		var keyword = event.target.keyword.value;
 		console.log(keyword);
         HTTP.call(
                 'GET',
@@ -40,8 +41,8 @@ Template.postPage.events({
 	},
 	'submit #addPostForm': function(event) {
 		event.preventDefault();
-		var title = event.postTitle.text.value;
-		var content = event.postContent.text.value;
+		var title = event.target.postTitle.value;
+		var content = event.target.postContent.value;
 		console.log(title);
 		console.log(content);
 		Posts.remove({});
@@ -69,8 +70,8 @@ Template.postPage.events({
 });
 
 Template.postPage.helpers({
-	ifShowFindPost: function() {
-		return Session.get('showFindPost');
+	ifShowAddNewPost: function() {
+		return Session.get('showAddNewPost');
 	},
 	posts: function() {
 		return Posts.find({}, {sort: {postAt: 1}}).fetch();
