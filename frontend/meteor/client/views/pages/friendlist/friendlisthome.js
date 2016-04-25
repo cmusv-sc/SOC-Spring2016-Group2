@@ -32,7 +32,9 @@ Template.friendlisthome.helpers({
 });
 
 Template.friendlisthome.onCreated(function () {
-    var myid = "iWprJqHxewrdGW4EH";
+    var myid = "6AgxTZKjsgemJHbtd";
+    var myname = User2.findOne(myid).name;
+    Template.friendlisthome.currentuser = myname
     Session.setPersistent("myid", myid);
 });
 
