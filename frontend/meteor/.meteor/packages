@@ -43,7 +43,6 @@ aldeed:collection2
 email
 tap:i18n
 mdg:camera
-meteorhacks:npm
 
 
 npm-container
@@ -54,3 +53,7 @@ aslagle:reactive-table
 u2622:persistent-session
 useraccounts:iron-routing
 http
+cfs:standard-packages
+cfs:gridfs
+cfs:filesystem
+meteorhacks:npm

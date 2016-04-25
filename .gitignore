@@ -9,6 +9,8 @@
 #ignore all bin directories
 bin/
 
+frontend/meteor/npm-debug.log
+
 target/
 
 backend/public/upload/*

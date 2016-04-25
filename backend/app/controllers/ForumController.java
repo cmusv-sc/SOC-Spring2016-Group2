@@ -145,6 +145,11 @@ public class ForumController extends Controller{
 
     @BodyParser.Of(BodyParser.MultipartFormData.class)
     public Result uploadFile(){
+        response().setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
+        response().setHeader("Access-Control-Max-Age", "3600");
+        response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-    Type, Accept, Authorization, X-Auth-Token");
+        response().setHeader("Access-Control-Allow-Credentials", "true");
+        response().setHeader("Access-Control-Allow-Origin", "*");
         MultipartFormData body = request().body().asMultipartFormData();
         MultipartFormData.FilePart uploadfile = body.getFile("file");
         if (uploadfile != null) {

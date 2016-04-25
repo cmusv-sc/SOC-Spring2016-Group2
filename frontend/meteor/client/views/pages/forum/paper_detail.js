@@ -7,7 +7,7 @@ Template.paperdetail.helpers({
 	fetchTag(url);
   	url = "http://localhost:9000/comment?rootid=" + Router.current().params.query.id + "&categoryid=1&userid=1";
   	fetchComment(url);
-  },
+  }
 });
 
 var fetchComment = function(url){
@@ -42,7 +42,7 @@ var renderComments = function(obj){
 			item += "<a class='small edit'><i class='fa fa-paste' id='edita-" + c.comment.id + "'></i></a>";
 		}
 		item += "</span></div><p></p>";
-		item += "<div class='input-group'><input type='text' class='form-control input-sm' id='input-" + c.comment.id + "'><div class='input-group-btn'><button class='btn btn-sm btn-success btn-reply' id='reply-" + c.comment.id + "'>Reply</button></div></div></div></div>";
+		item += "<div class='input-group'><input type='text' class='form-control input-sm' id='input-" + c.comment.id + "'><div class='input-group-btn'><button class='btn btn-sm btn-primary btn-upload ladda-button' data-style='zoom-out' id='upload-" + c.comment.id + "'>upload</button><button class='btn btn-sm btn-success btn-reply' id='reply-" + c.comment.id + "'>Reply</button></div></div></div></div>";
 		item += renderComments(c.children);
 		item += "</li>";
 		s += item;
@@ -96,7 +96,39 @@ Template.paperdetail.rendered = function(){
 			$("#addTag").val("");
 		}
 	});
+	$("#file1").change(function(e){
+		console.log($("#file1").val());
+		var formData = new FormData();
+    	formData.append('file', $('#file1').get(0).files[0]);
+    	console.log(up);
+    	var id = up.split("-")[1];
+    	var ans = "#inputcomment";
+    	if (id > 0) {
+    		ans = "#input-" + id;
+    	}
+    	var b = "#" + up;
+    	console.log(b);
+    	b = $(b).ladda();
+    	b.ladda('start');
+    	var request = $.ajax({
+    	      url: "http://localhost:9000/upload",
+    	      method: "POST",
+    	      data: formData,
+    	      contentType: false,
+    	      processData: false,
+    	      cache: false
+    	    }).done(function(data){
+    	      console.log(data);
+    	      var file = data.split("/")[3];
+    	      var link = '<a href="localhost:9000' + data + '">' + file + "</a>";
+    	      var t = $(ans).val();
+    	      $(ans).val(t + link);
+    	      b.ladda('stop');
+    	    });
+	});
 };
+
+var up = "";
 
 var fetchTag = function(url){
 	//console.log("in fetchTag " + url);
@@ -264,5 +296,10 @@ Template.paperdetail.events({
 				console.log("Updated!");
 			});
 		}
+	},
+	'click .btn-upload': function(event){
+		$("#file1").click();
+		console.log(event.target.id);
+		up = event.target.id;
 	}
 });

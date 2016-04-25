@@ -40,7 +40,8 @@ Requests = new Mongo.Collection('requests');
       return true; 
     }
   });
-  
+
+
   Meteor.methods({
     fetchFromService: function(url) {
 
