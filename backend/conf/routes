@@ -27,9 +27,9 @@ POST   /updateComment               controllers.ForumController.updateComment()
 POST   /upload                      controllers.ForumController.uploadFile()
 
 ### Thumb
-POST    /addThumb                      controllers.ThumbController.addThumb()
-DELETE  /deleteThumb/:id               controllers.ThumbController.deleteThumb(id:Long)
-GET     /getThumbSum/:user/:type       controllers.ThumbController.getThumbSum(user:String,type:String)
+POST    /addThumb                                              controllers.ThumbController.addThumb()
+DELETE  /deleteThumb/:thumb_type/:sender/:receiver               controllers.ThumbController.deleteThumb(thumb_type: Integer, sender: Integer, receiver: Integer)
+GET     /getThumbSum/:user/:type                               controllers.ThumbController.getThumbSum(user:String,type:String)
 
 
 #Post Related REST API
@@ -39,6 +39,8 @@ GET		/post/getAllPosts				controllers.PostController.getAllPosts()
 POST	/post/addComment				controllers.PostController.addComment()
 POST	/post/setAsQuestion				controllers.PostController.setAsQuestion()
 POST	/post/setAnswer					controllers.PostController.setAnswer()
+GET     /post/search/:keyword           controllers.PostController.search(keyword : String)
+GET     /post/getPostByUserId/:userId   controllers.PostController.getPostByUserId(userId: Long)
 
 
 #Tagging for publication
