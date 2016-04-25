@@ -57,10 +57,16 @@ Template.addFriendInfo.events({
     var friendid = Session.get("findid")
     var myname = User2.findOne(myid).name;
     var mysummary = User2.findOne(myid).summary;
-    Requests.insert({receiverid: friendid, senderid: myid, sendername: myname,
-                createdAt: new Date(), sendersummary: mysummary});
-
-    window.location.href='/addFriend'
+    var count = Friends.find({myid: myid, friendid: friendid}).count();
+    if (friendid == myid) {
+        Session.setPersistent("summarysession", "This is yourself. What are you doing?");
+    } else if (count == 0){
+        Requests.insert({receiverid: friendid, senderid: myid, sendername: myname,
+                    createdAt: new Date(), sendersummary: mysummary});
+        window.location.href='/addFriend'
+    } else {
+        Session.setPersistent("summarysession", "This Persion is already your friend");
+    }
   }
 });
 

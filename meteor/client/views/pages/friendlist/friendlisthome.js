@@ -32,7 +32,7 @@ Template.friendlisthome.helpers({
 });
 
 Template.friendlisthome.onCreated(function () {
-    var myid = "6AgxTZKjsgemJHbtd";
+    var myid = "iWprJqHxewrdGW4EH";
     var myname = User2.findOne(myid).name;
     Template.friendlisthome.currentuser = myname
     Session.setPersistent("myid", myid);
@@ -146,8 +146,9 @@ Template.registerHelper('formatDate', function(date) {
 Template.request.events({
   'click #decline'(event, template) {
     event.preventDefault();
+    var myid = Session.get("myid")
     // increment the counter when button is clicked
-    var id = Requests.findOne()._id;
+    var id = Requests.findOne({receiverid : myid})._id;
     Requests.remove(id);
     //window.location.href='/add'
   },
@@ -157,12 +158,12 @@ Template.request.events({
   'click #accept'(event, template) {
     event.preventDefault();
     // increment the counter when button is clicked
-    var id = Requests.findOne()._id;
-    var friendid = Requests.findOne().senderid;
-    var friendname = Requests.findOne().sendername;
-    var friendsummary = Requests.findOne().sendersummary;
-    var date = new Date()
     var myid = Session.get("myid")
+    var id = Requests.findOne({receiverid : myid})._id;
+    var friendid = Requests.findOne({receiverid : myid}).senderid;
+    var friendname = Requests.findOne({receiverid : myid}).sendername;
+    var friendsummary = Requests.findOne({receiverid : myid}).sendersummary;
+    var date = new Date()
     var myname = User2.findOne(myid).name;
     var mysummary = User2.findOne(myid).summary;
     Friends.insert({myid: myid, friendid: friendid, name: friendname,
@@ -177,13 +178,14 @@ Template.request.events({
 Template.request.events({
   'click #ignore'(event, template) {
     event.preventDefault();
+    var myid = Session.get("myid")
     // increment the counter when button is clicked
-    var id = Requests.findOne()._id;
-    var receiverid = Requests.findOne().receiverid;
-    var senderid = Requests.findOne().senderid;
-    var sendername = Requests.findOne().sendername;
-    var sendersummary = Requests.findOne().sendersummary;
-    var createdAt = Requests.findOne().createdAt;
+    var id = Requests.findOne({receiverid : myid})._id;
+    var receiverid = myid;
+    var senderid = Requests.findOne({receiverid : myid}).senderid;
+    var sendername = Requests.findOne({receiverid : myid}).sendername;
+    var sendersummary = Requests.findOne({receiverid : myid}).sendersummary;
+    var createdAt = Requests.findOne({receiverid : myid}).createdAt;
 
     Requests.insert({receiverid: receiverid, senderid: senderid, sendername: sendername,
                 createdAt: createdAt, sendersummary: sendersummary});
