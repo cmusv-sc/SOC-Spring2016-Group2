@@ -1,46 +1,29 @@
-<template name = "postPage">
-    <div class = "wrapper wrapper-content animated fadeInRight">
-    	<div align = "center">
-    		{{> searchTemplate}}
-    	</div>
-    	
-    	<div align = "center">
-    		{{> buttonTemplate}}
-    	</div>
-    	
-    	<div align = "center">
-    		{{> addPostTemplate}}
-    	</div>
-    	
-    	<div align = "center" id = "resultsDiv">
-    	</div>
+<template name="postPage">
+    <div align="center" class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div>
+                <form method="post" id="searchPostForm">
+                    <input type="text" id="keyword"/>
+                    <input type="submit" value="Find Post"/>
+                </form>
+            </div>
+            <button id="findMyPosts">My Posts</button>
+            <button id="addNewPost">Add New Post</button>
+            <div id="addNewPostContainer">
+                <form method="post" id="addPostForm">
+                    <ul>
+                        <input id="postTitle" type="text" placeholder="post title"/>
+                    </ul>
+                    <ul>
+                        <textarea id="postContent" rows="4" cols="100">put your post content here</textarea>
+                    </ul>
+                    <ul>
+                        <input type="submit" value="Post"/>
+                    </ul>
+                </form>
+            </div>
+            <div id="resultsContainer">
+            </div>
+        </div>
     </div> 
-</template>
-
-<template name = "searchTemplate">
-   <form method="post">
-      <input type = "text" name = "searchContent"/>
-      <input type = "submit" value = "Find Post" id = "searchPost"/>
-   </form>
-</template>
-
-<template name = "buttonTemplate">
-        <button class = "button3" name = "findMyPosts">Find My Posts</button>
-        <button class = "button3" name = "addNewPost">Add New Post</button>
-</template>
-
-<template name = "addPostTemplate">
-	<form method="post">
-		<ul>
-			<input id = "postTitle" type = "text" name = "title" placeholder = "post title"/>
-		</ul>
-		<ul>
-			<textarea id = "postContent" rows = "4" cols = "50">
-                put your post content here
-            </textarea>
-		</ul>
-		<ul>
-			<input type = "submit" value="Post"/>
-		</ul>
-	</form>
 </template>
