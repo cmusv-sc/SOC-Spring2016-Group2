@@ -1,13 +1,14 @@
-const Posts = new Mongo.Collection('posts');
-
 Template.postPage.events({
+
 	'click #findPost': function(event) {
 		event.preventDefault();
 		Session.set('showAddNewPost', false);
 	},
+
 	'click #addPost': function(event) {
 		Session.set('showAddNewPost', true);
 	},
+
 	'submit #searchPostForm': function(event) {
 		event.preventDefault();
 		var keyword = event.target.keyword.value;
@@ -25,8 +26,12 @@ Template.postPage.events({
                     	if(response.length <= 0) {
                     		alert("No record found");
                     	} else {
-                    		Posts.remove({});
+                    		Meteor.call('removeAllPosts');
                     		for(var i = 0; i < response.length; i++) {
+                    			console.log(response[i].title);
+                    			console.log(response[i].authorId);
+                    			console.log(response[i].postAt);
+                    			console.log(response[i].content);
                     			Posts.insert({
                     				title: response[i].title,
                     				author: response[i].authorId,
@@ -39,13 +44,14 @@ Template.postPage.events({
                 }
             );
 	},
+
 	'submit #addPostForm': function(event) {
 		event.preventDefault();
 		var title = event.target.postTitle.value;
 		var content = event.target.postContent.value;
 		console.log(title);
 		console.log(content);
-		Posts.remove({});
+		Meteor.call('removeAllPosts');
 		var post = {
 				title: title,
 				author: Meteor.userId(),
@@ -74,7 +80,8 @@ Template.postPage.helpers({
 		return Session.get('showAddNewPost');
 	},
 	posts: function() {
+		console.log("getting posts");
+		console.log(Posts.find({}, {sort: {postAt: 1}}).fetch());
 		return Posts.find({}, {sort: {postAt: 1}}).fetch();
 	},
 });
-

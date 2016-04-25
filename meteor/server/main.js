@@ -7,6 +7,8 @@ Friends = new Mongo.Collection("friends");
 User2 = new Mongo.Collection('usersdatabase');
 Requests = new Mongo.Collection('requests');
 
+Posts = new Mongo.Collection('posts');
+
   Friends.allow({
     'insert': function (userId,doc) {
       /* user and doc checks ,
@@ -41,6 +43,11 @@ Requests = new Mongo.Collection('requests');
     }
   });
 
+  Posts.allow({
+    'insert': function(userId, doc) {
+      return true;
+    }
+  });
 
   Meteor.methods({
     fetchFromService: function(url) {
@@ -61,5 +68,8 @@ Requests = new Mongo.Collection('requests');
       var resultOfAsyncToSync = convertAsyncToSync("DELETE", url, {} );
 
       return resultOfAsyncToSync;
+    },
+    removeAllPosts: function() {
+      Posts.remove({});
     }
   });
