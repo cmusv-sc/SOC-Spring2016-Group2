@@ -143,6 +143,24 @@ Template.registerHelper('formatDate', function(date) {
   return moment(date).format('MM-DD-YYYY');
 });
 
+Template.friendlisthome.events({
+  'click #update'(event, template) {
+    event.preventDefault();
+    var myid = Session.get("myid")
+    // increment the counter when button is clicked
+    var name = User2.findOne({_id : myid}).name;
+    var summary = template.find(".update_summary").value;
+    var createdAt = User2.findOne({_id : myid}).createdAt;
+    var services = User2.findOne({_id : myid}).services;
+    var emails = User2.findOne({_id : myid}).emails;
+    var profile = User2.findOne({_id : myid}).profile;
+    template.find(".update_summary").value = "Updated Successfully!"
+    User2.remove({_id : myid});
+    User2.insert({_id : myid, name: name, summary: summary, createdAt: createdAt, services: services, emails: emails, profile: profile});
+    //window.location.href='/add'
+  },
+});
+
 Template.request.events({
   'click #decline'(event, template) {
     event.preventDefault();

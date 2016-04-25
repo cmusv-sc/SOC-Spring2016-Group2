@@ -24,6 +24,23 @@ Requests = new Mongo.Collection('requests');
     }
   });
 
+  User2.allow({
+    'insert': function (userId,doc) {
+      /* user and doc checks ,
+      return true to allow insert */
+      return true; 
+    }
+  });
+
+
+  User2.allow({
+    'remove': function (userId,doc) {
+      /* user and doc checks ,
+      return true to allow insert */
+      return true; 
+    }
+  });
+  
   Requests.allow({
     'insert': function (userId,doc) {
       /* user and doc checks ,
