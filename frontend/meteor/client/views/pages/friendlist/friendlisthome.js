@@ -4,7 +4,6 @@ Template.friendlisthome.helpers({
     settings: function () {
 
         return {
-            collection: Friends,
             rowsPerPage: 10,
             showFilter: true,
             id: "allfriends",
@@ -25,13 +24,23 @@ Template.friendlisthome.helpers({
     }
 });
 
+Template.friendlisthome.helpers({
+    myCollection: function () {
+        var myid = Session.get("myid")
+        return Friends.find({myid : myid}).fetch();
+    }
+});
+
+Template.friendlisthome.onCreated(function () {
+    var myid = "iWprJqHxewrdGW4EH";
+    Session.setPersistent("myid", myid);
+});
 
 Template.request.helpers({
 
     settings: function () {
 
         return {
-            collection: Requests,
             rowsPerPage: 1,
             showFilter: false,
             showNavigation: "never",
@@ -39,8 +48,8 @@ Template.request.helpers({
             id: "allrequests",
             fields: [
                 {
-                    fieldId: 'name',
-                    key: 'name',
+                    fieldId: 'sendername',
+                    key: 'sendername',
                     label: 'Friend Request',
                 },
                 {
@@ -55,13 +64,20 @@ Template.request.helpers({
     }
 });
 
+Template.request.helpers({
+    requestCollection: function () {
+        var myid = Session.get("myid")
+        return Requests.find({receiverid : myid}).fetch();
+    }
+});
+
 Template.friendlisthome.events({
   'click #allfriends tbody tr': function (event) {
     event.preventDefault();
     var post = this;
     // checks if the actual clicked element has the class `delete`
     if (event.target.className == "name") {
-        Session.setPersistent("idsession", this._id);
+        Session.setPersistent("idsession", this.friendid);
         Session.setPersistent("namesession", this.name);
         Session.setPersistent("summarysession", this.summary);
         window.location.href='/viewFriendInfo'
@@ -75,10 +91,10 @@ Template.request.events({
     event.preventDefault();
     var post = this;
     // checks if the actual clicked element has the class `delete`
-    if (event.target.className == "name") {
+    if (event.target.className == "sendername") {
         Session.setPersistent("idsession", this._id);
-        Session.setPersistent("namesession", this.name);
-        Session.setPersistent("summarysession", this.summary);
+        Session.setPersistent("namesession", this.sendername);
+        Session.setPersistent("summarysession", this.sendersummary);
         window.location.href='/viewRequestInfo'
 
     }
@@ -110,9 +126,14 @@ Template.viewRequestInfo.helpers({
 Template.viewFriendInfo.events({
   'click .button2': function (event) {
     event.preventDefault();
-    var id = Session.get("idsession")
-    Friends.remove(id);
-    window.location.href='/friendlisthome'
+    var friendid = Session.get("idsession")
+    var myid = Session.get("myid")
+    var id1 = Friends.findOne({"myid": myid, "friendid": friendid})._id;
+    var id2 = Friends.findOne({"myid": friendid, "friendid": myid})._id;
+    Session.setPersistent("namesession", "");
+    Session.setPersistent("summarysession", "Deleted Successfully");
+    Friends.remove(id1)
+    Friends.remove(id2)
   }
 });
 
@@ -135,10 +156,17 @@ Template.request.events({
     event.preventDefault();
     // increment the counter when button is clicked
     var id = Requests.findOne()._id;
-    var name = Requests.findOne().name;
-    var summary = Requests.findOne().summary;
-    Friends.insert({name: name, createdAt: new Date(),
-                    summary: summary});
+    var friendid = Requests.findOne().senderid;
+    var friendname = Requests.findOne().sendername;
+    var friendsummary = Requests.findOne().sendersummary;
+    var date = new Date()
+    var myid = Session.get("myid")
+    var myname = User2.findOne(myid).name;
+    var mysummary = User2.findOne(myid).summary;
+    Friends.insert({myid: myid, friendid: friendid, name: friendname,
+                    createdAt: date, summary: friendsummary});
+    Friends.insert({myid: friendid, friendid: myid, name: myname,
+                    createdAt: date, summary: mysummary});
     Requests.remove(id);
     //window.location.href='/add'
   },
@@ -149,10 +177,15 @@ Template.request.events({
     event.preventDefault();
     // increment the counter when button is clicked
     var id = Requests.findOne()._id;
-    var name = Requests.findOne().name;
-    var summary = Requests.findOne().summary;
-    Requests.insert({name: name, createdAt: new Date(),
-                    summary: summary});
+    var receiverid = Requests.findOne().receiverid;
+    var senderid = Requests.findOne().senderid;
+    var sendername = Requests.findOne().sendername;
+    var sendersummary = Requests.findOne().sendersummary;
+    var createdAt = Requests.findOne().createdAt;
+
+    Requests.insert({receiverid: receiverid, senderid: senderid, sendername: sendername,
+                createdAt: createdAt, sendersummary: sendersummary});
+    
     Requests.remove(id);
     //window.location.href='/add'
   },
