@@ -29,7 +29,7 @@ public class Post extends Model {
     /* if the post is a question, answerId 
      * is the id of comment which is set as answer
      * */
-    public long answerId;
+    public Long answerId;
     
     /* post created at */
     @Column(columnDefinition = "datetime")
@@ -43,7 +43,7 @@ public class Post extends Model {
     public Post(
     		String title, 
     		String content, 
-    		long authorId,  
+    		Long authorId,  
     		Timestamp postAt
     		) {
     	this.title = title;
