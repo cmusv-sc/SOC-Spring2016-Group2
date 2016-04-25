@@ -50,6 +50,11 @@ GET    /gettagpubs/:title           controllers.TagController.getTagpubs(title:S
 GET    /getpublications/:tagpub     controllers.TagController.getPublications(tagpub:String)
 GET    /getTag/:pub_id              controllers.TagController.getTagByPub_id(pub_id:Long)
 
+#Tagging for post
+GET    /addtagpost/:postid/:tagpost         controllers.TagController.addTagpost(postid:Long,tagpost:String)
+GET    /deletetagpost/:postid/:tagpost      controllers.TagController.deleteTagpost(postid:Long,tagpost:String)
+GET    /getTagpost/:post_id                 controllers.TagController.getTagByPost_id(post_id:Long)
+
 ### Testing New Features
 GET    /year/:year                  controllers.Application.getPublicationWithAuthorsByYear(year: Integer)
 GET    /id/:id                  controllers.Application.getPublicationWithAuthorsById(id: Integer)
