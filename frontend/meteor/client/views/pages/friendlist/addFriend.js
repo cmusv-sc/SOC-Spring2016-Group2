@@ -31,6 +31,7 @@ Template.addFriend.events({
     var post = this;
     // checks if the actual clicked element has the class `delete`
     if (event.target.className == "name") {
+        Session.setPersistent("findid", this._id);
         Session.setPersistent("namesession", this.name);
         Session.setPersistent("summarysession", this.summary);
         window.location.href='/addFriendInfo'
@@ -52,10 +53,13 @@ Template.addFriendInfo.helpers({
 Template.addFriendInfo.events({
   'click .button2': function (event) {
     event.preventDefault();
-    var person = Session.get("namesession")
-    var summary = Session.get("summarysession")
-    Friends.insert({name: person, createdAt: new Date(),
-                    summary: summary});
+    var myid = Session.get("myid")
+    var friendid = Session.get("findid")
+    var myname = User2.findOne(myid).name;
+    var mysummary = User2.findOne(myid).summary;
+    Requests.insert({receiverid: friendid, senderid: myid, sendername: myname,
+                createdAt: new Date(), sendersummary: mysummary});
+
     window.location.href='/addFriend'
   }
 });

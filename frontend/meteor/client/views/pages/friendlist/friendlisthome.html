@@ -4,7 +4,7 @@
             <div class="container">
               <header>
                 <h1>
-                Friend List
+                Friend List Of {{currentuser}}
                 <button class="btn btn-primary button" onclick="window.location.href='/addFriend'">Find More Friends
                 </button> 
                 </h1>
@@ -19,7 +19,7 @@
                 {{> request}} 
               </header>
               <ul>
-              {{> reactiveTable settings=settings}}
+              {{> reactiveTable collection=myCollection settings=settings}}
               </ul>
             </div>
         </div>
@@ -45,7 +45,7 @@
 </template>
 
 <template name="request">
-        {{> reactiveTable settings=settings}}
+        {{> reactiveTable collection=requestCollection settings=settings}}
         <button id="accept" class="button3">Accept</button>
         <button id="decline" class="button3">Decline</button>
         <button id="ignore" class="button3">Ignore</button>
