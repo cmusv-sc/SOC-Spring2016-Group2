@@ -22,14 +22,14 @@ POST    /person/uploadPic           controllers.Application.upload()
 
 ### Forum
 POST   /comment                     controllers.ForumController.addComment()
-GET    /comment                     controllers.ForumController.getComments(rootid: Integer, categoryid: Integer)
+GET    /comment                     controllers.ForumController.getComments(rootid: Integer, categoryid: Integer, userid: Integer)
 POST   /updateComment               controllers.ForumController.updateComment()
 POST   /upload                      controllers.ForumController.uploadFile()
 
 ### Thumb
-POST    /addThumb                      controllers.ThumbController.addThumb()
-DELETE  /deleteThumb/:id               controllers.ThumbController.deleteThumb(id:Long)
-GET     /getThumbSum/:user/:type       controllers.ThumbController.getThumbSum(user:String,type:String)
+POST    /addThumb                                              controllers.ThumbController.addThumb()
+DELETE  /deleteThumb/:thumb_type/:sender/:receiver               controllers.ThumbController.deleteThumb(thumb_type: Integer, sender: Integer, receiver: Integer)
+GET     /getThumbSum/:user/:type                               controllers.ThumbController.getThumbSum(user:String,type:String)
 
 
 #Post Related REST API

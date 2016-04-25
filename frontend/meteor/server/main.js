@@ -49,9 +49,15 @@ Requests = new Mongo.Collection('requests');
 
       return resultOfAsyncToSync;
     },
-    postToBackend: function(url, args){
+    postToBackend: function(url, args) {
       var convertAsyncToSync  = Meteor.wrapAsync( HTTP.post );
       var resultOfAsyncToSync = convertAsyncToSync(url, {data: args} );
+
+      return resultOfAsyncToSync;
+    },
+    deleteInBackend: function(url) {
+      var convertAsyncToSync  = Meteor.wrapAsync( HTTP.call );
+      var resultOfAsyncToSync = convertAsyncToSync("DELETE", url, {} );
 
       return resultOfAsyncToSync;
     }
