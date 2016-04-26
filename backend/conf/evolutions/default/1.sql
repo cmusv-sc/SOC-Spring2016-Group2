@@ -102,10 +102,8 @@ create table user_profile (
   constraint pk_user_profile primary key (id))
 ;
 
-alter table tagpost add constraint fk_tagpost_post_1 foreign key (post_id) references post (post_id) on delete restrict on update restrict;
-create index ix_tagpost_post_1 on tagpost (post_id);
-alter table tagpub add constraint fk_tagpub_publication_2 foreign key (pub_id) references publication (pub_id) on delete restrict on update restrict;
-create index ix_tagpub_publication_2 on tagpub (pub_id);
+alter table tagpub add constraint fk_tagpub_publication_1 foreign key (pub_id) references publication (pub_id) on delete restrict on update restrict;
+create index ix_tagpub_publication_1 on tagpub (pub_id);
 
 
 
