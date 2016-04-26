@@ -108,4 +108,44 @@ public class Post extends Model {
 	public void setAnswerId(long answerId) {
 		this.answerId = answerId;
 	}
+	
+	//=====================tagging=================
+	//I also changed the id's column name as post_id, please contact me
+	//if there is any conflict that I may have caused you
+	@OneToMany(mappedBy = "post", cascade = CascadeType.ALL)
+	public List<Tagpost> tagposts;
+
+	public List<Tagpost> getTagposts() {
+		return tagposts;
+	}
+
+	public void setTagposts(List<Tagpost> tagposts) {
+		this.tagposts = tagposts;
+	}
+
+//	public static List<ObjectNode> getPostDetails(List<Post> posts){
+//		List<ObjectNode> results = new ArrayList<ObjectNode>();
+//		for(Post post : posts) {
+//			ObjectNode result = Json.newObject();
+//			StringBuilder sb=new StringBuilder();
+//			for(Author author: authors){
+//				sb.append(author+";");
+//			}
+//			result.put("authors",sb.toString());
+//			result.put("title", publication.getTitle());
+//			result.put("editor", publication.getEditor());
+//			result.put("booktitle",publication.getBooktitle());
+//			result.put("isbn", publication.getIsbn());
+//			result.put("year",publication.getYear());
+//			result.put("crossref",publication.getCrossref());
+//			result.put("ee",publication.getEe());
+//			result.put("url",publication.getUrl());
+//			result.put("series",publication.getSeries());
+//			result.put("volume",publication.getVolume());
+//			results.add(result);
+//		}
+//		return  results;
+//	}
+	//============tagging===================
+}
 }
