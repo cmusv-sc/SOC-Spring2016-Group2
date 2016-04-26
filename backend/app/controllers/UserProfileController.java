@@ -41,7 +41,7 @@ public class UserProfileController extends Controller {
 			//String userNameTest = "Xiaoxing Ma";
 			Long authorId = Author.find_Author_Id(userName).get(0);
 
-    		new UserProfile(userNameTest,
+    		new UserProfile(userName,
 					updateCollaboratorNumbers(authorId),
 					updateSubscribeNumbers(authorId),
 					updateTags(authorId).toString(),
