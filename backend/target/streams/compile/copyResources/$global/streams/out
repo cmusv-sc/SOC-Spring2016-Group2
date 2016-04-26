@@ -1,0 +1,9 @@
+[debug] Copy resource mappings: 
+[debug] 	(/Users/caoyi/SSNetwork/backend/conf/application.conf,/Users/caoyi/SSNetwork/backend/target/scala-2.11/classes/application.conf)
+[debug] 	(/Users/caoyi/SSNetwork/backend/conf/evolutions,/Users/caoyi/SSNetwork/backend/target/scala-2.11/classes/evolutions)
+[debug] 	(/Users/caoyi/SSNetwork/backend/conf/logback.xml,/Users/caoyi/SSNetwork/backend/target/scala-2.11/classes/logback.xml)
+[debug] 	(/Users/caoyi/SSNetwork/backend/conf/META-INF,/Users/caoyi/SSNetwork/backend/target/scala-2.11/classes/META-INF)
+[debug] 	(/Users/caoyi/SSNetwork/backend/conf/routes,/Users/caoyi/SSNetwork/backend/target/scala-2.11/classes/routes)
+[debug] 	(/Users/caoyi/SSNetwork/backend/conf/evolutions/default,/Users/caoyi/SSNetwork/backend/target/scala-2.11/classes/evolutions/default)
+[debug] 	(/Users/caoyi/SSNetwork/backend/conf/evolutions/default/1.sql,/Users/caoyi/SSNetwork/backend/target/scala-2.11/classes/evolutions/default/1.sql)
+[debug] 	(/Users/caoyi/SSNetwork/backend/conf/META-INF/persistence.xml,/Users/caoyi/SSNetwork/backend/target/scala-2.11/classes/META-INF/persistence.xml)

@@ -86,7 +86,6 @@ public class Comment extends Model {
     }
 
     public Comment(){
-
     }
 
     public static Finder<Integer, Comment> find = new Finder<Integer, Comment>(Integer.class, Comment.class);

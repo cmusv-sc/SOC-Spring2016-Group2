@@ -15,10 +15,15 @@ POST    /person/uploadPic           controllers.Application.upload()
 #GET     /title/:title               controllers.Application.getPaperByTitle(title: String)
 
 
-###Sprint1
-#GET    /year/:year                  controllers.Application.getPaperByYear(year:Integer)
-#GET    /title/:title                controllers.Application.getPaperByTitle(title:String)
 
+
+###Suggestion
+GET    /year/:year                  controllers.Application.getPaperByYear(year:Integer)
+GET    /title/:title                controllers.Application.getPaperByTitle(title:String)
+GET    /all                         controllers.Application.getAllPublications()
+GET    /keyword/:keyWord            controllers.Application.getPaperBykeyWord(keyWord:String)
+GET    /author/:author              controllers.Application.getAuthors(author:String)
+GET    /coauthor/:author            controllers.Application.getCoAuthors(author:String)
 
 ### Forum
 POST   /comment                     controllers.ForumController.addComment()
@@ -66,4 +71,9 @@ GET    /title/:title                controllers.Application.getPublicationWithAu
 POST   /userprofile/create			  controllers.UserProfileController.createuserProfileProfile()
 GET    /userprofile/:userName		  controllers.UserProfileController.getUserProfile(userName:String)
 GET    /userprofile/refresh/:userName controllers.UserProfileController.refreshUserprofile(userName:String)
+=======
+#Comments Popularity
+GET    /getCommentSum/:rootid                   controllers.Popularity.getCommentSum(rootid:Integer)
+GET    /getTagSum/:pubid                          controllers.Popularity.getTagSum(pubid:Long)
+
 

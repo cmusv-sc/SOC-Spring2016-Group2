@@ -2,6 +2,10 @@
 # To stop Ebean DDL generation, remove this comment and start using Evolutions
 
 # --- !Ups
+# --- Created by Ebean DDL
+# To stop Ebean DDL generation, remove this comment and start using Evolutions
+
+# --- !Ups
 
 create table tagpost (
   tagpost_id                bigint auto_increment not null,
@@ -52,6 +56,7 @@ create table post_comment (
   constraint pk_post_comment primary key (id))
 ;
 
+
 create table publication (
   pub_id                    bigint auto_increment not null,
   pubkey                    varchar(255),
@@ -70,6 +75,7 @@ create table publication (
   ee                        varchar(255),
   constraint pk_publication primary key (pub_id))
 ;
+
 
 create table publication_author (
   id                        bigint auto_increment not null,
@@ -101,6 +107,7 @@ create index ix_tagpub_publication_1 on tagpub (pub_id);
 
 
 
+
 # --- !Downs
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -117,9 +124,10 @@ drop table post;
 
 drop table post_comment;
 
-drop table publication;
-
 drop table publication_author;
+
+
+drop table publication;
 
 drop table thumb;
 
