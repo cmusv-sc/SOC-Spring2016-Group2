@@ -42,6 +42,13 @@ Template.findpaper.events({
 		console.log("title: " + $("#inputvalue").val());
 		var url = "http://localhost:9000/title/" + input;
 		fetchData(url);
+	},
+	'click .tagpub': function (event) {
+		var input = $("#inputvalue").val();
+		if (input == "") { console.log("No input"); return;};
+		console.log("tagpub: " + $("#inputvalue").val());
+		var url = "http://localhost:9000/getpublications/" + input;
+		fetchData(url);
 	}
 });
 

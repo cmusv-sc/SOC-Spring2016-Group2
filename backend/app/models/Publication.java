@@ -3,6 +3,7 @@ package models;
 import javax.persistence.*;
 
 import com.avaje.ebean.Model;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import play.libs.Json;
 
@@ -257,9 +258,8 @@ public class Publication extends Model {
 	}
 	
 	//============tagging===================
-	//I also modified the column name of id as "pub_id".
-	//Please contact me if there is any conflicts that I may have caused.
 	@OneToMany(mappedBy = "publication", cascade = CascadeType.ALL)
+	@JsonManagedReference
 	public List<Tagpub> tagpubs;
 
 	public List<Tagpub> getTagpubs() {
@@ -272,31 +272,6 @@ public class Publication extends Model {
 
 	public static Finder<Long, Publication> findwithtagpub = new Finder<Long,Publication>(Publication.class);
 
-	public static List<ObjectNode> getPubDetails(List<Publication> publications){
-		List<ObjectNode> results = new ArrayList<ObjectNode>();
-		for(Publication publication : publications) {
-			ObjectNode result = Json.newObject();
-			List<PublicationAuthor> authorids=PublicationAuthor.find(publication.getId(),null);
-			List<Author> authors=Author.find(authorids);
-			StringBuilder sb=new StringBuilder();
-			for(Author author: authors){
-				sb.append(author+";");
-			}
-			result.put("authors",sb.toString());
-			result.put("title", publication.getTitle());
-			result.put("editor", publication.getEditor());
-			result.put("booktitle",publication.getBooktitle());
-			result.put("isbn", publication.getIsbn());
-			result.put("year",publication.getYear());
-			result.put("crossref",publication.getCrossref());
-			result.put("ee",publication.getEe());
-			result.put("url",publication.getUrl());
-			result.put("series",publication.getSeries());
-			result.put("volume",publication.getVolume());
-			results.add(result);
-		}
-		return  results;
-	}
 	//============tagging===================
 
 
