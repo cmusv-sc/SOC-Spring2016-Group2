@@ -83,16 +83,14 @@ public class TagController extends Controller {
 //========================================================================================================
     //======================post===========================
     public Result addTagpost(Long postid, String tagpost){
-        Post postadd = Post.find.where().eq("id", postid).findUnique();
         List<Tagpost> tagpostadd = Tagpost.findwithpost.where().eq("post_id", postid).findList();
         for (Tagpost tagposttemp:tagpostadd){
             if (tagposttemp.getTag().equals(tagpost)){
                 return ok(tagpost + " already existed!");
             }
         }
-        tagpostadd.add(new Tagpost(tagpost));
-        postadd.setTagposts(tagpostadd);
-        postadd.save();
+        Tagpost tagpost1 = new Tagpost(postid, tagpost);
+        tagpost1.save();
         return ok(tagpost + " added successfully!");
     }
 
