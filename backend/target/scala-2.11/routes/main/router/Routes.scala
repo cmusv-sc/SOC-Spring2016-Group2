@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/Anna/Documents/graduate2/soc/SSNetwork/backend/conf/routes
-// @DATE:Sat Apr 23 05:12:09 PDT 2016
+// @DATE:Sun Apr 24 14:28:07 PDT 2016
 
 package router
 
@@ -61,7 +61,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """year/""" + "$" + """year<[^/]+>""", """controllers.Application.getPaperByYear(year:Integer)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """title/""" + "$" + """title<[^/]+>""", """controllers.Application.getPaperByTitle(title:String)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """comment""", """controllers.ForumController.addComment()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """comment""", """controllers.ForumController.getComments(rootid:Integer, categoryid:Integer)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """comment""", """controllers.ForumController.getComments(rootid:Long, categoryid:Long)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """updateComment""", """controllers.ForumController.updateComment()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """upload""", """controllers.ForumController.uploadFile()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """post/addPost""", """controllers.PostController.addPost()"""),
@@ -70,7 +70,10 @@ class Routes(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """post/addComment""", """controllers.PostController.addComment()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """post/setAsQuestion""", """controllers.PostController.setAsQuestion()"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """post/setAnswer""", """controllers.PostController.setAnswer()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """subscribe/list/""" + "$" + """category<[^/]+>""", """controllers.SubscriptionController.loadSubscriptionList(category:String)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """subscribe/list/all""", """controllers.SubscriptionController.loadSubscriptionList()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """subscribe/list/""" + "$" + """category<[^/]+>""", """controllers.SubscriptionController.loadSubscriptionListByCategory(category:String)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """subscribe/timeline""", """controllers.SubscriptionController.loadTimeline()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """subscribe/""" + "$" + """followeeid<[^/]+>/""" + "$" + """category<[^/]+>""", """controllers.SubscriptionController.subscribe(followeeid:Long, category:String)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -185,12 +188,12 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("comment")))
   )
   private[this] lazy val controllers_ForumController_getComments6_invoker = createInvoker(
-    ForumController_1.getComments(fakeValue[Integer], fakeValue[Integer]),
+    ForumController_1.getComments(fakeValue[Long], fakeValue[Long]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.ForumController",
       "getComments",
-      Seq(classOf[Integer], classOf[Integer]),
+      Seq(classOf[Long], classOf[Long]),
       "GET",
       """""",
       this.prefix + """comment"""
@@ -335,18 +338,69 @@ class Routes(
 
   // @LINE:39
   private[this] lazy val controllers_SubscriptionController_loadSubscriptionList15_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("subscribe/list/"), DynamicPart("category", """[^/]+""",true)))
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("subscribe/list/all")))
   )
   private[this] lazy val controllers_SubscriptionController_loadSubscriptionList15_invoker = createInvoker(
-    SubscriptionController_0.loadSubscriptionList(fakeValue[String]),
+    SubscriptionController_0.loadSubscriptionList(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.SubscriptionController",
       "loadSubscriptionList",
+      Nil,
+      "GET",
+      """ Subscribe""",
+      this.prefix + """subscribe/list/all"""
+    )
+  )
+
+  // @LINE:40
+  private[this] lazy val controllers_SubscriptionController_loadSubscriptionListByCategory16_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("subscribe/list/"), DynamicPart("category", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_SubscriptionController_loadSubscriptionListByCategory16_invoker = createInvoker(
+    SubscriptionController_0.loadSubscriptionListByCategory(fakeValue[String]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.SubscriptionController",
+      "loadSubscriptionListByCategory",
       Seq(classOf[String]),
       "GET",
-      """Subscribe""",
+      """""",
       this.prefix + """subscribe/list/""" + "$" + """category<[^/]+>"""
+    )
+  )
+
+  // @LINE:41
+  private[this] lazy val controllers_SubscriptionController_loadTimeline17_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("subscribe/timeline")))
+  )
+  private[this] lazy val controllers_SubscriptionController_loadTimeline17_invoker = createInvoker(
+    SubscriptionController_0.loadTimeline(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.SubscriptionController",
+      "loadTimeline",
+      Nil,
+      "GET",
+      """""",
+      this.prefix + """subscribe/timeline"""
+    )
+  )
+
+  // @LINE:42
+  private[this] lazy val controllers_SubscriptionController_subscribe18_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("subscribe/"), DynamicPart("followeeid", """[^/]+""",true), StaticPart("/"), DynamicPart("category", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_SubscriptionController_subscribe18_invoker = createInvoker(
+    SubscriptionController_0.subscribe(fakeValue[Long], fakeValue[String]),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.SubscriptionController",
+      "subscribe",
+      Seq(classOf[Long], classOf[String]),
+      "GET",
+      """""",
+      this.prefix + """subscribe/""" + "$" + """followeeid<[^/]+>/""" + "$" + """category<[^/]+>"""
     )
   )
 
@@ -391,7 +445,7 @@ class Routes(
   
     // @LINE:25
     case controllers_ForumController_getComments6_route(params) =>
-      call(params.fromQuery[Integer]("rootid", None), params.fromQuery[Integer]("categoryid", None)) { (rootid, categoryid) =>
+      call(params.fromQuery[Long]("rootid", None), params.fromQuery[Long]("categoryid", None)) { (rootid, categoryid) =>
         controllers_ForumController_getComments6_invoker.call(ForumController_1.getComments(rootid, categoryid))
       }
   
@@ -445,8 +499,26 @@ class Routes(
   
     // @LINE:39
     case controllers_SubscriptionController_loadSubscriptionList15_route(params) =>
+      call { 
+        controllers_SubscriptionController_loadSubscriptionList15_invoker.call(SubscriptionController_0.loadSubscriptionList())
+      }
+  
+    // @LINE:40
+    case controllers_SubscriptionController_loadSubscriptionListByCategory16_route(params) =>
       call(params.fromPath[String]("category", None)) { (category) =>
-        controllers_SubscriptionController_loadSubscriptionList15_invoker.call(SubscriptionController_0.loadSubscriptionList(category))
+        controllers_SubscriptionController_loadSubscriptionListByCategory16_invoker.call(SubscriptionController_0.loadSubscriptionListByCategory(category))
+      }
+  
+    // @LINE:41
+    case controllers_SubscriptionController_loadTimeline17_route(params) =>
+      call { 
+        controllers_SubscriptionController_loadTimeline17_invoker.call(SubscriptionController_0.loadTimeline())
+      }
+  
+    // @LINE:42
+    case controllers_SubscriptionController_subscribe18_route(params) =>
+      call(params.fromPath[Long]("followeeid", None), params.fromPath[String]("category", None)) { (followeeid, category) =>
+        controllers_SubscriptionController_subscribe18_invoker.call(SubscriptionController_0.subscribe(followeeid, category))
       }
   }
 }

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/Anna/Documents/graduate2/soc/SSNetwork/backend/conf/routes
-// @DATE:Sat Apr 23 05:12:09 PDT 2016
+// @DATE:Sun Apr 24 14:28:07 PDT 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -43,12 +43,42 @@ package controllers.javascript {
     }
 
   
+    // @LINE:40
+    def loadSubscriptionListByCategory: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SubscriptionController.loadSubscriptionListByCategory",
+      """
+        function(category0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "subscribe/list/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("category", encodeURIComponent(category0))})
+        }
+      """
+    )
+  
     // @LINE:39
     def loadSubscriptionList: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.SubscriptionController.loadSubscriptionList",
       """
-        function(category0) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "subscribe/list/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("category", encodeURIComponent(category0))})
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "subscribe/list/all"})
+        }
+      """
+    )
+  
+    // @LINE:42
+    def subscribe: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SubscriptionController.subscribe",
+      """
+        function(followeeid0,category1) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "subscribe/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("followeeid", followeeid0) + "/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("category", encodeURIComponent(category1))})
+        }
+      """
+    )
+  
+    // @LINE:41
+    def loadTimeline: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.SubscriptionController.loadTimeline",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "subscribe/timeline"})
         }
       """
     )
@@ -183,6 +213,16 @@ package controllers.javascript {
     }
 
   
+    // @LINE:25
+    def getComments: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.ForumController.getComments",
+      """
+        function(rootid0,categoryid1) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "comment" + _qS([(""" + implicitly[QueryStringBindable[Long]].javascriptUnbind + """)("rootid", rootid0), (""" + implicitly[QueryStringBindable[Long]].javascriptUnbind + """)("categoryid", categoryid1)])})
+        }
+      """
+    )
+  
     // @LINE:24
     def addComment: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ForumController.addComment",
@@ -199,16 +239,6 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "updateComment"})
-        }
-      """
-    )
-  
-    // @LINE:25
-    def getComments: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.ForumController.getComments",
-      """
-        function(rootid0,categoryid1) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "comment" + _qS([(""" + implicitly[QueryStringBindable[Integer]].javascriptUnbind + """)("rootid", rootid0), (""" + implicitly[QueryStringBindable[Integer]].javascriptUnbind + """)("categoryid", categoryid1)])})
         }
       """
     )

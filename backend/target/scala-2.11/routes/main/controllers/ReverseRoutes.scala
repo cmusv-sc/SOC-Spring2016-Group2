@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/Anna/Documents/graduate2/soc/SSNetwork/backend/conf/routes
-// @DATE:Sat Apr 23 05:12:09 PDT 2016
+// @DATE:Sun Apr 24 14:28:07 PDT 2016
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -35,10 +35,28 @@ package controllers {
     }
 
   
-    // @LINE:39
-    def loadSubscriptionList(category:String): Call = {
+    // @LINE:40
+    def loadSubscriptionListByCategory(category:String): Call = {
       import ReverseRouteContext.empty
       Call("GET", _prefix + { _defaultPrefix } + "subscribe/list/" + implicitly[PathBindable[String]].unbind("category", dynamicString(category)))
+    }
+  
+    // @LINE:39
+    def loadSubscriptionList(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "subscribe/list/all")
+    }
+  
+    // @LINE:42
+    def subscribe(followeeid:Long, category:String): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "subscribe/" + implicitly[PathBindable[Long]].unbind("followeeid", followeeid) + "/" + implicitly[PathBindable[String]].unbind("category", dynamicString(category)))
+    }
+  
+    // @LINE:41
+    def loadTimeline(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "subscribe/timeline")
     }
   
   }
@@ -128,6 +146,12 @@ package controllers {
     }
 
   
+    // @LINE:25
+    def getComments(rootid:Long, categoryid:Long): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "comment" + queryString(List(Some(implicitly[QueryStringBindable[Long]].unbind("rootid", rootid)), Some(implicitly[QueryStringBindable[Long]].unbind("categoryid", categoryid)))))
+    }
+  
     // @LINE:24
     def addComment(): Call = {
       import ReverseRouteContext.empty
@@ -138,12 +162,6 @@ package controllers {
     def updateComment(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "updateComment")
-    }
-  
-    // @LINE:25
-    def getComments(rootid:Integer, categoryid:Integer): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "comment" + queryString(List(Some(implicitly[QueryStringBindable[Integer]].unbind("rootid", rootid)), Some(implicitly[QueryStringBindable[Integer]].unbind("categoryid", categoryid)))))
     }
   
     // @LINE:27

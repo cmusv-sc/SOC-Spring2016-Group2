@@ -22,7 +22,7 @@ GET    /title/:title                controllers.Application.getPaperByTitle(titl
 
 ### Forum
 POST   /comment                     controllers.ForumController.addComment()
-GET    /comment                     controllers.ForumController.getComments(rootid: Integer, categoryid: Integer)
+GET    /comment                     controllers.ForumController.getComments(rootid: Long, categoryid: Long)
 POST   /updateComment               controllers.ForumController.updateComment()
 POST   /upload                      controllers.ForumController.uploadFile()
 
@@ -35,5 +35,9 @@ POST	/post/setAsQuestion				controllers.PostController.setAsQuestion()
 POST	/post/setAnswer					controllers.PostController.setAnswer()
 
 
-#Subscribe
-GET 	/subscribe/list/:category		controllers.SubscriptionController.loadSubscriptionList(category: String)
+# Subscribe
+GET 	/subscribe/list/all				controllers.SubscriptionController.loadSubscriptionList()
+GET 	/subscribe/list/:category		controllers.SubscriptionController.loadSubscriptionListByCategory(category: String)
+GET 	/subscribe/timeline				controllers.SubscriptionController.loadTimeline()
+GET 	/subscribe/:followeeid/:category 	controllers.SubscriptionController.subscribe(followeeid: Long, category: String)
+

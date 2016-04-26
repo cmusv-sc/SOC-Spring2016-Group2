@@ -11,36 +11,36 @@ import java.util.List;
 @Entity(name="comment")
 public class Comment extends Model {
     @Id
-    private int id;
+    private Long id;
 
-    private int parentid;
-    private int authorid;
+    private Long parentid;
+    private Long authorid;
     private String content;
     private Long time;
-    private int rootid;
-    private int categoryid;
+    private Long rootid;
+    private Long categoryid;
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public int getParentid() {
+    public Long getParentid() {
         return parentid;
     }
 
-    public void setParentid(int parentid) {
+    public void setParentid(Long parentid) {
         this.parentid = parentid;
     }
 
-    public int getAuthorid() {
+    public Long getAuthorid() {
         return authorid;
     }
 
-    public void setAuthorid(int authorid) {
+    public void setAuthorid(Long authorid) {
         this.authorid = authorid;
     }
 
@@ -60,23 +60,23 @@ public class Comment extends Model {
         this.time = time;
     }
 
-    public int getRootid() {
+    public Long getRootid() {
         return rootid;
     }
 
-    public void setRootid(int rootid) {
+    public void setRootid(Long rootid) {
         this.rootid = rootid;
     }
 
-    public int getCategoryid() {
+    public Long getCategoryid() {
         return categoryid;
     }
 
-    public void setCategoryid(int categoryid) {
+    public void setCategoryid(Long categoryid) {
         this.categoryid = categoryid;
     }
 
-    public Comment(int id, int parentid, int authorid, String content, Long time, int rootid, int categoryid) {
+    public Comment(Long id, Long parentid, Long authorid, String content, Long time, Long rootid, Long categoryid) {
         this.parentid = parentid;
         this.authorid = authorid;
         this.content = content;
@@ -89,5 +89,7 @@ public class Comment extends Model {
 
     }
 
-    public static Finder<Integer, Comment> find = new Finder<Integer, Comment>(Integer.class, Comment.class);
+    public static Finder<Long, Comment> find = new Finder<Long, Comment>(Long.class, Comment.class);
+
+    
 }

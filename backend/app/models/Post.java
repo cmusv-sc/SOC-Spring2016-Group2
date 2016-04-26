@@ -1,7 +1,7 @@
 package models;
 
 import java.sql.Timestamp;
-
+import java.util.*;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -21,7 +21,7 @@ public class Post extends Model {
     public String content;
     
     /* the author of post */
-    public long authorId;
+    public Long authorId;
     
     /* if the post is a question */
     public boolean isQueustion;
@@ -29,11 +29,11 @@ public class Post extends Model {
     /* if the post is a question, answerId 
      * is the id of comment which is set as answer
      * */
-    public long answerId;
+    public Long answerId;
     
     /* post created at */
     @Column(columnDefinition = "datetime")
-    public Timestamp postAt;
+    public Date postAt;
 
     public static Finder<Long, Post> find = new Finder<Long, Post>(Post.class);
     
@@ -43,8 +43,8 @@ public class Post extends Model {
     public Post(
     		String title, 
     		String content, 
-    		long authorId,  
-    		Timestamp postAt
+    		Long authorId,  
+    		Date postAt
     		) {
     	this.title = title;
     	this.content = content;
@@ -68,7 +68,7 @@ public class Post extends Model {
 		this.content = content;
 	}
 
-	public Timestamp getPostAt() {
+	public Date getPostAt() {
 		return postAt;
 	}
 
@@ -92,19 +92,20 @@ public class Post extends Model {
 		this.title = title;
 	}
 
-	public long getAuthorId() {
+	public Long getAuthorId() {
 		return authorId;
 	}
 
-	public void setAuthorId(long authorId) {
+	public void setAuthorId(Long authorId) {
 		this.authorId = authorId;
 	}
 
-	public long getAnswerId() {
+	public Long getAnswerId() {
 		return answerId;
 	}
 
-	public void setAnswerId(long answerId) {
+	public void setAnswerId(Long answerId) {
 		this.answerId = answerId;
 	}
+
 }

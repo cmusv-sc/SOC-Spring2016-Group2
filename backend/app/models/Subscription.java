@@ -2,7 +2,6 @@ package models;
 
 import java.util.*;
 import javax.persistence.*;
-
 import play.db.ebean.*;
 import play.data.format.*;
 import play.data.validation.*;
@@ -36,17 +35,17 @@ public class Subscription extends Model {
 		return followeeId;
 	}
 
+	public String getCategory(){
+		return category;
+	}
+
 	public static Finder<Long,Subscription> find = new Finder<Long,Subscription>(
 		Long.class, Subscription.class
 		); 
 
 
 	public static List<Long> findFolloweeIdByCategory(long followerId, String category){
-		List<Subscription> subscriptions=null;
-		if(category.equals("all"))
-			subscriptions=find.where().eq("followerId", followerId).findList();
-		else
-			subscriptions=find.where().eq("followerId", followerId).eq("category", category).findList();
+		List<Subscription> subscriptions=find.where().eq("followerId", followerId).eq("category", category).findList();
 		// for(Subscription subscription:subscriptions)
 		// 	System.out.println(subscription.toString());
 		List<Long> followeeIds=new ArrayList<Long>();
@@ -56,4 +55,14 @@ public class Subscription extends Model {
 		return followeeIds;
 	}
 
+	public static Map<Long, String> findAllFollowee(long followerId){
+		List<Subscription> subscriptions=find.where().eq("followerId", followerId).findList();
+		// for(Subscription subscription:subscriptions)
+		// 	System.out.println(subscription.toString());
+		Map<Long, String> map=new HashMap<Long, String>();
+		for(Subscription subscription:subscriptions){
+			map.put(subscription.getFolloweeId(), subscription.getCategory());
+		}
+		return map;
+	}
 }

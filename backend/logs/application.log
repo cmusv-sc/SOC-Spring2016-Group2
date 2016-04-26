@@ -1,5 +1,5 @@
-2016-04-23 05:13:34,684 [INFO] from play.core.server.NettyServer in pool-4-thread-1 - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
-2016-04-23 05:13:46,258 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
-2016-04-23 05:13:46,624 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:mysql://localhost:3306/demo
-2016-04-23 05:13:47,317 [WARN] from application in ForkJoinPool-1-worker-1 - application.conf @ file:/Users/Anna/Documents/graduate2/soc/SSNetwork/backend/target/scala-2.11/classes/application.conf: 353: parsers.text.maxLength is deprecated, use play.http.parser.maxMemoryBuffer instead
-2016-04-23 05:13:47,604 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
+2016-04-26 02:13:35,211 [INFO] from play.core.server.NettyServer in pool-4-thread-3 - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2016-04-26 02:14:53,477 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
+2016-04-26 02:14:53,915 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:mysql://localhost:3306/demo
+2016-04-26 02:14:54,783 [WARN] from application in ForkJoinPool-1-worker-1 - application.conf @ file:/Users/Anna/Documents/graduate2/soc/SSNetwork/backend/target/scala-2.11/classes/application.conf: 353: parsers.text.maxLength is deprecated, use play.http.parser.maxMemoryBuffer instead
+2016-04-26 02:14:55,042 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)

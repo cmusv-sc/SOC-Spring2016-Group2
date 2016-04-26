@@ -29,14 +29,14 @@ public class ForumController extends Controller{
         return ok(toJson(comment));
     }
 
-    public Result getComments(int rootid, int categoryid) {
-        return ok(toJson(getCommentsRecursively(rootid, categoryid, 0)));
+    public Result getComments(Long rootid, Long categoryid) {
+        return ok(toJson(getCommentsRecursively(rootid, categoryid, new Long(0))));
     }
 
     public Result updateComment() {
         Map<String, String[]> params = request().body().asFormUrlEncoded();
 
-        int id = Integer.parseInt(params.get("id")[0]);
+        Long id = Long.parseLong(params.get("id")[0]);
         String content = params.get("content")[0];
 
         Comment comment = Comment.find.byId(id);
@@ -59,7 +59,7 @@ public class ForumController extends Controller{
         }
     }
     
-    public ArrayList<NestedComment> getCommentsRecursively(int rootid, int categoryid, int parentid){
+    public ArrayList<NestedComment> getCommentsRecursively(Long rootid, Long categoryid, Long parentid){
         ArrayList<NestedComment> list = new ArrayList<NestedComment>();
         List<Comment> comments = Comment.find.where().eq("parentid", parentid).eq("rootid", rootid).eq("categoryid", categoryid).findList();
         for (int i = 0; i < comments.size(); i++){
