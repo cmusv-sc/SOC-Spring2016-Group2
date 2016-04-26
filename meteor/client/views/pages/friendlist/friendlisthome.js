@@ -32,7 +32,7 @@ Template.friendlisthome.helpers({
 });
 
 Template.friendlisthome.onCreated(function () {
-    var myid = "6AgxTZKjsgemJHbtd";
+    var myid = "iWprJqHxewrdGW4EH";
     var myname = User2.findOne(myid).name;
     Template.friendlisthome.currentuser = myname
     Session.setPersistent("myid", myid);
@@ -94,7 +94,7 @@ Template.request.events({
     var post = this;
     // checks if the actual clicked element has the class `delete`
     if (event.target.className == "sendername") {
-        Session.setPersistent("idsession", this._id);
+        Session.setPersistent("idsession", this.senderid);
         Session.setPersistent("namesession", this.sendername);
         Session.setPersistent("summarysession", this.sendersummary);
         window.location.href='/viewRequestInfo'
@@ -106,10 +106,30 @@ Template.request.events({
 Template.viewFriendInfo.helpers({
   context: function() {
     var result = _.clone(this);
+    var myid = Session.get("myid")
+    var id = Session.get("idsession")
     var person = Session.get("namesession")
     var summary = Session.get("summarysession")
+    var mutual = "";
+    Friends.find(
+      {
+        myid: id
+      }
+    ).forEach(function(obj){
+        var friendid = obj.friendid
+        if (myid != friendid) {
+            var count = Friends.find({myid: myid, friendid: friendid}).count();
+            if (count > 0) {
+                mutual = mutual + obj.name + "|";
+            }
+        }
+    })
+    if (mutual == "") {
+        mutual = "None"
+    }
     result.name = person;
     result.summary = summary;
+    result.mutual = mutual;
     return result;
   }
 });
@@ -117,10 +137,30 @@ Template.viewFriendInfo.helpers({
 Template.viewRequestInfo.helpers({
   context: function() {
     var result = _.clone(this);
+    var myid = Session.get("myid")
+    var id = Session.get("idsession")
     var person = Session.get("namesession")
     var summary = Session.get("summarysession")
+    var mutual = "";
+    Friends.find(
+      {
+        myid: id
+      }
+    ).forEach(function(obj){
+        var friendid = obj.friendid
+        if (myid != friendid) {
+            var count = Friends.find({myid: myid, friendid: friendid}).count();
+            if (count > 0) {
+                mutual = mutual + obj.name + "|";
+            }
+        }
+    })
+    if (mutual == "") {
+        mutual = "None"
+    }
     result.name = person;
     result.summary = summary;
+    result.mutual = mutual;
     return result;
   }
 });

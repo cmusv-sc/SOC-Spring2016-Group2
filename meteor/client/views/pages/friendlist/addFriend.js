@@ -42,10 +42,30 @@ Template.addFriend.events({
 Template.addFriendInfo.helpers({
   context: function() {
     var result = _.clone(this);
+    var myid = Session.get("myid")
+    var id = Session.get("findid")
     var person = Session.get("namesession")
     var summary = Session.get("summarysession")
+    var mutual = "";
+    Friends.find(
+      {
+        myid: id
+      }
+    ).forEach(function(obj){
+        var friendid = obj.friendid
+        if (myid != friendid) {
+            var count = Friends.find({myid: myid, friendid: friendid}).count();
+            if (count > 0) {
+                mutual = mutual + obj.name + "|";
+            }
+        }
+    })
+    if (mutual == "") {
+        mutual = "None"
+    }
     result.name = person;
     result.summary = summary;
+    result.mutual = mutual;
     return result;
   }
 });
