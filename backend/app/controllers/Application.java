@@ -4,6 +4,7 @@ import java.io.File;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.fasterxml.jackson.databind.util.JSONPObject;
 import com.google.gson.Gson;
 
 import models.Author;
@@ -65,7 +66,6 @@ public class Application extends Controller {
         return ok(Json.toJson(results));
     }
     public Result getPaperByTitle(String title){
-
         List<Publication> publications = Publication.find("byTitle", null, title,null);
 
         List<ObjectNode> results=new ArrayList<ObjectNode>();
@@ -112,11 +112,47 @@ public class Application extends Controller {
         return ok(jsonpObject);
     }
 
+    public Result getAuthors(String author){
+        //1. get the author id by its name
+        List<Long>  author_ids=Author.find_Author_Id(author);
+        //2. find publication id by author id
+        List<Long> pubids=PublicationAuthor.find_pub_id(author_ids);
+        System.out.println(pubids.toString());
+        //3. find publications by its id
+        List<Publication> publications=Publication.find("byId",null,null,pubids);
+        //4. find
+        List<ObjectNode> results=new ArrayList<ObjectNode>();
+        results=Publication.findAuthors(publications,results, "getAuthors");
+        //get 5 co authors
+        List<String> coauthors=new ArrayList<String>();
+        for(ObjectNode result:results){
+            String authors= result.findValue("authors").toString();
+            String[] res=authors.split("(;|\")");
+            for(String r:res){
+                coauthors.add(r);
+            }
+        }
+        ObjectNode result = Json.newObject();
+        result.put("GsearchResultClass","getCoauthors");
+        result.put("ee","www.google.com");
+        int size=coauthors.size();
+        if(size>10){
+            for(int i=1;i<6;i++){
+                result.put("a"+i,coauthors.get(i+1));
+            }
+        }else{
+            for(int i=1;i<size-1;i++){
+                result.put("a"+i,coauthors.get(i+1));
+            }
+        }
+        List<ObjectNode> result_json=new ArrayList<ObjectNode>();
+        result_json.add(result);
+        return ok(Json.toJson(result_json));
+
+    }
     /***
      * paper suggestion
-     * ====================================================
-     * @param id
-     * @return
+     * =========================================================================
      */
 
 

@@ -280,7 +280,10 @@ public class Publication extends Model {
 			for(Author author: authors){
 				sb.append(author+";");
 			}
+			List<Comment> comments = Comment.find.where().eq("rootid", publication.getId()).findList();
+			List<Tagpub> tags = Tagpub.findwithpublication.where().eq("pub_id", publication.getId()).findList();
 			result.put("GsearchResultClass",str);
+			result.put("popularity",comments.size()+tags.size());
 			result.put("authors",sb.toString());
 			result.put("title", publication.getTitle());
 			result.put("editor", publication.getEditor());
@@ -296,7 +299,22 @@ public class Publication extends Model {
 		}
 		return  results;
 	}
-	
+	public static List<ObjectNode> findAuthors(List<Publication> publications, List<ObjectNode> results, String str){
+		for(Publication publication : publications) {
+			// System.out.println(publication.toString());
+			ObjectNode result = Json.newObject();
+			List<PublicationAuthor> authorids=PublicationAuthor.find(publication.getId(),null);
+			List<Author> authors=Author.find(authorids);
+			StringBuilder sb=new StringBuilder();
+			for(Author author: authors){
+				sb.append(author+";");
+			}
+			result.put("GsearchResultClass",str);
+			result.put("authors",sb.toString());
+			results.add(result);
+		}
+		return  results;
+	}
 	//============tagging===================
 	//I also modified the column name of id as "pub_id".
 	//Please contact me if there is any conflicts that I may have caused.

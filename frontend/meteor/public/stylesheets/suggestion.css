@@ -24,6 +24,20 @@ h1{
     height:90px;
 }
 
+.btn-outline {
+    color: inherit;
+    background-color: transparent;
+    transition: all .5s;
+}
+.btn-primary {
+    background-color: #1ab394;
+    border-color: #1ab394;
+    color: #FFFFFF;
+}
+.btn-primary.btn-outline {
+    color: #1ab394;
+}
+
 #searchForm{
     /* The search form. */
     background-color:#4C5A65;

@@ -22,6 +22,7 @@ GET    /title/:title                controllers.Application.getPaperByTitle(titl
 GET    /all                         controllers.Application.getAllPublications()
 GET    /keyword/:keyWord            controllers.Application.getPaperBykeyWord(keyWord:String)
 GET    /author/:author              controllers.Application.getCoAuthors(author:String)
+GET    /coauthor/:author            controllers.Application.getAuthors(author:String)
 
 ### Forum
 POST   /comment                     controllers.ForumController.addComment()
@@ -52,7 +53,8 @@ GET    /gettagpubs/:title           controllers.TagController.getTagpubs(title:S
 GET    /getpublications/:tagpub     controllers.TagController.getPublications(tagpub:String)
 GET    /getTag/:pub_id              controllers.TagController.getTagByPub_id(pub_id:Long)
 
-### Popularity
-#GET    /popularity/:root_id          controllers.PopularityController.getPop(root_id:String)
+#Comments Popularity
+GET    /getCommentSum/:rootid                   controllers.Popularity.getCommentSum(rootid:Integer)
+GET    /getTagSum/:pubid                          controllers.Popularity.getTagSum(pubid:Long)
 
 
