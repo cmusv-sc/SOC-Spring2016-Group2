@@ -61,10 +61,10 @@ public class UserProfileController extends Controller {
 		}
 		UserProfile data = userProfile.get(0);
 		ObjectNode result = Json.newObject();
-		result.put("collaboratorNumbers",String.valueOf(data.getCollaboratorNumbers()));
-		result.put("subscriberNumbers",String.valueOf(data.getSubscriberNumbers()));
+		result.put("collaboratornumber",String.valueOf(data.getCollaboratorNumbers()));
+		result.put("subscribenumbers",String.valueOf(data.getSubscriberNumbers()));
 		result.put("tags",data.getTags());
-		result.put("paperTitles",data.getPaperTitles());
+		result.put("titles",data.getPaperTitles());
 
 		return ok(Json.toJson(result));
     }
