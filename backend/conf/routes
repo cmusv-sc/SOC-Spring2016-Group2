@@ -21,8 +21,8 @@ GET    /year/:year                  controllers.Application.getPaperByYear(year:
 GET    /title/:title                controllers.Application.getPaperByTitle(title:String)
 GET    /all                         controllers.Application.getAllPublications()
 GET    /keyword/:keyWord            controllers.Application.getPaperBykeyWord(keyWord:String)
-GET    /author/:author              controllers.Application.getCoAuthors(author:String)
-GET    /coauthor/:author            controllers.Application.getAuthors(author:String)
+GET    /author/:author              controllers.Application.getAuthors(author:String)
+GET    /coauthor/:author            controllers.Application.getCoAuthors(author:String)
 
 ### Forum
 POST   /comment                     controllers.ForumController.addComment()

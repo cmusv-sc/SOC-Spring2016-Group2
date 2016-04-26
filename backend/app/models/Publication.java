@@ -311,6 +311,7 @@ public class Publication extends Model {
 			}
 			result.put("GsearchResultClass",str);
 			result.put("authors",sb.toString());
+			//System.out.println(sb.toString());
 			results.add(result);
 		}
 		return  results;

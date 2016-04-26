@@ -24,19 +24,6 @@ h1{
     height:90px;
 }
 
-.btn-outline {
-    color: inherit;
-    background-color: transparent;
-    transition: all .5s;
-}
-.btn-primary {
-    background-color: #1ab394;
-    border-color: #1ab394;
-    color: #FFFFFF;
-}
-.btn-primary.btn-outline {
-    color: #1ab394;
-}
 
 #searchForm{
     /* The search form. */
@@ -144,9 +131,11 @@ span.arrow{
     cursor:pointer;
 }
 
+
 #submitButton:hover{
     background-position:left bottom;
 }
+
 
 
 /* The Search tutorialzine.com / Search the Web radio buttons */

@@ -8,6 +8,7 @@ Template.suggestion.events({
     'click #button': function(event,template){  
         console.log($('#button').text());
         console.log(Session.get('randomNum'));
+        console.log("~~~~~~~~~~~~~~~~~~~~~~");
         console.log($(event.toElement).text());
         function result(r) {
 
@@ -19,7 +20,7 @@ Template.suggestion.events({
             // GsearchResultClass is passed by the google API
             switch (r.GsearchResultClass) {
             
-                case 'getPaperByKeyWord':
+                case 'getAuthors':
                 arr = [
                     '<div class="webResult">',
                     '<h2><a href="', r.ee, '" target="_blank">', r.title, '</a></h2>',
@@ -56,11 +57,11 @@ Template.suggestion.events({
             }
         }
         if($('#button').text()){
-            getPaperByKeyWord($(event.toElement).text());
+            getPaperByAuthor($(event.toElement).text());
         }
-        function getPaperByKeyWord(input){
+        function getPaperByAuthor(input){
             // Session.set('devices', getPaperByKeyWord);     
-            var stringUrl = "http://localhost:9000/keyword/"+input; 
+            var stringUrl = "http://localhost:9000/author/"+input; 
                 var resultsDiv = $('#resultsDiv');
                 $.ajax({
                     type : "GET",
@@ -177,6 +178,7 @@ Template.suggestion.onRendered(function() {
         if(input!=null){
             getSuggestions(input);
             getPaperRec(input);
+
         }
 		if(radio==='keyWord'){
 			getPaperByKeyWord(input);

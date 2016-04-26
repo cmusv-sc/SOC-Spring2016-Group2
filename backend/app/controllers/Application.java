@@ -26,7 +26,11 @@ import static play.libs.Json.toJson;
 import java.io.IOException;
 import java.util.*;
 
+
 public class Application extends Controller {
+
+
+
 
     public Result index() {
 
@@ -56,16 +60,27 @@ public class Application extends Controller {
      *=======================================================
      * Paper suggestion
      */
+    public void setHeaders(){
+        response().setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
+        response().setHeader("Access-Control-Max-Age", "3600");
+        response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content- Type, Accept, Authorization, X-Auth-Token");
+        response().setHeader("Access-Control-Allow-Credentials", "true");
+        response().setHeader("Access-Control-Allow-Origin", "*");
+    }
 
     public Result getPaperByYear(int year) {
+        setHeaders();
         System.out.println(year);
         List<ObjectNode> results=new ArrayList<ObjectNode>();
         List<Publication> publications = Publication.find("byYear", year, null,null);
         System.out.println("There are " + publications.size() + " publication"+year);
         results=Publication.findPubDetails(publications,results,"getPaperByYear");
+//        Collections.sort(publications, (o1, o2) ->
+//                o1.getClass(). - o2.getCustomerCount());
         return ok(Json.toJson(results));
     }
     public Result getPaperByTitle(String title){
+        setHeaders();
         List<Publication> publications = Publication.find("byTitle", null, title,null);
 
         List<ObjectNode> results=new ArrayList<ObjectNode>();
@@ -74,6 +89,7 @@ public class Application extends Controller {
         return ok(Json.toJson(results));
     }
     public Result getPaperBykeyWord(String keyword) throws IOException {
+        setHeaders();
         System.out.println("call getPaperDetails....");
         List<ObjectNode> results=new ArrayList<ObjectNode>();
         try {
@@ -89,6 +105,7 @@ public class Application extends Controller {
 
 
     public Result getAllPublications(){
+        setHeaders();
         //get all publications details
         List<ObjectNode> results=new ArrayList<ObjectNode>();
         List<Publication> publications=Publication.find.all();
@@ -96,7 +113,8 @@ public class Application extends Controller {
         JsonNode jsonNode=Json.toJson(results);
         return ok(jsonNode);
     }
-    public Result getCoAuthors(String author){
+    public Result getAuthors(String author){
+        setHeaders();
         System.out.println("call get coauthors...");
         //1. get the author id by its name
         List<Long>  author_ids=Author.find_Author_Id(author);
@@ -107,56 +125,54 @@ public class Application extends Controller {
         List<Publication> publications=Publication.find("byId",null,null,pubids);
         //4. find
         List<ObjectNode> results=new ArrayList<ObjectNode>();
-        results=Publication.findPubDetails(publications,results, "getCoAuthors");
+        results=Publication.findPubDetails(publications,results, "getAuthors");
         JsonNode jsonpObject=Json.toJson(results);
         return ok(jsonpObject);
     }
 
-    public Result getAuthors(String author){
+    public Result getCoAuthors(String author){
+        setHeaders();
         //1. get the author id by its name
         List<Long>  author_ids=Author.find_Author_Id(author);
+        System.out.println(author_ids);
         //2. find publication id by author id
         List<Long> pubids=PublicationAuthor.find_pub_id(author_ids);
         System.out.println(pubids.toString());
         //3. find publications by its id
         List<Publication> publications=Publication.find("byId",null,null,pubids);
+        System.out.println(publications);
         //4. find
         List<ObjectNode> results=new ArrayList<ObjectNode>();
-        results=Publication.findAuthors(publications,results, "getAuthors");
+        results=Publication.findPubDetails(publications,results, "getCoAuthors");
         //get 5 co authors
         List<String> coauthors=new ArrayList<String>();
         for(ObjectNode result:results){
+
             String authors= result.findValue("authors").toString();
             String[] res=authors.split("(;|\")");
             for(String r:res){
                 coauthors.add(r);
             }
         }
+        System.out.println(coauthors);
         ObjectNode result = Json.newObject();
         result.put("GsearchResultClass","getCoauthors");
-        result.put("ee","www.google.com");
-        int size=coauthors.size();
-        if(size>10){
-            for(int i=1;i<6;i++){
-                result.put("a"+i,coauthors.get(i+1));
-            }
-        }else{
-            for(int i=1;i<size-1;i++){
-                result.put("a"+i,coauthors.get(i+1));
-            }
-        }
         List<ObjectNode> result_json=new ArrayList<ObjectNode>();
+        int index=coauthors.size();
+        if(coauthors.size()>8){
+            index=6;
+        }
+        for(int i=1;i<index;i++){
+            result.put("a"+i,coauthors.get(i));
+
+        }
         result_json.add(result);
         return ok(Json.toJson(result_json));
-
     }
     /***
      * paper suggestion
      * =========================================================================
      */
-
-
-
 
     public Result getPublicationWithAuthorsById(int id){
         String sql = "select * "+
