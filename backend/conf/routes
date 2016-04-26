@@ -57,7 +57,7 @@ GET    /getTagpost/:post_id                 controllers.TagController.getTagByPo
 
 ### Testing New Features
 GET    /year/:year                  controllers.Application.getPublicationWithAuthorsByYear(year: Integer)
-GET    /id/:id                  controllers.Application.getPublicationWithAuthorsById(id: Integer)
+GET    /id/:id                      controllers.Application.getPublicationWithAuthorsById(id: Integer)
 GET    /title/:title                controllers.Application.getPublicationWithAuthorsByTitle(title: String)
 
 
