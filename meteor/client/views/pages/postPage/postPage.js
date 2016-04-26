@@ -12,7 +12,6 @@ Template.postPage.events({
 	'submit #searchPostForm': function(event) {
 		event.preventDefault();
 		var keyword = event.target.keyword.value;
-		console.log(keyword);
         HTTP.call(
                 'GET',
                 'http://localhost:9000/post/search/' + keyword,
@@ -20,19 +19,13 @@ Template.postPage.events({
                 function(error, response) {
                     if(error) {
                     	alert(error);
-                        console.log(error);
                     } else {
-                        console.log(response);
                         var results = response.data;
                     	if(results.length <= 0) {
                     		alert("No record found");
                     	} else {
                     		Meteor.call('removeAllPosts');
                     		for(var i = 0; i < results.length; i++) {
-                    			console.log(results[i].title);
-                    			console.log(results[i].authorId);
-                    			console.log(results[i].postAt);
-                    			console.log(results[i].content);
                     			Posts.insert({
                     				title: results[i].title,
                     				author: results[i].authorId,
@@ -55,32 +48,24 @@ Template.postPage.events({
 		Meteor.call('removeAllPosts');
 		var post = {
 				"title": title,
-				"authorId": Meteor.userId(),
+				"authorId": 3232,
 				"content": content,
 				"postAt": new Date()
 			};
 		Posts.insert(post);
-		var data = {
-			params: {
-				"title": title,
-				"authorId": Meteor.userId(),
-				"content": content,
-				"postAt": new Date(),
+		var url = "http://localhost:9000/post/addPost";
+		var args = {};
+		args["title"] = title;
+		args["authorId"] = 232;
+		args["content"] = content;
+		args["postAt"] = new Date();
+		Meteor.call('postToBackend', url, args, function (err, res){
+			if(err) {
+				console.log(err);
+			} else {
+				console.log(res);
 			}
-		}
-		HTTP.call(
-				'POST',
-				'http://localhost:9000/post/addPost',
-				data,
-				function(error, response) {
-					if(error) {
-						console.log(error);
-						alert(error);
-					} else {
-						console.log(response);
-					}
-				}
-		);
+		});
 	}
 });
 

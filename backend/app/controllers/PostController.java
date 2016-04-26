@@ -17,6 +17,8 @@ import play.libs.Json;
 
 public class PostController extends Controller {
 	
+	
+
 	/* add a new post to database */
 	public Result addPost() {
 		response().setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
@@ -31,6 +33,10 @@ public class PostController extends Controller {
 		String title = jsonNode.path("title").asText();
 		String content = jsonNode.path("content").asText();
 		long authorId = jsonNode.path("authorId").asLong();
+		System.out.println("title\t" + title);
+		System.out.println("content\t" + content);
+		System.out.println("authorId" + authorId);
+		System.out.println("timestamp" + jsonNode.path("postAt").asText());
 		Timestamp postAt = Timestamp.valueOf(jsonNode.path("postAt").asText());
 		new Post(title, content, authorId, postAt).save();
 		return ok(toJson("success"));
