@@ -8,8 +8,8 @@ Meteor.startup(function () {
   	}
 	process.env.MAIL_URL = 'smtp://' + encodeURIComponent(smtp.username) + ':' + encodeURIComponent(smtp.password) + '@' + encodeURIComponent(smtp.server) + ':' + smtp.port;
   
-	Accounts.emailTemplates.from = 'Email Support <support@bookMyTravel.com>';
-	Accounts.emailTemplates.siteName = 'Book My Travel';
+	Accounts.emailTemplates.from = 'Email Support <support@serviceorientedcomputinggroup2.com>';
+	Accounts.emailTemplates.siteName = 'Scientific Social Network';
 
 	Accounts.emailTemplates.verifyEmail.subject = function(user) {
 		return 'Confirm Your Email Address';
@@ -25,10 +25,8 @@ Meteor.startup(function () {
 
 	Accounts.emailTemplates.resetPassword.text = function (user, url) {
 	    var signature = "MySite Bot";
-	    //var president = President.findOne();
-	    //if (president)
-	    //    president = Meteor.users.findOne(president.presidentId);
-	    //    signature = president.profile.displayName + ", the MySite President.";
+	    
+	    url = "http://54.187.53.141";
 
 	    return "Dear " + user.profile.displayName + ",\n\n" +
 	        "Click the following link to set your new password:\n" +
