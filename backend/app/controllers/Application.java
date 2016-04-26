@@ -7,6 +7,18 @@ import models.*;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
+<<<<<<< HEAD
+=======
+
+import com.avaje.ebean.Ebean;
+import com.avaje.ebean.Model;
+import com.avaje.ebean.SqlRow;
+
+import static play.data.Form.form;
+import static play.libs.Json.toJson;
+
+
+>>>>>>> fb2c9b7c48cf5e451118c925959035788cac6486
 import java.util.*;
 
 public class Application extends Controller {
@@ -113,5 +125,100 @@ public class Application extends Controller {
             results.add(result);
         }
         return ok(Json.toJson(results));
+    }
+    
+    public Result getPublicationWithAuthorsById(int id){
+        String sql = "select * "+
+                "from publication as p join" +
+                " (select pa.publication_id, a.id, a.name from publication_author as pa join author as a where pa.author_id=a.id) as t" +
+                " where p.pub_id=t.publication_id and p.pub_id=" + id;
+        return ok(toJson(joinPublicationAndAuthor(sql)));
+    }
+
+    public Result getPublicationWithAuthorsByYear(int year){
+        String sql = "select * "+
+                "from publication as p join" +
+                " (select pa.publication_id, a.id, a.name from publication_author as pa join author as a where pa.author_id=a.id) as t" +
+                " where p.pub_id=t.publication_id and year=" + year;
+        return ok(toJson(joinPublicationAndAuthor(sql)));
+    }
+
+    public Result getPublicationWithAuthorsByTitle(String title){
+        String sql = "select * "+
+                "from publication as p join" +
+                " (select pa.publication_id, a.id, a.name from publication_author as pa join author as a where pa.author_id=a.id) as t" +
+                " where p.pub_id=t.publication_id and title like '%" + title + "%'";
+        return ok(toJson(joinPublicationAndAuthor(sql)));
+    }
+
+    public ArrayList<PublicationWithAuthors> joinPublicationAndAuthor(String sql){
+//        System.out.println(sql);
+        List<SqlRow> sqlRows = Ebean.createSqlQuery(sql).findList();
+        ArrayList<PublicationWithAuthors> results = new ArrayList<PublicationWithAuthors>();
+        Long prev = 0L;
+        for (int i = 0; i < sqlRows.size(); i++){
+            SqlRow sqlRow = sqlRows.get(i);
+            if (!sqlRow.getLong("publication_id").equals(prev)){
+                prev = sqlRow.getLong("publication_id");
+                Publication publication = new Publication();
+                publication.setPubkey(sqlRow.getString("pubkey"));
+                publication.setTitle(sqlRow.getString("title"));
+                publication.setEditor(sqlRow.getString("editor"));
+                publication.setYear(sqlRow.getString("year"));
+                publication.setIsbn(sqlRow.getString("isbn"));
+                publication.setUrl(sqlRow.getString("url"));
+                publication.setVolume(sqlRow.getString("volume"));
+                publication.setPages(sqlRow.getString("pages"));
+                publication.setMdate(sqlRow.getString("mdate"));
+                publication.setSeries(sqlRow.getString("series"));
+                publication.setPublisher(sqlRow.getString("publisher"));
+                publication.setBooktitle(sqlRow.getString("booktitle"));
+                publication.setCrossref(sqlRow.getString("crossref"));
+                publication.setEe(sqlRow.getString("ee"));
+                publication.setId(sqlRow.getLong("publication_id"));
+                ArrayList<Author> authors = new ArrayList<Author>();
+                Author author = new Author(sqlRow.getString("name"));
+                author.setId(sqlRow.getLong("id"));
+                authors.add(author);
+                PublicationWithAuthors pwa = new PublicationWithAuthors(publication, authors);
+                results.add(pwa);
+            }else {
+                Author author = new Author(sqlRow.getString("name"));
+                author.setId(sqlRow.getLong("id"));
+                results.get(results.size()-1).authors.add(author);
+            }
+
+        }
+        return results;
+    }
+
+    public class PublicationWithAuthors{
+        private Publication publication;
+        private ArrayList<Author> authors;
+        public PublicationWithAuthors(){
+            publication = new Publication();
+            authors = new ArrayList<Author>();
+        }
+
+        public PublicationWithAuthors(Publication publication, ArrayList<Author> authors){
+            this.publication = publication;
+            this.authors = authors;
+        }
+
+        public ArrayList<Author> getAuthors() {
+            return authors;
+        }
+
+        public void setAuthors(ArrayList<Author> authors) {
+            this.authors = authors;
+        }
+
+        public Publication getPublication() {
+            return publication;
+        }
+
+        public void setPublication(Publication publication) {
+            this.publication = publication;
+        }
     }
 }
