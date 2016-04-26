@@ -12,7 +12,8 @@ import com.avaje.ebean.Model;
 @Entity(name="post")
 public class Post extends Model {
     @Id
-	public Long id;
+    @Column(name="post_id")
+    public Long id;
 
     /* the title of the post */
     public String title;
