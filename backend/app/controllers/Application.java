@@ -75,10 +75,16 @@ public class Application extends Controller {
         List<Publication> publications = Publication.find("byYear", year, null,null);
         System.out.println("There are " + publications.size() + " publication"+year);
         results=Publication.findPubDetails(publications,results,"getPaperByYear");
-//        Collections.sort(publications, (o1, o2) ->
-//                o1.getClass(). - o2.getCustomerCount());
+        Collections.sort(results, new Comparator<ObjectNode>(){
+            public int compare(ObjectNode o1, ObjectNode o2){
+                     String o1_pop=o1.get("popularity").toString();
+                     String o2_pop=o2.get("popularity").toString();
+                    return Integer.parseInt(o2_pop)-Integer.parseInt(o1_pop);
+            }
+        });
         return ok(Json.toJson(results));
     }
+
     public Result getPaperByTitle(String title){
         setHeaders();
         List<Publication> publications = Publication.find("byTitle", null, title,null);

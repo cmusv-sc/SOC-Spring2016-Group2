@@ -177,11 +177,13 @@ Template.suggestion.onRendered(function() {
 		console.log(radio);
         if(input!=null){
             getSuggestions(input);
-            getPaperRec(input);
+            $('#suggestionDiv').empty();
 
         }
 		if(radio==='keyWord'){
 			getPaperByKeyWord(input);
+            getPaperRec(input);
+
 		}
 		if(radio==='byYear'){
 			getPaperByYear(input);
@@ -206,7 +208,7 @@ Template.suggestion.onRendered(function() {
 		function getSuggestions(input){
         
            // alert("hi"+input);
-          // suggestions.splice(0,suggestions.length)
+            suggestions.splice(0,suggestions.length)
           $.getJSON("http://suggestqueries.google.com/complete/search?callback=?",
                 {
                   "hl":"en", // Language
@@ -219,10 +221,6 @@ Template.suggestion.onRendered(function() {
                 });
                 
                 suggestions.length = 5; // prune suggestions list to only 5 items
-              //   for(var i=1;i<6;i++){
-              //     console.log(suggestions[i-1].value);
-              
-              // }
                
         
           });
@@ -472,8 +470,6 @@ Template.suggestion.onRendered(function() {
 	    }
 
         function getPaperRec(input){
-            console.log("=================");
-            console.log(input);
            var stringUrl = "http://localhost:9000/coauthor/"+input; 
             var resultsDiv = $('#suggestionDiv');
             $.ajax({
@@ -488,9 +484,14 @@ Template.suggestion.onRendered(function() {
                    // console.log("Data Loaded: " + JSON.stringify(response));
                     $('#more').remove();  
                     var results=response;
-                    console.log("==================");
-                    console.log(results);
+                    var length=results.length;
                     console.log(results.length);
+                    console.log(results[0]);
+                    if(results[0]["a1"]==null){
+                        $('#suggestionDiv').remove();  
+                    }
+                   // $("#button.attr("value")").remove();
+                
                     if (results.length) {
 
                     // If results were returned, add them to a pageContainer div,
@@ -524,6 +525,7 @@ Template.suggestion.onRendered(function() {
                         console.log("error : " + textStatus);
                     }
                 });
+
         }
         
 
