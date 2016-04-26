@@ -22,7 +22,7 @@ public class Post extends Model {
     public String content;
     
     /* the author of post */
-    public long authorId;
+    public Long authorId;
     
     /* if the post is a question */
     public boolean isQueustion;
