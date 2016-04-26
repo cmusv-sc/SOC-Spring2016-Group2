@@ -1,10 +1,10 @@
 package models;
 
 import java.sql.Timestamp;
+import java.util.List;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
+
 import com.avaje.ebean.Model;
 /**
  * This class defines one post
@@ -12,7 +12,8 @@ import com.avaje.ebean.Model;
 @Entity(name="post")
 public class Post extends Model {
     @Id
-	public Long id;
+    @Column(name="post_id")
+    public Long id;
 
     /* the title of the post */
     public String title;
@@ -21,7 +22,7 @@ public class Post extends Model {
     public String content;
     
     /* the author of post */
-    public long authorId;
+    public Long authorId;
     
     /* if the post is a question */
     public boolean isQueustion;
@@ -29,7 +30,7 @@ public class Post extends Model {
     /* if the post is a question, answerId 
      * is the id of comment which is set as answer
      * */
-    public long answerId;
+    public Long answerId;
     
     /* post created at */
     @Column(columnDefinition = "datetime")
@@ -43,7 +44,7 @@ public class Post extends Model {
     public Post(
     		String title, 
     		String content, 
-    		long authorId,  
+    		Long authorId,  
     		Timestamp postAt
     		) {
     	this.title = title;
@@ -107,4 +108,20 @@ public class Post extends Model {
 	public void setAnswerId(long answerId) {
 		this.answerId = answerId;
 	}
+	
+	//=====================tagging=================
+	//I also changed the id's column name as post_id, please contact me
+	//if there is any conflict that I may have caused you
+	@OneToMany(mappedBy = "post", cascade = CascadeType.ALL)
+	public List<Tagpost> tagposts;
+
+	public List<Tagpost> getTagposts() {
+		return tagposts;
+	}
+
+	public void setTagposts(List<Tagpost> tagposts) {
+		this.tagposts = tagposts;
+	}
+
+	//============tagging===================
 }

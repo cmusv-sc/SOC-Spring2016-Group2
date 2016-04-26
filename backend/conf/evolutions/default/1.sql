@@ -3,6 +3,13 @@
 
 # --- !Ups
 
+create table tagpost (
+  tagpost_id                bigint auto_increment not null,
+  tag                       varchar(255),
+  post_id                   bigint,
+  constraint pk_tagpost primary key (tagpost_id))
+;
+
 create table tagpub (
   tagpub_id                 bigint auto_increment not null,
   tag                       varchar(255),
@@ -28,14 +35,14 @@ create table comment (
 ;
 
 create table post (
-  id                        bigint auto_increment not null,
+  post_id                   bigint auto_increment not null,
   title                     varchar(255),
   content                   varchar(255),
   author_id                 bigint,
   is_queustion              tinyint(1) default 0,
   answer_id                 bigint,
   post_at                   datetime,
-  constraint pk_post primary key (id))
+  constraint pk_post primary key (post_id))
 ;
 
 create table post_comment (
@@ -79,14 +86,28 @@ create table thumb (
   constraint pk_thumb primary key (id))
 ;
 
-alter table tagpub add constraint fk_tagpub_publication_1 foreign key (pub_id) references publication (pub_id) on delete restrict on update restrict;
-create index ix_tagpub_publication_1 on tagpub (pub_id);
+create table user_profile (
+  id                        bigint auto_increment not null,
+  user_name                 varchar(255),
+  collaborator_numbers      integer,
+  subscriber_numbers        integer,
+  tags                      varchar(255),
+  paper_titles              varchar(255),
+  constraint pk_user_profile primary key (id))
+;
+
+alter table tagpost add constraint fk_tagpost_post_1 foreign key (post_id) references post (post_id) on delete restrict on update restrict;
+create index ix_tagpost_post_1 on tagpost (post_id);
+alter table tagpub add constraint fk_tagpub_publication_2 foreign key (pub_id) references publication (pub_id) on delete restrict on update restrict;
+create index ix_tagpub_publication_2 on tagpub (pub_id);
 
 
 
 # --- !Downs
 
 SET FOREIGN_KEY_CHECKS=0;
+
+drop table tagpost;
 
 drop table tagpub;
 
@@ -103,6 +124,8 @@ drop table publication;
 drop table publication_author;
 
 drop table thumb;
+
+drop table user_profile;
 
 SET FOREIGN_KEY_CHECKS=1;
 

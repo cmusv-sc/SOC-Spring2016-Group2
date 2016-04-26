@@ -272,7 +272,7 @@ public class Publication extends Model {
 
 	public static Finder<Long, Publication> findwithtagpub = new Finder<Long,Publication>(Publication.class);
 
-	public static List<ObjectNode> findPubDetails(List<Publication> publications){
+	public static List<ObjectNode> getPubDetails(List<Publication> publications){
 		List<ObjectNode> results = new ArrayList<ObjectNode>();
 		for(Publication publication : publications) {
 			ObjectNode result = Json.newObject();
@@ -298,4 +298,11 @@ public class Publication extends Model {
 		return  results;
 	}
 	//============tagging===================
+
+
+	public static List<Publication>  findPublicationById(Long publicationId) {
+
+		return find.where().eq("id",publicationId).findList();
+
+	}
 }
