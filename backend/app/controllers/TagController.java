@@ -1,15 +1,15 @@
 package controllers;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import models.Post;
-import models.Publication;
-import models.Tagpost;
-import models.Tagpub;
+import models.*;
+import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static play.libs.Json.toJson;
 
 /**
  * Created by sagejoyoox on 4/23/16.
