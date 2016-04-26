@@ -242,7 +242,10 @@ public class Publication extends Model {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public static Model.Finder<Long,Publication> find = new Model.Finder(Long.class, Publication.class);
+
+	public static Finder<Long,Publication> find = new Finder<Long,Publication>(Long.class, Publication.class);
+
+
 	public static List<Publication>  find(String str, Integer year, String title, List<Long> pubids) {
 		List<Publication> publications=new ArrayList<Publication>();
 		if(str==null){
@@ -269,8 +272,55 @@ public class Publication extends Model {
 	}
 	public static List<Publication> findAll(){
 		return find.all();
+
 	}
 
+	public static List<ObjectNode> findPubDetails(List<Publication> publications, List<ObjectNode> results, String str){
+		for(Publication publication : publications) {
+			// System.out.println(publication.toString());
+			ObjectNode result = Json.newObject();
+			List<PublicationAuthor> authorids=PublicationAuthor.find(publication.getId(),null);
+			List<Author> authors=Author.find(authorids);
+			StringBuilder sb=new StringBuilder();
+			for(Author author: authors){
+				sb.append(author+";");
+			}
+			List<Comment> comments = Comment.find.where().eq("rootid", publication.getId()).findList();
+			List<Tagpub> tags = Tagpub.findwithpublication.where().eq("pub_id", publication.getId()).findList();
+			result.put("GsearchResultClass",str);
+			result.put("popularity",comments.size()+tags.size());
+			result.put("authors",sb.toString());
+			result.put("title", publication.getTitle());
+			result.put("editor", publication.getEditor());
+			result.put("booktitle",publication.getBooktitle());
+			result.put("isbn", publication.getIsbn());
+			result.put("year",publication.getYear());
+			result.put("crossref",publication.getCrossref());
+			result.put("ee",publication.getEe());
+			result.put("url",publication.getUrl());
+			result.put("series",publication.getSeries());
+			result.put("volume",publication.getVolume());
+			results.add(result);
+		}
+		return  results;
+	}
+	public static List<ObjectNode> findAuthors(List<Publication> publications, List<ObjectNode> results, String str){
+		for(Publication publication : publications) {
+			// System.out.println(publication.toString());
+			ObjectNode result = Json.newObject();
+			List<PublicationAuthor> authorids=PublicationAuthor.find(publication.getId(),null);
+			List<Author> authors=Author.find(authorids);
+			StringBuilder sb=new StringBuilder();
+			for(Author author: authors){
+				sb.append(author+";");
+			}
+			result.put("GsearchResultClass",str);
+			result.put("authors",sb.toString());
+			//System.out.println(sb.toString());
+			results.add(result);
+		}
+		return  results;
+	}
 
 		//============tagging===================
 		@OneToMany(mappedBy = "publication", cascade = CascadeType.ALL)

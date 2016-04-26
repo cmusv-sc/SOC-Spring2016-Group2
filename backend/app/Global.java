@@ -18,6 +18,7 @@ public class Global extends GlobalSettings {
             SAXETL.loadData();
             System.out.println("Data load successfully!");
         }
+
     }
 
     @Override

@@ -49,6 +49,7 @@ public class keyWordSearch extends Controller{
         this.indexDir=indexDir;
     }
     public static IndexWriter getIndexWriter(boolean create) throws IOException {
+<<<<<<< HEAD
             File files=new File("./indexFile");
             for(File file:files.listFiles()){
                 file.delete();
@@ -62,6 +63,21 @@ public class keyWordSearch extends Controller{
     public static void closeIndexWriter() throws IOException{
 
             indexWriter.close();
+=======
+        File files=new File("./indexFile");
+        for(File file:files.listFiles()){
+            file.delete();
+        }
+        indexDir= FSDirectory.open(files.toPath());
+        Analyzer analyzer=new StandardAnalyzer();
+        IndexWriterConfig iwc=new IndexWriterConfig(analyzer);
+        indexWriter=new IndexWriter(indexDir,iwc);
+        return indexWriter;
+    }
+    public static void closeIndexWriter() throws IOException{
+
+        indexWriter.close();
+>>>>>>> masterBackup
 
     }
     public static void indexTitle(String title,IndexWriter writer) throws IOException{
@@ -78,7 +94,11 @@ public class keyWordSearch extends Controller{
     }
 
     public static void rebuildIndexes(IndexWriter indexWriter) throws IOException {
+<<<<<<< HEAD
              //select all titles and build index one by one
+=======
+        //select all titles and build index one by one
+>>>>>>> masterBackup
         List<Publication> publications=Publication.findAll();
         List<String> titles=new ArrayList<String>();
         List<Author>  authors=new ArrayList<Author>();
@@ -114,7 +134,11 @@ public class keyWordSearch extends Controller{
             List<ObjectNode> buffresults=new ArrayList<ObjectNode>();
 
             buffresults=Publication.findPubDetails(publications,buffresults,"getPaperByKeyWord");
+<<<<<<< HEAD
            // buffresults.get(0).put("score",scoreDoc.score);
+=======
+            // buffresults.get(0).put("score",scoreDoc.score);
+>>>>>>> masterBackup
             results.addAll(buffresults);
         }
         System.out.println("=====================================");

@@ -55,7 +55,6 @@ public class Author extends Model {
 	public static List<Author> findAll(){
 		return find.all();
 	}
-
 	public static List<Long> find_Author_Id(String name){
 		List<Author> authors=find.where().eq("name",name).findList();
 		List<Long> author_ids = new ArrayList<Long>();
