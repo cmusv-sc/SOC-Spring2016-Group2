@@ -25,20 +25,42 @@ import java.util.Map;
 import static play.data.Form.form;
 import static play.libs.Json.toJson;
 
+import com.avaje.ebean.Ebean;
+import com.avaje.ebean.SqlRow;
+
+
 public class ThumbController extends Controller {
     
+    // @BodyParser.Of(BodyParser.Json.class)
     public Result addThumb(){
         /*--- thumb_type: like=1, dislike=0 ---*/
+        /*--- with parameter: thumb_type, sender, receiver---*/
         Thumb thumb = form(Thumb.class).bindFromRequest().get();
-        System.out.println("addLike is " + thumb);
+        Boolean thumb_type = thumb.getThumb_type();
+        int sender = thumb.getSender();
+        int receiver = thumb.getReceiver();
+        String sql = "select * from thumb where thumb_type=" + thumb_type + 
+        " and sender=" + sender + " and receiver=" + receiver;
+        System.out.println(sql);
+        List<SqlRow> sqlRows = Ebean.createSqlQuery(sql).findList();
+        if (sqlRows.size()>0)
+            return ok("Reject! thumb has already existed");
         Form thumbForm= form(Thumb.class);
         //set existing value into the form
         thumb.save();
-        return ok();
+        return ok("add thumb success");
     }
-    public Result deleteThumb(Long id){
-        Thumb.find.byId(id).delete();
-        return ok();
+    public Result deleteThumb(int thumb_type, int sender, int receiver){
+        String sql = "select id from thumb where thumb_type=" + thumb_type + 
+        " and sender=" + sender + " and receiver=" + receiver;
+        System.out.println(sql);
+        List<SqlRow> sqlRows = Ebean.createSqlQuery(sql).findList();
+        for (SqlRow sqlRow: sqlRows)
+        {
+            Long id = Long.valueOf(sqlRow.getInteger("id"));
+            Thumb.find.byId(id).delete();
+        }
+        return ok("delete thumb success");
     }
     public Result getThumbSum(String user, String type){
         /*---receive thumb sum by "user" or "id"---*/
@@ -57,30 +79,4 @@ public class ThumbController extends Controller {
         result.put("disLike", dislikeSum);
         return ok(Json.toJson(result));
     }
-    // /*---Start: Useless part ---*/
-    // public Result addLike(){
-    //     Thumb thumb = form(Thumb.class).bindFromRequest().get();
-    //     System.out.println("addLike is " + thumb);
-    //     Form thumbForm= form(Thumb.class);
-    //     //set existing value into the form
-    //     thumb.save();
-    //     return ok();
-    // }
-    // public Result deleteLike(Long id){
-    //     Thumb.find.byId(id).delete();
-    //     return ok();
-    // }
-    // public Result addDislike(){
-    //     Thumb thumb = form(Thumb.class).bindFromRequest().get();
-    //     System.out.println("disLike is " + thumb);
-    //     Form thumbForm= form(Thumb.class);
-    //     //set existing value into the form
-    //     thumb.save();
-    //     return ok();
-    // }
-    // public Result deleteDislike(Long id){
-    //     Thumb.find.byId(id).delete();
-    //     return ok();
-    // }
-    // /*---End: Useless part ---*/
 }

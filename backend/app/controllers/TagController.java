@@ -1,7 +1,9 @@
 package controllers;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import models.Post;
 import models.Publication;
+import models.Tagpost;
 import models.Tagpub;
 import play.mvc.Controller;
 import play.mvc.Result;
@@ -14,6 +16,7 @@ import java.util.List;
  */
 public class TagController extends Controller {
 
+    //===================publication===========================
     public Result addTagpub(Long pubid, String tagpub){
         Publication publicationadd = Publication.findwithtagpub.where().eq("id", pubid).findUnique();
         List<Tagpub> tagpubadd = Tagpub.findwithpublication.where().eq("pub_id", pubid).findList();
@@ -53,7 +56,7 @@ public class TagController extends Controller {
 
     public Result getPublications(String tagpub){
         List<Publication> publications = Publication.findwithtagpub.where().eq("tagpubs.tag", tagpub).findList();
-        List<ObjectNode> publicationsjson = Publication.findPubDetails(publications);
+        List<ObjectNode> publicationsjson = Publication.getPubDetails(publications);
 
         StringBuilder sb = new StringBuilder();
         for(int i=0; i<publicationsjson.size(); i++){
@@ -76,6 +79,47 @@ public class TagController extends Controller {
             sb.deleteCharAt(sb.length()-1);
         return ok(sb.toString());
     }
+    //===================publication===========================
+//========================================================================================================
+    //======================post===========================
+    public Result addTagpost(Long postid, String tagpost){
+        Post postadd = Post.find.where().eq("id", postid).findUnique();
+        List<Tagpost> tagpostadd = Tagpost.findwithpost.where().eq("post_id", postid).findList();
+        for (Tagpost tagposttemp:tagpostadd){
+            if (tagposttemp.getTag().equals(tagpost)){
+                return ok(tagpost + " already existed!");
+            }
+        }
+        tagpostadd.add(new Tagpost(tagpost));
+        postadd.setTagposts(tagpostadd);
+        postadd.save();
+        return ok(tagpost + " added successfully!");
+    }
+
+    public Result deleteTagpost(Long postid, String tagpost){
+        List<Tagpost> tagpostdelete = Tagpost.findwithpost.where().eq("post_id", postid).findList();
+        for(Tagpost tagposttemp:tagpostdelete){
+            if(tagposttemp.getTag().equals(tagpost)){
+                Tagpost.findwithpost.ref(tagposttemp.getId()).delete();
+                return ok(tagpost + " deleted successfully!");
+            }
+        }
+        return ok(tagpost + " does not exist!");
+    }
+
+
+    public Result getTagByPost_id(Long post_id)
+    {
+        List<Tagpost> tagposts = Tagpost.findwithpost.where().eq("post_id", post_id).findList();
+        StringBuilder sb = new StringBuilder();
+        for(Tagpost tagpost: tagposts){
+            sb.append(tagpost.getTag()+",");
+        }
+        if (sb.length()>0)
+            sb.deleteCharAt(sb.length()-1);
+        return ok(sb.toString());
+    }
+    //======================post===========================
 
 }
 
