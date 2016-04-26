@@ -22,6 +22,7 @@ public class Tagpub extends Model {
 
     @ManyToOne
     @JoinColumn(name="pub_id")
+    @JsonBackReference
     public Publication publication;
 
     public static Finder<Long, Tagpub> findwithpublication = new Finder<Long,Tagpub>(Tagpub.class);
