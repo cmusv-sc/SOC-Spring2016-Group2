@@ -35,6 +35,10 @@ Router.route('/nav', function () {
     this.render('nav');
 });
 
+//userprofile
+Router.route('/userprofile', function () {
+    this.render('userprofile');
+});
 
 // Features: Friendlist
 Router.route('/friendlisthome', function () {

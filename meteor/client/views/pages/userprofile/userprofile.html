@@ -1,10 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-
-</body>
-</html>
+<template name="userprofile">
+    <div class="wrapper wrapper-content container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="container">
+                    <h1 id="title">User Profile</h1>
+                </div>
+            </div>
+        </div>
+        {{getData}}
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="ibox-content">
+                    <div>
+                        <p>
+                        <div class="input-group">
+                            <input type="text" class="form-control input-sm" id="inputvalue">
+                            <div class="input-group-btn">
+                                <button class="btn btn-sm btn-primary userprofile">User Profile</button>
+                                <button class="btn btn-sm btn-info refresh">Refresh</button>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                    <div class="table-responsive" >
+                        <div class="loading"></div>
+                        <table class="table table-hover">
+                            <tbody id="content">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
