@@ -23,20 +23,21 @@ Template.postPage.events({
                         console.log(error);
                     } else {
                         console.log(response);
-                    	if(response.length <= 0) {
+                        var results = response.data;
+                    	if(results.length <= 0) {
                     		alert("No record found");
                     	} else {
                     		Meteor.call('removeAllPosts');
-                    		for(var i = 0; i < response.length; i++) {
-                    			console.log(response[i].title);
-                    			console.log(response[i].authorId);
-                    			console.log(response[i].postAt);
-                    			console.log(response[i].content);
+                    		for(var i = 0; i < results.length; i++) {
+                    			console.log(results[i].title);
+                    			console.log(results[i].authorId);
+                    			console.log(results[i].postAt);
+                    			console.log(results[i].content);
                     			Posts.insert({
-                    				title: response[i].title,
-                    				author: response[i].authorId,
-                    				postAt: new Date(response[i].postAt),
-                    				content: response[i].content
+                    				title: results[i].title,
+                    				author: results[i].authorId,
+                    				postAt: new Date(results[i].postAt),
+                    				content: results[i].content
                     			});
                     		}
                     	}
