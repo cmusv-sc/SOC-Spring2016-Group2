@@ -12,7 +12,6 @@ import com.avaje.ebean.Model;
 @Entity(name="post")
 public class Post extends Model {
     @Id
-    @Column(name="post_id")
     public Long id;
 
     /* the title of the post */
@@ -22,7 +21,7 @@ public class Post extends Model {
     public String content;
     
     /* the author of post */
-    public Long authorId;
+    public long authorId;
     
     /* if the post is a question */
     public boolean isQueustion;
@@ -30,7 +29,7 @@ public class Post extends Model {
     /* if the post is a question, answerId 
      * is the id of comment which is set as answer
      * */
-    public Long answerId;
+    public long answerId;
     
     /* post created at */
     @Column(columnDefinition = "datetime")
@@ -108,20 +107,4 @@ public class Post extends Model {
 	public void setAnswerId(long answerId) {
 		this.answerId = answerId;
 	}
-	
-	//=====================tagging=================
-	//I also changed the id's column name as post_id, please contact me
-	//if there is any conflict that I may have caused you
-	@OneToMany(mappedBy = "post", cascade = CascadeType.ALL)
-	public List<Tagpost> tagposts;
-
-	public List<Tagpost> getTagposts() {
-		return tagposts;
-	}
-
-	public void setTagposts(List<Tagpost> tagposts) {
-		this.tagposts = tagposts;
-	}
-
-	//============tagging===================
 }

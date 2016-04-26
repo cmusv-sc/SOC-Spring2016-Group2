@@ -3,6 +3,13 @@
 
 # --- !Ups
 
+create table tagpost (
+  tagpost_id                bigint auto_increment not null,
+  tag                       varchar(255),
+  post_id                   bigint,
+  constraint pk_tagpost primary key (tagpost_id))
+;
+
 create table tagpub (
   tagpub_id                 bigint auto_increment not null,
   tag                       varchar(255),
@@ -79,14 +86,18 @@ create table thumb (
   constraint pk_thumb primary key (id))
 ;
 
-alter table tagpub add constraint fk_tagpub_publication_1 foreign key (pub_id) references publication (pub_id) on delete restrict on update restrict;
-create index ix_tagpub_publication_1 on tagpub (pub_id);
+alter table tagpost add constraint fk_tagpost_post_1 foreign key (post_id) references post (id) on delete restrict on update restrict;
+create index ix_tagpost_post_1 on tagpost (post_id);
+alter table tagpub add constraint fk_tagpub_publication_2 foreign key (pub_id) references publication (pub_id) on delete restrict on update restrict;
+create index ix_tagpub_publication_2 on tagpub (pub_id);
 
 
 
 # --- !Downs
 
 SET FOREIGN_KEY_CHECKS=0;
+
+drop table tagpost;
 
 drop table tagpub;
 
