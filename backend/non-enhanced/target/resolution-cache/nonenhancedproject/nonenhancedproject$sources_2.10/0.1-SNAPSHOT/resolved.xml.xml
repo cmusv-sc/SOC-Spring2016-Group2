@@ -4,7 +4,7 @@
 		module="nonenhancedproject$sources_2.10"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20160423100134"
+		publication="20160426160459"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

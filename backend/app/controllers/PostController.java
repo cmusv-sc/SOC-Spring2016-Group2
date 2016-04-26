@@ -3,9 +3,8 @@ package controllers;
 import java.sql.Timestamp;
 import java.util.*;
 
+import com.avaje.ebean.Expr;
 import com.fasterxml.jackson.databind.JsonNode;
-import com.google.gson.Gson;
-
 import models.Post;
 import models.PostComment;
 import play.mvc.Controller;
@@ -52,6 +51,9 @@ public class PostController extends Controller {
 	
 	public Result addComment() {
 		JsonNode jsonNode = request().body().asJson();
+        if(jsonNode == null) {
+            return Common.badRequestWrapper("no request body");
+        }
 		long postId = jsonNode.path("postId").asLong();
 		long commentId = jsonNode.path("commentId").asLong();
 		Post post = Post.find.byId(postId);
@@ -64,6 +66,9 @@ public class PostController extends Controller {
 	
 	public Result setAsQuestion() {
 		JsonNode jsonNode = request().body().asJson();
+        if(jsonNode == null) {
+            return Common.badRequestWrapper("no request body");
+        }
 		long postId = jsonNode.path("postId").asLong();
 		Post post = Post.find.byId(postId);
 		if(post == null) {
@@ -76,6 +81,9 @@ public class PostController extends Controller {
 	
 	public Result setAnswer() {
 		JsonNode jsonNode = request().body().asJson();
+        if(jsonNode == null) {
+            return Common.badRequestWrapper("no request body");
+        }
 		long postId = jsonNode.path("postId").asLong();
 		long commentId = jsonNode.path("commentId").asLong();
 		Post post = Post.find.byId(postId);
@@ -86,4 +94,26 @@ public class PostController extends Controller {
 		post.save();
 		return ok(Json.toJson("success"));
 	}
+
+    public Result search(String keyword) {
+        List<Post> posts = Post.find.where()
+        		.or(Expr.like("title", "%" + keyword + "%"), Expr.like("content", "%" + keyword + "%"))
+        		.orderBy("postAt")
+        		.findList();
+        if(posts == null || posts.size() == 0) {
+            return Common.badRequestWrapper("No record found");
+        }
+        return created(Json.toJson(posts));
+    }
+
+    public Result getPostByUserId(Long userId) {
+        List<Post> posts = Post.find
+            .where()
+            .eq("authorId", userId)
+            .findList();
+        if(posts == null || posts.size() == 0) {
+            return Common.badRequestWrapper("No record found");
+        }
+        return created(Json.toJson(posts));
+    }
 }

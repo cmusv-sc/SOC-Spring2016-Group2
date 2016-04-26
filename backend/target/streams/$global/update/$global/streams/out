@@ -1,4 +1,4 @@
-[info] Updating {file:/Users/caoyi/SSNetwork/backend/}root...
+[info] Updating {file:/Users/caoyi/Desktop/SSNetwork/backend/}root...
 [debug] :: resolving dependencies :: ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
@@ -7,7 +7,7 @@
 [debug] == resolving dependencies for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT [compile]
 [debug] == resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.11.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@69243332
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7eaa23bf
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7
 [debug] 	found org.scala-lang#scala-library;2.11.7 in sbt-chain
 [debug] 	[2.11.7] org.scala-lang#scala-library;2.11.7
@@ -9403,21 +9403,21 @@
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.7!scala-compiler.jar
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(bundle)
 [debug] 	[NOT REQUIRED] jline#jline;2.12.1!jline.jar
-[debug] :: resolution report :: resolve 5001ms :: artifacts dl 142ms
-[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT compile produced in /Users/caoyi/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-compile.xml
-[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT runtime produced in /Users/caoyi/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-runtime.xml
-[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT test produced in /Users/caoyi/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-test.xml
-[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT provided produced in /Users/caoyi/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-provided.xml
-[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT optional produced in /Users/caoyi/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-optional.xml
-[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT compile-internal produced in /Users/caoyi/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-compile-internal.xml
-[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT runtime-internal produced in /Users/caoyi/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-runtime-internal.xml
-[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT test-internal produced in /Users/caoyi/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-test-internal.xml
-[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT plugin produced in /Users/caoyi/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-plugin.xml
-[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT sources produced in /Users/caoyi/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-sources.xml
-[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT docs produced in /Users/caoyi/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-docs.xml
-[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT pom produced in /Users/caoyi/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-pom.xml
-[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT scala-tool produced in /Users/caoyi/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-scala-tool.xml
-[debug] 	resolve done (5001ms resolve - 142ms download)
+[debug] :: resolution report :: resolve 9627ms :: artifacts dl 154ms
+[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT compile produced in /Users/caoyi/Desktop/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-compile.xml
+[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT runtime produced in /Users/caoyi/Desktop/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-runtime.xml
+[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT test produced in /Users/caoyi/Desktop/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-test.xml
+[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT provided produced in /Users/caoyi/Desktop/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-provided.xml
+[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT optional produced in /Users/caoyi/Desktop/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-optional.xml
+[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT compile-internal produced in /Users/caoyi/Desktop/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-compile-internal.xml
+[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT runtime-internal produced in /Users/caoyi/Desktop/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-runtime-internal.xml
+[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT test-internal produced in /Users/caoyi/Desktop/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-test-internal.xml
+[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT plugin produced in /Users/caoyi/Desktop/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-plugin.xml
+[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT sources produced in /Users/caoyi/Desktop/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-sources.xml
+[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT docs produced in /Users/caoyi/Desktop/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-docs.xml
+[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT pom produced in /Users/caoyi/Desktop/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-pom.xml
+[debug] 	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT scala-tool produced in /Users/caoyi/Desktop/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-scala-tool.xml
+[debug] 	resolve done (9627ms resolve - 154ms download)
 [info] Done updating.
 [warn] There may be incompatibilities among your library dependencies.
 [warn] Here are some of the libraries that were evicted:

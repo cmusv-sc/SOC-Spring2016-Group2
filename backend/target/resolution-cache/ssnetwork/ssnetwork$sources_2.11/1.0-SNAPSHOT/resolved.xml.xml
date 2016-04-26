@@ -4,7 +4,7 @@
 		module="ssnetwork$sources_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20160423100134"
+		publication="20160426160459"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

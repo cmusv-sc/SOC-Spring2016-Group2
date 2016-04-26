@@ -12,13 +12,12 @@ public class Global extends GlobalSettings {
     @Override
     public void onStart(Application app) {
         String message = "Application has started! LOLADADA";
-        //SAXETL.loadData();
- /*       Logger.info(message);
+        Logger.info(message);
         List<Author> allauthors=Author.find.all();
         if(allauthors!=null){
             SAXETL.loadData();
             System.out.println("Data load successfully!");
-        }*/
+        }
     }
 
     @Override

@@ -3,6 +3,7 @@ package models;
 import javax.persistence.*;
 
 import com.avaje.ebean.Model;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import play.libs.Json;
 
@@ -232,8 +233,6 @@ public class Publication extends Model {
 	public void setEe(String ee) {
 		this.ee = ee;
 	}
-	@Id
-	public Long id;
 
 
 	public Long getId() {
@@ -272,53 +271,56 @@ public class Publication extends Model {
 		return find.all();
 	}
 
-	public static List<ObjectNode> findPubDetails(List<Publication> publications, List<ObjectNode> results, String str){
-		for(Publication publication : publications) {
-			// System.out.println(publication.toString());
 
-	
-	//============tagging===================
-	//I also modified the column name of id as "pub_id".
-	//Please contact me if there is any conflicts that I may have caused.
-	@OneToMany(mappedBy = "publication", cascade = CascadeType.ALL)
-	public List<Tagpub> tagpubs;
+		//============tagging===================
+		@OneToMany(mappedBy = "publication", cascade = CascadeType.ALL)
+		@JsonManagedReference
+		public List<Tagpub> tagpubs;
 
-	public List<Tagpub> getTagpubs() {
-		return tagpubs;
-	}
+		public List<Tagpub> getTagpubs () {
+			return tagpubs;
+		}
 
 	public void setTagpubs(List<Tagpub> tagpubs) {
 		this.tagpubs = tagpubs;
 	}
 
-	public static Finder<Long, Publication> findwithtagpub = new Finder<Long,Publication>(Publication.class);
+	public static Finder<Long, Publication> findwithtagpub = new Finder<Long, Publication>(Publication.class);
 
-	public static List<ObjectNode> findPubDetails(List<Publication> publications){
+	public static List<ObjectNode> findPubDetails(List<Publication> publications) {
 		List<ObjectNode> results = new ArrayList<ObjectNode>();
-		for(Publication publication : publications) {
+		for (Publication publication : publications) {
 			ObjectNode result = Json.newObject();
-			List<PublicationAuthor> authorids=PublicationAuthor.find(publication.getId(),null);
-			List<Author> authors=Author.find(authorids);
-			StringBuilder sb=new StringBuilder();
-			for(Author author: authors){
-				sb.append(author+";");
+			List<PublicationAuthor> authorids = PublicationAuthor.find(publication.getId(), null);
+			List<Author> authors = Author.find(authorids);
+			StringBuilder sb = new StringBuilder();
+			for (Author author : authors) {
+				sb.append(author + ";");
 			}
-			result.put("GsearchResultClass",str);
 
-			result.put("authors",sb.toString());
+			result.put("authors", sb.toString());
 			result.put("title", publication.getTitle());
 			result.put("editor", publication.getEditor());
-			result.put("booktitle",publication.getBooktitle());
+			result.put("booktitle", publication.getBooktitle());
 			result.put("isbn", publication.getIsbn());
-			result.put("year",publication.getYear());
-			result.put("crossref",publication.getCrossref());
-			result.put("ee",publication.getEe());
-			result.put("url",publication.getUrl());
-			result.put("series",publication.getSeries());
-			result.put("volume",publication.getVolume());
+			result.put("year", publication.getYear());
+			result.put("crossref", publication.getCrossref());
+			result.put("ee", publication.getEe());
+			result.put("url", publication.getUrl());
+			result.put("series", publication.getSeries());
+			result.put("volume", publication.getVolume());
 			results.add(result);
 		}
-		return  results;
+		return results;
+	}
+
+	//============tagging===================
+
+
+	public static List<Publication> findPublicationById(Long publicationId) {
+
+		return find.where().eq("id", publicationId).findList();
+
 	}
 
 }
