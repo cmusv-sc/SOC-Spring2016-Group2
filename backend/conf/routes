@@ -22,7 +22,7 @@ POST    /person/uploadPic           controllers.Application.upload()
 
 ### Forum
 POST   /comment                     controllers.ForumController.addComment()
-GET    /comment                     controllers.ForumController.getComments(rootid: Long, categoryid: Long, userid: Long)
+#GET    /comment                     controllers.ForumController.getComments(rootid: Long, categoryid: Long, userid: Long)
 
 POST   /updateComment               controllers.ForumController.updateComment()
 POST   /upload                      controllers.ForumController.uploadFile()
@@ -47,6 +47,7 @@ GET 	/subscribe/list/all				controllers.SubscriptionController.loadSubscriptionL
 GET 	/subscribe/list/:category		controllers.SubscriptionController.loadSubscriptionListByCategory(category: String)
 GET 	/subscribe/timeline				controllers.SubscriptionController.loadTimeline()
 GET 	/subscribe/:followeeid/:category 	controllers.SubscriptionController.subscribe(followeeid: Long, category: String)
+
 
 GET     /post/search/:keyword           controllers.PostController.search(keyword : String)
 GET     /post/getPostByUserId/:userId   controllers.PostController.getPostByUserId(userId: Long)

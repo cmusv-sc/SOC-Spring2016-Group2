@@ -38,7 +38,7 @@ public class UserProfileController extends Controller {
     		}
     		String userName = jsonNode.path("userName").asText();
 
-			//String userNameTest = "Xiaoxing Ma";
+			String userNameTest = "Xiaoxing Ma";
 			Long authorId = Author.find_Author_Id(userName).get(0);
 
     		new UserProfile(userNameTest,

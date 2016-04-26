@@ -103,14 +103,17 @@ public class SubscriptionController extends Controller{
 			if(category.equals("user")){
 				//get username
 				User user=User.find.byId(followeeId);
+				System.out.println("entered user");
 				if(user!=null)
 					username=user.getUsername();
+				System.out.println("username="+username);
 				// get timestamp and content
 				List<Post> posts=Post.find.where().eq("authorId", followeeId).findList();
 				for(Post post: posts){
 					if(post!=null){
 					timestamp=post.getPostAt();
 					content=post.getContent();
+					System.out.println("content="+content);
 					results.add(timestamp+"\t"+username+"\t"+content);
 					}
 				}

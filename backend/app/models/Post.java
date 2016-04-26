@@ -1,17 +1,8 @@
 package models;
 
 import java.sql.Timestamp;
-<<<<<<< HEAD
 import java.util.*;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-=======
-import java.util.List;
-
 import javax.persistence.*;
-
->>>>>>> fb2c9b7c48cf5e451118c925959035788cac6486
 import com.avaje.ebean.Model;
 /**
  * This class defines one post
@@ -52,11 +43,8 @@ public class Post extends Model {
     		String title, 
     		String content, 
     		Long authorId,  
-<<<<<<< HEAD
     		Date postAt
-=======
-    		Timestamp postAt
->>>>>>> fb2c9b7c48cf5e451118c925959035788cac6486
+
     		) {
     	this.title = title;
     	this.content = content;
@@ -119,9 +107,7 @@ public class Post extends Model {
 	public void setAnswerId(Long answerId) {
 		this.answerId = answerId;
 	}
-<<<<<<< HEAD
 
-=======
 	
 	//=====================tagging=================
 	//I also changed the id's column name as post_id, please contact me
@@ -138,5 +124,4 @@ public class Post extends Model {
 	}
 
 	//============tagging===================
->>>>>>> fb2c9b7c48cf5e451118c925959035788cac6486
 }

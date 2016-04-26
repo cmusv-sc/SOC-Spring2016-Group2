@@ -32,27 +32,14 @@ public class ForumController extends Controller{
         return ok(toJson(comment));
     }
 
-<<<<<<< HEAD
-    public Result getComments(Long rootid, Long categoryid) {
-        return ok(toJson(getCommentsRecursively(rootid, categoryid, new Long(0))));
-=======
-    public Result getComments(int rootid, int categoryid, int userid) {
-        return ok(toJson(getCommentsWithThumbs(rootid, categoryid, 0, userid)));
->>>>>>> fb2c9b7c48cf5e451118c925959035788cac6486
-    }
-
     public Result updateComment() {
 //        Map<String, String[]> params = request().body().asFormUrlEncoded();
 //
 //        int id = Integer.parseInt(params.get("id")[0]);
 //        String content = params.get("content")[0];
 
-<<<<<<< HEAD
-        Long id = Long.parseLong(params.get("id")[0]);
-        String content = params.get("content")[0];
-=======
+
         Comment oldcomment = form(Comment.class).bindFromRequest().get();
->>>>>>> fb2c9b7c48cf5e451118c925959035788cac6486
 
         Comment comment = Comment.find.byId(oldcomment.getId());
         comment.setContent(oldcomment.getContent());
@@ -93,21 +80,21 @@ public class ForumController extends Controller{
         return list;
     }
 
-    public ArrayList<NestedComment> getCommentsWithThumbs(int rootid, int categoryid, int parentid, int userid){
+    public ArrayList<NestedComment> getCommentsWithThumbs(Long rootid, Long categoryid, Long parentid, Long userid){
         ArrayList<NestedComment> list = new ArrayList<NestedComment>();
         String sql = "select c.id, c.parentid, c.content, c.authorid, c.time, t.thumb_type, t.sender " +
-                "from comment as c left join thumb as t on (c.id=t.receiver)" +
-                " where c.rootid=" + rootid + " and c.categoryid=" + categoryid + " and c.parentid=" + parentid + " order by c.id";
+        "from comment as c left join thumb as t on (c.id=t.receiver)" +
+        " where c.rootid=" + rootid + " and c.categoryid=" + categoryid + " and c.parentid=" + parentid + " order by c.id";
         //System.out.println(sql);
         List<SqlRow> sqlRows = Ebean.createSqlQuery(sql).findList();
-        int prev = 0;
+        Long prev=null;
         for (int i = 0; i < sqlRows.size(); i++){
             SqlRow sqlRow = sqlRows.get(i);
-            //System.out.println(sqlRow.getInteger("id") + ": " + prev);
-            if (!sqlRow.getInteger("id").equals(prev)){
-                prev = sqlRow.getInteger("id");
-                Comment comment = new Comment(sqlRow.getInteger("id"), parentid, sqlRow.getInteger("authorid"), sqlRow.getString("content") , sqlRow.getLong("time"), rootid, categoryid);
-                comment.setId(sqlRow.getInteger("id"));
+            //System.out.println(sqlRow.getLong("id") + ": " + prev);
+            if (!sqlRow.getLong("id").equals(prev)){
+                prev = sqlRow.getLong("id");
+                Comment comment = new Comment(sqlRow.getLong("id"), parentid, sqlRow.getLong("authorid"), sqlRow.getString("content") , sqlRow.getLong("time"), rootid, categoryid);
+                comment.setId(sqlRow.getLong("id"));
                 int thumbup = 0;
                 int thumbdown = 0;
                 boolean thumbuped = false;
@@ -119,7 +106,7 @@ public class ForumController extends Controller{
                     }else {
                         thumbup ++;
                     }
-                    if (sqlRow.getInteger("sender") == userid){
+                    if (sqlRow.getLong("sender") == userid){
                         if (thumb_type == false){
                             thumbdowned = true;
                         }else {
@@ -139,7 +126,7 @@ public class ForumController extends Controller{
                     }else {
                         list.get(list.size()-1).thumbup ++;
                     }
-                    if (sqlRow.getInteger("sender") == userid){
+                    if (sqlRow.getLong("sender") == userid){
                         if (thumb_type == false){
                             list.get(list.size()-1).thumbdowned = true;
                         }else {
@@ -177,5 +164,4 @@ public class ForumController extends Controller{
             return badRequest();
         }
     }
-
 }

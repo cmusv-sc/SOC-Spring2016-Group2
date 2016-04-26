@@ -7,18 +7,11 @@ import models.*;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
-<<<<<<< HEAD
-=======
-
 import com.avaje.ebean.Ebean;
 import com.avaje.ebean.Model;
 import com.avaje.ebean.SqlRow;
-
 import static play.data.Form.form;
 import static play.libs.Json.toJson;
-
-
->>>>>>> fb2c9b7c48cf5e451118c925959035788cac6486
 import java.util.*;
 
 public class Application extends Controller {
