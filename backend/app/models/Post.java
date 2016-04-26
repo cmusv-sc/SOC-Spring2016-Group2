@@ -1,10 +1,10 @@
 package models;
 
 import java.sql.Timestamp;
+import java.util.List;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
+
 import com.avaje.ebean.Model;
 /**
  * This class defines one post
