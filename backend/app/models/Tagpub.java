@@ -3,6 +3,9 @@ package models;
 import com.avaje.ebean.Model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  * Created by sagejoyoox on 4/23/16.
@@ -21,6 +24,11 @@ public class Tagpub extends Model {
     public Publication publication;
 
     public static Finder<Long, Tagpub> findwithpublication = new Finder<Long,Tagpub>(Tagpub.class);
+
+    public static List<Tagpub> findByPubId(Long pubId){
+        return findwithpublication.where().eq("pub_id",pubId).findList();
+    }
+
 
     public Publication getPublication() {
         return publication;
