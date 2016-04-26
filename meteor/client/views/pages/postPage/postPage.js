@@ -54,16 +54,24 @@ Template.postPage.events({
 		console.log(content);
 		Meteor.call('removeAllPosts');
 		var post = {
-				title: title,
-				author: Meteor.userId(),
-				content: content,
-				postAt: new Date()
+				"title": title,
+				"authorId": Meteor.userId(),
+				"content": content,
+				"postAt": new Date()
 			};
 		Posts.insert(post);
+		var data = {
+			params: {
+				"title": title,
+				"authorId": Meteor.userId(),
+				"content": content,
+				"postAt": new Date(),
+			}
+		}
 		HTTP.call(
 				'POST',
 				'http://localhost:9000/post/addPost',
-				post,
+				data,
 				function(error, response) {
 					if(error) {
 						console.log(error);
