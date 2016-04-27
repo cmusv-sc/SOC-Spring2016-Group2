@@ -17,3 +17,5 @@
 2016-04-26 17:13:22,709 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-4 - Database [default] connected at jdbc:mysql://localhost:3306/SSNetwork
 2016-04-26 17:13:22,798 [WARN] from application in application-akka.actor.default-dispatcher-4 - application.conf @ file:/Users/caoyi/Desktop/SSNetwork/backend/target/scala-2.11/classes/application.conf: 354: parsers.text.maxLength is deprecated, use play.http.parser.maxMemoryBuffer instead
 2016-04-26 17:13:23,148 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-4 - Application started (Dev)
+2016-04-26 18:08:23,582 [WARN] from com.zaxxer.hikari.pool.HikariPool in Hikari housekeeper (pool HikariPool-2) - HikariPool-2 - Unusual system clock change detected, soft-evicting connections from pool.
+2016-04-26 18:15:15,124 [WARN] from com.zaxxer.hikari.pool.HikariPool in Hikari housekeeper (pool HikariPool-2) - HikariPool-2 - Unusual system clock change detected, soft-evicting connections from pool.
