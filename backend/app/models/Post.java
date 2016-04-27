@@ -41,7 +41,7 @@ public class Post extends Model {
     public Post(
     		String title, 
     		String content, 
-    		Long authorId,  
+    		long authorId,  
     		String postAt
     		) {
     	this.title = title;

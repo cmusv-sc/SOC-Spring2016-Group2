@@ -1,6 +1,5 @@
 package controllers;
 
-import java.sql.Timestamp;
 import java.util.*;
 
 import com.avaje.ebean.Expr;
@@ -37,7 +36,7 @@ public class PostController extends Controller {
 		System.out.println("content\t" + content);
 		System.out.println("authorId" + authorId);
 		System.out.println("timestamp" + jsonNode.path("postAt").asText());
-		Timestamp postAt = Timestamp.valueOf(jsonNode.path("postAt").asText());
+		String postAt = jsonNode.path("postAt").asText();
 		new Post(title, content, authorId, postAt).save();
 		return ok(toJson("success"));
 	}
