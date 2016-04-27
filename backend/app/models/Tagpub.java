@@ -1,8 +1,12 @@
 package models;
 
 import com.avaje.ebean.Model;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  * Created by sagejoyoox on 4/23/16.
@@ -18,9 +22,15 @@ public class Tagpub extends Model {
 
     @ManyToOne
     @JoinColumn(name="pub_id")
+    @JsonBackReference
     public Publication publication;
 
     public static Finder<Long, Tagpub> findwithpublication = new Finder<Long,Tagpub>(Tagpub.class);
+
+    public static List<Tagpub> findByPubId(Long pubId){
+        return findwithpublication.where().eq("pub_id",pubId).findList();
+    }
+
 
     public Publication getPublication() {
         return publication;

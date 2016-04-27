@@ -20,6 +20,14 @@ AccountsTemplates.configureRoute('forgotPwd');
 AccountsTemplates.configureRoute('resetPwd');
 AccountsTemplates.configureRoute('verifyEmail');
 
+// Router.add('/suggestions.txt', function() {
+//     this.response.setHeader('access-control-allow-origin', '*');
+
+//     var fs = Npm.require("fs");
+//     return fs.readFileSync("/public/suggestions.txt", "utf8");
+
+// });
+
 // Common pages routes
 Router.route('/notFound', function () {
     this.render('notFound');

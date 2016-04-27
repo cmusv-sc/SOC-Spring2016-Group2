@@ -1,0 +1,15 @@
+#Session can be used to transfer variables between templates, some examples are here
+
+Session.setPersistent("idsession", this._id);
+Session.setPersistent("namesession", this.name);
+Session.setPersistent("summarysession", this.summary);
+
+## in the helper method of another template:
+var person = Session.get("namesession")
+var summary = Session.get("summarysession")
+
+# get your user id after login
+var myid = Session.get("userSessionId");
+
+# get your user name after login
+var myname = User2.findOne(myid).name;

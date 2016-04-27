@@ -33,7 +33,7 @@ public class SAXETL {
 		try {
 			parser = parserFactor.newSAXParser();
 			SAXHandlerForParsing handler = new SAXHandlerForParsing();
-		    parser.parse(new FileInputStream(new File("./data/publications_small.xml")), handler);
+		    parser.parse(new FileInputStream(new File("./data/publications.xml")), handler);
 		} catch (ParserConfigurationException | SAXException | IOException e) {
 			e.printStackTrace();
 		}

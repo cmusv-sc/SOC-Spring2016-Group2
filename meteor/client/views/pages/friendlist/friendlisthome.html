@@ -1,0 +1,68 @@
+<template name="friendlisthome">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="container">
+              <header>
+                <h1>
+                Friend List Of {{currentuser}}
+                <button class="btn btn-primary button" onclick="window.location.href='/addFriend'">Find More Friends
+                </button> 
+                </h1>
+                <p>
+                  <b>Summary:</b>
+                  <input type='text' class='update_summary'>
+
+                  <button id="update" class="button">
+                  Update
+                  </button> 
+                </p>
+                {{> request}} 
+              </header>
+              <ul>
+              {{> reactiveTable collection=myCollection settings=settings}}
+              </ul>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="viewFriendInfo">
+  <body>
+    <div class="container">
+      <header>
+        <h1>Friend Info
+      <button class="btn-xs btn-xs button" onclick="window.location.href='/friendlisthome'">Back
+      </button>
+      </h1>
+      </header>
+      <ul>
+            {{> person context}}
+
+      </ul>
+      <button class="button2">Unfriend</button>
+    </div>
+  </body>
+</template>
+
+<template name="request">
+        {{> reactiveTable collection=requestCollection settings=settings}}
+        <button id="accept" class="button3">Accept</button>
+        <button id="decline" class="button3">Decline</button>
+        <button id="ignore" class="button3">Ignore</button>
+</template>
+
+<template name="viewRequestInfo">
+  <body>
+    <div class="container">
+      <header>
+        <h1>Request Info
+      <button class="btn-xs btn-xs button" onclick="window.location.href='/friendlisthome'">Back
+      </button>
+      </h1>
+      </header>
+      <ul>
+            {{> person context}}
+      </ul>
+    </div>
+  </body>
+</template>

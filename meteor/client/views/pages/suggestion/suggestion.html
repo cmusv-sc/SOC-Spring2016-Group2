@@ -1,0 +1,48 @@
+<template name="suggestion">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/suggestion.css" />
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div id="page">
+
+                <h1 align="center">Google Powered Site Search</h1>
+                
+                   <form id="searchForm" method="post">
+                        <fieldset>
+                        
+                            <input id="s" type="text" />
+                            
+                            <input type="submit" value="Submit" id="submitButton" />
+                            
+                            <div id="searchInContainer">
+
+                                <input type="radio" name="check" value="keyWord" id="search" checked />
+                                <label for="searchSite" id="siteNameLabel">Search</label>
+                                
+                                <input type="radio" name="check" value="byTitle" id="searchbyTitle" />
+                                <label for="searchbyTitle">Search byTitle</label>
+                                <br>
+                                <input type="radio" name="check" value="byYear" id="searchbyYear" />
+                                <label for="searchbyYear">Search byYear</label>
+
+                                <input type="radio" name="check" value="web" id="searchWeb" />
+                                <label for="searchWeb">Search Google</label>
+
+                            </div>
+                                        
+                            <ul class="icons">
+                                <li class="web" title="Web Search" data-searchType="web">Web</li>
+                                <li class="images" title="Image Search" data-searchType="images">Images</li>
+                                <li class="news" title="News Search" data-searchType="news">News</li>
+                                <li class="videos" title="Video Search" data-searchType="video">Videos</li>
+                            </ul>
+                            
+                        </fieldset>
+                  </form>
+                <div id="resultsDiv"></div>
+            </div>  
+        </div>
+    </div>
+    <form id="suggestionDiv">
+    </form>
+
+</template>

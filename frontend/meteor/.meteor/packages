@@ -54,4 +54,13 @@ aslagle:reactive-table
 u2622:persistent-session
 useraccounts:iron-routing
 http
+<<<<<<< HEAD
 reactive-var
+=======
+gadicohen:cross-domain-login
+mizzao:timesync
+webapp
+mizzao:autocomplete
+sebdah:autocompletion
+>>>>>>> masterBackup
+>>>>>>> 7a0aeab8109c7c2dbd8fc0ca6a777a2837eb1588

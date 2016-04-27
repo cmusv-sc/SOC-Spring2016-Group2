@@ -32,18 +32,20 @@ public class ForumController extends Controller{
         return ok(toJson(comment));
     }
 
-    public Result getComments(int rootid, int categoryid) {
-        return ok(toJson(getCommentsWithThumbs(rootid, categoryid, 0)));
+    public Result getComments(int rootid, int categoryid, int userid) {
+        return ok(toJson(getCommentsWithThumbs(rootid, categoryid, 0, userid)));
     }
 
     public Result updateComment() {
-        Map<String, String[]> params = request().body().asFormUrlEncoded();
+//        Map<String, String[]> params = request().body().asFormUrlEncoded();
+//
+//        int id = Integer.parseInt(params.get("id")[0]);
+//        String content = params.get("content")[0];
 
-        int id = Integer.parseInt(params.get("id")[0]);
-        String content = params.get("content")[0];
+        Comment oldcomment = form(Comment.class).bindFromRequest().get();
 
-        Comment comment = Comment.find.byId(id);
-        comment.setContent(content);
+        Comment comment = Comment.find.byId(oldcomment.getId());
+        comment.setContent(oldcomment.getContent());
 
         comment.save();
 
@@ -55,9 +57,11 @@ public class ForumController extends Controller{
 
     public class NestedComment{
         public Comment comment;
-        public ArrayList<NestedComment> children;
         public int thumbup = 0;
         public int thumbdown = 0;
+        public boolean thumbuped = false;
+        public boolean thumbdowned = false;
+        public ArrayList<NestedComment> children;
         public NestedComment(Comment comment, ArrayList<NestedComment> children){
             this.comment = comment;
             this.children = children;
@@ -79,33 +83,73 @@ public class ForumController extends Controller{
         return list;
     }
 
-    public ArrayList<NestedComment> getCommentsWithThumbs(int rootid, int categoryid, int parentid){
+    public ArrayList<NestedComment> getCommentsWithThumbs(int rootid, int categoryid, int parentid, int userid){
         ArrayList<NestedComment> list = new ArrayList<NestedComment>();
-        String sql = "select c.id, c.parentid, c.content, c.authorid, c.time, sum(t.thumb_type) as likes, count(t.id) as total " +
+        String sql = "select c.id, c.parentid, c.content, c.authorid, c.time, t.thumb_type, t.sender " +
                 "from comment as c left join thumb as t on (c.id=t.receiver)" +
-                " where c.rootid=" + rootid + " and c.categoryid=" + categoryid + " and c.parentid=" + parentid + " group by c.id";
+                " where c.rootid=" + rootid + " and c.categoryid=" + categoryid + " and c.parentid=" + parentid + " order by c.id";
         //System.out.println(sql);
         List<SqlRow> sqlRows = Ebean.createSqlQuery(sql).findList();
+        int prev = 0;
         for (int i = 0; i < sqlRows.size(); i++){
             SqlRow sqlRow = sqlRows.get(i);
-            Comment comment = new Comment(sqlRow.getInteger("id"), parentid, sqlRow.getInteger("authorid"), sqlRow.getString("content") , sqlRow.getLong("time"), rootid, categoryid);
-            comment.setId(sqlRow.getInteger("id"));
-            int thumbup = 0;
-            int thumbdown = 0;
-            int total = sqlRow.getInteger("total");
-            //System.out.println(sqlRow.getInteger("id") + ": " + comment.getId());
-            if (total != 0){
-                thumbup = sqlRow.getInteger("likes");
-                thumbdown = total - thumbup;
+            //System.out.println(sqlRow.getInteger("id") + ": " + prev);
+            if (!sqlRow.getInteger("id").equals(prev)){
+                prev = sqlRow.getInteger("id");
+                Comment comment = new Comment(sqlRow.getInteger("id"), parentid, sqlRow.getInteger("authorid"), sqlRow.getString("content") , sqlRow.getLong("time"), rootid, categoryid);
+                comment.setId(sqlRow.getInteger("id"));
+                int thumbup = 0;
+                int thumbdown = 0;
+                boolean thumbuped = false;
+                boolean thumbdowned = false;
+                if (sqlRow.getBoolean("thumb_type") != null){
+                    boolean thumb_type = sqlRow.getBoolean("thumb_type");
+                    if (thumb_type == false){
+                        thumbdown ++;
+                    }else {
+                        thumbup ++;
+                    }
+                    if (sqlRow.getInteger("sender") == userid){
+                        if (thumb_type == false){
+                            thumbdowned = true;
+                        }else {
+                            thumbuped = true;
+                        }
+                    }
+                }
+                NestedComment nestedComment = new NestedComment(comment, getCommentsWithThumbs(rootid, categoryid, comment.getId(), userid), thumbdown, thumbup);
+                nestedComment.thumbuped = thumbuped;
+                nestedComment.thumbdowned = thumbdowned;
+                list.add(nestedComment);
+            }else {
+                if (sqlRow.getBoolean("thumb_type") != null){
+                    boolean thumb_type = sqlRow.getBoolean("thumb_type");
+                    if (thumb_type == false){
+                        list.get(list.size()-1).thumbdown ++;
+                    }else {
+                        list.get(list.size()-1).thumbup ++;
+                    }
+                    if (sqlRow.getInteger("sender") == userid){
+                        if (thumb_type == false){
+                            list.get(list.size()-1).thumbdowned = true;
+                        }else {
+                            list.get(list.size()-1).thumbuped = true;
+                        }
+                    }
+                }
             }
-            NestedComment nestedComment = new NestedComment(comment, getCommentsWithThumbs(rootid, categoryid, comment.getId()), thumbdown, thumbup);
-            list.add(nestedComment);
+
         }
         return list;
     }
 
     @BodyParser.Of(BodyParser.MultipartFormData.class)
     public Result uploadFile(){
+        response().setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
+        response().setHeader("Access-Control-Max-Age", "3600");
+        response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-    Type, Accept, Authorization, X-Auth-Token");
+        response().setHeader("Access-Control-Allow-Credentials", "true");
+        response().setHeader("Access-Control-Allow-Origin", "*");
         MultipartFormData body = request().body().asMultipartFormData();
         MultipartFormData.FilePart uploadfile = body.getFile("file");
         if (uploadfile != null) {

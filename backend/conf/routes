@@ -15,21 +15,26 @@ POST    /person/uploadPic           controllers.Application.upload()
 #GET     /title/:title               controllers.Application.getPaperByTitle(title: String)
 
 
-###Sprint1
-#GET    /year/:year                  controllers.Application.getPaperByYear(year:Integer)
-#GET    /title/:title                controllers.Application.getPaperByTitle(title:String)
 
+
+###Suggestion
+GET    /year/:year                  controllers.Application.getPaperByYear(year:Integer)
+GET    /title/:title                controllers.Application.getPaperByTitle(title:String)
+GET    /all                         controllers.Application.getAllPublications()
+GET    /keyword/:keyWord            controllers.Application.getPaperBykeyWord(keyWord:String)
+GET    /author/:author              controllers.Application.getAuthors(author:String)
+GET    /coauthor/:author            controllers.Application.getCoAuthors(author:String)
 
 ### Forum
 POST   /comment                     controllers.ForumController.addComment()
-GET    /comment                     controllers.ForumController.getComments(rootid: Integer, categoryid: Integer)
+GET    /comment                     controllers.ForumController.getComments(rootid: Integer, categoryid: Integer, userid: Integer)
 POST   /updateComment               controllers.ForumController.updateComment()
 POST   /upload                      controllers.ForumController.uploadFile()
 
 ### Thumb
-POST    /addThumb                      controllers.ThumbController.addThumb()
-DELETE  /deleteThumb/:id               controllers.ThumbController.deleteThumb(id:Long)
-GET     /getThumbSum/:user/:type       controllers.ThumbController.getThumbSum(user:String,type:String)
+POST    /addThumb                                              controllers.ThumbController.addThumb()
+DELETE  /deleteThumb/:thumb_type/:sender/:receiver               controllers.ThumbController.deleteThumb(thumb_type: Integer, sender: Integer, receiver: Integer)
+GET     /getThumbSum/:user/:type                               controllers.ThumbController.getThumbSum(user:String,type:String)
 
 
 #Post Related REST API
@@ -40,6 +45,7 @@ POST	/post/addComment				controllers.PostController.addComment()
 POST	/post/setAsQuestion				controllers.PostController.setAsQuestion()
 POST	/post/setAnswer					controllers.PostController.setAnswer()
 GET     /post/search/:keyword           controllers.PostController.search(keyword : String)
+GET     /post/getPostByUserId/:userId   controllers.PostController.getPostByUserId(userId: Long)
 
 
 #Tagging for publication
@@ -49,20 +55,26 @@ GET    /gettagpubs/:title           controllers.TagController.getTagpubs(title:S
 GET    /getpublications/:tagpub     controllers.TagController.getPublications(tagpub:String)
 GET    /getTag/:pub_id              controllers.TagController.getTagByPub_id(pub_id:Long)
 
-### Testing New Features
-GET    /year/:year                  controllers.Application.getPublicationWithAuthorsByYear(year: Integer)
-GET    /id/:id                  controllers.Application.getPublicationWithAuthorsById(id: Integer)
-GET    /title/:title                controllers.Application.getPublicationWithAuthorsByTitle(title: String)
+#Tagging for post
+GET    /addtagpost/:postid/:tagpost         controllers.TagController.addTagpost(postid:Long,tagpost:String)
+GET    /deletetagpost/:postid/:tagpost      controllers.TagController.deleteTagpost(postid:Long,tagpost:String)
+GET    /getTagpost/:post_id                 controllers.TagController.getTagByPost_id(post_id:Long)
 
-#  Group
-GET    /groups/:grouptype                 controllers.UserGroupController.getGroupList(grouptype: String)
-GET    /group/own/:userid                 controllers.UserGroupController.getOwnGroup(userid: Long)
-GET    /group/:groupname                  controllers.UserGroupController.getGroupDetail(groupname: String)
-POST   /groups                            controllers.UserGroupController.saveGroup()
-POST   /group/message                     controllers.UserGroupController.saveMessage()
-GET    /group/:groupname/message          controllers.UserGroupController.getGroupMessage(groupname: String)
-GET    /group/notification/:userid        controllers.UserGroupController.getNotifcation(userid: Long)
-POST   /group/notification                controllers.UserGroupController.saveNotification()
-POST   /group/resnotification             controllers.UserGroupController.resNotification()
+
+GET    /paper/year/:year                  controllers.Application.getPublicationWithAuthorsByYear(year: Integer)
+GET    /paper/id/:id                      controllers.Application.getPublicationWithAuthorsById(id: Integer)
+GET    /paper/title/:title                controllers.Application.getPublicationWithAuthorsByTitle(title: String)
+
+
+
+### UserProfile
+POST   /userprofile/create			  controllers.UserProfileController.createuserProfileProfile()
+GET    /userprofile/:userName		  controllers.UserProfileController.getUserProfile(userName:String)
+GET    /userprofile/refresh/:userName controllers.UserProfileController.refreshUserprofile(userName:String)
+
+#Comments Popularity
+GET    /getCommentSum/:rootid                   controllers.Popularity.getCommentSum(rootid:Integer)
+GET    /getTagSum/:pubid                          controllers.Popularity.getTagSum(pubid:Long)
+
 
 

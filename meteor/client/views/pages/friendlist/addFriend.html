@@ -1,0 +1,77 @@
+
+<template name="addFriend">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="container">
+              <header>
+
+              <h1>Add Friends
+              <button class="btn-xs btn-xs button" onclick="window.location.href='/friendlisthome'">Back
+              </button>
+              </h1>
+              </header>
+                  {{> recommend}}
+                  {{> searchFriend}}
+              <ul>
+                {{> reactiveTable collection=myCollection settings=settings}}
+              </ul>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="searchFriend">
+        <input type='text' class='search_box'>
+        <button id='search_botton' class='btn-primary btn-xs'> Search
+        </button>
+</template>
+
+<template name="addFriendInfo">
+  <div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+      <div class="container">
+        <header>
+
+          <h1>User Info
+        <button class="btn-xs btn-xs button" onclick="window.location.href='/addFriend'">Back
+        </button>
+        </h1>
+        </header>
+
+        <ul>
+              {{> person context}}
+        </ul> 
+        <button class="button2">Send Request</button>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="person">
+  <h2>Name: {{name}}</h2>
+  <h2>Summary:</h2>
+  <textarea class="textarea">{{summary}}</textarea>
+  <h2>Mutual Friends:</h2>
+  <textarea class="textarea">{{mutual}}</textarea>
+</template>
+
+<template name="recommend">
+    <table width="20%" class="table table-striped table-bordered table-hover dataTables-example">
+    <thead>
+      <tr>
+        <td>Recommend to you:</td>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="recommend1">
+        <th>{{name1}}</th>
+      </tr>
+      <tr class="recommend2">
+        <th>{{name2}}</th>
+      </tr>
+      <tr class="recommend3">
+        <th>{{name3}}</th>
+      </tr>
+      </tbody>
+    </table>
+</template>
