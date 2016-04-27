@@ -14,7 +14,7 @@ public class Global extends GlobalSettings {
         String message = "Application has started! LOLADADA";
         Logger.info(message);
         List<Author> allauthors=Author.find.all();
-        if(allauthors!=null){
+        if(allauthors == null || allauthors.size() <= 0){
             SAXETL.loadData();
             System.out.println("Data load successfully!");
         }
