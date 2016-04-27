@@ -25,18 +25,21 @@ Template.postPage.events({
 			console.log("no post title");
 			return;
 		}
-		var content = $("newPostContent").val();
-		if(title == "") {
+		var content = $("#newPostContent").val();
+		if(content == "") {
 			console.log("post content is empty");
 			return;
 		}
+		var isQuestion = $("#setAsQuestion").prop('checked');
 		$("#newPostTitle").val("");
 		$("#newPostContent").val("");
+		$("#setAsQuestion").checked = false;
 		var args = {};
 		args["title"] = title;
 		args["authorid"] = 1;
 		args["content"] = content;
-		args["postAt"] = new Date().getTime();
+		args["postAt"] = new Date().toLocaleString();
+		args["isQuestion"] = isQuestion;
 		var url = "http://localhost:9000/post/addPost";
 		Meteor.call('postToBackend', url, args, function (err, res){
 			location.reload();
@@ -58,14 +61,18 @@ var fetchData = function(url){
 		var obj = JSON.stringify(res.data);
 		$(".loading").empty();
 		$(".table").append("<tbody id='content'></tbody>");
-		$("#resultcount").text("Found " + res.data.length + " results.");
-		contentholder = $("#content");
-		for (var i = 0; i < res.data.length; i++) {
-			var row = "<tr><td><span class='label label-primary'>" + (i+1) + "</span> </td><td><a href='/postdetail?id=" + res.data[i].id + "'>" + res.data[i].title + "</a>" + "<br><small>";
-			row += res.data[i].authorId;
-			row += "</small></td></tr>";
-			contentholder.append($(row));
-		};
+		if(res.data != null) {
+			$("#resultcount").text("Found " + res.data.length + " results.");
+			contentholder = $("#content");
+			for (var i = 0; i < res.data.length; i++) {
+				var row = "<tr><td><span class='label label-primary'>" + (i+1) + "</span> </td><td><a href='/postdetail?id=" + res.data[i].id + "'>" + res.data[i].title + "</a>" + "<br><small>";
+				row += res.data[i].authorId;
+				row += "</small></td></tr>";
+				contentholder.append($(row));
+			};
+		} else {
+			$("#resultcount").text("There is no posts right now");
+		}
 	});
 }
 

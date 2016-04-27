@@ -40,6 +40,7 @@ var renderComments = function(obj){
 			//User
 			item += "<a class='small edit'><i class='fa fa-paste' id='edita-" + c.comment.id + "'></i></a>";
 		}
+		item += "<button class='btn btn-sm btn-success setAsAnswer' id='postcomment-'" + c.comment.id + ">Set As Answer</button>"
 		item += "</span></div><p></p>";
 		item += "<div class='input-group'><input type='text' class='form-control input-sm' id='input-" + c.comment.id + "'><div class='input-group-btn'><button class='btn btn-sm btn-primary btn-upload ladda-button' data-style='zoom-out' id='upload-" + c.comment.id + "'>upload</button><button class='btn btn-sm btn-success btn-reply' id='reply-" + c.comment.id + "'>Reply</button></div></div></div></div>";
 		item += renderComments(c.children);
@@ -62,6 +63,22 @@ var fetchData = function(url){
 		$(".id").text(post.id);
 		$(".content").text(post.content);
 		$(".postAt").text(post.postAt);
+		console.log(post.isQuestion);
+		if(post.isQuestion) {
+			$(".isQuestion").text("Yes");
+			url = "http://localhost:9000/comment?rootid=" + Router.current().params.query.id + "&categoryid=2&userid=1";
+			Meteor.call('fetchFromService', url, function (err, res){
+				var obj = JSON.stringify(res.data);
+				if(res.data == null) {
+					$(".answer").text("No answer selected yet");
+				} else {
+					$(".answer").text(res.data[0].content);
+				}
+			});
+		} else {
+			$(".isQuestion").text("No");
+			$(".answer").text("This is not a question, there is no answer");
+		}
 	});
 }
 
@@ -237,6 +254,9 @@ Template.postDetail.events({
 			});
 		}
 		$(aid).children("span").text(count);
+	},
+	'click .setAsAnswer': function(event) {
+		//TODO
 	},
 	'click .input-sm': function(event){
 		console.log("FOCUS");
