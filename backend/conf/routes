@@ -56,9 +56,9 @@ GET    /deletetagpost/:postid/:tagpost      controllers.TagController.deleteTagp
 GET    /getTagpost/:post_id                 controllers.TagController.getTagByPost_id(post_id:Long)
 
 ### Testing New Features
-GET    /year/:year                  controllers.Application.getPublicationWithAuthorsByYear(year: Integer)
-GET    /id/:id                      controllers.Application.getPublicationWithAuthorsById(id: Integer)
-GET    /title/:title                controllers.Application.getPublicationWithAuthorsByTitle(title: String)
+GET    /paper/year/:year                  controllers.Application.getPublicationWithAuthorsByYear(year: Integer)
+GET    /paper/id/:id                      controllers.Application.getPublicationWithAuthorsById(id: Integer)
+GET    /paper/title/:title                controllers.Application.getPublicationWithAuthorsByTitle(title: String)
 
 
 
