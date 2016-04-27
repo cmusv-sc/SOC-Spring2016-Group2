@@ -121,6 +121,14 @@ create table user_profile (
   constraint pk_user_profile primary key (id))
 ;
 
+create table user_group (
+   id                        bigint auto_increment not null,
+   groupname                 varchar(255),
+   createrid                 bigint,
+   intro                     varchar(255),
+   type                      varchar(255),
+   constraint pk_user_group primary key (id))
+;
 alter table tagpub add constraint fk_tagpub_publication_1 foreign key (pub_id) references publication (pub_id) on delete restrict on update restrict;
 create index ix_tagpub_publication_1 on tagpub (pub_id);
 
@@ -154,6 +162,7 @@ drop table publication;
 
 drop table thumb;
 
+drop table user_group;
 
 drop table user_profile;
 
