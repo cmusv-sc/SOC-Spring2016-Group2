@@ -110,7 +110,7 @@ public class UserGroupController extends Controller {
         long createrid = jsonNode.path("createrid").asLong();
         String groupname = jsonNode.path("groupname").asText();
         String title = jsonNode.path("title").asText();
-        String msg = jsonNode.path("type").asText();
+        String msg = jsonNode.path("msg").asText();
         Long groupid = UserGroupController.getGroupID(groupname);
         new GroupMessage(createrid, groupid,title,msg ).save();
 
