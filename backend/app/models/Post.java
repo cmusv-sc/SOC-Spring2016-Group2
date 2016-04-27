@@ -23,7 +23,7 @@ public class Post extends Model {
     public long authorId;
     
     /* if the post is a question */
-    public boolean isQueustion;
+    public boolean isQuestion;
     
     /* if the post is a question, answerId 
      * is the id of comment which is set as answer
@@ -42,12 +42,14 @@ public class Post extends Model {
     		String title, 
     		String content, 
     		long authorId,  
-    		String postAt
+    		String postAt,
+    		boolean isQuestion
     		) {
     	this.title = title;
     	this.content = content;
     	this.authorId = authorId;
     	this.postAt = postAt;
+    	this.isQuestion = isQuestion;
     }
     
 	public Long getId() {
@@ -74,12 +76,12 @@ public class Post extends Model {
 		this.postAt = postAt;
 	}
 
-	public boolean isQueustion() {
-		return isQueustion;
+	public boolean isQuestion() {
+		return isQuestion;
 	}
 
-	public void setQueustion(boolean isQueustion) {
-		this.isQueustion = isQueustion;
+	public void setQueustion(boolean isQuestion) {
+		this.isQuestion = isQuestion;
 	}
 
 	public String getTitle() {

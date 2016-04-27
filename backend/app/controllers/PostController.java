@@ -33,7 +33,8 @@ public class PostController extends Controller {
 		String content = jsonNode.path("content").asText();
 		long authorId = jsonNode.path("authorId").asLong();
 		String postAt = jsonNode.path("postAt").asText();
-		new Post(title, content, authorId, postAt).save();
+		boolean isQuestion = jsonNode.path("isQuestion").asBoolean();
+		new Post(title, content, authorId, postAt, isQuestion).save();
 		return ok(toJson("success"));
 	}
 	
