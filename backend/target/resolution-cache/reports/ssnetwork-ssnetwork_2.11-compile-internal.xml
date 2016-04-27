@@ -7,7 +7,7 @@
 		revision="1.0-SNAPSHOT"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160426160449"/>
+		date="20160426170522"/>
 	<dependencies>
 		<module organisation="org.apache.lucene" name="lucene-queryparser">
 			<revision name="5.3.1" status="release" pubdate="20150928092003" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="100">

@@ -51,3 +51,4 @@ cfs:standard-packages
 cfs:gridfs
 cfs:filesystem
 meteorhacks:npm
+sebdah:autocompletion

@@ -14257,7 +14257,7 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.11!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.6!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 11550ms :: artifacts dl 222ms
+[debug] :: resolution report :: resolve 4591ms :: artifacts dl 183ms
 [debug] 	report for default#backend-build;0.1-SNAPSHOT compile produced in /Users/caoyi/Desktop/SSNetwork/backend/project/target/resolution-cache/reports/default-backend-build-compile.xml
 [debug] 	report for default#backend-build;0.1-SNAPSHOT runtime produced in /Users/caoyi/Desktop/SSNetwork/backend/project/target/resolution-cache/reports/default-backend-build-runtime.xml
 [debug] 	report for default#backend-build;0.1-SNAPSHOT test produced in /Users/caoyi/Desktop/SSNetwork/backend/project/target/resolution-cache/reports/default-backend-build-test.xml
@@ -14271,5 +14271,5 @@
 [debug] 	report for default#backend-build;0.1-SNAPSHOT docs produced in /Users/caoyi/Desktop/SSNetwork/backend/project/target/resolution-cache/reports/default-backend-build-docs.xml
 [debug] 	report for default#backend-build;0.1-SNAPSHOT pom produced in /Users/caoyi/Desktop/SSNetwork/backend/project/target/resolution-cache/reports/default-backend-build-pom.xml
 [debug] 	report for default#backend-build;0.1-SNAPSHOT scala-tool produced in /Users/caoyi/Desktop/SSNetwork/backend/project/target/resolution-cache/reports/default-backend-build-scala-tool.xml
-[debug] 	resolve done (11550ms resolve - 222ms download)
+[debug] 	resolve done (4591ms resolve - 183ms download)
 [info] Done updating.

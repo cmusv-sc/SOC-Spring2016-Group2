@@ -4,7 +4,7 @@
 		module="backend-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20160426160413"
+		publication="20160426170818"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

@@ -71,7 +71,7 @@ GET    /title/:title                controllers.Application.getPublicationWithAu
 POST   /userprofile/create			  controllers.UserProfileController.createuserProfileProfile()
 GET    /userprofile/:userName		  controllers.UserProfileController.getUserProfile(userName:String)
 GET    /userprofile/refresh/:userName controllers.UserProfileController.refreshUserprofile(userName:String)
-=======
+
 #Comments Popularity
 GET    /getCommentSum/:rootid                   controllers.Popularity.getCommentSum(rootid:Integer)
 GET    /getTagSum/:pubid                          controllers.Popularity.getTagSum(pubid:Long)

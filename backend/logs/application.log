@@ -1,18 +1,19 @@
-2016-04-23 10:20:43,071 [INFO] from play.core.server.NettyServer in pool-4-thread-2 - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
-2016-04-23 10:20:49,261 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
-2016-04-23 10:20:49,605 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:mysql://localhost:3306/SSNetwork
-2016-04-23 10:20:50,880 [WARN] from application in ForkJoinPool-1-worker-1 - application.conf @ file:/Users/caoyi/SSNetwork/backend/target/scala-2.11/classes/application.conf: 353: parsers.text.maxLength is deprecated, use play.http.parser.maxMemoryBuffer instead
-2016-04-23 10:21:44,341 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
-2016-04-23 10:21:48,095 [INFO] from application in application-akka.actor.default-dispatcher-5 - Application shutdown...!!!
-2016-04-23 10:21:48,183 [INFO] from application in application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
-2016-04-23 10:21:48,446 [INFO] from application in application-akka.actor.default-dispatcher-5 - Creating Pool for datasource 'default'
-2016-04-23 10:21:48,511 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-5 - Database [default] connected at jdbc:mysql://localhost:3306/SSNetwork
-2016-04-23 10:21:48,774 [WARN] from application in application-akka.actor.default-dispatcher-5 - application.conf @ file:/Users/caoyi/SSNetwork/backend/target/scala-2.11/classes/application.conf: 353: parsers.text.maxLength is deprecated, use play.http.parser.maxMemoryBuffer instead
-2016-04-23 10:21:48,959 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
-2016-04-23 13:54:04,033 [WARN] from com.zaxxer.hikari.pool.HikariPool in Hikari housekeeper (pool HikariPool-1) - HikariPool-1 - Unusual system clock change detected, soft-evicting connections from pool.
-2016-04-23 19:04:12,538 [WARN] from com.zaxxer.hikari.pool.HikariPool in Hikari housekeeper (pool HikariPool-1) - HikariPool-1 - Unusual system clock change detected, soft-evicting connections from pool.
-2016-04-24 02:13:36,743 [WARN] from com.zaxxer.hikari.pool.HikariPool in Hikari housekeeper (pool HikariPool-1) - HikariPool-1 - Unusual system clock change detected, soft-evicting connections from pool.
-2016-04-24 04:02:01,550 [WARN] from com.zaxxer.hikari.pool.HikariPool in Hikari housekeeper (pool HikariPool-1) - HikariPool-1 - Unusual system clock change detected, soft-evicting connections from pool.
-2016-04-24 05:50:54,159 [WARN] from com.zaxxer.hikari.pool.HikariPool in Hikari housekeeper (pool HikariPool-1) - HikariPool-1 - Unusual system clock change detected, soft-evicting connections from pool.
-2016-04-24 07:39:14,448 [WARN] from com.zaxxer.hikari.pool.HikariPool in Hikari housekeeper (pool HikariPool-1) - HikariPool-1 - Unusual system clock change detected, soft-evicting connections from pool.
-2016-04-24 08:53:32,152 [WARN] from com.zaxxer.hikari.pool.HikariPool in Hikari housekeeper (pool HikariPool-1) - HikariPool-1 - Unusual system clock change detected, soft-evicting connections from pool.
+2016-04-26 17:08:44,048 [INFO] from play.core.server.NettyServer in pool-4-thread-3 - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+2016-04-26 17:09:00,054 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
+2016-04-26 17:09:00,507 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:mysql://localhost:3306/SSNetwork
+2016-04-26 17:09:01,939 [WARN] from application in ForkJoinPool-1-worker-1 - application.conf @ file:/Users/caoyi/Desktop/SSNetwork/backend/target/scala-2.11/classes/application.conf: 354: parsers.text.maxLength is deprecated, use play.http.parser.maxMemoryBuffer instead
+2016-04-26 17:09:02,238 [INFO] from application in ForkJoinPool-1-worker-1 - Application has started! LOLADADA
+2016-04-26 17:11:24,181 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
+2016-04-26 17:11:34,288 [INFO] from application in application-akka.actor.default-dispatcher-3 - Application shutdown...!!!
+2016-04-26 17:11:34,475 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
+2016-04-26 17:11:35,689 [INFO] from application in application-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
+2016-04-26 17:11:35,756 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-3 - Database [default] connected at jdbc:mysql://localhost:3306/SSNetwork
+2016-04-26 17:11:36,144 [WARN] from application in application-akka.actor.default-dispatcher-3 - application.conf @ file:/Users/caoyi/Desktop/SSNetwork/backend/target/scala-2.11/classes/application.conf: 354: parsers.text.maxLength is deprecated, use play.http.parser.maxMemoryBuffer instead
+2016-04-26 17:11:36,674 [INFO] from application in application-akka.actor.default-dispatcher-3 - Application has started! LOLADADA
+2016-04-26 17:13:08,382 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-3 - Application started (Dev)
+2016-04-26 17:13:22,578 [INFO] from application in application-akka.actor.default-dispatcher-4 - Application shutdown...!!!
+2016-04-26 17:13:22,585 [INFO] from application in application-akka.actor.default-dispatcher-4 - Shutting down connection pool.
+2016-04-26 17:13:22,692 [INFO] from application in application-akka.actor.default-dispatcher-4 - Creating Pool for datasource 'default'
+2016-04-26 17:13:22,709 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-4 - Database [default] connected at jdbc:mysql://localhost:3306/SSNetwork
+2016-04-26 17:13:22,798 [WARN] from application in application-akka.actor.default-dispatcher-4 - application.conf @ file:/Users/caoyi/Desktop/SSNetwork/backend/target/scala-2.11/classes/application.conf: 354: parsers.text.maxLength is deprecated, use play.http.parser.maxMemoryBuffer instead
+2016-04-26 17:13:23,148 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-4 - Application started (Dev)
