@@ -60,7 +60,7 @@ GET    /getTag/:pub_id              controllers.TagController.getTagByPub_id(pub
 #GET    /deletetagpost/:postid/:tagpost      controllers.TagController.deleteTagpost(postid:Long,tagpost:String)
 #GET    /getTagpost/:post_id                 controllers.TagController.getTagByPost_id(post_id:Long)
 
-### Testing New Features
+
 GET    /paper/year/:year                  controllers.Application.getPublicationWithAuthorsByYear(year: Integer)
 GET    /paper/id/:id                      controllers.Application.getPublicationWithAuthorsById(id: Integer)
 GET    /paper/title/:title                controllers.Application.getPublicationWithAuthorsByTitle(title: String)
@@ -77,3 +77,13 @@ GET    /getCommentSum/:rootid                   controllers.Popularity.getCommen
 GET    /getTagSum/:pubid                          controllers.Popularity.getTagSum(pubid:Long)
 
 
+#  Group 
+GET    /groups/:grouptype                 controllers.UserGroupController.getGroupList(grouptype: String)
+ GET    /group/own/:userid                 controllers.UserGroupController.getOwnGroup(userid: Long)
+ GET    /group/:groupname                  controllers.UserGroupController.getGroupDetail(groupname: String)
+ POST   /groups                            controllers.UserGroupController.saveGroup()
+ POST   /group/message                     controllers.UserGroupController.saveMessage()
+ GET    /group/:groupname/message          controllers.UserGroupController.getGroupMessage(groupname: String)
+ GET    /group/notification/:userid        controllers.UserGroupController.getNotifcation(userid: Long)
+ POST   /group/notification                controllers.UserGroupController.saveNotification()
+ POST   /group/resnotification             controllers.UserGroupController.resNotification()
