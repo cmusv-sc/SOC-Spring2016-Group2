@@ -155,5 +155,6 @@ public class PostController extends Controller {
             return Common.badRequestWrapper("No record found");
         }
         return created(Json.toJson(posts));
+
     }
 }

@@ -52,6 +52,13 @@ create table post_comment (
   constraint pk_post_comment primary key (id))
 ;
 
+create table publication_author (
+  id                        bigint auto_increment not null,
+  publication_id            bigint,
+  author_id                 bigint,
+  constraint pk_publication_author primary key (id))
+;
+
 create table publication (
   pub_id                    bigint auto_increment not null,
   pubkey                    varchar(255),
@@ -69,13 +76,6 @@ create table publication (
   crossref                  varchar(255),
   ee                        varchar(255),
   constraint pk_publication primary key (pub_id))
-;
-
-create table publication_author (
-  id                        bigint auto_increment not null,
-  publication_id            bigint,
-  author_id                 bigint,
-  constraint pk_publication_author primary key (id))
 ;
 
 create table thumb (
@@ -117,9 +117,9 @@ drop table post;
 
 drop table post_comment;
 
-drop table publication;
-
 drop table publication_author;
+
+drop table publication;
 
 drop table thumb;
 

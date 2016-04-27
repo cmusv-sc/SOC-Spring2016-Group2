@@ -141,13 +141,22 @@ Template.recommend.onCreated(function () {
 		            myid: second
 		          }
         		).forEach(function(ob2){
-        			var thirdid = obj.friendid
+        			var thirdid = ob2.friendid
         			count += Friends.find({myid: myid, friendid: thirdid}).count()
         		})
                 if (count > count1) {
                 	name3 = name2
                 	name2 = name1
                     name1 = secondname
+
+                    var summary1 = Session.get("recommendsum1")
+                    var summary2 = Session.get("recommendsum2")
+                    var id1 = Session.get("recommendid1")
+                    var id2 = Session.get("recommendid2")
+                    Session.setPersistent("recommendid3", id2);
+                    Session.setPersistent("recommendsum3", summary2);
+                    Session.setPersistent("recommendid2", id1);
+                    Session.setPersistent("recommendsum2", summary1);
                     Session.setPersistent("recommendid1", second);
                     Session.setPersistent("recommendsum1", ob.summary);
                     count3 = count2
@@ -156,6 +165,10 @@ Template.recommend.onCreated(function () {
                 } else if (count > count2 && secondname != name1) {
                 	name3 = name2
                     name2 = secondname
+                    var summary2 = Session.get("recommendsum2")
+                    var id2 = Session.get("recommendid2")
+                    Session.setPersistent("recommendid3", id2);
+                    Session.setPersistent("recommendsum3", summary2);
                     Session.setPersistent("recommendid2", second);
                     Session.setPersistent("recommendsum2", ob.summary);
                     count3 = count2

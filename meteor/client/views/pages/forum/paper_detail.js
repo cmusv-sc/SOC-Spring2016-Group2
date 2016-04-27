@@ -1,7 +1,7 @@
 Template.paperdetail.helpers({
   getData: function() {
   	//console.log("ID: " + Router.current().params.query.id);
-  	var url = "http://localhost:9000/id/" + Router.current().params.query.id;
+  	var url = "http://localhost:9000/paper/id/" + Router.current().params.query.id;
   	fetchData(url);
 	url = "http://localhost:9000/getTag/" + Router.current().params.query.id;
 	fetchTag(url);
@@ -301,5 +301,19 @@ Template.paperdetail.events({
 		$("#file1").click();
 		console.log(event.target.id);
 		up = event.target.id;
+	},
+	'click #closecomment': function(event){
+		console.log("Close");
+		if ($(".input-group").hasClass("hide")) {
+			$(".input-group").removeClass("hide");
+			$(".dd").removeClass("hide");
+			$("#commentnote").addClass("hide");
+			$(event.target).text("Close Comment");
+		}else{
+			$(".input-group").addClass("hide");
+			$("#commentnote").removeClass("hide");
+			$(".dd").addClass("hide");
+			$(event.target).text("Open Comment");
+		}
 	}
 });
