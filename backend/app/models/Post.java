@@ -1,6 +1,5 @@
 package models;
 
-import java.sql.Timestamp;
 import java.util.List;
 
 import javax.persistence.*;
@@ -12,7 +11,6 @@ import com.avaje.ebean.Model;
 @Entity(name="post")
 public class Post extends Model {
     @Id
-    @Column(name="post_id")
     public Long id;
 
     /* the title of the post */
@@ -22,19 +20,16 @@ public class Post extends Model {
     public String content;
     
     /* the author of post */
-    public Long authorId;
+    public long authorId;
     
     /* if the post is a question */
-    public boolean isQueustion;
+    public boolean isQuestion;
     
-    /* if the post is a question, answerId 
-     * is the id of comment which is set as answer
-     * */
-    public Long answerId;
+    /* the answer of question */
+    public String answer;
     
     /* post created at */
-    @Column(columnDefinition = "datetime")
-    public Timestamp postAt;
+    public String postAt;
 
     public static Finder<Long, Post> find = new Finder<Long, Post>(Post.class);
     
@@ -44,13 +39,16 @@ public class Post extends Model {
     public Post(
     		String title, 
     		String content, 
-    		Long authorId,  
-    		Timestamp postAt
+    		long authorId,  
+    		String postAt,
+    		boolean isQuestion
     		) {
     	this.title = title;
     	this.content = content;
     	this.authorId = authorId;
     	this.postAt = postAt;
+    	this.isQuestion = isQuestion;
+    	this.answer = "";
     }
     
 	public Long getId() {
@@ -69,20 +67,20 @@ public class Post extends Model {
 		this.content = content;
 	}
 
-	public Timestamp getPostAt() {
+	public String getPostAt() {
 		return postAt;
 	}
 
-	public void setPostAt(Timestamp postAt) {
+	public void setPostAt(String postAt) {
 		this.postAt = postAt;
 	}
 
-	public boolean isQueustion() {
-		return isQueustion;
+	public boolean isQuestion() {
+		return isQuestion;
 	}
 
-	public void setQueustion(boolean isQueustion) {
-		this.isQueustion = isQueustion;
+	public void setQueustion(boolean isQuestion) {
+		this.isQuestion = isQuestion;
 	}
 
 	public String getTitle() {
@@ -101,11 +99,11 @@ public class Post extends Model {
 		this.authorId = authorId;
 	}
 
-	public long getAnswerId() {
-		return answerId;
+	public String getAnswer() {
+		return answer;
 	}
 
-	public void setAnswerId(long answerId) {
-		this.answerId = answerId;
+	public void setAnswer(String answer) {
+		this.answer = answer;
 	}
 }

@@ -59,14 +59,14 @@ create table group_notice (
 ;
 
 create table post (
-  post_id                   bigint auto_increment not null,
+  id                        bigint auto_increment not null,
   title                     varchar(255),
   content                   varchar(255),
   author_id                 bigint,
-  is_queustion              tinyint(1) default 0,
-  answer_id                 bigint,
-  post_at                   datetime,
-  constraint pk_post primary key (post_id))
+  is_question               tinyint(1) default 0,
+  answer                    varchar(255),
+  post_at                   varchar(255),
+  constraint pk_post primary key (id))
 ;
 
 create table post_comment (

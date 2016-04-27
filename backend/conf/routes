@@ -56,9 +56,9 @@ GET    /getpublications/:tagpub     controllers.TagController.getPublications(ta
 GET    /getTag/:pub_id              controllers.TagController.getTagByPub_id(pub_id:Long)
 
 #Tagging for post
-GET    /addtagpost/:postid/:tagpost         controllers.TagController.addTagpost(postid:Long,tagpost:String)
-GET    /deletetagpost/:postid/:tagpost      controllers.TagController.deleteTagpost(postid:Long,tagpost:String)
-GET    /getTagpost/:post_id                 controllers.TagController.getTagByPost_id(post_id:Long)
+#GET    /addtagpost/:postid/:tagpost         controllers.TagController.addTagpost(postid:Long,tagpost:String)
+#GET    /deletetagpost/:postid/:tagpost      controllers.TagController.deleteTagpost(postid:Long,tagpost:String)
+#GET    /getTagpost/:post_id                 controllers.TagController.getTagByPost_id(post_id:Long)
 
 
 GET    /paper/year/:year                  controllers.Application.getPublicationWithAuthorsByYear(year: Integer)
@@ -77,6 +77,7 @@ GET    /getCommentSum/:rootid                   controllers.Popularity.getCommen
 GET    /getTagSum/:pubid                          controllers.Popularity.getTagSum(pubid:Long)
 
 
+
 GET    /groups/:grouptype                 controllers.UserGroupController.getGroupList(grouptype: String)
 GET    /group/own/:userid                 controllers.UserGroupController.getOwnGroup(userid: Long)
 POST   /groups                            controllers.UserGroupController.saveGroup()
@@ -85,3 +86,4 @@ GET    /group/notification/:userid        controllers.UserGroupController.getNot
 POST   /group/resnotification             controllers.UserGroupController.resNotification()
 GET    /group/:groupname/message          controllers.UserGroupController.getGroupMessage(groupname: String)
 POST   /group/message                     controllers.UserGroupController.saveMessage()
+

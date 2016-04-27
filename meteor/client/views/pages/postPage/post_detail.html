@@ -1,0 +1,86 @@
+<head>
+    <style>
+        .ed {color: #1C84C6;}
+        .hide {display: none;}
+    </style>
+</head>
+<template name="postDetail">
+  <div class="wrapper wrapper-content container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <a href="/postPage" class="btn btn-primary btn-outline"><i class="fa fa-chevron-left"></i> Back</a>
+                    <div class="text-center">
+                        <h1 id="title"></h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p></p>
+                        </div>
+                        <div class="col-sm-6">
+                            <h2>Post</h2>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <td><span class="label label-info">Id</span></td>
+                                            <td class="id"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Author</span></td>
+                                            <td class="author"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Is Question</span></td>
+                                            <td class="isQuestion"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Content</span></td>
+                                            <td class="content"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Post At</span></td>
+                                            <td class="postAt"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Answer</span></td>
+                                            <td class="answer"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="tags">
+                                    <input type="text" class="btn-white btn-xs" id="addTag" placeholder="Add Tag">
+                                </div>
+                            </div>
+                            <hr>
+                            <h2>Comments <small class="hide" id="commentnote">This feature has been closed</small></h2>
+                            <button class="btn btn-danger btn-outline" id="closecomment">Close Comment</button>
+                            <p></p>
+                            <div class="input-group">
+                                <input type="text" class="form-control input-sm" id="inputcomment">
+                                <div class="input-group-btn">
+                                    <button class="ladda-button btn btn-sm btn-primary btn-upload" id="upload-0" data-style='zoom-out'>upload</button>
+                                    <button class="btn btn-sm btn-success" id="postcomment">Comment</button>
+                                </div>
+                            </div>
+                            <br>
+                            <div>
+                                <div class="dd" id="nestable">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <p></p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+        {{getData}}
+        <input type="file" id="file1" class="hide">
+    </div>
+</template>

@@ -70,6 +70,9 @@ Router.route('/suggestion', function () {
 Router.route('/postPage', function() {
 	this.render('postPage')
 });
+Router.route('/postDetail', function () {
+    this.render('postDetail');
+});
 
 // Features: Forum
 Router.route('/forumlist', function () {

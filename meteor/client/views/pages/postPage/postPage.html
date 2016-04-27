@@ -1,51 +1,58 @@
 <template name="postPage">
-    <div align="center" class="wrapper wrapper-content animated fadeInRight">
+  <div class="wrapper wrapper-content container">
         <div class="row">
-        	<div>
-        	    <button id="findPost">Find Post</button>
-        		<button id="addPost">New Post</button>
-        	</div>
-        	<br>
-        	{{#if ifShowAddNewPost}}
-        		<div id="addNewPostContainer">
-	                <form method="post" id="addPostForm">
-	                    <ul>
-	                        <input id="postTitle" type="text" placeholder="post title"/>
-	                    </ul>
-	                    <ul>
-	                        <textarea id="postContent" rows="4" cols="100">put your post content here</textarea>
-	                    </ul>
-	                    <ul>
-	                        <input type="submit" value="Post"/>
-	                    </ul>
-	                </form>
-	            </div> 
-        	{{else}}
-	            <div>
-	                <form method="post" id="searchPostForm">
-	                    <input type="text" id="keyword"/>
-	                    <input type="submit" value="Search"/>
-	                </form>
-	            </div>        	
-        	{{/if}}
-		    <ul>
-		      {{#each posts}}
-		        {{> post}}
-		      {{/each}}
-		    </ul>
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="container">
+                  <h1 id="title">Post</h1>
+                </div>
+            </div>
         </div>
-    </div> 
-</template>
-
-<template name="post">
-  <head>{{title}}</head>
-  <p>{{author}} posted at {{postAt}}</p>
-  <p>{{content}}</p>
-  <div id="commentContainer"></div>
-  <div>
-      <form method="post" id="addCommentForm">
-          <input type="text" id="commentContent"/>
-          <input type="submit" value="Comment"/>
-      </form>
-  </div>
+        {{getData}}
+        <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <div class="ibox-content">
+            <div>
+                <p>
+                	<div class="span6 text-center">
+                	    <button class="btn btn-sm btn-primary newPost" style="min-width: 40%">New</button>
+		        	    <button class="btn btn-sm btn-primary findPost" style="min-width: 40%">FindPost</button>
+		       		</div>
+		       		<br>
+        			{{#if ifShowAddNewPost}}
+	                    <div class="input-group span6 text-center">
+	                        <input type="text" class="form-control input-sm" id="keyword">
+	                        <div class="input-group-btn">
+	                            <button class="btn btn-sm btn-primary searchPost">Search</button>
+	                        </div>
+	                    </div>
+                    {{else}}
+	                    <div class="input-group span6 text-center">
+	                       	<input type="text" class="form-control input-sm" placeholder="Post title" id="newPostTitle">
+	                       	<textarea class="form-control input-sm" rows="4" id="newPostContent">post content</textarea>
+                            <label >
+                                <input type="checkbox" class="btn btn-lg btn-primary" id="setAsQuestion"> This is a question
+                            </label>
+	                       	<div class="input-group-btn">
+	                        	<button class="btn btn-sm btn-primary addNewPost">Add</button>
+	                        </div>
+	                   	</div>
+        			{{/if}}
+                </p>
+            </div>
+            <div>
+                <strong id="resultcount"></strong>
+                <p></p>
+            </div>
+            <div class="table-responsive" >
+                <div class="loading"></div>
+                <table class="table table-hover">
+                    <tbody id="content">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
 </template>
