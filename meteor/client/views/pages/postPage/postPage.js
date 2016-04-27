@@ -6,7 +6,47 @@ Template.postPage.events({
 	},
 
 	'click .newPost': function(event) {
+		event.preventDefault();
 		Session.set('showSearchPost', false);
+	},
+	'click .searchPost': function (event) {
+		event.preventDefault();
+		var input = $("#keyword").val();
+		$("#keyword").val("");
+		if (input == "") { console.log("No input"); return;};
+		console.log("year: " + $("#inputvalue").val());
+		var url = "http://localhost:9000/post/search/" + input;
+		fetchData(url);
+	},
+	'click .addNewPost': function (event) {
+		event.preventDefault();
+		var title = $("#newPostTitle").val();
+		if(title == "") {
+			console.log("no post title");
+			return;
+		}
+		var content = $("newPostContent").val();
+		if(title == "") {
+			console.log("post content is empty");
+			return;
+		}
+		$("#newPostTitle").val("");
+		$("#newPostContent").val("");
+		var args = {};
+		args["title"] = title;
+		args["authorid"] = 1;
+		args["content"] = content;
+		args["postAt"] = new Date().getTime();
+		var url = "http://localhost:9000/post/addPost";
+		Meteor.call('postToBackend', url, args, function (err, res){
+			location.reload();
+			if(err) {
+				console.log("Failed to add new post");
+			} else {
+				var url = "http://localhost:9000/post/getAllPosts";
+				fetchData(url);
+			}
+		});
 	},
 });
 
@@ -20,7 +60,6 @@ var fetchData = function(url){
 		$(".table").append("<tbody id='content'></tbody>");
 		$("#resultcount").text("Found " + res.data.length + " results.");
 		contentholder = $("#content");
-		console.log(res);
 		for (var i = 0; i < res.data.length; i++) {
 			var row = "<tr><td><span class='label label-primary'>" + (i+1) + "</span> </td><td><a href='/postdetail?id=" + res.data[i].id + "'>" + res.data[i].title + "</a>" + "<br><small>";
 			row += res.data[i].authorId;

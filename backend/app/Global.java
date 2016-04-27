@@ -15,7 +15,7 @@ public class Global extends GlobalSettings {
         Logger.info(message);
         List<Author> allauthors=Author.find.all();
         if(allauthors!=null){
-            //SAXETL.loadData();
+            SAXETL.loadData();
             System.out.println("Data load successfully!");
         }
     }
