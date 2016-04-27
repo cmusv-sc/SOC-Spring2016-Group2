@@ -32,11 +32,6 @@ public class PostController extends Controller {
 		String title = jsonNode.path("title").asText();
 		String content = jsonNode.path("content").asText();
 		long authorId = jsonNode.path("authorId").asLong();
-		System.out.println("title\t" + title);
-		System.out.println("content\t" + content);
-		System.out.println("authorId" + authorId);
-		System.out.println("timestamp" + jsonNode.path("postAt").asText());
-		String postAt = jsonNode.path("postAt").asText();
 		new Post(title, content, authorId, postAt).save();
 		return ok(toJson("success"));
 	}

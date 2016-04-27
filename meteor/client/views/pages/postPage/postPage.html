@@ -13,26 +13,26 @@
           <div class="ibox-content">
             <div>
                 <p>
-                	<div class="span7 text-center">
-                	    <button class="btn btn-sm btn-primary newPost">Search</button>
-		        	    <button class="btn btn-sm btn-primary findPost">FindPost</button>
+                	<div class="span6 text-center">
+                	    <button class="btn btn-sm btn-primary newPost" style="min-width: 40%">New</button>
+		        	    <button class="btn btn-sm btn-primary findPost" style="min-width: 40%">FindPost</button>
 		       		</div>
 		       		<br>
         			{{#if ifShowAddNewPost}}
-                    <div class="input-group">
-                        <input type="text" class="form-control input-sm" id="keyword">
-                        <div class="input-group-btn">
-                            <button class="btn btn-sm btn-primary search">Search</button>
-                        </div>
-                    </div>
-                    {{else}}
-                        <div class="input-group">
-                        	<input type="text" class="form-control input-sm" id="newPostTitle">
-							<textarea class="span6" rows="3" placeholder="Your post content" required id="newPostContent"></textarea>
-                        	<div class="input-group-btn">
-                            	<button class="btn btn-sm btn-primary addNewPost">Add</button>
+	                    <div class="input-group span6 text-center">
+	                        <input type="text" class="form-control input-sm" id="keyword">
+	                        <div class="input-group-btn">
+	                            <button class="btn btn-sm btn-primary search">Search</button>
 	                        </div>
-                    	</div>
+	                    </div>
+                    {{else}}
+	                    <div class="input-group span6 text-center">
+	                       	<input type="text" class="form-control input-sm" placeholder="Post title" id="newPostTitle">
+	                       	<textarea class="form-control input-sm" rows="4" id="newPostContent">post content</textarea>
+	                       	<div class="input-group-btn">
+	                        	<button class="btn btn-sm btn-primary addNewPost">Add</button>
+	                        </div>
+	                   	</div>
         			{{/if}}
                 </p>
             </div>

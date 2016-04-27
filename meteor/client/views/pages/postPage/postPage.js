@@ -20,8 +20,9 @@ var fetchData = function(url){
 		$(".table").append("<tbody id='content'></tbody>");
 		$("#resultcount").text("Found " + res.data.length + " results.");
 		contentholder = $("#content");
+		console.log(res);
 		for (var i = 0; i < res.data.length; i++) {
-			var row = "<tr><td><span class='label label-primary'>" + (i+1) + "</span> </td><td><a href='/paperdetail?id=" + res.data[i].post.id + "'>" + res.data[i].post.title + "</a>" + "<br><small>";
+			var row = "<tr><td><span class='label label-primary'>" + (i+1) + "</span> </td><td><a href='/postdetail?id=" + res.data[i].id + "'>" + res.data[i].title + "</a>" + "<br><small>";
 			row += res.data[i].authorId;
 			row += "</small></td></tr>";
 			contentholder.append($(row));
