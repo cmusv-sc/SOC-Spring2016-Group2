@@ -149,5 +149,28 @@ Router.route('/emptyPage', function () {
 Router.route('/notFound', function () {
     this.render('notFound');
 });
+//user group
+Router.route('/groups/publicgroup',function(){
+    this.render('publicgroup');
+});
+Router.route('/groups/privategroup',function(){
+    this.render('privategroup');
+});
+Router.route('/group/owngroup',function(){
+    this.render('yourown');
+});
+Router.route('/group/notice',function(){
+    this.render('notificaction');
+});
 
+Router.route('/group/:_id', {
+    template: 'groupPage',
+    data: function(){
+        return {_id: this.params._id};
+    }
+     
+});
 
+Router.route('/newgroup',function(){
+    this.render('createnewgroup');
+});

@@ -33,7 +33,7 @@ POST   /upload                      controllers.ForumController.uploadFile()
 
 ### Thumb
 POST    /addThumb                                              controllers.ThumbController.addThumb()
-DELETE  /deleteThumb/:thumb_type/:sender/:receiver               controllers.ThumbController.deleteThumb(thumb_type: Integer, sender: Integer, receiver: Integer)
+DELETE  /deleteThumb/:thumb_type/:sender/:receiver             controllers.ThumbController.deleteThumb(thumb_type: Integer, sender: Integer, receiver: Integer)
 GET     /getThumbSum/:user/:type                               controllers.ThumbController.getThumbSum(user:String,type:String)
 
 
@@ -68,22 +68,20 @@ GET    /paper/title/:title                controllers.Application.getPublication
 
 
 ### UserProfile
-POST   /userprofile/create			  controllers.UserProfileController.createuserProfileProfile()
-GET    /userprofile/:userName		  controllers.UserProfileController.getUserProfile(userName:String)
-GET    /userprofile/refresh/:userName controllers.UserProfileController.refreshUserprofile(userName:String)
+POST   /userprofile/create			     controllers.UserProfileController.createuserProfileProfile()
+GET    /userprofile/:userName		     controllers.UserProfileController.getUserProfile(userName:String)
+GET    /userprofile/refresh/:userName    controllers.UserProfileController.refreshUserprofile(userName:String)
 
 #Comments Popularity
 GET    /getCommentSum/:rootid                   controllers.Popularity.getCommentSum(rootid:Integer)
 GET    /getTagSum/:pubid                          controllers.Popularity.getTagSum(pubid:Long)
 
 
-#  Group 
 GET    /groups/:grouptype                 controllers.UserGroupController.getGroupList(grouptype: String)
- GET    /group/own/:userid                 controllers.UserGroupController.getOwnGroup(userid: Long)
- GET    /group/:groupname                  controllers.UserGroupController.getGroupDetail(groupname: String)
- POST   /groups                            controllers.UserGroupController.saveGroup()
- POST   /group/message                     controllers.UserGroupController.saveMessage()
- GET    /group/:groupname/message          controllers.UserGroupController.getGroupMessage(groupname: String)
- GET    /group/notification/:userid        controllers.UserGroupController.getNotifcation(userid: Long)
- POST   /group/notification                controllers.UserGroupController.saveNotification()
- POST   /group/resnotification             controllers.UserGroupController.resNotification()
+GET    /group/own/:userid                 controllers.UserGroupController.getOwnGroup(userid: Long)
+POST   /groups                            controllers.UserGroupController.saveGroup()
+POST   /group/notification                controllers.UserGroupController.saveNotification()
+GET    /group/notification/:userid        controllers.UserGroupController.getNotifcation(userid: Long)
+POST   /group/resnotification             controllers.UserGroupController.resNotification()
+GET    /group/:groupname/message          controllers.UserGroupController.getGroupMessage(groupname: String)
+POST   /group/message                     controllers.UserGroupController.saveMessage()
