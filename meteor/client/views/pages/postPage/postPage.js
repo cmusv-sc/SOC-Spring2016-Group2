@@ -7,7 +7,7 @@ Template.postPage.events({
 
 	'click .newPost': function(event) {
 		Session.set('showSearchPost', false);
-	}
+	},
 });
 
 var fetchData = function(url){

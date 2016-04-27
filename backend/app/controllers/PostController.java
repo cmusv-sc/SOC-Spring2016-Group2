@@ -17,8 +17,15 @@ import play.libs.Json;
 
 public class PostController extends Controller {
 	
+	
+
 	/* add a new post to database */
 	public Result addPost() {
+		response().setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
+        response().setHeader("Access-Control-Max-Age", "3600");
+        response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-    Type, Accept, Authorization, X-Auth-Token");
+        response().setHeader("Access-Control-Allow-Credentials", "true");
+        response().setHeader("Access-Control-Allow-Origin", "*");
 		JsonNode jsonNode = request().body().asJson();
 		if(jsonNode == null) {
 			return Common.badRequestWrapper("Post is empty");
@@ -26,6 +33,10 @@ public class PostController extends Controller {
 		String title = jsonNode.path("title").asText();
 		String content = jsonNode.path("content").asText();
 		long authorId = jsonNode.path("authorId").asLong();
+		System.out.println("title\t" + title);
+		System.out.println("content\t" + content);
+		System.out.println("authorId" + authorId);
+		System.out.println("timestamp" + jsonNode.path("postAt").asText());
 		Timestamp postAt = Timestamp.valueOf(jsonNode.path("postAt").asText());
 		new Post(title, content, authorId, postAt).save();
 		return ok(toJson("success"));
@@ -33,6 +44,11 @@ public class PostController extends Controller {
 	
 	/* find post by id */
 	public Result getPostById(Long postId) {
+        response().setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
+        response().setHeader("Access-Control-Max-Age", "3600");
+        response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-    Type, Accept, Authorization, X-Auth-Token");
+        response().setHeader("Access-Control-Allow-Credentials", "true");
+        response().setHeader("Access-Control-Allow-Origin", "*");
 		Post post = Post.find.byId(postId);
 		if(post == null) {
 			return Common.badRequestWrapper("no record found");
@@ -42,6 +58,11 @@ public class PostController extends Controller {
 	
 	/* get all post */
 	public Result getAllPosts() {
+        response().setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
+        response().setHeader("Access-Control-Max-Age", "3600");
+        response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-    Type, Accept, Authorization, X-Auth-Token");
+        response().setHeader("Access-Control-Allow-Credentials", "true");
+        response().setHeader("Access-Control-Allow-Origin", "*");	
 		List<Post> posts = Post.find.all();
 		if(posts == null || posts.size() == 0) {
 			return Common.badRequestWrapper("no record found");
@@ -50,6 +71,11 @@ public class PostController extends Controller {
 	}
 	
 	public Result addComment() {
+        response().setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
+        response().setHeader("Access-Control-Max-Age", "3600");
+        response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-    Type, Accept, Authorization, X-Auth-Token");
+        response().setHeader("Access-Control-Allow-Credentials", "true");
+        response().setHeader("Access-Control-Allow-Origin", "*");		
 		JsonNode jsonNode = request().body().asJson();
         if(jsonNode == null) {
             return Common.badRequestWrapper("no request body");
@@ -65,6 +91,11 @@ public class PostController extends Controller {
 	}
 	
 	public Result setAsQuestion() {
+        response().setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
+        response().setHeader("Access-Control-Max-Age", "3600");
+        response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-    Type, Accept, Authorization, X-Auth-Token");
+        response().setHeader("Access-Control-Allow-Credentials", "true");
+        response().setHeader("Access-Control-Allow-Origin", "*");		
 		JsonNode jsonNode = request().body().asJson();
         if(jsonNode == null) {
             return Common.badRequestWrapper("no request body");
@@ -80,6 +111,11 @@ public class PostController extends Controller {
 	}
 	
 	public Result setAnswer() {
+        response().setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
+        response().setHeader("Access-Control-Max-Age", "3600");
+        response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-    Type, Accept, Authorization, X-Auth-Token");
+        response().setHeader("Access-Control-Allow-Credentials", "true");
+        response().setHeader("Access-Control-Allow-Origin", "*");		
 		JsonNode jsonNode = request().body().asJson();
         if(jsonNode == null) {
             return Common.badRequestWrapper("no request body");
@@ -96,6 +132,11 @@ public class PostController extends Controller {
 	}
 
     public Result search(String keyword) {
+        response().setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
+        response().setHeader("Access-Control-Max-Age", "3600");
+        response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-    Type, Accept, Authorization, X-Auth-Token");
+        response().setHeader("Access-Control-Allow-Credentials", "true");
+        response().setHeader("Access-Control-Allow-Origin", "*");    	
         List<Post> posts = Post.find.where()
         		.or(Expr.like("title", "%" + keyword + "%"), Expr.like("content", "%" + keyword + "%"))
         		.orderBy("postAt")
@@ -107,6 +148,11 @@ public class PostController extends Controller {
     }
 
     public Result getPostByUserId(Long userId) {
+        response().setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
+        response().setHeader("Access-Control-Max-Age", "3600");
+        response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-    Type, Accept, Authorization, X-Auth-Token");
+        response().setHeader("Access-Control-Allow-Credentials", "true");
+        response().setHeader("Access-Control-Allow-Origin", "*");    	
         List<Post> posts = Post.find
             .where()
             .eq("authorId", userId)

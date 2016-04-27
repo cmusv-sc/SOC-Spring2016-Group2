@@ -1,6 +1,5 @@
 package models;
 
-import java.sql.Timestamp;
 import java.util.List;
 
 import javax.persistence.*;
@@ -12,7 +11,6 @@ import com.avaje.ebean.Model;
 @Entity(name="post")
 public class Post extends Model {
     @Id
-    @Column(name="post_id")
     public Long id;
 
     /* the title of the post */
@@ -22,7 +20,7 @@ public class Post extends Model {
     public String content;
     
     /* the author of post */
-    public Long authorId;
+    public long authorId;
     
     /* if the post is a question */
     public boolean isQueustion;
@@ -30,11 +28,10 @@ public class Post extends Model {
     /* if the post is a question, answerId 
      * is the id of comment which is set as answer
      * */
-    public Long answerId;
+    public long answerId;
     
     /* post created at */
-    @Column(columnDefinition = "datetime")
-    public Timestamp postAt;
+    public String postAt;
 
     public static Finder<Long, Post> find = new Finder<Long, Post>(Post.class);
     
@@ -45,7 +42,7 @@ public class Post extends Model {
     		String title, 
     		String content, 
     		Long authorId,  
-    		Timestamp postAt
+    		String postAt
     		) {
     	this.title = title;
     	this.content = content;
@@ -69,11 +66,11 @@ public class Post extends Model {
 		this.content = content;
 	}
 
-	public Timestamp getPostAt() {
+	public String getPostAt() {
 		return postAt;
 	}
 
-	public void setPostAt(Timestamp postAt) {
+	public void setPostAt(String postAt) {
 		this.postAt = postAt;
 	}
 
