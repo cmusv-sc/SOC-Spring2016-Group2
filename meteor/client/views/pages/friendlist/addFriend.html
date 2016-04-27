@@ -10,9 +10,7 @@
               </button>
               </h1>
               </header>
-              <h3>
                   {{> recommend}}
-              </h3>
                   {{> searchFriend}}
               <ul>
                 {{> reactiveTable collection=myCollection settings=settings}}
@@ -58,18 +56,22 @@
 </template>
 
 <template name="recommend">
-    <table width="20%" border="1">
+    <table width="20%" class="table table-striped table-bordered table-hover dataTables-example">
+    <thead>
       <tr>
         <td>Recommend to you:</td>
       </tr>
+      </thead>
+      <tbody>
       <tr class="recommend1">
-        <td>{{name1}}</td>
+        <th>{{name1}}</th>
       </tr>
       <tr class="recommend2">
-        <td>{{name2}}</td>
+        <th>{{name2}}</th>
       </tr>
       <tr class="recommend3">
-        <td>{{name3}}</td>
+        <th>{{name3}}</th>
       </tr>
+      </tbody>
     </table>
 </template>
