@@ -63,6 +63,7 @@ var fetchData = function(url){
 		var post = res.data;
 		$("#title").text(post.title);
 		$(".author").text(post.authorId);
+		//$(".author").text(User2.findOne(post.authorId).name);
 		$(".id").text(post.id);
 		$(".content").text(post.content);
 		$(".postAt").text(post.postAt);
