@@ -98,6 +98,7 @@ modules-runtime@0.6.3
 mongo@1.1.7
 mongo-id@1.0.4
 mongo-livedata@1.0.12
+mrt:jquery-ui@1.9.2
 npm-bcrypt@0.8.5
 npm-container@1.2.0
 npm-mongo@1.4.43
@@ -113,6 +114,7 @@ reactive-var@1.0.9
 reload@1.1.8
 retry@1.0.7
 routepolicy@1.0.10
+sebdah:autocompletion@0.2.0
 service-configuration@1.0.9
 session@1.1.5
 sha@1.0.7

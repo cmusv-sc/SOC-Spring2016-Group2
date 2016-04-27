@@ -1,15 +1,15 @@
 package controllers;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import models.Post;
-import models.Publication;
-import models.Tagpost;
-import models.Tagpub;
+import models.*;
+import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static play.libs.Json.toJson;
 
 /**
  * Created by sagejoyoox on 4/23/16.
@@ -55,17 +55,17 @@ public class TagController extends Controller {
     }
 
     public Result getPublications(String tagpub){
+        List<PublicationWithAuthorsinTag> results = new ArrayList<PublicationWithAuthorsinTag>();
         List<Publication> publications = Publication.findwithtagpub.where().eq("tagpubs.tag", tagpub).findList();
-        List<ObjectNode> publicationsjson = Publication.getPubDetails(publications);
-
-        StringBuilder sb = new StringBuilder();
-        for(int i=0; i<publicationsjson.size(); i++){
-            if(i>0){
-                sb.append(",");
+        for (Publication publicationtemp:publications){
+            List<PublicationAuthor> publication_authors = PublicationAuthor.find.where().eq("publication_id", publicationtemp.getId()).findList();
+            ArrayList<Author> authors = new ArrayList<Author>();
+            for (PublicationAuthor publicationauthortemp:publication_authors){
+                authors.add(Author.find.where().eq("id", publicationauthortemp.getId()).findUnique());
             }
-            sb.append(publicationsjson.get(i));
+            results.add(new PublicationWithAuthorsinTag(publicationtemp, authors));
         }
-        return ok(sb.toString());
+        return ok(Json.toJson(results));
     }
     
     public Result getTagByPub_id(Long pub_id)
@@ -83,16 +83,14 @@ public class TagController extends Controller {
 //========================================================================================================
     //======================post===========================
     public Result addTagpost(Long postid, String tagpost){
-        Post postadd = Post.find.where().eq("id", postid).findUnique();
         List<Tagpost> tagpostadd = Tagpost.findwithpost.where().eq("post_id", postid).findList();
         for (Tagpost tagposttemp:tagpostadd){
             if (tagposttemp.getTag().equals(tagpost)){
                 return ok(tagpost + " already existed!");
             }
         }
-        tagpostadd.add(new Tagpost(tagpost));
-        postadd.setTagposts(tagpostadd);
-        postadd.save();
+        Tagpost tagpost1 = new Tagpost(postid, tagpost);
+        tagpost1.save();
         return ok(tagpost + " added successfully!");
     }
 
@@ -121,5 +119,34 @@ public class TagController extends Controller {
     }
     //======================post===========================
 
+public class PublicationWithAuthorsinTag{
+        private Publication publication;
+        private ArrayList<Author> authors;
+        public PublicationWithAuthorsinTag(){
+            publication = new Publication();
+            authors = new ArrayList<Author>();
+        }
+
+        public PublicationWithAuthorsinTag(Publication publication, ArrayList<Author> authors){
+            this.publication = publication;
+            this.authors = authors;
+        }
+
+        public ArrayList<Author> getAuthors() {
+            return authors;
+        }
+
+        public void setAuthors(ArrayList<Author> authors) {
+            this.authors = authors;
+        }
+
+        public Publication getPublication() {
+            return publication;
+        }
+
+        public void setPublication(Publication publication) {
+            this.publication = publication;
+        }
+    }
 }
 

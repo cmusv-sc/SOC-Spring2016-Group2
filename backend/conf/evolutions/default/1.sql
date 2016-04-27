@@ -52,6 +52,13 @@ create table post_comment (
   constraint pk_post_comment primary key (id))
 ;
 
+create table publication_author (
+  id                        bigint auto_increment not null,
+  publication_id            bigint,
+  author_id                 bigint,
+  constraint pk_publication_author primary key (id))
+;
+
 create table publication (
   pub_id                    bigint auto_increment not null,
   pubkey                    varchar(255),
@@ -69,13 +76,6 @@ create table publication (
   crossref                  varchar(255),
   ee                        varchar(255),
   constraint pk_publication primary key (pub_id))
-;
-
-create table publication_author (
-  id                        bigint auto_increment not null,
-  publication_id            bigint,
-  author_id                 bigint,
-  constraint pk_publication_author primary key (id))
 ;
 
 create table thumb (
@@ -96,10 +96,8 @@ create table user_profile (
   constraint pk_user_profile primary key (id))
 ;
 
-alter table tagpost add constraint fk_tagpost_post_1 foreign key (post_id) references post (post_id) on delete restrict on update restrict;
-create index ix_tagpost_post_1 on tagpost (post_id);
-alter table tagpub add constraint fk_tagpub_publication_2 foreign key (pub_id) references publication (pub_id) on delete restrict on update restrict;
-create index ix_tagpub_publication_2 on tagpub (pub_id);
+alter table tagpub add constraint fk_tagpub_publication_1 foreign key (pub_id) references publication (pub_id) on delete restrict on update restrict;
+create index ix_tagpub_publication_1 on tagpub (pub_id);
 
 
 
@@ -119,9 +117,9 @@ drop table post;
 
 drop table post_comment;
 
-drop table publication;
-
 drop table publication_author;
+
+drop table publication;
 
 drop table thumb;
 
