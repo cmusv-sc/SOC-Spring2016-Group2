@@ -27,6 +27,30 @@ create table comment (
   constraint pk_comment primary key (id))
 ;
 
+create table group_member (
+  id                        bigint auto_increment not null,
+  member_id                 bigint,
+  group_id                  bigint,
+  constraint pk_group_member primary key (id))
+;
+
+create table group_message (
+  id                        bigint auto_increment not null,
+  member_id                 bigint,
+  group_id                  bigint,
+  title                     varchar(255),
+  message                   varchar(255),
+  constraint pk_group_message primary key (id))
+;
+
+create table group_notice (
+  id                        bigint auto_increment not null,
+  sender                    bigint,
+  group_id                  bigint,
+  receiver                  bigint,
+  constraint pk_group_notice primary key (id))
+;
+
 create table post (
   id                        bigint auto_increment not null,
   title                     varchar(255),
@@ -79,6 +103,15 @@ create table thumb (
   constraint pk_thumb primary key (id))
 ;
 
+create table user_group (
+  id                        bigint auto_increment not null,
+  groupname                 varchar(255),
+  createrid                 bigint,
+  intro                     varchar(255),
+  type                      varchar(255),
+  constraint pk_user_group primary key (id))
+;
+
 alter table tagpub add constraint fk_tagpub_publication_1 foreign key (pub_id) references publication (pub_id) on delete restrict on update restrict;
 create index ix_tagpub_publication_1 on tagpub (pub_id);
 
@@ -94,6 +127,12 @@ drop table author;
 
 drop table comment;
 
+drop table group_member;
+
+drop table group_message;
+
+drop table group_notice;
+
 drop table post;
 
 drop table post_comment;
@@ -103,6 +142,8 @@ drop table publication;
 drop table publication_author;
 
 drop table thumb;
+
+drop table user_group;
 
 SET FOREIGN_KEY_CHECKS=1;
 

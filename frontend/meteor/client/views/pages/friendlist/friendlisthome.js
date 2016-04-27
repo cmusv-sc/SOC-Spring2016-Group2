@@ -1,4 +1,3 @@
-
 Template.friendlisthome.helpers({
 
     settings: function () {
