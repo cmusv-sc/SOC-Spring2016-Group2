@@ -25,10 +25,8 @@ public class Post extends Model {
     /* if the post is a question */
     public boolean isQuestion;
     
-    /* if the post is a question, answerId 
-     * is the id of comment which is set as answer
-     * */
-    public long answerId;
+    /* the answer of question */
+    public String answer;
     
     /* post created at */
     public String postAt;
@@ -50,6 +48,7 @@ public class Post extends Model {
     	this.authorId = authorId;
     	this.postAt = postAt;
     	this.isQuestion = isQuestion;
+    	this.answer = "";
     }
     
 	public Long getId() {
@@ -100,11 +99,11 @@ public class Post extends Model {
 		this.authorId = authorId;
 	}
 
-	public long getAnswerId() {
-		return answerId;
+	public String getAnswer() {
+		return answer;
 	}
 
-	public void setAnswerId(long answerId) {
-		this.answerId = answerId;
+	public void setAnswer(String answer) {
+		this.answer = answer;
 	}
 }

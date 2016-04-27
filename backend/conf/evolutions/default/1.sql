@@ -64,7 +64,7 @@ create table post (
   content                   varchar(255),
   author_id                 bigint,
   is_question               tinyint(1) default 0,
-  answer_id                 bigint,
+  answer                    varchar(255),
   post_at                   varchar(255),
   constraint pk_post primary key (id))
 ;

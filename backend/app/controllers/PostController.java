@@ -117,12 +117,15 @@ public class PostController extends Controller {
             return Common.badRequestWrapper("no request body");
         }
 		long postId = jsonNode.path("postId").asLong();
-		long commentId = jsonNode.path("commentId").asLong();
+		String answer = jsonNode.path("answer").asText();
 		Post post = Post.find.byId(postId);
 		if(post == null) {
 			return Common.badRequestWrapper("Cannot find post");
 		}
-		post.setAnswerId(commentId);
+		if(!post.getIsQuestion()) {
+			return Common.badRequestWrapper("This is not a question");
+		}
+		post.setAnswer(answer);
 		post.save();
 		return ok(Json.toJson("success"));
 	}
