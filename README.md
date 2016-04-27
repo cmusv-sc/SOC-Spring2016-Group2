@@ -24,9 +24,7 @@ meteor
 
 ##File structure:
 
-backend: the backend of SSNetwork which is based on play framework
-		backend default port number: 9000
+backend: the backend of SSNetwork which is based on play framework, backend default port number: 9000
 
-meteor: the frontend of SSNetwork which is based on meteor framework
-		frontend default port number: 3000
+meteor: the frontend of SSNetwork which is based on meteor framework, frontend default port number: 3000
 
