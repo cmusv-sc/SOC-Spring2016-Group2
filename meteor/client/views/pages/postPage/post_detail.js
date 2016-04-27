@@ -145,7 +145,7 @@ Template.postDetail.events({
 		args["authorid"] = 1;
 		args["content"] = input;
 		args["rootid"] = Router.current().params.query.id;
-		args["categoryid"] = 1;
+		args["categoryid"] = 2;
 		//console.log(args);
 		Meteor.call('postToBackend', url, args, function (err, res){
 			//console.log(JSON.stringify(res));
@@ -170,7 +170,7 @@ Template.postDetail.events({
 		args["authorid"] = 1;
 		args["content"] = content;
 		args["rootid"] = Router.current().params.query.id;
-		args["categoryid"] = 1;
+		args["categoryid"] = 2;
 		//console.log(args);
 		var url = "http://localhost:9000/comment";
 		Meteor.call('postToBackend', url, args, function (err, res){
