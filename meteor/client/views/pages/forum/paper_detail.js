@@ -310,21 +310,58 @@ Template.paperdetail.events({
 	},
 	'click #closecomment': function(event){
 		console.log("Close");
-		if ($(".input-group").hasClass("hide")) {
-			$(".input-group").removeClass("hide");
-			$(".dd").removeClass("hide");
-			$("#commentnote").addClass("hide");
-			$(event.target).text("Close Comment");
-		}else{
-			$(".input-group").addClass("hide");
-			$("#commentnote").removeClass("hide");
-			$(".dd").addClass("hide");
-			$(event.target).text("Open Comment");
-		}
+    var myid = Session.get("userSessionId");
+    var current = User2.findOne(myid);
+    var myname
+    if (current != null) {
+      myname=current.name
+    } else {
+      myname = "NoName"
+    }
+    console.log(myname);
+    if(myname=="Michael Stonebraker")
+    {
+      if ($(".input-group").hasClass("hide")) {
+  			$(".input-group").removeClass("hide");
+  			$(".dd").removeClass("hide");
+  			$("#commentnote").addClass("hide");
+  			$(event.target).text("Close Comment");
+  		}else{
+  			$(".input-group").addClass("hide");
+  			$("#commentnote").removeClass("hide");
+  			$(".dd").addClass("hide");
+  			$(event.target).text("Open Comment");
+  		}
+    }
+    else if (myname!="Michael Stonebraker") {
+        swal("you can't edit it!")
+
+    }
+
 	},
 
   'click #editpub': function (event) {
     var url = "http://localhost:3000/paperedit?id=" + Router.current().params.query.id;
-    Router.go(url);
+    var myid = Session.get("userSessionId");
+    var current = User2.findOne(myid);
+    var myname
+    if (current != null) {
+      myname=current.name
+    } else {
+      myname = "NoName"
+    }
+    console.log(myname);
+    if(myname=="Michael Stonebraker")
+    {
+      Router.go(url);
+    }
+    else if (myname!="Michael Stonebraker") {
+        swal("you can't edit it!")
+
+    }
+
+
+
+
   }
 });
