@@ -1,0 +1,43 @@
+<template name="subscriptionlist">
+  <div class="wrapper wrapper-content container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="container">
+                  <h1 id="title">Subscription List</h1>
+                </div>
+            </div>
+        </div>
+        {{getData}}
+        <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <div class="ibox-content">
+            <div>
+                <p>
+                    <div class="input-group">                   
+                        <div class="input-group-btn">                           
+                            <button class="btn btn-sm btn-primary all">All</button>
+                            <button class="btn btn-sm btn-primary user">User</button>
+                            <button class="btn btn-sm btn-primary group">Group</button>
+                            <button class="btn btn-sm btn-primary paper">Paper</button>
+                        </div>
+                    </div>
+                    
+                </p>
+            </div>
+            <div>
+                <strong id="resultcount"></strong>
+                <p></p>
+            </div>
+            <div class="table-responsive" >
+                <div class="loading"></div>
+                <table class="table table-hover">
+                    <tbody id="content">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+</template>

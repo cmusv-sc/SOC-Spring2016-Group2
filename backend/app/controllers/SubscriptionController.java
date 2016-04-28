@@ -5,6 +5,7 @@ import models.*;
 import play.libs.Json;
 import play.mvc.*;
 import java.util.*;
+import static play.libs.Json.toJson;
 
 public class SubscriptionController extends Controller{
 	public Result loadSubscriptionList() {	
@@ -14,11 +15,12 @@ public class SubscriptionController extends Controller{
 		*/
 		Long followerId=new Long(1); 	
 		List<Subscription> subscriptions=Subscription.find.where().eq("followerId", followerId).findList();
-		Map<String, String> map=new HashMap<String, String>();
+		List<ObjectNode> results= new ArrayList<ObjectNode>();
 		for(Subscription subscription:subscriptions){
 			Long followeeId=subscription.getFolloweeId();
 			String category=subscription.getCategory();
-			System.out.println(category);
+			ObjectNode result=Json.newObject();
+			// System.out.println(category);
 			String username="";
 			if(category.equals("user")){
 				User user=User.find.byId(followeeId);
@@ -36,9 +38,11 @@ public class SubscriptionController extends Controller{
 				if(publication!=null)
 					username=publication.getTitle();
 			}
-			map.put(username, category);
+			result.put("username", username);
+			result.put("category", category);
+			results.add(result);
 		}		
-		return ok(map+"");
+		return ok(toJson(results));
 	}
 
 
@@ -49,24 +53,32 @@ public class SubscriptionController extends Controller{
 		*/
 		Long followerId=new Long(1); 	
 		List<Subscription> subscriptions=Subscription.find.where().eq("followerId", followerId).eq("category", category).findList();
-		Map<String, String> map=new HashMap<String, String>();
+		List<ObjectNode> results= new ArrayList<ObjectNode>();
 		String username="";
 		if(category.equals("user")){
 			for(Subscription subscription:subscriptions){
 				Long followeeId=subscription.getFolloweeId();
 				User user=User.find.byId(followeeId);
-				if(user!=null)
+				if(user!=null){
 					username=user.getUsername();
-				map.put(username, category);
+					ObjectNode result=Json.newObject();
+					result.put("username", username);
+					result.put("category", "user");
+					results.add(result);
+				}
 			}
 		}
 		else if(category.equals("group")){
 			for(Subscription subscription:subscriptions){
 				Long followeeId=subscription.getFolloweeId();
 				UserGroup userGroup=UserGroup.find.byId(followeeId);
-				if(userGroup!=null)
+				if(userGroup!=null){
 					username=userGroup.getGroupname();
-				map.put(username, category);
+					ObjectNode result=Json.newObject();
+					result.put("username", username);
+					result.put("category", "group");
+					results.add(result);
+				}
 			}
 		}
 		else{
@@ -74,12 +86,16 @@ public class SubscriptionController extends Controller{
 				Long followeeId=subscription.getFolloweeId();
 				List<Publication> publications=Publication.find.where().eq("pubkey", followeeId).findList();
 				Publication publication=publications.get(0);
-				if(publication!=null)
+				if(publication!=null){
 					username=publication.getTitle();
-				map.put(username, category);
+					ObjectNode result=Json.newObject();
+					result.put("username", username);
+					result.put("category", "paper");
+					results.add(result);
+				}
 			}
 		}
-		return ok(map+"");
+		return ok(toJson(results));
 	}
 
 
@@ -91,8 +107,8 @@ public class SubscriptionController extends Controller{
 		Long followerId=new Long(1);
 		List<Subscription> subscriptions=Subscription.find.where().eq("followerId", followerId).findList();
 		if(subscriptions.size()==0)
-			return ok("empty");
-		List<String> results=new ArrayList<String>();
+			return ok("No available posts.");
+		List<ObjectNode> results=new ArrayList<ObjectNode>();
 		for(Subscription subscription:subscriptions){
 			Long followeeId=subscription.getFolloweeId();
 			String category=subscription.getCategory();
@@ -111,10 +127,15 @@ public class SubscriptionController extends Controller{
 				List<Post> posts=Post.find.where().eq("authorId", followeeId).findList();
 				for(Post post: posts){
 					if(post!=null){
-					timestamp=post.getPostAt();
-					content=post.getContent();
-					System.out.println("content="+content);
-					results.add(timestamp+"\t"+username+"\t"+content);
+						timestamp=post.getPostAt();
+						content=post.getContent();
+						System.out.println("content="+content);
+						ObjectNode result=Json.newObject();
+						result.put("timestamp", timestamp+"");
+						result.put("username", username);
+						result.put("category", "user");
+						result.put("content", content);
+						results.add(result);
 					}
 				}
 			}
@@ -135,15 +156,20 @@ public class SubscriptionController extends Controller{
 					//get username
 					if(user!=null){
 						username=user.getUsername();
-						userId=user.getUserId();
-					}
+						userId=user.getUserId();						
 					// get timestamp and content
-					List<Post> posts=Post.find.where().eq("authorId", userId).findList();
-					for(Post post: posts){
-						if(post!=null){
-						timestamp=post.getPostAt();
-						content=post.getContent();
-						results.add(timestamp+"\t"+username+": "+groupname+"\t"+content);
+						List<Post> posts=Post.find.where().eq("authorId", userId).findList();
+						for(Post post: posts){
+							if(post!=null){
+								timestamp=post.getPostAt();
+								content=post.getContent();
+								ObjectNode result=Json.newObject();
+								result.put("timestamp", timestamp+"");
+								result.put("username", username);
+								result.put("category", "group");
+								result.put("content", content);
+								results.add(result);
+							}
 						}
 					}					
 				}
@@ -152,23 +178,26 @@ public class SubscriptionController extends Controller{
 				List<Publication> publications=Publication.find.where().eq("pubkey", followeeId).findList();
 				Publication publication=publications.get(0);
 				String title="";
-				String result="";
-				if(publication!=null)
+				if(publication!=null){
 					title=publication.getTitle();
-				// get comments
-				List<Comment> comments=Comment.find.where().eq("rootid", followeeId).eq("categoryid",1).findList();
-				for(Comment comment: comments){
-					if(comment!=null)
-						result+=comment.getContent()+"\t";
+					// get comments
+					List<NestedComment> comments=getCommentsRecursively(followeeId, new Long(1), new Long(0));
+					for(NestedComment nestedComment: comments){
+						ObjectNode result=Json.newObject();
+						result.put("timestamp", nestedComment.comment.getTime()+"");
+						result.put("username", title);
+						result.put("category", "paper");
+						result.put("content", nestedComment.comment.getContent()); //????
+						results.add(result);
+					}
 				}
-				results.add(title+"\t"+result);
 			}
 		}
-		return ok(results+"");
+		return ok(toJson(results));
 	}
 
 
-    public Result subscribe(Long followeeid, String category){
+	public Result subscribe(Long followeeid, String category){
 		/*
 		TODO cookie
 		*/
@@ -177,8 +206,37 @@ public class SubscriptionController extends Controller{
 		subscription.save();
 		return ok("subscribe successfully");
 	}
+
+	public ArrayList<NestedComment> getCommentsRecursively(Long rootid, Long categoryid, Long parentid){
+        ArrayList<NestedComment> list = new ArrayList<NestedComment>();
+        List<Comment> comments = Comment.find.where().eq("parentid", parentid).eq("rootid", rootid).eq("categoryid", categoryid).findList();
+        for (int i = 0; i < comments.size(); i++){
+            list.add(new NestedComment(comments.get(i), getCommentsRecursively(rootid, categoryid, comments.get(i).getId())));
+        }
+        return list;
+    }
 }
 
+class NestedComment{
+        public Comment comment;
+        public int thumbup = 0;
+        public int thumbdown = 0;
+        public boolean thumbuped = false;
+        public boolean thumbdowned = false;
+        public ArrayList<NestedComment> children;
+        public NestedComment(Comment comment, ArrayList<NestedComment> children){
+            this.comment = comment;
+            this.children = children;
+        }
+        public NestedComment(Comment comment, ArrayList<NestedComment> children, int thumbdown, int thumbup){
+            this.comment = comment;
+            this.children = children;
+            this.thumbdown = thumbdown;
+            this.thumbup = thumbup;
+        }
+
+
+    }
 
 
 

@@ -95,6 +95,15 @@ Router.route('/paperdetail', function () {
     this.render('paperdetail');
 });
 
+// Subscribe
+Router.route('/subscriptionlist', function () {
+    this.render('subscriptionlist');
+});
+
+Router.route('/timeline', function () {
+    this.render('timeline');
+});
+
 //
 // Dashboards routes
 //

@@ -11,7 +11,7 @@ var fetchData = function(url){
 	$(".loading").append($("<div class='sk-spinner sk-spinner-cube-grid'><div class='sk-cube'></div><div class='sk-cube'></div><div class='sk-cube'></div><div class='sk-cube'></div><div class='sk-cube'></div><div class='sk-cube'></div><div class='sk-cube'></div><div class='sk-cube'></div><div class='sk-cube'></div></div>"));
 	Meteor.call('fetchFromService', url, function (err, res){
 		var obj = JSON.stringify(res.data);
-		//console.log("Result: " + res.data.length);
+		console.log("Result: " + JSON.stringify(res));
 		$(".loading").empty();
 		$(".table").append("<tbody id='content'></tbody>");
 		$("#resultcount").text("Found " + res.data.length + " results.");
@@ -30,6 +30,7 @@ var fetchData = function(url){
 
 Template.findpaper.events({
 	'click .year': function (event) {
+		console.log("click year");
 		var input = $("#inputvalue").val();
 		if (input == "") { console.log("No input"); return;};
 		console.log("year: " + $("#inputvalue").val());
@@ -37,6 +38,7 @@ Template.findpaper.events({
 		fetchData(url);
 	},
 	'click .title': function (event) {
+		console.log("click title");
 		var input = $("#inputvalue").val();
 		if (input == "") { console.log("No input"); return;};
 		console.log("title: " + $("#inputvalue").val());

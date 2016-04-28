@@ -52,7 +52,7 @@ public class ForumController extends Controller{
         return ok(toJson(msg));
     }
 
-    public class NestedComment{
+    class NestedComment{
         public Comment comment;
         public int thumbup = 0;
         public int thumbdown = 0;
