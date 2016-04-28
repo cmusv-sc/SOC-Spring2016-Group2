@@ -9,8 +9,7 @@ AccountsTemplates.configure({
 });
 
 Router.route('/', function () {
-    this.render('dashboard1');
-    this.layout('blankLayout')
+    Router.go('/dashboard1');
 });
 
 Router.route('/paperedit', function () {
