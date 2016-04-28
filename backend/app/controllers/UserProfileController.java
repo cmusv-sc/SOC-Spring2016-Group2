@@ -85,12 +85,26 @@ public class UserProfileController extends Controller {
     public Result refreshUserprofile(String userName){
 		List<ObjectNode> results = new ArrayList<ObjectNode>();
 
-		Long authorId = Author.find_Author_Id(userName).get(0);
-
 		ObjectNode result_Coll = Json.newObject();
 		ObjectNode result_Tit = Json.newObject();
 		ObjectNode result_Tag = Json.newObject();
 		ObjectNode result_Sub = Json.newObject();
+
+
+		if(Author.find_Author_Id(userName).size() == 0){
+			result_Coll.put("collaboratornumber","");
+			result_Sub.put("subscribenumbers","");
+			result_Tit.put("titles","");
+			result_Tag.put("tags","");
+			results.add(result_Coll);
+			results.add(result_Sub);
+			results.add(result_Tit);
+			results.add(result_Tag);
+			return ok(Json.toJson(results));
+		}
+
+		Long authorId = Author.find_Author_Id(userName).get(0);
+
 
 		Integer collaboratorNumbers = updateCollaboratorNumbers(authorId);
 		result_Coll.put("collaboratornumber",String.valueOf(collaboratorNumbers));
@@ -191,7 +205,7 @@ public class UserProfileController extends Controller {
 
 	public Integer updateSubscribeNumbers(Long authorId){
 
-		return 1;
+		return 0;
 
 	}
 

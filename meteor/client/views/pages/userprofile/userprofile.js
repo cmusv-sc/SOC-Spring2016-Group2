@@ -2,7 +2,7 @@ Template.userprofile.helpers({
     getData: function() {
         //var person = Session.get("namesession");
         //console.log(person);
-        var url = "http://localhost:9000/userprofile/refresh/wei%20song";
+        var url = "http://localhost:9000/userprofile/refresh/sssss";
         fetchData(url);
     },
 });
@@ -14,7 +14,7 @@ var fetchData = function(url){
     $(".loading").append($("<div class='sk-spinner sk-spinner-cube-grid'><div class='sk-cube'></div><div class='sk-cube'></div><div class='sk-cube'></div><div class='sk-cube'></div><div class='sk-cube'></div><div class='sk-cube'></div><div class='sk-cube'></div><div class='sk-cube'></div><div class='sk-cube'></div></div>"));
     Meteor.call('fetchFromService', url, function (err, res){
         var obj = JSON.stringify(res.data);
-       // console.log("Result: " + obj);
+        console.log("Result: " + obj);
         $(".loading").empty();
       //  $(".table").append("<tbody id='content'></tbody>");
       //  contentholder = $("#content");
@@ -24,7 +24,7 @@ var fetchData = function(url){
         var tags = res.data[3].tags;
 
         //console.log("AAAAAAAAAAA"+tags.split("$&"));
-        //console.log("TTTTTTTTTTTTTTT"+collaboratorNumbers+""+subscriberNumbers+""+titles+tags);
+        console.log("TTTTTTTTTTTTTTT"+collaboratorNumbers+""+subscriberNumbers+""+titles+tags);
 
         $(".collaboratorNumber").text(collaboratorNumbers);
         $(".subscriberNumber").text(subscriberNumbers);
