@@ -76,7 +76,8 @@ GET    /userprofile/refresh/:userName    controllers.UserProfileController.refre
 #Comments Popularity
 GET    /getCommentSum/:rootid                   controllers.Popularity.getCommentSum(rootid:Integer)
 GET    /getTagSum/:pubid                          controllers.Popularity.getTagSum(pubid:Long)
-
+GET    /getPopularityByYear/:year                  controllers.Popularity.getPopularityByYear(year:Integer)
+GET    /getMostPopularity           controllers.Popularity.getMostPopularity()
 
 
 GET    /groups/:grouptype                 controllers.UserGroupController.getGroupList(grouptype: String)
