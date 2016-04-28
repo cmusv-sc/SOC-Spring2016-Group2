@@ -2,7 +2,7 @@ Template.postDetail.helpers({
   getData: function() {
   	var url = "http://localhost:9000/post/getPostById/" + Router.current().params.query.id;
   	fetchData(url);
-	url = "http://localhost:9000/getTag/" + Router.current().params.query.id;
+	url = "http://localhost:9000/getTagpost/" + Router.current().params.query.id;
 	fetchTag(url);
   	url = "http://localhost:9000/comment?rootid=" + Router.current().params.query.id + "&categoryid=2&userid=1";
   	fetchComment(url);
@@ -88,7 +88,7 @@ Template.postDetail.rendered = function(){
 		{
 			console.log("Press Enter");
 			$(".tags").append("<button class=\"btn btn-white btn-xs\" type=\"button\">"+$("#addTag").val()+"</button>&nbsp");
-			var url = "http://localhost:9000/addtagpub/" + Router.current().params.query.id + "/" + $("#addTag").val(); 
+			var url = "http://localhost:9000/addtagpost/" + Router.current().params.query.id + "/" + $("#addTag").val(); 
 			fetchTagAdded(url);
 			$("#addTag").val("");
 		}
