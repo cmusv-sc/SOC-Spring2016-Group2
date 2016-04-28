@@ -12,4 +12,10 @@ var summary = Session.get("summarysession")
 var myid = Session.get("userSessionId");
 
 # get your user name after login
-var myname = User2.findOne(myid).name;
+var current = User2.findOne(myid);
+var myname;
+if (current != null) {
+   myname = current.name;
+} else {
+   myname = "NoName";
+}
