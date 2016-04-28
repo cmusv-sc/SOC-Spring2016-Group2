@@ -40,6 +40,13 @@ create table comment (
   constraint pk_comment primary key (id))
 ;
 
+create table comment_counts (
+  id                        integer auto_increment not null,
+  rootid                    integer,
+  counts                    integer,
+  constraint pk_comment_counts primary key (id))
+;
+
 create table group_member (
   id                        bigint auto_increment not null,
   member_id                 bigint,
@@ -153,6 +160,8 @@ drop table tagpub;
 drop table author;
 
 drop table comment;
+
+drop table comment_counts;
 
 drop table group_member;
 

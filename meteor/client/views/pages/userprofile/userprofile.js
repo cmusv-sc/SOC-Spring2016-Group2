@@ -1,7 +1,7 @@
 Template.userprofile.helpers({
     getData: function() {
-        var person = Session.get("namesession");
-        console.log(person);
+        //var person = Session.get("namesession");
+        //console.log(person);
         var url = "http://localhost:9000/userprofile/refresh/wei%20song";
         fetchData(url);
     },
