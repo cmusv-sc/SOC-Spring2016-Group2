@@ -200,7 +200,28 @@ public class UserProfileController extends Controller {
 		return PublicationAuthor.find(null,authorId);
 	}
 
+	public void createAllUserProfile(){
+		//List<ObjectNode> results = new ArrayList<ObjectNode>();
 
+		List<Author> authors = Author.findAll();
+
+
+		for(Author author : authors){
+			String userName = author.getName();
+			Long authorId = Author.find_Author_Id(userName).get(0);
+			Integer collaboratorNumbers = updateCollaboratorNumbers(authorId);
+			Integer subscribeNumbers = updateSubscribeNumbers(authorId);
+			String titleResult = updateTitle(authorId).toString();
+			String TagsResult = updateTags(authorId).toString();
+
+			new UserProfile(userName,
+					collaboratorNumbers,
+					subscribeNumbers,
+					TagsResult,
+					titleResult).save();
+		}
+		return;
+	}
 
 
 }

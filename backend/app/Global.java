@@ -1,5 +1,6 @@
 import controllers.SAXETL;
 import models.Author;
+import controllers.UserProfileController;
 import play.*;
 
 import java.util.List;
@@ -18,6 +19,9 @@ public class Global extends GlobalSettings {
             SAXETL.loadData();
             System.out.println("Data load successfully!");
         }
+        UserProfileController userProfileController =
+                new UserProfileController();
+        userProfileController.createAllUserProfile();
     }
 
     @Override
