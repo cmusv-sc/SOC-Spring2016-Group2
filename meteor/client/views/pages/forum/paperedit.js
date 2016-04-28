@@ -93,7 +93,18 @@ var fetchData = function(url){
 		$("#author").val(author);
 	});
 }
-
+var fetchTag = function(url){
+	//console.log("in fetchTag " + url);
+	Meteor.call('fetchFromService', url, function(err, res){
+		// console.log("res is " + JSON.stringify(res));
+		if (res.content.length == 0)
+			return;
+		var tags = res.content.split(",");
+		console.log("tags is " + tags);
+		for (i=0; i<tags.length; i++)
+			$("#tagedit).append("<button class=\"btn btn-white btn-xs\" type=\"button\">"+tags[i]+"</button>&nbsp");
+	});
+}
 /*
 var fetchTag = function(url){
 	//console.log("in fetchTag " + url);
