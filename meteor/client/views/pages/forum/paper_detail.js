@@ -5,8 +5,10 @@ Template.paperdetail.helpers({
   	fetchData(url);
 	url = "http://localhost:9000/getTag/" + Router.current().params.query.id;
 	fetchTag(url);
-  	url = "http://localhost:9000/comment?rootid=" + Router.current().params.query.id + "&categoryid=1&userid=1";
+  	url = "http://localhost:9000/comment?rootid=" + Router.current().params.query.id + "&categoryid=1&userid=" + Session.get("userSessionId");
   	fetchComment(url);
+  	console.log("Get id: " + Session.get("userSessionId"));
+  	//console.log("Get name: " + User2.findOne(Session.get("userSessionId")).name);
   }
 });
 
@@ -29,7 +31,11 @@ var renderComments = function(obj){
 		var c = obj[i];
 		var item = "<li class='dd-item'><div class='social-feed-box'>";
 		var d = new Date(c.comment.time*1000);
-		item += "<div class='social-avatar'><div class='media-body'><span class='text-success'>User: " + c.comment.authorid + "</span><small class='pull-right'> " + d.toLocaleString() + "</small></div></div>";
+		var username = "Lorem Ipsum";
+		if (!(User2.findOne(c.comment.authorid) === undefined) && !(User2.findOne(c.comment.authorid).name === undefined)) {
+			username = User2.findOne(c.comment.authorid).name;
+		}
+		item += "<div class='social-avatar'><div class='media-body'><span class='text-success'>User: " + username + "</span><small class='pull-right'> " + d.toLocaleString() + "</small></div></div>";
 		item += "<div class='social-body'><div class='input-group'><input type='text' class='form-control input-sm input-edit hide' value='" + c.comment.content + "' id='edit-" + c.comment.id + "'><span id='commentcontent-" + c.comment.id + "'>" + c.comment.content + "</span><p></p></div>";
 		item += "<div><a class='small thumbup'" + "style='color: #676a6c;' id='thumbupa-" + c.comment.id + "'" + "><i class='fa fa-thumbs-up ";
 		if (c.thumbuped == true) { item += "ed"; };
@@ -162,7 +168,7 @@ Template.paperdetail.events({
 		var url = "http://localhost:9000/comment";
 		var args = {};
 		args["parentid"] = 0;
-		args["authorid"] = 1;
+		args["authorid"] = Session.get("userSessionId");
 		args["content"] = input;
 		args["rootid"] = Router.current().params.query.id;
 		args["categoryid"] = 1;
@@ -187,7 +193,7 @@ Template.paperdetail.events({
 		};
 		var args = {};
 		args["parentid"] = id;
-		args["authorid"] = 1;
+		args["authorid"] = Session.get("userSessionId");
 		args["content"] = content;
 		args["rootid"] = Router.current().params.query.id;
 		args["categoryid"] = 1;
@@ -208,7 +214,7 @@ Template.paperdetail.events({
 		var count = parseInt($(aid).children("span").text());
 		if ($(event.target).hasClass('ed')) {
 			$(event.target).removeClass('ed');
-			var user = 1;
+			var user = Session.get("userSessionId");
 			var url = "http://localhost:9000/deleteThumb/1/" + user + "/" + id;
 			Meteor.call('deleteInBackend', url, function (err, res){
 				console.log("Deleted");
@@ -219,7 +225,7 @@ Template.paperdetail.events({
 			count ++;
 			var url = "http://localhost:9000/addThumb";
 			var args = {};
-			args["sender"] = 1;
+			args["sender"] = Session.get("userSessionId");
 			args["receiver"] = id;
 			args["thumb_type"] = 1;
 			Meteor.call('postToBackend', url, args, function (err, res){
@@ -238,7 +244,7 @@ Template.paperdetail.events({
 		//console.log(count);
 		if ($(event.target).hasClass('ed')) {
 			$(event.target).removeClass('ed');
-			var user = 1;
+			var user = Session.get("userSessionId");
 			var url = "http://localhost:9000/deleteThumb/0/" + user + "/" + id;
 			Meteor.call('deleteInBackend', url, function (err, res){
 				console.log("Deleted");
@@ -249,7 +255,7 @@ Template.paperdetail.events({
 			count ++;
 			var url = "http://localhost:9000/addThumb";
 			var args = {};
-			args["sender"] = 1;
+			args["sender"] = Session.get("userSessionId");
 			args["receiver"] = id;
 			args["thumb_type"] = 0;
 			Meteor.call('postToBackend', url, args, function (err, res){

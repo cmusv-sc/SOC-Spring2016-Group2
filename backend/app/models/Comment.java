@@ -14,7 +14,7 @@ public class Comment extends Model {
     private int id;
 
     private int parentid;
-    private int authorid;
+    private String authorid;
     private String content;
     private Long time;
     private int rootid;
@@ -36,11 +36,11 @@ public class Comment extends Model {
         this.parentid = parentid;
     }
 
-    public int getAuthorid() {
+    public String getAuthorid() {
         return authorid;
     }
 
-    public void setAuthorid(int authorid) {
+    public void setAuthorid(String authorid) {
         this.authorid = authorid;
     }
 
@@ -76,7 +76,7 @@ public class Comment extends Model {
         this.categoryid = categoryid;
     }
 
-    public Comment(int id, int parentid, int authorid, String content, Long time, int rootid, int categoryid) {
+    public Comment(int id, int parentid, String authorid, String content, Long time, int rootid, int categoryid) {
         this.parentid = parentid;
         this.authorid = authorid;
         this.content = content;
