@@ -35,11 +35,18 @@ var fetchData = function(url){
 
 
 Template.userprofile.events({
-    'click .refresh': function (event) {
+    'click .Refresh': function (event) {
         var input = $("#inputvalue").val();
         if (input == "") { console.log("No input"); return;};
         console.log("refresh userprofile: " + $("#inputvalue").val());
         var url = "http://localhost:9000/userprofile/refresh/" + input;
+        fetchData(url);
+    },
+    'click .Search': function (event) {
+        var input = $("#inputvalue").val();
+        if (input == "") { console.log("No input"); return;};
+        console.log("refresh userprofile: " + $("#inputvalue").val());
+        var url = "http://localhost:9000/userprofile/" + input;
         fetchData(url);
     }
 });
