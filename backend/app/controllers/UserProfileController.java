@@ -219,7 +219,7 @@ public class UserProfileController extends Controller {
 
 		List<Author> authors = Author.findAll();
 
-
+		int i = 0;
 		for(Author author : authors){
 			String userName = author.getName();
 			Long authorId = Author.find_Author_Id(userName).get(0);
@@ -233,6 +233,8 @@ public class UserProfileController extends Controller {
 					subscribeNumbers,
 					TagsResult,
 					titleResult).save();
+			System.out.println("Generating User Profile " + i);
+			i ++;
 		}
 		return;
 	}

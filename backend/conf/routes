@@ -27,13 +27,13 @@ GET    /coauthor/:author            controllers.Application.getCoAuthors(author:
 
 ### Forum
 POST   /comment                     controllers.ForumController.addComment()
-GET    /comment                     controllers.ForumController.getComments(rootid: Integer, categoryid: Integer, userid: Integer)
+GET    /comment                     controllers.ForumController.getComments(rootid: Integer, categoryid: Integer, userid: String)
 POST   /updateComment               controllers.ForumController.updateComment()
 POST   /upload                      controllers.ForumController.uploadFile()
 
 ### Thumb
 POST    /addThumb                                              controllers.ThumbController.addThumb()
-DELETE  /deleteThumb/:thumb_type/:sender/:receiver             controllers.ThumbController.deleteThumb(thumb_type: Integer, sender: Integer, receiver: Integer)
+DELETE  /deleteThumb/:thumb_type/:sender/:receiver             controllers.ThumbController.deleteThumb(thumb_type: Integer, sender: String, receiver: Integer)
 GET     /getThumbSum/:user/:type                               controllers.ThumbController.getThumbSum(user:String,type:String)
 
 

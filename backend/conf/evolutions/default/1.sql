@@ -32,7 +32,7 @@ create table author (
 create table comment (
   id                        integer auto_increment not null,
   parentid                  integer,
-  authorid                  integer,
+  authorid                  varchar(255),
   content                   varchar(255),
   time                      bigint,
   rootid                    integer,
@@ -118,7 +118,7 @@ create table publication (
 create table thumb (
   id                        bigint auto_increment not null,
   thumb_type                tinyint(1) default 0,
-  sender                    integer,
+  sender                    varchar(255),
   receiver                  integer,
   constraint pk_thumb primary key (id))
 ;
