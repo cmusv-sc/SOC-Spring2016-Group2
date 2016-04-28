@@ -25,7 +25,7 @@ Template.paperedit.events({
         "&crossref=" + newCrossRef + "&ee=" + newEE + "&author=" + newAuthor;
     modifyData(url);
     //var url= "http://localhost:9000/updatetag/"+ Router.current().params.query.id +;
-    console.log(url);
+    //console.log(url);
 
     $("#title").val(newTitle);
     $("#editor").val(newEditor);
@@ -40,8 +40,13 @@ Template.paperedit.events({
     $("#crossref").val(newCrossRef);
     $("#ee").val(newEE);
     $("#author").val(newAuthor);
+    $("#tagedit").val(tagedit);
+
+    var url1 = "http://localhost:9000/updateTag/?pubid=" + Router.current().params.query.id  + "&tagpub=" + tagedit;
+    modifyData(url1);
 
   },
+
   'click #backpub': function (event) {
     var url = "http://localhost:3000/paperdetail?id=" + Router.current().params.query.id;
     Router.go(url);
@@ -59,8 +64,8 @@ Template.paperedit.rendered = function(){
 
   var url = "http://localhost:9000/paper/id/" + Router.current().params.query.id;
   fetchData(url);
-  //url = "http://localhost:9000/updateTag/" + Router.current().params.query.id;
-	//fetchTag(url);
+  url = "http://localhost:9000/getTag/" + Router.current().params.query.id;
+	fetchTag(url);
   //$("#title").val(publication.title);
 };
 
@@ -93,29 +98,14 @@ var fetchData = function(url){
 		$("#author").val(author);
 	});
 }
+
 var fetchTag = function(url){
 	//console.log("in fetchTag " + url);
 	Meteor.call('fetchFromService', url, function(err, res){
 		// console.log("res is " + JSON.stringify(res));
 		if (res.content.length == 0)
 			return;
-		var tags = res.content.split(",");
-		console.log("tags is " + tags);
-		for (i=0; i<tags.length; i++)
-			$("#tagedit).append("<button class=\"btn btn-white btn-xs\" type=\"button\">"+tags[i]+"</button>&nbsp");
+		var tags = res.content;
+    $("#tagedit").val(tags);
 	});
 }
-/*
-var fetchTag = function(url){
-	//console.log("in fetchTag " + url);
-	Meteor.call('fetchFromService', url, function(err, res){
-		// console.log("res is " + JSON.stringify(res));
-		if (res.content.length == 0)
-			return;
-		var tags = res.content.split(",");
-		console.log("tags is " + tags);
-		for (i=0; i<tags.length; i++)
-			$("#TagEdit").append(tags[1]);
-	});
-}
-*/
