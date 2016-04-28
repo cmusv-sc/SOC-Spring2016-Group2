@@ -82,7 +82,7 @@ public class TagController extends Controller {
     //===================publication===========================
 //========================================================================================================
     //======================post===========================
-/*    public Result addTagpost(Long postid, String tagpost){
+    public Result addTagpost(Long postid, String tagpost){
         Post postadd = Post.find.where().eq("id", postid).findUnique();
         List<Tagpost> tagpostadd = Tagpost.findwithpost.where().eq("post_id", postid).findList();
         for (Tagpost tagposttemp:tagpostadd){
@@ -117,7 +117,7 @@ public class TagController extends Controller {
         if (sb.length()>0)
             sb.deleteCharAt(sb.length()-1);
         return ok(sb.toString());
-    }*/
+    }
     //======================post===========================
 
 public class PublicationWithAuthorsinTag{
