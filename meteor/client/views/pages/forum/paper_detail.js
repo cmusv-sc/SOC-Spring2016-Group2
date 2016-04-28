@@ -24,7 +24,7 @@ var renderComments = function(obj){
 		return "";
 	}
 	var s = "<ol class='dd-list'>";
-	
+
 	for (var i = 0; i < obj.length; i++) {
 		var c = obj[i];
 		var item = "<li class='dd-item'><div class='social-feed-box'>";
@@ -47,16 +47,16 @@ var renderComments = function(obj){
 		item += "</li>";
 		s += item;
 	};
-	
+
 	s += "</ol>";
 	return s;
 }
 
 var fetchData = function(url){
-	
+
 	Meteor.call('fetchFromService', url, function (err, res){
 		var obj = JSON.stringify(res.data);
-		
+
 		var publication = res.data[0].publication;
 		var authors = res.data[0].authors;
 		//console.log("Result: " + publication.title);
@@ -91,7 +91,7 @@ Template.paperdetail.rendered = function(){
 		{
 			console.log("Press Enter");
 			$(".tags").append("<button class=\"btn btn-white btn-xs\" type=\"button\">"+$("#addTag").val()+"</button>&nbsp");
-			var url = "http://localhost:9000/addtagpub/" + Router.current().params.query.id + "/" + $("#addTag").val(); 
+			var url = "http://localhost:9000/addtagpub/" + Router.current().params.query.id + "/" + $("#addTag").val();
 			fetchTagAdded(url);
 			$("#addTag").val("");
 		}
@@ -153,9 +153,9 @@ var fetchTagAdded = function(url){
 Template.paperdetail.events({
 	'click #postcomment': function (event) {
 		var input = $("#inputcomment").val();
-		if (input == "") { 
+		if (input == "") {
 			$("#inputcomment").parent(".input-group").addClass("has-error");
-			console.log("No input"); 
+			console.log("No input");
 			return;
 		};
 		//console.log("Comment: " + input);
@@ -182,7 +182,7 @@ Template.paperdetail.events({
 		//console.log(content);
 		if (content == "") {
 			$(inputid).parent(".input-group").addClass("has-error");
-			console.log("No input"); 
+			console.log("No input");
 			return;
 		};
 		var args = {};
@@ -315,5 +315,10 @@ Template.paperdetail.events({
 			$(".dd").addClass("hide");
 			$(event.target).text("Open Comment");
 		}
-	}
+	},
+
+  'click #editpub': function (event) {
+    var url = "http://localhost:3000/paperedit?id=" + Router.current().params.query.id;
+    Router.go(url);
+  }
 });

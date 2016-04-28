@@ -15,8 +15,8 @@ import static play.libs.Json.toJson;
 import play.libs.Json;
 
 public class PostController extends Controller {
-	
-	
+
+
 
 	/* add a new post to database */
 	public Result addPost() {
@@ -37,7 +37,7 @@ public class PostController extends Controller {
 		new Post(title, content, authorId, postAt, isQuestion).save();
 		return ok(toJson("success"));
 	}
-	
+
 	/* find post by id */
 	public Result getPostById(Long postId) {
         response().setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
@@ -51,27 +51,27 @@ public class PostController extends Controller {
 		}
 		return created(Json.toJson(post));
 	}
-	
+
 	/* get all post */
 	public Result getAllPosts() {
         response().setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
         response().setHeader("Access-Control-Max-Age", "3600");
         response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-    Type, Accept, Authorization, X-Auth-Token");
         response().setHeader("Access-Control-Allow-Credentials", "true");
-        response().setHeader("Access-Control-Allow-Origin", "*");	
+        response().setHeader("Access-Control-Allow-Origin", "*");
 		List<Post> posts = Post.find.all();
 		if(posts == null || posts.size() == 0) {
 			return Common.badRequestWrapper("no record found");
 		}
 		return created(Json.toJson(posts));
 	}
-	
+
 	public Result addComment() {
         response().setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
         response().setHeader("Access-Control-Max-Age", "3600");
         response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-    Type, Accept, Authorization, X-Auth-Token");
         response().setHeader("Access-Control-Allow-Credentials", "true");
-        response().setHeader("Access-Control-Allow-Origin", "*");		
+        response().setHeader("Access-Control-Allow-Origin", "*");
 		JsonNode jsonNode = request().body().asJson();
         if(jsonNode == null) {
             return Common.badRequestWrapper("no request body");
@@ -85,13 +85,13 @@ public class PostController extends Controller {
 		new PostComment(postId, commentId).save();
 		return ok(Json.toJson("success"));
 	}
-	
+
 	public Result setAsQuestion() {
         response().setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
         response().setHeader("Access-Control-Max-Age", "3600");
         response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-    Type, Accept, Authorization, X-Auth-Token");
         response().setHeader("Access-Control-Allow-Credentials", "true");
-        response().setHeader("Access-Control-Allow-Origin", "*");		
+        response().setHeader("Access-Control-Allow-Origin", "*");
 		JsonNode jsonNode = request().body().asJson();
         if(jsonNode == null) {
             return Common.badRequestWrapper("no request body");
@@ -105,13 +105,13 @@ public class PostController extends Controller {
 		post.save();
 		return ok(Json.toJson("success"));
 	}
-	
+
 	public Result setAnswer() {
         response().setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
         response().setHeader("Access-Control-Max-Age", "3600");
         response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-    Type, Accept, Authorization, X-Auth-Token");
         response().setHeader("Access-Control-Allow-Credentials", "true");
-        response().setHeader("Access-Control-Allow-Origin", "*");		
+        response().setHeader("Access-Control-Allow-Origin", "*");
 		JsonNode jsonNode = request().body().asJson();
         if(jsonNode == null) {
             return Common.badRequestWrapper("no request body");
@@ -122,7 +122,7 @@ public class PostController extends Controller {
 		if(post == null) {
 			return Common.badRequestWrapper("Cannot find post");
 		}
-		if(!post.getIsQuestion()) {
+		if(!post.IsQuestion()) {
 			return Common.badRequestWrapper("This is not a question");
 		}
 		post.setAnswer(answer);
@@ -135,7 +135,7 @@ public class PostController extends Controller {
         response().setHeader("Access-Control-Max-Age", "3600");
         response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-    Type, Accept, Authorization, X-Auth-Token");
         response().setHeader("Access-Control-Allow-Credentials", "true");
-        response().setHeader("Access-Control-Allow-Origin", "*");    	
+        response().setHeader("Access-Control-Allow-Origin", "*");
         List<Post> posts = Post.find.where()
         		.or(Expr.like("title", "%" + keyword + "%"), Expr.like("content", "%" + keyword + "%"))
         		.orderBy("postAt")
@@ -151,7 +151,7 @@ public class PostController extends Controller {
         response().setHeader("Access-Control-Max-Age", "3600");
         response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-    Type, Accept, Authorization, X-Auth-Token");
         response().setHeader("Access-Control-Allow-Credentials", "true");
-        response().setHeader("Access-Control-Allow-Origin", "*");    	
+        response().setHeader("Access-Control-Allow-Origin", "*");
         List<Post> posts = Post.find
             .where()
             .eq("authorId", userId)

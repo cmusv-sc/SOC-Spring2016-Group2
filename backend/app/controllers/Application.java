@@ -189,6 +189,8 @@ public class Application extends Controller {
      */
 
     public Result getPublicationWithAuthorsById(int id){
+      System.out.println("xuzhiheng");
+      System.out.println(id);
         String sql = "select * "+
                 "from publication as p join" +
                 " (select pa.publication_id, a.id, a.name from publication_author as pa join author as a where pa.author_id=a.id) as t" +

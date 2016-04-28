@@ -3,6 +3,12 @@
 
 # --- !Ups
 
+create table access_comment (
+  publication_id            bigint auto_increment not null,
+  status                    tinyint(1) default 0,
+  constraint pk_access_comment primary key (publication_id))
+;
+
 create table tagpost (
   tagpost_id                bigint auto_increment not null,
   tag                       varchar(255),
@@ -137,6 +143,8 @@ create index ix_tagpub_publication_1 on tagpub (pub_id);
 # --- !Downs
 
 SET FOREIGN_KEY_CHECKS=0;
+
+drop table access_comment;
 
 drop table tagpost;
 

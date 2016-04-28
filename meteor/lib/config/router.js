@@ -13,6 +13,9 @@ Router.route('/', function () {
     this.layout('blankLayout')
 });
 
+Router.route('/paperedit', function () {
+    this.render('paperedit');
+});
 // Authentication required
 Router.plugin('ensureSignedIn', {
   except: ['/', 'login', 'register', 'signIn',
@@ -171,7 +174,7 @@ Router.route('/group/:_id', {
     data: function(){
         return {_id: this.params._id};
     }
-     
+
 });
 
 Router.route('/newgroup',function(){

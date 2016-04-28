@@ -14,8 +14,8 @@ POST    /person/uploadPic           controllers.Application.upload()
 #
 #GET     /title/:title               controllers.Application.getPaperByTitle(title: String)
 
-
-
+# update publication information.
+GET /updatepub/                      controllers.PublicationController.UpdatePublication(pub_id:Long, title:String, editor:String, year:String, isbn:String, volume:String, pages:String, mdate:String, series:String, publisher:String, booktitle:String, crossref:String, ee:String, author:String)
 
 ###Suggestion
 GET    /year/:year                  controllers.Application.getPaperByYear(year:Integer)
@@ -86,4 +86,3 @@ GET    /group/notification/:userid        controllers.UserGroupController.getNot
 POST   /group/resnotification             controllers.UserGroupController.resNotification()
 GET    /group/:groupname/message          controllers.UserGroupController.getGroupMessage(groupname: String)
 POST   /group/message                     controllers.UserGroupController.saveMessage()
-
