@@ -54,6 +54,7 @@ GET    /deletetagpub/:pubid/:tagpub controllers.TagController.deleteTagpub(pubid
 GET    /gettagpubs/:title           controllers.TagController.getTagpubs(title:String)
 GET    /getpublications/:tagpub     controllers.TagController.getPublications(tagpub:String)
 GET    /getTag/:pub_id              controllers.TagController.getTagByPub_id(pub_id:Long)
+GET    /updateTag/                  controllers.TagController.updateTagPub(pubid:Long,tagpub:String)
 
 #Tagging for post
 GET    /addtagpost/:postid/:tagpost         controllers.TagController.addTagpost(postid:Long,tagpost:String)
@@ -75,7 +76,8 @@ GET    /userprofile/refresh/:userName    controllers.UserProfileController.refre
 #Comments Popularity
 GET    /getCommentSum/:rootid                   controllers.Popularity.getCommentSum(rootid:Integer)
 GET    /getTagSum/:pubid                          controllers.Popularity.getTagSum(pubid:Long)
-
+GET    /getPopularityByYear/:year                  controllers.Popularity.getPopularityByYear(year:Integer)
+GET    /getMostPopularity           controllers.Popularity.getMostPopularity()
 
 
 GET    /groups/:grouptype                 controllers.UserGroupController.getGroupList(grouptype: String)
