@@ -43,7 +43,7 @@ var renderComments = function(obj){
 		item += " style='color: #676a6c;' id='thumbdowna-" + c.comment.id + "'" + "><i class='fa fa-thumbs-down ";
 		if (c.thumbdowned == true) { item += "ed"; };
 		item += "' id='thumbdown-" + c.comment.id + "'></i> <span>" + c.thumbdown + "</span></a><span class='pull-right'>";
-		if (c.comment.authorid == 1) {
+		if (c.comment.authorid == Session.get("userSessionId")) {
 			//User
 			item += "<a class='small edit'><i class='fa fa-paste' id='edita-" + c.comment.id + "'></i></a>";
 		}
