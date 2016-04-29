@@ -81,6 +81,10 @@ Router.route('/forumlist', function () {
     this.render('forumlist');
 });
 
+Router.route('/popularity', function () {
+    this.render('popularity');
+});
+
 Router.route('/findpaper', function () {
     this.render('findpaper');
 });

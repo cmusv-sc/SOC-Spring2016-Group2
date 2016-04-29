@@ -1,4 +1,9 @@
 package controllers;
+
+/**
+ * Created by guoqing on 16/4/21.
+ */
+
 import com.avaje.ebean.*;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import models.*;
@@ -20,32 +25,61 @@ public class Popularity extends Controller {
         List<Tagpub> tags = Tagpub.findwithpublication.where().eq("pub_id",pubid).findList();
         return ok(String.valueOf(tags.size()));
     }
-    public void setHeaders(){
-        System.out.println("Set Header");
-        response().setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
-        response().setHeader("Access-Control-Max-Age", "3600");
-        response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content- Type, Accept, Authorization, X-Auth-Token");
-        response().setHeader("Access-Control-Allow-Credentials", "true");
-        response().setHeader("Access-Control-Allow-Origin", "*");
 
-    }
     public Result getPopularityByYear(int year) {
 
-        setHeaders();
 
-        List<ObjectNode> results=new ArrayList<ObjectNode>();
-        List<Publication> publications = Publication.find("byYear", year, null,null);
-        System.out.println("There are " + publications.size() + " publication"+year);
-        results=Publication.findPubDetails(publications,results,"getPopularityByYear");
+        String sql = "SELECT\n" +
+                " rootid, \n" +
+                " count(1) AS counts \n" +
+                "FROM\n" +
+                "comment\n" +
+                "GROUP BY\n" +
+                "rootid";
 
-        Collections.sort(results, new Comparator<ObjectNode>(){
-            public int compare(ObjectNode o1, ObjectNode o2){
-                String o1_pop=o1.get("popularity").toString();
-                String o2_pop=o2.get("popularity").toString();
-                return Integer.parseInt(o2_pop)-Integer.parseInt(o1_pop);
+        List<SqlRow> sqlRows1 = Ebean.createSqlQuery(sql).findList();
+        // ArrayList<String> list = new ArrayList<String>();
+        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+
+        for (int i = 0; i < sqlRows1.size(); i++) {
+            SqlRow sqlRow = sqlRows1.get(i);
+            map.put(Integer.valueOf(sqlRow.getString("rootid")),Integer.valueOf(sqlRow.getString("counts")));
+        }
+
+        String sqlyear = "SELECT pub_id FROM publication WHERE year="+year;
+        HashMap<Integer, Integer> newmap = new HashMap<Integer, Integer>();
+        List<SqlRow> sqlRows = Ebean.createSqlQuery(sqlyear).findList();
+        for (int i = 0; i < sqlRows.size(); i++) {
+            SqlRow sqlRow = sqlRows.get(i);
+            for(int j=0;j < map.size();j++){
+                if(map.containsKey(Integer.valueOf(sqlRow.getString("pub_id"))))
+                    newmap.put(Integer.valueOf(sqlRow.getString("pub_id")),map.get(Integer.valueOf(sqlRow.getString("pub_id"))));
             }
-        });
-        return ok(Json.toJson(results));
+        }
+        int value=0;
+        String maxKey = null;
+        List list=new ArrayList();
+
+        Iterator ite=newmap.entrySet().iterator();
+        while(ite.hasNext()){
+            Map.Entry entry =(Map.Entry)ite.next();
+            value = Integer.parseInt(entry.getValue().toString());
+            list.add(entry.getValue());
+            Collections.sort(list);
+
+            if(value == Integer.parseInt(list.get(list.size()-1).toString())){
+                maxKey = entry.getKey().toString();
+            }
+        }
+
+        String sql1 = "select * "+
+                "from publication as p join" +
+                " (select pa.publication_id, a.id, a.name from publication_author as pa join author as a where pa.author_id=a.id) as t" +
+                " where p.pub_id=t.publication_id and p.pub_id=" + maxKey;
+        //getPublicationWithAuthorsById(Integer.parseInt(maxKey));
+
+        return ok(toJson(joinPublicationAndAuthor(sql1)));
+
     }
 
     public void findrootidandcounts(int year){
@@ -66,16 +100,17 @@ public class Popularity extends Controller {
         }
         int value=0;
         String maxKey = null;
-        List list=new ArrayList();
+        List list1=new ArrayList();
 
         Iterator ite=map.entrySet().iterator();
         while(ite.hasNext()){
             Map.Entry entry =(Map.Entry)ite.next();
             value = Integer.parseInt(entry.getValue().toString());
-            list.add(entry.getValue());
-            Collections.sort(list);
+            System.out.print("");
+            list1.add(entry.getValue());
+            Collections.sort(list1);
 
-            if(value == Integer.parseInt(list.get(list.size()-1).toString())){
+            if(value == Integer.parseInt(list1.get(list1.size()-1).toString())){
                 maxKey = entry.getKey().toString();
             }
         }
@@ -105,6 +140,7 @@ public class Popularity extends Controller {
         Iterator ite=map.entrySet().iterator();
         while(ite.hasNext()){
             Map.Entry entry =(Map.Entry)ite.next();
+            System.out.print("");
             value = Integer.parseInt(entry.getValue().toString());
             list.add(entry.getValue());
             Collections.sort(list);
@@ -202,8 +238,65 @@ public class Popularity extends Controller {
 
     public Result getAuthorPopularity(String author){
 
-        List<Publication> publications = Publication.find.where().eq("author", author).findList();
-        return ok();
+        String sql = "SELECT\n" +
+                " rootid, \n" +
+                " count(1) AS counts \n" +
+                "FROM\n" +
+                "comment\n" +
+                "GROUP BY\n" +
+                "rootid";
+
+        List<SqlRow> sqlRows = Ebean.createSqlQuery(sql).findList();
+        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+        for (int i = 0; i < sqlRows.size(); i++) {
+            SqlRow sqlRow = sqlRows.get(i);
+            map.put(Integer.valueOf(sqlRow.getString("rootid")),Integer.valueOf(sqlRow.getString("counts")));
+        }
+
+        String sql1 = "SELECT id FROM author WHERE name LIKE '"+author+"';";
+        List<SqlRow> sqlRows1 = Ebean.createSqlQuery(sql1).findList();
+        SqlRow sqlRow = sqlRows1.get(0);
+
+        String sql2 = "SELECT publication_id FROM publication_author WHERE author_id="+Integer.valueOf(sqlRow.getString("id"))+";";
+        List<SqlRow> sqlRows2 = Ebean.createSqlQuery(sql2).findList();
+        HashMap<Integer, Integer> newmap = new HashMap<Integer, Integer>();
+
+        for (int i = 0; i < sqlRows2.size(); i++) {
+            SqlRow sqlRow2 = sqlRows2.get(i);
+            for(int j=0;j < map.size();j++){
+                if(map.containsKey(Integer.valueOf(sqlRow2.getString("publication_id"))))
+                    newmap.put(Integer.valueOf(sqlRow2.getString("publication_id")),map.get(Integer.valueOf(sqlRow2.getString("publication_id"))));
+            }
+            //newmap.put(Integer.valueOf(sqlRow.getString("rootid")),Integer.valueOf(sqlRow.getString("counts")));
+        }
+
+
+
+        int value=0;
+        String maxKey = null;
+        List list=new ArrayList();
+
+        Iterator ite=newmap.entrySet().iterator();
+        while(ite.hasNext()){
+            Map.Entry entry =(Map.Entry)ite.next();
+            value = Integer.parseInt(entry.getValue().toString());
+            list.add(entry.getValue());
+            Collections.sort(list);
+            System.out.print("");
+
+            if(value == Integer.parseInt(list.get(list.size()-1).toString())){
+                maxKey = entry.getKey().toString();
+            }
+        }
+
+        String sql3 = "select * "+
+                "from publication as p join" +
+                " (select pa.publication_id, a.id, a.name from publication_author as pa join author as a where pa.author_id=a.id) as t" +
+                " where p.pub_id=t.publication_id and p.pub_id=" + maxKey;
+        //getPublicationWithAuthorsById(Integer.parseInt(maxKey));
+
+        return ok(toJson(joinPublicationAndAuthor(sql3)));
+
     }
 
 }
