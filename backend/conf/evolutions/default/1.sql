@@ -36,14 +36,14 @@ create table comment (
 
 create table group_member (
   id                        bigint auto_increment not null,
-  member_id                 bigint,
+  member_id                 varchar(255),
   group_id                  bigint,
   constraint pk_group_member primary key (id))
 ;
 
 create table group_message (
   id                        bigint auto_increment not null,
-  member_id                 bigint,
+  member_id                 varchar(255),
   group_id                  bigint,
   title                     varchar(255),
   message                   varchar(255),
@@ -52,9 +52,10 @@ create table group_message (
 
 create table group_notice (
   id                        bigint auto_increment not null,
-  sender                    bigint,
+  sender                    varchar(255),
   group_id                  bigint,
-  receiver                  bigint,
+  groupname                 varchar(255),
+  receiver                  varchar(255),
   constraint pk_group_notice primary key (id))
 ;
 
@@ -123,7 +124,7 @@ create table user_profile (
 create table user_group (
   id                        bigint auto_increment not null,
   groupname                 varchar(255),
-  createrid                 bigint,
+  createrid                 varchar(255),
   intro                     varchar(255),
   type                      varchar(255),
   constraint pk_user_group primary key (id))

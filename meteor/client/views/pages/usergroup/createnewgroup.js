@@ -7,11 +7,14 @@ Template.createnewgroup.events({
 
 		var url = "http://localhost:9000/groups";
 		var args = {};
-		args["createrid"] = 111;
+		var myid = Session.get("userSessionId");
+		args["createrid"] = myid;
 		args["groupname"] = groupname;
 		args["intro"] = intro;
 		args["type"] = type;
-		//console.log(args);
+		
+
+		console.log(myid);
 		
 		Meteor.call('postToBackend', url, args, function (err, res){
 			location.reload();

@@ -24,7 +24,7 @@ public class UserGroupController extends Controller {
         return ok(Json.toJson(group_list));
     }
     //get user's private groups
-    public  Result getOwnGroup(Long memberid){
+    public  Result getOwnGroup(String memberid){
         ArrayList<UserGroup> group_list = new ArrayList<UserGroup>();
         List<GroupMember> list = GroupMember.find.where().eq("member_id",memberid).findList();
         for (int i = 0; i < list.size(); i++){
@@ -48,7 +48,12 @@ public class UserGroupController extends Controller {
         List<UserGroup> list = UserGroup.find.where().eq("groupname", groupname).findList();
         return list.get(0).id;
     }
-    public static Long getGroupCreater (String groupname){
+    //get group id based on group name;
+    public static String getGroupName (Long group_id){
+        List<UserGroup> list = UserGroup.find.where().eq("id", group_id).findList();
+        return list.get(0).groupname;
+    }
+    public static String getGroupCreater (String groupname){
         List<UserGroup> list = UserGroup.find.where().eq("groupname", groupname).findList();
         return list.get(0).createrid;
     }
@@ -66,8 +71,13 @@ public class UserGroupController extends Controller {
         return ok(Json.toJson(list));
     }
     //get notification based on userid
-    public  Result getNotifcation(Long userid){
+    public  Result getNotifcation(String userid){
         List<GroupNotice> list = GroupNotice.find.where().eq("receiver", userid).findList();
+        for (int i = 0; i < list.size(); i++){
+            Long groupid = list.get(i).group_id;
+            String groupname = UserGroupController.getGroupName(groupid);
+            list.get(i).setGroupname(groupname);
+        }
         return ok(Json.toJson(list));
     }
     /*
@@ -87,7 +97,7 @@ public class UserGroupController extends Controller {
         if(jsonNode == null) {
             return Common.badRequestWrapper("no request body");
         }
-        long createrid = jsonNode.path("createrid").asLong();
+        String createrid = jsonNode.path("createrid").asText();
         String groupname = jsonNode.path("groupname").asText();
         String intro = jsonNode.path("intro").asText();
         String type = jsonNode.path("type").asText();
@@ -107,7 +117,7 @@ public class UserGroupController extends Controller {
         if(jsonNode == null) {
             return Common.badRequestWrapper("no request body");
         }
-        long createrid = jsonNode.path("createrid").asLong();
+        String createrid = jsonNode.path("createrid").asText();
         String groupname = jsonNode.path("groupname").asText();
         String title = jsonNode.path("title").asText();
         String msg = jsonNode.path("msg").asText();
@@ -122,10 +132,10 @@ public class UserGroupController extends Controller {
         if(jsonNode == null) {
             return Common.badRequestWrapper("no request body");
         }
-        long sender_id = jsonNode.path("sender").asLong();
+        String sender_id = jsonNode.path("sender").asText();
         String groupname = jsonNode.path("groupname").asText();
         Long group_id = UserGroupController.getGroupID(groupname);
-        Long createrid = UserGroupController.getGroupCreater(groupname);
+        String createrid = UserGroupController.getGroupCreater(groupname);
         new GroupNotice(sender_id,group_id,createrid ).save();
 
         return ok(Json.toJson("new notice saved"));
@@ -137,16 +147,68 @@ public class UserGroupController extends Controller {
         }
         long request_id = jsonNode.path("requestid").asLong();
         String result = jsonNode.path("response").asText();
-
+        /*
         List<GroupNotice> list = GroupNotice.find.where().eq("id",request_id).findList();
         if(result.equals("OK")){
             new GroupMember(list.get(0).sender, list.get(0).group_id).save();
             list.get(0).delete();
         }else if(result.equals("Delete")){
             list.get(0).delete();
+        }*/
+        List<GroupNotice> list = GroupNotice.find.where().eq("id",request_id).findList();
+        //Receiver a;
+        if(result.equals("OK")){
+            Receiver a = new Receiver(new ConfirmStrategy());
+            a.dealwith(list,request_id);
+
+        }else {
+
+            Receiver b = new Receiver(new DeleteStrategy());
+            b.dealwith(list,request_id);
+
         }
 
         return ok(Json.toJson("response OK"));
     }
 
+//DESIGN PATTERN: STRATEGY
+
+    class Receiver {
+        private RequestStrategy strategy;
+
+        public Receiver(RequestStrategy strategy) {
+            this.strategy = strategy;
+        }
+
+        public void dealwith(List<GroupNotice> list,long request_id) {
+            this.strategy.dealwithRes(list,request_id);
+        }
+        // Set Strategy
+        public void setStrategy(RequestStrategy strategy) {
+            this.strategy = strategy;
+        }
+
+    }
+
+    interface RequestStrategy {
+         void dealwithRes(List<GroupNotice> list,long request_id);
+    }
+
+    class ConfirmStrategy implements RequestStrategy {
+
+        @Override
+        public void dealwithRes(List<GroupNotice> list,long request_id) {
+            new GroupMember(list.get(0).sender, list.get(0).group_id).save();
+            list.get(0).delete();
+        }
+    }
+
+    class DeleteStrategy implements RequestStrategy {
+
+        @Override
+        public void dealwithRes(List<GroupNotice> list,long request_id) {
+            list.get(0).delete();
+        }
+
+    }
 }

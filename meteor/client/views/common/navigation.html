@@ -26,12 +26,12 @@
                         IN+
                     </div>
                 </li>
-                <li class="{{isActiveRoute regex='dashboard1|dashboard2|dashboard3|dashboard4l|dashboard5|friendlisthome|suggestion'}}">
-                    <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label" data-i18n="nav.dashboard">Dashboards</span> <span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level collapse {{isActiveRoute regex='dashboard1|dashboard2|dashboard3|dashboard4l|dashboard5|friendlisthome|suggestion|forumlist|findpaper|paperdetail|postPage' className='in'}}">
+                <li class="{{isActiveRoute regex='dashboard1|dashboard2|dashboard3|dashboard4l|dashboard5|friendlisthome|publicgroup|suggestion'}}">
+                    <a href="{{pathFor route='dashboard1'}}"><i class="fa fa-th-large"></i> <span class="nav-label" data-i18n="nav.dashboard">Dashboards</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse {{isActiveRoute regex='dashboard1|dashboard2|dashboard3|dashboard4l|dashboard5|friendlisthome|publicgroup|suggestion|forumlist|findpaper|paperdetail|postPage' className='in'}}">
                         <li class="{{isActiveRoute regex='dashboard1'}}"><a href="{{pathFor route='dashboard1'}}">Paper </a></li>
                         <li class="{{isActiveRoute regex='friendlisthome'}}"><a href="{{pathFor route='friendlisthome'}}">FriendList <span class="label label-primary pull-right">NEW</span></a></li>
-                        <li class="{{isActiveRoute regex='usergroup'}}"><a href="{{pathFor route='usergroup'}}">User Group <span class="label label-primary pull-right">NEW</span></a></li>
+                        <li class="{{isActiveRoute regex='publicgroup'}}"><a href="{{pathFor route='publicgroup'}}">User Group <span class="label label-primary pull-right">NEW</span></a></li>
                         <li class="{{isActiveRoute regex='suggestion'}}"><a href="{{pathFor route='suggestion'}}">Suggestion <span class="label label-primary pull-right">NEW</span></a></li>
                         <li class="{{isActiveRoute regex='academicforum'}}"><a href="{{pathFor route='academicforum'}}">Academic Forum <span class="label label-primary pull-right">NEW</span></a></li>
                         <li class="{{isActiveRoute regex='accesscontrol'}}"><a href="{{pathFor route='accesscontrol'}}">Access Control <span class="label label-primary pull-right">NEW</span></a></li>

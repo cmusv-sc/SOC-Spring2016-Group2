@@ -11,7 +11,7 @@ public class GroupMember extends Model {
 
     @Id
     public Long id;
-    public Long member_id;
+    public String member_id;
     public Long group_id;
     public static Finder<Integer, GroupMember> find
             = new Model.Finder<>(Integer.class, GroupMember.class);
@@ -20,7 +20,7 @@ public class GroupMember extends Model {
      *  so that they can be immediately returned to the pool.
      */
 
-    public GroupMember(Long memberid, Long groupid){
+    public GroupMember(String memberid, Long groupid){
         this.member_id=memberid;
         this.group_id=groupid;
     }

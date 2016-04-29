@@ -12,9 +12,10 @@ import javax.persistence.Id;
 public class GroupNotice extends Model {
     @Id
     public Long id;
-    public Long sender;
+    public String sender;
     public Long group_id;
-    public Long receiver;
+    public String groupname;
+    public String receiver;
 
     public static Model.Finder<Long, GroupNotice> find
             = new Model.Finder<>(Long.class, GroupNotice.class);
@@ -23,10 +24,13 @@ public class GroupNotice extends Model {
      *  so that they can be immediately returned to the pool.
      */
 
-    public GroupNotice(Long sender, Long group_id, Long receiver){
+    public GroupNotice(String sender, Long group_id, String receiver){
         this.sender=sender;
         this.group_id=group_id;
         this.receiver=receiver;
+    }
+    public void setGroupname(String groupname){
+        this.groupname = groupname;
     }
 
 }

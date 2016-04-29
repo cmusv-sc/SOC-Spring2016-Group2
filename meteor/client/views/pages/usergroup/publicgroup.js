@@ -27,7 +27,7 @@ var renderGroups = function(obj){
     var c = obj[i];
     console.log("for test "+c);
     var item = "<li class='dd-item'>";
-    item += "<h2>Group: " + c.groupname + "</h2>";
+    item += "<h2>" + c.groupname + "</h2>";
     item += "<p>intro:  " + c.intro + " </p>";
     item += "<a class='btn btn-primary' href='/group/" + c.groupname + "'>Enter<span class='glyphicon glyphicon-chevron-right'></span></a><hr>";
     item += "</li>";

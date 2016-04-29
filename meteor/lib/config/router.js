@@ -153,7 +153,7 @@ Router.route('/notFound', function () {
     this.render('notFound');
 });
 //user group
-Router.route('/groups/publicgroup',function(){
+Router.route('/publicgroup',function(){
     this.render('publicgroup');
 });
 Router.route('/groups/privategroup',function(){

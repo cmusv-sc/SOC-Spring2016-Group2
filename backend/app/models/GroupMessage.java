@@ -12,7 +12,7 @@ import java.util.Date;
 public class GroupMessage extends Model {
     @Id
     public Long id;
-    public Long member_id;
+    public String member_id;
     public Long group_id;
     public String title;
     public String message;
@@ -24,7 +24,7 @@ public class GroupMessage extends Model {
      *  so that they can be immediately returned to the pool.
      */
 
-    public GroupMessage(Long memberid, Long groupid,String title, String message){
+    public GroupMessage(String memberid, Long groupid,String title, String message){
         this.member_id=memberid;
         this.group_id=groupid;
         this.title = title;

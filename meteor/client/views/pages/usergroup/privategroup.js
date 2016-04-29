@@ -27,7 +27,7 @@ var renderGroups = function(obj){
     var c = obj[i];
     console.log("for test "+c);
     var item = "<li class='dd-item'>";
-    item += "<h2 >Group: " + c.groupname + "</h2>";
+    item += "<h2 >" + c.groupname + "</h2>";
     item += "<p>intro:  " + c.intro + " </p>";
     item += "<a class='btn btn-primary sendrequest' id=\""+ c.groupname +"\" > I want to join in <span class='glyphicon glyphicon-chevron-right'></span></a><hr>";
     item += "</li>";
@@ -43,7 +43,8 @@ Template.privategroup.events({
     alert("request sent");
    var url = "http://localhost:9000/group/notification";
    var args = {};
-   args["sender"] = 1003;
+   var myid = Session.get("userSessionId");
+   args["sender"] = myid;
    args["groupname"] = event.target.id;
    console.log(event.target.id);
    postNotice(url,args);

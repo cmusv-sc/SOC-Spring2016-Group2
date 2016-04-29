@@ -38,14 +38,14 @@ GET     /getThumbSum/:user/:type                               controllers.Thumb
 
 
 #Post Related REST API
-POST	/post/addPost					controllers.PostController.addPost()
-GET		/post/getPostById/:postId		controllers.PostController.getPostById(postId: Long)
-GET		/post/getAllPosts				controllers.PostController.getAllPosts()
-POST	/post/addComment				controllers.PostController.addComment()
-POST	/post/setAsQuestion				controllers.PostController.setAsQuestion()
-POST	/post/setAnswer					controllers.PostController.setAnswer()
-GET     /post/search/:keyword           controllers.PostController.search(keyword : String)
-GET     /post/getPostByUserId/:userId   controllers.PostController.getPostByUserId(userId: Long)
+#POST	/post/addPost					controllers.PostController.addPost()
+#GET		/post/getPostById/:postId		controllers.PostController.getPostById(postId: Long)
+#GET		/post/getAllPosts				controllers.PostController.getAllPosts()
+#POST	/post/addComment				controllers.PostController.addComment()
+#POST	/post/setAsQuestion				controllers.PostController.setAsQuestion()
+#POST	/post/setAnswer					controllers.PostController.setAnswer()
+#GET     /post/search/:keyword           controllers.PostController.search(keyword : String)
+#GET     /post/getPostByUserId/:userId   controllers.PostController.getPostByUserId(userId: Long)
 
 
 #Tagging for publication
@@ -79,10 +79,10 @@ GET    /getTagSum/:pubid                          controllers.Popularity.getTagS
 
 
 GET    /groups/:grouptype                 controllers.UserGroupController.getGroupList(grouptype: String)
-GET    /group/own/:userid                 controllers.UserGroupController.getOwnGroup(userid: Long)
+GET    /group/own/:userid                 controllers.UserGroupController.getOwnGroup(userid: String)
 POST   /groups                            controllers.UserGroupController.saveGroup()
 POST   /group/notification                controllers.UserGroupController.saveNotification()
-GET    /group/notification/:userid        controllers.UserGroupController.getNotifcation(userid: Long)
+GET    /group/notification/:userid        controllers.UserGroupController.getNotifcation(userid: String)
 POST   /group/resnotification             controllers.UserGroupController.resNotification()
 GET    /group/:groupname/message          controllers.UserGroupController.getGroupMessage(groupname: String)
 POST   /group/message                     controllers.UserGroupController.saveMessage()

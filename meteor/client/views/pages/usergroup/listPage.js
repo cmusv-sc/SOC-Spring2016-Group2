@@ -2,7 +2,7 @@ Template.groupPage.helpers({
    getData: function() {
     //console.log("ID: " + Router.current().params.query.id);
     //var url = "http://localhost:9000/group/"+ this._id+"/message ";legal2
-    var url = "http://localhost:9000/group/DDD/message ";
+    var url = "http://localhost:9000/group/"+this._id+"/message ";
     console.log(this._id);
     fetchData(url);
   },
@@ -30,11 +30,12 @@ var renderGroups = function(obj){
   console.log(obj.length);
   for (var i = 0; i < obj.length; i++) {
     var c = obj[i];
+    var myname = User2.findOne(c.member_id).name;
     console.log("for test "+c);
     var item = "<li class='dd-item'>";
-    item += "<h2>member: " + c.member_id + "</h2>";
-    item += "<p>title:  " + c.title + " </p>";
-    item += "<p>message:  " + c.message + " </p>";
+    item += "<h2>" + c.title + "</h2>";
+    item += "<p>by:  " + myname + " </p>";
+    item += "<p>" + c.message + " </p>";
     item += "<hr></li>";
     s += item;
   };
@@ -51,7 +52,8 @@ Template.groupPage.events({
 
     var url = "http://localhost:9000/group/message";
     var args = {};
-    args["createrid"] = 111;
+    var myid = Session.get("userSessionId");
+    args["createrid"] = myid;
     args["groupname"] = this._id;
     args["title"] = groupname;
     args["msg"] = intro;

@@ -1,7 +1,8 @@
 Template.yourown.helpers({
    getData: function() {
     //console.log("ID: " + Router.current().params.query.id);
-    var url = "http://localhost:9000/group/own/1003";
+    var myid = Session.get("userSessionId");
+    var url = "http://localhost:9000/group/own/"+myid;
     fetchData(url);
   },
 });

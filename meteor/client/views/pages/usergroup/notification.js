@@ -1,10 +1,7 @@
 Template.notificaction.helpers({
    getData: function() {
-    //console.log("ID: " + Router.current().params.query.id);
-    //var url = "http://localhost:9000/group/"+ this._id+"/message ";legal2
-    //change 111
-    var url = "http://localhost:9000/group/notification/111";
-    console.log(this._id);
+    var myid = Session.get("userSessionId");
+    var url = "http://localhost:9000/group/notification/"+myid;
     fetchData(url);
   },
 
@@ -31,11 +28,12 @@ var renderGroups = function(obj){
   console.log(obj.length);
   for (var i = 0; i < obj.length; i++) {
     var c = obj[i];
+    var myname = User2.findOne(c.sender).name;
     console.log("for test "+c);
     var item = "<li class='dd-item'>";
-    item += "<h2>member: " + c.sender + "</h2>";
-    item += "<p>title:  " + c.group_id + " </p>";
-    item += "<a class='btn btn-primary sendpermit' id=\""+ c.id +"\" > OK <span class='glyphicon glyphicon-chevron-right'></span></a>";
+    item += "<h4>" + myname + " wants to join "+c.groupname+"</h4>";
+    //item += "<p>title:  " + c.groupname + " </p>";
+    item += "<a class='btn btn-primary sendpermit' id=\""+ c.id +"\" > Confirm <span class='glyphicon glyphicon-chevron-right'></span></a>";
     item += "<a class='btn btn-primary senddelete' id=\""+ c.id +"\" > Delete <span class='glyphicon glyphicon-chevron-right'></span></a>";
     item += "<hr></li>";
     s += item;
@@ -46,7 +44,7 @@ var renderGroups = function(obj){
 }
 Template.notificaction.events({
   'click .sendpermit': function (event) {
-    alert("request sent");
+    alert("your response is sent");
    var url = "http://localhost:9000/group/resnotification";
    var args = {};
    args["requestid"] = event.target.id;
