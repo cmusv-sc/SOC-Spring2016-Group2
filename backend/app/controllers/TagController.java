@@ -42,6 +42,18 @@ public class TagController extends Controller {
         return ok(tagpub + " does not exist!");
     }
 
+    public Result updateTagPub(Long pubid, String tagpub) {
+      List<Tagpub> tagpubdelete = Tagpub.findwithpublication.where().eq("pub_id", pubid).findList();
+      for (Tagpub tagpubtemp:tagpubdelete) {
+        Tagpub.findwithpublication.ref(tagpubtemp.getId()).delete();
+      }
+      String[] tag_array = tagpub.split(",");
+      for (int i = 0; i < tag_array.length; ++i) {
+        addTagpub(pubid, tag_array[i]);
+      }
+      return ok(tagpub + " updated successfully!");
+    }
+
     public Result getTagpubs(String title){
         List<Tagpub> tagpubs = Tagpub.findwithpublication.where().eq("publication.title", title).findList();
         StringBuilder sb =new StringBuilder();
@@ -67,7 +79,7 @@ public class TagController extends Controller {
         }
         return ok(Json.toJson(results));
     }
-    
+
     public Result getTagByPub_id(Long pub_id)
     {
         List<Tagpub> tagpubs = Tagpub.findwithpublication.where().eq("pub_id", pub_id).findList();
@@ -82,7 +94,7 @@ public class TagController extends Controller {
     //===================publication===========================
 //========================================================================================================
     //======================post===========================
-/*    public Result addTagpost(Long postid, String tagpost){
+    public Result addTagpost(Long postid, String tagpost){
         Post postadd = Post.find.where().eq("id", postid).findUnique();
         List<Tagpost> tagpostadd = Tagpost.findwithpost.where().eq("post_id", postid).findList();
         for (Tagpost tagposttemp:tagpostadd){
@@ -117,7 +129,7 @@ public class TagController extends Controller {
         if (sb.length()>0)
             sb.deleteCharAt(sb.length()-1);
         return ok(sb.toString());
-    }*/
+    }
     //======================post===========================
 
 public class PublicationWithAuthorsinTag{
@@ -150,4 +162,3 @@ public class PublicationWithAuthorsinTag{
         }
     }
 }
-

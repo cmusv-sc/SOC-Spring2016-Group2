@@ -36,7 +36,7 @@ Template.postPage.events({
 		$("#setAsQuestion").checked = false;
 		var args = {};
 		args["title"] = title;
-		args["authorid"] = 1;
+		args["authorid"] = Session.get("userSessionId");
 		args["content"] = content;
 		args["postAt"] = new Date().toLocaleString();
 		args["isQuestion"] = isQuestion;
@@ -67,6 +67,7 @@ var fetchData = function(url){
 			for (var i = 0; i < res.data.length; i++) {
 				var row = "<tr><td><span class='label label-primary'>" + (i+1) + "</span> </td><td><a href='/postdetail?id=" + res.data[i].id + "'>" + res.data[i].title + "</a>" + "<br><small>";
 				row += res.data[i].authorId;
+				//row += User2.findOne(res.data[i].authorId).name;
 				row += "</small></td></tr>";
 				contentholder.append($(row));
 			};

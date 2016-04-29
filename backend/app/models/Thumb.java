@@ -14,10 +14,10 @@ public class Thumb extends Model {
 	@Id
 	public Long  id;
 	public Boolean thumb_type;
-	public Integer sender;
+	public String sender;
 	public Integer receiver;
 
-	public Thumb(Long id, Boolean thumb_type, Integer sender, Integer receiver) {
+	public Thumb(Long id, Boolean thumb_type, String sender, Integer receiver) {
 		this.id = id;
 		this.thumb_type = thumb_type;
 		this.sender = sender;
@@ -40,11 +40,11 @@ public class Thumb extends Model {
 		this.thumb_type = thumb_type;
 	}
 
-	public Integer getSender() {
+	public String getSender() {
 		return sender;
 	}
 
-	public void setSender(Integer sender) {
+	public void setSender(String sender) {
 		this.sender = sender;
 	}
 

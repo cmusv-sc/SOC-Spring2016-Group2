@@ -2,7 +2,7 @@ Template.postDetail.helpers({
   getData: function() {
   	var url = "http://localhost:9000/post/getPostById/" + Router.current().params.query.id;
   	fetchData(url);
-	url = "http://localhost:9000/getTag/" + Router.current().params.query.id;
+	url = "http://localhost:9000/getTagpost/" + Router.current().params.query.id;
 	fetchTag(url);
   	url = "http://localhost:9000/comment?rootid=" + Router.current().params.query.id + "&categoryid=2&userid=1";
   	fetchComment(url);
@@ -23,7 +23,7 @@ var renderComments = function(obj){
 		return "";
 	}
 	var s = "<ol class='dd-list'>";
-	
+
 	for (var i = 0; i < obj.length; i++) {
 		var c = obj[i];
 		var item = "<li class='dd-item'><div class='social-feed-box'>";
@@ -49,7 +49,7 @@ var renderComments = function(obj){
 		item += "</li>";
 		s += item;
 	};
-	
+
 	s += "</ol>";
 	return s;
 }
@@ -57,12 +57,13 @@ var renderComments = function(obj){
 var isQuestion = false;
 
 var fetchData = function(url){
-	
+
 	Meteor.call('fetchFromService', url, function (err, res){
 		var obj = JSON.stringify(res.data);
 		var post = res.data;
 		$("#title").text(post.title);
 		$(".author").text(post.authorId);
+		//$(".author").text(User2.findOne(post.authorId).name);
 		$(".id").text(post.id);
 		$(".content").text(post.content);
 		$(".postAt").text(post.postAt);
@@ -87,7 +88,7 @@ Template.postDetail.rendered = function(){
 		{
 			console.log("Press Enter");
 			$(".tags").append("<button class=\"btn btn-white btn-xs\" type=\"button\">"+$("#addTag").val()+"</button>&nbsp");
-			var url = "http://localhost:9000/addtagpub/" + Router.current().params.query.id + "/" + $("#addTag").val(); 
+			var url = "http://localhost:9000/addtagpost/" + Router.current().params.query.id + "/" + $("#addTag").val();
 			fetchTagAdded(url);
 			$("#addTag").val("");
 		}
@@ -149,9 +150,9 @@ var fetchTagAdded = function(url){
 Template.postDetail.events({
 	'click #postcomment': function (event) {
 		var input = $("#inputcomment").val();
-		if (input == "") { 
+		if (input == "") {
 			$("#inputcomment").parent(".input-group").addClass("has-error");
-			console.log("No input"); 
+			console.log("No input");
 			return;
 		};
 		//console.log("Comment: " + input);
@@ -178,7 +179,7 @@ Template.postDetail.events({
 		//console.log(content);
 		if (content == "") {
 			$(inputid).parent(".input-group").addClass("has-error");
-			console.log("No input"); 
+			console.log("No input");
 			return;
 		};
 		var args = {};
@@ -318,16 +319,34 @@ Template.postDetail.events({
 	},
 	'click #closecomment': function(event){
 		console.log("Close");
-		if ($(".input-group").hasClass("hide")) {
-			$(".input-group").removeClass("hide");
-			$(".dd").removeClass("hide");
-			$("#commentnote").addClass("hide");
-			$(event.target).text("Close Comment");
-		}else{
-			$(".input-group").addClass("hide");
-			$("#commentnote").removeClass("hide");
-			$(".dd").addClass("hide");
-			$(event.target).text("Open Comment");
-		}
+    var myid = Session.get("userSessionId");
+    var current = User2.findOne(myid);
+    var myname
+    if (current != null) {
+      myname=current.name
+    } else {
+      myname = "NoName"
+    }
+    console.log(myname);
+    if(myname=="Michael Stonebraker")
+    {
+
+      		if ($(".input-group").hasClass("hide")) {
+      			$(".input-group").removeClass("hide");
+      			$(".dd").removeClass("hide");
+      			$("#commentnote").addClass("hide");
+      			$(event.target).text("Close Comment");
+      		}else{
+      			$(".input-group").addClass("hide");
+      			$("#commentnote").removeClass("hide");
+      			$(".dd").addClass("hide");
+      			$(event.target).text("Open Comment");
+      		}
+    }
+    else if (myname!="Michael Stonebraker") {
+        swal("you can't edit it!")
+
+    }
+
 	}
 });

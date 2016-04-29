@@ -32,7 +32,7 @@ public class ForumController extends Controller{
         return ok(toJson(comment));
     }
 
-    public Result getComments(int rootid, int categoryid, int userid) {
+    public Result getComments(int rootid, int categoryid, String userid) {
         return ok(toJson(getCommentsWithThumbs(rootid, categoryid, 0, userid)));
     }
 
@@ -83,7 +83,7 @@ public class ForumController extends Controller{
         return list;
     }
 
-    public ArrayList<NestedComment> getCommentsWithThumbs(int rootid, int categoryid, int parentid, int userid){
+    public ArrayList<NestedComment> getCommentsWithThumbs(int rootid, int categoryid, int parentid, String userid){
         ArrayList<NestedComment> list = new ArrayList<NestedComment>();
         String sql = "select c.id, c.parentid, c.content, c.authorid, c.time, t.thumb_type, t.sender " +
                 "from comment as c left join thumb as t on (c.id=t.receiver)" +
@@ -96,7 +96,7 @@ public class ForumController extends Controller{
             //System.out.println(sqlRow.getInteger("id") + ": " + prev);
             if (!sqlRow.getInteger("id").equals(prev)){
                 prev = sqlRow.getInteger("id");
-                Comment comment = new Comment(sqlRow.getInteger("id"), parentid, sqlRow.getInteger("authorid"), sqlRow.getString("content") , sqlRow.getLong("time"), rootid, categoryid);
+                Comment comment = new Comment(sqlRow.getInteger("id"), parentid, sqlRow.getString("authorid"), sqlRow.getString("content") , sqlRow.getLong("time"), rootid, categoryid);
                 comment.setId(sqlRow.getInteger("id"));
                 int thumbup = 0;
                 int thumbdown = 0;
@@ -109,7 +109,7 @@ public class ForumController extends Controller{
                     }else {
                         thumbup ++;
                     }
-                    if (sqlRow.getInteger("sender") == userid){
+                    if (sqlRow.getString("sender").equals(userid)){
                         if (thumb_type == false){
                             thumbdowned = true;
                         }else {
@@ -129,7 +129,7 @@ public class ForumController extends Controller{
                     }else {
                         list.get(list.size()-1).thumbup ++;
                     }
-                    if (sqlRow.getInteger("sender") == userid){
+                    if (sqlRow.getString("sender").equals(userid)){
                         if (thumb_type == false){
                             list.get(list.size()-1).thumbdowned = true;
                         }else {

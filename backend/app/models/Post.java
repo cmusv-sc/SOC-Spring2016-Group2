@@ -18,28 +18,28 @@ public class Post extends Model {
 
     /* the content of post */
     public String content;
-    
+
     /* the author of post */
     public long authorId;
-    
+
     /* if the post is a question */
     public boolean isQuestion;
-    
+
     /* the answer of question */
     public String answer;
-    
+
     /* post created at */
     public String postAt;
 
     public static Finder<Long, Post> find = new Finder<Long, Post>(Post.class);
-    
+
     public Post() {
     }
-    
+
     public Post(
-    		String title, 
-    		String content, 
-    		long authorId,  
+    		String title,
+    		String content,
+    		long authorId,
     		String postAt,
     		boolean isQuestion
     		) {
@@ -50,7 +50,7 @@ public class Post extends Model {
     	this.isQuestion = isQuestion;
     	this.answer = "";
     }
-    
+
 	public Long getId() {
 		return id;
 	}
@@ -75,7 +75,7 @@ public class Post extends Model {
 		this.postAt = postAt;
 	}
 
-	public boolean isQuestion() {
+	public boolean IsQuestion() {
 		return isQuestion;
 	}
 

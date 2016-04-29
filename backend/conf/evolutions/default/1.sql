@@ -3,6 +3,12 @@
 
 # --- !Ups
 
+create table access_comment (
+  publication_id            bigint auto_increment not null,
+  status                    tinyint(1) default 0,
+  constraint pk_access_comment primary key (publication_id))
+;
+
 create table tagpost (
   tagpost_id                bigint auto_increment not null,
   tag                       varchar(255),
@@ -26,12 +32,19 @@ create table author (
 create table comment (
   id                        integer auto_increment not null,
   parentid                  integer,
-  authorid                  integer,
+  authorid                  varchar(255),
   content                   varchar(255),
   time                      bigint,
   rootid                    integer,
   categoryid                integer,
   constraint pk_comment primary key (id))
+;
+
+create table comment_counts (
+  id                        integer auto_increment not null,
+  rootid                    integer,
+  counts                    integer,
+  constraint pk_comment_counts primary key (id))
 ;
 
 create table group_member (
@@ -106,7 +119,7 @@ create table publication (
 create table thumb (
   id                        bigint auto_increment not null,
   thumb_type                tinyint(1) default 0,
-  sender                    integer,
+  sender                    varchar(255),
   receiver                  integer,
   constraint pk_thumb primary key (id))
 ;
@@ -139,6 +152,8 @@ create index ix_tagpub_publication_1 on tagpub (pub_id);
 
 SET FOREIGN_KEY_CHECKS=0;
 
+drop table access_comment;
+
 drop table tagpost;
 
 drop table tagpub;
@@ -146,6 +161,8 @@ drop table tagpub;
 drop table author;
 
 drop table comment;
+
+drop table comment_counts;
 
 drop table group_member;
 

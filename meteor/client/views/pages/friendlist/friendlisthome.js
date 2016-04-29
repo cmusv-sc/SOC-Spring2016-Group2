@@ -33,7 +33,13 @@ Template.friendlisthome.helpers({
 
 Template.friendlisthome.onCreated(function () {
     var myid = Session.get("userSessionId");
-    var myname = User2.findOne(myid).name;
+    var current = User2.findOne(myid);
+    var myname
+    if (current == null) {
+        myname = "NoName"
+    } else {
+        myname = current.name
+    }
     Template.friendlisthome.currentuser = myname
     Session.setPersistent("myid", myid);
 });

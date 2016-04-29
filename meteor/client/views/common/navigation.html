@@ -26,9 +26,15 @@
                         IN+
                     </div>
                 </li>
+<<<<<<< HEAD
                 <li class="{{isActiveRoute regex='dashboard1|dashboard2|dashboard3|dashboard4l|dashboard5|friendlisthome|publicgroup|suggestion'}}">
                     <a href="{{pathFor route='dashboard1'}}"><i class="fa fa-th-large"></i> <span class="nav-label" data-i18n="nav.dashboard">Dashboards</span> <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse {{isActiveRoute regex='dashboard1|dashboard2|dashboard3|dashboard4l|dashboard5|friendlisthome|publicgroup|suggestion|forumlist|findpaper|paperdetail|postPage' className='in'}}">
+=======
+                <li class="{{isActiveRoute regex='dashboard1|dashboard2|dashboard3|dashboard4l|dashboard5|friendlisthome|suggestion'}}">
+                    <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label" data-i18n="nav.dashboard">Dashboards</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse {{isActiveRoute regex='dashboard1|dashboard2|dashboard3|dashboard4l|dashboard5|friendlisthome|suggestion|forumlist|findpaper|paperdetail|postPage|userprofile' className='in'}}">
+>>>>>>> b707498f00590ef48a000f634a4d2c3b820f880c
                         <li class="{{isActiveRoute regex='dashboard1'}}"><a href="{{pathFor route='dashboard1'}}">Paper </a></li>
                         <li class="{{isActiveRoute regex='friendlisthome'}}"><a href="{{pathFor route='friendlisthome'}}">FriendList <span class="label label-primary pull-right">NEW</span></a></li>
                         <li class="{{isActiveRoute regex='publicgroup'}}"><a href="{{pathFor route='publicgroup'}}">User Group <span class="label label-primary pull-right">NEW</span></a></li>
@@ -37,7 +43,7 @@
                         <li class="{{isActiveRoute regex='accesscontrol'}}"><a href="{{pathFor route='accesscontrol'}}">Access Control <span class="label label-primary pull-right">NEW</span></a></li>
                         <li class="{{isActiveRoute regex='postPage'}}"><a href="{{pathFor route='postPage'}}">Post Page <span class="label label-primary pull-right">NEW</span></a></li>
                         <li class="{{isActiveRoute regex='findpaper'}}"><a href="{{pathFor route='findpaper'}}">Find Paper<span class="label label-primary pull-right">NEW</span></a></li>
-                        <li class="{{isActiveRoute regex='userprofile'}}"><a href="{{pathFor route='userprofile'}}">User Profile<span class="label label-primary pull-right">NEW</span></a></li>
+                        <li class="{{isActiveRoute regex='userprofile'}}"><a href="{{pathFor route='userprofile'}}">Author Info<span class="label label-primary pull-right">NEW</span></a></li>
                     </ul>
                 </li>
             </ul>

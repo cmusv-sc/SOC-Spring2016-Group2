@@ -9,10 +9,12 @@ AccountsTemplates.configure({
 });
 
 Router.route('/', function () {
-    this.render('dashboard1');
-    this.layout('blankLayout')
+    Router.go('/dashboard1');
 });
 
+Router.route('/paperedit', function () {
+    this.render('paperedit');
+});
 // Authentication required
 Router.plugin('ensureSignedIn', {
   except: ['/', 'login', 'register', 'signIn',
@@ -171,7 +173,7 @@ Router.route('/group/:_id', {
     data: function(){
         return {_id: this.params._id};
     }
-     
+
 });
 
 Router.route('/newgroup',function(){

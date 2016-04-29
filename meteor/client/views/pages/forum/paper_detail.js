@@ -5,8 +5,10 @@ Template.paperdetail.helpers({
   	fetchData(url);
 	url = "http://localhost:9000/getTag/" + Router.current().params.query.id;
 	fetchTag(url);
-  	url = "http://localhost:9000/comment?rootid=" + Router.current().params.query.id + "&categoryid=1&userid=1";
+  	url = "http://localhost:9000/comment?rootid=" + Router.current().params.query.id + "&categoryid=1&userid=" + Session.get("userSessionId");
   	fetchComment(url);
+  	console.log("Get id: " + Session.get("userSessionId"));
+  	//console.log("Get name: " + User2.findOne(Session.get("userSessionId")).name);
   }
 });
 
@@ -24,12 +26,16 @@ var renderComments = function(obj){
 		return "";
 	}
 	var s = "<ol class='dd-list'>";
-	
+
 	for (var i = 0; i < obj.length; i++) {
 		var c = obj[i];
 		var item = "<li class='dd-item'><div class='social-feed-box'>";
 		var d = new Date(c.comment.time*1000);
-		item += "<div class='social-avatar'><div class='media-body'><span class='text-success'>User: " + c.comment.authorid + "</span><small class='pull-right'> " + d.toLocaleString() + "</small></div></div>";
+		var username = "Lorem Ipsum";
+		if (!(User2.findOne(c.comment.authorid) === undefined) && !(User2.findOne(c.comment.authorid).name === undefined)) {
+			username = User2.findOne(c.comment.authorid).name;
+		}
+		item += "<div class='social-avatar'><div class='media-body'><span class='text-success'>User: " + username + "</span><small class='pull-right'> " + d.toLocaleString() + "</small></div></div>";
 		item += "<div class='social-body'><div class='input-group'><input type='text' class='form-control input-sm input-edit hide' value='" + c.comment.content + "' id='edit-" + c.comment.id + "'><span id='commentcontent-" + c.comment.id + "'>" + c.comment.content + "</span><p></p></div>";
 		item += "<div><a class='small thumbup'" + "style='color: #676a6c;' id='thumbupa-" + c.comment.id + "'" + "><i class='fa fa-thumbs-up ";
 		if (c.thumbuped == true) { item += "ed"; };
@@ -37,7 +43,7 @@ var renderComments = function(obj){
 		item += " style='color: #676a6c;' id='thumbdowna-" + c.comment.id + "'" + "><i class='fa fa-thumbs-down ";
 		if (c.thumbdowned == true) { item += "ed"; };
 		item += "' id='thumbdown-" + c.comment.id + "'></i> <span>" + c.thumbdown + "</span></a><span class='pull-right'>";
-		if (c.comment.authorid == 1) {
+		if (c.comment.authorid == Session.get("userSessionId")) {
 			//User
 			item += "<a class='small edit'><i class='fa fa-paste' id='edita-" + c.comment.id + "'></i></a>";
 		}
@@ -47,16 +53,16 @@ var renderComments = function(obj){
 		item += "</li>";
 		s += item;
 	};
-	
+
 	s += "</ol>";
 	return s;
 }
 
 var fetchData = function(url){
-	
+
 	Meteor.call('fetchFromService', url, function (err, res){
 		var obj = JSON.stringify(res.data);
-		
+
 		var publication = res.data[0].publication;
 		var authors = res.data[0].authors;
 		//console.log("Result: " + publication.title);
@@ -91,7 +97,7 @@ Template.paperdetail.rendered = function(){
 		{
 			console.log("Press Enter");
 			$(".tags").append("<button class=\"btn btn-white btn-xs\" type=\"button\">"+$("#addTag").val()+"</button>&nbsp");
-			var url = "http://localhost:9000/addtagpub/" + Router.current().params.query.id + "/" + $("#addTag").val(); 
+			var url = "http://localhost:9000/addtagpub/" + Router.current().params.query.id + "/" + $("#addTag").val();
 			fetchTagAdded(url);
 			$("#addTag").val("");
 		}
@@ -153,16 +159,16 @@ var fetchTagAdded = function(url){
 Template.paperdetail.events({
 	'click #postcomment': function (event) {
 		var input = $("#inputcomment").val();
-		if (input == "") { 
+		if (input == "") {
 			$("#inputcomment").parent(".input-group").addClass("has-error");
-			console.log("No input"); 
+			console.log("No input");
 			return;
 		};
 		//console.log("Comment: " + input);
 		var url = "http://localhost:9000/comment";
 		var args = {};
 		args["parentid"] = 0;
-		args["authorid"] = 1;
+		args["authorid"] = Session.get("userSessionId");
 		args["content"] = input;
 		args["rootid"] = Router.current().params.query.id;
 		args["categoryid"] = 1;
@@ -182,12 +188,12 @@ Template.paperdetail.events({
 		//console.log(content);
 		if (content == "") {
 			$(inputid).parent(".input-group").addClass("has-error");
-			console.log("No input"); 
+			console.log("No input");
 			return;
 		};
 		var args = {};
 		args["parentid"] = id;
-		args["authorid"] = 1;
+		args["authorid"] = Session.get("userSessionId");
 		args["content"] = content;
 		args["rootid"] = Router.current().params.query.id;
 		args["categoryid"] = 1;
@@ -208,7 +214,7 @@ Template.paperdetail.events({
 		var count = parseInt($(aid).children("span").text());
 		if ($(event.target).hasClass('ed')) {
 			$(event.target).removeClass('ed');
-			var user = 1;
+			var user = Session.get("userSessionId");
 			var url = "http://localhost:9000/deleteThumb/1/" + user + "/" + id;
 			Meteor.call('deleteInBackend', url, function (err, res){
 				console.log("Deleted");
@@ -219,7 +225,7 @@ Template.paperdetail.events({
 			count ++;
 			var url = "http://localhost:9000/addThumb";
 			var args = {};
-			args["sender"] = 1;
+			args["sender"] = Session.get("userSessionId");
 			args["receiver"] = id;
 			args["thumb_type"] = 1;
 			Meteor.call('postToBackend', url, args, function (err, res){
@@ -238,7 +244,7 @@ Template.paperdetail.events({
 		//console.log(count);
 		if ($(event.target).hasClass('ed')) {
 			$(event.target).removeClass('ed');
-			var user = 1;
+			var user = Session.get("userSessionId");
 			var url = "http://localhost:9000/deleteThumb/0/" + user + "/" + id;
 			Meteor.call('deleteInBackend', url, function (err, res){
 				console.log("Deleted");
@@ -249,7 +255,7 @@ Template.paperdetail.events({
 			count ++;
 			var url = "http://localhost:9000/addThumb";
 			var args = {};
-			args["sender"] = 1;
+			args["sender"] = Session.get("userSessionId");
 			args["receiver"] = id;
 			args["thumb_type"] = 0;
 			Meteor.call('postToBackend', url, args, function (err, res){
@@ -304,16 +310,58 @@ Template.paperdetail.events({
 	},
 	'click #closecomment': function(event){
 		console.log("Close");
-		if ($(".input-group").hasClass("hide")) {
-			$(".input-group").removeClass("hide");
-			$(".dd").removeClass("hide");
-			$("#commentnote").addClass("hide");
-			$(event.target).text("Close Comment");
-		}else{
-			$(".input-group").addClass("hide");
-			$("#commentnote").removeClass("hide");
-			$(".dd").addClass("hide");
-			$(event.target).text("Open Comment");
-		}
-	}
+    var myid = Session.get("userSessionId");
+    var current = User2.findOne(myid);
+    var myname
+    if (current != null) {
+      myname=current.name
+    } else {
+      myname = "NoName"
+    }
+    console.log(myname);
+    if(myname=="Michael Stonebraker")
+    {
+      if ($(".input-group").hasClass("hide")) {
+  			$(".input-group").removeClass("hide");
+  			$(".dd").removeClass("hide");
+  			$("#commentnote").addClass("hide");
+  			$(event.target).text("Close Comment");
+  		}else{
+  			$(".input-group").addClass("hide");
+  			$("#commentnote").removeClass("hide");
+  			$(".dd").addClass("hide");
+  			$(event.target).text("Open Comment");
+  		}
+    }
+    else if (myname!="Michael Stonebraker") {
+        swal("you can't edit it!")
+
+    }
+
+	},
+
+  'click #editpub': function (event) {
+    var url = "http://localhost:3000/paperedit?id=" + Router.current().params.query.id;
+    var myid = Session.get("userSessionId");
+    var current = User2.findOne(myid);
+    var myname
+    if (current != null) {
+      myname=current.name
+    } else {
+      myname = "NoName"
+    }
+    console.log(myname);
+    if(myname=="Michael Stonebraker")
+    {
+      Router.go(url);
+    }
+    else if (myname!="Michael Stonebraker") {
+        swal("you can't edit it!")
+
+    }
+
+
+
+
+  }
 });
