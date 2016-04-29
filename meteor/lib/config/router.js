@@ -158,13 +158,13 @@ Router.route('/notFound', function () {
 Router.route('/publicgroup',function(){
     this.render('publicgroup');
 });
-Router.route('/groups/privategroup',function(){
+Router.route('/privategroup',function(){
     this.render('privategroup');
 });
-Router.route('/group/owngroup',function(){
+Router.route('/owngroup',function(){
     this.render('yourown');
 });
-Router.route('/group/notice',function(){
+Router.route('/notice',function(){
     this.render('notificaction');
 });
 
