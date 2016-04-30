@@ -16,6 +16,13 @@ Scientists collaborate and publish papers together, to share their experiments, 
 
 ## How to run
 
+Prequisite:
+  1. Make sure you have installed Java(JDK 8), MySQL, Play Framework(Version 2.5.0) and Meteor Framework.
+  2. Make sure you have database named "ssnetwork" in your MySQL database.
+  3. Change the default.username and default.password for JDBC in SSNetwork/backend/conf/application.conf to your MySQL database name and passwork.
+  4. Set the environment variable for MongoDB using: 
+      export MONGO_URL="mongodb://root:root@ec2-54-200-79-239.us-west-2.compute.amazonaws.com:27017/test"
+  
 To run and test it locally, run following commands:
 
 ```bash
