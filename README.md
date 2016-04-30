@@ -6,12 +6,13 @@ Scientific Social Network
 
 Scientists collaborate and publish papers together, to share their experiments, and other scientists may either communicate or comment on papers. In this project, we design and develop an SOA solution for scientific social network, based on scientists' co-authorship, citation relationship, and follow up relationship.
 
-
-Acknowledgements:
----------------------------------------------------------
-Professor Jia Zhang and the teaching staff of 18-655,
-Service Oriented Computing, at Carnegie Mellon University, Spring 2016.
-
+##Contributor
+###Team 4:
+  Lunwen He, Chun-Yen Hsu, Yu-Liang Hsu, Ziming Wang
+###Team 5:
+  Jiajie Liang, Zhenbiao Yan, Yanning Liu, Yuan Yuan
+###Team 6:
+  Yi Cao, Xun Zhang, Meng Wu, Qing Guo
 
 ## How to run
 
@@ -31,3 +32,8 @@ backend: the backend of SSNetwork which is based on play framework, backend defa
 
 meteor: the frontend of SSNetwork which is based on meteor framework, frontend default port number: 3000
 
+
+Acknowledgements:
+---------------------------------------------------------
+Professor Jia Zhang and the teaching staff of 18-655,
+Service Oriented Computing, at Carnegie Mellon University, Spring 2016.
