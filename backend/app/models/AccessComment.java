@@ -14,8 +14,8 @@ package models;
  public long publicationID;
  public boolean status;
 
-public AccessComment( long publicationID, boolean status){
-         this.status = true;
+public AccessComment(long publicationID, boolean status){
+         this.status = status;
          this.publicationID = publicationID;
 
      }
@@ -36,7 +36,6 @@ public AccessComment( long publicationID, boolean status){
    }
 
     public AccessComment(){
-
      }
 
      public static Finder<Long, AccessComment> find = new Finder<Long, AccessComment>(Long.class, AccessComment.class);

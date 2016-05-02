@@ -16,8 +16,10 @@ POST    /person/uploadPic           controllers.Application.upload()
 
 # update publication information.
 GET /updatepub/                      controllers.PublicationController.UpdatePublication(pub_id:Long, title:String, editor:String, year:String, isbn:String, volume:String, pages:String, mdate:String, series:String, publisher:String, booktitle:String, crossref:String, ee:String, author:String)
+GET /upcommentstatus/:pub_id/:status         controllers.ForumController.updateCommentStatus(pub_id:Long, status:Boolean)
 
-###Suggestion
+GET /commentatus/:pub_id                     controllers.ForumController.getCommentStatusByID(pub_id:Long)
+
 GET    /year/:year                  controllers.Application.getPaperByYear(year:Integer)
 GET    /title/:title                controllers.Application.getPaperByTitle(title:String)
 GET    /all                         controllers.Application.getAllPublications()

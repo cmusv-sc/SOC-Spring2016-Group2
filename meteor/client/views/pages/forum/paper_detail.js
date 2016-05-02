@@ -20,6 +20,35 @@ var fetchComment = function(url){
 		nestable.append($(renderComments(res.data)));
 	});
 }
+var modifyData = function(url) {
+  Meteor.call('fetchFromService', url, function (err, res){
+  });
+}
+
+var fetchcommentstatus = function(url){
+
+  Meteor.call('fetchFromService',url,function(err,res){
+  var obj = JSON.stringify(res.data);
+  var status = res.data;
+  if(status == false)
+  {
+    $(".input-group").addClass("hide");
+    $("#commentnote").removeClass("hide");
+    $(".dd").addClass("hide");
+    $("#closecomment").text("Open comment");
+    //$(event.target).text("Open aa Comment");
+  }
+  else{
+    if ($(".input-group").hasClass("hide")) {
+      $(".input-group").removeClass("hide");
+      $(".dd").removeClass("hide");
+      $("#commentnote").addClass("hide");
+      $("#closecomment").text("Close comment");
+      //$(event.target).text("Close Comment");
+    }
+  }
+  });
+}
 
 var renderComments = function(obj){
 	if (obj.length == 0) {
@@ -92,6 +121,9 @@ var fetchData = function(url){
 }
 
 Template.paperdetail.rendered = function(){
+  var url = "http://localhost:9000/commentatus/"+Router.current().params.query.id;
+  fetchcommentstatus(url);
+
 	$("#addTag").keyup(function(e){
 		if (e.keyCode==13)
 		{
@@ -318,7 +350,7 @@ Template.paperdetail.events({
     } else {
       myname = "NoName"
     }
-    console.log(myname);
+    console.log("yuanyuan"+myname);
     if(myname=="Michael Stonebraker")
     {
       if ($(".input-group").hasClass("hide")) {
@@ -326,11 +358,15 @@ Template.paperdetail.events({
   			$(".dd").removeClass("hide");
   			$("#commentnote").addClass("hide");
   			$(event.target).text("Close Comment");
-  		}else{
+        var url = "http://localhost:9000/upcommentstatus/" + Router.current().params.query.id + "/true";
+         modifyData(url);
+  		} else{
   			$(".input-group").addClass("hide");
   			$("#commentnote").removeClass("hide");
   			$(".dd").addClass("hide");
   			$(event.target).text("Open Comment");
+        var url = "http://localhost:9000/upcommentstatus/" + Router.current().params.query.id+"/false";
+         modifyData(url);
   		}
     }
     else if (myname!="Michael Stonebraker") {
@@ -359,9 +395,5 @@ Template.paperdetail.events({
         swal("you can't edit it!")
 
     }
-
-
-
-
   }
 });

@@ -32,6 +32,32 @@ public class ForumController extends Controller{
         return ok(toJson(comment));
     }
 
+    public Result getCommentStatusByID(Long pub_id){
+        boolean status;
+        AccessComment accesscomment = AccessComment.find.byId(pub_id);
+        if (accesscomment == null) {
+          accesscomment = new AccessComment(pub_id, true);
+        }
+        status = accesscomment.isStatus();
+        return ok(toJson(status));
+    }
+
+    public Result updateCommentStatus(Long pub_id, boolean status) {
+      AccessComment accesscomment = AccessComment.find.byId(pub_id);
+      if (accesscomment == null) {
+        accesscomment = new AccessComment(pub_id, status);
+      }
+
+      accesscomment.setStatus(status);
+      System.out.println("yuanyuan");
+      System.out.println(status);
+      accesscomment.save();
+      HashMap<String, String> msg = new HashMap<String, String>();
+      msg.put("message", "Update succeeded!");
+
+      return ok(toJson(msg));
+    }
+
     public Result getComments(int rootid, int categoryid, String userid) {
         return ok(toJson(getCommentsWithThumbs(rootid, categoryid, 0, userid)));
     }
@@ -73,7 +99,7 @@ public class ForumController extends Controller{
             this.thumbup = thumbup;
         }
     }
-    
+
     public ArrayList<NestedComment> getCommentsRecursively(int rootid, int categoryid, int parentid){
         ArrayList<NestedComment> list = new ArrayList<NestedComment>();
         List<Comment> comments = Comment.find.where().eq("parentid", parentid).eq("rootid", rootid).eq("categoryid", categoryid).findList();
