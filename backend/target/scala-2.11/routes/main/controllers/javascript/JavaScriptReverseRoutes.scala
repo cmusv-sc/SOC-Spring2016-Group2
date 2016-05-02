@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/Anna/Documents/graduate2/soc/SSNetwork/backend/conf/routes
-// @DATE:Tue Apr 26 03:28:51 PDT 2016
+// @DATE:Wed Apr 27 23:52:55 PDT 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -35,7 +35,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:57
+  // @LINE:62
   class ReverseTagController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -43,7 +43,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:65
+    // @LINE:71
     def deleteTagpost: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.TagController.deleteTagpost",
       """
@@ -53,7 +53,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:59
+    // @LINE:64
     def getTagpubs: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.TagController.getTagpubs",
       """
@@ -63,7 +63,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:66
+    // @LINE:72
     def getTagByPost_id: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.TagController.getTagByPost_id",
       """
@@ -73,7 +73,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:60
+    // @LINE:65
     def getPublications: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.TagController.getPublications",
       """
@@ -83,7 +83,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:57
+    // @LINE:62
     def addTagpub: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.TagController.addTagpub",
       """
@@ -93,7 +93,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:58
+    // @LINE:63
     def deleteTagpub: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.TagController.deleteTagpub",
       """
@@ -103,7 +103,17 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:61
+    // @LINE:67
+    def updateTagPub: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.TagController.updateTagPub",
+      """
+        function(pubid0,tagpub1) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "updateTag/" + _qS([(""" + implicitly[QueryStringBindable[Long]].javascriptUnbind + """)("pubid", pubid0), (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("tagpub", tagpub1)])})
+        }
+      """
+    )
+  
+    // @LINE:66
     def getTagByPub_id: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.TagController.getTagByPub_id",
       """
@@ -113,7 +123,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:64
+    // @LINE:70
     def addTagpost: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.TagController.addTagpost",
       """
@@ -125,7 +135,57 @@ package controllers.javascript {
   
   }
 
-  // @LINE:46
+  // @LINE:18
+  class ReversePublicationController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:18
+    def UpdatePublication: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.PublicationController.UpdatePublication",
+      """
+        function(pub_id0,title1,editor2,year3,isbn4,volume5,pages6,mdate7,series8,publisher9,booktitle10,crossref11,ee12,author13) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "updatepub/" + _qS([(""" + implicitly[QueryStringBindable[Long]].javascriptUnbind + """)("pub_id", pub_id0), (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("title", title1), (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("editor", editor2), (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("year", year3), (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("isbn", isbn4), (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("volume", volume5), (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("pages", pages6), (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("mdate", mdate7), (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("series", series8), (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("publisher", publisher9), (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("booktitle", booktitle10), (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("crossref", crossref11), (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("ee", ee12), (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("author", author13)])})
+        }
+      """
+    )
+  
+  }
+
+  // @LINE:87
+  class ReversePopularity(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:87
+    def getCommentSum: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Popularity.getCommentSum",
+      """
+        function(rootid0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "getCommentSum/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("rootid", rootid0)})
+        }
+      """
+    )
+  
+    // @LINE:88
+    def getTagSum: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Popularity.getTagSum",
+      """
+        function(pubid0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "getTagSum/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("pubid", pubid0)})
+        }
+      """
+    )
+  
+  }
+
+  // @LINE:51
   class ReverseSubscriptionController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -133,7 +193,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:47
+    // @LINE:52
     def loadSubscriptionListByCategory: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.SubscriptionController.loadSubscriptionListByCategory",
       """
@@ -143,7 +203,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:46
+    // @LINE:51
     def loadSubscriptionList: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.SubscriptionController.loadSubscriptionList",
       """
@@ -153,7 +213,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:49
+    // @LINE:54
     def subscribe: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.SubscriptionController.subscribe",
       """
@@ -163,7 +223,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:48
+    // @LINE:53
     def loadTimeline: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.SubscriptionController.loadTimeline",
       """
@@ -175,7 +235,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:31
+  // @LINE:36
   class ReverseThumbController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -183,7 +243,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:33
+    // @LINE:38
     def getThumbSum: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ThumbController.getThumbSum",
       """
@@ -193,7 +253,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:32
+    // @LINE:37
     def deleteThumb: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ThumbController.deleteThumb",
       """
@@ -203,7 +263,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:31
+    // @LINE:36
     def addThumb: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ThumbController.addThumb",
       """
@@ -215,7 +275,97 @@ package controllers.javascript {
   
   }
 
-  // @LINE:76
+  // @LINE:91
+  class ReverseUserGroupController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:95
+    def getNotifcation: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserGroupController.getNotifcation",
+      """
+        function(userid0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "group/notification/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("userid", userid0)})
+        }
+      """
+    )
+  
+    // @LINE:93
+    def saveGroup: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserGroupController.saveGroup",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "groups"})
+        }
+      """
+    )
+  
+    // @LINE:96
+    def resNotification: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserGroupController.resNotification",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "group/resnotification"})
+        }
+      """
+    )
+  
+    // @LINE:91
+    def getGroupList: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserGroupController.getGroupList",
+      """
+        function(grouptype0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "groups/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("grouptype", encodeURIComponent(grouptype0))})
+        }
+      """
+    )
+  
+    // @LINE:92
+    def getOwnGroup: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserGroupController.getOwnGroup",
+      """
+        function(userid0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "group/own/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("userid", userid0)})
+        }
+      """
+    )
+  
+    // @LINE:97
+    def getGroupMessage: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserGroupController.getGroupMessage",
+      """
+        function(groupname0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "group/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("groupname", encodeURIComponent(groupname0)) + "/message"})
+        }
+      """
+    )
+  
+    // @LINE:94
+    def saveNotification: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserGroupController.saveNotification",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "group/notification"})
+        }
+      """
+    )
+  
+    // @LINE:98
+    def saveMessage: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserGroupController.saveMessage",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "group/message"})
+        }
+      """
+    )
+  
+  }
+
+  // @LINE:82
   class ReverseUserProfileController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -223,7 +373,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:77
+    // @LINE:83
     def getUserProfile: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.UserProfileController.getUserProfile",
       """
@@ -233,7 +383,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:76
+    // @LINE:82
     def createuserProfileProfile: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.UserProfileController.createuserProfileProfile",
       """
@@ -243,7 +393,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:78
+    // @LINE:84
     def refreshUserprofile: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.UserProfileController.refreshUserprofile",
       """
@@ -273,32 +423,82 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:70
+    // @LINE:76
     def getPublicationWithAuthorsById: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getPublicationWithAuthorsById",
       """
         function(id0) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "id/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("id", id0)})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "paper/id/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("id", id0)})
         }
       """
     )
   
-    // @LINE:69
+    // @LINE:75
     def getPublicationWithAuthorsByYear: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getPublicationWithAuthorsByYear",
       """
         function(year0) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "year/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("year", year0)})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "paper/year/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("year", year0)})
         }
       """
     )
   
-    // @LINE:71
+    // @LINE:23
+    def getAllPublications: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getAllPublications",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "all"})
+        }
+      """
+    )
+  
+    // @LINE:26
+    def getCoAuthors: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getCoAuthors",
+      """
+        function(author0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "coauthor/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("author", encodeURIComponent(author0))})
+        }
+      """
+    )
+  
+    // @LINE:77
     def getPublicationWithAuthorsByTitle: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.getPublicationWithAuthorsByTitle",
       """
         function(title0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "paper/title/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("title", encodeURIComponent(title0))})
+        }
+      """
+    )
+  
+    // @LINE:24
+    def getPaperBykeyWord: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getPaperBykeyWord",
+      """
+        function(keyWord0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "keyword/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("keyWord", encodeURIComponent(keyWord0))})
+        }
+      """
+    )
+  
+    // @LINE:22
+    def getPaperByTitle: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getPaperByTitle",
+      """
+        function(title0) {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "title/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("title", encodeURIComponent(title0))})
+        }
+      """
+    )
+  
+    // @LINE:25
+    def getAuthors: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getAuthors",
+      """
+        function(author0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "author/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("author", encodeURIComponent(author0))})
         }
       """
     )
@@ -313,9 +513,19 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:21
+    def getPaperByYear: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getPaperByYear",
+      """
+        function(year0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "year/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("year", year0)})
+        }
+      """
+    )
+  
   }
 
-  // @LINE:37
+  // @LINE:42
   class ReversePostController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -323,7 +533,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:38
+    // @LINE:43
     def getPostById: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PostController.getPostById",
       """
@@ -333,7 +543,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:42
+    // @LINE:47
     def setAnswer: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PostController.setAnswer",
       """
@@ -343,7 +553,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:37
+    // @LINE:42
     def addPost: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PostController.addPost",
       """
@@ -353,7 +563,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:52
+    // @LINE:57
     def search: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PostController.search",
       """
@@ -363,7 +573,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:39
+    // @LINE:44
     def getAllPosts: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PostController.getAllPosts",
       """
@@ -373,7 +583,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:40
+    // @LINE:45
     def addComment: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PostController.addComment",
       """
@@ -383,7 +593,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:41
+    // @LINE:46
     def setAsQuestion: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PostController.setAsQuestion",
       """
@@ -393,7 +603,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:53
+    // @LINE:58
     def getPostByUserId: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PostController.getPostByUserId",
       """
@@ -405,7 +615,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:24
+  // @LINE:29
   class ReverseForumController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -413,7 +623,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:24
+    // @LINE:29
     def addComment: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ForumController.addComment",
       """
@@ -423,7 +633,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:27
+    // @LINE:32
     def updateComment: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ForumController.updateComment",
       """
@@ -433,7 +643,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:28
+    // @LINE:33
     def uploadFile: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ForumController.uploadFile",
       """

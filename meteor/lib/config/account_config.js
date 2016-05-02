@@ -1,11 +1,25 @@
 var SubmitFunc = function(error, state){
+  
   if (!error) {
+
     if (state === "signIn") {
+        
         // Successfully logged in
         console.log("[INFO] User Signed In");
+        
         // Redirect to home page
         Router.go('/dashboard1');
+
+        // Debug: Console
+        var currentUserID = Meteor.userId();
+        var currentUserName = Meteor.user().username;
+        console.log("[INFO] Current User ID: " + currentUserID);
+
+        // Set user session
+        Session.setPersistent("userSessionId", currentUserID);
+        Session.setPersistent("userSessionName", currentUserName);
     }
+
     if (state === "signUp") {
         // Successfully registered
         console.log("[INFO] User registered");
@@ -56,8 +70,8 @@ AccountsTemplates.configure({
     showValidating: true,
 
     // Privacy Policy and Terms of Use
-    privacyUrl: 'privacy',
-    termsUrl: 'terms-of-use',
+    // privacyUrl: 'privacy',
+    // termsUrl: 'terms-of-use',
 
     // Redirects
     homeRoutePath: '/dashboard1',

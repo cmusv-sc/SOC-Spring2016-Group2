@@ -7,8 +7,70 @@
 		revision="1.0-SNAPSHOT"
 		conf="test-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160422205225"/>
+		date="20160428000655"/>
 	<dependencies>
+		<module organisation="org.apache.lucene" name="lucene-queryparser">
+			<revision name="5.3.1" status="release" pubdate="20150928092003" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="100">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="455966" time="0" location="/Users/Anna/.ivy2/cache/org.apache.lucene/lucene-queryparser/ivy-5.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-queryparser/5.3.1/lucene-queryparser-5.3.1.pom"/>
+				<caller organisation="ssnetwork" name="ssnetwork_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="5.3.1" rev-constraint-default="5.3.1" rev-constraint-dynamic="5.3.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="lucene-queryparser" type="jar" ext="jar" status="no" details="" size="401310" time="0" location="/Users/Anna/.ivy2/cache/org.apache.lucene/lucene-queryparser/jars/lucene-queryparser-5.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-queryparser/5.3.1/lucene-queryparser-5.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-sandbox">
+			<revision name="5.3.1" status="release" pubdate="20150928091821" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="102">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="455430" time="0" location="/Users/Anna/.ivy2/cache/org.apache.lucene/lucene-sandbox/ivy-5.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-sandbox/5.3.1/lucene-sandbox-5.3.1.pom"/>
+				<caller organisation="org.apache.lucene" name="lucene-queryparser" conf="default, compile, runtime, master" rev="5.3.1" rev-constraint-default="5.3.1" rev-constraint-dynamic="5.3.1" callerrev="5.3.1"/>
+				<artifacts>
+					<artifact name="lucene-sandbox" type="jar" ext="jar" status="no" details="" size="266751" time="0" location="/Users/Anna/.ivy2/cache/org.apache.lucene/lucene-sandbox/jars/lucene-sandbox-5.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-sandbox/5.3.1/lucene-sandbox-5.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-queries">
+			<revision name="5.3.1" status="release" pubdate="20150928092114" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="101">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="455292" time="0" location="/Users/Anna/.ivy2/cache/org.apache.lucene/lucene-queries/ivy-5.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-queries/5.3.1/lucene-queries-5.3.1.pom"/>
+				<caller organisation="org.apache.lucene" name="lucene-queryparser" conf="default, compile, runtime, master" rev="5.3.1" rev-constraint-default="5.3.1" rev-constraint-dynamic="5.3.1" callerrev="5.3.1"/>
+				<artifacts>
+					<artifact name="lucene-queries" type="jar" ext="jar" status="no" details="" size="212088" time="0" location="/Users/Anna/.ivy2/cache/org.apache.lucene/lucene-queries/jars/lucene-queries-5.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-queries/5.3.1/lucene-queries-5.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-analyzers-common">
+			<revision name="5.3.1" status="release" pubdate="20150928094537" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="99">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="455320" time="0" location="/Users/Anna/.ivy2/cache/org.apache.lucene/lucene-analyzers-common/ivy-5.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-analyzers-common/5.3.1/lucene-analyzers-common-5.3.1.pom"/>
+				<caller organisation="ssnetwork" name="ssnetwork_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="5.3.1" rev-constraint-default="5.3.1" rev-constraint-dynamic="5.3.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="lucene-analyzers-common" type="jar" ext="jar" status="no" details="" size="1562970" time="0" location="/Users/Anna/.ivy2/cache/org.apache.lucene/lucene-analyzers-common/jars/lucene-analyzers-common-5.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-analyzers-common/5.3.1/lucene-analyzers-common-5.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-core">
+			<revision name="5.3.1" status="release" pubdate="20150928092951" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="98">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="454222" time="0" location="/Users/Anna/.ivy2/cache/org.apache.lucene/lucene-core/ivy-5.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-core/5.3.1/lucene-core-5.3.1.pom"/>
+				<caller organisation="ssnetwork" name="ssnetwork_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="5.3.1" rev-constraint-default="5.3.1" rev-constraint-dynamic="5.3.1" callerrev="1.0-SNAPSHOT"/>
+				<caller organisation="org.apache.lucene" name="lucene-analyzers-common" conf="default, compile, runtime, master" rev="5.3.1" rev-constraint-default="5.3.1" rev-constraint-dynamic="5.3.1" callerrev="5.3.1"/>
+				<caller organisation="org.apache.lucene" name="lucene-queryparser" conf="default, compile, runtime, master" rev="5.3.1" rev-constraint-default="5.3.1" rev-constraint-dynamic="5.3.1" callerrev="5.3.1"/>
+				<artifacts>
+					<artifact name="lucene-core" type="jar" ext="jar" status="no" details="" size="2356393" time="0" location="/Users/Anna/.ivy2/cache/org.apache.lucene/lucene-core/jars/lucene-core-5.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-core/5.3.1/lucene-core-5.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="org.postgresql" name="postgresql">
 			<revision name="9.4-1206-jdbc42" status="release" pubdate="20151125120416" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jdbc.postgresql.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="97">
 				<license name="The PostgreSQL License" url="http://www.postgresql.org/about/licence/"/>
@@ -457,7 +519,7 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-test_2.11">
-			<revision name="2.5.0" status="release" pubdate="20160303080639" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="98">
+			<revision name="2.5.0" status="release" pubdate="20160303080639" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="103">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="4402" time="0" location="/Users/Anna/.ivy2/cache/com.typesafe.play/play-test_2.11/ivy-2.5.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-test_2.11/2.5.0/play-test_2.11-2.5.0.pom"/>
 				<caller organisation="ssnetwork" name="ssnetwork_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.5.0" rev-constraint-default="2.5.0" rev-constraint-dynamic="2.5.0" callerrev="1.0-SNAPSHOT"/>
@@ -469,7 +531,7 @@
 			</revision>
 		</module>
 		<module organisation="org.fluentlenium" name="fluentlenium-core">
-			<revision name="0.10.9" status="release" pubdate="20160229101722" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FluentLenium/FluentLenium" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="120">
+			<revision name="0.10.9" status="release" pubdate="20160229101722" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FluentLenium/FluentLenium" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="125">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="6079" time="0" location="/Users/Anna/.ivy2/cache/org.fluentlenium/fluentlenium-core/ivy-0.10.9.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.fluentlenium/fluentlenium-core/0.10.9/ivys/ivy.xml"/>
 				<caller organisation="com.typesafe.play" name="play-test_2.11" conf="default, compile, runtime, master" rev="0.10.9" rev-constraint-default="0.10.9" rev-constraint-dynamic="0.10.9" callerrev="2.5.0"/>
@@ -481,7 +543,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-java">
-			<revision name="2.48.2" status="release" pubdate="20160229101736" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="121">
+			<revision name="2.48.2" status="release" pubdate="20160229101736" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="126">
 				<metadata-artifact status="no" details="" size="5978" time="0" location="/Users/Anna/.ivy2/cache/org.seleniumhq.selenium/selenium-java/ivy-2.48.2.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.seleniumhq.selenium/selenium-java/2.48.2/ivys/ivy.xml"/>
 				<caller organisation="org.fluentlenium" name="fluentlenium-core" conf="compile, runtime" rev="2.48.2" rev-constraint-default="2.48.2" rev-constraint-dynamic="2.48.2" callerrev="0.10.9"/>
 				<artifacts>
@@ -492,7 +554,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-leg-rc">
-			<revision name="2.48.2" status="release" pubdate="20160229102131" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="138">
+			<revision name="2.48.2" status="release" pubdate="20160229102131" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="143">
 				<metadata-artifact status="no" details="" size="4924" time="0" location="/Users/Anna/.ivy2/cache/org.seleniumhq.selenium/selenium-leg-rc/ivy-2.48.2.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.seleniumhq.selenium/selenium-leg-rc/2.48.2/ivys/ivy.xml"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="compile, runtime" rev="2.48.2" rev-constraint-default="2.48.2" rev-constraint-dynamic="2.48.2" callerrev="2.48.2"/>
 				<artifacts>
@@ -503,7 +565,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-safari-driver">
-			<revision name="2.48.2" status="release" pubdate="20160229102123" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="135">
+			<revision name="2.48.2" status="release" pubdate="20160229102123" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="140">
 				<metadata-artifact status="no" details="" size="4823" time="0" location="/Users/Anna/.ivy2/cache/org.seleniumhq.selenium/selenium-safari-driver/ivy-2.48.2.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.seleniumhq.selenium/selenium-safari-driver/2.48.2/ivys/ivy.xml"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="compile, runtime" rev="2.48.2" rev-constraint-default="2.48.2" rev-constraint-dynamic="2.48.2" callerrev="2.48.2"/>
 				<artifacts>
@@ -514,7 +576,7 @@
 			</revision>
 		</module>
 		<module organisation="org.webbitserver" name="webbit">
-			<revision name="0.4.14" status="release" pubdate="20151123133716" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://webbitserver.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="136">
+			<revision name="0.4.14" status="release" pubdate="20151123133716" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://webbitserver.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="141">
 				<license name="BSD License" url="http://www.opensource.org/licenses/bsd-license"/>
 				<metadata-artifact status="no" details="" size="3488" time="0" location="/Users/Anna/.ivy2/cache/org.webbitserver/webbit/ivy-0.4.14.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.webbitserver/webbit/0.4.14/ivys/ivy.xml"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="compile, runtime" rev="0.4.14" rev-constraint-default="0.4.14" rev-constraint-dynamic="0.4.14" callerrev="2.48.2"/>
@@ -527,7 +589,7 @@
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty">
-			<revision name="3.5.2.Final" status="release" pubdate="20160229102128" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://netty.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="137">
+			<revision name="3.5.2.Final" status="release" pubdate="20160229102128" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://netty.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="142">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="6634" time="0" location="/Users/Anna/.ivy2/cache/io.netty/netty/ivy-3.5.2.Final.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/io.netty/netty/3.5.2.Final/ivys/ivy.xml"/>
 				<caller organisation="org.webbitserver" name="webbit" conf="compile, runtime" rev="3.5.2.Final" rev-constraint-default="3.5.2.Final" rev-constraint-dynamic="3.5.2.Final" callerrev="0.4.14"/>
@@ -539,7 +601,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-ie-driver">
-			<revision name="2.48.2" status="release" pubdate="20160229102116" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="134">
+			<revision name="2.48.2" status="release" pubdate="20160229102116" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="139">
 				<metadata-artifact status="no" details="" size="4958" time="0" location="/Users/Anna/.ivy2/cache/org.seleniumhq.selenium/selenium-ie-driver/ivy-2.48.2.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.seleniumhq.selenium/selenium-ie-driver/2.48.2/ivys/ivy.xml"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="compile, runtime" rev="2.48.2" rev-constraint-default="2.48.2" rev-constraint-dynamic="2.48.2" callerrev="2.48.2"/>
 				<artifacts>
@@ -550,7 +612,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-firefox-driver">
-			<revision name="2.48.2" status="release" pubdate="20160229102107" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="133">
+			<revision name="2.48.2" status="release" pubdate="20160229102107" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="138">
 				<metadata-artifact status="no" details="" size="4967" time="0" location="/Users/Anna/.ivy2/cache/org.seleniumhq.selenium/selenium-firefox-driver/ivy-2.48.2.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.seleniumhq.selenium/selenium-firefox-driver/2.48.2/ivys/ivy.xml"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="compile, runtime" rev="2.48.2" rev-constraint-default="2.48.2" rev-constraint-dynamic="2.48.2" callerrev="2.48.2"/>
 				<artifacts>
@@ -561,7 +623,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-htmlunit-driver">
-			<revision name="2.48.2" status="release" pubdate="20160229101853" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="131">
+			<revision name="2.48.2" status="release" pubdate="20160229101853" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="136">
 				<metadata-artifact status="no" details="" size="4983" time="0" location="/Users/Anna/.ivy2/cache/org.seleniumhq.selenium/selenium-htmlunit-driver/ivy-2.48.2.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.seleniumhq.selenium/selenium-htmlunit-driver/2.48.2/ivys/ivy.xml"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="compile, runtime" rev="2.48.2" rev-constraint-default="2.48.2" rev-constraint-dynamic="2.48.2" callerrev="2.48.2"/>
 				<artifacts>
@@ -572,7 +634,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-support">
-			<revision name="2.48.2" status="release" pubdate="20160229101859" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="132">
+			<revision name="2.48.2" status="release" pubdate="20160229101859" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="137">
 				<metadata-artifact status="no" details="" size="4900" time="0" location="/Users/Anna/.ivy2/cache/org.seleniumhq.selenium/selenium-support/ivy-2.48.2.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.seleniumhq.selenium/selenium-support/2.48.2/ivys/ivy.xml"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-htmlunit-driver" conf="compile, runtime" rev="2.48.2" rev-constraint-default="2.48.2" rev-constraint-dynamic="2.48.2" callerrev="2.48.2"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="compile, runtime" rev="2.48.2" rev-constraint-default="2.48.2" rev-constraint-dynamic="2.48.2" callerrev="2.48.2"/>
@@ -584,7 +646,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-edge-driver">
-			<revision name="2.48.2" status="release" pubdate="20160229101845" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="130">
+			<revision name="2.48.2" status="release" pubdate="20160229101845" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="135">
 				<metadata-artifact status="no" details="" size="4961" time="0" location="/Users/Anna/.ivy2/cache/org.seleniumhq.selenium/selenium-edge-driver/ivy-2.48.2.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.seleniumhq.selenium/selenium-edge-driver/2.48.2/ivys/ivy.xml"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="compile, runtime" rev="2.48.2" rev-constraint-default="2.48.2" rev-constraint-dynamic="2.48.2" callerrev="2.48.2"/>
 				<artifacts>
@@ -595,7 +657,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-chrome-driver">
-			<revision name="2.48.2" status="release" pubdate="20160229101751" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="122">
+			<revision name="2.48.2" status="release" pubdate="20160229101751" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="127">
 				<metadata-artifact status="no" details="" size="4681" time="0" location="/Users/Anna/.ivy2/cache/org.seleniumhq.selenium/selenium-chrome-driver/ivy-2.48.2.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.seleniumhq.selenium/selenium-chrome-driver/2.48.2/ivys/ivy.xml"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="compile, runtime" rev="2.48.2" rev-constraint-default="2.48.2" rev-constraint-dynamic="2.48.2" callerrev="2.48.2"/>
 				<artifacts>
@@ -606,7 +668,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-remote-driver">
-			<revision name="2.48.2" status="release" pubdate="20160229101758" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="123">
+			<revision name="2.48.2" status="release" pubdate="20160229101758" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="128">
 				<metadata-artifact status="no" details="" size="5674" time="0" location="/Users/Anna/.ivy2/cache/org.seleniumhq.selenium/selenium-remote-driver/ivy-2.48.2.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.seleniumhq.selenium/selenium-remote-driver/2.48.2/ivys/ivy.xml"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-edge-driver" conf="compile, runtime" rev="2.48.2" rev-constraint-default="2.48.2" rev-constraint-dynamic="2.48.2" callerrev="2.48.2"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-ie-driver" conf="compile, runtime" rev="2.48.2" rev-constraint-default="2.48.2" rev-constraint-dynamic="2.48.2" callerrev="2.48.2"/>
@@ -623,7 +685,7 @@
 			</revision>
 		</module>
 		<module organisation="net.java.dev.jna" name="jna-platform">
-			<revision name="4.1.0" status="release" pubdate="20160229101834" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twall/jna" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="129">
+			<revision name="4.1.0" status="release" pubdate="20160229101834" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twall/jna" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="134">
 				<license name="LGPL, version 2.1" url="http://www.gnu.org/licenses/licenses.html"/>
 				<license name="ASL, version 2" url="http://www.apache.org/licenses/"/>
 				<metadata-artifact status="no" details="" size="2720" time="0" location="/Users/Anna/.ivy2/cache/net.java.dev.jna/jna-platform/ivy-4.1.0.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/net.java.dev.jna/jna-platform/4.1.0/ivys/ivy.xml"/>
@@ -637,7 +699,7 @@
 			</revision>
 		</module>
 		<module organisation="net.java.dev.jna" name="jna">
-			<revision name="4.1.0" status="release" pubdate="20160203150840" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twall/jna" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="128">
+			<revision name="4.1.0" status="release" pubdate="20160203150840" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twall/jna" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="133">
 				<license name="LGPL, version 2.1" url="http://www.gnu.org/licenses/licenses.html"/>
 				<license name="ASL, version 2" url="http://www.apache.org/licenses/"/>
 				<metadata-artifact status="no" details="" size="2522" time="0" location="/Users/Anna/.ivy2/cache/net.java.dev.jna/jna/ivy-4.1.0.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/net.java.dev.jna/jna/4.1.0/ivys/ivy.xml"/>
@@ -652,7 +714,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.commons" name="commons-exec">
-			<revision name="1.3" status="release" pubdate="20160229101828" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-exec/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="127">
+			<revision name="1.3" status="release" pubdate="20160229101828" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-exec/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="132">
 				<metadata-artifact status="no" details="" size="10264" time="0" location="/Users/Anna/.ivy2/cache/org.apache.commons/commons-exec/ivy-1.3.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.apache.commons/commons-exec/1.3/ivys/ivy.xml"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-edge-driver" conf="compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="2.48.2"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-firefox-driver" conf="compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="2.48.2"/>
@@ -665,7 +727,7 @@
 			</revision>
 		</module>
 		<module organisation="org.seleniumhq.selenium" name="selenium-api">
-			<revision name="2.48.2" status="release" pubdate="20160229101819" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="126">
+			<revision name="2.48.2" status="release" pubdate="20160229101819" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="131">
 				<metadata-artifact status="no" details="" size="4961" time="0" location="/Users/Anna/.ivy2/cache/org.seleniumhq.selenium/selenium-api/ivy-2.48.2.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.seleniumhq.selenium/selenium-api/2.48.2/ivys/ivy.xml"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-remote-driver" conf="compile, runtime" rev="2.48.2" rev-constraint-default="2.48.2" rev-constraint-dynamic="2.48.2" callerrev="2.48.2"/>
 				<artifacts>
@@ -676,7 +738,7 @@
 			</revision>
 		</module>
 		<module organisation="com.google.code.gson" name="gson">
-			<revision name="2.3.1" status="release" pubdate="20160229101809" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/google-gson/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="125">
+			<revision name="2.3.1" status="release" pubdate="20160229101809" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/google-gson/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="130">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3373" time="0" location="/Users/Anna/.ivy2/cache/com.google.code.gson/gson/ivy-2.3.1.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/com.google.code.gson/gson/2.3.1/ivys/ivy.xml"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-remote-driver" conf="compile, runtime" rev="2.3.1" rev-constraint-default="2.3.1" rev-constraint-dynamic="2.3.1" callerrev="2.48.2"/>
@@ -689,7 +751,7 @@
 			</revision>
 		</module>
 		<module organisation="cglib" name="cglib-nodep">
-			<revision name="2.1_3" status="release" pubdate="20151123133401" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://cglib.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="124">
+			<revision name="2.1_3" status="release" pubdate="20151123133401" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://cglib.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="129">
 				<metadata-artifact status="no" details="" size="2332" time="0" location="/Users/Anna/.ivy2/cache/cglib/cglib-nodep/ivy-2.1_3.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/cglib/cglib-nodep/2.1_3/ivys/ivy.xml"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-remote-driver" conf="compile, runtime" rev="2.1_3" rev-constraint-default="2.1_3" rev-constraint-dynamic="2.1_3" callerrev="2.48.2"/>
 				<artifacts>
@@ -700,7 +762,7 @@
 			</revision>
 		</module>
 		<module organisation="net.sourceforge.htmlunit" name="htmlunit">
-			<revision name="2.20" status="release" pubdate="20160314143232" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://htmlunit.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="103">
+			<revision name="2.20" status="release" pubdate="20160314143232" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://htmlunit.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="108">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="7726" time="0" location="/Users/Anna/.ivy2/cache/net.sourceforge.htmlunit/htmlunit/ivy-2.20.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/net.sourceforge.htmlunit/htmlunit/2.20/ivys/ivy.xml"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-htmlunit-driver" conf="compile, runtime" rev="2.18" rev-constraint-default="2.18" rev-constraint-dynamic="2.18" callerrev="2.48.2"/>
@@ -719,7 +781,7 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jetty.websocket" name="websocket-client">
-			<revision name="9.2.15.v20160210" status="release" pubdate="20160314143304" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="115">
+			<revision name="9.2.15.v20160210" status="release" pubdate="20160314143304" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="120">
 				<metadata-artifact status="no" details="" size="13451" time="0" location="/Users/Anna/.ivy2/cache/org.eclipse.jetty.websocket/websocket-client/ivy-9.2.15.v20160210.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.eclipse.jetty.websocket/websocket-client/9.2.15.v20160210/ivys/ivy.xml"/>
 				<caller organisation="net.sourceforge.htmlunit" name="htmlunit" conf="compile, runtime" rev="9.2.15.v20160210" rev-constraint-default="9.2.15.v20160210" rev-constraint-dynamic="9.2.15.v20160210" callerrev="2.20"/>
 				<artifacts>
@@ -730,7 +792,7 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jetty.websocket" name="websocket-common">
-			<revision name="9.2.15.v20160210" status="release" pubdate="20160210170502" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="118">
+			<revision name="9.2.15.v20160210" status="release" pubdate="20160210170502" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="123">
 				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
 				<metadata-artifact status="no" details="" size="13393" time="0" location="/Users/Anna/.ivy2/cache/org.eclipse.jetty.websocket/websocket-common/ivy-9.2.15.v20160210.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.eclipse.jetty.websocket/websocket-common/9.2.15.v20160210/ivys/ivy.xml"/>
@@ -743,7 +805,7 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jetty.websocket" name="websocket-api">
-			<revision name="9.2.15.v20160210" status="release" pubdate="20160210170421" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="119">
+			<revision name="9.2.15.v20160210" status="release" pubdate="20160210170421" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="124">
 				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
 				<metadata-artifact status="no" details="" size="12853" time="0" location="/Users/Anna/.ivy2/cache/org.eclipse.jetty.websocket/websocket-api/ivy-9.2.15.v20160210.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.eclipse.jetty.websocket/websocket-api/9.2.15.v20160210/ivys/ivy.xml"/>
@@ -756,7 +818,7 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jetty" name="jetty-io">
-			<revision name="9.2.15.v20160210" status="release" pubdate="20160210165127" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="117">
+			<revision name="9.2.15.v20160210" status="release" pubdate="20160210165127" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="122">
 				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
 				<metadata-artifact status="no" details="" size="11834" time="0" location="/Users/Anna/.ivy2/cache/org.eclipse.jetty/jetty-io/ivy-9.2.15.v20160210.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.eclipse.jetty/jetty-io/9.2.15.v20160210/ivys/ivy.xml"/>
@@ -770,7 +832,7 @@
 			</revision>
 		</module>
 		<module organisation="org.eclipse.jetty" name="jetty-util">
-			<revision name="9.2.15.v20160210" status="release" pubdate="20160210165005" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="116">
+			<revision name="9.2.15.v20160210" status="release" pubdate="20160210165005" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="121">
 				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
 				<metadata-artifact status="no" details="" size="12106" time="0" location="/Users/Anna/.ivy2/cache/org.eclipse.jetty/jetty-util/ivy-9.2.15.v20160210.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.eclipse.jetty/jetty-util/9.2.15.v20160210/ivys/ivy.xml"/>
@@ -785,7 +847,7 @@
 			</revision>
 		</module>
 		<module organisation="net.sourceforge.cssparser" name="cssparser">
-			<revision name="0.9.18" status="release" pubdate="20151027145927" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://cssparser.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="112">
+			<revision name="0.9.18" status="release" pubdate="20151027145927" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://cssparser.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="117">
 				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/lgpl.txt"/>
 				<metadata-artifact status="no" details="" size="3761" time="0" location="/Users/Anna/.ivy2/cache/net.sourceforge.cssparser/cssparser/ivy-0.9.18.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/net.sourceforge.cssparser/cssparser/0.9.18/ivys/ivy.xml"/>
 				<caller organisation="net.sourceforge.htmlunit" name="htmlunit" conf="compile, runtime" rev="0.9.18" rev-constraint-default="0.9.18" rev-constraint-dynamic="0.9.18" callerrev="2.20"/>
@@ -797,7 +859,7 @@
 			</revision>
 		</module>
 		<module organisation="org.w3c.css" name="sac">
-			<revision name="1.3" status="release" pubdate="20151123133643" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.w3.org/Style/CSS/SAC/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="113">
+			<revision name="1.3" status="release" pubdate="20151123133643" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.w3.org/Style/CSS/SAC/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="118">
 				<license name="The W3C Software License" url="http://www.w3.org/Consortium/Legal/copyright-software-19980720"/>
 				<metadata-artifact status="no" details="" size="2500" time="0" location="/Users/Anna/.ivy2/cache/org.w3c.css/sac/ivy-1.3.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.w3c.css/sac/1.3/ivys/ivy.xml"/>
 				<caller organisation="net.sourceforge.cssparser" name="cssparser" conf="compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="0.9.18"/>
@@ -809,7 +871,7 @@
 			</revision>
 		</module>
 		<module organisation="net.sourceforge.nekohtml" name="nekohtml">
-			<revision name="1.9.22" status="release" pubdate="20160229101950" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://nekohtml.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="111">
+			<revision name="1.9.22" status="release" pubdate="20160229101950" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://nekohtml.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="116">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="2683" time="0" location="/Users/Anna/.ivy2/cache/net.sourceforge.nekohtml/nekohtml/ivy-1.9.22.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/net.sourceforge.nekohtml/nekohtml/1.9.22/ivys/ivy.xml"/>
 				<caller organisation="net.sourceforge.htmlunit" name="htmlunit" conf="compile, runtime" rev="1.9.22" rev-constraint-default="1.9.22" rev-constraint-dynamic="1.9.22" callerrev="2.20"/>
@@ -821,7 +883,7 @@
 			</revision>
 		</module>
 		<module organisation="net.sourceforge.htmlunit" name="htmlunit-core-js">
-			<revision name="2.17" status="release" pubdate="20160229101942" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://htmlunit.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="110">
+			<revision name="2.17" status="release" pubdate="20160229101942" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://htmlunit.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="115">
 				<license name="Mozilla Public License version 2.0" url="http://www.mozilla.org/MPL/2.0/"/>
 				<metadata-artifact status="no" details="" size="2628" time="0" location="/Users/Anna/.ivy2/cache/net.sourceforge.htmlunit/htmlunit-core-js/ivy-2.17.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/net.sourceforge.htmlunit/htmlunit-core-js/2.17/ivys/ivy.xml"/>
 				<caller organisation="net.sourceforge.htmlunit" name="htmlunit" conf="compile, runtime" rev="2.17" rev-constraint-default="2.17" rev-constraint-dynamic="2.17" callerrev="2.20"/>
@@ -833,7 +895,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.httpcomponents" name="httpmime">
-			<revision name="4.5.2" status="release" pubdate="20160221110652" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="109">
+			<revision name="4.5.2" status="release" pubdate="20160221110652" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="114">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="9310" time="0" location="/Users/Anna/.ivy2/cache/org.apache.httpcomponents/httpmime/ivy-4.5.2.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.apache.httpcomponents/httpmime/4.5.2/ivys/ivy.xml"/>
 				<caller organisation="net.sourceforge.htmlunit" name="htmlunit" conf="compile, runtime" rev="4.5.2" rev-constraint-default="4.5.2" rev-constraint-dynamic="4.5.2" callerrev="2.20"/>
@@ -845,7 +907,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.httpcomponents" name="httpclient">
-			<revision name="4.5.2" status="release" pubdate="20160221110550" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="106">
+			<revision name="4.5.2" status="release" pubdate="20160221110550" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="111">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="9791" time="0" location="/Users/Anna/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.5.2.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.apache.httpcomponents/httpclient/4.5.2/ivys/ivy.xml"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-htmlunit-driver" conf="compile, runtime" rev="4.5.1" rev-constraint-default="4.5.1" rev-constraint-dynamic="4.5.1" callerrev="2.48.2"/>
@@ -869,7 +931,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.httpcomponents" name="httpcore">
-			<revision name="4.4.4" status="release" pubdate="20151026131814" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="107">
+			<revision name="4.4.4" status="release" pubdate="20151026131814" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="112">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="7694" time="0" location="/Users/Anna/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.4.4.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.apache.httpcomponents/httpcore/4.4.4/ivys/ivy.xml"/>
 				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="4.4.4" rev-constraint-default="4.4.4" rev-constraint-dynamic="4.4.4" callerrev="4.5.2"/>
@@ -881,7 +943,7 @@
 			</revision>
 		</module>
 		<module organisation="commons-logging" name="commons-logging">
-			<revision name="1.2" status="release" pubdate="20151221102353" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-logging/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="108">
+			<revision name="1.2" status="release" pubdate="20151221102353" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-logging/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="113">
 				<metadata-artifact status="no" details="" size="11498" time="0" location="/Users/Anna/.ivy2/cache/commons-logging/commons-logging/ivy-1.2.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/commons-logging/commons-logging/1.2/ivys/ivy.xml"/>
 				<caller organisation="net.sourceforge.htmlunit" name="htmlunit" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="2.20"/>
 				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="4.5.2"/>
@@ -893,7 +955,7 @@
 			</revision>
 		</module>
 		<module organisation="xalan" name="xalan">
-			<revision name="2.7.2" status="release" pubdate="20160229101916" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xml.apache.org/xalan-j/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="104">
+			<revision name="2.7.2" status="release" pubdate="20160229101916" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xml.apache.org/xalan-j/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="109">
 				<metadata-artifact status="no" details="" size="3053" time="0" location="/Users/Anna/.ivy2/cache/xalan/xalan/ivy-2.7.2.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/xalan/xalan/2.7.2/ivys/ivy.xml"/>
 				<caller organisation="net.sourceforge.htmlunit" name="htmlunit" conf="compile, runtime" rev="2.7.2" rev-constraint-default="2.7.2" rev-constraint-dynamic="2.7.2" callerrev="2.20"/>
 				<artifacts>
@@ -904,7 +966,7 @@
 			</revision>
 		</module>
 		<module organisation="xalan" name="serializer">
-			<revision name="2.7.2" status="release" pubdate="20160229101928" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xml.apache.org/xalan-j/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="105">
+			<revision name="2.7.2" status="release" pubdate="20160229101928" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xml.apache.org/xalan-j/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="110">
 				<metadata-artifact status="no" details="" size="2863" time="0" location="/Users/Anna/.ivy2/cache/xalan/serializer/ivy-2.7.2.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/xalan/serializer/2.7.2/ivys/ivy.xml"/>
 				<caller organisation="xalan" name="xalan" conf="compile, runtime" rev="2.7.2" rev-constraint-default="2.7.2" rev-constraint-dynamic="2.7.2" callerrev="2.7.2"/>
 				<artifacts>
@@ -2078,7 +2140,7 @@
 			</revision>
 		</module>
 		<module organisation="com.novocode" name="junit-interface">
-			<revision name="0.11" status="release" pubdate="20151123133332" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/sbt/junit-interface/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="101">
+			<revision name="0.11" status="release" pubdate="20151123133332" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/sbt/junit-interface/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="106">
 				<license name="Two-clause BSD-style license" url="http://github.com/sbt/junit-interface/blob/master/LICENSE.txt"/>
 				<metadata-artifact status="no" details="" size="2854" time="0" location="/Users/Anna/.ivy2/cache/com.novocode/junit-interface/ivy-0.11.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/com.novocode/junit-interface/0.11/ivys/ivy.xml"/>
 				<caller organisation="com.typesafe.play" name="play-test_2.11" conf="default, compile, runtime, master" rev="0.11" rev-constraint-default="0.11" rev-constraint-dynamic="0.11" callerrev="2.5.0"/>
@@ -2090,7 +2152,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="test-interface">
-			<revision name="1.0" status="release" pubdate="20151123130731" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-sbt.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="102">
+			<revision name="1.0" status="release" pubdate="20151123130731" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-sbt.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="107">
 				<license name="BSD" url="https://github.com/sbt/test-interface/blob/master/LICENSE"/>
 				<metadata-artifact status="no" details="" size="2710" time="0" location="/Users/Anna/.ivy2/cache/org.scala-sbt/test-interface/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="file:/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.scala-sbt/test-interface/1.0/ivys/ivy.xml"/>
 				<caller organisation="com.novocode" name="junit-interface" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.11"/>
@@ -2194,7 +2256,7 @@
 			</revision>
 		</module>
 		<module organisation="commons-io" name="commons-io">
-			<revision name="2.4" status="release" pubdate="20151123131048" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="114">
+			<revision name="2.4" status="release" pubdate="20151123131048" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="119">
 				<metadata-artifact status="no" details="" size="8579" time="0" location="/Users/Anna/.ivy2/cache/commons-io/commons-io/ivy-2.4.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/commons-io/commons-io/2.4/ivys/ivy.xml"/>
 				<caller organisation="org.seleniumhq.selenium" name="selenium-edge-driver" conf="compile, runtime" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="2.48.2"/>
 				<caller organisation="net.sourceforge.htmlunit" name="htmlunit" conf="compile, runtime" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="2.20"/>
@@ -2207,7 +2269,7 @@
 			</revision>
 		</module>
 		<module organisation="junit" name="junit">
-			<revision name="4.12" status="release" pubdate="20151123133320" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="99">
+			<revision name="4.12" status="release" pubdate="20151123133320" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="104">
 				<license name="Eclipse Public License 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
 				<metadata-artifact status="no" details="" size="3306" time="0" location="/Users/Anna/.ivy2/cache/junit/junit/ivy-4.12.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/junit/junit/4.12/ivys/ivy.xml"/>
 				<caller organisation="com.novocode" name="junit-interface" conf="compile, runtime" rev="4.11" rev-constraint-default="4.11" rev-constraint-dynamic="4.11" callerrev="0.11"/>
@@ -2226,7 +2288,7 @@
 			</revision>
 		</module>
 		<module organisation="org.hamcrest" name="hamcrest-core">
-			<revision name="1.3" status="release" pubdate="20151123133323" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="100">
+			<revision name="1.3" status="release" pubdate="20151123133323" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="105">
 				<metadata-artifact status="no" details="" size="2513" time="0" location="/Users/Anna/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.3.xml" searched="false" origin-is-local="true" origin-location="/Users/Anna/Documents/jar/activator-dist-1.3.9/repository/org.hamcrest/hamcrest-core/1.3/ivys/ivy.xml"/>
 				<caller organisation="junit" name="junit" conf="compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="4.12"/>
 				<artifacts>

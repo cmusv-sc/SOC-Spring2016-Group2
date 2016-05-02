@@ -1,6 +1,6 @@
 Template.findpaper.helpers({
   getData: function() {
-  	var url = "http://localhost:9000/year/2012";
+  	var url = "http://localhost:9000/paper/year/2012";
 	fetchData(url);
   },
 });
@@ -34,7 +34,7 @@ Template.findpaper.events({
 		var input = $("#inputvalue").val();
 		if (input == "") { console.log("No input"); return;};
 		console.log("year: " + $("#inputvalue").val());
-		var url = "http://localhost:9000/year/" + input;
+		var url = "http://localhost:9000/paper/year/" + input;
 		fetchData(url);
 	},
 	'click .title': function (event) {
@@ -42,7 +42,14 @@ Template.findpaper.events({
 		var input = $("#inputvalue").val();
 		if (input == "") { console.log("No input"); return;};
 		console.log("title: " + $("#inputvalue").val());
-		var url = "http://localhost:9000/title/" + input;
+		var url = "http://localhost:9000/paper/title/" + input;
+		fetchData(url);
+	},
+	'click .tagpub': function (event) {
+		var input = $("#inputvalue").val();
+		if (input == "") { console.log("No input"); return;};
+		console.log("tagpub: " + $("#inputvalue").val());
+		var url = "http://localhost:9000/getpublications/" + input;
 		fetchData(url);
 	}
 });

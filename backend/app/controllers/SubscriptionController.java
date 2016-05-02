@@ -182,13 +182,34 @@ public class SubscriptionController extends Controller{
 					title=publication.getTitle();
 					// get comments
 					List<NestedComment> comments=getCommentsRecursively(followeeId, new Long(1), new Long(0));
-					for(NestedComment nestedComment: comments){
-						ObjectNode result=Json.newObject();
+					List<ObjectNode> tmps=new ArrayList<ObjectNode>();
+					NestedComment nestedComment=null;
+					ObjectNode result=null;
+					if(comments.size()>0){
+						nestedComment=comments.get(0);
+						result=Json.newObject();
 						result.put("timestamp", nestedComment.comment.getTime()+"");
-						result.put("username", title);
-						result.put("category", "paper");
-						result.put("content", nestedComment.comment.getContent()); //????
-						results.add(result);
+                        result.put("username", title);
+                        result.put("category", "paper");
+                        // parent
+                        ObjectNode tmp0=Json.newObject();
+                        tmp0.put("timestamp", nestedComment.comment.getTime()+"");
+                        tmp0.put("username", User.find.byId(nestedComment.comment.getAuthorid()).getUsername());
+                        tmp0.put("category", "comment");
+                        tmp0.put("content", nestedComment.comment.getContent());
+                        tmps.add(tmp0);
+                        //children
+                        while(nestedComment.children.size()>0){
+                        	ObjectNode tmp=Json.newObject();
+                        	tmp.put("timestamp", nestedComment.children.get(0).comment.getTime()+"");
+	                        tmp.put("username", User.find.byId(nestedComment.children.get(0).comment.getAuthorid()).getUsername());
+	                        tmp.put("category", "comment");
+	                        tmp.put("content", nestedComment.children.get(0).comment.getContent());
+	                        tmps.add(tmp);
+	                        nestedComment=nestedComment.children.get(0);
+                        }
+                        result.put("content", Json.toJson(tmps));
+                        results.add(result);
 					}
 				}
 			}
@@ -215,6 +236,7 @@ public class SubscriptionController extends Controller{
         }
         return list;
     }
+
 }
 
 class NestedComment{

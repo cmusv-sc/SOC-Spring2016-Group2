@@ -1,18 +1,24 @@
 package controllers;
 
 import java.io.File;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.fasterxml.jackson.databind.util.JSONPObject;
 import com.google.gson.Gson;
 import models.*;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
+import java.io.IOException;
 import com.avaje.ebean.Ebean;
 import com.avaje.ebean.Model;
 import com.avaje.ebean.SqlRow;
+import static controllers.keyWordSearch.search;
 import static play.data.Form.form;
 import static play.libs.Json.toJson;
+import java.io.IOException;
 import java.util.*;
+import static controllers.keyWordSearch.search;
 
 public class Application extends Controller {
     static{
@@ -25,6 +31,9 @@ public class Application extends Controller {
         // subscription=new Subscription(null,new Long(1),new Long(13),"group",new Date());
         // subscription.save();
     }
+
+
+
 
     public Result index() {
 
@@ -51,75 +60,136 @@ public class Application extends Controller {
 
 
     /***
-     * This method is used to find the paper by year
+     *=======================================================
+     * Paper suggestion
      */
-
-    public Result getPaperByYear(int year) {
-//        System.out.println(request().body().asText());
-//        int year=Integer.parseInt(request().body().asText());
-        System.out.println(year);
-        List<ObjectNode> results=new ArrayList<ObjectNode>();
-        List<Publication> publications = Publication.find("byYear", year, null);
-        System.out.println("There are " + publications.size() + " publication"+year);
-        for(Publication publication : publications) {
-           // System.out.println(publication.toString());
-            ObjectNode result = Json.newObject();
-            List<PublicationAuthor> authorids=PublicationAuthor.find(publication.getId(),null);
-            List<Author> authors=Author.find(authorids);
-            StringBuilder sb=new StringBuilder();
-            for(Author author: authors){
-                sb.append(author+";");
-            }
-            result.put("authors",sb.toString());
-            result.put("title", publication.getTitle());
-            result.put("editor", publication.getEditor());
-            result.put("booktitle",publication.getBooktitle());
-            result.put("isbn", publication.getIsbn());
-            result.put("year",publication.getYear());
-            result.put("crossref",publication.getCrossref());
-            result.put("ee",publication.getEe());
-            result.put("url",publication.getUrl());
-            result.put("series",publication.getSeries());
-            result.put("volume",publication.getVolume());
-            results.add(result);
-        }
-        return ok(Json.toJson(results));
+    public void setHeaders(){
+        response().setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
+        response().setHeader("Access-Control-Max-Age", "3600");
+        response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content- Type, Accept, Authorization, X-Auth-Token");
+        response().setHeader("Access-Control-Allow-Credentials", "true");
+        response().setHeader("Access-Control-Allow-Origin", "*");
     }
 
+    public Result getPaperByYear(int year) {
+
+        setHeaders();
+
+        System.out.println(year);
+        List<ObjectNode> results=new ArrayList<ObjectNode>();
+        List<Publication> publications = Publication.find("byYear", year, null,null);
+        System.out.println("There are " + publications.size() + " publication"+year);
+        results=Publication.findPubDetails(publications,results,"getPaperByYear");
+
+        Collections.sort(results, new Comparator<ObjectNode>(){
+            public int compare(ObjectNode o1, ObjectNode o2){
+                     String o1_pop=o1.get("popularity").toString();
+                     String o2_pop=o2.get("popularity").toString();
+                    return Integer.parseInt(o2_pop)-Integer.parseInt(o1_pop);
+            }
+        });
+        return ok(Json.toJson(results));
+    }
     public Result getPaperByTitle(String title){
-//        String title=request().body().asText();
-//        System.out.println(title);
-        List<Publication> publications = Publication.find("byTitle", null, title);
+
+        setHeaders();
+        List<Publication> publications = Publication.find("byTitle", null, title,null);
 
         List<ObjectNode> results=new ArrayList<ObjectNode>();
         System.out.println("There are " + publications.size() );
-        for(Publication publication : publications) {
-            // System.out.println(publication.toString());
-            ObjectNode result = Json.newObject();
-            List<PublicationAuthor> authorids=PublicationAuthor.find(publication.getId(),null);
-            System.out.println(authorids);
-             List<Author> authors=Author.find(authorids);
-            StringBuilder sb=new StringBuilder();
-            for(Author author: authors){
-                System.out.println(author);
-                 sb.append(author+";");
-            }
-            result.put("authors",sb.toString());
-            result.put("title", publication.getTitle());
-            result.put("editor", publication.getEditor());
-            result.put("booktitle",publication.getBooktitle());
-            result.put("isbn", publication.getIsbn());
-            result.put("year",publication.getYear());
-            result.put("crossref",publication.getCrossref());
-            result.put("ee",publication.getEe());
-            result.put("url",publication.getUrl());
-            result.put("series",publication.getSeries());
-            result.put("volume",publication.getVolume());
-            results.add(result);
-        }
+        results=Publication.findPubDetails(publications,results,"getPaperByTitle");
         return ok(Json.toJson(results));
     }
-    
+
+
+
+
+    public Result getPaperBykeyWord(String keyword) throws IOException {
+        setHeaders();
+        System.out.println("call getPaperDetails....");
+        List<ObjectNode> results=new ArrayList<ObjectNode>();
+        try {
+            results =new ArrayList<ObjectNode>();
+            keyWordSearch.rebuildIndexes(keyWordSearch.getIndexWriter(true));
+            search(keyword, 100,results);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        JsonNode jsonpObject=Json.toJson(results);
+        return ok(jsonpObject);
+    }
+
+
+    public Result getAllPublications(){
+        setHeaders();
+        //get all publications details
+        List<ObjectNode> results=new ArrayList<ObjectNode>();
+        List<Publication> publications=Publication.find.all();
+        results=Publication.findPubDetails(publications,results,"getAllPaper");
+        JsonNode jsonNode=Json.toJson(results);
+        return ok(jsonNode);
+    }
+    public Result getAuthors(String author){
+        setHeaders();
+        System.out.println("call get coauthors...");
+        //1. get the author id by its name
+        List<Long>  author_ids=Author.find_Author_Id(author);
+        //2. find publication id by author id
+        List<Long> pubids=PublicationAuthor.find_pub_id(author_ids);
+        System.out.println(pubids.toString());
+        //3. find publications by its id
+        List<Publication> publications=Publication.find("byId",null,null,pubids);
+        //4. find
+        List<ObjectNode> results=new ArrayList<ObjectNode>();
+        results=Publication.findPubDetails(publications,results, "getAuthors");
+        JsonNode jsonpObject=Json.toJson(results);
+        return ok(jsonpObject);
+    }
+
+    public Result getCoAuthors(String author){
+        setHeaders();
+        //1. get the author id by its name
+        List<Long>  author_ids=Author.find_Author_Id(author);
+        System.out.println(author_ids);
+        //2. find publication id by author id
+        List<Long> pubids=PublicationAuthor.find_pub_id(author_ids);
+        System.out.println(pubids.toString());
+        //3. find publications by its id
+        List<Publication> publications=Publication.find("byId",null,null,pubids);
+        System.out.println(publications);
+        //4. find
+        List<ObjectNode> results=new ArrayList<ObjectNode>();
+        results=Publication.findPubDetails(publications,results, "getCoAuthors");
+        //get 5 co authors
+        List<String> coauthors=new ArrayList<String>();
+        for(ObjectNode result:results){
+
+            String authors= result.findValue("authors").toString();
+            String[] res=authors.split("(;|\")");
+            for(String r:res){
+                coauthors.add(r);
+            }
+        }
+        System.out.println(coauthors);
+        ObjectNode result = Json.newObject();
+        result.put("GsearchResultClass","getCoauthors");
+        List<ObjectNode> result_json=new ArrayList<ObjectNode>();
+        int index=coauthors.size();
+        if(coauthors.size()>8){
+            index=6;
+        }
+        for(int i=1;i<index;i++){
+            result.put("a"+i,coauthors.get(i));
+
+        }
+        result_json.add(result);
+        return ok(Json.toJson(result_json));
+    }
+    /***
+     * paper suggestion
+     * =========================================================================
+     */
+
     public Result getPublicationWithAuthorsById(int id){
         String sql = "select * "+
                 "from publication as p join" +

@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.7 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@677aa67a[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@489d21c[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.7 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.7] org.scala-lang#scala-library;2.11.7[0m
@@ -1900,6 +1900,66 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1206-jdbc42 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1206-jdbc42 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1206-jdbc42 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.apache.lucene#lucene-core;5.3.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.lucene#lucene-core;5.3.1[0m
+[0m[[0mdebug[0m] [0m	found org.apache.lucene#lucene-core;5.3.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.apache.lucene#lucene-analyzers-common;5.3.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.lucene#lucene-analyzers-common;5.3.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.lucene#lucene-analyzers-common;5.3.1[0m
+[0m[[0mdebug[0m] [0m	found org.apache.lucene#lucene-analyzers-common;5.3.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.apache.lucene#lucene-queryparser;5.3.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.lucene#lucene-queryparser;5.3.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.lucene#lucene-queryparser;5.3.1[0m
+[0m[[0mdebug[0m] [0m	found org.apache.lucene#lucene-queryparser;5.3.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.apache.lucene#lucene-queries;5.3.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.lucene#lucene-queries;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.lucene#lucene-queries;5.3.1[0m
+[0m[[0mdebug[0m] [0m	found org.apache.lucene#lucene-queries;5.3.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.apache.lucene#lucene-sandbox;5.3.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.lucene#lucene-sandbox;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.lucene#lucene-sandbox;5.3.1[0m
+[0m[[0mdebug[0m] [0m	found org.apache.lucene#lucene-sandbox;5.3.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jakarta-regexp#jakarta-regexp;1.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jakarta-regexp#jakarta-regexp;1.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT [compile][0m
@@ -3020,6 +3080,40 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1206-jdbc42 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1206-jdbc42 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1206-jdbc42 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jakarta-regexp#jakarta-regexp;1.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jakarta-regexp#jakarta-regexp;1.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT [runtime][0m
@@ -4135,6 +4229,40 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1206-jdbc42 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1206-jdbc42 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1206-jdbc42 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jakarta-regexp#jakarta-regexp;1.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jakarta-regexp#jakarta-regexp;1.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.5.0 [test->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-test_2.11;2.5.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-test_2.11;2.5.0 {test=[default(compile)]}[0m
@@ -5768,6 +5896,40 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1206-jdbc42 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1206-jdbc42 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1206-jdbc42 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jakarta-regexp#jakarta-regexp;1.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jakarta-regexp#jakarta-regexp;1.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
@@ -6885,6 +7047,40 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1206-jdbc42 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1206-jdbc42 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1206-jdbc42 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jakarta-regexp#jakarta-regexp;1.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jakarta-regexp#jakarta-regexp;1.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT [test-internal][0m
@@ -8002,6 +8198,40 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1206-jdbc42 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1206-jdbc42 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.postgresql#postgresql;9.4-1206-jdbc42 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-core;5.3.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-analyzers-common;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-analyzers-common;5.3.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jakarta-regexp#jakarta-regexp;1.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-core;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-queries;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.lucene#lucene-queryparser;5.3.1->org.apache.lucene#lucene-sandbox;5.3.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.apache.lucene#lucene-core;5.3.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jakarta-regexp#jakarta-regexp;1.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->org.apache.lucene#lucene-queryparser;5.3.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.5.0 [test->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.5.0 [test->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT->com.typesafe.play#play-test_2.11;2.5.0 [test->compile][0m
@@ -9027,6 +9257,9 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.hibernate#hibernate-entitymanager;4.3.7.Final!hibernate-entitymanager.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] mysql#mysql-connector-java;5.1.21!mysql-connector-java.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.postgresql#postgresql;9.4-1206-jdbc42!postgresql.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.lucene#lucene-core;5.3.1!lucene-core.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.lucene#lucene-analyzers-common;5.3.1!lucene-analyzers-common.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.lucene#lucene-queryparser;5.3.1!lucene-queryparser.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-lang3;3.4!commons-lang3.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.1!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-jdbc-evolutions_2.11;2.4.0!play-jdbc-evolutions_2.11.jar[0m
@@ -9114,6 +9347,8 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.jboss.spec.javax.transaction#jboss-transaction-api_1.2_spec;1.0.0.Final!jboss-transaction-api_1.2_spec.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] antlr#antlr;2.7.7!antlr.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.jboss#jandex;1.1.0.Final!jandex.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.lucene#lucene-queries;5.3.1!lucene-queries.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.lucene#lucene-sandbox;5.3.1!lucene-sandbox.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-test_2.11;2.5.0!play-test_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] junit#junit;4.12!junit.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.novocode#junit-interface;0.11!junit-interface.jar[0m
@@ -9168,7 +9403,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.7!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.12.1!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2734ms :: artifacts dl 73ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 3798ms :: artifacts dl 78ms[0m
 [0m[[0mdebug[0m] [0m	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT compile produced in /Users/Anna/Documents/graduate2/soc/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT runtime produced in /Users/Anna/Documents/graduate2/soc/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT test produced in /Users/Anna/Documents/graduate2/soc/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-test.xml[0m
@@ -9182,7 +9417,7 @@
 [0m[[0mdebug[0m] [0m	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT docs produced in /Users/Anna/Documents/graduate2/soc/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT pom produced in /Users/Anna/Documents/graduate2/soc/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for ssnetwork#ssnetwork_2.11;1.0-SNAPSHOT scala-tool produced in /Users/Anna/Documents/graduate2/soc/SSNetwork/backend/target/resolution-cache/reports/ssnetwork-ssnetwork_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (2734ms resolve - 73ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (3798ms resolve - 78ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
 [0m[[33mwarn[0m] [0mThere may be incompatibilities among your library dependencies.[0m
 [0m[[33mwarn[0m] [0mHere are some of the libraries that were evicted:[0m

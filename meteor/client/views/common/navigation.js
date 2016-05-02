@@ -5,6 +5,15 @@ Template.navigation.rendered = function(){
 
 };
 
+Template.navigation.helper = function(){
+
+    // Current User
+    currentuser: function() {
+    	return Session.get(userSessionName);
+    }
+
+};
+
 // Used only on OffCanvas layout
 Template.navigation.events({
 

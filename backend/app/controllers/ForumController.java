@@ -9,12 +9,8 @@ import static play.data.Form.form;
 
 import static play.libs.Json.toJson;
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.HashMap;
+import java.util.*;
 import java.io.File;
-
 import com.avaje.ebean.Ebean;
 import com.avaje.ebean.SqlRow;
 
@@ -24,7 +20,7 @@ import com.avaje.ebean.SqlRow;
 public class ForumController extends Controller{
     public Result addComment() {
         Comment comment = form(Comment.class).bindFromRequest().get();
-        Long time = System.currentTimeMillis()/1000;
+        Date time=new Date();
         comment.setTime(time);
         comment.save();
         HashMap<String, String> msg = new HashMap<String, String>();
@@ -93,7 +89,7 @@ public class ForumController extends Controller{
             //System.out.println(sqlRow.getLong("id") + ": " + prev);
             if (!sqlRow.getLong("id").equals(prev)){
                 prev = sqlRow.getLong("id");
-                Comment comment = new Comment(sqlRow.getLong("id"), parentid, sqlRow.getLong("authorid"), sqlRow.getString("content") , sqlRow.getLong("time"), rootid, categoryid);
+                Comment comment = new Comment(sqlRow.getLong("id"), parentid, sqlRow.getLong("authorid"), sqlRow.getString("content") , sqlRow.getDate("time"), rootid, categoryid);
                 comment.setId(sqlRow.getLong("id"));
                 int thumbup = 0;
                 int thumbdown = 0;

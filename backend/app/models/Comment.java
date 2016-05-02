@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Date;
 
 
 @Entity(name="comment")
@@ -16,7 +17,7 @@ public class Comment extends Model {
     private Long parentid;
     private Long authorid;
     private String content;
-    private Long time;
+    private Date time;
     private Long rootid;
     private Long categoryid;
 
@@ -52,11 +53,11 @@ public class Comment extends Model {
         this.content = content;
     }
 
-    public Long getTime() {
+    public Date getTime() {
         return time;
     }
 
-    public void setTime(Long time) {
+    public void setTime(Date time) {
         this.time = time;
     }
 
@@ -76,7 +77,7 @@ public class Comment extends Model {
         this.categoryid = categoryid;
     }
 
-    public Comment(Long id, Long parentid, Long authorid, String content, Long time, Long rootid, Long categoryid) {
+    public Comment(Long id, Long parentid, Long authorid, String content, Date time, Long rootid, Long categoryid) {
         this.parentid = parentid;
         this.authorid = authorid;
         this.content = content;
@@ -86,7 +87,6 @@ public class Comment extends Model {
     }
 
     public Comment(){
-
     }
 
     public static Finder<Long, Comment> find = new Finder<Long, Comment>(Long.class, Comment.class);

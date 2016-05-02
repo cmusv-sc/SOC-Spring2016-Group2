@@ -1,0 +1,120 @@
+<head>
+    <style>
+        .ed {color: #1C84C6;}
+        .hide {display: none;}
+    </style>
+</head>
+<template name="paperedit">
+  <div class="wrapper wrapper-content container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <button class="btn btn-sm btn-success" id="backpub">back</button>
+
+                    <div class="row">
+                        <div class="col-sm-3">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td><span class="label label-info">ID</span></td>
+                                            <td class="id"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Pubkey</span></td>
+                                            <td class="pubkey"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">URL</span></td>
+
+                                            <td class="url"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Title</span></td>
+                                            <td><input type="text"  class="form-control input-sm" id="title"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Author</span></td>
+
+                                            <td><input type="text" class="form-control input-sm" id="author"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Editor</span></td>
+
+                                            <td><input type="text" class="form-control input-sm" id="editor"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Year</span></td>
+
+                                            <td><input type="text" class="form-control input-sm" id="year"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">ISBN</span></td>
+
+                                            <td><input type="text" class="form-control input-sm" id="isbn"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Volume</span></td>
+
+                                            <td><input type="text" class="form-control input-sm" id="volume"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Pages</span></td>
+
+                                            <td><input type="text" class="form-control input-sm input-sm" id="pages"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Mdate</span></td>
+
+                                            <td><input type="text" class="form-control input-sm" id="mdate"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Series</span></td>
+
+                                            <td><input type="text" class="form-control input-sm" id="series"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Publisher</span></td>
+
+                                            <td><input type="text" class="form-control input-sm" id="publisher"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Booktitle</span></td>
+
+                                            <td><input type="text" class="form-control input-sm" id="booktitle"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">Crossref</span></td>
+
+                                            <td><input type="text" class="form-control input-sm" id="crossref"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-info">EE</span></td>
+
+                                            <td><input type="text" class="form-control input-sm" id="ee"></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-sm-10"><input type="text" class="form-control" placeholder="EditTag" id="tagedit"></div>
+                                    <button class="btn btn-warning btn-sm demo2" id="updatepaper">submit</button>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <p></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        {{getData}}
+        <input type="file" id="file1" class="hide">
+</template>

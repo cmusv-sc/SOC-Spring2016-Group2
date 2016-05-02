@@ -29,14 +29,8 @@ check
 accounts-password
 accounts-ui
 useraccounts:bootstrap
-accounts-facebook
-accounts-google
 service-configuration
-accounts-github
-accounts-meetup
-accounts-twitter
 alanning:roles
-pauli:accounts-linkedin
 accounts-base
 dburles:collection-helpers
 aldeed:collection2
@@ -57,3 +51,4 @@ cfs:standard-packages
 cfs:gridfs
 cfs:filesystem
 meteorhacks:npm
+sebdah:autocompletion

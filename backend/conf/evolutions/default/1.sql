@@ -3,6 +3,12 @@
 
 # --- !Ups
 
+create table access_comment (
+  publication_id            bigint auto_increment not null,
+  status                    tinyint(1) default 0,
+  constraint pk_access_comment primary key (publication_id))
+;
+
 create table subscription (
   id                        bigint auto_increment not null,
   follower_id               bigint,
@@ -43,7 +49,7 @@ create table comment (
   parentid                  bigint,
   authorid                  bigint,
   content                   varchar(255),
-  time                      bigint,
+  time                      datetime(6),
   rootid                    bigint,
   categoryid                bigint,
   constraint pk_comment primary key (id))
@@ -56,15 +62,32 @@ create table group_member (
   constraint pk_group_member primary key (id))
 ;
 
+create table group_message (
+  id                        bigint auto_increment not null,
+  member_id                 bigint,
+  group_id                  bigint,
+  title                     varchar(255),
+  message                   varchar(255),
+  constraint pk_group_message primary key (id))
+;
+
+create table group_notice (
+  id                        bigint auto_increment not null,
+  sender                    bigint,
+  group_id                  bigint,
+  receiver                  bigint,
+  constraint pk_group_notice primary key (id))
+;
+
 create table post (
-  post_id                   bigint auto_increment not null,
+  id                        bigint auto_increment not null,
   title                     varchar(255),
   content                   varchar(255),
   author_id                 bigint,
-  is_queustion              tinyint(1) default 0,
-  answer_id                 bigint,
-  post_at                   datetime,
-  constraint pk_post primary key (post_id))
+  is_question               tinyint(1) default 0,
+  answer                    varchar(255),
+  post_at                   datetime(6),
+  constraint pk_post primary key (id))
 ;
 
 create table post_comment (
@@ -72,6 +95,13 @@ create table post_comment (
   post_id                   bigint,
   comment_id                bigint,
   constraint pk_post_comment primary key (id))
+;
+
+create table publication_author (
+  id                        bigint auto_increment not null,
+  publication_id            bigint,
+  author_id                 bigint,
+  constraint pk_publication_author primary key (id))
 ;
 
 create table publication (
@@ -91,13 +121,6 @@ create table publication (
   crossref                  varchar(255),
   ee                        varchar(255),
   constraint pk_publication primary key (pub_id))
-;
-
-create table publication_author (
-  id                        bigint auto_increment not null,
-  publication_id            bigint,
-  author_id                 bigint,
-  constraint pk_publication_author primary key (id))
 ;
 
 create table thumb (
@@ -127,16 +150,16 @@ create table user_group (
   constraint pk_user_group primary key (id))
 ;
 
-alter table tagpost add constraint fk_tagpost_post_1 foreign key (post_id) references post (post_id) on delete restrict on update restrict;
-create index ix_tagpost_post_1 on tagpost (post_id);
-alter table tagpub add constraint fk_tagpub_publication_2 foreign key (pub_id) references publication (pub_id) on delete restrict on update restrict;
-create index ix_tagpub_publication_2 on tagpub (pub_id);
+alter table tagpub add constraint fk_tagpub_publication_1 foreign key (pub_id) references publication (pub_id) on delete restrict on update restrict;
+create index ix_tagpub_publication_1 on tagpub (pub_id);
 
 
 
 # --- !Downs
 
 SET FOREIGN_KEY_CHECKS=0;
+
+drop table access_comment;
 
 drop table subscription;
 
@@ -152,13 +175,17 @@ drop table comment;
 
 drop table group_member;
 
+drop table group_message;
+
+drop table group_notice;
+
 drop table post;
 
 drop table post_comment;
 
-drop table publication;
-
 drop table publication_author;
+
+drop table publication;
 
 drop table thumb;
 

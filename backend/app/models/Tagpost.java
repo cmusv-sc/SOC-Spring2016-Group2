@@ -16,19 +16,10 @@ public class Tagpost extends Model{
 
     public String tag;
 
-    @ManyToOne
-    @JoinColumn(name="post_id")
-    public Post post;
+    @Column(name="post_id")
+    public Long postid;
 
     public static Finder<Long, Tagpost> findwithpost = new Finder<Long,Tagpost>(Tagpost.class);
-
-    public Post getPost() {
-        return post;
-    }
-
-    public void setPost(Post post) {
-        this.post = post;
-    }
 
     public void setId(Long id) {
         this.id = id;
@@ -47,13 +38,23 @@ public class Tagpost extends Model{
         return tag;
     }
 
-    public Tagpost(String tag) {
-        super();
+    public Tagpost(Long postid, String tag) {
+        this.postid = postid;
         this.tag = tag;
     }
 
     public Tagpost() {
     }
+
+    public Long getPostid() {
+        return postid;
+    }
+
+    public void setPostid(Long postid) {
+        this.postid = postid;
+    }
+
+
 
     public String toJson() {
         return "{\"id\":\"" + id + "\", \"tag\":\"" + tag + "\"}";

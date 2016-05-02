@@ -41,7 +41,7 @@ public class UserProfileController extends Controller {
 			String userNameTest = "Xiaoxing Ma";
 			Long authorId = Author.find_Author_Id(userName).get(0);
 
-    		new UserProfile(userNameTest,
+    		new UserProfile(userName,
 					updateCollaboratorNumbers(authorId),
 					updateSubscribeNumbers(authorId),
 					updateTags(authorId).toString(),
@@ -55,18 +55,27 @@ public class UserProfileController extends Controller {
 
 
 	public Result getUserProfile(String userName){
+		List<ObjectNode> results = new ArrayList<ObjectNode>();
 		List<UserProfile> userProfile = UserProfile.findByUserName(userName);
 		if(userProfile.size() == 0){
 			return Common.badRequestWrapper("bad request");
 		}
 		UserProfile data = userProfile.get(0);
-		ObjectNode result = Json.newObject();
-		result.put("collaboratorNumbers",String.valueOf(data.getCollaboratorNumbers()));
-		result.put("subscriberNumbers",String.valueOf(data.getSubscriberNumbers()));
-		result.put("tags",data.getTags());
-		result.put("paperTitles",data.getPaperTitles());
+		ObjectNode result1 = Json.newObject();
+		ObjectNode result2 = Json.newObject();
+		ObjectNode result3 = Json.newObject();
+		ObjectNode result4 = Json.newObject();
+		result1.put("collaboratornumber",String.valueOf(data.getCollaboratorNumbers()));
+		result2.put("subscribenumbers",String.valueOf(data.getSubscriberNumbers()));
+		result3.put("tags",data.getTags());
+		result4.put("titles",data.getPaperTitles());
 
-		return ok(Json.toJson(result));
+		results.add(result1);
+		results.add(result2);
+		results.add(result3);
+		results.add(result4);
+
+		return ok(Json.toJson(results));
     }
 
 
@@ -160,7 +169,6 @@ public class UserProfileController extends Controller {
 			}
 
 		}
-
 		return tagsResult;
 	}
 

@@ -1,6 +1,5 @@
 package models;
 
-import java.sql.Timestamp;
 import java.util.*;
 import javax.persistence.*;
 import com.avaje.ebean.Model;
@@ -10,7 +9,6 @@ import com.avaje.ebean.Model;
 @Entity(name="post")
 public class Post extends Model {
     @Id
-    @Column(name="post_id")
     public Long id;
 
     /* the title of the post */
@@ -18,40 +16,40 @@ public class Post extends Model {
 
     /* the content of post */
     public String content;
-    
+
     /* the author of post */
-    public Long authorId;
-    
+    public long authorId;
+
     /* if the post is a question */
-    public boolean isQueustion;
-    
-    /* if the post is a question, answerId 
-     * is the id of comment which is set as answer
-     * */
-    public Long answerId;
-    
+    public boolean isQuestion;
+
+    /* the answer of question */
+    public String answer;
+
     /* post created at */
-    @Column(columnDefinition = "datetime")
     public Date postAt;
 
     public static Finder<Long, Post> find = new Finder<Long, Post>(Post.class);
-    
+
     public Post() {
     }
-    
-    public Post(
-    		String title, 
-    		String content, 
-    		Long authorId,  
-    		Date postAt
 
+    public Post(
+
+    		String title,
+    		String content,
+    		long authorId,
+    		Date postAt,
+    		boolean isQuestion
     		) {
     	this.title = title;
     	this.content = content;
     	this.authorId = authorId;
     	this.postAt = postAt;
+    	this.isQuestion = isQuestion;
+    	this.answer = "";
     }
-    
+
 	public Long getId() {
 		return id;
 	}
@@ -72,16 +70,16 @@ public class Post extends Model {
 		return postAt;
 	}
 
-	public void setPostAt(Timestamp postAt) {
+	public void setPostAt(Date postAt) {
 		this.postAt = postAt;
 	}
 
-	public boolean isQueustion() {
-		return isQueustion;
+	public boolean IsQuestion() {
+		return isQuestion;
 	}
 
-	public void setQueustion(boolean isQueustion) {
-		this.isQueustion = isQueustion;
+	public void setQueustion(boolean isQuestion) {
+		this.isQuestion = isQuestion;
 	}
 
 	public String getTitle() {
@@ -100,28 +98,11 @@ public class Post extends Model {
 		this.authorId = authorId;
 	}
 
-	public Long getAnswerId() {
-		return answerId;
+	public String getAnswer() {
+		return answer;
 	}
 
-	public void setAnswerId(Long answerId) {
-		this.answerId = answerId;
+	public void setAnswer(String answer) {
+		this.answer = answer;
 	}
-
-	
-	//=====================tagging=================
-	//I also changed the id's column name as post_id, please contact me
-	//if there is any conflict that I may have caused you
-	@OneToMany(mappedBy = "post", cascade = CascadeType.ALL)
-	public List<Tagpost> tagposts;
-
-	public List<Tagpost> getTagposts() {
-		return tagposts;
-	}
-
-	public void setTagposts(List<Tagpost> tagposts) {
-		this.tagposts = tagposts;
-	}
-
-	//============tagging===================
 }

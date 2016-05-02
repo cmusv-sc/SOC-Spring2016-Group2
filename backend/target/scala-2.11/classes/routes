@@ -14,11 +14,16 @@ POST    /person/uploadPic           controllers.Application.upload()
 #
 #GET     /title/:title               controllers.Application.getPaperByTitle(title: String)
 
+# update publication information.
+GET /updatepub/                      controllers.PublicationController.UpdatePublication(pub_id:Long, title:String, editor:String, year:String, isbn:String, volume:String, pages:String, mdate:String, series:String, publisher:String, booktitle:String, crossref:String, ee:String, author:String)
 
-###Sprint1
-#GET    /year/:year                  controllers.Application.getPaperByYear(year:Integer)
-#GET    /title/:title                controllers.Application.getPaperByTitle(title:String)
-
+###Suggestion
+GET    /year/:year                  controllers.Application.getPaperByYear(year:Integer)
+GET    /title/:title                controllers.Application.getPaperByTitle(title:String)
+GET    /all                         controllers.Application.getAllPublications()
+GET    /keyword/:keyWord            controllers.Application.getPaperBykeyWord(keyWord:String)
+GET    /author/:author              controllers.Application.getAuthors(author:String)
+GET    /coauthor/:author            controllers.Application.getCoAuthors(author:String)
 
 ### Forum
 POST   /comment                     controllers.ForumController.addComment()
@@ -29,7 +34,7 @@ POST   /upload                      controllers.ForumController.uploadFile()
 
 ### Thumb
 POST    /addThumb                                              controllers.ThumbController.addThumb()
-DELETE  /deleteThumb/:thumb_type/:sender/:receiver               controllers.ThumbController.deleteThumb(thumb_type: Integer, sender: Integer, receiver: Integer)
+DELETE  /deleteThumb/:thumb_type/:sender/:receiver             controllers.ThumbController.deleteThumb(thumb_type: Integer, sender: Integer, receiver: Integer)
 GET     /getThumbSum/:user/:type                               controllers.ThumbController.getThumbSum(user:String,type:String)
 
 
@@ -59,22 +64,36 @@ GET    /deletetagpub/:pubid/:tagpub controllers.TagController.deleteTagpub(pubid
 GET    /gettagpubs/:title           controllers.TagController.getTagpubs(title:String)
 GET    /getpublications/:tagpub     controllers.TagController.getPublications(tagpub:String)
 GET    /getTag/:pub_id              controllers.TagController.getTagByPub_id(pub_id:Long)
+GET    /updateTag/                  controllers.TagController.updateTagPub(pubid:Long,tagpub:String)
 
 #Tagging for post
 GET    /addtagpost/:postid/:tagpost         controllers.TagController.addTagpost(postid:Long,tagpost:String)
 GET    /deletetagpost/:postid/:tagpost      controllers.TagController.deleteTagpost(postid:Long,tagpost:String)
 GET    /getTagpost/:post_id                 controllers.TagController.getTagByPost_id(post_id:Long)
 
-### Testing New Features
-GET    /year/:year                  controllers.Application.getPublicationWithAuthorsByYear(year: Integer)
-GET    /id/:id                  controllers.Application.getPublicationWithAuthorsById(id: Integer)
-GET    /title/:title                controllers.Application.getPublicationWithAuthorsByTitle(title: String)
+
+GET    /paper/year/:year                  controllers.Application.getPublicationWithAuthorsByYear(year: Integer)
+GET    /paper/id/:id                      controllers.Application.getPublicationWithAuthorsById(id: Integer)
+GET    /paper/title/:title                controllers.Application.getPublicationWithAuthorsByTitle(title: String)
 
 
 
 ### UserProfile
-POST   /userprofile/create			  controllers.UserProfileController.createuserProfileProfile()
-GET    /userprofile/:userName		  controllers.UserProfileController.getUserProfile(userName:String)
-GET    /userprofile/refresh/:userName controllers.UserProfileController.refreshUserprofile(userName:String)
+POST   /userprofile/create			     controllers.UserProfileController.createuserProfileProfile()
+GET    /userprofile/:userName		     controllers.UserProfileController.getUserProfile(userName:String)
+GET    /userprofile/refresh/:userName    controllers.UserProfileController.refreshUserprofile(userName:String)
 
+#Comments Popularity
+GET    /getCommentSum/:rootid                   controllers.Popularity.getCommentSum(rootid:Integer)
+GET    /getTagSum/:pubid                          controllers.Popularity.getTagSum(pubid:Long)
+
+
+GET    /groups/:grouptype                 controllers.UserGroupController.getGroupList(grouptype: String)
+GET    /group/own/:userid                 controllers.UserGroupController.getOwnGroup(userid: Long)
+POST   /groups                            controllers.UserGroupController.saveGroup()
+POST   /group/notification                controllers.UserGroupController.saveNotification()
+GET    /group/notification/:userid        controllers.UserGroupController.getNotifcation(userid: Long)
+POST   /group/resnotification             controllers.UserGroupController.resNotification()
+GET    /group/:groupname/message          controllers.UserGroupController.getGroupMessage(groupname: String)
+POST   /group/message                     controllers.UserGroupController.saveMessage()
 

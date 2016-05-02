@@ -19,6 +19,7 @@ public class UserGroup extends Model {
 
     public static Finder<Long, UserGroup> find
             = new Model.Finder<>(Long.class, UserGroup.class);
+
     /***
      *  you are responsible for calling their close() method somewhere in your code
      *  so that they can be immediately returned to the pool.
@@ -33,6 +34,7 @@ public class UserGroup extends Model {
     public String getGroupname(){
         return groupname;
     }
+
 
 }
 
