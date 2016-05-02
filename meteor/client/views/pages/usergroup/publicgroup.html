@@ -1,0 +1,68 @@
+<template name="publicgroup">
+    <div id="publicdiv" class="container">
+        <ul class="nav nav-pills">
+            <li data-template="create" role="presentation"><a href="/owngroup">Your Private Group</a></li>
+            <li data-template="publicgroup" role="presentation" class="active"><a href="#">Find more Public Groups</a></li>
+            <li data-template="privategroup" role="presentation"><a href="/privategroup">Find more Private Groups</a></li>
+            <li data-template="create" role="presentation"><a href="/newgroup">Create New Group</a></li>
+            <li data-template="create" role="presentation"><a href="/notice">Notification</a></li>
+        </ul>
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="page-header">Search Public Group Result</h1>
+                <small class="text-muted">Your can enter in any public group</small>
+                <hr>
+            </div>
+        </div>
+        
+        <!-- add here -->
+        <div class="row" id="row">
+            <div class="col-md-8">
+              {{getData}}
+            </div>                      
+        </div>
+
+    <div class="row text-center">
+        <div class="col-lg-12">
+            <ul class="pagination">
+                <li>
+                    <a href="#">&laquo;</a>
+                </li>
+                <li class="active">
+                    <a href="#">1</a>
+                </li>
+                <li>
+                    <a href="#">2</a>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                </li>
+                <li>
+                    <a href="#">4</a>
+                </li>
+                <li>
+                    <a href="#">6</a>
+                </li>
+                <li>
+                    <a href="#">&raquo;</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+    </div>    
+
+    <!-- /.container -->
+</template>

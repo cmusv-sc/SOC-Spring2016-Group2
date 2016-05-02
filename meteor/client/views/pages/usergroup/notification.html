@@ -1,0 +1,20 @@
+<template name="notificaction">
+	<div id="publicdiv" class="container">
+        <ul class="nav nav-pills">
+            <li data-template="create" role="presentation"><a href="/owngroup">Your Private Group</a></li>
+            <li data-template="publicgroup" role="presentation" ><a href="/publicgroup">Find more Public Groups</a></li>
+            <li data-template="privategroup" role="presentation"><a href="/privategroup">Find more Private Groups</a></li>
+            <li data-template="create" role="presentation"><a href="/newgroup">Create New Group</a></li>
+            <li data-template="create" role="presentation" class="active"><a href="#">Notification</a></li>
+        </ul>
+       
+    </div> 
+    <div class="container">
+		<div class="row" id="row">
+			<div class="col-md-12">
+				{{getData}}
+			</div>
+		</div>
+	</div> 
+    
+</template>

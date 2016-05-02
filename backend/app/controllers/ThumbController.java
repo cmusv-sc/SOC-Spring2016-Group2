@@ -37,10 +37,10 @@ public class ThumbController extends Controller {
         /*--- with parameter: thumb_type, sender, receiver---*/
         Thumb thumb = form(Thumb.class).bindFromRequest().get();
         Boolean thumb_type = thumb.getThumb_type();
-        int sender = thumb.getSender();
+        String sender = thumb.getSender();
         int receiver = thumb.getReceiver();
         String sql = "select * from thumb where thumb_type=" + thumb_type + 
-        " and sender=" + sender + " and receiver=" + receiver;
+        " and sender='" + sender + "' and receiver=" + receiver;
         System.out.println(sql);
         List<SqlRow> sqlRows = Ebean.createSqlQuery(sql).findList();
         if (sqlRows.size()>0)
@@ -50,9 +50,9 @@ public class ThumbController extends Controller {
         thumb.save();
         return ok("add thumb success");
     }
-    public Result deleteThumb(int thumb_type, int sender, int receiver){
+    public Result deleteThumb(int thumb_type, String sender, int receiver){
         String sql = "select id from thumb where thumb_type=" + thumb_type + 
-        " and sender=" + sender + " and receiver=" + receiver;
+        " and sender='" + sender + "' and receiver=" + receiver;
         System.out.println(sql);
         List<SqlRow> sqlRows = Ebean.createSqlQuery(sql).findList();
         for (SqlRow sqlRow: sqlRows)

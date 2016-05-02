@@ -1,3 +1,4 @@
+
 package models;
 
 import com.avaje.ebean.Model;
@@ -11,36 +12,36 @@ import java.util.List;
 @Entity(name="comment")
 public class Comment extends Model {
     @Id
-    private Long id;
+    private int id;
 
-    private Long parentid;
-    private Long authorid;
+    private int parentid;
+    private String authorid;
     private String content;
     private Long time;
-    private Long rootid;
-    private Long categoryid;
+    private int rootid;
+    private int categoryid;
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public Long getParentid() {
+    public int getParentid() {
         return parentid;
     }
 
-    public void setParentid(Long parentid) {
+    public void setParentid(int parentid) {
         this.parentid = parentid;
     }
 
-    public Long getAuthorid() {
+    public String getAuthorid() {
         return authorid;
     }
 
-    public void setAuthorid(Long authorid) {
+    public void setAuthorid(String authorid) {
         this.authorid = authorid;
     }
 
@@ -60,23 +61,23 @@ public class Comment extends Model {
         this.time = time;
     }
 
-    public Long getRootid() {
+    public int getRootid() {
         return rootid;
     }
 
-    public void setRootid(Long rootid) {
+    public void setRootid(int rootid) {
         this.rootid = rootid;
     }
 
-    public Long getCategoryid() {
+    public int getCategoryid() {
         return categoryid;
     }
 
-    public void setCategoryid(Long categoryid) {
+    public void setCategoryid(int categoryid) {
         this.categoryid = categoryid;
     }
 
-    public Comment(Long id, Long parentid, Long authorid, String content, Long time, Long rootid, Long categoryid) {
+    public Comment(int id, int parentid, String authorid, String content, Long time, int rootid, int categoryid) {
         this.parentid = parentid;
         this.authorid = authorid;
         this.content = content;
@@ -86,10 +87,7 @@ public class Comment extends Model {
     }
 
     public Comment(){
-
     }
 
-    public static Finder<Long, Comment> find = new Finder<Long, Comment>(Long.class, Comment.class);
-
-    
+    public static Finder<Integer, Comment> find = new Finder<Integer, Comment>(Integer.class, Comment.class);
 }

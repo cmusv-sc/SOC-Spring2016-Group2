@@ -13,7 +13,7 @@ public class UserGroup extends Model {
     @Id
     public Long id;
     public String groupname;
-    public Long createrid;
+    public String createrid;
     public String intro;
     public String type;
 
@@ -23,7 +23,7 @@ public class UserGroup extends Model {
      *  you are responsible for calling their close() method somewhere in your code
      *  so that they can be immediately returned to the pool.
      */
-    public UserGroup(Long createrid, String groupname, String intro, String type){
+    public UserGroup(String createrid, String groupname, String intro, String type){
         this.groupname=groupname;
         this.createrid=createrid;
         this.intro = intro;
@@ -35,4 +35,3 @@ public class UserGroup extends Model {
     }
 
 }
-

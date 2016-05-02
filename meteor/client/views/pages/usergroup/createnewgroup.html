@@ -1,0 +1,35 @@
+<template name="createnewgroup">
+    <div id="publicdiv" class="container">
+    	<ul class="nav nav-pills">
+            <li data-template="create" role="presentation"><a href="/owngroup">Your Private Group</a></li>
+            <li data-template="publicgroup" role="presentation" ><a href="/publicgroup">Find more Public Groups</a></li>
+            <li data-template="privategroup" role="presentation"><a href="/privategroup">Find more Private Groups</a></li>
+            <li data-template="create" role="presentation" class="active"><a href="#">Create New Group</a></li>
+            <li data-template="create" role="presentation"><a href="/notice">Notification</a></li>
+        </ul>
+     	<h1>Create New Group</h1>
+        <form>
+          <fieldset class="form-group">
+            <label for="exampleInputEmail1">Group Name</label>
+            <input type="text" class="form-control" id="groupname" >
+            <small class="text-muted">Enter a group name.</small>
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="exampleTextarea">Group Introduction</label>
+            <textarea class="form-control" id="intro" rows="3"></textarea>
+          </fieldset>
+          <form action="">
+              <input type="radio" name="optionsRadios" id="type" value="privategroup" >
+              Open to group member
+              <br>
+              <input type="radio" name="optionsRadios" id="type" value="publicgroup" >
+              Open to anyone
+          </form>
+          <br>
+          <button class="btn btn-primary postgroup">Create</button>
+        </form>
+
+    </div>  
+     <!-- </form> -->
+</template>
+

@@ -6,8 +6,12 @@ import play.db.ebean.*;
 import play.data.format.*;
 import play.data.validation.*;
 
+/*
+This class is only for test.
+*/
+
 @Entity 
-public class User extends Model {
+public class User extends Model  {
 
 	@Id
 	public Long id;

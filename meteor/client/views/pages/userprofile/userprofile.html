@@ -1,0 +1,54 @@
+<template name="userprofile">
+    <div class="wrapper wrapper-content container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="container">
+                    <h1 id="title">Author Profile</h1>
+                </div>
+            </div>
+        </div>
+        {{getData}}
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="ibox-content">
+                    <div>
+                        <p>
+                        <div class="input-group">
+                            <input type="text" class="form-control input-sm" id="inputvalue">
+                             <div class="input-group-btn">
+                            <button class="btn btn-sm btn-info Search">Search</button>
+                             </div>
+                            <div class="input-group-btn">
+                                <button class="btn btn-sm btn-info Refresh">Refresh</button>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                    <div class="table-responsive" >
+                        <div class="loading"></div>
+                        <table class="table table-hover">
+                            <tbody id="content">
+                            <tr>
+                                <td><span class="label label-info">CollaboratorNumber</span></td>
+                                <td class="collaboratorNumber"></td>
+                            </tr>
+                            <tr>
+                                <td><span class="label label-info">SubscriberNumber</span></td>
+                                <td class="subscriberNumber"></td>
+                            </tr>
+                            <tr>
+                                <td><span class="label label-info">Titles</span></td>
+                                <td class="titles"></td>
+                            </tr>
+                            <tr>
+                                <td><span class="label label-info">Tags</span></td>
+                                <td class="tags"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

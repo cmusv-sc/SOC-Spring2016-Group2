@@ -115,6 +115,9 @@ Template.recommend.onCreated(function () {
     var name1 = ""
     var name2 = ""
     var name3 = ""
+    var count1 = -1
+    var count2 = -1
+    var count3 = -1
 
     var myid = Session.get("myid")
 
@@ -132,18 +135,49 @@ Template.recommend.onCreated(function () {
             var second = ob.friendid
             var secondname = ob.name
             if (second != myid && Friends.find({myid: myid, friendid: second}).count() == 0) {
-                if (name1 == "") {
+            	var count = 0
+            	Friends.find(
+		          {
+		            myid: second
+		          }
+        		).forEach(function(ob2){
+        			var thirdid = ob2.friendid
+        			count += Friends.find({myid: myid, friendid: thirdid}).count()
+        		})
+                if (count > count1) {
+                	name3 = name2
+                	name2 = name1
                     name1 = secondname
+
+                    var summary1 = Session.get("recommendsum1")
+                    var summary2 = Session.get("recommendsum2")
+                    var id1 = Session.get("recommendid1")
+                    var id2 = Session.get("recommendid2")
+                    Session.setPersistent("recommendid3", id2);
+                    Session.setPersistent("recommendsum3", summary2);
+                    Session.setPersistent("recommendid2", id1);
+                    Session.setPersistent("recommendsum2", summary1);
                     Session.setPersistent("recommendid1", second);
                     Session.setPersistent("recommendsum1", ob.summary);
-                } else if (name2 == "" && secondname != name1) {
+                    count3 = count2
+                    count2 = count1
+                    count1 = count
+                } else if (count > count2 && secondname != name1) {
+                	name3 = name2
                     name2 = secondname
+                    var summary2 = Session.get("recommendsum2")
+                    var id2 = Session.get("recommendid2")
+                    Session.setPersistent("recommendid3", id2);
+                    Session.setPersistent("recommendsum3", summary2);
                     Session.setPersistent("recommendid2", second);
                     Session.setPersistent("recommendsum2", ob.summary);
-                } else if (name3 == "" && secondname != name1 && secondname != name2) {
+                    count3 = count2
+                    count2 = count
+                } else if (count > count3 && secondname != name1 && secondname != name2) {
                     name3 = secondname
                     Session.setPersistent("recommendid3", second);
                     Session.setPersistent("recommendsum3", ob.summary);
+                    count3 = count
                 }
             }
         })

@@ -7,8 +7,82 @@
 		revision="1.0-SNAPSHOT"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160422205225"/>
+		date="20160502052041"/>
 	<dependencies>
+		<module organisation="org.mongodb" name="mongo-java-driver">
+			<revision name="2.8.0" status="release" pubdate="20120618120818" resolver="public" artresolver="public" homepage="http://www.mongodb.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="103">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="868" time="85" location="/Users/Anna/.ivy2/cache/org.mongodb/mongo-java-driver/ivy-2.8.0.xml" searched="true" original-local-location="/Users/Anna/.ivy2/cache/org.mongodb/mongo-java-driver/ivy-2.8.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/mongodb/mongo-java-driver/2.8.0/mongo-java-driver-2.8.0.pom"/>
+				<caller organisation="ssnetwork" name="ssnetwork_2.11" conf="compile, runtime-internal, runtime, optional" rev="2.8.0" rev-constraint-default="2.8.0" rev-constraint-dynamic="2.8.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="mongo-java-driver" type="jar" ext="jar" status="successful" details="" size="344552" time="384" location="/Users/Anna/.ivy2/cache/org.mongodb/mongo-java-driver/jars/mongo-java-driver-2.8.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/mongodb/mongo-java-driver/2.8.0/mongo-java-driver-2.8.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-queryparser">
+			<revision name="5.3.1" status="release" pubdate="20150928092003" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="100">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="455966" time="0" location="/Users/Anna/.ivy2/cache/org.apache.lucene/lucene-queryparser/ivy-5.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-queryparser/5.3.1/lucene-queryparser-5.3.1.pom"/>
+				<caller organisation="ssnetwork" name="ssnetwork_2.11" conf="compile, runtime-internal, runtime, optional" rev="5.3.1" rev-constraint-default="5.3.1" rev-constraint-dynamic="5.3.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="lucene-queryparser" type="jar" ext="jar" status="no" details="" size="401310" time="0" location="/Users/Anna/.ivy2/cache/org.apache.lucene/lucene-queryparser/jars/lucene-queryparser-5.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-queryparser/5.3.1/lucene-queryparser-5.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-sandbox">
+			<revision name="5.3.1" status="release" pubdate="20150928091821" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="102">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="455430" time="0" location="/Users/Anna/.ivy2/cache/org.apache.lucene/lucene-sandbox/ivy-5.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-sandbox/5.3.1/lucene-sandbox-5.3.1.pom"/>
+				<caller organisation="org.apache.lucene" name="lucene-queryparser" conf="default, compile, runtime, master" rev="5.3.1" rev-constraint-default="5.3.1" rev-constraint-dynamic="5.3.1" callerrev="5.3.1"/>
+				<artifacts>
+					<artifact name="lucene-sandbox" type="jar" ext="jar" status="no" details="" size="266751" time="0" location="/Users/Anna/.ivy2/cache/org.apache.lucene/lucene-sandbox/jars/lucene-sandbox-5.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-sandbox/5.3.1/lucene-sandbox-5.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-queries">
+			<revision name="5.3.1" status="release" pubdate="20150928092114" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="101">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="455292" time="0" location="/Users/Anna/.ivy2/cache/org.apache.lucene/lucene-queries/ivy-5.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-queries/5.3.1/lucene-queries-5.3.1.pom"/>
+				<caller organisation="org.apache.lucene" name="lucene-queryparser" conf="default, compile, runtime, master" rev="5.3.1" rev-constraint-default="5.3.1" rev-constraint-dynamic="5.3.1" callerrev="5.3.1"/>
+				<artifacts>
+					<artifact name="lucene-queries" type="jar" ext="jar" status="no" details="" size="212088" time="0" location="/Users/Anna/.ivy2/cache/org.apache.lucene/lucene-queries/jars/lucene-queries-5.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-queries/5.3.1/lucene-queries-5.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-analyzers-common">
+			<revision name="5.3.1" status="release" pubdate="20150928094537" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="99">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="455320" time="0" location="/Users/Anna/.ivy2/cache/org.apache.lucene/lucene-analyzers-common/ivy-5.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-analyzers-common/5.3.1/lucene-analyzers-common-5.3.1.pom"/>
+				<caller organisation="ssnetwork" name="ssnetwork_2.11" conf="compile, runtime-internal, runtime, optional" rev="5.3.1" rev-constraint-default="5.3.1" rev-constraint-dynamic="5.3.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="lucene-analyzers-common" type="jar" ext="jar" status="no" details="" size="1562970" time="0" location="/Users/Anna/.ivy2/cache/org.apache.lucene/lucene-analyzers-common/jars/lucene-analyzers-common-5.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-analyzers-common/5.3.1/lucene-analyzers-common-5.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-core">
+			<revision name="5.3.1" status="release" pubdate="20150928092951" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="98">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="454222" time="0" location="/Users/Anna/.ivy2/cache/org.apache.lucene/lucene-core/ivy-5.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-core/5.3.1/lucene-core-5.3.1.pom"/>
+				<caller organisation="ssnetwork" name="ssnetwork_2.11" conf="compile, runtime-internal, runtime, optional" rev="5.3.1" rev-constraint-default="5.3.1" rev-constraint-dynamic="5.3.1" callerrev="1.0-SNAPSHOT"/>
+				<caller organisation="org.apache.lucene" name="lucene-analyzers-common" conf="default, compile, runtime, master" rev="5.3.1" rev-constraint-default="5.3.1" rev-constraint-dynamic="5.3.1" callerrev="5.3.1"/>
+				<caller organisation="org.apache.lucene" name="lucene-queryparser" conf="default, compile, runtime, master" rev="5.3.1" rev-constraint-default="5.3.1" rev-constraint-dynamic="5.3.1" callerrev="5.3.1"/>
+				<artifacts>
+					<artifact name="lucene-core" type="jar" ext="jar" status="no" details="" size="2356393" time="0" location="/Users/Anna/.ivy2/cache/org.apache.lucene/lucene-core/jars/lucene-core-5.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-core/5.3.1/lucene-core-5.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="org.postgresql" name="postgresql">
 			<revision name="9.4-1206-jdbc42" status="release" pubdate="20151125120416" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jdbc.postgresql.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="97">
 				<license name="The PostgreSQL License" url="http://www.postgresql.org/about/licence/"/>

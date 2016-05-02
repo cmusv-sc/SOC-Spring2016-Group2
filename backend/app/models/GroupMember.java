@@ -11,22 +11,21 @@ public class GroupMember extends Model {
 
     @Id
     public Long id;
-    public Long member_id;
+    public String member_id;
     public Long group_id;
-    public static Finder<Long,GroupMember> find = new Finder<Long,GroupMember>(
-        Long.class, GroupMember.class
-        ); 
+    public static Finder<Integer, GroupMember> find
+            = new Model.Finder<>(Integer.class, GroupMember.class);
     /***
      *  you are responsible for calling their close() method somewhere in your code
      *  so that they can be immediately returned to the pool.
      */
 
-    public GroupMember(Long memberid, Long groupid){
+    public GroupMember(String memberid, Long groupid){
         this.member_id=memberid;
         this.group_id=groupid;
     }
 
-    public Long getMemberId(){
+    public String getMemberId(){
         return member_id;
     }
 

@@ -11,6 +11,8 @@
             <div class="ibox">
                 <div class="ibox-content">
                     <a href="/findpaper" class="btn btn-primary btn-outline"><i class="fa fa-chevron-left"></i> Back</a>
+                    <!---<a href="/paperedit" class="btn btn-primary btn-outline"><i class="fa fa-chevron-right"></i>Edit</a> -->
+                    <button class="btn btn-sm btn-success" id="editpub">Edit</button>
                     <div class="text-center">
                         <h1 id="title"></h1>
                     </div>
@@ -94,7 +96,9 @@
                                 </div>
                             </div>
                             <hr>
-                            <h2>Comments</h2>
+                            <h2>Comments <small class="hide" id="commentnote">This feature has been closed</small></h2>
+                            <button class="btn btn-danger btn-outline" id="closecomment">Close Comment</button>
+                            <p></p>
                             <div class="input-group">
                                 <input type="text" class="form-control input-sm" id="inputcomment">
                                 <div class="input-group-btn">
@@ -105,7 +109,7 @@
                             <br>
                             <div>
                                 <div class="dd" id="nestable">
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -113,7 +117,7 @@
                             <p></p>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
             </div>
